@@ -117,7 +117,7 @@ body header .right select {
   padding: 0 0.75rem;
   margin-right: 2rem;
   font-size: 0.9rem;
-  background-image: url("/common/images/select.png");
+  background-image: url("../../../common/images/select.png");
   background-repeat: no-repeat;
   background-position: right center;
 }
@@ -126,7 +126,7 @@ body header .right button {
   float: left;
   width: 31px;
   height: 25px;
-  background-image: url("/common/images/menu01.png");
+  background-image: url("../../../common/images/menu01.png");
   background-size: 100%;
   cursor: pointer;
 }
@@ -153,7 +153,7 @@ body header.sticky .left .left_inner .vol {
   color: #333333;
 }
 body header.sticky button {
-  background-image: url("/common/images/menu02.png");
+  background-image: url("../../../common/images/menu02.png");
 }
 body nav {
   display: none;
@@ -350,7 +350,7 @@ body .information .information_inner .right .event .text .btn {
   font-size: 0.75rem;
   background-color: #1f408c;
   color: #fff;
-  background-image: url("/common/images/arrow_r.png");
+  background-image: url("../../../common/images/arrow_r.png");
   background-repeat: no-repeat;
   background-position: calc(100% - 1rem) center;
   transition: 0.3s;
@@ -427,7 +427,7 @@ body .top > a {
   width: 54px;
   height: 36px;
   background: #7996da;
-  background-image: url("/common/images/top.png");
+  background-image: url("../../../common/images/top.png");
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -486,7 +486,7 @@ body footer .wrap .right .subscribe {
   margin-left: 1rem;
   font-size: 0.8rem;
   background-color: #fff;
-  background-image: url("/common/images/select03.png");
+  background-image: url("../../../common/images/select03.png");
   background-position: calc(100% - 0.5rem) center;
   background-repeat: no-repeat;
   color: #333;
@@ -1330,7 +1330,7 @@ body header.sticky.sub_banner .right {
   right: 2%;
   width: 40px;
   height: 40px;
-  background-image: url("/common/images/close02.png");
+  background-image: url("../../../common/images/close02.png");
   background-size: 100%;
   text-indent: -9999px;
   cursor: pointer;
@@ -1345,7 +1345,7 @@ body header.sticky.sub_banner .right {
   cursor: pointer;
   color: #fff;
   z-index: 999;
-  background-image: url(/common/images/check02.jpg);
+  background-image: url(../../../common/images/check02.jpg);
   background-repeat: no-repeat;
   background-size: 15%;
   background-position: center right;
@@ -2250,7 +2250,7 @@ body header.sticky.sub_banner .right {
   cursor: pointer;
 }
 #sub .checkbox input[type=checkbox]:checked + label::before {
-  background-image: url("/common/images/check02.jpg");
+  background-image: url("../../../common/images/check02.jpg");
   background-size: 100%;
 }
 #sub .border {
@@ -2448,7 +2448,7 @@ body header.sticky.sub_banner .right {
   right: -50px;
   width: 40px;
   height: 40px;
-  background-image: url("/common/images/close02.png");
+  background-image: url("../../../common/images/close02.png");
   background-size: 100%;
   text-indent: -9999px;
   cursor: pointer;
@@ -2483,7 +2483,7 @@ body header.sticky.sub_banner .right {
 }
 
 #sub.check .checkbox input[type=checkbox]:checked + label::before {
-  background-image: url("/common/images/check02.jpg");
+  background-image: url("../../../common/images/check02.jpg");
   background-size: 100%;
 }
 
@@ -2517,7 +2517,7 @@ body header.sticky.sub_banner .right {
   right: 0;
   width: 40px;
   height: 40px;
-  background-image: url(/common/images/close02.png);
+  background-image: url(../../../common/images/close02.png);
   background-size: 100%;
   text-indent: -9999px;
   cursor: pointer;
@@ -2556,7 +2556,7 @@ body header.sticky.sub_banner .right {
 }
 
 #sub.tp {
-  background-image: url("/common/images/tp_bg02.jpg");
+  background-image: url("../../../common/images/tp_bg02.jpg");
 }
 
 #sub.depth1 .top {
@@ -2732,7 +2732,7 @@ body header.sticky.sub_banner .right {
   height: 100%;
   padding: 3.5rem 3rem;
   background: rgba(0, 0, 0, 0.7);
-  background-image: url("/common/images/opinion_bg.png");
+  background-image: url("../../../common/images/opinion_bg.png");
   overflow-y: scroll;
 }
 #sub.opinion .opinion .form form {
@@ -2812,7 +2812,7 @@ body header.sticky.sub_banner .right {
   height: 30px;
   margin: 0 auto;
   background-color: transparent;
-  background-image: url("/common/images/close02.png");
+  background-image: url("../../../common/images/close02.png");
   background-repeat: no-repeat;
   text-indent: -9999px;
   cursor: pointer;
@@ -3575,7 +3575,7 @@ body header.sticky.sub_banner .right {
     right: 10px;
     width: 24px;
     height: 24px;
-    background-image: url("/common/images/close.png");
+    background-image: url("../../../common/images/close.png");
   }
   #sub .modal.modal01 .modal_wrap, #sub .modal.modal02 .modal_wrap, #sub .modal.modal03 .modal_wrap {
     top: 50%;
@@ -4015,7 +4015,7 @@ body header.sticky.sub_banner .right {
   cursor: pointer;
 }
 .event02 .input02 > span input[type=checkbox]:checked + label::before {
-  background-image: url("/common/images/check02.jpg");
+  background-image: url("../../../common/images/check02.jpg");
   background-size: 100%;
 }
 .event02 .input02 > span button {
@@ -4295,7 +4295,7 @@ body header.sticky.sub_banner .right {
 }
 
 #sub.vol423 .checkbox input[type=checkbox]:checked + label::before {
-  background-image: url("/common/images/check02.jpg");
+  background-image: url("../../../common/images/check02.jpg");
   background-size: 100%;
 }
 
@@ -4305,7 +4305,7 @@ body header.sticky.sub_banner .right {
   right: 0;
   width: 40px;
   height: 40px;
-  background-image: url(/common/images/close02.png);
+  background-image: url(../../../common/images/close02.png);
   background-size: 100%;
   text-indent: -9999px;
   cursor: pointer;

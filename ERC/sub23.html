@@ -1,0 +1,323 @@
+<!-- <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%
+String pageType = "sub";
+String pageBefore = "sub24.jsp";
+String pageAfter = "sub26.jsp";
+%>
+<%@ include file="./head.jsp"%> -->
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>지방공기업 웹진</title>
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:title" content="지방공기업 vol.36">
+	<meta property="og:description" content="지방공기업 웹진을 만나보세요.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="style/css/reset.css?ver=2" />
+	<link rel="stylesheet" type="text/css" href="style/css/default.css?ver=2" />
+	<!-- <link rel="stylesheet" type="text/css" href="style/css/main.css?ver=2" /> -->
+	<link rel="stylesheet" type="text/css" href="style/css/sub.css?ver=2" />
+	<script src="http://djwebtoon.cafe24.com/g5/js/jquery-1.8.3.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="style/js/common.js?ver=2"></script>
+	<script>
+		$(document).ready(function(){
+			$('.slideSet1').bxSlider({
+				//	mode: 'horizontal',
+				mode: 'horizontal',
+				//	easing: 'swing',
+				controls: false,
+				auto: true,
+				speed: 700,
+				touchEnabled : false
+			});
+			$('.slideSet2').bxSlider({
+				mode: 'horizontal',
+				//	easing: 'swing',
+				controls: false,
+				auto: true,
+				speed: 700,
+				touchEnabled : false,
+			});
+		});
+	</script>
+</head>
+<style>
+</style>
+
+<body>
+	<div id="headerSet">
+		<div class="headerTop">
+			<div class="wrap">
+				<div class="menu"></div>
+				<a class="logo" href="./"><img src="style/img/setting/logo-h.png" alt="main"></a>
+				<div class="button">
+					<a class="ago" href="https://www.erc.re.kr/usr/com/prm/BBSList.do?bbsId=BBSMSTR_000000000281&menuNo=3011&upperMenuId=3" target="_blank"><img src="style/img/setting/icon-ago.png" alt="지난호보기"></a>
+					<a class="ebook" href="https://www.erc.re.kr/ebook/<%=ebook_page%>/index.html#/1" target="_blank"><img src="style/img/setting/icon-ebook.png" alt="E-Book"></a>
+				</div>
+			</div>
+		</div>
+		<div class="headerBottom">
+			<div class="wrap">
+				<div class="button_mo">
+					<a class="ago" href="https://www.erc.re.kr/usr/com/prm/BBSList.do?bbsId=BBSMSTR_000000000281&menuNo=3011&upperMenuId=3" target="_blank"><img src="style/img/setting/icon-ago.png" alt="지난호보기"></a>
+					<a class="ebook" href="https://www.erc.re.kr/ebook/<%=ebook_page%>/index.html#/1" target="_blank"><img src="style/img/setting/icon-ebook.png" alt="E-Book"></a>
+				</div>
+				<div class="headerSectionWrap">
+					<ul class="headerSection headerSection02">
+						<li>
+							<p>권두언</p>
+							<ul>
+								<li><a href="sub1.html">최치국 지방공기업평가원 이사장 포스트 코로나 시대는 없다</a></li>
+							</ul>
+						</li>
+						<li><p>현장과 사람들</p>
+							<ul>
+								<li><a href="sub2.html">대구도시철도공사</a></li>
+							</ul>
+						</li>
+						<li><p><a href="sub3.html">숫자로 보는 지방공공기관 정보</a></p></li>
+					</ul>
+					<h3 class="headerTitle">특집</h3>
+					<ul class="headerSection">
+						<li><p>Intro</p>
+							<ul>
+								<li><a href="sub4.html">지방공기업 경영평가의 의미와 존재 목적은?</a></li>
+							</ul>
+						</li>
+						<li><p>Focus 1</p>
+							<ul>
+								<li>지표별 살펴보는 지방공기업 경영평가</li>
+								<li><a href="sub5-1.html">임효창 | 지속가능경영 지표에 대한 총평</a></li>
+								<li><a href="sub5-2.html">임미영 | 경영성과 지표에 대한 총평</a></li>
+								<li><a href="sub5-3.html">임준형 | 사회적 가치에 대한 총평 </a></li>
+							</ul>
+						</li>
+						<li><p>Focus 2</p>
+							<ul>
+								<li><a href="sub6.html">남기범 | 성공적인 평가를 위해 어떤 준비를 해야 하는가?</a></li>
+							</ul>
+						</li>
+						<!-- <li><p>Talk</p>
+							<ul>
+								<li><a href="sub7.html">성관실 인천시 미추홀구시설관리공단 이사장 | 윤리경영은 사회와 함께 추진하고 확산될 때 그 가치가 발휘된다</a></li>
+							</ul>
+						</li> -->
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">사람 & 현장</h3>
+					<ul class="headerSection">
+						<li><p>뉴 리더</p>
+							<ul>
+								<li><a href="sub7.html">김재광 김천시시설관리공단 이사장 | 시민에게 행복을 주는 김천의 공공 서비스가 새로워진다</a></li>
+							</ul>
+						</li>
+						<li><p>파워 리더</p>
+							<ul>
+								<li><a href="sub8.html">윤진보 광주광역시도시철도공사 사장 | ‘대중·녹색교통 중심도시’를 꿈꾸며 오늘도 레일 위를 달린다</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 1</p>
+							<ul>
+								<li><a href="sub9.html">대상_인천시설공단 | 지속가능한 경영혁신 플랫폼을 구축하다</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 2</p>
+							<ul>
+								<li><a href="sub10.html">최우수상_서울교통공사 | 혁신적 패러다임의 전환…‘도심 공동물류 플랫폼 사업’</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 3</p>
+							<ul>
+								<li><a href="sub11.html">최우수상_세종특별자치시시설관리공단 | 지하구조물의 IoT 진동복합센서를 활용한 안전사고예방시스템 구축</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 4</p>
+							<ul>
+								<li><a href="sub12.html">최우수상_구미시설공단 | 시민과 함께! 행복을 플러스! ‘같이 Plus+’의 혁신</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 5</p>
+							<ul>
+								<li><a href="sub13.html">최우수상_태백가덕산풍력발전㈜ | 태백의 바람이 새로운 바람이 되는 ‘태백가덕산풍력발전소’</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">연구 & 교육</h3>
+					<ul class="headerSection">
+						<li><p>이슈 진단 1</p>
+							<ul>
+								<li><a href="sub14.html">금창호 | 「지방자치법」 전부개정의 의의와 향후 과제</a></li>
+							</ul>
+						</li>
+						<li><p>이슈 진단 2</p>
+							<ul>
+								<li><a href="sub15.html">조흠학 | 중대재해처벌법의 쟁점과 개선 방안</a></li>
+							</ul>
+						</li>
+						<li><p>연구 논단 1</p>
+							<ul>
+								<li><a href="sub16.html">김세훈 | 지방공공기관의 한국판 뉴딜 실행을 위한 접근 전략</a></li>
+							</ul>
+						</li>
+						<li><p>실무논단</p>
+							<ul>
+								<li><a href="sub17.html">김상길 | 지방공기업의 투명성·효율성·책임성 제고를 위한 정책 제언</a></li>
+							</ul>
+						</li>
+						<li><p>HR 강좌</p>
+							<ul>
+								<li><a href="sub18.html">유일한 | 코로나19와 HR의 대응, 디지털 리더십과 36계</a></li>
+							</ul>
+						</li>
+						<li><p>노무 강좌</p>
+							<ul>
+								<li><a href="sub19.html">최혁진 | 기간제 근로자의 갱신기대권의 성립 요건</a></li>
+							</ul>
+						</li>
+						<li><p>법률 강좌</p>
+							<ul>
+								<li><a href="sub20.html">장호진 | 입찰, 공모 등 과정에서의 아이디어 탈취 행위 금지</a></li>
+							</ul>
+						</li>
+						<li><p>상시 자문</p>
+							<ul>
+								<li><a href="sub21.html">단체협약 유효기간 중 보충교섭에 응해야 하는지 여부 외</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">생활 & 문화</h3>
+					<ul class="headerSection">
+						<li><p>마을의 재발견</p>
+							<ul>
+								<li><a href="sub22.html">하숙 문화와 이야기를 품은 특별한 공간으로의 초대!</a></li>
+							</ul>
+						</li>
+						<li><p>4차 산업혁명 노트</p>
+							<ul>
+								<li><a href="sub23.html">세계는 지금 대기오염과 전쟁 중… ICT로 극복한다</a></li>
+							</ul>
+						</li>
+					</ul>
+					<h3 class="headerTitle">뉴스</h3>
+					<ul class="headerSection">
+						<li><p>지방공기업 뉴스</p>
+							<ul>
+								<li><a href="sub24.html">강북구도시관리공단_거주자우선주차장 경차 전용 구획 대폭 확대 외</a></li>
+							</ul>
+						</li>
+						<li><p>ERC 뉴스</p>
+							<ul>
+								<li><a href="sub25.html">2021년 제2차 지방공기업 CEO 포럼 개최 외</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="subVisual" style="background:url(style/img/sub23_visual.jpg) top center no-repeat; background-size:cover;"></div>
+	<div id="subTitle">
+		<div class="titleArea">
+			<div class="title">
+				세계는 지금 대기오염과 전쟁 중… <br/>
+				<b>ICT로 극복한다</b>
+			</div>
+			<div class="title_small">
+				미세먼지 잡는 해결사 <br/>
+				‘드론·블록체인’의 활용 주목
+			</div>
+		</div>
+		<div class="readArea">
+			전 세계는 지금 대기오염과의 전쟁을 치르고 있다. 환경문제가 세계적인 위협이 되고 있는 가운데 세계 각국은 첨단정보기술을 활용해 미세먼지 피해를 줄일 수 있는 정책을 세우고 다양한 시도들을 꾀하고 있다. 최근에는 미세먼지 해결을 위한 사물인터넷, 빅데이터, AI의 활용에서 나아가 드론, 블록체인의 활약이 주목을 받고 있다. 향후 시대의 변화, 기술의 발전에 따라 미세먼지 피해를 줄이고 완화하는 데에 첨단정보기술은 미래사회에 큰 변화를 줄 것으로 기대된다. 
+			<br><br>
+			<b>글</b> 편집실
+		</div>
+	</div>
+	<div id="subSection">
+		<div class="sectionArea">
+			<div class="imgArea">
+				<img src="style/img/sub23_img1.jpg" alt="이미지">
+			</div>
+		</div>
+		<div class="sectionArea">
+			<div class="textTitle font_20 color1">미세먼지 저감을 위한 각국의 노력과 다양한 기술</div>
+			<div class="textArea">
+				우리나라보다 먼저 미세먼지로 몸살을 앓았던 도시들은 어떻게 미세먼지를 극복하고 있을까. 영국은 미세먼지의 원인을 찾기 위해 대기 환경 모니터링 제도를 운영하고 있다. 해마다 대기 환경 상태 정보 보고서를 발간하고 모니터링을 통해 수집한 정보를 ‘맑은 길 찾기(Find a clean air route)’ 앱으로 시민들에게 공개하고 있다. 이렇게 수집된 미세먼지 자료는 대기질 개선 제도에 활용된다. 
+			</div>
+			<div class="textArea">
+				다양한 제도를 펼치고 있는 프랑스 파리는 최근 크리테르  (Crit’Air) 제도를 도입하여 경유차의 제조 시기와 배출량에 따라 5등급으로 나누어 관리하고 노후 경유차의 경우 파리 진입을 제한하고 있다. 또 전기차나 수소전기차를 구매하는 소유주에게 보조금을 지원하는 인센티브 제도, 나무 보일러 환경 인증 제도를 마련하는 등 미세먼지 문제의 근본적인 해결을 위해 노력하고 있다.
+			</div>
+			<div class="textArea">
+				일본은 대기 중의 이산화황의 농도를 낮추기 위해 우선 황 함유량이 낮은 원유를 수입하는 동시에 중유를 탈황하고, 배출가스를 제어하는 기술 개발에 앞장서고 있다. 공해 주범인 노후화된 디젤 자동차가 배출가스 기준을 충족하지 못할 경우 운행을 중단시키고 벌금을 부과하는 ‘디젤차 NO’ 정책을 시행하였다.
+			</div>
+			<div class="textArea">
+				국내에서는 각 지자체가 스마트시티 조성을 통해 미세먼지 해결에 대응하고 있다. 빅데이터를 기반으로 한 미세먼지 대응시스템을 개발하고 있는 남양주시를 비롯, 부천시의 미세먼지 클린 특화단지 조성, 판교의 미세먼지 프리존 등 다양한 시도가 이뤄지고 있다. 향후 미세먼지 저감 정책에 관한 개별 지방정부의 한계를 극복하기 위한 공동 대응 방안에도 적극 나설 것으로 예상된다.
+			</div>
+			<div class="textTitle2 text_center">[그림 1] 영국의 ‘맑은 길 찾기(Find a clean air route)’ 앱 화면</div>
+			<div class="imgArea">
+				<img src="style/img/sub23_img2.jpg" alt="이미지">
+				<div class="caption">출처 : <a href="http://www.london.gov.uk" target="_blank">www.london.gov.uk</a></div>
+			</div>
+		</div>
+		<div class="sectionArea">
+			<div class="textTitle font_20 color1">미세먼지·기상관측… 환경 분야 속 ‘드론’의 역할</div>
+			<div class="textArea">
+				관련 기술이 빠르게 발전하면서 드론의 활용 영역이 넓어지고 있는 가운데 드론의 활약은 환경 분야로도 이어진다.   
+			</div>
+			<div class="textArea">
+				센서와 카메라를 장착한 기상관측용 드론은 사업장의 오염물질을 실시간으로 확인하고 불법행위를 촬영하여 배출원을 확인할 수 있다. 특히 이 드론을 활용하면 기온, 습도, 기압, 풍향, 풍속 등 기상정보를 수집하는 한편, 초미세먼지를 정밀 관측하고 미세먼지 이동 방향을 확인할 수 있다. 미세먼지의 질량과 수농도 측정 센서를 장착해 미세먼지 농도를 실시간으로 확인할 수 있고, 영하 35~40도, 최대풍속 초속 10m 등 극한 외부환경에서도 운용할 수 있다는 장점도 있다. 또 기체에 장착된 센서를 통해 수집된 데이터는 사물인터넷(IoT)망을 이용해 웹 또는 애플리케이션으로 실시간 전송해 사용자가 빠르게 환경정보를 확인할 수 있다. 
+			</div>
+			<div class="textArea">
+				현재의 관측 방식으로는 초미세먼지 원인과 이동 경로를 밝혀내는 것은 어렵지만, 기상관측용 드론을 활용하면 미세먼지의 경로 분석, 도심의 미세먼지 블록 파악, 이동 경로 분석 및 예측에 따른 미세먼지 정보를 확인할 수 있게 된다. 현재는 드론을 상용화하는 데에 한계가 있지만 향후 전자, 통신, 하드웨어의 모든 분야가 융복합해서 적용된다면 드론은 기상정보와 미세먼지를 해결하는 데에 한 걸음 더 진보하게 될 것이다. 
+			</div>
+		</div>
+		<div class="sectionArea">
+			<div class="textTitle font_20 color1">대기오염 잡는 해결사로 주목 받는 블록체인</div>
+			<div class="textArea">
+				전 세계는 파리협정을 맺어 지구의 온도 상승을 산업화 이전과 대비해 2°C로 제한하겠다는 목표 설정에 합의했고, 연간 1천억 달러 규모의 공공 및 민간 자금을 조성해 기후 위협에 대응하기로 정하였다. 세계 기후에 있어 중요한 문제는 기후 협약이 잘 지켜지고 있는지, 탄소배출권이 어떻게 거래되는지를 정확히 추적할 수 있는가 하는 점이다. 이때 블록체인 기술은 환경문제를 해결하는 데에도 활용되고 있다. 
+			</div>
+			<div class="textArea">
+				일례로 중국 기업인 에너지 블록체인 랩(Energy-Blockchain Labs)은 IBM과 협업해 탄소 배출을 관리하는 플랫폼을 개발했다. 이 플랫폼은 블록체인 네트워크 참여자들의 에너지 생산과 소비 활동이 환경에 끼치는 영향을 추적 및 수치화해 기록하고 플랫폼 참여자들에게 투명하게 공개해 탄소 배출이 많은 기업은 탄소배출권을 구매할 수 있도록 지원한다. 즉 블록체인 기술로 중국 미세먼지의 원인으로 꼽히는 여러 공장의 탄소 배출을 관리해 궁극적으로 저탄소 배출을 이끌어내고 더 나아가 환경 보전에 큰 역할을 한다는 것이다.  
+			</div>
+			<div class="textArea">
+				우선 에너지 블록체인 랩은 탄소 자산 개발 플랫폼을 통해 중국 영토가 너무 넓어 탄소배출권 거래를 위한 시장 자체를 만들기 어려웠던 문제점을 해결할 수 있게 되었다. 네트워크 참여자인 중앙 정부, 지방 정부, 탄소배출권 거래소, 탄소배출 검사·인증기관 등 모든 이해 관계자들이 데이터에 원활하게 접근할 수 있어 기업들의 탄소배출 할당량의 진행 상황을 쉽게 모니터링할 수 있다. 기업들 역시 자사의 탄소배출량을 쉽게 파악할 수 있어 탄소배출권을 언제 판매하고 구매해야 하는지 확인할 수 있다. 
+			</div>
+			<div class="textArea">
+				이처럼 블록체인 플랫폼을 활용해 미세먼지 배출량 추적, 친환경 에너지 사용 촉진, 탄소배출권 거래 활성화 등이 가능할 것으로 기대를 모으고 있다. <label class="endMark"></label>
+			</div>
+		</div>
+	</div>
+	<div id="right_banner">
+		<div>
+			<a href="javascript:void(0);" id="viewMenu"><img src="./style/img/setting/qimg1.png" /></a>
+			<a href="javascript:void(0);" id="topSet"><img src="./style/img/setting/qimg2.png" /></a>
+			<a href="./<%=pageBefore%>"><img src="./style/img/setting/qimg3.png" /></a>
+			<a href="./<%=pageAfter%>"><img src="./style/img/setting/qimg4.png" /></a>
+		</div>
+	</div>
+	<div id="footerSet">
+		<div class="wrap">
+			<a href="https://www.erc.re.kr/" target="_blank" class="logo"><img src="style/img/setting/logo-f.png" alt="지방공기업평가원"></a>
+			<div class="sns">
+				<a href="https://www.youtube.com/channel/UCC9O2yXc0eAYjBVhjJ3gnxQ" target="_blank" class="youtube"><img src="style/img/setting/icon-sns-y.png" alt="youtube"></a>
+				<a href="https://www.facebook.com/erc.re.kr/" target="_blank" class="facebook"><img src="style/img/setting/icon-sns-f.png" alt="facebook"></a>
+			</div>
+			<div class="info">
+				<p>(우) 06647 서울 서초구 반포대로30길 12-6 (지번) 서초동 1552-13</p>
+				<p>Copyright(c) Evaluation Institute of Regional Public Corporation. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- <%@ include file="./sub_include.jsp"%>
+<%@ include file="./foot.jsp"%> -->

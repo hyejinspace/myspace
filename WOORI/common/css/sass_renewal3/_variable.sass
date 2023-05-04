@@ -1,0 +1,710 @@
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    letter-spacing: -0.75px
+    color: #333
+    -webkit-overflow-scrolling: touch
+    user-select: none
+img
+    vertical-align: middle
+select,input,button,textarea
+    appearance: none
+    border: none
+    border-radius: 0
+    background-color: transparent
+select,input,button,textarea
+    &:focus
+        outline: none
+select
+    // background: url('../img/select.jpg') no-repeat 98% 50%
+select::-ms-expand 
+    display: none
+input[type="text"],
+input[type="number"]
+    user-select: auto
+input[type="checkbox"]
+    appearance: checkbox
+    border-radius: 0
+input[type="radio"]
+    display: none
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+    -webkit-appearance: none
+textarea
+    resize: none
+    user-select: auto
+table
+    border-collapse: collapse
+html,body
+    width: 100%
+    height: 100%
+    font-family: 'Noto Sans KR', sans-serif
+    font-size: 20px
+    // overflow: hidden
+body
+    max-width: 100%
+    min-width: 320px
+    margin: 0 auto
+    position: relative
+header,section
+    opacity: 0
+body.on header,
+body.on section
+    opacity: 1
+    transition: all 0.6s ease
+    transition-delay: 0.9s
+body.on header.main
+    transition: all 0s
+    transition-delay: 0s
+header
+    position: fixed
+    width: 100%
+    padding: 1.5rem 0
+    right: 0
+    top: 0
+    z-index: 996
+    .wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 90%
+        margin: 0 auto
+        .left
+            display: flex
+            align-items: center
+            .menu
+                display: inline-block
+                width: 38px
+                height: 38px
+                margin-right: 2rem
+                background-image: url("../../common/images/menu_renewal02.png")
+                background-repeat: no-repeat
+                background-position: center
+                background-color: transparent
+                background-size: contain
+                cursor: pointer
+                >span
+                    display: none
+            .logo 
+                position: relative
+                &::after
+                    display: block
+                    content: ""
+                    position: absolute
+                    left: 0
+                    top: 0
+                    width: 120%
+                    height: 100%
+                    background-image: url(../../common/images/logo04.png)
+                    background-repeat: no-repeat
+                    background-size: contain
+                    background-position: left center
+                    transition: all 0.6s linear
+                    transition-delay: 0s
+                    opacity: 0
+                > img
+                    display: block
+                    max-width: 100%
+                    transition: all 0.6s linear
+                    transition-delay: 1s
+                    opacity: 1
+            .logo.on
+                &::after
+                    transition-delay: 1s
+                    opacity: 1
+                > img
+                    transition-delay: 0s
+                    opacity: 0
+        .right
+            position: relative
+            .this_month
+                position: relative
+                min-width: 240px
+                padding: 0 calc(11px + 1rem) 0 1rem
+                height: 57px
+                font-family: 'Roboto Condensed', sans-serif
+                font-size: 1.35rem
+                line-height: 57px
+                color: #fff
+                cursor: pointer
+                &::after
+                    display: inline-block
+                    content: ""
+                    position: absolute
+                    right: 0
+                    top: 40%
+                    width: 11px
+                    height: 9px
+                    background-image: url("../../common/images/select.png")
+                    background-size: 100%
+                    transition: all 0.3s ease
+                    z-index: 1
+                >small
+                    margin-left: 0.25rem
+                    font-family: 'Roboto Condensed', sans-serif
+                    font-size: 70%
+                    color: #fff
+            .this_month.on::after
+                transform: rotate(180deg)
+            .last_month
+                display: none
+                position: absolute
+                left: 0
+                top: 57px
+                width: 100%
+                background-color: #000000
+                z-index: 2
+                overflow-y: scroll
+                max-height: 800px
+                -ms-overflow-style: none
+                scrollbar-width: none
+                >li
+                    >a
+                        display: block
+                        padding: 0.5rem 1rem
+                        font-family: 'Roboto Condensed', sans-serif
+                        font-size: 1.35rem
+                        color: #fff
+                        >small
+                            margin-left: 0.25rem
+                            font-family: 'Roboto Condensed', sans-serif
+                            font-size: 70%
+                            color: #fff
+                    >a:hover
+                        background-color: #373737
+                >li:last-child >a
+                    font-size: 0.9rem
+                >li.on
+                    >a
+                        background-color: #373737
+            .last_month::-webkit-scrollbar
+                display: none
+header.sub,
+header.on
+    height: 120px
+    border-bottom: 1px solid #aaa
+    background-color: #fff
+    .wrap 
+        .left 
+            .logo
+                position: absolute
+                left: 50%
+                transform: translateX(-50%)
+                max-width: 220px
+                >img
+                    animation: none
+                    transition: none
+                    opacity: 1
+                &::after
+                    opacity: 0
+                    transition: none
+                    transition-delay: none
+            .menu
+                background-image: url(../../common/images/close.png)
+                background-size: contain
+                width: 38px
+                height: 38px
+        .right
+            .this_month
+                color: #000
+                &::after
+                    background-image: url(../../common/images/select02.png)
+                small
+                    color: #000
+header.sub,
+header.sticky
+    position: fixed
+    border: none
+    transition: none !important
+    transition-delay: none !important
+    opacity: 1
+    background-color: #fff
+    .wrap .left 
+        .menu 
+            background-image: url(../../common/images/menu_renewal.png)
+        .logo::after
+            background-image: url(../../common/images/logo05.png)
+    .wrap .right .this_month
+        color: #000
+        &::after
+            background-image: url(../../common/images/select02.png)
+        small
+            color: #000
+header.sub.on,
+header.sticky.on
+    border-bottom: 1px solid #aaa
+    .wrap .left .menu
+        background-image: url(../../common/images/close.png) !important
+header.sub ~ section
+    opacity: 1
+    transition: none !important
+    transition-delay: none !important
+    margin-top: 117px
+
+
+nav
+    position: fixed
+    display: none
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    padding-top: calc(120px + 4rem)
+    background-color: #fff
+    z-index: 990
+    overflow: auto
+    overflow-x: hidden
+    -ms-overflow-style: none
+    scrollbar-width: none
+    &::-webkit-scrollbar 
+        display: none
+    .gnb
+        display: flex
+        flex-wrap: wrap
+        margin: 0 auto
+        width: 100%
+        .division
+            display: flex
+            flex-wrap: wrap
+            width: 100%
+            margin-bottom: 2rem
+            padding: 0 calc((100% - 1100px)/2) 2.5rem
+            .gnb_tit
+                h4
+                    font-family: 'Vitro_core'
+                    white-space: nowrap
+                    padding-bottom: 1rem
+                    span
+                        font-family: 'Vitro_core'
+                        font-size: 1.3rem
+            li
+                display: inline-block
+                width: calc(20% - 1.8%)
+                padding-top: 48px
+                margin-right: 2.25%
+                a
+                    display: block
+                    position: relative
+                    overflow: hidden
+                    &:hover .img
+                        transition: all 0.3s linear
+                        border: 6px solid #87a0ff
+                    &::after
+                        position: absolute
+                        content: ''
+                        display: block
+                        width: 50px
+                        height: 50px
+                        background-color: #ddd
+                        transform: rotate(45deg)
+                        transform-origin: center
+                        top: -30px
+                        left: -30px
+                .img
+                    background-color: #87a0ff
+                    img
+                        display: block
+                        width: 100%
+                .text
+                    span
+                        display: block
+                        padding: 1rem 0 0.5rem
+                        font-size: 0.75rem
+                        font-weight: 500
+                    p
+                        font-size: 0.95rem
+                        font-weight: 300
+                        line-height: 1.25
+                        word-break: keep-all
+                        b
+                            font-size: 0.95rem
+                            font-weight: 400
+                            color: #87a0ff
+            li.gnb_tit
+                padding-top: 0
+            li:nth-child(5n)
+                margin-right: 0
+        .division.pink
+            h4 span 
+                color: #f66
+            li a::after
+                background-color: #f66
+            li a:hover .img
+                border-color: #f66
+        .division.blue
+            h4 span 
+                color: #647fe5
+            li a::after
+                background-color: #647fe5
+            li a:hover .img
+                border-color: #647fe5
+        .division.green
+            h4 span 
+                color: #239987
+            li a::after
+                background-color: #239987
+            li a:hover .img
+                border-color: #239987
+        .division.gray
+            h4 span 
+                color: #aaa
+            li a::after
+                background-color: #aaa
+            li a:hover .img
+                border-color: #aaa
+
+        .reporters
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+            width: 100%
+            background-color: #f9f9f9
+            padding: 1rem calc((100% - 1100px)/2)
+            >span
+                width: 50%
+                margin-right: 1rem
+                .title
+                    display: block
+                    font-size: 0.75rem
+                    font-weight: 600
+                    color: #777
+                    padding-bottom: 0.5rem
+                .names
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: flex-start
+                    width: 100%
+                    margin-bottom: 1rem
+                    div
+                        width: calc(50% - 0.5rem)
+                        margin-right: 1rem
+                        font-size: 0.7rem
+                        font-weight: 300
+                        color: #777
+                        font-size: 0.65rem
+                        b
+                            font-size: 100%
+                            line-height: 1.5
+                            color: #777
+                    div:last-child
+                        margin-right: 0
+                .names:last-child
+                    margin-bottom: 0
+            >span:last-child
+                margin-right: 0
+nav.on
+    display: block
+footer
+    width: 100%
+    padding: 1.5rem 0
+    background-color: #333333
+    .wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 1400px
+        margin: 0 auto
+        .info
+            *
+                font-size: 0.65rem
+                color: #a1a2a2
+                line-height: 1.3
+            .copy
+                padding-bottom: 0.25rem
+        .sns
+            display: flex
+            a
+                display: inline-block
+                width: 49px
+                height: 49px
+                margin-right: 1.25rem
+                background-image: url(../../common/images/sns01_gray.png)
+                background-size: 100%
+                background-position: top center
+            a:nth-child(2)
+                background-image: url(../../common/images/sns02_gray.png)
+            a:nth-child(3)
+                background-image: url(../../common/images/sns03_gray.png)
+            a:nth-child(4)
+                background-image: url(../../common/images/sns04_gray.png)
+            a:hover
+                background-position: bottom center
+            a:last-child
+                margin-right: 0
+//과월호 보기 페이지
+.old
+    display: flex
+    flex-wrap: wrap
+    position: relative
+    padding: 7rem calc((100% - 1200px)/2) 4rem
+    > li
+        width: 33.33%
+        margin-bottom: 5rem
+        overflow: hidden
+        .img
+            display: inline-block
+            float: left
+            padding: 0.5rem
+            border: 1px solid #333
+            img
+                display: block
+                width: 161px
+        .text
+            display: inline-block
+            float: left
+            width: calc(100% - 183px)
+            padding-left: 0.75rem
+            p
+                font-size: 1rem
+                font-weight: 300
+                b
+                    font-size: 1.1rem
+                    font-weight: 600
+        .link
+            display: block
+            margin-top: 3rem
+            a
+                display: block
+                width: 119px
+                height: 36px
+                margin-bottom: 0.25rem
+                font-size: 0.8rem
+                line-height: 34px
+                border-radius: 0.25rem
+                border: 1px solid #a0a0a0
+                text-align: center
+            a:last-child
+                margin-bottom: 0
+            a:hover
+                background-color: #313131
+                color: #fff
+    > li:nth-last-child(3),
+    > li:nth-last-child(2),
+    > li:nth-last-child(1)
+        margin-bottom: 2rem
+/*Small screen*/
+@media (max-width: 1666px)
+    footer .wrap
+        width: 90%
+/*Ipad Pro*/
+@media (max-width: 1365px)
+    nav .gnb 
+        .division
+            width: 90%
+            margin: 0 auto
+            padding: 0 0 2.5rem
+            li
+                display: block
+                width: 100%
+                padding: 0
+                margin-bottom: 2rem
+                a
+                    display: flex
+                    flex-wrap: wrap
+                    .img
+                        width: 25%
+                        margin-right: 5%
+                        border: none !important
+                        background-color: transparent
+                    .text
+                        width: 70%
+                        span
+                            padding: 0.5rem 0
+                            font-size: 1rem
+                        p
+                            font-size: 1.25rem
+                            b
+                                font-size: 1.25rem
+        .reporters
+            > span
+                margin-left: 5%
+                margin-right: 0.5rem
+                .names div
+                    width: calc(50% - 0.25rem)
+                    margin-right: 0.5rem
+            > span:last-child
+                margin-left: 0
+                margin-right: 5%
+    .old
+        padding: 8rem 5% 0
+        > li
+            width: 50%
+            margin-bottom: 4rem
+        > li:nth-last-child(3)
+            margin-bottom: 4rem
+
+/*Ipad Pro*/
+@media (max-width: 1024px)
+    header.sub .wrap .this_month
+        min-width: 200px
+
+/*Ipad*/
+@media (max-width: 991.98px)
+    header.sub .wrap .left .logo,
+    header.on .wrap .left .logo
+        position: relative
+        left: auto
+        transform: none
+    header.sub .wrap .left .menu,
+    header.on .wrap .left .menu,
+    header .wrap .left .menu
+        margin-right: 2rem
+    nav 
+        .close
+            right: auto
+            left: 2%
+            top: 1.25rem
+            width: 48px
+            height: 48px
+            background-image: url(../../common/images/close.png)
+            background-color: transparent
+        .wrap
+            width: 100%
+
+/*Tablet*/
+@media (max-width: 768px)
+    header
+        padding: 0.5rem 0
+    header.sub, header.on
+        height: 77px
+    nav.on
+        padding-top: 6rem
+    header.sub ~ section
+        margin-top: 77px
+/*Tablet*/
+@media (max-width: 767.98px)
+    nav .gnb .reporters
+        padding: 1rem 5%
+        >span .names
+            flex-direction: column
+            margin-right: 0
+            margin-bottom: 0
+            div 
+                width: 100%
+    footer 
+        .wrap
+            flex-direction: column
+            .info
+                margin-bottom: 0.5rem
+                text-align: center
+            .sns
+                justify-content: center
+                width: 100%
+    .old
+        padding-top: 5rem
+    
+/*Mobile*/
+@media (max-width: 575.98px)
+    header 
+        padding: 0.5rem 0
+        .wrap 
+            .left 
+                flex-wrap: nowrap
+                .menu
+                    width: 24px
+                    height: 24px
+                    margin-right: 0.5rem
+                .logo > img
+                    width: 90px
+                .logo::after
+                    width: 150%
+            .right 
+                .this_month
+                    font-size: 0.9rem
+                    min-width: 0
+                    height: 40px
+                    line-height: 38px
+                    padding: 0 calc(11px + 0.5rem) 0 1rem
+                .last_month
+                    top: 40px
+                    overflow-y: scroll
+                    max-height: 500px
+                    >li >a
+                        font-size: 0.9rem
+                    >li:last-child a
+                        font-size: 0.75rem
+    header.sub,header.on
+        height: auto
+        .wrap .left 
+            .menu
+                width: 24px !important
+                height: 24px !important
+                margin-right: 0.5rem
+            .logo > img
+                width: 150px
+    header.sub ~ section
+        margin-top: 60px
+
+    nav 
+        padding-top: calc(60px + 2rem)
+        .gnb
+            .division
+                padding-bottom: 1rem
+                li
+                    margin: 0 0 1rem
+                    h4
+                        font-size: 1rem
+                    a::after
+                        top: -30px
+                        left: -40px
+                    
+                    a .text
+                        span
+                            padding: 0.25rem 0
+                            font-size: 0.65rem
+                        p
+                            font-size: 0.85rem
+                            b
+                                font-size: 0.85rem
+                .gnb_tit h4 span
+                    font-size: 1rem
+            .reporters
+                padding: 1rem 2%
+                > span
+                    margin-left: 0
+                    margin-right: 0.25rem
+                > span:last-child
+                    margin-right: 0
+    nav.on
+        padding-top: 4rem
+    footer 
+        padding: 1rem 0
+        .wrap
+            .sns 
+                a,button
+                    width: 32px
+                    height: 32px
+                    margin-right: 0.5rem
+    .old
+        > li
+            width: 100%
+            margin-bottom: 2rem !important
+            .img img
+                width: 130px
+            .text
+                width: calc(100% - 152px)
+                padding-left: 1rem
+                p
+                    font-size: 1rem
+                    b
+                        font-size: 1rem
+            .link
+                margin-top: 1.75rem
+                a
+                    width: 106px
+                    height: 32px
+                    font-size: 0.75rem
+                    line-height: 30px
+
+
+/*Mobile(minimum)*/
+@media (max-width: 365px)
+    header .wrap .left .menu
+        width: 24px
+        height: 24px
+    header .wrap .left .logo > img
+        width: 100px
+    header.sub .wrap .left .logo > img
+        width: 100px

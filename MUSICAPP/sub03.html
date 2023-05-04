@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="musicWeb search">
+        <!-- 헤더 -->
+        <header>
+            <div class="wrap">
+                <div class="inner">
+                    <h1><a href="index.html" class="logo">LOGO</a></h1>
+                    <button type="button" class="menuBtn"></button>
+                    <nav>
+                        <ul>
+                            <li><a href="">PANGAEA</a></li>
+                            <li><a href="">NEW</a></li>
+                            <li><a href="">CHART</a></li>
+                            <li><a href="">MAGAZINE</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <input type="search" id="search" value="검색어를 입력해주세요">
+                        <button type="button" class="cancel">취소</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- 콘텐츠 영역 -->
+        <div class="contentsArea searchPage">
+            <div class="wrap">
+                <div class="inner">
+                    
+                    <!-- 검색 카테고리 영역 -->
+                    <div class="searchWrap">
+                        <ul>
+                            <li class="all on"><a href="">전체</a></li>
+                            <li class="track"><a href="">트랙</a></li>
+                            <li class="users"><a href="">사람들</a></li>
+                            <li class="album"><a href="">앨범</a></li>
+                            <li class="playlist"><a href="">플레이리스트</a></li>
+                        </ul>
+                        <span class="cover"></span>
+                    </div>
+
+                    <!-- 콘텐츠 -->
+                    <div class="contents">
+
+                        <div class="searchResult">
+                            <div class="title">‘방탄소년단’ 에 대한 검색결과입니다.</div>
+                            <div class="find">
+                                <span class="findTrack">500</span>개 이상의 트랙, 
+                                <span class="findList">233</span>개의 플레이리스트, 
+                                <span class="findUser">42</span>명의 사람들을 찾았습니다.
+                            </div>
+                        </div>
+
+                        <ul>
+                            <li>
+                                <!-- 앨범아트 -->
+                                <div class="albumCover"><img src="./img/cover.jpg" alt=""></div>
+
+                                <div class="con">
+                                    <div class="player">
+                                        <!-- 재생버튼 및 노래 정보 -->
+                                        <div class="top">
+                                            <div class="musicInfo">
+                                                <button type="button" class="playBtn"></button>
+                                                <span>
+                                                    <div class="userName">판게아</div>
+                                                    <div class="musicTitle">호미들(homies) - 무덤 위에 소주를 부어줘</div>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class="date">2022-06-33</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- 뮤직플레이어 -->
+                                        <div class="musicPlayer">
+                                            <img src="./img/playbar02.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bottom">
+
+                                    <div class="commentWrap">
+                                        <!-- 댓글 입력 -->
+                                        <div class="inputArea">
+                                            <textarea class="commentInput" placeholder="댓글 달기..."></textarea>
+                                            <div class="userIMG"><img src="./img/userImg.jpg" alt=""></div>   
+                                            <button type="submit" class="submit">작성</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="functionWrap">
+                                        <div class="function">
+                                            <button type="button" class="like">2,185</button>
+                                            <button type="button" class="share">36</button>
+                                            <button type="button" class="report">공유</button>
+                                            <button type="button" class="link">링크 복사</button>
+                                            <button type="button" class="donation">후원하기</button>
+                                        </div>
+                                        <div class="statistics">
+                                            <span class="view">2,418화</span>
+                                            <span class="commentNum">50개</span>
+                                            <button type="button" class="FuncBtn"></button>
+
+                                            <span class="date">2022-11-16</span>
+
+                                            <div class="musicFuncPopup Popup">
+                                                <ul>
+                                                    <li><button type="button" class="putMusic">재생곡 다음에 넣기</button></li>
+                                                    <li><button type="button" class="listAdd">플레이리스트에 넣기</button></li>
+                                                    <li><button type="button" class="down">다운로드</button></li>
+                                                    <li><button type="button" class="station">스테이션</button></li>
+                                                    <li><button type="button" class="report">신고하기</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 앨범아트 -->
+                                <div class="albumCover"><img src="./img/cover.jpg" alt=""></div>
+
+                                <div class="con">
+                                    <div class="player">
+                                        <!-- 재생버튼 및 노래 정보 -->
+                                        <div class="top">
+                                            <div class="musicInfo">
+                                                <button type="button" class="playBtn"></button>
+                                                <span>
+                                                    <div class="userName">판게아</div>
+                                                    <div class="musicTitle">호미들(homies) - 무덤 위에 소주를 부어줘</div>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class="date">2022-06-33</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- 뮤직플레이어 -->
+                                        <div class="musicPlayer">
+                                            <img src="./img/playbar02.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bottom">
+
+                                    <div class="commentWrap">
+                                        <!-- 댓글 입력 -->
+                                        <div class="inputArea">
+                                            <textarea class="commentInput" placeholder="댓글 달기..."></textarea>
+                                            <div class="userIMG"><img src="./img/userImg.jpg" alt=""></div>   
+                                            <button type="submit" class="submit">작성</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="functionWrap">
+                                        <div class="function">
+                                            <button type="button" class="like">2,185</button>
+                                            <button type="button" class="share">36</button>
+                                            <button type="button" class="report">공유</button>
+                                            <button type="button" class="link">링크 복사</button>
+                                            <button type="button" class="donation">후원하기</button>
+                                        </div>
+                                        <div class="statistics">
+                                            <span class="view">2,418화</span>
+                                            <span class="commentNum">50개</span>
+                                            <button type="button" class="FuncBtn"></button>
+
+                                            <span class="date">2022-11-16</span>
+
+                                            <div class="musicFuncPopup Popup">
+                                                <ul>
+                                                    <li><button type="button" class="putMusic">재생곡 다음에 넣기</button></li>
+                                                    <li><button type="button" class="listAdd">플레이리스트에 넣기</button></li>
+                                                    <li><button type="button" class="down">다운로드</button></li>
+                                                    <li><button type="button" class="station">스테이션</button></li>
+                                                    <li><button type="button" class="report">신고하기</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <!-- 앨범아트 -->
+                                <div class="albumCover"><img src="./img/cover.jpg" alt=""></div>
+
+                                <div class="con">
+                                    <div class="player">
+                                        <!-- 재생버튼 및 노래 정보 -->
+                                        <div class="top">
+                                            <div class="musicInfo">
+                                                <button type="button" class="playBtn"></button>
+                                                <span>
+                                                    <div class="userName">판게아</div>
+                                                    <div class="musicTitle">호미들(homies) - 무덤 위에 소주를 부어줘</div>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <span class="date">2022-06-33</span>
+                                            </div>
+                                        </div>
+
+                                        <!-- 뮤직플레이어 -->
+                                        <div class="musicPlayer">
+                                            <img src="./img/playbar02.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="bottom">
+
+                                    <div class="commentWrap">
+                                        <!-- 댓글 입력 -->
+                                        <div class="inputArea">
+                                            <textarea class="commentInput" placeholder="댓글 달기..."></textarea>
+                                            <div class="userIMG"><img src="./img/userImg.jpg" alt=""></div>   
+                                            <button type="submit" class="submit">작성</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="functionWrap">
+                                        <div class="function">
+                                            <button type="button" class="like">2,185</button>
+                                            <button type="button" class="share">36</button>
+                                            <button type="button" class="report">공유</button>
+                                            <button type="button" class="link">링크 복사</button>
+                                            <button type="button" class="donation">후원하기</button>
+                                        </div>
+                                        <div class="statistics">
+                                            <span class="view">2,418화</span>
+                                            <span class="commentNum">50개</span>
+                                            <button type="button" class="FuncBtn"></button>
+
+                                            <span class="date">2022-11-16</span>
+
+                                            <div class="musicFuncPopup Popup">
+                                                <ul>
+                                                    <li><button type="button" class="putMusic">재생곡 다음에 넣기</button></li>
+                                                    <li><button type="button" class="listAdd">플레이리스트에 넣기</button></li>
+                                                    <li><button type="button" class="down">다운로드</button></li>
+                                                    <li><button type="button" class="station">스테이션</button></li>
+                                                    <li><button type="button" class="report">신고하기</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="userSlide">
+                            <div class="swiper-container">
+                                <ul class="swiper-wrapper">
+                                    <li class="swiper-slide">
+                                        <div>
+                                            <div class="userProfile">
+                                                <img src="./img/profile02.png" alt="">
+                                            </div>
+                                            <div class="userName">판게아</div>
+                                            <div class="userID">@Pangaea</div>
+                                            <button type="button" class="follow">팔로우</button>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div>
+                                            <div class="userProfile">
+                                                <img src="./img/profile03.png" alt="">
+                                            </div>
+                                            <div class="userName">판게아</div>
+                                            <div class="userID">@Pangaea</div>
+                                            <button type="button" class="follow">팔로우</button>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div>
+                                            <div class="userProfile">
+                                                <img src="./img/profile04.png" alt="">
+                                            </div>
+                                            <div class="userName">판게아</div>
+                                            <div class="userID">@Pangaea</div>
+                                            <button type="button" class="follow">팔로우</button>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div>
+                                            <div class="userProfile">
+                                                <img src="./img/profile05.png" alt="">
+                                            </div>
+                                            <div class="userName">판게아</div>
+                                            <div class="userID">@Pangaea</div>
+                                            <button type="button" class="follow">팔로우</button>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div>
+                                            <div class="userProfile">
+                                                <img src="./img/profile02.png" alt="">
+                                            </div>
+                                            <div class="userName">판게아</div>
+                                            <div class="userID">@Pangaea</div>
+                                            <button type="button" class="follow">팔로우</button>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div>
+                                            <div class="userProfile">
+                                                <img src="./img/profile02.png" alt="">
+                                            </div>
+                                            <div class="userName">판게아</div>
+                                            <div class="userID">@Pangaea</div>
+                                            <button type="button" class="follow">팔로우</button>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div>
+                                            <div class="userProfile">
+                                                <img src="./img/profile02.png" alt="">
+                                            </div>
+                                            <div class="userName">판게아</div>
+                                            <div class="userID">@Pangaea</div>
+                                            <button type="button" class="follow">팔로우</button>
+                                        </div>
+                                    </li>
+                                    <li class="swiper-slide">
+                                        <div>
+                                            <div class="userProfile">
+                                                <img src="./img/profile02.png" alt="">
+                                            </div>
+                                            <div class="userName">판게아</div>
+                                            <div class="userID">@Pangaea</div>
+                                            <button type="button" class="follow">팔로우</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <span class="cover"></span>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <button type="button" class="serchResultMore"><span>검색결과 더보기</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 플레이어 영역 -->
+        <div class="playerPopup">
+            <button type="button" class="close"></button>
+            <div class="wrap">
+                <div class="inner">
+                    <div class="btnWrap">
+                        <button type="button" class="prevSong"></button>
+                        <button type="button" class="play"></button>
+                        <button type="button" class="nextSong"></button>
+                        <button type="button" class="shuffle"></button>
+                        <button type="button" class="repeat"></button>
+                    </div>
+
+                    <div class="ProgressWrap">
+                        <span class="startTime">0:44</span>
+                        <div class="progress">
+                            <input type="range" id="range" min="0" max="100" value="50">
+                        </div>
+                        <span class="endTime">10:55</span>
+                    </div>
+
+                    <div class="sound">
+                        <button type="button" class="soundBtn"></button>
+                        <div class="control">
+                            <div class="progress">
+                                <input type="range" id="soundRange" min="0" max="100" value="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="songInfo">
+                        <div class="albumCover"><img src="./img/cover.jpg" alt=""></div>
+                        <span>
+                            <div class="userName">판게아</div>
+                            <div class="musicTitle">BTS (방탄소년단) Butter</div>
+                        </span>
+                    </div>
+
+                    <div class="funcBtn">
+                        <button type="button" class="like"></button>
+                        <button type="button" class="list"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 푸터 영역 -->
+        <footer>
+            <div class="wrap">
+                <div class="inner">
+                    <ul class="top">
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">회사소개</a></li>
+                    </ul>
+                    <div class="bottom">
+                        <div class="left">
+                            <a href="index.html" class="logo_f">LOGO</a>
+                            <p class="copy">COPYRIGHTⓒ2023 주식회사 “...”<br class="mo"/> ALL RIGHTS RESERVED</p>
+                        </div>
+                        <div class="right">
+                            <p>
+                                주식회사 회사이름 | 대표이사 000 | 사업자등록번호 000-00-00000<br/>
+                                통신판매번호 0000-서울성동-00000 | 서울특별시 주소<br/>
+                                대표번호: 1588-0000 | 개인정보관리책임자: 000 admin@companycorp.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="./js/swiper.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,168 @@
+.track
+    .contentsArea .contents 
+        padding-right: 0
+        > ul 
+            > li
+                padding-bottom: 80px
+                padding-right: 24px
+        > ul >li.bg
+            padding-right: 0
+            .con
+                position: relative
+                .conBg
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    overflow: hidden
+                    img
+                        position: relative
+                        display: block
+                        left: 50%
+                        transform: translateX(-50%)
+                        height: 120%
+                .player
+                    height: 100%
+                    background-color: rgba(255,255,255,0.3)
+                    backdrop-filter: blur(5px)
+                    padding: 12px
+                    .musicPlayer img
+                        mix-blend-mode: multiply
+                        filter: brightness(0.8)
+                    .top
+                        margin-bottom: 0
+                        .musicInfo 
+                            .userName
+                                color: rgba(255, 255, 255, 0.5)
+                            .musicTitle
+                                color: #fff
+                        .date
+                            color: rgba(255, 255, 255, 0.5)
+            .commentWrap 
+                border-top: none
+                padding-top: 0
+                padding-bottom: 4px
+                .inputArea 
+                    textarea
+                        background-color: rgba(255, 255, 255, 0.16)
+                    textarea::placeholder
+                        color: #000
+                    .submit
+                        color: #fff
+            .bottom
+                margin-top: -52px
+                padding: 0 12px
+            .bottom .functionWrap
+                padding-top: 18px
+
+    .musicList
+        ul li 
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            padding: 12px 0
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08)
+            >span
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                .userIMG
+                    margin-right: 4px
+                .title
+                    span
+                        display: inline-block
+                        font-size: 14px
+                        font-weight: 500
+                        line-height: 17px
+                .view
+                    font-size: 14px
+                    font-weight: 400
+                    line-height: 17px
+                    padding-left: 16px
+                    background-image: url('../img/arrowRight02.png')
+                    background-repeat: no-repeat
+                    background-size: 5px
+                    background-position: 6px center
+            button.donation
+                display: inline-block
+                padding: 8px 8px 8px 28px
+                margin-right: 10px
+                font-size: 14px
+                font-weight: 500
+                font-family: 'Pretendard'
+                background-repeat: no-repeat
+                background-position: 9px center
+                background-size: 16px
+                border: 1px solid rgba(0, 0, 0, 0.12)
+                border-radius: 4px
+                cursor: pointer
+                background-image: url('../img/donation.png')
+
+@media (max-width: 1024px)
+    .track 
+        .contentsArea .contents
+            > ul
+                padding-bottom: 0 
+                >li
+                    padding-right: 0
+                    padding-bottom: 14px
+                >li:last-child
+                    padding-bottom: 0
+            .con 
+                .conBg img
+                    height: auto
+                    width: 100%
+            > ul > li.bg
+                padding-bottom: 14px
+                .albumCover
+                    position: absolute
+                    left: 0
+                    z-index: 2
+                .con
+                    position: relative
+                    width: 100%
+                    height: 96px
+                    padding-left: 96px
+                    overflow: hidden
+                    .conBg
+                        top: auto
+                    .player
+                        background-color: transparent
+                        backdrop-filter: none
+                        .top .musicInfo 
+                            .userName
+                                margin-bottom: 2px
+                            .playBtn
+                                top: 0
+                .statistics 
+                    width: calc(100% - 108px)
+                    top: 60px
+                    .view
+                        color: rgba(255, 255, 255, 0.5)
+                    .date
+                        margin-top: 0
+                        color: rgba(255, 255, 255, 0.5)
+                    .FuncBtn
+                        position: absolute
+                        top: -40px
+                        right: 12px
+                        filter: brightness(0) invert(1)
+                    .commentNum
+                        filter: brightness(0) invert(1)
+                .bottom
+                    padding: 0
+                    margin-top: 12px
+                    .functionWrap
+                        padding-top: 0
+            .statistics 
+                width: calc(100% - 108px)
+                .FuncBtn
+                    position: absolute
+                    top: -40px
+                    right: 0
+        .contentsArea 
+            .musicFuncPopup
+                top: -10px
+            
+    

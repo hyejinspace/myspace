@@ -1,0 +1,597 @@
+.main
+    .banner
+        display: block
+        width: 1161px
+        margin: 5rem auto 0
+        img
+            margin: 0 auto
+            width: 100%
+    .section01
+        display: block
+        position: relative
+        .bg
+            position: absolute
+            left: 0
+            top: 0
+            width: calc((100% - 1158px)/2)
+            height: 100%
+            z-index: 1
+            &::before
+                display: inline-block
+                content: ""
+                position: absolute
+                left: 0
+                bottom: 0
+                width: 100%
+                height: 13px
+                background-color: #fff
+        .img
+            position: relative
+            width: 100%
+            max-width: 1158px
+            margin: 0 auto
+            z-index: 2
+            > img
+                display: block
+                max-width: 100%
+            > img.mo
+                display: none
+        .text
+            display: flex
+            flex-wrap: wrap
+            flex-direction: column
+            justify-content: center
+            position: absolute
+            left: 50%
+            top: 0
+            width: 1158px
+            max-width: 100%
+            height: 100%
+            padding: 0 715px 13px 0
+            transform: translateX(-50%)
+            z-index: 3
+            .volumn
+                display: block
+                font-family: 'GmarketSansMedium'
+                font-size: 1.15rem
+                color: #fff
+            .title
+                margin-top: 1rem
+                font-family: 'GmarketSansMedium'
+                font-size: 2.25rem
+                font-weight: normal
+                word-break: keep-all
+                color: #fff
+            .btn
+                position: relative
+                display: block
+                width: 215px
+                height: 65px
+                margin-top: 1rem
+                font-family: 'GmarketSansMedium'
+                font-size: 1.15rem
+                background-image: url('/common/images/btn.png')
+                background-size: 100%
+                color: #f7a2ac
+                cursor: pointer
+                &::after
+                    display: inline-block
+                    content: ""
+                    width: 67px
+                    height: 16px
+                    position: absolute
+                    right: 0
+                    top: 40%
+                    background-image: url('/common/images/arrow02.png')
+                    background-size: 100%
+                    transform: translate(67px, -50%)
+                    z-index: 1
+            .btn:hover
+                transition: all 0.3s linear
+                transform: translateX(33.5px)
+    .section02
+        overflow: hidden
+        margin: 5rem auto 0
+        >h3
+            margin: 0 auto 2rem
+            font-size: 1.9rem
+            text-align: center
+            font-family: 'NanumSquareRound'
+        .swiper
+            position: relative
+            width: 1400px
+            margin: 0 auto
+            &::after
+                display: block
+                content: ''
+                position: absolute
+                width: 90%
+                height: 1px
+                bottom: 0
+                left: 50%
+                transform: translateX(-50%)
+                border-bottom: 1px solid #b2b2b2
+            .swiper-container
+                position: relative
+                width: 1161px
+                padding: 0 0 3rem
+                .swiper-slide
+                    width: 360px
+                    margin-right: 2rem
+                    .base_img
+                        display: block
+                        width: 100%
+                    a
+                        display: block
+                        position: absolute
+                        width: 100%
+                        top: 0
+                        left: 0
+                        span
+                            display: block
+                            overflow: hidden
+                            img
+                                transition: 0.3s
+                                width: 100%
+                        h4
+                            padding-top: 2.5rem
+                            font-size: 1.4rem
+                            line-height: 35px
+                            font-family: 'NanumSquareRound'
+                        p
+                            font-size: 0.85rem
+                            font-weight: 600
+                            padding-top: 1rem
+                            font-family: 'NanumSquareRound'
+                .swiper-slide:hover
+                    img
+                        transform: scale(1.1)
+            .swiper-button-prev,
+            .swiper-button-next
+                display: flex
+                justify-content: center
+                align-items: center
+                cursor: pointer
+                font-size: 3rem
+                background-image: url('/common/images/prev.jpg')
+                background-size: 100%
+                width: 75px
+                height: 75px
+                top: 28%
+            .swiper-button-next
+                background-image: url('/common/images/next.jpg')
+        .swiper-pagination
+            display: none
+    .section03
+        margin: 3.5rem auto 0
+        >h3
+            margin: 0 auto 2rem
+            font-size: 1.9rem
+            text-align: center
+            font-family: 'NanumSquareRound'
+        .list
+            width: 1161px
+            margin: 0 auto
+            li
+                border: 1px solid #e5e6e9
+                border-radius: 10px
+                overflow: hidden
+                box-shadow: 3px 3px 8px #f1f1f1
+                margin-bottom: 1.5rem
+                a
+                    display: flex
+                    .text
+                        padding: 2.5rem 2rem 2rem
+                        >h4
+                            font-size: 1.2rem
+                            margin-bottom: 0.5rem
+                        >h5
+                            font-size: 1rem
+                            margin-bottom: 0.75rem
+                            font-weight: 400
+                        >p
+                            display: -webkit-box
+                            font-size: 0.9rem
+                            line-height: 24px
+                            font-weight: 300
+                            -webkit-line-clamp: 2
+                            -webkit-box-orient: vertical
+                            text-overflow: ellipsis
+                            word-break: break-all
+                            text-align: justify
+                            overflow: hidden
+            li:last-child
+                margin-bottom: 1.5rem
+    .section04
+        margin: 6rem 0 0
+        .wrap
+            display: flex
+            align-items: center
+            width: 100%
+            height: 600px
+            .left,.right
+                display: flex
+                justify-content: flex-end
+                background-color: #edf7e8
+                overflow: hidden
+                width: 50%
+                transition: 0.3s
+                z-index: 0
+                .left_wrap,.right_wrap
+                    width: 500px
+                    padding: 2.25rem
+                    margin-right: 2rem
+                    transition: 0.3s
+                    >h3
+                        font-size: 1.8rem
+                        margin-bottom: 1rem
+                        font-family: 'NanumSquareRound'
+                    >img
+                        border-radius: 25px
+                        overflow: hidden
+                        width: 100%
+                    >h4
+                        font-size: 1.2rem
+                        padding-top: 1.5rem
+                        font-family: 'NanumSquareRound'
+                        white-space: nowrap
+                    >p
+                        display: -webkit-box
+                        font-size: 0.9rem
+                        line-height: 24px
+                        padding-top: 0.75rem
+                        font-family: 'NanumSquareRound'
+                        -webkit-line-clamp: 3
+                        -webkit-box-orient: vertical
+                        text-overflow: ellipsis
+                        word-break: break-all
+                        text-align: justify
+                        overflow: hidden
+            .right
+                justify-content: flex-start
+                background-color: #f7f6f0
+                width: 50%
+                z-index: 2
+                .right_wrap
+                    margin-left: 2rem
+                    margin-right: 0
+            //hover
+            .left:hover
+                border-radius: 0 40px 40px 0
+                width: 51%
+                z-index: 2
+                box-shadow: 3px 3px 5px #d6d6d6
+                .left_wrap
+                    margin-right: 0
+                    padding: 4rem 2.25rem
+            .left:hover ~ .right 
+                border-radius: 0
+                width: 49%
+                z-index: 1
+                .right_wrap
+                    padding: 2.25rem
+            .right:hover
+                border-radius: 40px 0 0 40px
+                box-shadow: -3px 3px 5px #d6d6d6
+                width: 51%
+                z-index: 2
+                .right_wrap
+                    padding: 4rem 2.25rem
+                    margin-left: 0
+            .right:hover ~ .left 
+                width: 49%
+                z-index: 1
+    .section05
+        margin: 6rem 0 1rem
+        >h3
+            margin: 0 auto 2rem
+            font-size: 1.9rem
+            text-align: center
+            font-family: 'NanumSquareRound'
+        >ul
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 1161px
+            margin: 0 auto
+            >li
+                width: calc((100% - 0.5rem)/4)
+                margin-right: 0.5rem
+                a
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    padding: 1.2rem 1.2rem 1.5rem
+                    >p
+                        font-size: 0.9rem
+                        font-weight: 600
+                        font-family: 'NanumSquareRound'
+            >li.blue
+                background-color: #d6eef1
+            >li.pink
+                background-color: #ffe6e4
+            >li:last-child
+                margin-right: 0
+    .section06
+        width: 100%
+        .survey
+            display: block
+            margin: 0 auto
+            width: 1161px
+            text-align: center
+            img
+                width: 100%
+/*Small PC*/
+@media (max-width: 1420px)
+    .main
+        .section02
+            .swiper
+                width: 96%
+                .swiper-container
+                    width: 80%
+                    .swiper-slide
+                        width: calc(35% - 2rem)
+/*Small PC*/
+@media (max-width: 1365px)
+    .main
+        .banner
+            width: 90%
+        .section03
+            .list
+                width: 90%
+/*Ipad Pro*/
+@media (max-width: 1165px)
+    .main
+        .section01
+            .bg
+                display: none
+            .text
+                width: 100%
+                padding: 0 62% 1.15% 2.5%    
+                .title
+                    font-size: 2rem 
+            .btn
+                transform: none !important
+        .section02
+            .swiper
+                width: 100%
+                .swiper-container
+                    width: 90%
+                    .swiper-slide a h4
+                        font-size: 1.2rem
+                        line-height: 30px
+                .swiper-button-prev,.swiper-button-next
+                    display: none
+        .section03
+            .list
+                li a 
+                    .img
+                        width: 40%
+                        img
+                            width: 100%
+                    .text
+                        width: 60%
+                        padding: 2rem
+        .section05
+            >ul
+                align-items: stretch
+                width: 90%
+                margin: 0 auto
+                >li a >p
+                    word-break: keep-all
+        .section06
+            .survey
+                width: 90%
+
+/*Ipad*/
+@media (max-width: 991.98px)
+    .main
+        .section01 .text
+            .volumn
+                font-size: 0.9rem
+            .title
+                margin-top: 0.5rem
+                font-size: 1.45rem 
+            .btn
+                width: 150px
+                height: 45px
+                font-size: 0.9rem
+                &::after
+                    width: 46px
+                    height: 11px
+                    position: absolute
+                    right: 0
+                    top: 40%
+                    transform: translate(30px, -50%)
+        .section02
+            .swiper
+                width: 100%
+                &::after
+                    display: none
+                .swiper-container
+                    border: none
+                    padding: 0 0 2rem
+                    .swiper-slide
+                        width: 55%
+        .section03
+            margin: 0
+            padding: 3.5rem 0 3.5rem
+            background-color: #f7f8f8
+            .list li a 
+                flex-direction: column
+                .img
+                    width: 100%
+                .text
+                    background-color: #fff
+                    width: 100%
+        .section04
+            margin: 0
+            .wrap
+                flex-direction: column
+                height: auto
+                .left,.right
+                    display: block
+                    width: 100%
+                    padding: 3rem 2.25rem
+                    .left_wrap,.right_wrap
+                        width: 100%
+                        margin: 0
+                        padding: 0
+                        >h3
+                            text-align: center
+                            margin-bottom: 1.5rem
+                        >img
+                            border-radius: 0
+                //hover
+                .left:hover
+                    border-radius: 0
+                    width: 100%
+                    z-index: 1
+                    box-shadow: none
+                    .left_wrap
+                        margin-right: 0
+                        padding: 0
+                .left:hover ~ .right 
+                    border-radius: 0
+                    width: 100%
+                    z-index: 1
+                    .right_wrap
+                        padding: 0
+                .right:hover
+                    border-radius: 0
+                    box-shadow: none
+                    width: 100%
+                    z-index: 1
+                    .right_wrap
+                        padding: 0
+                        margin-left: 0
+                .right:hover ~ .left 
+                    width: 100%
+                    z-index: 1
+        .section05
+            margin: 4rem 0 1rem
+            >ul
+                flex-direction: column
+                >li
+                    width: 100%
+                    margin-bottom: 0.5rem
+                    a > p
+                        font-size: 1.2rem
+                >li:last-child
+                    margin-bottom: 0
+
+/*Tablet*/
+@media (max-width: 767.98px)
+    .main
+        .section01 .text
+            .title
+                font-size: 1.25rem 
+        .section02
+            .swiper
+                .swiper-container
+                    .swiper-slide
+                        width: 55%
+@media (max-width: 640px)
+    .main
+        .banner
+            margin: 3rem auto 0
+        .section01
+            padding-top: 2rem
+            .img
+                > img
+                    display: none
+                > img.mo
+                    display: block
+            .text
+                display: block
+                width: 100%
+                height: auto
+                padding: 2rem 0 0
+                text-align: center
+                .volumn
+                    display: inline-block
+                    padding: 0.55rem 1rem 0.5rem
+                    font-size: 0.8rem
+                    border-radius: 1rem
+                    color: #fff !important
+                .title
+                    margin-top: 0.75rem
+                .btn
+                    display: none
+        .section02
+            .swiper .swiper-container
+                width: 100%
+                margin-left: 5%
+                .swiper-slide
+                    width: 70%
+                    a 
+                        >h4
+                            font-size: 1.25rem
+                            padding-top: 1.5rem
+                        >p
+                            font-size: 0.9rem
+        .section04
+            .wrap 
+                .left,.right 
+                    .left_wrap,.right_wrap 
+                        >h3
+                            font-size: 1.5rem
+/*Mobile*/
+@media (max-width: 575.98px)
+    .main
+        .section01
+            padding-top: 1.5rem
+            .text
+                padding: 1.5rem 0 0
+        .section02
+            margin: 3rem auto 0
+            >h3
+                font-size: 1.5rem
+            .swiper .swiper-container
+                .swiper-slide
+                    width: 75%
+                    margin-right: 1rem
+                    a 
+                        >h4
+                            font-size: 1.15rem
+                            padding-top: 1rem
+                        >p
+                            font-size: 0.85rem
+        .section03
+            >h3
+                font-size: 1.5rem
+            .list li a .text
+                padding: 1rem
+                >h4
+                    font-size: 1rem
+                    margin-bottom: 0.25rem
+                >h5
+                    font-size: 0.9rem
+                    margin-bottom: 0.5rem
+                >p
+                    font-size: 0.8rem
+        .section04
+            .wrap
+                .left,.right
+                    padding: 2rem 1.5rem
+                    .left_wrap,.right_wrap
+                        width: 100%
+                        margin: 0
+                        padding: 0
+                        >h3
+                            margin-bottom: 1rem
+                        >img
+                            border-radius: 0
+                        >h4 
+                            font-size: 1rem
+                        >p
+                            font-size: 0.8rem
+        .section05
+            margin: 2.5rem 0 1rem
+            >h3
+                font-size: 1.5rem
+            ul > li a
+                pading: 1rem
+                > p
+                    font-size: 1rem
+            

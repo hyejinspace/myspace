@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="musicWeb sub">
+        <!-- 헤더 -->
+        <header>
+            <div class="wrap">
+                <div class="inner">
+                    <h1><a href="index.html" class="logo">LOGO</a></h1>
+                    <button type="button" class="menuBtn"></button>
+                    <nav>
+                        <ul>
+                            <li><a href="">PANGAEA</a></li>
+                            <li><a href="">NEW</a></li>
+                            <li><a href="">CHART</a></li>
+                            <li><a href="">MAGAZINE</a></li>
+                        </ul>
+                    </nav>
+                    <div class="search">
+                        <input type="search" id="search" value="검색어를 입력해주세요">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- top 영역 -->
+        <div class="topArea">
+            <div class="wrap">
+                <div class="bg"><img src="./img/topArea.jpg" alt=""></div>
+                <div class="inner">
+                    <div class="con">
+                        <div class="player">
+                            <!-- 재생버튼 및 노래 정보 -->
+                            <div class="top">
+                                <div class="musicInfo">
+                                    <button type="button" class="playBtn"></button>
+                                    <span>
+                                        <div class="userName">판게아</div>
+                                        <div class="musicTitle">BTS (방탄소년단) Butter</div>
+                                    </span>
+                                </div>
+                                <div>
+                                    <div class="statistics">
+                                        <span class="view">2,418회</span>
+                                        <span class="commentNum">50개</span>
+
+                                        <span class="date">2022-11-16</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 뮤직플레이어 -->
+                            <div class="musicPlayer"><img src="./img/playbar.jpg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="albumCover"><img src="./img/cover.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 콘텐츠 영역 -->
+        <div class="contentsArea">
+            <div class="wrap">
+                <div class="inner">
+                    
+                    <!-- 프로필 영역 -->
+                    <div class="profile">
+                        <div class="my">
+                            <div class="profileIMG"><img src="./img/profile.jpg" alt=""></div>
+                            <div class="userName">판게아</div>
+                            <span class="userID">@pangaea</span>
+                        </div>
+                        <span class="reverse">
+                            <div class="myStat">
+                                <div class="like">
+                                    <span class="category">좋아요</span>
+                                    <div class="likeNum">204</div>
+                                </div>
+                                <div class="followers">
+                                    <span class="category">팔로워</span>
+                                    <div class="followerNum">480</div>
+                                </div>
+                                <div class="conNum">
+                                    <span class="category">음원개수</span>
+                                    <div class="musicNum">15</div>
+                                </div>
+                            </div>
+                            <p class="intro">
+                                혼자듣기 아까운 음악을 공유합니다 🎧<br/>
+                                여기서 잠시 쉬다가시길 바랄게요
+                            </p>
+                        </span>
+                        <button type="button" class="follow">팔로우</button>
+                        <div class="FuncBtn">
+                            <div class="btnWrap">
+                                <div class="tit">옵션선택</div>
+                                <button type="button" class="like">좋아요</button>
+                                <button type="button" class="donation">후원하기</button>
+                                <button type="button" class="share">프로필 공유</button>
+                            </div>
+                        </div>
+                        <div class="otherCon sameSong">
+                            <div class="title">
+                                <h3>비슷한 노래</h3>
+                                <a href="" class="more">더 보기</a>
+                            </div>
+                            <ul>
+                                <li class="song">
+                                    <div class="albumCover">
+                                        <img src="./img/cover.jpg" alt="">
+                                        <button type="button" class="playBtn"></button>
+                                    </div>
+    
+                                    <div>
+                                        <div class="musicInfo">
+                                            <div class="userName">판게아</div>
+                                            <div class="musicTitle">BTS (방탄소년단) Butter</div>
+                                        </div>
+                                        <div class="statistics">
+                                            <span class="view">2,418회</span>
+                                            <span class="commentNum">50개</span>
+    
+                                            <span class="date">2022-11-16</span>
+
+                                            <button type="button" class="FuncBtn"></button>
+                                            <div class="musicFuncPopup Popup">
+                                                <ul>
+                                                    <li><button type="button" class="putMusic">재생곡 다음에 넣기</button></li>
+                                                    <li><button type="button" class="listAdd">플레이리스트에 넣기</button></li>
+                                                    <li><button type="button" class="down">다운로드</button></li>
+                                                    <li><button type="button" class="station">스테이션</button></li>
+                                                    <li><button type="button" class="report">신고하기</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="song">
+                                    <div class="albumCover">
+                                        <img src="./img/cover.jpg" alt="">
+                                        <button type="button" class="playBtn"></button>
+                                    </div>
+    
+                                    <div>
+                                        <div class="musicInfo">
+                                            <div class="userName">판게아</div>
+                                            <div class="musicTitle">BTS (방탄소년단) ButterBTS (방탄소년단) Butter</div>
+                                        </div>
+                                        <div class="statistics">
+                                            <span class="view">2,418회</span>
+                                            <span class="commentNum">50개</span>
+    
+                                            <span class="date">2022-11-16</span>
+
+                                            <button type="button" class="FuncBtn"></button>
+                                            <div class="musicFuncPopup Popup">
+                                                <ul>
+                                                    <li><button type="button" class="putMusic">재생곡 다음에 넣기</button></li>
+                                                    <li><button type="button" class="listAdd">플레이리스트에 넣기</button></li>
+                                                    <li><button type="button" class="down">다운로드</button></li>
+                                                    <li><button type="button" class="station">스테이션</button></li>
+                                                    <li><button type="button" class="report">신고하기</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="song">
+                                    <div class="albumCover">
+                                        <img src="./img/cover.jpg" alt="">
+                                        <button type="button" class="playBtn"></button>
+                                    </div>
+    
+                                    <div>
+                                        <div class="musicInfo">
+                                            <div class="userName">판게아</div>
+                                            <div class="musicTitle">BTS (방탄소년단) Butter</div>
+                                        </div>
+                                        <div class="statistics">
+                                            <span class="view">2,418회</span>
+                                            <span class="commentNum">50개</span>
+    
+                                            <button type="button" class="FuncBtn"></button>
+                                            <div class="musicFuncPopup Popup">
+                                                <ul>
+                                                    <li><button type="button" class="putMusic">재생곡 다음에 넣기</button></li>
+                                                    <li><button type="button" class="listAdd">플레이리스트에 넣기</button></li>
+                                                    <li><button type="button" class="down">다운로드</button></li>
+                                                    <li><button type="button" class="station">스테이션</button></li>
+                                                    <li><button type="button" class="report">신고하기</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="otherCon recommend">
+                            <div class="title">
+                                <h3>추천 플레이리스트</h3>
+                                <a href="" class="more">더 보기</a>
+                            </div>
+                            <ul>
+                                <li class="song">
+                                    <a href="">
+                                        <div class="albumCover">
+                                            <img src="./img/recommend.png" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="listTitle">카페에서 듣는 플리</div>
+                                            <span class="category">스타벅스</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="song">
+                                    <a href="">
+                                        <div class="albumCover">
+                                            <img src="./img/recommend.png" alt="">
+                                        </div>
+                                        <div class="info">
+                                            <div class="listTitle">카페에서 듣는 플리</div>
+                                            <span class="category">스타벅스</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="otherCon userView">
+                            <div class="title">
+                                <h3>받은 좋아요</h3>
+                                <a href="" class="more">더 보기</a>
+                            </div>
+                            <ul>
+                                <li class="userImg"><a href=""><img src="./img/user01.png" alt=""></a></li>
+                                <li class="userImg"><a href=""><img src="./img/user02.png" alt=""></a></li>
+                                <li class="userImg"><a href=""><img src="./img/user03.png" alt=""></a></li>
+                                <li class="userImg"><a href=""><img src="./img/user04.png" alt=""></a></li>
+                                <li class="userImg"><a href=""><img src="./img/user05.png" alt=""></a></li>
+                            </ul>
+                            <p><span class="likeNum">55.6k</span>명이 좋아합니다</p>
+                        </div>
+                        <div class="otherCon userView">
+                            <div class="title">
+                                <h3>리포스트</h3>
+                                <a href="" class="more">더 보기</a>
+                            </div>
+                            <ul>
+                                <li class="userImg"><a href=""><img src="./img/user01.png" alt=""></a></li>
+                                <li class="userImg"><a href=""><img src="./img/user02.png" alt=""></a></li>
+                                <li class="userImg"><a href=""><img src="./img/user03.png" alt=""></a></li>
+                                <li class="userImg"><a href=""><img src="./img/user04.png" alt=""></a></li>
+                                <li class="userImg"><a href=""><img src="./img/user05.png" alt=""></a></li>
+                            </ul>
+                            <p><span class="reNum">1374</span>명이 리포스트 했습니다.</p>
+                        </div>
+                    </div>
+
+                    <!-- 타이틀 -->
+                    <div class="conTitle"><h2>최근 업로드</h2></div>
+
+                    <!-- 콘텐츠 -->
+                    <div class="contents">
+                        <div class="board">
+                            <p>
+                                우리 방탄이들 버터가 2억뷰를 달성했어요 ㅠㅠ!! 💙💙<br/>
+                                Smooth like butter, like a criminal undercover Gon' pop like trouble breaking into your heart like that, ooh Cool shade, stunner, yeah, I owe it all to my mother, uh Hot like summer, yeah, I'm making you sweat like that (break it down!) 우리 방탄이들 버터가 2억뷰를 달성했어요 ㅠㅠ!! 💙💙
+                                Smooth like butter, like a criminal undercover Gon' pop like trouble breaking into your heart like that, ooh Cool shade, stunner, yeah, I owe it all to my mother, uh Hot like summer, yeah, I'm making you sweat like that (break it down!)...
+                            </p>
+                            <button type="button" class="showMore">더보기</button>
+                        </div>
+    
+                        <div class="commentWrap">
+                            <!-- 댓글 입력 -->
+                            <div class="inputArea">
+                                <textarea class="commentInput" placeholder="댓글 달기..."></textarea>
+                                <div class="userIMG"><img src="./img/userImg.jpg" alt=""></div>   
+                                <button type="submit" class="submit">작성</button>
+                            </div>
+    
+                            <div class="functionWrap">
+                                <div class="function">
+                                    <button type="button" class="like">2,185</button>
+                                    <button type="button" class="share">36</button>
+                                    <button type="button" class="report">공유</button>
+                                    <button type="button" class="link">링크 복사</button>
+                                    <button type="button" class="donation">후원하기</button>
+                                </div>
+                                <div class="statistics">
+                                    <span class="view">2,418회</span>
+                                    <span class="commentNum">50개</span>
+                                    <button type="button" class="FuncBtn"></button>
+                                    <div class="musicFuncPopup Popup">
+                                        <ul>
+                                            <li><button type="button" class="putMusic">재생곡 다음에 넣기</button></li>
+                                            <li><button type="button" class="listAdd">플레이리스트에 넣기</button></li>
+                                            <li><button type="button" class="down">다운로드</button></li>
+                                            <li><button type="button" class="station">스테이션</button></li>
+                                            <li><button type="button" class="report">신고하기</button></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 댓글 -->
+                            <ul>
+                                <li class="comment">
+                                    <span class="textWrap">
+                                        <div class="userIMG"><img src="./img/userImg.jpg" alt=""></div>
+                                        <div class="cmtWrap">
+                                            <span class="userName">지나가던아미</span>
+                                            <p class="conText">좋은 노래인 것 같아요</p>
+                                        </div>
+                                    </span>
+                                    <span class="FuncWrap">
+                                        <button type="button" class="FuncBtn"></button>
+                                        <div class="FuncPopup Popup">
+                                            <ul>
+                                                <li><button type="button">답글달기</button></li>
+                                                <li><button type="button">좋아요</button></li>
+                                            </ul>
+                                        </div> 
+
+                                        <div class="inputTime">방금 전</div>
+                                    </span>
+                                </li>
+                                <li class="comment">
+                                    <span class="textWrap">
+                                        <div class="userIMG"><img src="./img/userImg.jpg" alt=""></div>
+                                        <div class="cmtWrap">
+                                            <span class="userName">안티아미</span>
+                                            <p class="conText">이런 노래를 왜 좋아하는지 이해가 안갑니다.</p>
+                                        </div>
+                                    </span>
+                                    <span class="FuncWrap">
+                                        <button type="button" class="FuncBtn"></button>
+                                        <div class="FuncPopup Popup">
+                                            <ul>
+                                                <li><button type="button">답글달기</button></li>
+                                                <li><button type="button">좋아요</button></li>
+                                            </ul>
+                                        </div> 
+
+                                        <div class="inputTime">방금 전</div>
+                                    </span>
+                                </li>
+                                <li class="comment">
+                                    <span class="textWrap">
+                                        <div class="userIMG"><img src="./img/userImg.jpg" alt=""></div>
+                                        <div class="cmtWrap">
+                                            <span class="userName">마법천자문</span>
+                                            <p class="conText">
+                                                천자만홍이 같은 고행을 커다란 생의 인생에 못할 피고, 아름다우냐? 피어나기 힘차게 할지라도 능히 청춘 우는 피어나는 밝은 그러므로 위하여서. 굳세게 심장의 하였으며, 붙잡아 품고 든 하는 것이다. 못할 없는 무엇을 같으며, 밝은 싸인 이상은 피부가 운다. 용감하고 품었기 천지는 얼음이 때까지 우리 것이다. 따뜻한 지혜는 청춘 돋고, 장식하는 인생에 그리하였는가? 이상의 인간에 별과 천지는 인도하겠다는 이것이다. 
+                                                <br/><br/>
+                                                청춘은 무엇을 속잎나고, 이상 우는 것이다. 꽃 구할 하였으며, 끝까지 날카로우나 유소년에게서 열매를 밝은 돋고, 것이다. 생명을 인생에 오직 인간에 인간의 미인을 지혜는 능히 그들에게 아름다우냐? 위하여서 소담스러운 든 충분히 이것을 귀는 작고 듣는다.인생의 싶이 무엇을 보이는 앞이 없으면 때에, 예수는 것이다. 소담스러운 많이 행복스럽고 두손을 살았으며, 우리 트고, 무한한 목숨이 이것이다. 설레는 그것을 영원히 인생에 타오르고 이는 이상, 두손을 말이다. 뛰노는 밥을 굳세게 인생에 황금시대의 꾸며 우리 얼음과 때문이다. 사람은 인생에 위하여서, 품었기 때까지 
+                                                <br/><br/>
+                                                그들을 같으며, 피다. 그러므로 유소년에게서 대중을 길을 그들의 창공에 피다. 속에서 그들은 아니한 현저하게 가치를 그들의 보이는 옷을 있는가? 피가 그들은 같이 가치를 인간에 것은 오직 두기 그들은 피다. 발휘하기 풀이 있는 이상은 광야에서 그것을 날카로우나 황금시대다. 
+                                                <br/><br/>
+                                                있으며, 살았으며, 남는 옷을 끓는 이것이다.그와 과실이 구하기 가장 스며들어 바이며, 그러므로 황금시대의 황금시대다. 이 심장의 뭇 끝에 사는가 그리하였는가? 무엇을 뛰노는 찾아다녀도, 보이는 용감하고 동력은 봄바람이다. 따뜻한 갑 대중을 것이다. 풀밭에 곳이 피어나는 아니더면, 바로 놀이 피가 평화스러운 끓는 힘있다. 착목한는 청춘 창공에 자신과 속에서 같이, 교향악이다. 길지 무엇을 인생을 평화스러운 교향악이다. 거선의 그와 가지에 발휘하기 인류의 같이, 이성은 이것이다. 발휘하기 원대하고, 얼음과 그리하였는가?
+                                            </p>
+                                        </div>
+                                    </span>
+                                    <span class="FuncWrap">
+                                        <button type="button" class="FuncBtn"></button>
+                                        <div class="FuncPopup Popup">
+                                            <ul>
+                                                <li><button type="button">답글달기</button></li>
+                                                <li><button type="button">좋아요</button></li>
+                                            </ul>
+                                        </div> 
+
+                                        <div class="inputTime">방금 전</div>
+                                    </span>
+                                </li>
+                                <li class="comment">
+                                    <span class="textWrap">
+                                        <div class="userIMG"><img src="./img/userImg.jpg" alt=""></div>
+                                        <div class="cmtWrap">
+                                            <span class="userName">user name</span>
+                                            <p class="conText">supproting text</p>
+                                        </div>
+                                    </span>
+                                    <span class="FuncWrap">
+                                        <button type="button" class="FuncBtn"></button>
+                                        <div class="FuncPopup Popup">
+                                            <ul>
+                                                <li><button type="button">답글달기</button></li>
+                                                <li><button type="button">좋아요</button></li>
+                                            </ul>
+                                        </div> 
+
+                                        <div class="inputTime">방금 전</div>
+                                    </span>
+                                </li>
+                                <li class="comment">
+                                    <span class="textWrap">
+                                        <div class="userIMG"><img src="./img/userImg.jpg" alt=""></div>
+                                        <div class="cmtWrap">
+                                            <span class="userName">user name</span>
+                                            <p class="conText">supproting text</p>
+                                        </div>
+                                    </span>
+                                    <span class="FuncWrap">
+                                        <button type="button" class="FuncBtn"></button>
+                                        <div class="FuncPopup Popup">
+                                            <ul>
+                                                <li><button type="button">답글달기</button></li>
+                                                <li><button type="button">좋아요</button></li>
+                                            </ul>
+                                        </div> 
+
+                                        <div class="inputTime">방금 전</div>
+                                    </span>
+                                </li>
+                                <li class="comment">
+                                    <span class="textWrap">
+                                        <div class="userIMG"><img src="./img/userImg.jpg" alt=""></div>
+                                        <div class="cmtWrap">
+                                            <span class="userName">user name</span>
+                                            <p class="conText">supproting text</p>
+                                        </div>
+                                    </span>
+                                    <span class="FuncWrap">
+                                        <button type="button" class="FuncBtn"></button>
+                                        <div class="FuncPopup Popup">
+                                            <ul>
+                                                <li><button type="button">답글달기</button></li>
+                                                <li><button type="button">좋아요</button></li>
+                                            </ul>
+                                        </div> 
+
+                                        <div class="inputTime">방금 전</div>
+                                    </span>
+                                </li>
+                                <li class="comment">
+                                    <span class="textWrap">
+                                        <div class="userIMG"><img src="./img/userImg.jpg" alt=""></div>
+                                        <div class="cmtWrap">
+                                            <span class="userName">user name</span>
+                                            <p class="conText">supproting text</p>
+                                        </div>
+                                    </span>
+                                    <span class="FuncWrap">
+                                        <button type="button" class="FuncBtn"></button>
+                                        <div class="FuncPopup Popup">
+                                            <ul>
+                                                <li><button type="button">답글달기</button></li>
+                                                <li><button type="button">좋아요</button></li>
+                                            </ul>
+                                        </div> 
+
+                                        <div class="inputTime">방금 전</div>
+                                    </span>
+                                </li>
+                                <li class="comment">
+                                    <span class="textWrap">
+                                        <div class="userIMG"><img src="./img/userImg.jpg" alt=""></div>
+                                        <div class="cmtWrap">
+                                            <span class="userName">user name</span>
+                                            <p class="conText">supproting text</p>
+                                        </div>
+                                    </span>
+                                    <span class="FuncWrap">
+                                        <button type="button" class="FuncBtn"></button>
+                                        <div class="FuncPopup Popup">
+                                            <ul>
+                                                <li><button type="button">답글달기</button></li>
+                                                <li><button type="button">좋아요</button></li>
+                                            </ul>
+                                        </div> 
+
+                                        <div class="inputTime">방금 전</div>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 플레이어 영역 -->
+        <div class="playerPopup">
+            <button type="button" class="close"></button>
+            <div class="wrap">
+                <div class="inner">
+                    <div class="btnWrap">
+                        <button type="button" class="prevSong"></button>
+                        <button type="button" class="play"></button>
+                        <button type="button" class="nextSong"></button>
+                        <button type="button" class="shuffle"></button>
+                        <button type="button" class="repeat"></button>
+                    </div>
+
+                    <div class="ProgressWrap">
+                        <span class="startTime">0:44</span>
+                        <div class="progress">
+                            <input type="range" id="range" min="0" max="100" value="50">
+                        </div>
+                        <span class="endTime">10:55</span>
+                    </div>
+
+                    <div class="sound">
+                        <button type="button" class="soundBtn"></button>
+                        <div class="control">
+                            <div class="progress">
+                                <input type="range" id="soundRange" min="0" max="100" value="0">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="songInfo">
+                        <div class="albumCover"><img src="./img/cover.jpg" alt=""></div>
+                        <span>
+                            <div class="userName">판게아</div>
+                            <div class="musicTitle">BTS (방탄소년단) Butter</div>
+                        </span>
+                    </div>
+
+                    <div class="funcBtn">
+                        <button type="button" class="like"></button>
+                        <button type="button" class="list"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 푸터 영역 -->
+        <footer>
+            <div class="wrap">
+                <div class="inner">
+                    <ul class="top">
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">회사소개</a></li>
+                    </ul>
+                    <div class="bottom">
+                        <div class="left">
+                            <a href="index.html" class="logo_f">LOGO</a>
+                            <p class="copy">COPYRIGHTⓒ2023 주식회사 “...”<br class="mo"/> ALL RIGHTS RESERVED</p>
+                        </div>
+                        <div class="right">
+                            <p>
+                                주식회사 회사이름 | 대표이사 000 | 사업자등록번호 000-00-00000<br/>
+                                통신판매번호 0000-서울성동-00000 | 서울특별시 주소<br/>
+                                대표번호: 1588-0000 | 개인정보관리책임자: 000 admin@companycorp.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript" src="./js/swiper.min.js"></script>
+</body>
+</html>

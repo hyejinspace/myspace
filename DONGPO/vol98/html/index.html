@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../../common/css/style.css"/>
+    <!-- fontawesom -->
+    <script src="https://kit.fontawesome.com/507899fcde.js" crossorigin="anonymous"></script>
+    <script src="../../common/js/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header(공통): 호별 class 변경(vol98) -->
+    <header class="vol98">
+        <div class="wrap">
+            <a href="../../page/vol98/html/index.html" class="logo">
+                <img src="../../common/images/logo.png" alt="동포사랑">
+            </a>
+            <button class="btn_menu"><span>메뉴</span></button>
+        </div>
+    </header>
+
+    <!-- Navgation(공통) -->
+    <nav>
+        <div class="wrap">
+            <button class="btn_close"><span>닫기</span></button>
+            <div class="left">
+                <h2 class="subtitle">
+                    <span>북한이탈주민,</span>
+                    <span>우리 이웃들의 이야기</span>
+                </h2>
+                <img src="../../common/images/logo.png" alt="동포사랑" class="title">
+                <p class="volumn"><span>2022 03+04</span><span>vol.98</span></p>
+                <select class="past" onchange="window.open(value,'_blank');">
+                    <option disabled="disabled" selected="">지난호 보기 ></option>
+                    <option value="https://hana-dongpo.co.kr/page/vol98/index.php">vol98</option>  
+                </select>
+            </div>
+            <div class="right">
+                <ul class="gnb">
+                    <li>
+                        <h3 class="lnbTitle01">정착이야기</h3>
+                        <ul class="lnb">
+                            <li><a href="#">세무법인 위드 채현정 팀장</a></li>
+                            <li><a href="#">한빛농원 최은숙</a></li>
+                            <li><a href="#">베스티안 서울병원<br class="pc"/> 김순이 간호사</a></li>
+                            <li><a href="#">기업은행 조현성 차장</a></li>
+                            <li><a href="#">로프군단 김영근 대표</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="lnbTitle02">함께하는 이야기</h3>
+                        <ul class="lnb">
+                            <li><a href="#">남북하나재단 나현준 컨설턴트<br/> (사)비욘드더바운더리</a></li>
+                            <li><a href="#">이영석 사무국장</a></li>
+                            <li><a href="#">YTN 김혜민 PD</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="lnbTitle03">문화정보</h3>
+                        <ul class="lnb">
+                            <li><a href="#">책 읽는 시간 '언어의 온도'<br class="pc"/> 남도 여행</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="lnbTitle04">고향 이야기</h3>
+                        <ul class="lnb">
+                            <li><a href="#">개학 날의 추억</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section(메인) -->
+    <section class="main">
+        <a href="#" class="section01" style="background-color: #dfd8d0;">
+            <div class="img">
+                <img src="../img/main01.jpg" alt="">
+                <img src="../img/main01_mo.jpg" alt="" class="mo">
+            </div>
+            <div class="bg" style="background-color: #f7a2ac;"></div>
+            <div class="text">
+                <span class="volumn">2022 03+04 vol.98</span>
+                <h3 class="title">북한이탈주민,<br/>우리 이웃들의 이야기</h3>
+                <button class="btn">자세히보기</button>
+            </div>
+        </a>
+
+        <div class="banner">
+            <a href="http://hana-dongpo.co.kr/event.php">
+                <img src="../img/banner.jpg" alt="" class="banner_img pc">
+                <img src="../img/banner_mo.jpg" alt="" class="banner_img mo">
+            </a>
+        </div>
+
+        <div class="section02">
+            <h3>정착이야기</h3>
+            <div class="swiper">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="../../common/images/base.jpg" alt="" class="base_img">
+                            <a href="#">
+                                <span><img src="../img/main02.jpg" alt=""></span>
+                                <h4>일 잘하는 사람은<br/>티를 내지 않아도 반드시<br/>인정받게 돼 있어요</h4>
+                                <p>세무법인 ‘위드’ 채현정 팀장</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="../../common/images/base.jpg" alt="" class="base_img">
+                            <a href="#">
+                                <span><img src="../img/main03.jpg" alt=""></span>
+                                <h4>흙에 사는 농부라서<br/>행복합니다</h4>
+                                <p>한빛농원 최은숙</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="../../common/images/base.jpg" alt="" class="base_img">
+                            <a href="#">
+                                <span><img src="../img/main04.jpg" alt=""></span>
+                                <h4>간절히 원하는 꿈은<br/>이루어진다</h4>
+                                <p>세무법인 ‘위드’ 채현정 팀장</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="../../common/images/base.jpg" alt="" class="base_img">
+                            <a href="#">
+                                <span><img src="../img/main05.jpg" alt=""></span>
+                                <h4>간절히 원하는 꿈은<br/>이루어진다</h4>
+                                <p>세무법인 ‘위드’ 채현정 팀장</p>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="../../common/images/base.jpg" alt="" class="base_img">
+                            <a href="#">
+                                <span><img src="../img/main06.jpg" alt=""></span>
+                                <h4>간절히 원하는 꿈은<br/>이루어진다</h4>
+                                <p>세무법인 ‘위드’ 채현정 팀장</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="section03">
+            <h3>함께하는 이야기</h3>
+            <ul class="list">
+                <li>
+                    <a href="#">
+                        <span class="img">
+                            <img src="../img/main07.jpg" alt="">
+                        </span>
+                        <span class="text">
+                            <h4 class="title">탈북민의 창업을 돕는 전문 컨설턴트</h4>
+                            <h5 class="subtitle">남북하나재단 나현준 컨설턴트</h5>
+                            <p class="introduce">남북하나재단(이하 하나재단) 자립지원부와 함께 탈북민 창업자의 사전 창업상담과 서류신청 검토, 현장실사를 도와주는 창업 전문 컨설턴트들이 있다. 탈북민 창업지원 프로그램이 본격적으로 시작되던 2014년부터 이 사업에 참여하고 있는 나현준 컨설턴트는 지금까지 500여 명의 탈북민 예비 창업자 및 기 창업자들에게 도움을 주었다.</p>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="img">
+                            <img src="../img/main07.jpg" alt="">
+                        </span>
+                        <span class="text">
+                            <h4 class="title">탈북민의 창업을 돕는 전문 컨설턴트</h4>
+                            <h5 class="subtitle">남북하나재단 나현준 컨설턴트</h5>
+                            <p class="introduce">남북하나재단(이하 하나재단) 자립지원부와 함께 탈북민 창업자의 사전 창업상담과 서류신청 검토, 현장실사를 도와주는 창업 전문 컨설턴트들이 있다. 탈북민 창업지원 프로그램이 본격적으로 시작되던 2014년부터 이 사업에 참여하고 있는 나현준 컨설턴트는 지금까지 500여 명의 탈북민 예비 창업자 및 기 창업자들에게 도움을 주었다.</p>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="img">
+                            <img src="../img/main07.jpg" alt="">
+                        </span>
+                        <span class="text">
+                            <h4 class="title">탈북민의 창업을 돕는 전문 컨설턴트</h4>
+                            <h5 class="subtitle">남북하나재단 나현준 컨설턴트</h5>
+                            <p class="introduce">남북하나재단(이하 하나재단) 자립지원부와 함께 탈북민 창업자의 사전 창업상담과 서류신청 검토, 현장실사를 도와주는 창업 전문 컨설턴트들이 있다. 탈북민 창업지원 프로그램이 본격적으로 시작되던 2014년부터 이 사업에 참여하고 있는 나현준 컨설턴트는 지금까지 500여 명의 탈북민 예비 창업자 및 기 창업자들에게 도움을 주었다.</p>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section04">
+            <div class="wrap">
+                <a href="#" class="left">
+                    <div class="left_wrap">
+                        <h3>문화정보</h3>
+                        <img src="../img/main08.jpg" alt="">
+                        <h4>책 읽는 시간 '언어의 온도'남해안 여행</h4>
+                        <p>남북하나재단(이하 하나재단) 자립지원부와 함께 탈북민 창업자의 사전 창업상담과 탈북민 창업지원 프로그램이 본격적으로 시작됐다.</p>
+                    </div>
+                </a>
+                <a href="#" class="right">
+                    <div class="right_wrap">
+                        <h3>고향이야기</h3>
+                        <img src="../img/main09.jpg" alt="">
+                        <h4>개학 나의 추억</h4>
+                        <p>첫 만남, 첫 시험, 첫사랑, 첫 직장 등 우리를 안절부절 못하게 했던 사건 중에서도 첫 등굣길은 우리의 동심이 건너야 했던 인생 징검다리에 새겨진 특별한 추억이었다.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="section05">
+            <h3 class="pc">정착정보</h3>
+            <ul>
+                <li class="blue">
+                    <a href="#">
+                        <p>정착지원금<br class="pc"/>사업안내</p>
+                        <img src="../../common/images/icon01.png" alt="">
+                    </a>
+                </li>
+                <li class="blue">
+                    <a href="#">
+                        <p>국민연금<br class="pc"/>특례제도</p>
+                        <img src="../../common/images/icon02.png" alt="">
+                    </a>
+                </li>
+                <li class="pink">
+                    <a href="#">
+                        <p>2022년 북한이탈주민<br/>의료지원 사업안내</p>
+                        <img src="../../common/images/icon03.png" alt="">
+                    </a>
+                </li>
+                <li class="pink">
+                    <a href="#">
+                        <p>생계안정지원 사업안내<br/>임산모 돌봄지원</p>
+                        <img src="../../common/images/icon04.png" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="section06">
+            <a href=" http://naver.me/GK5aZg9Q" class="survey" target="_blank">
+                <img src="../img/survey.jpg" alt="" class="pc">
+                <img src="../img/survey_mo.jpg" alt="" class="mo">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer(공통) -->
+    <footer>
+        <div class="wrap">
+            <div class="logo">
+                <img src="../../common/images/logo02.png" alt="남북하나재단">
+            </div>
+            <div class="sns">
+                <a href="#" target="_blank">
+                    <img src="../../common/images/sns01.png" alt="페이스북">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="../../common/images/sns02.png" alt="유튜브">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="../../common/images/sns03.png" alt="네이버 밴드">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="../../common/images/sns04.png" alt="카카오채널">
+                </a>
+            </div>
+            <p class="address">
+                <span>
+                    <b>04168 서울특별시 마포구 새창로 7, 4-5-14층 (도화동 565, SNU장학빌딩)</b>
+                    <b>TEL : 1577-6635</b>
+                    <b>FAX : 02-3215-579</b>
+                </span>
+                <span>COPYRIGHT ⓒ 2022 동포사랑. ALL RIGHT RESERVED.</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scirpt(공통) -->
+    <script src="../../common/js/swiper.min.js"></script>
+    <script src="../../common/js/app.js"></script>
+
+    <!-- Scirpt(메인) -->
+    <script>
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,289 @@
+.contentsArea.searchPage
+    .contents
+        width: calc(100% - 305px)
+        padding-right: 0
+    .wrap
+        .inner
+            display: flex
+            // flex-wrap: wrap
+            .searchWrap
+                width: 306px
+                padding-right: 24px
+                margin-right: 24px
+                border-right: 1px solid rgba(0, 0, 0, 0.06)
+                .cover
+                    display: none
+                ul 
+                    padding-top: 24px
+                    li
+                        position: relative
+                        width: 100%
+                        margin-bottom: 8px
+                        a
+                            display: block
+                            width: 100%
+                            padding: 12px 0 12px 40px
+                            border-radius: 4px
+                            font-size: 14px
+                            font-weight: 500
+                            line-height: 17px
+                            color: rgba(0, 0, 0, 0.5)
+                        &:before
+                            content: ''
+                            display: block
+                            position: absolute
+                            top: 50%
+                            left: 16px
+                            transform: translateY(-50%)
+                            width: 16px
+                            height: 16px
+                            background-repeat: no-repeat
+                            background-size: contain
+                    li.on,li:hover
+                        a
+                            background-color: #8B82FF
+                            color: #000
+                    li.all 
+                        a
+                            color: #000
+                        &:before
+                            background-image: url('../img/icon_all.png')
+                    li.track::before
+                        background-image: url('../img/icon_track.png')
+                    li.users::before
+                        background-image: url('../img/icon_users.png')
+                    li.album::before
+                        background-image: url('../img/icon_album.png')
+                    li.playlist::before
+                        background-image: url('../img/icon_playlist.png')
+            .contents
+                border: none
+                .searchResult
+                    padding: 32px 0 20px
+                    .title
+                        font-size: 20px
+                        line-height: 24px
+                        font-weight: 600
+                        padding-bottom: 40px
+                    .find
+                        font-size: 14px
+                        font-weight: 500
+                        line-height: 17px
+                        color: rgba(0, 0, 0, 0.5)
+                        *
+                            color: rgba(0, 0, 0, 0.5)
+                > ul > li
+                    padding-right: 0
+
+                .userSlide
+                    padding-bottom: 60px
+                    overflow: hidden
+                    position: relative
+                    .swiper-container
+                        .swiper-slide
+                            width: 180px
+                            margin-right: 28px
+                            text-align: center
+                            &:last-child
+                                margin-right: 0
+                            .userProfile
+                                margin-bottom: 24px
+                                width: 180px
+                                height: 180px
+                                img
+                                    display: block
+                                    width: 100%
+                            .userName
+                                font-size: 18px
+                                font-weight: 700
+                                line-height: 21px
+                                padding-bottom: 4px
+                            .userID
+                                font-size: 12px
+                                font-weight: 500
+                                line-height: 14px
+                                color: rgba(0,0,0,0.3)
+                                padding-bottom: 16px
+                            .follow
+                                display: inline-block
+                                position: relative
+                                font-size: 14px
+                                font-weight: 600
+                                padding: 8px 12px
+                                color: #fff
+                                background-color: #271CA2
+                                border: 1px solid #271CA2
+                                border-radius: 6px
+                                cursor: pointer
+                            .follow.on
+                                background: rgba(0, 0, 0, 0.04)
+                                border: 1px solid rgba(0, 0, 0, 0.08)
+                                border-radius: 6px
+                                color: #000
+                    .swiper-pagination
+                        position: relative
+                        width: 100%
+                        padding-top: 48px
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        .swiper-pagination-bullet
+                            margin-right: 6px
+                            background: #e0e0e0
+                            &:last-child
+                                margin-right: 0
+                        .swiper-pagination-bullet-active
+                            width: 12px
+                            height: 12px
+                            background-color: #271CA2
+                    .cover
+                        display: block
+                        position: absolute
+                        bottom: 0
+                        right: -5px
+                        width: 100%
+                        height: 100%
+                        max-width: 180px
+                        background: linear-gradient(to right, transparent, #fff)
+                        z-index: 10
+
+            .serchResultMore
+                display: block
+                width: 100%
+                padding: 17px
+                text-align: center
+                cursor: pointer
+                border-top: 1px solid rgba(0, 0, 0, 0.12)
+                margin-bottom: 32px
+                span
+                    display: inline-block
+                    font-size: 16px
+                    font-weight: 600
+                    line-height: 19px
+                    color: rgba(0, 0, 0, 0.5)
+                    position: relative
+                    &::before
+                        content: ''
+                        display: block
+                        position: absolute
+                        top: 50%
+                        right: -20px
+                        width: 20px
+                        height: 20px
+                        transform: translateY(-50%)
+                        transform-origin: center
+                        background-image: url('../img/arrowDown2.png')
+                        background-repeat: no-repeat
+                        background-size: contain
+            .serchResultMore.on
+                span
+                    &::before
+                        top: 0
+                        transform: rotate(180deg)
+
+@media (max-width: 1024px)
+    .musicWeb.search header .search
+        position: absolute
+        top: 80px
+        z-index: 10
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: calc(100% - 48px)
+        input
+            width: 100%
+            border-color: rgba(0, 0, 0, 0.08)
+            color: #000
+            background-image: url('../img/searchIcon_b.png')
+        .cancel
+            display: block
+            font-size: 14px
+            font-weight: 500
+            line-height: 17px
+            color: rgba(0,0,0,0.5)
+            margin-left: 25px
+            cursor: pointer
+            min-width: 30px
+    .contentsArea.searchPage 
+        .contents
+            width: 100%
+        .wrap .inner
+            padding: 0
+            flex-direction: column
+            top: 0
+            .searchWrap 
+                position: relative
+                width: 100%
+                padding-top: 60px
+                border-bottom: 1px solid #ebebeb
+                .cover
+                    display: block
+                    position: absolute
+                    bottom: 0
+                    right: 0
+                    width: 100%
+                    height: 60px
+                    max-width: 40px
+                    background: linear-gradient(to right, transparent, #fff)
+                ul
+                    display: flex
+                    flex-wrap: nowrap
+                    justify-content: start
+                    align-items: center
+                    overflow: auto
+                    li
+                        flex: 0 0 auto
+                        width: auto
+                        text-align: center
+                        margin-bottom: 0
+                        a
+                            padding: 12px 40px
+                            background-color: #fff
+                        &::before
+                            display: none
+                    li.on a,li:hover a
+                        position: relative
+                        background-color: #fff
+                        &::before
+                            content: ''
+                            display: block
+                            position: absolute
+                            width: 25px
+                            height: 1px
+                            background-color: #8B82FF
+                            left: 50%
+                            bottom: 0
+                            transform: translateX(-50%)
+            .contents 
+                padding: 0 16px
+                .searchResult .title
+                    padding-bottom: 12px
+                .userSlide .swiper-container .swiper-slide 
+                    width: auto
+                    margin-right: 40px
+                    .userProfile
+                        width: 42px
+                        height: 42px
+                        margin: 0 auto 12px
+                    .userName
+                        padding-bottom: 0
+                    .userID
+                        padding-bottom: 10px
+            .serchResultMore
+                display: none
+
+@media (max-width: 768px)
+    .musicWeb.search header .search
+        width: calc(100% - 32px)
+    .contentsArea.searchPage .wrap .inner 
+        .contents .userSlide 
+            padding-bottom: 50px
+            .swiper-pagination
+                padding-top: 34px
+            .swiper-container .swiper-slide .userName
+                font-size: 16px
+            .cover
+                width: 50px
+        .serchResultMore
+            padding: 10px
+            margin-bottom: 20px

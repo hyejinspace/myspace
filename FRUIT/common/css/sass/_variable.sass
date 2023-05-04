@@ -1,0 +1,218 @@
+
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    font-family: 'Noto Sans KR', sans-serif
+    font-size: 20px
+    letter-spacing: -0.75px
+    color: #333
+img
+    vertical-align: middle
+select,input,button,textarea
+    appearance: none
+    border: none
+    border-radius: 0
+    background-color: transparent
+select,input,button,textarea
+    &:focus
+        outline: none
+select::-ms-expand 
+    display: none
+input[type="text"],
+input[type="number"],
+input[type="file"]
+    appearance: none
+    border: none
+    border-radius: 0
+    background-color: transparent
+input[type="radio"]
+    display: none !important
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+    -webkit-appearance: none
+textarea
+    resize: none
+table
+    border-collapse: collapse
+br
+    font-family: 'Noto Sans KR', sans-serif
+html
+    width: 100%
+    height: 100%
+    overflow: auto
+    scrollbar-width: none
+    // &::-webkit-scrollbar 
+    //     display: none
+body
+
+header
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 120px
+    padding: 1.5rem 2.5rem
+    z-index: 995
+    
+footer
+    width: 100%
+    border-top: 1px solid #cccccc
+    padding: 2.5rem 0
+    .wrap
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        width: 1200px
+        margin: 0 auto
+        .logo
+            display: flex
+            justify-content: center
+            align-items: center
+            margin-right: 1rem
+            margin-bottom: 1rem
+            span
+                border-right: 2px solid #ccc
+                padding-right: 1rem
+                margin-right: 1rem
+                font-family: 'GmarketSansBold', sans serif
+                white-space: nowrap
+            ul
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 100%
+                li
+                    margin-right: 1rem
+                    img
+                        display: block
+                        width: 100%
+                        max-width: 200px
+                li:last-child
+                    margin-right: 0
+        .call
+            display: flex
+            justify-content: center
+            align-items: start
+            span
+                padding-right: 1rem
+                margin-right: 1rem
+                border-right: 2px solid #ccc
+                font-family: 'GmarketSansBold', sans serif
+                white-space: nowrap
+            p
+                font-size: 1.1rem
+                font-family: 'GmarketSansMedium', sans serif
+                margin-bottom: 0.25rem
+                white-space: nowrap
+        .copy
+            display: flex
+            flex-wrap: wrap
+            justify-content: start
+            align-items: center
+            p
+                font-size: 0.8rem
+            p:first-child
+                margin-right: 1rem
+
+.pc
+    display: block !important
+.mo
+    display: none !important
+.pc1023
+    display: block !important
+.mo1023
+    display: none !important
+.pc1260
+    display: block !important
+.mo1260
+    display: none !important
+.pc1365
+    display: block !important
+.mo1365
+    display: none !important
+
+// /*Small PC*/
+// @media (max-width: 1556.5px)
+
+
+// /*Ipad pro*/
+// @media (max-width: 1365.9px)
+
+
+/*breack point*/
+@media (max-width: 1260px)
+    .pc1260
+        display: none !important
+    .mo1260
+        display: block !important
+
+    footer .wrap
+        width: 90%
+        .call 
+            margin-bottom: 1rem
+            >div
+                display: flex
+                flex-wrap: wrap
+                p
+                    margin-right: 1rem
+                    margin-bottom: 0.25rem
+                p:last-child
+                    margin-right: 0
+                    margin-bottom: 0
+    
+/*Ipad*/
+@media (max-width: 1023px)
+    .pc1023
+        display: none !important
+    .mo1023
+        display: block !important
+    
+/*Tablet*/
+@media (max-width: 768px)
+    .pc
+        display: none !important
+    .mo
+        display: block !important
+
+    footer 
+        .wrap .logo
+            margin-right: 0
+        .wrap .call > div p
+            font-size: 0.9rem
+            img
+                max-width: 18px
+
+/*Mobile*/
+@media (max-width: 575.98px)
+    header
+        padding: 1rem
+        h1
+            width: 160px
+            img
+                display: block
+                width: 100%
+    footer 
+        padding: 1.5rem 0
+        .wrap 
+            .logo
+                margin-bottom: 0.5rem
+            .logo span,.call span
+                font-size: 0.75rem
+                margin-right: 0.5rem
+                padding-right: 0.5rem
+            .call 
+                margin-bottom: 0.5rem
+                >div p
+                    font-size: 0.65rem
+                    margin-right: 0.5rem
+            .copy 
+                margin-bottom: 0
+                p
+                    font-size: 0.65rem
+        
+
+
+// /*Minimum*/
+// @media (max-width: 360px)

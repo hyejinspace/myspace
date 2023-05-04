@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../../common/css/style.css"/>
+    <!-- 뷰페이지 admin 전용 CSS -->
+    <link rel="stylesheet" href="../../common/css/edit.css"/>
+    <!-- fontawesom -->
+    <script src="https://kit.fontawesome.com/507899fcde.js" crossorigin="anonymous"></script>
+    <script src="../../common/js/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- Header(공통): 호별 class 변경(vol98) -->
+    <header class="vol98">
+        <div class="wrap">
+            <a href="../../page/vol98/html/index.html" class="logo">
+                <img src="../../common/images/logo.png" alt="동포사랑">
+            </a>
+            <button class="btn_menu"><span>메뉴</span></button>
+        </div>
+    </header>
+
+    <!-- Navgation(공통) -->
+    <nav>
+        <div class="wrap">
+            <button class="btn_close"><span>닫기</span></button>
+            <div class="left">
+                <h2 class="subtitle">
+                    <span>북한이탈주민,</span>
+                    <span>우리 이웃들의 이야기</span>
+                </h2>
+                <img src="../../common/images/logo.png" alt="동포사랑" class="title">
+                <p class="volumn"><span>2022 03+04</span><span>vol.98</span></p>
+            </div>
+            <div class="right">
+                <ul class="gnb">
+                    <li>
+                        <h3 class="lnbTitle01">정착이야기</h3>
+                        <ul class="lnb">
+                            <li><a href="#">세무법인 위드 채현정 팀장</a></li>
+                            <li><a href="#">한빛농원 최은숙</a></li>
+                            <li><a href="#">베스티안 서울병원<br class="pc"/> 김순이 간호사</a></li>
+                            <li><a href="#">기업은행 조현성 차장</a></li>
+                            <li><a href="#">로프군단 김영근 대표</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="lnbTitle02">함께하는 이야기</h3>
+                        <ul class="lnb">
+                            <li><a href="#">남북하나재단 나현준 컨설턴트<br/> (사)비욘드더바운더리</a></li>
+                            <li><a href="#">이영석 사무국장</a></li>
+                            <li><a href="#">YTN 김혜민 PD</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="lnbTitle03">문화정보</h3>
+                        <ul class="lnb">
+                            <li><a href="#">책 읽는 시간 '언어의 온도'<br class="pc"/> 남도 여행</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3 class="lnbTitle04">고향 이야기</h3>
+                        <ul class="lnb">
+                            <li><a href="#">개학 날의 추억</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section(서브) -->
+    <section class="sub event">
+        <div class="view_top">
+            <img src="../img/event.jpg" alt="">
+        </div>
+        <div class="view_content">
+            <div class="event">
+                <div class="event_top">
+                    <h3>
+                        <span>공모내용</span>
+                    </h3>
+                </div>                       
+                <form method="post" name="event_form" id="event_form">
+                    <input type="hidden" name="mode" value="write">
+                    <input type="hidden" name="reg_volume" value="vol98">
+                    <input type="hidden" name="reg_menu" value="event">
+
+                    <ul class="event_input">
+                        <li>
+                            <span class="event_subtitle">1.&lt;동포사랑&gt;의 또다른 이름을 지어주세요</span>
+                            <input type="text" name="reg_name" placeholder="제호명">
+                        </li> 
+                        <li>
+                            <span class="event_subtitle">2.&lt;동포사랑&gt;에게 “일 없습니다!”라고 안부를 전해주세요</span>
+                            <div class="textbox">
+                               <p>
+                                    &lt;동포사랑&gt;은 구독자 한분 한분의 안부가 궁금합니다. “일 없으시죠?”라고 여쭙니다. “일 없습니다.”라고 손 한번 흔들어 여러분의 안부를 전해주셔도 좋고 좋은 추억은 사진을 첨부해주셔도 좋습니다.
+                               </p>
+                            </div>
+                            <input type="text" name="greetings" placeholder="안부한마디">
+                            <div class="event_file">
+                                <input type="text" readonly="" id="file1" placeholder="추억의 사진 첨부">
+                                <input type="file" name="file_img" id="file_img" placeholder="추억의 사진 첨부"> 
+                                <label for="file" id="file_btn1">첨부하기</label> 
+                            </div>
+                        </li> 
+                        <li class="width">
+                            <div class="event_agreement">
+                                <b class="agreement_title">개인정보수집 정책 및 개인정보의 제3자 제공</b>
+                                <p>
+                                    북한이탈주민지원재단은 격월간 정기간행물 ‘동포사랑’ 구독자의 엽서 수집 및 경품안내, 구독방법 수요조사 등을 위하여 
+                                    개인정보보호법 제15조, 제22조에 따라 아래와 같이 개인정보를 수집·이용하고 있습니다. 
+                                    <br/><br/>
+                                    [개인정보 수집·이용 목적]<br/>
+                                    동포사랑 구독자 엽서 수집, 경품 발송, 당첨자 중복방지 조회, 엽서 활용을 통한 정기간행물 콘텐츠 제작 등에 이용되며, 
+                                    수집됩니다. 이용 항목 중 연락처(휴대전화번호)는 만족도 조사 시 추가로 활용됩니다.<br/>
+                                    [개인정보 수집·이용 항목] (필수항목) 이름, 주소, 연락처<br/>
+                                    [개인정보 이용 및 보유기간] 해당 호 엽서 수취로부터 3년 보관<br/>
+                                    [개인정보 수집 동의거부 권리 및 불이익]<br/>
+                                    정보주체는 개인정보 수집·동의를 거부할 수 있으며, 동의하지 않으시는 경우에는 엽서 경품당첨 및 콘텐츠를 이용한 
+                                    독자의 말 등에 참여할 수 없습니다   
+                                </p>
+                            </div>
+                        </li>
+                        <li class="radio width">
+                            <span>위 내용을 확인하였으며 이에 동의하십니까?</span> 
+                            <span class="event_check"> 
+                                <input type="radio" name="agree" id="radio01">
+                                <label for="radio01">동의</label>
+                                <input type="radio" name="agree" id="radio02">
+                                <label for="radio02">동의하지않음</label>
+                            </span>
+                        </li>            
+                        <li class="top width">
+                            <span>
+                                <span class="event_subtitle">성함</span>
+                                <input type="text" name="name" maxlength="10">
+                            </span>
+                            <span>
+                                <span class="event_subtitle">연락처</span>
+                                <input type="text" name="phone" placeholder="‘-’제외" maxlength="12" onkeyup="onlyNumber(this);">
+                            </span>
+                        </li>
+                        <li class="bottom width">
+                            <span class="event_subtitle">주소</span>
+                            <div>
+                                <span class="half">
+                                    <input type="text" name="event_zipcode"><button onclick="popPostSearchOpen();" class="zipcode">우편번호 찾기</button>
+                                </span>
+                                <input type="text" name="event_address">
+                                <input type="text" name="event_address2" placeholder="나머지 주소 입력">
+                            </div>
+                        </li>
+                        <li class="secure width">                  
+                            <span class="event_subtitle">자동등록방지</span>       
+                            <div class="event_secure">
+                                <span><img id="captcha_img" src="../../common/images/secureimage.gif" alt=""></span>
+                                <button type="button" id="captcha_btn"><i class="fas fa-sync-alt" aria-hidden="true"></i></button>
+                                <input type="text" name="captcha" onkeyup="onlyNumber(this);" maxlength="5">
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+                <button class="event_btn">이벤트 참여하기</button>
+            </div>
+
+            <div class="survey_banner">
+                <a href=" http://naver.me/GK5aZg9Q" class="survey" target="_blank">
+                    <img src="../img/survey.jpg" alt="" class="pc">
+                    <img src="../img/survey_mo.jpg" alt="" class="mo">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer(공통) -->
+    <footer>
+        <div class="wrap">
+            <div class="logo">
+                <img src="../../common/images/logo02.png" alt="남북하나재단">
+            </div>
+            <div class="sns">
+                <a href="#" target="_blank">
+                    <img src="../../common/images/sns01.png" alt="페이스북">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="../../common/images/sns02.png" alt="유튜브">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="../../common/images/sns03.png" alt="네이버 밴드">
+                </a>
+                <a href="#" target="_blank">
+                    <img src="../../common/images/sns04.png" alt="카카오채널">
+                </a>
+            </div>
+            <p class="address">
+                <span>
+                    <b>04168 서울특별시 마포구 새창로 7, 4-5-14층 (도화동 565, SNU장학빌딩)</b>
+                    <b>TEL : 1577-6635</b>
+                    <b>FAX : 02-3215-579</b>
+                </span>
+                <span>COPYRIGHT ⓒ 2022 동포사랑. ALL RIGHT RESERVED.</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Function(공통) -->
+    <div class="search">
+        <div class="wrap">
+            <input type="text" placeholder="검색어를 입력해주세요">
+            <button class="search_btn"><i class="fas fa-search" alt="검색"></i></button>
+        </div>
+    </div>
+    <div class="share">
+        <div class="top">
+            <p class="title">공유하기</p>
+            <button class="close"><span>닫기</span></button>
+        </div>	
+        <div class="bottom sns">
+            <a>
+                <img src="../../common/images/share.png" alt="카카오톡">
+                <small>카카오톡</small>
+            </a>
+            <a>
+                <img src="../../common/images/share02.png" alt="카카오스토리">
+                <small>카카오스토리</small>
+            </a>
+            <a>
+                <img src="../../common/images/share03.png" alt="라인">
+                <small>라인</small>
+            </a>
+            <a>
+                <img src="../../common/images/share04.png" alt="밴드">
+                <small>밴드</small>
+            </a>
+            <a>
+                <img src="../../common/images/share05.png" alt="네이버">
+                <small>네이버</small>
+            </a>
+            <a>
+                <img src="../../common/images/share06.png" alt="페이스북">
+                <small>페이스북</small>
+            </a>
+            <a>
+                <img src="../../common/images/share07.png" alt="트위터">
+                <small>트위터</small>
+            </a>
+            <a>
+                <img src="../../common/images/share08.png" alt="URL복사">
+                <small>URL복사</small>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Scirpt(공통) -->
+    <script src="../../common/js/swiper.min.js"></script>
+    <script src="../../common/js/app.js"></script>
+
+    <!-- Scirpt(서브) -->
+    <script>
+        
+    </script>
+</body>
+</html>

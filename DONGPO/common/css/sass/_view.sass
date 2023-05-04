@@ -1,0 +1,342 @@
+.view
+    padding: 3rem calc((100% - 1122px)/2) 4rem
+    .view_top
+        display: flex
+        flex-direction: column
+        justify-content: center
+        position: relative
+        padding-bottom: 3rem
+        border-bottom: 1px solid #9fa0a0
+        text-align: center
+        .date
+            padding: 0 calc(144px + 1rem)
+            font-family: 'Noto Sans KR', serif
+            font-size: 1rem
+            font-weight: bold
+            display: flex
+            align-items: center
+            margin-left: 5px
+            padding-bottom: 0.25rem
+            .wrap
+                margin: 0 auto
+                display: flex
+                align-items: center
+                flex-wrap: wrap
+                padding-bottom: 0.5rem
+                border-bottom: 1px solid #b5b5b5
+            img
+                display: inline-block
+            span
+                position: relative
+                padding: 0 1.25rem
+                margin: 0 0.2rem 0 0.5rem
+                font-size: 0.9rem
+                font-weight: 300
+                line-height: 1
+                &::before,
+                &::after
+                    display: inline-block
+                    content: ">"
+                    position: absolute
+                    top: 0
+                    left: 4px
+                    width: 17px
+                    height: 2px
+                &::after
+                    left: auto
+                    right: 0
+            p
+                margin: 0 0.2rem
+                font-size: 0.9rem
+                font-weight: 300
+                line-height: 1
+        .title
+            padding: 0 calc(144px + 1rem)
+            margin: 1rem auto 0
+            font-size: 1.45rem
+            word-break: keep-all
+        .subtitle
+            font-size: 1rem
+            word-break: keep-all
+            margin: 0.75rem auto 0
+        .by
+            padding: 0 calc(144px + 1rem)
+            margin-top: 1rem
+            font-size: 0.9rem
+            word-break: keep-all
+            color: #969696
+            >b
+                color: #515151
+        .keyword
+            padding: 0 calc(144px + 1rem)
+            margin-top: 1rem
+            > span
+                display: inline-block
+                margin: 0 0.75rem
+                font-size: 0.95rem
+                line-height: 1.45
+                color: #178780
+        .movement
+            position: absolute
+            left: 0
+            bottom: 2rem
+            width: 100%
+            overflow: hidden
+            .prev,
+            .next
+                display: inline-block
+                float: left
+                width: 144px
+                height: 63px
+                border: 1px solid #9fa0a0
+                text-align: center
+                cursor: pointer
+                > span
+                    font-size: 0.85rem
+                    line-height: 61px
+                &:hover > span
+                    text-decoration: underline
+            .next
+                float: right
+    .view_content
+        width: 995px
+        padding: 3rem 0
+        margin: 0 auto
+    .view_function
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        width: 995px
+        margin: 0 auto
+        border-top: 1px solid $border
+        border-bottom: 1px solid $border
+        .left,
+        .right
+            display: flex
+            flex-wrap: wrap
+            border-left: 1px solid $border
+        button,
+        a
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 68px
+            height: 68px
+            border-right: 1px solid $border
+            cursor: pointer
+            > img
+                display: block
+                max-height: 100%
+    .view_relation
+        position: relative
+        margin-top: 2.5rem
+        .title
+            width: 995px
+            margin: 0 auto
+            font-size: 1.25rem
+        .swiper-container
+            width: 995px
+            margin-top: 1.5rem
+        .swiper-slide
+            width: 31%
+            margin-right: 3.5%
+            .img
+                display: block
+                border-radius: 0.75rem
+                overflow: hidden
+                > img
+                    display: block
+                    max-width: 100%   
+                    transition: all 0.3s linear
+            .img:hover > img
+                transform: scale(1.05)
+            .date
+                display: flex
+                flex-wrap: wrap
+                margin-top: 1rem
+                font-family: 'Nanum Myeongjo', serif
+                font-size: 0.95rem
+                font-weight: bold
+                .category
+                    margin-left: 5px
+            // @each $name, $hexa in $category
+            //     .date.#{$name}
+            //         color: #{$hexa}
+            //         .category
+            //             color: #{$hexa}
+            .subtitle
+                margin-top: 0.5rem
+                font-size: 1.15rem
+                font-weight: 500
+                line-height: 1.25
+                word-break: keep-all
+                .subcategory
+                    display: block
+                    margin: 0 0 0.25rem
+                    font-size: 0.95rem
+                    font-weight: 400
+                    &::before
+                        display: inline-block
+                        content: "["
+                    &::after
+                        display: inline-block
+                        content: "]"
+        .swiper-slide:last-child
+            margin-right: 0
+        .swiper-button-prev,
+        .swiper-button-next
+            width: 67px
+            height: 66px
+            left: -1.5rem
+            margin: 0
+            border: 1px solid $border
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23b7b7b7'%2F%3E%3C%2Fsvg%3E")
+            background-size: 12px
+            transform: translateY(-50%)
+        .swiper-button-next
+            left: auto
+            right: -1.5rem
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23b7b7b7'%2F%3E%3C%2Fsvg%3E")
+/*Ipad Pro*/
+@media (max-width: 1365px)
+    .view
+        padding: 3rem 0 4rem
+        .view_top
+            width: calc(100% - 5rem)
+            margin: 0 auto
+            padding-bottom: 3rem
+            .date,
+            .title,
+            .by,
+            .keyword
+                padding: 0 calc(66px + 1.5rem)
+            .movement
+                .prev,
+                .next
+                    width: 66px
+                    height: 66px
+                    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23b7b7b7'%2F%3E%3C%2Fsvg%3E")
+                    background-repeat: no-repeat
+                    background-position: center
+                    background-size: 12px
+                    span
+                        display: none
+                .next
+                    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23b7b7b7'%2F%3E%3C%2Fsvg%3E")
+        .view_content
+            width: calc(100% - 5rem)
+        .view_function
+            width: 100%
+        .view_relation
+            width: calc(100% - 5rem)
+            margin: 2.5rem auto 0
+            .title
+                width: 100%
+            .swiper-container
+                width: calc(100% - ((66px + 1rem)*2))
+            .swiper-slide
+                width: 47.5%
+                margin-right: 5%
+                .img > img
+                    transform: none !important
+            .swiper-button-prev
+                left: 0 
+            .swiper-button-next
+                right: 0
+/*Ipad*/
+@media (max-width: 991.98px)
+    .view
+        .view_top
+            width: 90%
+        .view_content
+            width: 90%
+        .view_relation
+            width: 90%
+            .swiper-slide
+                width: 62.5%
+/*Mobile*/
+@media (max-width: 575.98px)
+    .view
+        padding: 2rem 0
+        .view_top
+            padding-bottom: 2rem
+            .date
+                padding: 0 5%
+                font-size: 0.75rem
+                .wrap
+                    padding-bottom: 0.25rem
+                    img
+                        display: inline-block
+                    span
+                        position: relative
+                        padding: 0 0.8rem 0 1rem
+                        margin: 0 0 0 0.2rem
+                        font-size: 0.65rem
+                        &::before
+                            left: 2px
+                        &::after
+                            right: -2px
+                    p
+                        margin: 0 0.2rem
+                        font-size: 0.65rem
+                        font-weight: 300
+                        line-height: 1
+            .title
+                padding: 0 calc(40px + 5%)
+                margin-top: 0.75rem
+                font-size: 1.25rem
+            .subtitle
+                font-size: 0.85rem
+                margin: 0.5rem auto 0
+            .by
+                padding: 0 calc(40px + 5%)
+                margin-top: 1rem
+                font-size: 0.75rem
+            .keyword
+                padding: 0 calc(40px + 5%)
+                margin-top: 1rem
+                > span
+                    font-size: 0.75rem
+                    margin: 0 0.25rem
+            .movement
+                bottom: 50%
+                transform: translateY(50%)
+                .prev,
+                .next
+                    width: 40px
+                    height: 40px
+                    background-size: 10px
+        .view_content
+            padding: 2rem 0
+        .view_function
+            button,
+            a
+                width: 50px
+                height: 50px
+                > img
+                    max-width: 24px
+                    max-height: 20px
+        .view_relation
+            margin-top: 1.5rem
+            .title
+                font-size: 1.25rem
+            .swiper-container
+                width: calc(100% - ((40px + 0.75rem)*2))
+            .swiper-slide
+                width: 72.5%
+                margin-right: 7.5%
+                .img
+                    border-radius: 0.5rem
+                .date
+                    font-size: 0.75rem
+                    .category
+                        margin-left: 3px
+                .subtitle
+                    font-size: 0.9rem
+                    .subcategory
+                        font-size: 0.75rem
+            .swiper-button-prev,
+            .swiper-button-next
+                width: 40px
+                height: 40px
+                background-size: 8px

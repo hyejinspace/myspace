@@ -1,0 +1,1069 @@
+
+//top
+.topArea
+    width: 100%
+    .wrap
+        position: relative
+        height: 307px
+        .bg
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            left: 0
+            z-index: 1
+            overflow: hidden
+            img
+                display: block
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%,-50%)
+                width: auto
+                height: 102%
+    .inner
+        position: relative
+        display: flex
+        flex-wrap: wrap
+        justify-content: start
+        align-items: center
+        height: 100%
+        z-index: 2
+    .topText
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        .profileIMG
+            width: 98px
+            height: 98px
+            margin-right: 20px
+            border-radius: 50%
+            overflow: hidden
+            img
+                display: block
+                width: 100%
+        .userName
+            font-size: 28px
+            font-weight: 700
+            font-family: 'Pretendard'
+            color: #fff
+
+//conents
+.contentsArea
+    width: 100%
+    // margin-bottom: 391px
+    .wrap
+        position: relative
+        background-color: #fff
+        // &::before
+        //     content: ''
+        //     display: block
+        //     position: absolute
+        //     bottom: -300px
+        //     left: 0
+        //     width: 100%
+        //     height: 300px
+        //     background-color: #fff
+    .inner
+        position: relative
+        &::after
+            content: ''
+            display: block
+            clear: both
+        // &::before
+        //     content: ''
+        //     position: absolute
+        //     display: block
+        //     width: 1px
+        //     height: 100%
+        //     top: 92px
+        //     right: 306px
+        //     background-color: rgba(0, 0, 0, 0.06)
+    .conTitle
+        border-bottom: 1px solid rgba(0, 0, 0, 0.06)
+        padding: 18px 0
+        height: 60px
+        h2
+            font-size: 20px
+            font-weight: 700
+            font-family: 'Pretendard'
+    .contents
+        position: relative
+        width: calc(870px + 24px)
+        padding-right: 24px
+        border-right: 1px solid rgba(0, 0, 0, 0.06)
+        >ul >li
+            display: flex
+            flex-wrap: wrap
+            justify-content: flex-end
+            padding: 24px 0 56px 0
+            &:first-child
+                padding-top: 0
+                margin-top: 24px
+        .albumCover
+            width: 180px
+            height: 180px
+            margin-right: 24px
+            overflow: hidden
+            img
+                display: block
+                width: 100%
+        .con
+            width: calc(100% - (180px + 24px))
+            max-width: 690px
+            .player
+                .top
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-between
+                    align-items: flex-end
+                    margin-bottom: 16px
+                    .musicInfo
+                        display: flex
+                        flex-wrap: wrap
+                        z-index: 2
+                        .playBtn
+                            display: block
+                            width: 38px
+                            height: 38px
+                            margin-right: 16px
+                            background-color: #8B82FF
+                            border-radius: 50%
+                            background-image: url('../img/play.png')
+                            background-repeat: no-repeat
+                            background-position: center
+                            background-size: 11px
+                            cursor: pointer
+                        .playBtn.playing
+                            background-image: url('../img/stop.png')
+                        .userName
+                            margin-bottom: 6px
+                            font-size: 12px
+                            font-weight: 600
+                            font-family: 'Pretendard'
+                            color: rgba(0, 0, 0, 0.5)
+                        .musicTitle
+                            font-size: 16px
+                            font-weight: 600
+                            font-family: 'Pretendard'
+                    .date
+                        display: inline-block
+                        font-size: 12px 
+                        font-weight: 400
+                        font-family: 'Pretendard'
+                        color: rgba(0, 0, 0, 0.5)
+                .musicPlayer
+                    width: 100%
+                    img
+                        display: block
+                        width: 100%
+        .bottom
+            width: calc(100% - (180px + 24px))
+            max-width: 690px
+            margin-top: -40px
+        .commentWrap
+            width: 100%
+            padding: 8px 0
+            border-top: 1px solid rgba(0, 0, 0, 0.06)
+            .commentOpen
+                position: relative
+                display: block
+                padding-right: 16px
+                margin-bottom: 8px
+                font-size: 14px
+                font-weight: 500
+                font-family: 'Pretendard'
+                color: #505050
+                cursor: pointer
+                &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    right: 0
+                    top: 0
+                    width: 16px
+                    height: 17px
+                    background-image: url('../img/arrowDown.png')
+                    background-repeat: no-repeat
+                    background-size: contain
+                    background-position: right center
+                    // transform: rotate(180deg)
+            .commentOpen.on::before
+                transform: rotate(180deg)
+            .commentOpen.on ~ ul li
+                display: flex !important
+            .comment
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                padding-left: 12px
+                margin-bottom: 8px
+                .textWrap
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: center
+                    margin: 8px 0 15px
+                    width: calc(100% - 32px - 12px)
+                    .userIMG
+                        width: 32px
+                        height: 32px
+                        margin-right: 8px
+                        border-radius: 50%
+                        overflow: hidden
+                        img
+                            display: block
+                            width: 100%
+                    >.cmtWrap
+                        width: calc(100% - 32px - 8px)
+                        .userName
+                            display: block
+                            margin-bottom: 2px
+                            font-size: 12px
+                            font-weight: 600
+                            font-family: 'Pretendard'
+                            color: rgba(0, 0, 0, 0.5)
+                        .conText
+                            font-size: 14px
+                            font-weight: 500
+                            font-family: 'Pretendard'
+                            line-height: 20px
+                .FuncWrap
+                    position: relative
+                    display: flex
+                    flex-wrap: wrap
+                    flex-direction: column
+                    align-items: flex-end
+                    margin-left: 12px
+                    .FuncBtn
+                        display: block
+                        width: 24px
+                        height: 24px
+                        background-image: url('../img/funcBtn.png')
+                        background-repeat: no-repeat
+                        background-size: contain
+                        cursor: pointer
+                    .FuncPopup
+                        display: none
+                        position: absolute
+                        top: 0
+                        right: 0
+                        width: 165px
+                        padding: 4px
+                        background-color: #fff
+                        border: 1px solid rgba(0, 0, 0, 0.08)
+                        box-shadow: 0px 11px 15px rgba(3, 0, 38, 0.08)
+                        border-radius: 6px
+                        ul li button
+                            display: block
+                            width: 100%
+                            padding: 8px
+                            font-size: 14px
+                            font-weight: 500
+                            text-align: left
+                            border-radius: 4px
+                            color: rgba(0, 0, 0, 0.8)
+                            cursor: pointer
+                            &:hover
+                                background: #EDEBF2
+                    .FuncPopup.on
+                        display: block
+                        z-index: 901
+                .inputTime
+                    font-size: 12px
+                    font-weight: 400
+                    font-family: 'Pretendard'
+                    color: rgba(0, 0, 0, 0.5)
+            .comment
+                display: none
+            .comment.myComment
+                display: flex
+            .comment.reply
+                .textWrap
+                    padding-left: 28px
+                    background-image: url('../img/reply.png')
+                    background-repeat: no-repeat
+                    background-size: 20px
+                    background-position: top left
+            .inputArea
+                position: relative
+                width: 100%
+                textarea
+                    position: relative
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 40px
+                    padding: 10px 12px 6px 44px
+                    font-size: 14px
+                    font-weight: 500
+                    font-family: 'Pretendard'
+                    line-height: 17px
+                    color: rgba(0, 0, 0, 0.5)
+                    border: 1px solid rgba(0, 0, 0, 0.1)
+                    border-radius: 6px
+                    &:focus
+                        border-color: #271CA2
+                .userIMG
+                    position: absolute
+                    top: 8px
+                    left: 12px
+                    width: 24px
+                    height: 24px
+                    border-radius: 50%
+                    overflow: hidden
+                    img
+                        display: block
+                        width: 100%
+                .submit
+                    position: absolute
+                    display: inline-block
+                    height: 24px
+                    top: 8px
+                    right: 12px
+                    font-size: 14px
+                    font-weight: 500
+                    font-family: 'Pretendard'
+                    color: #8B82FF
+                    cursor: pointer
+        .functionWrap
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: center
+            width: 100%
+            .function
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                button
+                    display: inline-block
+                    padding: 8px 8px 8px 28px
+                    margin-right: 10px
+                    font-size: 14px
+                    font-weight: 500
+                    font-family: 'Pretendard'
+                    background-repeat: no-repeat
+                    background-position: 9px center
+                    background-size: 16px
+                    border: 1px solid rgba(0, 0, 0, 0.12)
+                    border-radius: 4px
+                    cursor: pointer
+                    &:last-child
+                        margin-right: 0
+                button.like
+                    background-image: url('../img/like.png')
+                button.on.like
+                    background-color: rgba(139, 130, 255, 0.12)
+                    border-color: #8B82FF
+                    background-image: url('../img/likeOn.png')
+                button.share
+                    background-image: url('../img/share.png')
+                button.report
+                    background-image: url('../img/report.png')
+                button.link
+                    background-image: url('../img/link.png')
+                button.donation
+                    background-image: url('../img/donation.png')
+            .statistics
+                position: relative
+                display: flex
+                flex-wrap: wrap
+                justify-content: flex-end
+                .view
+                    display: inline-block
+                    margin-right: 8px
+                    padding-left: 14px
+                    font-size: 12px
+                    font-weight: 400
+                    font-family: 'Pretendard'
+                    line-height: 24px
+                    color: rgba(0, 0, 0, 0.5)
+                    background-image: url('../img/arrowRight.png')
+                    background-repeat: no-repeat
+                    background-position: left center
+                    background-size: 10px
+                .commentNum
+                    display: inline-block
+                    margin-right: 8px
+                    padding-left: 14px
+                    font-size: 12px
+                    font-weight: 400
+                    font-family: 'Pretendard'
+                    line-height: 24px
+                    color: rgba(0, 0, 0, 0.5)
+                    background-image: url('../img/chat.png')
+                    background-repeat: no-repeat
+                    background-position: left center
+                    background-size: 12px
+                    cursor: pointer
+                .commentNum.on
+                    color: #8B82FF
+                    background-image: url('../img/chatOn.png')
+                .FuncBtnWrap
+                    position: absolute
+                    top: 0
+                .funcBtnWrap.on
+                    position: fixed
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                .FuncBtn
+                    display: block
+                    width: 24px
+                    height: 24px
+                    background-image: url('../img/funcBtn.png')
+                    background-repeat: no-repeat
+                    background-size: contain
+                    cursor: pointer
+                    z-index: 10
+                .date
+                    display: none
+    .musicFuncPopup
+        display: none
+        position: absolute
+        top: -20px
+        right: 0
+        width: 165px
+        padding: 4px
+        background-color: #fff
+        border: 1px solid rgba(0, 0, 0, 0.08)
+        box-shadow: 0px 11px 15px rgba(3, 0, 38, 0.08)
+        border-radius: 6px
+        ul li button
+            display: block
+            width: 100%
+            padding: 8px
+            font-size: 14px
+            font-weight: 500
+            text-align: left
+            border-radius: 4px
+            color: rgba(0, 0, 0, 0.8)
+            cursor: pointer
+            &:hover
+                background: #EDEBF2
+    .musicFuncPopup.on
+        display: block
+        z-index: 901
+.profile
+    position: relative
+    float: right
+    width: calc(282px + 24px)
+    margin-top: 92px
+    padding-left: 24px
+    .my
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin-bottom: 12px
+        .profileIMG
+            width: 56px
+            height: 56px
+            margin-bottom: 16px
+            border-radius: 50%
+            overflow: hidden
+            img
+                display: block
+                width: 100%
+        .userName
+            margin-bottom: 4px
+            font-size: 18px
+            font-weight: 700
+            line-height: 21.48px
+            font-family: 'Pretendard'
+        .userID
+            font-size: 12px
+            font-weight: 500
+            line-height: 14.32px
+            color: rgba(0, 0, 0, 0.3)
+            font-family: 'Pretendard'
+    .myStat
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 4px
+        >div
+            display: flex
+            flex-wrap: wrap
+            flex-direction: column
+            align-items: center
+            width: 33.3333%
+            padding: 16px 20px
+            .category
+                display: block
+                margin-bottom: 12px
+                font-size: 12px
+                font-weight: 500
+                font-family: 'Pretendard'
+                color: rgba(0, 0, 0, 0.5)
+                text-align: center
+            >div
+                font-size: 16px
+                font-weight: 600
+                font-family: 'Pretendard'
+                text-align: center
+    .intro
+        margin-bottom: 20px
+        font-size: 12px
+        font-weight: 400
+        line-height: 14.32px
+        font-family: 'Pretendard'
+        text-align: center
+    .follow
+        display: block
+        width: 100%
+        height: 51px
+        margin-bottom: 12px
+        font-size: 16px
+        font-weight: 600
+        font-family: 'Pretendard'
+        text-align: center
+        background-color: #271CA2
+        border: 1px solid #271CA2
+        border-radius: 8px
+        color: #fff
+        cursor: pointer
+    .follow.on
+        background: rgba(0, 0, 0, 0.04)
+        border: 1px solid rgba(0, 0, 0, 0.08)
+        border-radius: 6px
+        color: #000
+    .FuncBtn .btnWrap 
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        .tit
+            display: none
+        button
+            display: inline-block
+            padding: 8px 8px 8px 28px
+            margin-right: 10px
+            font-size: 14px
+            font-weight: 500
+            font-family: 'Pretendard'
+            background-repeat: no-repeat
+            background-position: 9px center
+            background-size: 16px
+            border: 1px solid rgba(0, 0, 0, 0.12)
+            border-radius: 4px
+            cursor: pointer
+            &:last-child
+                margin-right: 0
+        button.like
+            background-image: url('../img/like.png')
+        button.on.like
+            background-color: rgba(139, 130, 255, 0.12)
+            border-color: #8B82FF
+            background-image: url('../img/likeOn.png')
+            background-repeat: no-repeat
+        button.share
+            background-image: url('../img/share.png')
+        button.donation
+            background-image: url('../img/donation.png')
+
+
+//하단 플레이어
+.playerPopup
+    // display: none
+    // position: fixed
+    position: relative
+    left: 0
+    bottom: 0
+    height: 0px
+    // bottom: 279px
+    width: 100%
+    background-color: #030026
+    z-index: -100
+    .close
+        position: absolute
+        top: 15px
+        right: 20px
+        width: 15px
+        height: 15px
+        background-image: url('../img/close.png')
+        background-repeat: no-repeat
+        background-size: contain
+        cursor: pointer
+    .inner
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        padding: 20px 0
+    .btnWrap
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        padding: 28px 0
+        width: 144px
+        margin-right: 62px
+        button
+            display: block
+            width: 16px
+            height: 16px
+            background-repeat: no-repeat
+            background-size: contain
+            margin-right: 15px
+            cursor: pointer
+            &:last-child
+                margin-right: 0
+        button.prevSong
+            background-image: url('../img/prevSong.png')
+            opacity: 0.5
+        button.play
+            background-image: url('../img/play02.png')
+        button.play.playing
+            background-image: url('../img/stop.png')
+            background-position: center
+        button.nextSong
+            background-image: url('../img/nextSong.png')
+            opacity: 0.5
+        button.shuffle
+            background-image: url('../img/shuffle.png')
+        button.repeat
+            background-image: url('../img/repeat.png')
+    .ProgressWrap
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        width: calc(100% - 638px)
+        max-width: 610px
+        margin-right: 62px
+        .startTime
+            display: block
+            margin-right: 12px
+            font-size: 14px
+            font-weight: 400
+            font-family: 'Pretendard'
+            color: #8B82FF
+        .progress
+            position: relative
+            width: calc(100% - 87px)
+            height: 2px
+            background: rgba(255, 255, 255, 0.3)
+            border-radius: 8px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            // .progress i
+            //     margin: 0 10px
+        #range
+            -webkit-appearance: none
+            overflow: hidden
+            width: 100%
+            height: 2px
+            background: transparent
+            cursor: pointer
+            background: rgba(255, 255, 255, 0.3)
+            border-radius: 0
+        #range::-webkit-slider-thumb
+            -webkit-appearance: none
+            width: 10px
+            height: 2px
+            background: rgba(255, 255, 255, 0.3)
+            box-shadow: -100vw 0 0 100vw #8B82FF
+            border: 0.1px solid #8B82FF
+            cursor: pointer
+        .endTime
+            display: block
+            margin-left: 12px
+            font-size: 14px
+            font-weight: 400
+            font-family: 'Pretendard'
+            color: #fff
+    .sound
+        position: relative
+        display: block
+        width: 16px
+        height: 16px
+        margin-right: 46px
+        .soundBtn
+            position: absolute
+            top: 0
+            left: 0
+            width: 16px
+            height: 16px
+            margin-right: 46px
+            background-image: url('../img/sound.png')
+            background-repeat: no-repeat
+            background-size: contain
+            cursor: pointer
+        .control
+            display: none
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+            position: absolute
+            left: -15px
+            bottom: 20px
+            width: 43px
+            height: 201px
+            background-image: url('../img/controlBg.png')
+            background-repeat: no-repeat
+            background-size: contain
+            .progress
+                transform: rotate(-90deg)
+                transform-origin: center center
+                height: 35px
+            #soundRange
+                -webkit-appearance: none
+                // overflow: hidden
+                height: 2px
+                background: transparent
+                cursor: pointer
+                background: rgba(255, 255, 255, 0.3)
+                border-radius: 0
+            #soundRange::-webkit-slider-thumb
+                -webkit-appearance: none
+                width: 12px
+                height: 12px
+                background: #8B82FF
+                border: 1px solid #8B82FF
+                border-radius: 50%
+                cursor: pointer
+            #soundRange::-moz-range-thumb
+                -webkit-appearance: none
+                width: 10px
+                height: 10px
+                background: #8B82FF
+                border: 1px solid #8B82FF
+                border-radius: 50%
+                cursor: pointer
+            #soundRange::-ms-track
+                background: #8B82FF
+                border-color: #8B82FF
+                color: #8B82FF
+        .soundBtn.on ~ .control
+            display: flex
+            
+    .songInfo
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        width: 205px
+        margin-right: 46px
+        .albumCover
+            width: 40px
+            height: 40px
+            margin-right: 10px
+            img
+                display: block
+                width: 100%
+        .userName
+            margin-bottom: 2px
+            font-size: 14px
+            font-weight: 400
+            font-family: 'Pretendard'
+            color: #fff
+        .musicTitle
+            font-size: 16px
+            font-weight: 600
+            font-family: 'Pretendard'
+            color: #fff
+    .funcBtn
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        width: 56px
+        button
+            display: block
+            width: 16px
+            height: 16px
+            background-repeat: no-repeat
+            backgrounsd-size: contain
+            cursor: pointer
+        button.like
+            background-image: url('../img/like03.png')
+            margin-right: 24px
+        button.like.on
+            background-image: url('../img/likeOn.png')
+        button.list
+            background-image: url('../img/list.png')
+.playerPopup.on
+    position: fixed
+    height: auto
+    z-index: 900
+.playerPopup.on.fix
+    position: relative
+
+
+@media (max-width: 1248px)
+    .contentsArea .contents 
+        width: calc(100% - 282px - 24px)
+        .con
+            width: calc(100% - 180px - 24px)
+    .playerPopup .inner
+        padding: 20px
+        
+@media (max-width: 1024px)
+    .topArea 
+        z-index: 0
+        position: relative
+        .wrap
+            height: 107px
+            .bg img
+                width: 100%
+                height: auto
+            .topText
+                display: none
+    .profile
+        position: relative
+        width: 100%
+        margin-top: 0
+        padding-left: 0
+        border: none
+        // z-index: 2
+        .myStat 
+            justify-content: center
+            margin-bottom: 24px
+            > div
+                flex-direction: row
+                justify-content: center
+                margin-right: 8px
+                padding: 0
+                width: auto
+                .category
+                    margin-bottom: 0
+                    margin-right: 4px
+        .FuncBtn
+            position: absolute
+            top: 72px
+            left: calc(50% + 30px)
+            width: 20px
+            height: 20px
+            background-image: url(../img/funcBtn.png)
+            background-repeat: no-repeat
+            background-size: contain
+            cursor: pointer
+            .btnWrap
+                display: block
+                width: 20px
+                height: 20px
+                top: 0
+                left: 0
+                *
+                    display: none !important
+        .FuncBtn.on
+            position: fixed
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: rgba(0, 0, 0, 0.5)
+            z-index: 991
+            cursor: auto
+            .btnWrap
+                display: block
+                position: absolute
+                top: auto
+                left: 0
+                bottom: 0
+                width: 100%
+                height: 277px
+                padding: 28px 28px 50px
+                background: #FFFFFF
+                border-radius: 16px 16px 0px 0px
+                overflow: hidden
+                background-color: #fff
+                z-index: 992
+                *
+                    display: block !important
+                .tit
+                    display: block
+                    font-size: 20px
+                    font-weight: 600
+                    font-family: 'Pretendard'
+                    margin-bottom: 40px
+                button
+                    display: block
+                    width: 100%
+                    padding: 0
+                    margin: 0 0 36px 0
+                    font-size: 18px
+                    font-weight: 500
+                    border: none
+                    border-radius: 0
+                    background: transparent
+                    text-align: left
+                    &:last-child
+                        margin-bottom: 0
+            button.on.like
+                background: transparent
+    .contentsArea 
+        margin-bottom: 0
+        .wrap::before
+            bottom: 0
+        .inner
+            top: -30px
+        .conTitle
+            padding: 12px 0
+            height: auto
+            h2
+                font-size: 18px
+        .contents
+            width: 100%
+            border: none
+            padding-right: 0
+            .albumCover
+                width: 96px
+                height: 96px
+                margin-right: 12px
+            >ul >li
+                position: relative
+                justify-content: start
+                padding: 16px 0
+                &:first-child
+                    margin-top: 0
+                    padding-top: 16px
+                &:last-child
+                    padding-bottom: 32px
+            .con 
+                width: calc(100% - 96px - 12px)
+                max-width: none
+                .player 
+                    .top 
+                        padding-bottom: 50px
+                        .musicInfo 
+                            .playBtn
+                                position: absolute
+                                top: 16px
+                                left: 0
+                                width: 96px
+                                height: 96px
+                                background: transparent
+                                z-index: 3
+                                &::before
+                                    content: ''
+                                    display: block
+                                    position: absolute
+                                    top: 50%
+                                    left: 50%
+                                    transform: translate(-50%,-50%)
+                                    width: 24px
+                                    height: 24px
+                                    background-color: #8B82FF
+                                    border-radius: 50%
+                                &::after
+                                    content: ''
+                                    display: block
+                                    position: absolute
+                                    top: 50%
+                                    left: 51%
+                                    transform: translate(-50%,-50%)
+                                    width: 10px
+                                    height: 13px
+                                    background-image: url(../img/play.png)
+                                    background-repeat: no-repeat
+                                    background-position: center
+                                    background-size: contain
+                            .playBtn.playing
+                                border-radius: 0
+                                background: linear-gradient(180deg, rgba(139, 130, 255, 0) 0%, rgba(39, 28, 162, 0.5) 100%)
+                                &::after
+                                    background-image: url(../img/stop.png)
+                            .musicTitle
+                                font-size: 14px
+                                display: -webkit-box
+                                -webkit-line-clamp: 1
+                                -webkit-box-orient: vertical
+                                text-overflow: ellipsis
+                                word-break: keep-all
+                                overflow: hidden
+                        .date
+                            display: none
+                    .musicPlayer
+                        display: none
+            .bottom
+                margin-top: 0
+                width: 100%
+                max-width: none
+            .commentWrap 
+                border: none
+                .comment 
+                    margin: 16.5px 0 8px
+                    &:first-child
+                        margin-top: 8px
+                    &:last-child
+                        margin-bottom: 16.5px
+                    .textWrap
+                        align-items: flex-start
+                        margin: 0
+            .functionWrap 
+                .function 
+                    button
+                        margin-right: 8px
+                .statistics
+                    justify-content: start
+                    position: absolute
+                    top: 54px
+                    left: calc(96px + 12px)
+                    width: calc(100% - 96px - 12px)
+                    .date
+                        display: inline-block
+                        width: 100%
+                        margin-top: 16px
+                        font-size: 12px
+                        font-weight: 400
+                        font-family: 'Pretendard'
+                        line-height: 24px
+                        color: rgba(0, 0, 0, 0.5)
+                .FuncBtn
+                    position: absolute
+                    top: -45px
+                    right: 0
+    .playerPopup
+        bottom: 0
+        border-top: 2px solid #8B82FF
+        .close
+            top: -30px
+            right: 5%
+            width: 20px
+            height: 20px
+            filter: brightness(0.5)
+        .inner
+            flex-direction: row-reverse
+            justify-content: space-between
+            padding: 18px 25px
+        .songInfo
+            margin-right: 0
+            width: auto
+        .btnWrap
+            width: auto
+            padding: 0
+            margin-right: 0
+            button
+                display: none
+            button.play
+                display: block
+                width: 40px
+                height: 40px
+                margin-right: 0
+                border-radius: 50%
+                overflow: hidden
+                background-image: url('../img/play.png')
+                background-size: 11px
+                background-position: center
+                background-color: #8B82FF
+            button.play.playing
+                background-image: url('../img/stop.png')
+        .ProgressWrap,.funcBtn,.sound
+            display: none
+    .playerPopup.on
+        height: 76px
+
+
+@media (max-width: 768px)
+    .inner
+        padding: 0 16px
+
+@media (max-width: 500px)
+    .topArea .wrap .bg img
+        width: auto
+        height: 110%
+    .contentsArea .contents .functionWrap .function
+        max-width: 300px
+        button:nth-last-child(-n+2)
+            margin-top: 8px

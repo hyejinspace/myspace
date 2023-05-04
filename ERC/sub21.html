@@ -1,0 +1,322 @@
+<!-- <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%
+String pageType = "sub";
+String pageBefore = "sub22.jsp";
+String pageAfter = "sub24.jsp";
+%>
+<%@ include file="./head.jsp"%> -->
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>지방공기업 웹진</title>
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:title" content="지방공기업 vol.36">
+	<meta property="og:description" content="지방공기업 웹진을 만나보세요.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="style/css/reset.css?ver=2" />
+	<link rel="stylesheet" type="text/css" href="style/css/default.css?ver=2" />
+	<!-- <link rel="stylesheet" type="text/css" href="style/css/main.css?ver=2" /> -->
+	<link rel="stylesheet" type="text/css" href="style/css/sub.css?ver=2" />
+	<script src="http://djwebtoon.cafe24.com/g5/js/jquery-1.8.3.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="style/js/common.js?ver=2"></script>
+	<script>
+		$(document).ready(function(){
+			$('.slideSet1').bxSlider({
+				//	mode: 'horizontal',
+				mode: 'horizontal',
+				//	easing: 'swing',
+				controls: false,
+				auto: true,
+				speed: 700,
+				touchEnabled : false
+			});
+			$('.slideSet2').bxSlider({
+				mode: 'horizontal',
+				//	easing: 'swing',
+				controls: false,
+				auto: true,
+				speed: 700,
+				touchEnabled : false,
+			});
+		});
+	</script>
+</head>
+<style>
+</style>
+
+<body>
+	<div id="headerSet">
+		<div class="headerTop">
+			<div class="wrap">
+				<div class="menu"></div>
+				<a class="logo" href="./"><img src="style/img/setting/logo-h.png" alt="main"></a>
+				<div class="button">
+					<a class="ago" href="https://www.erc.re.kr/usr/com/prm/BBSList.do?bbsId=BBSMSTR_000000000281&menuNo=3011&upperMenuId=3" target="_blank"><img src="style/img/setting/icon-ago.png" alt="지난호보기"></a>
+					<a class="ebook" href="https://www.erc.re.kr/ebook/<%=ebook_page%>/index.html#/1" target="_blank"><img src="style/img/setting/icon-ebook.png" alt="E-Book"></a>
+				</div>
+			</div>
+		</div>
+		<div class="headerBottom">
+			<div class="wrap">
+				<div class="button_mo">
+					<a class="ago" href="https://www.erc.re.kr/usr/com/prm/BBSList.do?bbsId=BBSMSTR_000000000281&menuNo=3011&upperMenuId=3" target="_blank"><img src="style/img/setting/icon-ago.png" alt="지난호보기"></a>
+					<a class="ebook" href="https://www.erc.re.kr/ebook/<%=ebook_page%>/index.html#/1" target="_blank"><img src="style/img/setting/icon-ebook.png" alt="E-Book"></a>
+				</div>
+				<div class="headerSectionWrap">
+					<ul class="headerSection headerSection02">
+						<li>
+							<p>권두언</p>
+							<ul>
+								<li><a href="sub1.html">최치국 지방공기업평가원 이사장 포스트 코로나 시대는 없다</a></li>
+							</ul>
+						</li>
+						<li><p>현장과 사람들</p>
+							<ul>
+								<li><a href="sub2.html">대구도시철도공사</a></li>
+							</ul>
+						</li>
+						<li><p><a href="sub3.html">숫자로 보는 지방공공기관 정보</a></p></li>
+					</ul>
+					<h3 class="headerTitle">특집</h3>
+					<ul class="headerSection">
+						<li><p>Intro</p>
+							<ul>
+								<li><a href="sub4.html">지방공기업 경영평가의 의미와 존재 목적은?</a></li>
+							</ul>
+						</li>
+						<li><p>Focus 1</p>
+							<ul>
+								<li>지표별 살펴보는 지방공기업 경영평가</li>
+								<li><a href="sub5-1.html">임효창 | 지속가능경영 지표에 대한 총평</a></li>
+								<li><a href="sub5-2.html">임미영 | 경영성과 지표에 대한 총평</a></li>
+								<li><a href="sub5-3.html">임준형 | 사회적 가치에 대한 총평 </a></li>
+							</ul>
+						</li>
+						<li><p>Focus 2</p>
+							<ul>
+								<li><a href="sub6.html">남기범 | 성공적인 평가를 위해 어떤 준비를 해야 하는가?</a></li>
+							</ul>
+						</li>
+						<!-- <li><p>Talk</p>
+							<ul>
+								<li><a href="sub7.html">성관실 인천시 미추홀구시설관리공단 이사장 | 윤리경영은 사회와 함께 추진하고 확산될 때 그 가치가 발휘된다</a></li>
+							</ul>
+						</li> -->
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">사람 & 현장</h3>
+					<ul class="headerSection">
+						<li><p>뉴 리더</p>
+							<ul>
+								<li><a href="sub7.html">김재광 김천시시설관리공단 이사장 | 시민에게 행복을 주는 김천의 공공 서비스가 새로워진다</a></li>
+							</ul>
+						</li>
+						<li><p>파워 리더</p>
+							<ul>
+								<li><a href="sub8.html">윤진보 광주광역시도시철도공사 사장 | ‘대중·녹색교통 중심도시’를 꿈꾸며 오늘도 레일 위를 달린다</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 1</p>
+							<ul>
+								<li><a href="sub9.html">대상_인천시설공단 | 지속가능한 경영혁신 플랫폼을 구축하다</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 2</p>
+							<ul>
+								<li><a href="sub10.html">최우수상_서울교통공사 | 혁신적 패러다임의 전환…‘도심 공동물류 플랫폼 사업’</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 3</p>
+							<ul>
+								<li><a href="sub11.html">최우수상_세종특별자치시시설관리공단 | 지하구조물의 IoT 진동복합센서를 활용한 안전사고예방시스템 구축</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 4</p>
+							<ul>
+								<li><a href="sub12.html">최우수상_구미시설공단 | 시민과 함께! 행복을 플러스! ‘같이 Plus+’의 혁신</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 5</p>
+							<ul>
+								<li><a href="sub13.html">최우수상_태백가덕산풍력발전㈜ | 태백의 바람이 새로운 바람이 되는 ‘태백가덕산풍력발전소’</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">연구 & 교육</h3>
+					<ul class="headerSection">
+						<li><p>이슈 진단 1</p>
+							<ul>
+								<li><a href="sub14.html">금창호 | 「지방자치법」 전부개정의 의의와 향후 과제</a></li>
+							</ul>
+						</li>
+						<li><p>이슈 진단 2</p>
+							<ul>
+								<li><a href="sub15.html">조흠학 | 중대재해처벌법의 쟁점과 개선 방안</a></li>
+							</ul>
+						</li>
+						<li><p>연구 논단 1</p>
+							<ul>
+								<li><a href="sub16.html">김세훈 | 지방공공기관의 한국판 뉴딜 실행을 위한 접근 전략</a></li>
+							</ul>
+						</li>
+						<li><p>실무논단</p>
+							<ul>
+								<li><a href="sub17.html">김상길 | 지방공기업의 투명성·효율성·책임성 제고를 위한 정책 제언</a></li>
+							</ul>
+						</li>
+						<li><p>HR 강좌</p>
+							<ul>
+								<li><a href="sub18.html">유일한 | 코로나19와 HR의 대응, 디지털 리더십과 36계</a></li>
+							</ul>
+						</li>
+						<li><p>노무 강좌</p>
+							<ul>
+								<li><a href="sub19.html">최혁진 | 기간제 근로자의 갱신기대권의 성립 요건</a></li>
+							</ul>
+						</li>
+						<li><p>법률 강좌</p>
+							<ul>
+								<li><a href="sub20.html">장호진 | 입찰, 공모 등 과정에서의 아이디어 탈취 행위 금지</a></li>
+							</ul>
+						</li>
+						<li><p>상시 자문</p>
+							<ul>
+								<li><a href="sub21.html">단체협약 유효기간 중 보충교섭에 응해야 하는지 여부 외</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">생활 & 문화</h3>
+					<ul class="headerSection">
+						<li><p>마을의 재발견</p>
+							<ul>
+								<li><a href="sub22.html">하숙 문화와 이야기를 품은 특별한 공간으로의 초대!</a></li>
+							</ul>
+						</li>
+						<li><p>4차 산업혁명 노트</p>
+							<ul>
+								<li><a href="sub23.html">세계는 지금 대기오염과 전쟁 중… ICT로 극복한다</a></li>
+							</ul>
+						</li>
+					</ul>
+					<h3 class="headerTitle">뉴스</h3>
+					<ul class="headerSection">
+						<li><p>지방공기업 뉴스</p>
+							<ul>
+								<li><a href="sub24.html">강북구도시관리공단_거주자우선주차장 경차 전용 구획 대폭 확대 외</a></li>
+							</ul>
+						</li>
+						<li><p>ERC 뉴스</p>
+							<ul>
+								<li><a href="sub25.html">2021년 제2차 지방공기업 CEO 포럼 개최 외</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="subVisual" style="background:url(style/img/sub21_visual.jpg) top center no-repeat; background-size:cover;"></div>
+	<div id="subTitle">
+		<div class="titleArea">
+			<div class="title">
+				단체협약 유효기간 중<br/>
+				<b>보충교섭에 응해야 하는지 여부 외</b>
+			</div>
+		</div>
+	</div>
+	<div id="subSection">
+		<div class="sectionArea">
+			<div class="textArea color2 font_24">
+				단체협약 유효기간 중<br/>
+				<b>보충교섭에 응해야 하는지 여부</b>
+			</div>
+			<div class="textTitle color1">
+				Q.<br>
+				지방공기업인 ○○공단은 교섭대표인 노동조합과 단체교섭을 통하여 단체협약을 체결했습니다. 이 단체협약 유효기간 중에 교섭대표인 노동조합이 기존 단체협약의 보완 또는 수정을 위하여 보충교섭을 요구하고 있습니다. 이 보충교섭에 응해야 하는지 궁금합니다.
+			</div>
+			
+			<div class="textArea">
+				<b>A.</b><br/>
+				노사관계 당사자는 단체협약을 체결한 경우에는 협약 내용을 준수해야 합니다. 이와 관련하여 보충교섭에 응해야 하는지는 두 가지의 경우로 나누어 살펴보아야 합니다.
+			</div>
+			<div class="textArea">
+				첫째, 단체협약에 보충교섭 의무 규정이 있는 경우입니다. 이 경우 노동조합은 사용자에게 보충교섭을 요구할 수 있고, 사용자는 이에 응해야 합니다. 
+			</div>
+			<div class="textArea">
+				둘째, 단체협약에 보충교섭 의무 규정이 없는 경우입니다. 단체협약이 체결된 경우에 협약당사자인 노사 양측은 그 협약내용을 준수해야 하고, 특별한 사정이 없는 한 단체협약의 유효기간 중에 단체협약에서 이미 정한 근로조건이나 기타 사항의 변경·개폐를 요구하는 쟁의행위를 하지 아니할 이른바 평화의무를 부담합니다. 이는 단체협약의 주요한 효력 중의 하나입니다. 이에 원칙적으로 사용자는 단체협약 유효기간 중에는 보충교섭을 거부할 수 있습니다. 
+			</div>
+			<div class="textArea">
+				다만, 대법원은 “평화의무는 단체협약에 규정되지 아니한 사항이나 단체협약의 해석을 둘러싼 쟁의행위 또는 차기 협약체결을 위한 단체교섭을 둘러싼 쟁의행위에 대해서까지 그 효력이 미치는 것은 아니므로 단체협약 유효기간 중에도 노동조합은 차기의 협약체결을 위하거나 기존의 단체협약에 규정되지 아니한 사항에 관하여 사용자에게 단체교섭을 요구할 수 있다고 할 것이고, 또한 단체협약이 형식적으로는 유효한 것으로 보이지만 단체협약을 무효라고 주장할 만한 특별한 사정이 인정되는 경우에도 노동조합으로서는 단체협약의 유효기간 중에 사용자에게 단체협약을 무효라고 주장하는 근거를 제시하면서 기존의 단체협약의 개폐를 위한 단체교섭을 요구할 수 있다고 보아야 할 것이며, 이러한 경우 사용자로서는 기존의 단체협약의 유효기간이 남아 있고, 노동조합의 위와 같은 행위가 평화의무에 반하는 것이라는 이유만을 내세워 단체교섭 자체를 거부할 수는 없다고 할 것이므로 위와 같은 경우에 단체협약 등의 개폐를 요구하는 노동조합의 행위를 평화의무에 반하는 것이라 볼 수는 없다.”고 하였습니다(대법원 2003. 2. 11. 선고 2002두9919 판결). 즉, 단체협약에 보충교섭 의무 규정이 없다고 하더라도 단체교섭에 응해야 하는 경우가 있습니다.
+			</div>
+			<div class="textArea">
+				따라서 단체협약 유효기간만이라는 이유로 거부할 수 없으며, 단체협약의 보충교섭 의무 규정이 있는지와 단체교섭을 요구하는 구체적인 내용을 고려하여 판단해야 할 것입니다. 
+			</div>
+		</div>
+		<div class="sectionArea">
+			<div class="textArea color2 font_24">
+				단체협약 유효기간 중<br/>
+				<b>보충교섭에 응해야 하는지 여부</b>
+			</div>
+			<div class="textTitle color1">
+				Q.<br>
+				지방공기업인 ○○공단은 당초 유일하게 존재하는 A노동조합과 단체협약을 체결하기 위하여 단체교섭 중에 있습니다. 하지만, 단체협약 체결 전 신설된 B 노동조합이 교섭창구 단일화 절차를 요구하고 있습니다. 이러한 경우에 교섭창구 단일화 절차를 거쳐야 하는지 궁금합니다. 
+			</div>
+			
+			<div class="textArea">
+				<b>A.</b><br/>
+				(1)	하나의 사업 또는 사업장에서 조직형태에 관계없이 근로자가 설립하거나 가입한 노동조합이 2개 이상인 경우 노동조합은 교섭대표노동조합(2개 이상의 노동조합 조합원을 구성원으로 하는 교섭대표기구를 포함한다. 이하 같다)을 정하여 교섭을 요구하여야 합니다(노동조합 및 노동관계조정법 제29조의2 제1항 본문). 다만, 사용자가 교섭을 요구한 모든 노동조합과 각각 교섭(개별교섭)하기로 동의한 경우에는 그러하지 않습니다(제29조의2 제1항 단서).
+			</div>
+			<div class="textArea">
+				(2)	우리 대법원은 “하나의 사업 또는 사업장 단위에서 유일하게 존재하는 노동조합은, 설령 노동조합법 및 그 시행령이 정한 절차를 형식적으로 거쳤다고 하더라도, 교섭대표노동조합의 지위를 취득할 수 없다고 해석함이 타당하다.”라고 하였습니다(대법원 2017. 10. 31. 선고 2016두36956 판결). 즉, 유일한 노동조합은 교섭대표 노동조합이 아니라고 하였습니다. 따라서 교섭 중에 다른 노동조합이 새롭게 설립되어 복수 노동조합이 존재하는 상황이 되면, 신설 노동조합이 사용자에게 교섭요구를 하는 순간 교섭창구 단일화 절차를 진행하여야 하는 것입니다.
+			</div>
+			<div class="textArea">
+				(3)	따라서 A노동조합이 당초 ○○공단의 유일하게 존재하는 노동조합에 해당하여 교섭창구단일화 절차를 거쳤다고 하더라도 교섭대표 노동조합의 지위를 취득하였다고 볼 수 없습니다. 이에 신설된 B노동조합이 ○○공단에게 단체교섭을 요구하는 경우에는 새로이 교섭창구 단일화 절차를 진행하여야 합니다.  <label class="endMark"></label>
+			</div>
+
+			<div class="textArea box_deco0">
+				<p class="margin_B_10">
+					지방공기업평가원은 지방공공기관(지방공기업, 출자·출연기관, 지방연구원, 지방의료원)의 안정적인 사업 및 업무 수행을 위하여 법무, 인사·노무, 회계·세무·예산, 계약 4개 분야에 대한 자문을 무료로 지원하고 있습니다. 또한, 자문 시행 전 자문의 쟁점 파악, 자문의뢰서 작성 등에 대해서도 지원하고 있습니다. 사업 및 업무 수행에 자문이 필요한 기관은 적극적으로 활용하시기 바랍니다.
+				</p>
+				<p>
+					<b>문의처</b> | 지방공기업평가원 경영지원단<br/>
+					<b>전화</b> | 02-3489-2754<br/>
+					<b>이메일</b> | hjchang@erc.re.kr
+				</p>
+			</div>
+			<div class="caption text_right">자료 제공 : 노무법인 위맥(www.welabor.co.kr) 공인노무사 함용일, 김수현)</div>
+		</div>
+	</div>
+	<div id="right_banner">
+		<div>
+			<a href="javascript:void(0);" id="viewMenu"><img src="./style/img/setting/qimg1.png" /></a>
+			<a href="javascript:void(0);" id="topSet"><img src="./style/img/setting/qimg2.png" /></a>
+			<a href="./<%=pageBefore%>"><img src="./style/img/setting/qimg3.png" /></a>
+			<a href="./<%=pageAfter%>"><img src="./style/img/setting/qimg4.png" /></a>
+		</div>
+	</div>
+	<div id="footerSet">
+		<div class="wrap">
+			<a href="https://www.erc.re.kr/" target="_blank" class="logo"><img src="style/img/setting/logo-f.png" alt="지방공기업평가원"></a>
+			<div class="sns">
+				<a href="https://www.youtube.com/channel/UCC9O2yXc0eAYjBVhjJ3gnxQ" target="_blank" class="youtube"><img src="style/img/setting/icon-sns-y.png" alt="youtube"></a>
+				<a href="https://www.facebook.com/erc.re.kr/" target="_blank" class="facebook"><img src="style/img/setting/icon-sns-f.png" alt="facebook"></a>
+			</div>
+			<div class="info">
+				<p>(우) 06647 서울 서초구 반포대로30길 12-6 (지번) 서초동 1552-13</p>
+				<p>Copyright(c) Evaluation Institute of Regional Public Corporation. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- <%@ include file="./sub_include.jsp"%>
+<%@ include file="./foot.jsp"%> -->

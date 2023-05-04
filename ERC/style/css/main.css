@@ -1,0 +1,128 @@
+body {background:#bdbfd8;}
+
+.bx-wrapper {margin-bottom:0 !important; border:0 !important; border-radius:20px; background:none !important; box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2) !important;}
+.section1 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {position:absolute; bottom:30px !important; left:30px; width:auto !important;}
+.section1 .bx-wrapper .bx-pager.bx-default-pager a {width:9px !important; height:9px !important; margin:0 3px !important; background: #bbb !important;}
+.section1 .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {background: #666 !important;}
+.section2 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {position:absolute; bottom:390px !important; left:30px; width:auto !important;}
+.section2 .bx-wrapper .bx-pager.bx-default-pager a {width:9px !important; height:9px !important; margin:0 3px !important; background: #bbb !important;}
+.section2 .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {background: #666 !important;}
+.bx-wrapper .thumb {box-shadow:none !important; border-radius:20px;}
+
+#mainVisual {width:100%; padding-top:150px; text-align:center; background:#f9f7f7;}
+#mainVisual .data {background:#595d8c; padding:7px 25px 10px; line-height:20px; border-radius:30px; display:inline-block; color:#fff; font-weight:400; margin-bottom:30px;}
+#mainVisual .visualTitle {font-size:36px; font-weight:bold; line-height:40px; margin-bottom: 30px;}
+#mainVisual .visualTitle br {display:none;}
+#mainVisual .visualText {margin-bottom:-60px;}
+#mainVisual .visualText div {line-height:26px;}
+#mainVisual .visualText:before {content:''; width:21px; height:17px; display:inline-block; margin-bottom:20px; background: url(../img/setting/visual-talk1.png) center center no-repeat;}
+#mainVisual .visualText:after {content:''; width:21px; height:17px; display:inline-block; margin-top:20px; background: url(../img/setting/visual-talk2.png) center center no-repeat;}
+#mainVisual .visualImg {width:100%; position:relative; bottom:-1px;}
+
+
+#mainContent {position:relative; top:-100px;}
+#mainContent .thumb {border-radius:20px; background: #fff; box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2); overflow:hidden;}
+#mainContent .thumb:hover {box-shadow: 1px 1px 20px 1px rgba(0,0,0,0.4); transition:0.5s;}
+#mainContent .thumb .img {float:right; overflow:hidden;}
+#mainContent .thumb .text {float:left; padding-left:30px;}
+#mainContent .text .title {font-size:18px; line-height:26px; letter-spacing:-0.5px;}
+
+#mainContent .section1 {position:relative; top:-60px;}
+#mainContent .section1:after {content:''; clear:both; display:block;}
+#mainContent .section1 > .thumb {width:47.5%; display:inline-block; float:left;}
+#mainContent .section1 > .thumb:last-child {float:right;}
+#mainContent .section1 .thumb .img {width:315px; height:340px;}
+#mainContent .section1 .text {max-width: calc(100% - 315px); padding: 30px; word-break: keep-all;}
+#mainContent .section1 .text .cate {border-radius:30px; padding:7px 15px; font-size:14px; letter-spacing:1px; display:inline-block; color:#fff; margin-bottom:15px;}
+#mainContent .slideSet1 a {border-radius:20px; overflow:hidden;}
+
+#mainContent .section2:after {content:''; clear:both; display:block;}
+#mainContent .section2 > div a:first-child .thumb {margin-bottom:30px;}
+#mainContent .section2 .left {float:left; width:70%;}
+#mainContent .section2 .left:after {content:''; clear:both; display:block;}
+#mainContent .section2 .left .cont1 {float:left; width:48.5%;}
+#mainContent .section2 .left .cont2 {float:right; width:48.5%;}
+#mainContent .section2 .left .thumb {height:200px;}
+#mainContent .section2 .left .text {position:relative; top:50%; transform:translateY(-50%); padding-left:30px;}
+#mainContent .section2 .left .cate {font-size:15px; font-weight:bold; display:inline-block; margin-bottom:5px;}
+
+#mainContent .section2 .right {float:right; width:25%;}
+#mainContent .section2 .right .slideSet2 > a {height:430px;}
+#mainContent .section2 .right .cate {border-radius:30px; padding:5px 10px; font-size:14px; letter-spacing:1px; display:inline-block; color:#fff; display:inline-block; margin-bottom:15px;}
+#mainContent .section2 .right .title {font-size:18px; line-height:26px; letter-spacing:-0.5px;}
+#mainContent .slideSet2 {text-align:center; margin:0 auto;}
+#mainContent .slideSet2 a {display:block;border-radius:20px; overflow:hidden;}
+#mainContent .slideSet2 .slideSet2text {padding:60px 30px 30px; text-align:center; margin:0 auto;}
+#mainContent .slideSet2 img {display:inline-block; position:relative; bottom:-20px;}
+
+@media only screen and (max-width:1300px) {
+	#mainVisual .visualText {margin-bottom:0;}
+	#mainContent {top:-50px; margin-bottom:30px;}
+}
+
+@media only screen and (max-width:1200px) {
+	#mainContent .section1 .thumb .img {width:40%; height:auto;}
+	#mainContent .section1 .thumb .img img {width:100%;}
+	#mainContent .section1 .thumb .text {max-width: calc(100% - 40%);}
+
+	#mainContent .section2 .left .thumb {height:150px;background-size:40% !important;}
+
+	#mainContent .section2 .right .slideSet2 > a {height:330px;}
+	#mainContent .slideSet2 .slideSet2text {padding:50px 30px 30px;}
+	#mainContent .slideSet2 img {width:60%; display:inline-block; position:relative; bottom:0;}
+
+	.section2 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {position:absolute; bottom:300px !important; left:20px; width:auto !important;}
+}
+
+@media only screen and (max-width:768px) {
+	#mainContent .section1 {top:0;}
+	#mainContent .section1 > .thumb {width:100%; display:block; float:none; margin-bottom:30px;}
+	#mainContent .section1 > .thumb:last-child {float:none;}
+	#mainContent .section1 .thumb .img {height:200px;}
+
+	#mainContent .section2 .left {float:none; width:100%;}
+	#mainContent .section2 .right {float:none; width:100%;}
+	#mainContent .section2 > div a .thumb {margin-bottom:30px;}
+
+	#mainContent .section2 .right .slideSet2 > a {height:200px;}
+	#mainContent .slideSet2 .slideSet2text {width:45%; float:left; padding:0; padding-left:30px; position:relative; top:50%; transform:translateY(-50%);}
+	#mainContent .slideSet2 img {max-width:250px; float:right; bottom:0; top:50%; transform:translateY(-50%); margin-right:10%;}
+
+	.section2 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {position:absolute; bottom:170px !important; left:20px; width:auto !important;}
+}
+
+@media only screen and (max-width:425px) {
+	#mainVisual {padding-top:100px;}
+	#mainVisual .data {font-size:13px; padding:3px 15px 5px; line-height:20px;margin-bottom:20px;}
+	#mainVisual .visualTitle {font-size:26px; font-weight:bold; line-height:36px; margin-bottom: 20px;}
+	#mainVisual .visualTitle br {display:block;}
+	#mainVisual .visualText div {font-size:14px; padding:0 20px;}
+	/*#mainVisual .visualText div br {display:none;}*/
+
+	#mainContent .text .title {font-size:16px; line-height:24px;}
+	#mainContent .section1 {top:40px;}
+	#mainContent .section1 > .thumb {width:100%; display:block; float:none; margin-bottom:10px;}
+	#mainContent .section1 > .thumb:last-child {float:none;}
+	#mainContent .section1 .text {padding-top:20px; padding-left:20px;}
+	#mainContent .section1 .text .cate {padding:5px 10px; font-size:12px; letter-spacing:1px; margin-bottom:5px;}
+	#mainContent .section1 .thumb .img {width:45%; height:auto;}
+	#mainContent .section1 .thumb .text {max-width: calc(100% - 45%); padding: 20px;}
+
+	#mainContent .section2 {position:relative; top:40px;}
+	#mainContent .section2 .left {float:none; width:100%;}
+	#mainContent .section2 .left .cont1 {float:none; width:100%;}
+	#mainContent .section2 .left .cont2 {float:none; width:100%;}
+	#mainContent .section2 .left .text {padding-left:20px;}
+	#mainContent .section2 .right {float:none; width:100%;}
+	#mainContent .section2 > div a .thumb {margin-bottom:10px;}
+	#mainContent .section2 > div a:first-child .thumb {margin-bottom:10px;}
+
+	#mainContent .section2 .right .slideSet2 > a {height:180px;}
+	#mainContent .slideSet2 .slideSet2text {width:auto; padding-left:20px; text-align:left; top:30px; transform:translateY(0);}
+	#mainContent .section2 .right .cate {padding:5px 10px; font-size:12px; margin-bottom:5px;}
+	#mainContent .section2 .right .title {font-size:16px; line-height:24px;}
+	#mainContent .slideSet2 img {max-width:50%; float:right; bottom:0; top:50%; transform:translateY(-50%); margin-right:2%;}
+	
+	.section1 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {position:absolute; bottom:15px !important; left:20px; width:auto !important;}
+	.section2 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {position:absolute; bottom:15px !important; left:20px; width:auto !important;}
+}

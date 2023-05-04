@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=euc-kr">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <script src="./js/jquery.min.js"></script>
+    <title>(무) AIA Vitality 든든튼튼암보험(갱신형) | AIA</title>
+
+    <style>
+        @font-face {
+            font-family: "NanumSquareBold";
+            src: url(./font/NanumSquareB.eot);
+            src: url(./font/NanumSquareB.eot?#iefix) format("embedded-opentype"), url(./font/NanumSquareB.woff) format("woff"), url(./font/NanumSquareB.ttf) format("truetype");
+        }
+        @font-face {
+            font-family: "NanumSquareRegular";
+            src: url(./font/NanumSquareR.eot);
+            src: url(./font/NanumSquareR.eot?#iefix) format("embedded-opentype"), url(./font/NanumSquareR.woff) format("woff"), url(./font/NanumSquareR.ttf) format("truetype");
+        }
+        @-webkit-keyframes fadeInUp {
+            0% {opacity: 0; -webkit-transform: translateY(20px); transform: translateY(20px);}
+            100% {opacity: 1; -webkit-transform: translateY(0); transform: translateY(0);}
+        }
+        @keyframes fadeInUp {
+            0% {opacity: 0; -webkit-transform: translateY(20px); -ms-transform: translateY(20px); transform: translateY(20px);}
+            100% {opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0);}
+        }
+        .animate-plus {opacity: 0;}
+        .fadeInUp {-webkit-animation-name: fadeInUp; animation-name: fadeInUp;}
+        .animated {-webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
+
+
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        html,body {font-family: "NanumSquareRegular","맑은 고딕",Sans-serif; letter-spacing: -1px; word-break: keep-all;}
+        ul,ol,li {list-style: none;}
+        .inner {position: relative; width: 1020px; margin: 0 auto; text-align: center;}
+        img {display: inline-block;}
+        a {background-color: transparent; text-decoration:none;}
+        input[type="text"] { border: none; color: #000; outline: none; }
+        input:-ms-input-placeholder { color: #fff !important; }
+        input::-webkit-input-placeholder { color: #fff; }
+        input::-moz-placeholder { color: #fff; }
+        input:focus {outline: none;}
+        button {text-transform: none; border-style: none; padding: 0; background-color: transparent;}
+
+        .only_pc {display: inline-block !important;}
+        .only_mo {display: none !important;}
+        .hide {display: none;}
+        .bold { font-family: "NanumSquareBold"; }
+
+        .AIA_wrap {overflow: hidden;}
+
+        .header {position: relative; background-color: #ebebeb; width: 100%; height: 95px;}
+        .header .btn_title {position: absolute; top: 0; left: 0;}
+        .header .btn_tel {position: absolute; top: 0; right: 0;}
+
+        ul li.sex input {width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px;}
+
+        .contents .top {position: relative; top: -45px; background-color: #eaebec; border-radius: 50px; text-align: center;}
+        .contents .top img {position: relative; display: inline-block;  top: 25px;}
+        .contents .top:after {content: ""; display: block; position: absolute; bottom: -20px; left: 50%; margin-left: -19px; width: 0; height: 0; border-top: 20px solid #eaebec; border-bottom: 20px solid none; border-right: 19px solid transparent; border-left: 19px solid transparent;}
+
+        .section01 {overflow: hidden; background-color: #fff;}
+        .section01 .wrap {background-color: #d31145; border-radius: 0 0 50px 0;}
+        .section01 .inner {height: 410px;}
+        .section01 .inner > * {position: absolute;}
+        .section01 .img01 {top: 35px; left: 0;}
+        .section01 .img02 {top: 75px; left: 0;}
+        .section01 .img03 {bottom: 52px; left: 0;}
+        .section01 .img04 {bottom: 40px; left: 150px; animation-delay: 0.2s;}
+        
+        .sc1_form_box {top: 25px; right: 0; background-color: #333d47; border-radius: 40px; padding: 30px; width: 374px; height: 312px;}
+        .sc1_form_box h3 img {margin: 0 auto;}
+        .sc1_form_box ul {margin-top: 20px;}
+        .sc1_form_box ul::after {content: ""; display: block; clear: both;}
+        .sc1_form_box ul li {width: 100%; position: relative; height: 35px; float: left; margin-bottom: 20px;}
+        .sc1_form_box ul li:last-child {margin-bottom: 0;}
+        .sc1_form_box ul li input {background-color: transparent;-webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; border-radius: 0; border-bottom: 1px solid #fff; float: left; font-size: 22.4px; color: #fff;}
+        .sc1_form_box ul li input::placeholder {color: #fff; font-weight: 500;}
+        .sc1_form_box ul li input[type="text"] {width: 100%; height: 35px;}
+        .sc1_form_box ul li.name {width: 243px; display: inline-block;}
+        .sc1_form_box ul li.name input {float: left; width: 100%; line-height: 35px;}
+
+        .sc1_form_box ul li.sex {float: left; width: 70px; margin-top: 0;}
+        .sc1_form_box ul li.sex input + label {display: block; width: 34px; height: 35px; cursor: pointer; color: #666; font-size: 19.6px; line-height: 35px; background: #ddd; text-align: center; border-radius: 12px; float: left; margin-right: 2px; font-weight: bold;}
+        .sc1_form_box ul li.sex input + label:last-child {margin: 0;}
+        .sc1_form_box ul li.sex input:checked + label { color: #ddd; background: #666; }
+
+        .sc1_form_box .form_btn {position: relative; margin-top: 25px; width: 100%;}
+        .sc1_form_box .form_btn a {float: left;}
+        .sc1_form_box .form_btn a:last-child {float: right;}
+
+        .section02 {background-color: #d31145;}
+        .section02 .wrap {background-color: #fff; border-radius: 50px 0 0 0;}
+        .section02 .inner {padding-bottom: 100px;}
+        .section02 .top {height: 90px;}
+        .section02 .sc2_txt {position: relative; display: inline-block; top: 5px;}
+
+        .section03 {background-color: #fff;}
+        .section03 .inner {padding-bottom: 25px;}
+        .section03 .top {height: 150px;}
+        .section03 .sc3_img01 {margin-bottom: 70px;}
+        .section03 .sc3_img02 {animation-delay: 0.1s;}
+
+        .section04 {position: relative; top: 50px;  background-color: transparent;}
+        .section04 .wrap {background-color: #1f78ad; border-radius: 0 50px 50px 0;}
+        .section04 .inner {height: 360px;}
+        .section04 .inner > * {position: absolute;}
+        .section04 .inner .sc4_img01 {top: 52px; left: 0;}
+        .section04 .inner .sc4_img02 {bottom: 0; right: -100px;}
+
+        .section05 {background-color: #1f78ad;}
+        .section05 .wrap {position: relative; background-color: #f4f1ef; border-radius: 50px 0 0 50px; z-index: 1;}
+        .section05 .inner {padding: 100px 0 80px 0;}
+        .section05 .tab .tab_btn_wrap {margin-bottom: 30px;}
+        .section05 .tab .tab_btn_wrap::after {content: ''; display: block; clear: both;}
+        .section05 .tab .tab_btn_wrap .tab_btn {float: left; width: calc(33.3333% - 16.66px); margin-right: 25px; cursor: pointer; background-color: #dbd4cf; height: 80px; text-align: center; font-size: 30px; line-height: 80px; color: #818181; border-radius: 50px;}
+        .section05 .tab .tab_btn_wrap .tab_btn.active {color: #fff; background-color: #333d47;}
+        .section05 .tab .tab_btn_wrap .tab_btn:last-child {margin-right: 0;}
+
+        .section05 .tab .tabcon {display: none;}
+        .section05 .tab .tabcon.active {display: block;}
+
+        .section05 .tab .tab01_wrap > div {background-color: #fff; margin-bottom: 20px; border-radius: 50px; padding: 50px; cursor: pointer;}
+        .section05 .tab .tab01_wrap > div:last-child {margin-bottom: 0;}
+        .section05 .tab .tab01_wrap > div .title:after {content: ''; display: block; clear: both;}
+        .section05 .tab .tab01_wrap > div .title img {float: left;}
+        .section05 .tab .tab01_wrap > div .title img.accordion_btn {float: right; position: relative; top: -30px; right: -30px;}
+        .section05 .tab .tab01_wrap > div .contents {display: none; margin-top: 40px; padding-top: 45px; border-top: 2px solid #dee0e1; text-align: center;}
+        .section05 .tab .tab01_wrap > div .img02 {background-color: #f3efed; border-radius: 50px; margin-top: 30px; padding: 20px 0;}
+        .section05 .tab .tab01_wrap .tab01_con02 {animation-delay: 0.3s;}
+        .section05 .tab .tab01_wrap .tab01_con03 {animation-delay: 0.4s;}
+        .section05 .tab .tab01_wrap .tab01_con04 {animation-delay: 0.5s;}
+
+        .section05 .tab .tab02_wrap > div {margin-top: 72px;}
+
+        .section05 .tab .tab03_wrap .tab03_con01 {margin: 72px 0 80px;}
+        .section05 .tab .tab03_wrap .tab03_con02 {background-color: #fff; border-radius: 40px; padding: 60px;}
+        .section05 .tab .tab03_wrap .tab03_con02 img {margin-bottom: 60px;}
+        .section05 .tab .tab03_wrap .tab03_con02 img:last-child {margin-bottom: 0;}
+
+        .section06 {background-color: #f4f1ef; z-index: -1;}
+        .section06 .wrap {position: relative; top: -50px; background-color: #d31145; border-radius: 0 50px 0 50px;}
+        .section06 .wrap .inner {height: 430px; overflow: hidden;}
+        .section06 .wrap .inner .sc6_img01 {position: relative; top: -10px; text-align: center;}
+        .section06 .wrap .sc6_bg {position: absolute; top: 49.5px; right: 0;}
+        .section06 .wrap .sc6_bg02 {position: absolute; bottom: -6px; left: 0;}
+
+        .section07 {position: relative; background-color: #d31145; top: -50px;}
+        .section07 .wrap {background-color: #f4f1ef; border-radius: 0 50px 0 0px;}
+        .section07 .wrap .inner {padding: 70px 0;}
+        .section07 .wrap .inner > div {margin-bottom: 38px;}
+        .section07 .wrap .inner > div:last-child {margin-bottom: 0;}
+        .section07 .wrap .inner .plus {position: relative; width: 100%;}
+        .section07 .wrap .inner .plus::before {content: ''; position: absolute; display: block; width: 100%; height: 2px; top: 25px; background-color: #d6d8da; z-index: 1;}
+        .section07 .wrap .inner .plus img {position: relative; max-width: 48px; z-index: 30; z-index: 3;}
+
+        .section08 {position: relative; background-color: #d31145; top: -50px;}
+        .section08 .wrap .inner {height: 530px;}
+
+        .sc8_form_box {position: relative; height: 100%;}
+        .sc8_form_box::before {content: ''; position: absolute; display: block; bottom: 0; left: -50%; width: 200%; height: 200px; background-color: #fff;}
+        .sc8_form_box > * {position: absolute;}
+        .sc8_form_box .sc8_title {top: 50px; left: 60px;}
+        .sc8_form_box form {width: 504px; top: 50px; right: 0;}
+
+        .sc8_form_box ul::after {content: ""; display: block; clear: both;}
+        .sc8_form_box ul li {width: 100%; position: relative; height: 52px; float: left; margin-bottom: 30px;}
+        .sc8_form_box ul li:last-child {margin-bottom: 0;}
+        .sc8_form_box ul li input {background-color: transparent;-webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; border-radius: 0; border-bottom: 2px solid #fff; float: left; font-size: 22.5px;}
+        .sc8_form_box ul li input::placeholder {color: #fff; font-weight: 500;}
+        .sc8_form_box ul li input[type="text"] {width: 100%; height: 52px; color: #fff;}
+        .sc8_form_box ul li.name {width: 394px; display: inline-block; margin-right: 10px;}
+        .sc8_form_box ul li.name input {float: left; width: 100%; line-height: 35px;}
+
+        .sc8_form_box ul li.sex {float: right; width: 100px; margin-top: 0;}
+        .sc8_form_box ul li.sex input + label {display: block; width: 48px; height: 50px; cursor: pointer; color: #666; font-size: 19.6px; line-height: 52px; background: #ddd; text-align: center; border-radius: 12px; float: left; margin-right: 4px; font-weight: bold;}
+        .sc8_form_box ul li.sex input + label:last-child {margin: 0;}
+        .sc8_form_box ul li.sex input:checked + label { color: #ddd; background: #666;}
+
+        .sc8_form_box .form_btn {position: relative; width: 100%; top: 400px;}
+        .sc8_form_box .form_btn a {float: left;}
+        .sc8_form_box .form_btn a:last-child {float: right;}
+
+        .guide .guide_top {width: 100%; background-color: #5a5a5a; text-align: center;}
+        .guide .guide_top button {width: 100%; cursor: pointer;}
+        .guide .guide_wrap {display: none; text-align: center;}
+        .guide .guide_wrap.open {display: block;}
+
+        .footer {width: 100%; background-color: #ececec;}
+        /* .footer img.only_pc {width: 1020px;} */
+        .footer .inner > a {position: absolute; width: 280px; height: 70px; top: 35px; left: 0; text-indent: -9999px;}
+
+        .floating { position: fixed; top: 25%; left: 50%; width: 232px; height: 344px; margin-left: 550px; z-index: -50; opacity: 0; transition: 0.3s;}
+        .floating.on { z-index: 50; opacity: 1;}
+        .floating .floating_mo_close {display: none;}
+        .form_box_bg {position: absolute; top: 0; left: 0; width: 100%; border-radius: 40px; box-shadow: 5px 5px 20px 0px rgba(0,0,0,0.5);}
+
+        .floating_form_box {position: relative; padding: 35px 0;}
+        .floating_form_box h3 {text-align: center;}
+
+        .floating_form_box ul {margin-top: 20px;}
+        .floating_form_box ul::after {content: ""; display: block; clear: both;}
+        .floating_form_box ul li {width: 190px; display: block; margin: 0 auto;}
+        .floating_form_box ul li:last-child {margin-bottom: 0;}
+        .floating_form_box ul li input {background-color: transparent;-webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; border-radius: 0; border-bottom: 1px solid #fff; float: left; color: #fff; font-size: 19px;}
+        .floating_form_box ul li input::placeholder {color: #fff; font-weight: 500;}
+        .floating_form_box ul li input[type="text"] {width: 100%; height: 45px;}
+        .floating_form_box ul li.name input {float: left; width: 100%; line-height: 35px;}
+        .floating_form_box ul li.sex {position: absolute; top: 86px; right: 20px; width: 70px; margin-top: 0;}
+        .floating_form_box ul li.sex input + label {display: block; width: 34px; height: 35px; cursor: pointer; color: #666; font-size: 13px; line-height: 35px; background: #fff; text-align: center; border-radius: 8px; float: left; margin-right: 2px; font-weight: bold;}
+        .floating_form_box ul li.sex input + label:last-child {margin: 0;}
+        .floating_form_box ul li.sex input:checked + label { color: #ddd; background: #666;}
+        .floating_form_box .form_btn {margin-top: 30px; text-align: center;}
+
+        .floating_form_box .form_btn.mo_calc, .floating_form_box .form_btn.mo_comp {display: none;}
+        .floating_mo {display: none;}
+        
+
+        .popup { display: none; }
+        .popup.on { display: block; }
+        .popup .mask { position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: #000; opacity: 0.7; filter: alpha(opacity=70); z-index: 100; }
+        .popup .popup_content { position: fixed; left: 50%; top: 50%; background: #fff; z-index: 101; }
+        .popup.agree button { outline: none; }
+        .popup.agree .popup_content { width:800px; height:900px; padding:30px; margin-left:-400px; margin-top:-450px; background:#fff; border:4px solid #d31145; border-radius: 56px; }
+        .popup.agree .wrap { padding:0; }
+        .popup.agree .wrap .agree { margin-top: 25px; }
+        .popup.agree .wrap .agree > div { position: relative;  margin-top: 5px;  }
+        .popup.agree .wrap .agree input { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+        .popup.agree .wrap .agree label { display:block; height:42px; padding-left: 36px; background: url("./images/20220920_popup_radio_off.png") no-repeat left 0 top 7px / 24px auto; }
+        .popup.agree .wrap .agree label img { position:relative; top:9px; height:20px; }
+        .popup.agree .wrap .agree input:checked + label { background-image: url("./images/20220920_popup_radio_on.png"); }
+        .popup.agree .wrap .agree .toggle { height: 382px; margin:6px 0 10px; background:#f6f6f6; overflow:auto; }
+        .popup.agree .wrap .agree .toggle img { width: 100%; }
+        .popup.agree .wrap .all_check { margin-top:15px; cursor: pointer;}
+        .popup.agree .wrap .all_check,
+        .popup.agree .wrap .all_check img { width:100%; }
+        .popup.agree .btn_close { display:block; position:absolute; top:25px; right:30px; width:25px; height:25px; cursor: pointer;}
+        .popup.agree .btn_close img { width:100%; }
+
+        .popup.type02 .popup_content { border-top: 25px solid #dc3e69; text-align: center; }
+        .popup.type02 .popup_content h2 { margin-top: 50px; padding-top: 70px; background: url("./images/20220920_popup_icon01.png") no-repeat center 0; }
+        .popup.type02 .popup_content p.text { margin-top: 22px; font-size: 20px; line-height: 26px; padding: 0 5px; }
+        .popup.type02 .popup_content p.text span { color: #dc3e69; }
+        .popup.type02 .popup_content p.guide { margin-top: 28px; font-size: 18px; color:#7f7f7f; }
+
+        .popup.comp .popup_content { width: 512px; height: 440px; margin-top: -203px; margin-left: -256px; }
+        .popup.comp .popup_content h2 { font-size: 42px; }
+        .popup.comp .popup_content h2 span { color:#dc3e69; }
+        .popup.comp .btn_close { position: absolute; top: 12px; right: 12px; cursor: pointer;}
+        .popup.calc .popup_content { width: 512px; height: 406px; margin-top: -203px; margin-left: -256px; }
+        .popup.calc .popup_content h2 { font-size: 20px; }
+        .popup.calc .popup_content .calc_area { margin-top: 12px; font-size: 43px; }
+        .popup.calc .popup_content .calc_area span { color: #dc3e69; }
+        .popup.calc .popup_content .calc_area strong { margin: 0 38px; font-size: 42px; color: #dc3e69; }
+        .popup.calc .btn_close { position: absolute; top: 12px; right: 12px; cursor: pointer;}
+
+        @media (max-width: 1080px){
+            .only_pc {display: none !important;}
+            .only_mo {display: inline-block !important;}
+
+            img {width: 100%;}
+            .inner {width: 100%;}
+
+            .header {padding: 0 20px; height: 12vw;}
+            .header .btn_title {width: 32vw;}
+            .header .btn_tel {width: 30vw;}
+
+            .contents .top {margin: 0 5%; top: -5vw;}
+            .contents .top:after {border-top: 15px solid #eaebec; border-right: 15px solid transparent; border-left: 15px solid transparent; bottom: -15px; }
+            .contents .top img {width: 70vw; top: 5vw;}
+
+            .section01 .wrap {border-radius: 0 0 20% 0; overflow: hidden;}
+            .section01 .inner {height: 42vw;}
+            .section01 .img01 {display: none;}
+            .section01 .img02 {top: 8vw; left: 5vw; width: 52.7vw;}
+            .section01 .img03 {top: 2.5vw; right: 3vw; left: auto; width: 47.2%;}
+            .section01 .img04 {top: -4vw; right: -25%; left: auto; bottom: auto; width: 90%;}
+            .sc1_form_box {display: none;}
+
+            .section02 .inner {padding-bottom: 13vw;}
+            .section02 .top {height: 15vw;}
+            .section02 .sc2_img01 {width: 80vw; margin-top: 5vw;}
+
+            .section03 .inner {padding-bottom: 7vw;}
+            .section03 .top {height: 27vw;}
+            .section03 img {width: 80vw;}
+            .section03 .sc3_img01 {margin-bottom: 6vw; margin-top: 2vw;}
+
+            .section04 {top: 0}
+            .section04::after {content:''; position: absolute; display: block; right: 0; bottom: 0; width: 50px; height: 50px; background-color: #f4f1ef; z-index: -1}
+            .section04 .wrap {position: relative; overflow: hidden;}
+            .section04 .inner {height: 53vw;}
+            .section04 .inner .sc4_img01 {width: 70vw; top: 10vw; left: 5vw;}
+            .section04 .inner .sc4_img02 {width: 90vw; top: 15vw; right: -15vw; bottom: auto;}
+
+            .section05 .wrap {border-radius: 10vw 0 0 10vw;}
+            .section05 .inner {padding: 5vw; padding-bottom: 10vw;}
+            .section05 .tab .tab_btn_wrap {width: 88vw; margin: 0 auto;}
+            .section05 .tab .tab_btn_wrap .tab_btn {width: calc(33.3333% - 1.6666vw); margin-right: 2.5vw; font-size: 3.6vw; height: 11vw; line-height: 11vw;}
+            .section05 .tab .tabcon.tab01_wrap {margin-top: 4vw;}
+            .section05 .tab .tab01_wrap > div {padding: 5vw; border-radius: 5vw; margin-bottom: 2.5vw;}
+            .section05 .tab .tab01_wrap > div .title {position: relative;}
+            .section05 .tab .tab01_wrap > div .title img.accordion_btn {position: absolute; width: 6vw; top: -3vw; right: -3vw;}
+            .section05 .tab .tab01_wrap > div .img02 img {width: 60vw;}
+            .section05 .tab .tab02_wrap > div {margin-top: 8vw;}
+            .section05 .tab .tab03_wrap .tab03_con01 {margin: 8vw 0 5vw;}
+            .section05 .tab .tab03_wrap .tab03_con02 {padding: 7vw 6vw;}
+
+            .section06 .wrap .inner {height: 62vw; background: #d41648;}
+            .section06 .wrap .inner .sc6_img01 {width: 94vw; top: 10vw; left: 3vw;}
+            .section06 .wrap .sc6_bg {width: 12vw;}
+            .section06 .wrap .sc6_bg02 {width: 12vw;}
+            
+            .section07 .wrap {background-color: #fff;}
+            .section07 .wrap .inner {padding: 8vw 12vw;}
+            .section07 .wrap .inner > div {margin-bottom: 5vw;}
+
+            .section08 {background-color: #fff;}
+            .section08 .wrap .inner {height: auto; padding-bottom: 10vw;}
+            .sc8_form_box::before {display: none;}
+            .sc8_form_box .sc8_title {position: static; width: 80vw; margin: 5vw auto 3vw;}
+            .sc8_form_box form {position: static; background-color: #d31145; padding: 5vw 8vw; margin: 0 auto; width: 80vw; border-radius: 6vw;}
+            .sc8_form_box form ul {height: 35vw; display: flex; flex-wrap: wrap; }
+            .sc8_form_box ul li {height: 7vw; margin-bottom: 5vw;}
+            .sc8_form_box ul li.name {width: calc(75% - 2vw); margin-right: 2vw;}
+            .sc8_form_box ul li input[type="text"] {height: 7vw; font-size: 4vw;}
+            .sc8_form_box ul li.sex {width: auto;}
+            .sc8_form_box ul li.sex input + label {width: 7vw; height: 7vw; line-height: 7vw; border-radius: 2vw; font-size: 4vw; font-weight: bold; margin-right: 5px;}
+            .sc8_form_box .form_btn {top: auto; width: 80vw; margin: 0 auto; margin-top: 4vw;}
+            .sc8_form_box .form_btn a {width: 48%;}
+
+            .guide .guide_top button {position: relative; top: -1vw; width: 60vw;}
+
+            .popup.agree .popup_content { width: 93%; left: 3.5%; top: 2%; margin:0; padding:5vw; border-radius: 8vw;  height: auto; background:#fff; border:2px solid #d31145; }
+            .popup.agree .popup_content .img {width:74%;}
+            .popup.agree .popup_content .img img {width:100%;}
+            .popup.agree .wrap { padding:0; }
+            .popup.agree .wrap .agree { margin-top: 3.6666vw; }
+            .popup.agree .wrap .agree > div { position: relative;  margin-top: 5px;  }
+            .popup.agree .wrap .agree input { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+            .popup.agree .wrap .agree label { display:block; height:6.6666vw; padding-left: 5.1111vw; background-size: 3vw; background-position: 0 50%;}
+            .popup.agree .wrap .agree label img { position:relative; top:2vw; width:auto; height:3.3333vw; }
+            .popup.agree .wrap .agree .toggle { height:30vw; margin:1.1111vw 0 2.2222vw; border:1px solid #dfdfdf; overflow:auto; }
+            .popup.agree .wrap .agree .toggle img { width:100%; }
+            .popup.agree .wrap .all_check { margin-top:3vw; }
+            .popup.agree .wrap .all_check,
+            .popup.agree .wrap .all_check img { width:100%; }
+            .popup.agree .wrap .btn_area .btn_result { display:none; }
+            .popup.agree .wrap .btn_area { margin-top:3.3333vw; padding-bottom:4.4444vw; }
+            .popup.agree .wrap .btn_area:after { content:""; display:block; clear:both; }
+            .popup.agree .wrap .btn_area a { display:block; float:right; width:42.2222vw; }
+            .popup.agree .btn_close { display:block; position:absolute; top:3.3333vw; right:3.3333vw; width:5vw; height:5vw;  }
+            .popup.agree .btn_close img { width:100%; }
+            
+            .popup.type02 .popup_content { width: 90%; left: 5%; top: 25%; margin: 0; border-top: 5vw solid #dc3e69; text-align: center; padding-bottom:8vw; }
+            .popup.type02 .popup_content h2 { margin-top: 10vw; padding-top: 14vw; background: url("./images/20220920_popup_icon01.png") no-repeat center 0 / 11vw auto; }
+            .popup.type02 .popup_content p.text { margin-top: 6vw; font-size: 4vw; line-height: 5.2vw; padding: 0 1vw; }
+            .popup.type02 .popup_content p.text span { color: #dc3e69; }
+            .popup.type02 .popup_content p.guide { margin-top: 3.2vw; font-size: 3.6vw; color:#7f7f7f; }
+
+            .popup.comp .popup_content { height: auto; }
+            .popup.comp .popup_content h2 { font-size: 8.4vw; line-height: 10vw; }
+            .popup.comp .popup_content h2 span { color:#dc3e69; }
+            .popup.comp .btn_close { position: absolute; width: 7vw; height: 7vw;}
+
+            .popup.calc .popup_content {height: auto;}
+            .popup.calc .popup_content h2 { font-size: 4vw; }
+            .popup.calc .popup_content .calc_area { margin-top: 2.4vw; font-size: 8.6vw; }
+            .popup.calc .popup_content .calc_area span { color: #dc3e69; }
+            .popup.calc .popup_content .calc_area strong { margin: 0 7.6vw; font-size: 8.4vw; color: #dc3e69; }
+            .popup.calc .btn_close { position: absolute; width: 7vw; height: 7vw; }
+
+
+            .floating {top: auto; bottom: -100vw; left: 0; margin-left: 0; width: 100%; z-index: 50; background-color: #f3f3f3; border-top: 1px solid #d31145; transition: 1s;}
+            .floating.on {height: auto; bottom: 0; transition: 1s;}
+
+            .floating .wrap {position: relative;}
+            .floating img {width: auto;}
+            .floating img.form_box_bg {display: none;}
+            .floating .floating_form_box {padding: 8vw 0 25vw;}
+            .floating .floating_mo_close {display: block; position: absolute; width: 15vw; height: 7vw; left: 50%; transform: translateX(-50%); top: -6.5vw; z-index: 60; cursor: pointer;}
+            .floating .floating_mo_close img {display: block; width: 100%;}
+            .floating .floating_box_title {display: none;}
+            .floating_form_box ul li input {border-color: transparent; color: #333; background-color: #fff; padding: 1vw 2vw;}
+            .floating_form_box ul li input[type="text"] {height: 10vw;}
+            .floating_form_box ul li input::placeholder {color: #333; font-size: 4vw;}
+            .floating_form_box .form_btn.mo_hide {display: none;}
+            .floating_form_box .form_btn.mo_calc,
+            .floating_form_box .form_btn.mo_comp {margin-top: 3vw;}
+            .floating_form_box ul {display: flex; flex-wrap: wrap; justify-content: center; width: 95%; margin: 0 auto;}
+            .floating_form_box ul li {display: inline-block; width: calc(50% - 1vw); margin-right: 2vw; margin-bottom: 2vw;}
+            .floating_form_box ul li:nth-child(even) {margin-right: 0;}
+            .floating_form_box ul li.sex {position: static; width: calc(50% - 1vw); display: flex; justify-content: center;}
+            .floating_form_box ul li.sex input + label {width: 50%; height: 100%; margin-right: 1.5vw; display: flex; align-items: center; justify-content: center; font-size: 4vw; color: #010101; background: #fff; border-radius: 2px; border: 1px solid #b6b6b6; border-top-color: #e1e1e1; height: 10vw;}
+            .floating_form_box ul li.sex input:checked + label {background: #d31145; color: #fff;}
+            .floating_form_box .form_btn.mo_calc, .floating_form_box .form_btn.mo_comp {display: none;}
+            .floating_form_box .form_btn.mo_calc.on, .floating_form_box .form_btn.mo_comp.on {
+                display: block;
+            }
+
+            .floating .result {position: relative; display: flex; justify-content: center; width: 95%; margin: 0 auto;}
+            .floating .result img {width: 100%;}
+            .floating .result .mo_calc, .floating .result .mo_comp {width: 42vw;}
+            .floating .result .result_text {display: inline-block; width: 58vw;}
+            .floating .result .result_text input {position: absolute; top: 1.5vw; right: 36vw; border:1px solid rgb(165, 165, 165); color: #333; background-color: #fff; padding: 1vw 2vw; width: 13vw; height: 5vw; font-size: 2.5vw;}
+            .floating .result .result_text input.user_premium {top: 8vw; right: 25vw;}
+
+
+            .floating_mo { width: 100%; position: fixed; bottom: 0; padding: 2.2222vw 3vw;background: #f3f3f3; z-index: 55;}
+            .floating_mo.on {display: block;}
+            .floating_mo .form_btn {display: flex; justify-content: center;  align-items: center;}
+            .floating_mo .form_btn a {display: block; width: 100%;}
+            .floating_mo .form_btn a:first-child {margin-right: 2vw;}
+            .floating_mo .form_btn a:last-child {margin-left: 2vw;}
+        }
+    </style>
+</head>
+<body>
+    <div class="AIA_wrap">
+        <div class="header">
+            <div class="inner">
+                <a href="#" class="btn_title"><img src="./images/20220920_aia_header.png" alt=""></a>
+                <div href="#" class="btn_tel only_pc"><img src="./images/20220920_aia_header_tel.png" alt=""></div>
+                <a href="tel:1600-0880" class="btn_tel only_mo"><img src="./images/20220920_aia_header_tel.png" alt=""></a>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="section01">
+                <div class="wrap">
+                    <div class="inner">
+                        <div class="img01"><img src="./images/w20220920_aia_sc1_img01.png" alt=""></div>
+                        <div class="img02 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20220920_aia_sc1_img02.png" alt=""></div>
+                        <div class="img03"><img src="./images/20220920_aia_sc1_img03.png" alt=""></div>
+                        <div class="img04 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20220920_aia_sc1_img04.png" alt=""></div>
+                        <div class="sc1_form_box">
+                            <h3><img src="./images/20220920_aia_sc1_form_tit01.png" alt=""></h3>
+                            <form method="post" action="" name="frm">
+                                <ul>
+                                    <li class="name">
+                                        <input type="text" id="rn_cust_name" name="rn_cust_name" placeholder="이름" >
+                                    </li>		
+                                    <li class="sex">
+                                        <input type="radio" id="rn_sex1" name="rn_sex" value="M" checked="checked">
+                                        <label for="rn_sex1">남</label>
+                                        <input type="radio" id="rn_sex2" name="rn_sex" value="F">
+                                        <label for="rn_sex2">여</label>
+                                    </li>
+                                    <li class="birth">
+                                        <input type="text" id="rn_jumin1" name="rn_jumin1" maxlength="6" placeholder="생년월일">
+                                    </li>
+                                    <li class="phone">
+                                        <input type="text" id="cr_mphone" name="cr_mphone" maxlength="11" placeholder="전화번호">
+                                    </li>
+                                </ul>
+                            </form>	
+                            <div class="form_btn">
+                                <a href="javascript:void(0)" onclick="return false" class="calc">
+                                    <img src="./images/20220920_aia_sc1_form_btn01.png" alt="">
+                                </a>
+                                <a href="javascript:void(0)" onclick="return false" class="comp">
+                                    <img src="./images/20220920_aia_sc1_form_btn02.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section02">
+                <div class="wrap">
+                    <div class="inner">
+                        <div class="top"><img src="./images/20220920_aia_sc2_txt01.png" alt=""></div>
+                        <img src="./images/20220920_aia_sc2_txt02.png" alt="" class="sc2_img01 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                    </div>
+                </div>
+            </div>
+            <div class="section03">
+                <div class="wrap">
+                    <div class="inner">
+                        <div class="top"><img src="./images/20220920_aia_sc3_txt01.png" alt=""></div>
+                        <img src="./images/20220920_aia_sc3_txt02.png" alt="" class="sc3_img01 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                        <img src="./images/w20220920_aia_sc3_txt03.png" alt="" class="sc3_img02 only_pc animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                        <img src="./images/m20220920_aia_sc3_txt03.png" alt="" class="sc3_img02 only_mo animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                    </div>
+                </div>
+            </div>
+            <div class="section04">
+                <div class="wrap">
+                    <div class="inner">
+                        <img src="./images/20220920_aia_sc4_txt01.png" alt="" class="sc4_img01">
+                        <img src="./images/20220920_aia_sc4_txt02.png" alt="" class="sc4_img02">
+                    </div>
+                </div>
+            </div>
+            <div class="section05">
+                <div class="wrap">
+                    <div class="inner">
+                        <div class="tab">
+                            <div class="tab_btn_wrap">
+                                <div class="tab_btn btn01 bold active">암의 종류는?</div>
+                                <div class="tab_btn btn02 bold">보장 범위는?</div>
+                                <div class="tab_btn btn03 bold">Vitality 혜택은?</div>
+                            </div>
+                            <div class="tabcon tab01_wrap active">
+                                <div class="tab01_con01 animate-plus" data-animations="fadeInUp" data-animation-when-visible="false">
+                                    <div class="title">
+                                        <img src="./images/w20220920_aia_sc5_tab01_con01_title.png" alt="" class="only_pc">
+                                        <img src="./images/m20220920_aia_sc5_tab01_con01_title.png" alt="" class="only_mo">
+                                        <img src="./images/20220920_aia_sc5_tab01_close.png" alt="" class="accordion_btn">
+                                    </div>
+                                    <div class="contents">
+                                        <div class="img01"><img src="./images/w20220920_aia_sc5_tab01_con01_img01.png" alt=""></div>
+                                        <div class="img02"><img src="./images/w20220920_aia_sc5_tab01_con01_img02.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="tab01_con02 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                                    <div class="title">
+                                        <img src="./images/w20220920_aia_sc5_tab01_con02_title.png" alt="" class="only_pc">
+                                        <img src="./images/m20220920_aia_sc5_tab01_con02_title.png" alt="" class="only_mo">
+                                        <img src="./images/20220920_aia_sc5_tab01_open.png" alt="" class="accordion_btn">
+                                    </div>
+                                    <div class="contents">
+                                        <div class="img01"><img src="./images/w20220920_aia_sc5_tab01_con02_img01.png" alt=""></div>
+                                        <div class="img02"><img src="./images/w20220920_aia_sc5_tab01_con02_img02.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="tab01_con03 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                                    <div class="title">
+                                        <img src="./images/w20220920_aia_sc5_tab01_con03_title.png" alt="" class="only_pc">
+                                        <img src="./images/m20220920_aia_sc5_tab01_con03_title.png" alt="" class="only_mo">
+                                        <img src="./images/20220920_aia_sc5_tab01_open.png" alt="" class="accordion_btn">
+                                    </div>
+                                    <div class="contents">
+                                        <div class="img01"><img src="./images/w20220920_aia_sc5_tab01_con03_img01.png" alt=""></div>
+                                        <div class="img02"><img src="./images/w20220920_aia_sc5_tab01_con03_img02.png" alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="tab01_con04 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                                    <div class="title">
+                                        <img src="./images/w20220920_aia_sc5_tab01_con04_title.png" alt="" class="only_pc">
+                                        <img src="./images/m20220920_aia_sc5_tab01_con04_title.png" alt="" class="only_mo">
+                                        <img src="./images/20220920_aia_sc5_tab01_open.png" alt="" class="accordion_btn">
+                                    </div>
+                                    <div class="contents">
+                                        <div class="img01"><img src="./images/w20220920_aia_sc5_tab01_con04_img01.png" alt=""></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabcon tab02_wrap">
+                                <div class="tab02_con01">
+                                    <img src="./images/w20220920_aia_sc5_tab02_img01.png" alt="" class="only_pc animate-plus" data-animations="fadeInUp">
+                                    <img src="./images/w20220920_aia_sc5_tab02_img02.png" alt="" class="only_pc animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                                    <img src="./images/w20220920_aia_sc5_tab02_img03.png" alt="" class="only_pc animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                                    <img src="./images/m20220920_aia_sc5_tab02_img01.png" alt="" class="only_mo animate-plus" data-animations="fadeInUp">
+                                    <img src="./images/m20220920_aia_sc5_tab02_img02.png" alt="" class="only_mo animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                                    <img src="./images/m20220920_aia_sc5_tab02_img03.png" alt="" class="only_mo animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                                </div>
+                            </div>
+                            <div class="tabcon tab03_wrap">
+                                <div class="tab03_con01">
+                                    <img src="./images/w20220920_aia_sc5_tab03_con01.png" alt="" class="only_pc animate-plus" data-animations="fadeInUp">
+                                    <img src="./images/m20220920_aia_sc5_tab03_con01.png" alt="" class="only_mo animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                                </div>
+                                <div class="tab03_con02">
+                                    <img src="./images/w20220920_aia_sc5_tab03_con02.png" alt="" class="only_pc animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                                    <img src="./images/m20220920_aia_sc5_tab03_con02.png" alt="" class="only_mo animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                                    <img src="./images/w20220920_aia_sc5_tab03_con03.png" alt="" class="only_pc animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                                    <img src="./images/m20220920_aia_sc5_tab03_con03.png" alt="" class="only_mo animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                                    <img src="./images/w20220920_aia_sc5_tab03_con04.png" alt="" class="only_pc animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                                    <img src="./images/m20220920_aia_sc5_tab03_con04.png" alt="" class="only_mo animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                                    <img src="./images/w20220920_aia_sc5_tab03_con05.png" alt="" class="only_pc animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                                    <img src="./images/m20220920_aia_sc5_tab03_con05.png" alt="" class="only_mo animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section06">
+                <div class="wrap">
+                    <div class="inner">
+                        <div class="sc6_img01">
+                            <img src="./images/w20220920_aia_sc6_txt01.png" alt="" class="only_pc">
+                            <img src="./images/m20220920_aia_sc6_txt01.png" alt="" class="only_mo">
+                        </div>
+                    </div>
+                    <div class="sc6_bg"><img src="./images/w20220920_aia_sc6_bg.png" alt=""></div>
+                    <div class="sc6_bg02 only_mo"><img src="./images/m20220920_aia_sc6_bg02.png" alt=""></div>
+                </div>
+            </div>
+            <div class="section07">
+                <div class="wrap">
+                    <div class="inner">
+                        <div class="sc6_img01 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20220920_aia_sc7_txt01.png" alt=""></div>
+                        <div class="plus"><img src="./images/20220920_aia_sc7_plus.png" alt=""></div>
+                        <div class="sc6_img02 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20220920_aia_sc7_txt02.png" alt=""></div>
+                        <div class="plus"><img src="./images/20220920_aia_sc7_plus.png" alt=""></div>
+                        <div class="sc6_img03 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20220920_aia_sc7_txt03.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section08">
+                <div class="wrap">
+                    <div class="inner">
+                        <div class="sc8_form_box">
+                            <div class="sc8_title">
+                                <img src="./images/w20220920_aia_sc8_txt01.png" alt="" class="only_pc">
+                                <img src="./images/m20220920_aia_sc8_txt01.png" alt="" class="only_mo">
+                            </div>
+                            <form method="post" action="" name="frm">
+                                <ul>
+                                    <li class="name">
+                                        <input type="text" id="rn_cust_name" name="rn_cust_name" placeholder="이름" >
+                                    </li>		
+                                    <li class="sex">
+                                        <input type="radio" id="rn_sex3" name="rn_sex" value="M" checked="checked">
+                                        <label for="rn_sex3">남</label>
+                                        <input type="radio" id="rn_sex4" name="rn_sex" value="F">
+                                        <label for="rn_sex4">여</label>
+                                    </li>
+                                    <li class="birth">
+                                        <input type="text" id="rn_jumin1" name="rn_jumin1" maxlength="6" placeholder="생년월일">
+                                    </li>
+                                    <li class="phone">
+                                        <input type="text" id="cr_mphone" name="cr_mphone" maxlength="11" placeholder="전화번호">
+                                    </li>
+                                </ul>
+                            </form>	
+                            <div class="form_btn">
+                                <a href="javascript:void(0)" onclick="return false" class="calc">
+                                    <img src="./images/w20220920_aia_sc8_form_btn01.png" alt="" class="only_pc">
+                                    <img src="./images/m20220920_aia_sc8_form_btn01.png" alt="" class="only_mo">
+                                </a>
+                                <a href="javascript:void(0)" onclick="return false" class="comp">
+                                    <img src="./images/w20220920_aia_sc8_form_btn02.png" alt="" class="only_pc">
+                                    <img src="./images/m20220920_aia_sc8_form_btn02.png" alt="" class="only_mo">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- guide -->
+            <div class="guide">
+                <div class="guide_top">
+                    <button type="button">
+                        <img src="./images/w20220920_aia_guide_txt01.png" alt="" class="only_pc">
+                        <img src="./images/m20220920_aia_guide_txt01.png" alt="" class="only_mo">
+                    </button>
+                </div>
+                <div class="guide_wrap">
+                    <img src="./images/w20220920_guaranteedissue.jpg" alt="" class="only_pc">
+                    <img src="./images/m20220920_guaranteedissue.jpg" alt="" class="only_mo">
+                </div>
+            </div> 
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="inner">
+                    <img src="./images/w20220920_aia_footer.png" alt="" class="only_pc">
+                    <img src="./images/m20220920_aia_footer.png" alt="" class="only_mo">
+                    <a href="#">AIA.COM</a>
+                </div>
+            </div>
+
+            <!-- floating -->
+            <div class="floating">
+                <div class="wrap">
+                    <img src="./images/w20220920_aia_floating_bg.png" alt="" class="form_box_bg">
+                    <button class="floating_mo_close" type="button"><img src="./images/m20220920_aia_float_close.png" alt=""></button>
+                    <div class="floating_form_box">
+                        <h3 class="floating_box_title"><img src="./images/w20220920_aia_floating_tit01.png" alt=""></h3>
+                        <form method="post" action="" name="frm">
+                            <ul>
+                                <li class="name">
+                                    <input type="text" id="rn_cust_name" name="rn_cust_name" placeholder="이름" >
+                                </li>		
+                                <li class="sex">
+                                    <input type="radio" id="rn_sex5" name="rn_sex" value="M" checked="checked">
+                                    <label for="rn_sex5">남</label>
+                                    <input type="radio" id="rn_sex6" name="rn_sex" value="F">
+                                    <label for="rn_sex6">여</label>
+                                </li>
+                                <li class="birth">
+                                    <input type="text" id="rn_jumin1" name="rn_jumin1" maxlength="6" placeholder="생년월일(예:801122)">
+                                </li>
+                                <li class="phone">
+                                    <input type="text" id="cr_mphone" name="cr_mphone" maxlength="11" placeholder="전화번호">
+                                </li>
+                            </ul>
+                        </form>	
+                        <div class="form_btn mo_calc">
+                            <div class="result">
+                                <a href="javascript:void(0)" onclick="return false" class="mo_calc calc"><img src="./images/m20220920_aia_float_btn04.png" alt=""></a>
+                                <div class="result_text">
+                                    <img src="./images/m20220920_aia_float_text01.png" alt="">
+                                    <input type="text" class="user_name" readonly >
+							        <input type="text" class ="user_premium" name="calcVal3" readonly value="???"></input>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_btn mo_comp">
+                            <div class="result">
+                                <a href="javascript:void(0)" onclick="return false" class="mo_comp comp"><img src="./images/m20220920_aia_float_btn03.png" alt=""></a>
+                                <div class="result_text">
+                                    <img src="./images/m20220920_aia_float_text02.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_btn mo_hide">
+                            <a href="javascript:void(0)" onclick="return false" class="comp">
+                                <img src="./images/w20220920_aia_floating_btn01.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 모바일용 floating -->
+            <div class="floating_mo">
+                <div class="form_btn">
+                    <a href="javascript:void(0)" onclick="return false" class="mo_calc">
+                        <img src="./images/m20220920_aia_db_btn01.png" alt="">
+                    </a>
+                    <a href="javascript:void(0)" onclick="return false" class="mo_comp">
+                        <img src="./images/m20220920_aia_db_btn02.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <!-- popup : 개인정보 동의 -->
+            <div class="popup agree" data-receive="popup_event">
+                <div class="mask"></div>
+                <div class="popup_content">
+                    <div class="img">
+                        <img src="./images/w20220920_aia_agree_txt.png"  alt="" >
+                    </div>
+                    <div class="wrap">
+                        <div class="agree_area">
+                            <div class="agree">
+                                <div>
+                                    <input type="checkbox" class="checkbox" id="cust_uyn1" name="cust_uyn1">
+                                    <label for="cust_uyn1"><img src="./images/20220920_popup_text01.png"alt=""></label>
+                                    <div class="toggle">
+                                        <img src="./images/20220920_popup_agree01.png" alt="" >
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="all_check" type="button">
+                                <img src="./images/w20220920_popup_btn01.png" alt="" >
+                            </button>
+                        </div>
+                    </div>
+                    <button class="btn_close" type="button">
+                        <img src="./images/20220920_popup_btn_close.png" alt="" >
+                    </button>
+                </div>
+            </div>
+
+            <!-- popup -->
+            <div class="popup type02 comp" >
+                <div class="mask"></div>
+                <div class="popup_content">
+                    <h2 class="bold">보험상담 신청이<br><span>완료</span>되었습니다</h2>
+                    <p class="guide">멤버십 가입 시(월 5,500원) 바이탈리티 할인 혜택 및<br>보험료 할인 혜택을 받으실 수 있습니다 </p>
+                    <p class="text bold">빠른 시일 내에 <span>전문상담원</span>이 보장내역과 보험료를<br>친절하게 설명해드립니다. (평일기준)</p>
+                    <button class="btn_close" type="button"><img src="./images/20220920_popup_btn_close02.png" alt=""></button>
+                </div>
+            </div>
+
+            <!-- popup : 보험료 계산 -->
+            <div class="popup type02 calc">
+                <div class="mask"></div>
+                <div class="popup_content">
+                    <h2 class="bold"><span id="user_name">XXX</span> 고객님의 보험료는</h2>
+                    <div class="calc_area bold">월 <span>[<strong id="user_premium">00,000</strong>]</span>원</div>
+                    <p class="guide">멤버십 가입 시(월 5,500원) 바이탈리티 할인 혜택 및<br>보험료 할인 혜택을 받으실 수 있습니다 </p>
+                    <p class="text bold">빠른 시일 내에 <span>전문상담원</span>이 보장내역과 보험료를<br>친절하게 설명해드립니다. (평일기준)</p>
+                    <button class="btn_close" type="button"><img src="./images/20220920_popup_btn_close02.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        if($(window).width() <= 1080 && window.scrollY == 0){
+            $('.floating_mo').addClass('on')
+        }
+        window.addEventListener("scroll",function(){
+            const floatingBox = document.querySelector('.floating');
+            const floatingBox_mo = document.querySelector('.floating_mo');
+
+            if($(window).width() >= 1080){
+                $('.floating').addClass('on')
+                floatingBox.classList.toggle('on', window.scrollY > 200);
+                if ((window.innerHeight + window.scrollY) + 600 >= document.body.offsetHeight){
+                    floatingBox.classList.remove('on');
+                    floatingBox_mo.classList.remove('on');
+                }
+            }else{
+                $('.floating_mo').addClass('on')
+                $('.floating').removeClass('on')
+                // floatingBox_mo.classList.toggle('on', window.scrollY > 200);
+                if ((window.innerHeight + window.scrollY) + 600 >= document.body.offsetHeight){
+                    floatingBox.classList.remove('on');
+                    floatingBox_mo.classList.remove('on');
+                }
+            }
+            $( window ).resize( function() {
+                if($(window).width() >= 1080){
+                    $('.floating').addClass('on')
+                    floatingBox.classList.toggle('on', window.scrollY > 200);
+                    if ((window.innerHeight + window.scrollY) + 600 >= document.body.offsetHeight){
+                        floatingBox.classList.remove('on');
+                        floatingBox_mo.classList.remove('on');
+                    }
+                }else{
+                    $('.floating_mo').addClass('on')
+                    $('.floating').removeClass('on')
+                    // floatingBox_mo.classList.toggle('on', window.scrollY > 200);
+                    if ((window.innerHeight + window.scrollY) + 600 >= document.body.offsetHeight){
+                        floatingBox.classList.remove('on');
+                        floatingBox_mo.classList.remove('on');
+                    }
+                }
+            });
+        })
+
+        // ??? ???
+        $('.section05 .tab_btn').click(function(){
+            $(this).addClass('active');
+            $(this).siblings().removeClass('active');
+        });
+
+        // ??? ???
+        $('.section05 .btn01').click(function(){
+            $('.section05 .tab01_wrap').addClass('active');
+            $('.section05 .tab02_wrap').removeClass('active');
+            $('.section05 .tab03_wrap').removeClass('active');
+        })
+        $('.section05 .btn02').click(function(){
+            $('.section05 .tab02_wrap').addClass('active');
+            $('.section05 .tab01_wrap').removeClass('active');
+            $('.section05 .tab03_wrap').removeClass('active');
+        })
+        $('.section05 .btn03').click(function(){
+            $('.section05 .tab03_wrap').addClass('active');
+            $('.section05 .tab01_wrap').removeClass('active');
+            $('.section05 .tab02_wrap').removeClass('active');
+        })
+
+        // ??????
+        $('.form_btn .calc').click(function(){
+            $('.popup.agree').show();
+            $('.popup.agree .wrap .all_check').addClass('calc')
+
+            $('.all_check.calc').click(function(){
+                $('.popup.agree').hide();
+                $('.popup.comp').hide();
+                $('.popup.calc').show();
+            })
+        })
+
+        $('.form_btn .comp').click(function(){
+            $('.popup.agree').show();
+            $('.popup.agree .wrap .all_check').addClass('comp')
+
+            $('.all_check.comp').click(function(){
+                $('.popup.agree').hide();
+                $('.popup.calc').hide();
+                $('.popup.comp').show();
+            })
+        })
+
+        $('.popup.agree .btn_close').click(function(){
+            $('.popup.agree').hide();
+            $('.popup.agree .wrap .all_check').removeClass('calc')
+            $('.popup.agree .wrap .all_check').removeClass('comp')
+        })
+        $('.popup.calc .btn_close').click(function(){
+            $('.popup.calc').hide();
+            $('.popup.agree .wrap .all_check').removeClass('calc')
+            $('.popup.agree .wrap .all_check').removeClass('comp')
+        })
+        $('.popup.comp .btn_close').click(function(){
+            $('.popup.comp').hide();
+            $('.popup.agree .wrap .all_check').removeClass('calc')
+            $('.popup.agree .wrap .all_check').removeClass('comp')
+        })
+
+        // ????????
+        $('.guide_top button').click(function(){
+            $('.guide_wrap').toggleClass('open')
+
+            var offset = $(this).offset();
+		   $('html').animate({scrollTop : offset.top - 100}, 300);
+        })
+
+        //????? ??????
+        $('.section05 .tab01_wrap > .tab01_con01').addClass('open').children('.contents').show();
+        $('.section05 .tab01_wrap > div').click(function(){
+            if($(this).hasClass('open')){
+                $(this).removeClass('open');
+                $('.accordion_btn').removeClass('on');
+                $(this).children('.contents').hide();
+            }else{
+                $(this).addClass('open');
+                $('.accordion_btn').addClass('on');
+                $(this).children('.contents').show();
+            }
+            
+            if($('.accordion_btn').hasClass('on')){
+                $(this).children('.title').children('.accordion_btn').attr('src','./images/20220920_aia_sc5_tab01_close.png')
+            }else{
+                $(this).children('.title').children('.accordion_btn').removeClass('on')
+                $(this).children('.title').children('.accordion_btn').attr('src','./images/20220920_aia_sc5_tab01_open.png')
+            }
+        })
+
+        //모바일 하단 버튼
+        $('.floating_mo .mo_calc').click(function(){
+            $('.floating').addClass('on')
+            $('.floating .form_btn.mo_calc').addClass('on');
+            $('.floating .form_btn.mo_comp').removeClass('on');
+        })
+
+        $('.floating_mo .mo_comp').click(function(){
+            $('.floating').addClass('on')
+            $('.floating .form_btn.mo_calc').removeClass('on');
+            $('.floating .form_btn.mo_comp').addClass('on');
+        })
+
+        $('.floating .floating_mo_close').click(function(){
+            $('.floating').removeClass('on')
+        })
+
+
+        //???????? ??????
+        !function(a){function b(b){this.htmlElement=b,this.animations=a(this.htmlElement).attr("data-animations").split(","),this.animationIndex=0,this.lastAnimation="",void 0!==a(this.htmlElement).attr("data-animation-duration")&&(this.animationDuration=a(this.htmlElement).attr("data-animation-duration").split(",")),void 0!==a(this.htmlElement).attr("data-animation-delay")&&(this.animationDelay=a(this.htmlElement).attr("data-animation-delay").split(","))}function c(){this.elements=[],this.animateWhenVisible=!1,this.isPerformingAnimation=!1,this.resetWhenOffscreen=!1,this.repeat=!1,this.isReset=!0}function d(){this.onVisbileGroups=[],this.map=[],a(".animate-plus").addClass("animated"),a.each(a(".animate-plus"),function(d,e){var f=new b(e),g=a(e).attr("data-animation-group");void 0===g&&(g="_"+d,a(e).attr("data-animation-group",g)),void 0===this.map[g]&&(this.map[g]=new c);var h=a(e).attr("data-animation-when-visible");void 0!==h&&(this.map[g].animateWhenVisible=!0);var i=a(e).attr("data-animation-reset-offscreen");void 0!==i&&(this.map[g].resetWhenOffscreen=!0);var j=a(e).attr("data-animation-repeat");void 0!==j&&(this.map[g].repeat=!0);var k=this.map[g].elements,l=a(e).attr("data-animation-order"),m=void 0!==l;if(m)var n=l.split(",");for(var o=a(e).attr("data-animations").split(","),p=0;p<o.length;p++){var q=p+1;m&&(q=n[p]),void 0===k[q]&&(k[q]=[]),k[q].push(f)}}.bind(this)),a(window).on("scroll",function(){this.checkOnVisibleGroups()}.bind(this)),a(window).on("resize",function(){this.checkOnVisibleGroups()}.bind(this)),a(document).ready(function(){this.checkOnVisibleGroups()}.bind(this)),this.isElementVisible=function(b){var c=a(window).scrollTop(),d=a(window).height()+c-150,e=a(b).offset().top,f=a(b).height()+e;return d>=e&&f>=c},this.checkOnVisibleGroups=function(){for(var a=0;a<this.onVisbileGroups.length;a++)for(var b=this.map[this.onVisbileGroups[a]],c=1;c<b.elements.length;c++)for(var d=b.elements[c],e=0;e<d.length;e++){var f=d[e].htmlElement;this.isElementVisible(f)&&!b.isPerformingAnimation&&b.animate(1),this.isElementVisible(f)||b.isPerformingAnimation||!b.resetWhenOffscreen||b.reset()}}}jQuery.fn.redraw=function(){return this.hide(0,function(){a(this).show()})},jQuery.fn.restartAnimation=function(){var b=a(this).attr("data-animation-group"),c=d.getInstance().getMap()[b];c.restart()},b.prototype.doNextAnimation=function(b){if(this.animationIndex>=this.animations.length)return void b();var c,d;a(this.htmlElement).removeClass(this.lastAnimation),this.lastAnimation=this.animations[this.animationIndex],a(this.htmlElement).css("animation-duration","").css("-webkit-animation-duration","").css("-moz-animation-duration","").css("-ms-animation-duration","").css("-o-animation-duration",""),void 0!==this.animationDuration&&void 0!==this.animationDuration[this.animationIndex]&&(c=this.animationDuration[this.animationIndex],a(this.htmlElement).css("animation-duration",c).css("-webkit-animation-duration",c).css("-moz-animation-duration",c).css("-ms-animation-duration",c).css("-o-animation-duration",c)),a(this.htmlElement).css("animation-delay","").css("-webkit-animation-delay","").css("-moz-animation-delay","").css("-ms-animation-delay","").css("-o-animation-delay",""),void 0!==this.animationDelay&&void 0!==this.animationDelay[this.animationIndex]&&(d=this.animationDelay[this.animationIndex],a(this.htmlElement).css("animation-delay",d).css("-webkit-animation-delay",d).css("-moz-animation-delay",d).css("-ms-animation-delay",d).css("-o-animation-delay",d)),this.animationIndex++,a(this.htmlElement).redraw(),a(this.htmlElement).addClass(this.lastAnimation).one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",b)},c.prototype.reset=function(){if(!this.isReset){for(var b=1;b<this.elements.length;b++)for(var c=0;c<this.elements[b].length;c++)this.elements[b][c].animationIndex=0,a(this.elements[b][c].htmlElement).removeClass(this.elements[b][c].lastAnimation);this.isReset=!0}},c.prototype.animate=function(a){var b=0,c=this.elements[a];if(void 0===c)return void(this.repeat?(this.reset(),this.animate(1)):this.isPerformingAnimation=!1);this.isPerformingAnimation=!0,this.isReset=!1;for(var d=0;d<c.length;d++)c[d].doNextAnimation(function(){b++,b==c.length&&this.animate(++a)}.bind(this))},c.prototype.restart=function(){this.isPerformingAnimation||(this.reset(),this.animate(1))},d.prototype.start=function(){for(var a in this.map)this.map.hasOwnProperty(a)&&(this.map[a].animateWhenVisible?this.registerOnVisbileMap(a):this.map[a].animate(1))},d.prototype.registerOnVisbileMap=function(a){this.onVisbileGroups.push(a)},d.prototype.getMap=function(){return this.map},d.instance=null,d.getInstance=function(){return null===d.instance&&(d.instance=new d),d.instance},a(document).ready(function(){d.getInstance().start()})}(jQuery);
+
+    </script>
+</body>
+</html>

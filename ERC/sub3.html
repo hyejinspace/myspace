@@ -1,0 +1,427 @@
+<!-- <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%
+String pageType = "sub";
+String pageBefore = "sub1.jsp";
+String pageAfter = "sub3.jsp";
+%>
+<%@ include file="./head.jsp"%> -->
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>지방공기업 웹진</title>
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:title" content="지방공기업 vol.36">
+	<meta property="og:description" content="지방공기업 웹진을 만나보세요.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="style/css/reset.css?ver=2" />
+	<link rel="stylesheet" type="text/css" href="style/css/default.css?ver=2" />
+	<!-- <link rel="stylesheet" type="text/css" href="style/css/main.css?ver=2" /> -->
+	<link rel="stylesheet" type="text/css" href="style/css/sub.css?ver=2" />
+	<script src="http://djwebtoon.cafe24.com/g5/js/jquery-1.8.3.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="style/js/common.js?ver=2"></script>
+	<script>
+		$(document).ready(function(){
+			$('.slideSet1').bxSlider({
+				//	mode: 'horizontal',
+				mode: 'horizontal',
+				//	easing: 'swing',
+				controls: false,
+				auto: true,
+				speed: 700,
+				touchEnabled : false
+			});
+			$('.slideSet2').bxSlider({
+				mode: 'horizontal',
+				//	easing: 'swing',
+				controls: false,
+				auto: true,
+				speed: 700,
+				touchEnabled : false,
+			});
+		});
+	</script>
+</head>
+<style>
+</style>
+
+<body>
+	<div id="headerSet">
+		<div class="headerTop">
+			<div class="wrap">
+				<div class="menu"></div>
+				<a class="logo" href="./"><img src="style/img/setting/logo-h.png" alt="main"></a>
+				<div class="button">
+					<a class="ago" href="https://www.erc.re.kr/usr/com/prm/BBSList.do?bbsId=BBSMSTR_000000000281&menuNo=3011&upperMenuId=3" target="_blank"><img src="style/img/setting/icon-ago.png" alt="지난호보기"></a>
+					<a class="ebook" href="https://www.erc.re.kr/ebook/<%=ebook_page%>/index.html#/1" target="_blank"><img src="style/img/setting/icon-ebook.png" alt="E-Book"></a>
+				</div>
+			</div>
+		</div>
+		<div class="headerBottom">
+			<div class="wrap">
+				<div class="button_mo">
+					<a class="ago" href="https://www.erc.re.kr/usr/com/prm/BBSList.do?bbsId=BBSMSTR_000000000281&menuNo=3011&upperMenuId=3" target="_blank"><img src="style/img/setting/icon-ago.png" alt="지난호보기"></a>
+					<a class="ebook" href="https://www.erc.re.kr/ebook/<%=ebook_page%>/index.html#/1" target="_blank"><img src="style/img/setting/icon-ebook.png" alt="E-Book"></a>
+				</div>
+				<div class="headerSectionWrap">
+					<ul class="headerSection headerSection02">
+						<li>
+							<p>권두언</p>
+							<ul>
+								<li><a href="sub1.html">최치국 지방공기업평가원 이사장 포스트 코로나 시대는 없다</a></li>
+							</ul>
+						</li>
+						<li><p>현장과 사람들</p>
+							<ul>
+								<li><a href="sub2.html">대구도시철도공사</a></li>
+							</ul>
+						</li>
+						<li><p><a href="sub3.html">숫자로 보는 지방공공기관 정보</a></p></li>
+					</ul>
+					<h3 class="headerTitle">특집</h3>
+					<ul class="headerSection">
+						<li><p>Intro</p>
+							<ul>
+								<li><a href="sub4.html">지방공기업 경영평가의 의미와 존재 목적은?</a></li>
+							</ul>
+						</li>
+						<li><p>Focus 1</p>
+							<ul>
+								<li>지표별 살펴보는 지방공기업 경영평가</li>
+								<li><a href="sub5-1.html">임효창 | 지속가능경영 지표에 대한 총평</a></li>
+								<li><a href="sub5-2.html">임미영 | 경영성과 지표에 대한 총평</a></li>
+								<li><a href="sub5-3.html">임준형 | 사회적 가치에 대한 총평 </a></li>
+							</ul>
+						</li>
+						<li><p>Focus 2</p>
+							<ul>
+								<li><a href="sub6.html">남기범 | 성공적인 평가를 위해 어떤 준비를 해야 하는가?</a></li>
+							</ul>
+						</li>
+						<!-- <li><p>Talk</p>
+							<ul>
+								<li><a href="sub7.html">성관실 인천시 미추홀구시설관리공단 이사장 | 윤리경영은 사회와 함께 추진하고 확산될 때 그 가치가 발휘된다</a></li>
+							</ul>
+						</li> -->
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">사람 & 현장</h3>
+					<ul class="headerSection">
+						<li><p>뉴 리더</p>
+							<ul>
+								<li><a href="sub7.html">김재광 김천시시설관리공단 이사장 | 시민에게 행복을 주는 김천의 공공 서비스가 새로워진다</a></li>
+							</ul>
+						</li>
+						<li><p>파워 리더</p>
+							<ul>
+								<li><a href="sub8.html">윤진보 광주광역시도시철도공사 사장 | ‘대중·녹색교통 중심도시’를 꿈꾸며 오늘도 레일 위를 달린다</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 1</p>
+							<ul>
+								<li><a href="sub9.html">대상_인천시설공단 | 지속가능한 경영혁신 플랫폼을 구축하다</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 2</p>
+							<ul>
+								<li><a href="sub10.html">최우수상_서울교통공사 | 혁신적 패러다임의 전환…‘도심 공동물류 플랫폼 사업’</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 3</p>
+							<ul>
+								<li><a href="sub11.html">최우수상_세종특별자치시시설관리공단 | 지하구조물의 IoT 진동복합센서를 활용한 안전사고예방시스템 구축</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 4</p>
+							<ul>
+								<li><a href="sub12.html">최우수상_구미시설공단 | 시민과 함께! 행복을 플러스! ‘같이 Plus+’의 혁신</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 5</p>
+							<ul>
+								<li><a href="sub13.html">최우수상_태백가덕산풍력발전㈜ | 태백의 바람이 새로운 바람이 되는 ‘태백가덕산풍력발전소’</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">연구 & 교육</h3>
+					<ul class="headerSection">
+						<li><p>이슈 진단 1</p>
+							<ul>
+								<li><a href="sub14.html">금창호 | 「지방자치법」 전부개정의 의의와 향후 과제</a></li>
+							</ul>
+						</li>
+						<li><p>이슈 진단 2</p>
+							<ul>
+								<li><a href="sub15.html">조흠학 | 중대재해처벌법의 쟁점과 개선 방안</a></li>
+							</ul>
+						</li>
+						<li><p>연구 논단 1</p>
+							<ul>
+								<li><a href="sub16.html">김세훈 | 지방공공기관의 한국판 뉴딜 실행을 위한 접근 전략</a></li>
+							</ul>
+						</li>
+						<li><p>실무논단</p>
+							<ul>
+								<li><a href="sub17.html">김상길 | 지방공기업의 투명성·효율성·책임성 제고를 위한 정책 제언</a></li>
+							</ul>
+						</li>
+						<li><p>HR 강좌</p>
+							<ul>
+								<li><a href="sub18.html">유일한 | 코로나19와 HR의 대응, 디지털 리더십과 36계</a></li>
+							</ul>
+						</li>
+						<li><p>노무 강좌</p>
+							<ul>
+								<li><a href="sub19.html">최혁진 | 기간제 근로자의 갱신기대권의 성립 요건</a></li>
+							</ul>
+						</li>
+						<li><p>법률 강좌</p>
+							<ul>
+								<li><a href="sub20.html">장호진 | 입찰, 공모 등 과정에서의 아이디어 탈취 행위 금지</a></li>
+							</ul>
+						</li>
+						<li><p>상시 자문</p>
+							<ul>
+								<li><a href="sub21.html">단체협약 유효기간 중 보충교섭에 응해야 하는지 여부 외</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">생활 & 문화</h3>
+					<ul class="headerSection">
+						<li><p>마을의 재발견</p>
+							<ul>
+								<li><a href="sub22.html">하숙 문화와 이야기를 품은 특별한 공간으로의 초대!</a></li>
+							</ul>
+						</li>
+						<li><p>4차 산업혁명 노트</p>
+							<ul>
+								<li><a href="sub23.html">세계는 지금 대기오염과 전쟁 중… ICT로 극복한다</a></li>
+							</ul>
+						</li>
+					</ul>
+					<h3 class="headerTitle">뉴스</h3>
+					<ul class="headerSection">
+						<li><p>지방공기업 뉴스</p>
+							<ul>
+								<li><a href="sub24.html">강북구도시관리공단_거주자우선주차장 경차 전용 구획 대폭 확대 외</a></li>
+							</ul>
+						</li>
+						<li><p>ERC 뉴스</p>
+							<ul>
+								<li><a href="sub25.html">2021년 제2차 지방공기업 CEO 포럼 개최 외</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="subVisual" style="background:url(style/img/sub3_visual.jpg) top center no-repeat; background-size:cover;"></div>
+	<div id="subTitle">
+		<div class="titleArea">
+			<div class="title">
+				<b>최고의 대국민 정책 아이디어는?</b>
+			</div>
+			<div class="title_small">행안부 ‘2021년 지방공공기관 혁신 대국민 정책 아이디어’<br/> 11건 선정 </div>
+		</div>
+		<div class="readArea">
+			지방공공기관 정책에 반영되는 혁신 아이디어 공모에서 일자리와 교통약자, 환경 관련 아이디어가 최우수상을 차지했다. 행정안전부가 ‘2021년 지방공공기관 대국민 정책 아이디어’를 공모해 11건을 선정했다. 특히 올해 4회째를 맞이하는 아이디어 정책공모전은 지방공기업에서 지방출자·출연기관까지 대상기관을 확대하여 진행됐다. 
+			<br><br>
+			<b>글</b> 편집실&nbsp;&nbsp;<b>자료</b> 행정안전부
+		</div>
+	</div>
+	<div id="subSection">
+		<div class="sectionArea">
+			<div class="imgArea flex" style="margin: 0;">
+				<span class="margin_B_30">
+					<img src="style/img/sub3_img1.jpg" alt="이미지" class="M_hide">
+					<img src="style/img/sub3_img1_M.jpg" alt="이미지" class="M_show">
+				</span>
+				<span class="margin_B_30">
+					<img src="style/img/sub3_img2.jpg" alt="이미지" class="M_hide">
+					<img src="style/img/sub3_img2_M.jpg" alt="이미지" class="M_show">
+				</span>
+				<span class="margin_B_30 M_hide">
+					<img src="style/img/sub3_img3.jpg" alt="이미지" class="M_hide">
+				</span>
+				<span CLASS="M_hide" style="padding-bottom: 30px;">
+					<img src="style/img/sub3_img4.jpg" alt="이미지" class="M_hide">
+				</span>
+			</div>
+			<div class="imgArea flex" style="margin: 0;">
+				<span class="margin_B_30">
+					<img src="style/img/sub3_img5.jpg" alt="이미지" class="M_hide">
+					<img src="style/img/sub3_img5_M.jpg" alt="이미지" class="M_show">
+				</span>
+				<span style="padding-bottom: 30px;" class="M_hide">
+					<img src="style/img/sub3_img6.jpg" alt="이미지">
+				</span>
+				<div class="imgArea">
+					<img src="style/img/sub3_img7.jpg" alt="이미지">
+				</div>
+			</div>
+
+			<div class="textArea table_deco3">
+				<div class="textTitle2 text_center">대국민 우수 정책 공모 결과 현황</div>
+				<div class="scrollArea">
+					<table style="min-width: 1000px;">
+						<thead>
+							<tr>
+								<th style="min-width: 100px;">연번</th>
+								<th style="min-width: 100px;">구분</th>
+								<th style="min-width: 100px;">공모자</th>
+								<th style="min-width: 100px;">분야</th>
+								<th>내용</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>최우수</td>
+								<td>홍은미</td>
+								<td>적극행정</td>
+								<td class="text_left"><b>지방공공기관 일자리 문자 알림 서비스</b><br/>
+									•‌ 지방공공기관 통합채용정보공개시스템(클린아이 Job+) 개선을 통해 공공 기관 일자리 관련 정보를 문자알림 서비스를 통해 적극행정 실현 <br/>
+									※ 지방공공기관 일자리가 절실한 취업지원자들에 필요한 사업
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>최우수</td>
+								<td>이세민</td>
+								<td>지역사회 <br/> 문제 해결</td>
+								<td class="text_left"><b>야외 스레기통에 페트병 라벨지 제거도구 설치</b><br/>
+									•‌ 가정에서 배출되는 페트병 라벨지 의무 제거 정책 시행의 일환으로 야외에서도 페트병 라벨지 제거 도구 설치<br/>
+									※ 시기적으로 필요하며 아이디어가 참신하고 독창적으로 추진 시 효과 기대
+								</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>최우수</td>
+								<td>정태원</td>
+								<td>주민참여</td>
+								<td class="text_left"><b>교통약자 특별교통수단 이용대상자 신청 이지시스템 구축</b><br/>
+									•‌ 특별교통수단 이용 대상자 심사 신청방법을 기존 오프라인에서 온라인으로 신청할 수 있는 시스템 구축<br/>
+									※ 시스템 구축을 통해 효율적 서비스 제공으로 국민체감도 높일 수 있음
+								</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>최우수</td>
+								<td>김주태</td>
+								<td>인권경영</td>
+								<td class="text_left"><b>열차 내 휠체어 공존공간 스티커 부착 등 시각화 및 안내방송 체계 구축</b><br/>
+									•‌ 도시철도 내 휠체어교통약자가 탑승할 수 있는 공존구역 설치 및 안내방송 체계 구축<br/>
+									※ 교통약자에 대한 양질의 서비스 제공
+								</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>우수</td>
+								<td>전은경</td>
+								<td>인권경영</td>
+								<td class="text_left"><b>교통약자 방문객들을 위한 주차유도선 표시</b><br/>
+									• ‌노약자, 장애인, 임산부 등 방문객들의 편리한 주차를 돕기 위해 기관 입구부터 주차 유도선 표시<br/>
+									※ 교통약자에게 양질의 서비스 제공
+								</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>우수</td>
+								<td>김준석</td>
+								<td>지역사회<br/>문제 해결</td>
+								<td class="text_left"><b>사계절 타이머 설치를 통한 시설물의 효율적 관리 및 전력소비 감축</b><br/>
+									•‌ 계절마다 바뀌는 일몰, 일출 1년치 시간데이터가 내장되는 시스템을 구축하여 점등, 소등 시간 자동 변경<br/>
+									※ 전력 낭비를 막을 수 있으며 고려 가능한 참신한 아이디어
+								</td>
+							</tr>
+							<tr>
+								<td>7</td>
+								<td>우수</td>
+								<td>정혜정</td>
+								<td>적극행정</td>
+								<td class="text_left"><b>내비게이션, 지도 어플과 연계한 공영주차장 잔여 주차면수 안내</b><br/>
+									• T맵, 카카오 어플과 협업하여 공영주차장 잔여 면수 확인시스템 구현<br/>
+									※ 공영주차장을 찾는 고객 편의 서비스 
+								</td>
+							</tr>
+							<tr>
+								<td>8</td>
+								<td>우수</td>
+								<td>최두선</td>
+								<td>인권경영</td>
+								<td class="text_left"><b>에너지 하베스팅(압전효과) 기술을 활용한 작업자 자가 경보장치</b><br/>
+									• ‌압전효과 기술 활용 자가 경보장치를 통해 현장에서 작업 중이라는 신호를 알릴 수 있어 안전사고 미연에 방지<br/>
+									※ 발전소 등 현장에서 안전사고 방지
+								</td>
+							</tr>
+							<tr>
+								<td>9</td>
+								<td>장려</td>
+								<td>나갑성</td>
+								<td>지역사회<br/>문제 해결</td>
+								<td class="text_left"><b>건축물 데이터를 활용한 안전한 도시 구축</b><br/>
+									• ‌건축인허가 공공데이터 자료(위치정보 등)를 포털지도 서비스망과 연계하여 시민들이 공유할 수 있도록 데이터를 개방하여 대형사고 예방<br/>
+									※ 기관 간의 협업을 통해 취지를 살릴 수 있다면 좋은 아이디어
+								</td>
+							</tr>
+							<tr>
+								<td>10</td>
+								<td>장려</td>
+								<td>손수미</td>
+								<td>적극행정</td>
+								<td class="text_left"><b>지방공공기관 혁신 인터넷 아카이브(Archive:기록물 저장소) 운영</b><br/>
+									• 혁신성과를 세부 분류(사회공헌, 안전, 수익, ESG 등) 텍스트로 등록하여 인터넷 아카이브를 만들어 손쉽게 접근할 수 있도록 개선<br/>
+									※ 매우 필요하고 효과도 기대할 수 있는 사업
+								</td>
+							</tr>
+							<tr>
+								<td>11</td>
+								<td>장려</td>
+								<td>김현숙</td>
+								<td>적극행정</td>
+								<td class="text_left"><b>공영주차장 즉시 감면시스템 구축</b><br/>
+									• 공영주차장시스템과 행정정보공동이용시스템 연계 주차 감면시스템 구축<br/>
+									※ 이용고객의 만족도를 높일 수 있는 체감도 높은 사업
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="right_banner">
+		<div>
+			<a href="javascript:void(0);" id="viewMenu"><img src="./style/img/setting/qimg1.png" /></a>
+			<a href="javascript:void(0);" id="topSet"><img src="./style/img/setting/qimg2.png" /></a>
+			<a href="./<%=pageBefore%>"><img src="./style/img/setting/qimg3.png" /></a>
+			<a href="./<%=pageAfter%>"><img src="./style/img/setting/qimg4.png" /></a>
+		</div>
+	</div>
+	<div id="footerSet">
+		<div class="wrap">
+			<a href="https://www.erc.re.kr/" target="_blank" class="logo"><img src="style/img/setting/logo-f.png" alt="지방공기업평가원"></a>
+			<div class="sns">
+				<a href="https://www.youtube.com/channel/UCC9O2yXc0eAYjBVhjJ3gnxQ" target="_blank" class="youtube"><img src="style/img/setting/icon-sns-y.png" alt="youtube"></a>
+				<a href="https://www.facebook.com/erc.re.kr/" target="_blank" class="facebook"><img src="style/img/setting/icon-sns-f.png" alt="facebook"></a>
+			</div>
+			<div class="info">
+				<p>(우) 06647 서울 서초구 반포대로30길 12-6 (지번) 서초동 1552-13</p>
+				<p>Copyright(c) Evaluation Institute of Regional Public Corporation. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- <%@ include file="./sub_include.jsp"%>
+<%@ include file="./foot.jsp"%> -->

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" type="text/css" href="../common/css/style.css"/>
+    <!-- fontawesom -->
+    <script src="https://kit.fontawesome.com/7e7b796bd2.js" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+    <script src="../common/js/jquery.min.js"></script>
+    <script src="../common/js/kute.min.js"></script>
+    <title>한국과수농협연합회</title>
+</head>
+<body>
+    <!-- 공통 Header-->
+    <header>
+        <div class="wrap">
+            <a href="../index.html"><h1><img src="../common/images/logo02.png" class="logo"></h1></a>
+        </div>
+    </header>
+
+    <!-- Section -->
+    <section class="sub sub01">
+        <div class="visual_wrap">
+            <div class="visual">
+                <img src="img/sub01_visual.jpg">
+            </div>
+        </div>
+        <div class="container" style="background: url(img/sub01_bg.jpg) no-repeat center/cover;">
+            <div class="wrap">
+                <ul class="tabs">
+                    <li class="tab01"><img src="img/tab_title01.png"></li>
+                    <li class="tab02 active"><img src="img/tab_title02.png"></li>
+                </ul>
+                <div class="con con01">
+                    <div class="receipt_contents">
+                        <img src="img/tab01_contents.png">
+                        <button type="button" class="button01 con01submit">
+                            <img src="img/submit_book.png">
+                            <img src="img/submit.png">
+                            <img src="../common/images/arrow02.png">
+                        </button>
+                    </div>
+                    <div class="form">
+                        <form class="receipt_form">
+                            <div class="section">
+                                <span class="title"><h5>이용동의</h5></span>
+                                <div>
+                                    <p class="explain">작품 접수를 위해 다음 내용 확인하시고 동의해주시기 바랍니다.</p>
+                                    <h6>1. 개인 정보 수집 및 이용에 관한 사항</h6>
+                                    <div class="agreement">
+                                        ■ 한국과수농협연합회는 개인정보 보호법에 의거, 아래와 같은 개인정보를 수집·이용하고자 합니다.<br/>
+                                        <br/>
+                                        가. 수집·이용 목적<br/>
+                                        * ‘초등 돌봄교실 과일 간식 교재’ 발간과 함께 진행되는 인수증 접수 이벤트 진행에 상품발송을 위한 최소정보수정<br/>
+                                        <br/>
+                                        나. 수집·이용 항목<br/>
+                                        * 성명, 전화번호(휴대폰 번호) 등<br/>
+                                        <br/>
+                                        다. 개인정보의 보유 및 이용 기간<br/>
+                                        * 참가 신청서가 제출된 날로부터 사업 종료일까지<br/>
+                                        <br/>
+                                        ■ 개인정보 처리 위탁<br/>
+                                        한국과수농협연합회는 원활한 개인정보 업무처리를 위하여 다음과 같이 개인정보 처리 업무를 위탁하고 있습니다.<br/>
+                                        (수탁업체 : 경성문화사 / 위탁내용 : 공모전 운영 대행 / 개인정보 보유 이용 기간 : 위탁계약 종료 시까지)
+                                    </div>
+                                    <span>참가자는 위의 개인 정보 수집·이용에 대한 동의를 거부할 권리가 있습니다.<br/> 다만, 동의하지 않을 경우 공모전 공모가 불가합니다.<br/> 위와 같이 개인 정보를 수집·이용하는데 동의하십니까?</span>
+                                    <span class="agree">
+                                        <input type="radio" id="radio01" name="radio" checked>
+                                        <label for="radio01">동의합니다.</label>    
+                                        <input type="radio" id="radio02" name="radio">
+                                        <label for="radio02">동의하지 않습니다.</label>  
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <span class="title"><h5>접수내용</h5></span>
+                                <div>
+                                    <h6>2. 접수자 정보 입력</h6>
+                                    <div class="information">
+                                        <input type="text" name="receipt_name" placeholder="접수자 성명*">
+                                        <input type="text" name="receipt_phone" placeholder="접수자 연락처*" onkeyup="onlyNumber(this);">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <span class="title"><h5>인수증 접수</h5></span>
+                                <div>
+                                    <h6>3. 첨부파일</h6>
+                                    <div class="search_file">
+                                        <input type="text" id="file1" readonly>
+                                        <label for="file_btn" id="file_btn1" class="file_btn">파일찾기</label>
+                                        <input type="file" name="file_doc" id="file_btn">
+                                    </div>
+                                    <p class="warning">
+                                        ※ png,jpg 파일로 용량은 10M미만 가능
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <span class="title"></span>
+                                <div class="submit_wrap">
+                                    <button type="button" class="submit01">작품 제출하기</button>
+                                </div>
+                            </div>
+                        </form>
+                        <button type="button" class="button02 inform inform01">
+                            <img src="img/inform_icon.png">
+                            <img src="img/inform.png">
+                            <img src="../common/images/arrow02.png">
+                        </button>
+                    </div>
+                </div>
+                <div class="con con02 active">
+                    <div class="photo_contents">
+                        <img src="img/tab02_contents.png">
+                        <div class="button_wrap">
+                            <button type="button" class="submit con02submit">
+                                <img src="img/submit_book.png">
+                                <div>
+                                    <img src="../common/images/arrow02.png">
+                                    <img src="img/submit.png">
+                                </div>
+                            </button>
+                            <button type="button" class="check receipt_check_btn">
+                                <img src="img/submit_check.png">
+                                <div>
+                                    <img src="../common/images/arrow02.png">
+                                    <img src="img/check.png">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <form class="photo_form">
+                            <div class="section">
+                                <span class="title"><h5>이용동의</h5></span>
+                                <div>
+                                    <p class="explain">작품 접수를 위해 다음 내용 확인하시고 동의해주시기 바랍니다.</p>
+                                    <h6>1. 개인 정보 수집 및 이용에 관한 사항</h6>
+                                    <div class="agreement">
+                                        ■ 한국과수농협연합회는 개인정보 보호법에 의거, 아래와 같은 개인정보를 수집·이용하고자 합니다.<br/>
+                                        <br/>
+                                        가. 수집·이용 목적<br/>
+                                        * ‘초등 돌봄교실 과일 간식 사진 공모전’ 참가 확인을 위해 최소 정보를 수집하는 데 활용<br/>
+                                        * 공모전 당선 결과 보고 및 당선작품 공개에 이용<br/>
+                                        * 수상작 상금 지급 및 세금 공제에 이용<br/>
+                                        * 사업 결과 보고에 이용<br/>
+                                        <br/>
+                                        나. 수집·이용 항목<br/>
+                                        * 성명, 전화번호(휴대폰 번호) 등<br/>
+                                        <br/>
+                                        다. 개인정보의 보유 및 이용 기간<br/>
+                                        * 참가 신청서가 제출된 날로부터 사업 종료일까지<br/>
+                                        <br/>
+                                        ■ 개인정보 처리 위탁<br/>
+                                        한국과수농협연합회는 원활한 개인정보 업무처리를 위하여 다음과 같이 개인정보 처리 업무를 위탁하고 있습니다.<br/>
+                                        (수탁업체 : 경성문화사 / 위탁내용 : 공모전 운영 대행 / 개인정보 보유 이용 기간 : 위탁계약 종료 시까지)
+                                    </div>
+                                    <span>참가자는 위의 개인 정보 수집·이용에 대한 동의를 거부할 권리가 있습니다.<br/> 다만, 동의하지 않을 경우 공모전 공모가 불가합니다.<br/> 위와 같이 개인 정보를 수집·이용하는데 동의하십니까?</span>
+                                    <span class="agree">
+                                        <input type="radio" id="radio03" name="radio2" checked>
+                                        <label for="radio03">동의합니다.</label>    
+                                        <input type="radio" id="radio04" name="radio2">
+                                        <label for="radio04">동의하지 않습니다.</label>  
+                                    </span>
+                                    <div style="height: 3rem;"></div>
+                                    <h6>2. 응모 각서</h6>
+                                    <div class="agreement">
+                                        본인은 한국 과수 농협연합회가 주최·주관하는 <초등 돌봄교실 과일 간식 사진 공모전>에 참가하면서 제출 작품은 순수 본인의 창작물임을 밝히며, 아래와 같이 응모 각서를 제출합니다.<br/>
+                                        <br/>
+                                        가. 출품한 작품은 일절 반환하지 않습니다.<br/>
+                                        <br/>
+                                        나. 출품작에 대한 저작권은 응모자에게 있습니다. 다만, 당선작은 2022년 한국 과수 농협연합회 전시물로 재구성 및 주최 측 홍보를 위한 공익적 목적으로 수정·변경·활용(필요하면 재가공) 할 수 있습니다.<br/>
+                                        ※ 저작물 활용 범위 (예시)<br/>
+                                        - 공모전의 결과 홍보 등 공적인 용도로 활용하는 경우(재가공 포함)<br/>
+                                        - 당선작만 홍보의 목적으로 SNS 및 수상작 모음집 등으로 재가공하여 사용되는 경우<br/>
+                                        - 당선작만 주최 측 프로그램 운영을 위해 활용하는 경우(재가공 포함)<br/>
+                                        <br/>
+                                        다. 본인 작품(표절·도용·대리 제작 등)이 아닌 거나, 외국 사례 복사 제출 또는 다른 공모전에 출전한 작품에 대하여는 심사에서 제외하며, 수상 후 위반 사실이 밝혀졌을 경우 입상을 취소하고 시상금을 회수하여도 이의를 제기하지 않습니다.<br/>
+                                        <br/>
+                                        라. 출품작의 법적 분쟁(초상권·저작권·지식재산권 등)에 관한 문제가 발생할 경우 응모자 본인이 민·형사상 모든 책임을 집니다.<br/>
+                                        <br/>
+                                        마. 당선작만 작품의 수정·변경이 가능한 원본 파일을 주최 측의 요청에 따라 제출해야 합니다.<br/>
+                                        <br/>
+                                        바. 출품자는 출품작이 제3자의 저작권을 침해하지 않도록 주의 의무를 다해야 합니다.<br/>
+                                        <br/>
+                                        사. 공모전 참가를 위해 소요되는 비용 및 시상금에 대한 제세공과금은 응모자 본인이 부담합니다.
+                                    </div>
+                                    <span>참가자는 위의 응모 각서 내용에 대한 동의를 거부할 권리가 있습니다. <br/>다만, 동의하지 않을 경우 공모전 공모가 불가합니다.<br/>위와 같이 개인 정보를 수집·이용하는데 동의하십니까?</span>
+                                    <span class="agree">
+                                        <input type="radio" id="radio05" name="radio3" checked>
+                                        <label for="radio05">동의합니다.</label>    
+                                        <input type="radio" id="radio06" name="radio3">
+                                        <label for="radio06">동의하지 않습니다.</label>  
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <span class="title"><h5>접수내용</h5></span>
+                                <div>
+                                    <h6>3. 접수자 정보 입력</h6>
+                                    <div class="information02">
+                                        <input type="text" name="photo_name" placeholder="접수자 성명*">
+                                        <input type="text" name="photo_phone" placeholder="접수자 연락처*" onkeyup="onlyNumber(this);">
+                                        <input type="password" name="photo_password" placeholder="비밀번호*">
+                                        <input type="password" name="photo_password_check" placeholder="비밀번호 확인*">
+                                    </div>
+                                    <p class="warning">※ 비밀번호는 접수 확인 시 필요하니, 꼭 기억하시기 바랍니다.</p>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <span class="title"><h5>인수증 접수</h5></span>
+                                <div>
+                                    <h6>4. 첨부파일</h6>
+                                    <div class="search_file">
+                                        <input type="text" id="file1" readonly>
+                                        <label for="file_btn" id="file_btn1" class="file_btn">파일찾기</label>
+                                        <input type="file" name="file_doc" id="file_btn">
+                                    </div>
+                                    <p class="warning">
+                                        ※ A4(297x210mm) 크기 jpg 파일 / 가로 및 세로형 모두 가능<br/>
+                                        ※ 수상작품은 추후 A3(420x297mm) 크기 파일 제출(AI, PSD 등 해상도 300dpi 이상)<br/>
+                                        ※ 분량 : 제한 없음 ※ 글과 사진이 어우러진 작품으로 제출
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <span class="title"></span>
+                                <div class="submit_wrap">
+                                    <button type="button" class="submit02">작품 제출하기</button>
+                                </div>
+                            </div>
+                            <div class="button_wrap">
+                                <button type="button" class="inform inform02">
+                                    <img src="img/inform_icon.png">
+                                    <div>
+                                        <img src="../common/images/arrow02.png">
+                                        <img src="img/inform.png">
+                                    </div>
+                                </button>
+                                <button type="button" class="check02 receipt_check_btn">
+                                    <img src="img/submit_check.png">
+                                    <div>
+                                        <img src="../common/images/arrow02.png">
+                                        <img src="img/check.png">
+                                    </div>
+                                </button>
+                            </div>
+                        </form>
+                        <form class="receipt_check_form">
+                            <div class="wrap">
+                                <div class="img_bg"><img src="img/receipt_check_bg.png"></div>
+                                <span class="form_wrap">
+                                    <div>
+                                        <span>접수자 성명</span>
+                                        <input type="text" name="receipt_check_name">
+                                    </div>
+                                    <div>
+                                        <span>접수 시 연락처</span>
+                                        <input type="text" name="receipt_check_phone">
+                                    </div>
+                                    <div>
+                                        <span>비밀번호</span>
+                                        <input type="password" name="receipt_check_apssword">
+                                        <small class="warning">※ 암호 분실 시 운영사무국 (02-2090-1158)로 연락 주시기 바랍니다.</small>
+                                    </div>
+                                    <button type="button" class="button03">접수 확인하기</button>
+                                </span>
+                            </div>
+                            <div class="button_wrap">
+                                <button type="button" class="inform inform02">
+                                    <img src="img/inform_icon.png">
+                                    <div>
+                                        <img src="../common/images/arrow02.png">
+                                        <img src="img/inform.png">
+                                    </div>
+                                </button>
+                                <button type="button" class="check02 con02submit">
+                                    <img src="img/submit_book.png">
+                                    <div>
+                                        <img src="../common/images/arrow02.png">
+                                        <img src="img/submit.png">
+                                    </div>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer(공통) -->
+    <footer>
+        <div class="wrap">
+            <div class="logo">
+                <span>주최</span>
+                <ul>
+                    <li><img src="../common/images/f_logo01.png" alt=""></li>
+                    <li><img src="../common/images/f_logo02.png" alt=""></li>
+                    <li><img src="../common/images/f_logo03.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="call">
+                <span>행사문의</span>
+                <div>
+                    <p><img src="../common/images/phone.png" alt="">&nbsp;&nbsp; 02-2090-6789</p>
+                    <p><img src="../common/images/email.png" alt="">&nbsp;&nbsp; fruitfood365@daum.net</p>
+                </div>
+            </div>
+            <div class="copy">
+                <p>경상북도 상주시 발산로 237 대표전화 054-534-8003 FAX 054-531-2294</p>
+                <p>Copyright(C) 2022 by sunplus. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../common/js/swiper.jquery.min.js"></script>
+    <script src="../common/js/app.js"></script>
+</body>
+</html>

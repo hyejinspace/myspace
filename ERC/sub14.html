@@ -1,0 +1,510 @@
+<!-- <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%
+String pageType = "sub";
+String pageBefore = "sub14.jsp";
+String pageAfter = "sub16.jsp";
+%>
+<%@ include file="./head.jsp"%> -->
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>지방공기업 웹진</title>
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:title" content="지방공기업 vol.36">
+	<meta property="og:description" content="지방공기업 웹진을 만나보세요.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="style/css/reset.css?ver=2" />
+	<link rel="stylesheet" type="text/css" href="style/css/default.css?ver=2" />
+	<!-- <link rel="stylesheet" type="text/css" href="style/css/main.css?ver=2" /> -->
+	<link rel="stylesheet" type="text/css" href="style/css/sub.css?ver=2" />
+	<script src="http://djwebtoon.cafe24.com/g5/js/jquery-1.8.3.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="style/js/common.js?ver=2"></script>
+	<script>
+		$(document).ready(function(){
+			$('.slideSet1').bxSlider({
+				//	mode: 'horizontal',
+				mode: 'horizontal',
+				//	easing: 'swing',
+				controls: false,
+				auto: true,
+				speed: 700,
+				touchEnabled : false
+			});
+			$('.slideSet2').bxSlider({
+				mode: 'horizontal',
+				//	easing: 'swing',
+				controls: false,
+				auto: true,
+				speed: 700,
+				touchEnabled : false,
+			});
+		});
+	</script>
+</head>
+<style>
+</style>
+
+<body>
+	<div id="headerSet">
+		<div class="headerTop">
+			<div class="wrap">
+				<div class="menu"></div>
+				<a class="logo" href="./"><img src="style/img/setting/logo-h.png" alt="main"></a>
+				<div class="button">
+					<a class="ago" href="https://www.erc.re.kr/usr/com/prm/BBSList.do?bbsId=BBSMSTR_000000000281&menuNo=3011&upperMenuId=3" target="_blank"><img src="style/img/setting/icon-ago.png" alt="지난호보기"></a>
+					<a class="ebook" href="https://www.erc.re.kr/ebook/<%=ebook_page%>/index.html#/1" target="_blank"><img src="style/img/setting/icon-ebook.png" alt="E-Book"></a>
+				</div>
+			</div>
+		</div>
+		<div class="headerBottom">
+			<div class="wrap">
+				<div class="button_mo">
+					<a class="ago" href="https://www.erc.re.kr/usr/com/prm/BBSList.do?bbsId=BBSMSTR_000000000281&menuNo=3011&upperMenuId=3" target="_blank"><img src="style/img/setting/icon-ago.png" alt="지난호보기"></a>
+					<a class="ebook" href="https://www.erc.re.kr/ebook/<%=ebook_page%>/index.html#/1" target="_blank"><img src="style/img/setting/icon-ebook.png" alt="E-Book"></a>
+				</div>
+				<div class="headerSectionWrap">
+					<ul class="headerSection headerSection02">
+						<li>
+							<p>권두언</p>
+							<ul>
+								<li><a href="sub1.html">최치국 지방공기업평가원 이사장 포스트 코로나 시대는 없다</a></li>
+							</ul>
+						</li>
+						<li><p>현장과 사람들</p>
+							<ul>
+								<li><a href="sub2.html">대구도시철도공사</a></li>
+							</ul>
+						</li>
+						<li><p><a href="sub3.html">숫자로 보는 지방공공기관 정보</a></p></li>
+					</ul>
+					<h3 class="headerTitle">특집</h3>
+					<ul class="headerSection">
+						<li><p>Intro</p>
+							<ul>
+								<li><a href="sub4.html">지방공기업 경영평가의 의미와 존재 목적은?</a></li>
+							</ul>
+						</li>
+						<li><p>Focus 1</p>
+							<ul>
+								<li>지표별 살펴보는 지방공기업 경영평가</li>
+								<li><a href="sub5-1.html">임효창 | 지속가능경영 지표에 대한 총평</a></li>
+								<li><a href="sub5-2.html">임미영 | 경영성과 지표에 대한 총평</a></li>
+								<li><a href="sub5-3.html">임준형 | 사회적 가치에 대한 총평 </a></li>
+							</ul>
+						</li>
+						<li><p>Focus 2</p>
+							<ul>
+								<li><a href="sub6.html">남기범 | 성공적인 평가를 위해 어떤 준비를 해야 하는가?</a></li>
+							</ul>
+						</li>
+						<!-- <li><p>Talk</p>
+							<ul>
+								<li><a href="sub7.html">성관실 인천시 미추홀구시설관리공단 이사장 | 윤리경영은 사회와 함께 추진하고 확산될 때 그 가치가 발휘된다</a></li>
+							</ul>
+						</li> -->
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">사람 & 현장</h3>
+					<ul class="headerSection">
+						<li><p>뉴 리더</p>
+							<ul>
+								<li><a href="sub7.html">김재광 김천시시설관리공단 이사장 | 시민에게 행복을 주는 김천의 공공 서비스가 새로워진다</a></li>
+							</ul>
+						</li>
+						<li><p>파워 리더</p>
+							<ul>
+								<li><a href="sub8.html">윤진보 광주광역시도시철도공사 사장 | ‘대중·녹색교통 중심도시’를 꿈꾸며 오늘도 레일 위를 달린다</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 1</p>
+							<ul>
+								<li><a href="sub9.html">대상_인천시설공단 | 지속가능한 경영혁신 플랫폼을 구축하다</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 2</p>
+							<ul>
+								<li><a href="sub10.html">최우수상_서울교통공사 | 혁신적 패러다임의 전환…‘도심 공동물류 플랫폼 사업’</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 3</p>
+							<ul>
+								<li><a href="sub11.html">최우수상_세종특별자치시시설관리공단 | 지하구조물의 IoT 진동복합센서를 활용한 안전사고예방시스템 구축</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 4</p>
+							<ul>
+								<li><a href="sub12.html">최우수상_구미시설공단 | 시민과 함께! 행복을 플러스! ‘같이 Plus+’의 혁신</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 5</p>
+							<ul>
+								<li><a href="sub13.html">최우수상_태백가덕산풍력발전㈜ | 태백의 바람이 새로운 바람이 되는 ‘태백가덕산풍력발전소’</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">연구 & 교육</h3>
+					<ul class="headerSection">
+						<li><p>이슈 진단 1</p>
+							<ul>
+								<li><a href="sub14.html">금창호 | 「지방자치법」 전부개정의 의의와 향후 과제</a></li>
+							</ul>
+						</li>
+						<li><p>이슈 진단 2</p>
+							<ul>
+								<li><a href="sub15.html">조흠학 | 중대재해처벌법의 쟁점과 개선 방안</a></li>
+							</ul>
+						</li>
+						<li><p>연구 논단 1</p>
+							<ul>
+								<li><a href="sub16.html">김세훈 | 지방공공기관의 한국판 뉴딜 실행을 위한 접근 전략</a></li>
+							</ul>
+						</li>
+						<li><p>실무논단</p>
+							<ul>
+								<li><a href="sub17.html">김상길 | 지방공기업의 투명성·효율성·책임성 제고를 위한 정책 제언</a></li>
+							</ul>
+						</li>
+						<li><p>HR 강좌</p>
+							<ul>
+								<li><a href="sub18.html">유일한 | 코로나19와 HR의 대응, 디지털 리더십과 36계</a></li>
+							</ul>
+						</li>
+						<li><p>노무 강좌</p>
+							<ul>
+								<li><a href="sub19.html">최혁진 | 기간제 근로자의 갱신기대권의 성립 요건</a></li>
+							</ul>
+						</li>
+						<li><p>법률 강좌</p>
+							<ul>
+								<li><a href="sub20.html">장호진 | 입찰, 공모 등 과정에서의 아이디어 탈취 행위 금지</a></li>
+							</ul>
+						</li>
+						<li><p>상시 자문</p>
+							<ul>
+								<li><a href="sub21.html">단체협약 유효기간 중 보충교섭에 응해야 하는지 여부 외</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">생활 & 문화</h3>
+					<ul class="headerSection">
+						<li><p>마을의 재발견</p>
+							<ul>
+								<li><a href="sub22.html">하숙 문화와 이야기를 품은 특별한 공간으로의 초대!</a></li>
+							</ul>
+						</li>
+						<li><p>4차 산업혁명 노트</p>
+							<ul>
+								<li><a href="sub23.html">세계는 지금 대기오염과 전쟁 중… ICT로 극복한다</a></li>
+							</ul>
+						</li>
+					</ul>
+					<h3 class="headerTitle">뉴스</h3>
+					<ul class="headerSection">
+						<li><p>지방공기업 뉴스</p>
+							<ul>
+								<li><a href="sub24.html">강북구도시관리공단_거주자우선주차장 경차 전용 구획 대폭 확대 외</a></li>
+							</ul>
+						</li>
+						<li><p>ERC 뉴스</p>
+							<ul>
+								<li><a href="sub25.html">2021년 제2차 지방공기업 CEO 포럼 개최 외</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="subVisual" style="background:url(style/img/sub14_visual.jpg) top center no-repeat; background-size:cover;"></div>
+	<div id="subTitle">
+		<div class="titleArea">
+			<div class="title">
+				「지방자치법」 전부개정의 <br/>
+				<b>의의와 향후 과제</b>
+			</div>
+			<div class="title_small">
+				전부개정에 적극적・선제적・탄력적으로 대응 검토
+			</div>
+		</div>
+		<div class="readArea">
+			이번에 통과된 「지방자치법」의 전부개정은 현행의 제10장, 175개 조문에서 제12장, 211개 조문으로 2개 장과 36개 조문이 증설된 것이다. 이번의 「지방자치법」 전부개정은 전체 조문에 대한 광범위한 내용 개정과 새로운 내용을 추가하고 있다. 그럼에도 불구하고 그간의 사회 변화와 기존의 논의 사항들이 모두 반영되었다고 보기는 어렵다. 이러한 과제들을 보완하기 위한 「지방자치법」의 전부개정에 대한 발전 방향을 살펴보고자 한다. 
+		</div>
+	</div>
+	<div id="subSection">
+		<div class="sectionArea">
+			<div class="imgArea">
+				<img src="style/img/sub14_img1.jpg" alt="이미지">
+			</div>
+		</div>
+		<div class="sectionArea">
+			<div class="textArea">
+				지난 12월 9일에 「지방자치법」의 전부개정법률이 국회를 통과하였다. 이번의 「지방자치법」 전부개정은 1988년에 단행된 전부개정 이후 두 번째의 실질적인 전부개정이다. 특히 1991년 지방자치의 부활 이후 58회에 걸친 「지방자치법」이 개정되었지만 전부개정은 이번이 처음이다. 다만, 이번의 「지방자치법」 전부개정은 2019년에 추진되었던 「지방자치법」의 전부개정안을 근간으로 하고 있다. 2019년에 추진되었던 「지방자치법」의 전부개정안은 국회 행정안전위원회에서 심의가 보류되었다가 제20대 국회의 종료와 함께 폐기되었다. 이후 제21대 국회가 개원하면서 다시 「지방자치법」 전부개정안이 제출되었고 드디어 국회에서 통과되었다.
+			</div>
+			<div class="textArea">
+				이번에 통과된 「지방자치법」의 전부개정은 1991년 지방자치의 부활 이후 처음으로 추진되는 전부개정인 만큼 다음과 같은 의미를 담고 있다. 
+			</div>
+			<div class="textArea">
+				첫째, 지방자치의 부활 이후 지난 30년 간의 사회 변화에 대한 대응이라는 점이다. 저출산·고령화에 따른 인구 감소로 지방의 소멸론까지 대두되고 있고, 저성장·고복지에 따라 지방자치단체의 재정 압박이 심화되고 있는 실정이다. 또 4차 산업혁명으로 산업구조의 재편뿐만 아니라 행정 서비스의 공급 방식도 변화되고 있다. 
+			</div>
+			<div class="textArea">
+				둘째, 지난 30년 간의 지방자치의 운영에서 제기된 다양한 문제에 대한 대응이기도 하다. 주민 주권의 논의와 기관 구성의 다양화, 지방의회의 책임성, 특별지방자치단체의 도입 등과 같은 기존의 요구들을 포괄적이고도 적극적으로 반영하고 있다. 
+			</div>
+			<div class="textArea">
+				그럼에도 불구하고 「지방자치법」의 전부개정에 대한 기대는 관점에 따라서 각기 다를 것이다. 특히 그간에 쟁점으로 부각되었던 내용들이 반영되지 못한 것은 향후의 과제로 남을 것이다.
+			</div>
+		</div>
+		<div class="sectionArea">
+			<div class="textTitle font_20 color1">「지방자치법」 전부개정의 내용</div>
+			<div class="textArea">
+				금번에 통과된 「지방자치법」의 전부개정은 현행의 제10장, 175개 조문에서 제12장, 211개 조문으로 2개 장과 36개 조문이 증설된 것이다. 장의 경우에는 제10장으로 국제교류·협력과 제12장으로 특별지방자치단체가 추가된 것이고, 조문은 장별로 개정 내용이 추가되면서 변화되었다. 가장 많은 조문이 증가된 장은 제1장과 제5장이다. 
+			</div>
+			<div class="textArea">
+				제1장은 총강으로 기존의 11개 조문에서 15개 조문으로 4개 조문이 추가되었고, 제5장은 지방의회로 기존의 63개 조문에서 68개 조문으로 5개 조문이 추가되었다. 그 외에도 제4장과 제8장 및 제10장을 제외하면 모두 조문이 추가된 것을 알 수 있다.
+			</div>
+			<div class="textArea">
+				기존의 제도에 근본적인 변화를 줄 개정 내용들을 간추려 보면 다음과 같다. 제1조에서는 지방자치에 주민들의 참여를 촉진하는 주민자치의 원리를 반영하고 있고, 제6조에서는 행정구역의 경계를 중앙분쟁조정위원회의 의결에 따라 대통령령으로 결정하도록 하고 있으며, 제7조에서는 국민 요건이 삭제되어 외국인 주민도 참여 주체로 명기하고 있다. 제11조에서 제14조까지는 사무 배분과 처리의 기본원칙 등을 규정하고 있고, 제103조에서는 지방의회 사무기구의 독립성을 부여하고 있으며, 제105조에서는 지방자치단체 장의 직을 인수하기 위한 인수위원회의 설치 및 운영을 규정하고 있다. 
+			</div>
+			<div class="textArea table_deco3">
+				<div class="textTitle2 text_center">[표 1] 「지방자치법」 전부개정의 구조</div>
+				<div class="scrollArea">
+					<table style="min-width: 1004px;">
+						<thead>
+							<tr>
+								<th colspan="2">현행법(제10장, 175개 조문)</th>
+								<th colspan="2">개정안(12장, 211개 조문)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>제1장 총강(§1-§11)</td>
+								<td style="min-width: 100px;">11개조</td>
+								<td>제1장 총강(§1-§15)</td>
+								<td style="min-width: 100px;">15개조</td>
+							</tr>
+							<tr>
+								<td>제2장 주민(§12-§21)</td>
+								<td>10개조</td>
+								<td>제2장 주민(§16-§27)</td>
+								<td>12개조</td>
+							</tr>
+							<tr>
+								<td>제3장 조례와 규칙(§22-§28)</td>
+								<td>7개조</td>
+								<td>제3장 조례와 규칙(§28-§35)</td>
+								<td>8개조</td>
+							</tr>
+							<tr>
+								<td>제4장 선거(§29)</td>
+								<td>1개조</td>
+								<td>제4장 선거(§36)</td>
+								<td>1개조</td>
+							</tr>
+							<tr>
+								<td>제5장 지방의회(§30-§92)</td>
+								<td>63개조</td>
+								<td>제5장 지방의회(§37-§104)</td>
+								<td>68개조</td>
+							</tr>
+							<tr>
+								<td>제6장 집행기관(§93-§121)</td>
+								<td>29개조</td>
+								<td>제6장 집행기관(§105-§135)</td>
+								<td>31개조</td>
+							</tr>
+							<tr>
+								<td>제7장 재무(§122-§146)</td>
+								<td>25개조</td>
+								<td>제7장 재무(§136-§163)</td>
+								<td>28개조</td>
+							</tr>
+							<tr>
+								<td>제8장 지방자치단체 상호 간의 관계(§147-§165)</td>
+								<td>19개조</td>
+								<td>제8장 지방자치단체 상호 간의 관계(§164-§182)</td>
+								<td>19개조</td>
+							</tr>
+							<tr>
+								<td>제9장 국가의 지도·감독(§166-§172)</td>
+								<td>7개조</td>
+								<td>제9장 국가와 지방자치단체 간의 관계(§183-§192)</td>
+								<td>10개조</td>
+							</tr>
+							<tr>
+								<td>-</td>
+								<td>-</td>
+								<td>제10장 국제교류·협력(§193-§195)</td>
+								<td>3개조</td>
+							</tr>
+							<tr>
+								<td>제10장 서울특별시 등 대도시와 세종특별자치시 및 제주특별자치도의 행정특례(§173-§175)</td>
+								<td>3개조</td>
+								<td>제11장 서울특별시 및 대도시 등과 세종특별자치시 및 제주특별자치도의 행정특례(§196-§198)</td>
+								<td>3개조</td>
+							</tr>
+							<tr>
+								<td>-</td>
+								<td>-</td>
+								<td>제12장 특별지방자치단체(§199-§211)</td>
+								<td>13개조</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="textArea table_deco3">
+				<div class="textTitle2 text_center">[표 2]「지방자치법」 전부개정의 주요 내용</div>
+				<div class="scrollArea">
+					<table style="min-width: 1004px;">
+						<thead>
+							<tr>
+								<th>조항</th>
+								<th>개정내용</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>목적(제1조)</td>
+								<td class="text_left">
+									• 지방자치에 주민들의 참여를 촉진할 수 있도록 ‘주민자치’ 원리 강화<br/>
+									• 국가-지방자치단체와 자치단체 상호 간의 기본 관계가 협력 관계임을 명시 
+								</td>
+							</tr>
+							<tr>
+								<td>지방자치단체의 관할구역 경계변경 등(제6조)</td>
+								<td class="text_left">
+									• 자치단체장이 경계 변경 신청(중앙기관장 및 사업시행자는 단체장 경유)<br/>
+									• 중분위 심의 전에 자율조정협의체를 구성하여 경계변경 범위 및 손실보상 등에 대한 사전협의 의무화<br/>
+									• 중분위 의결에 따라 대통령령으로 경계조정 결정
+								</td>
+							</tr>
+							<tr>
+								<td>사무 배분의 기본원칙 규정<br/> (제11조, 제12조, 제13조, 제14조)</td>
+								<td class="text_left">
+									• 일반적 사무배분 기본원칙으로 보충성, 불경합성, 자기책임성 원칙을 규정하고 준수의무 부과, 국가·지방사무 예시규정 정비
+								</td>
+							</tr>
+							<tr>
+								<td>주민의 권리(제17조)</td>
+								<td class="text_left">
+									• 주민이 법령과 조례·규칙으로 정하는 바에 따라 주민의 생활에 영향을 미치는 정책 결정 및 집행과정에 참여할 권리를 신설<br/>
+									• ‘국민’의 요건 삭제로 요건을 갖춘 외국인 주민도 참여 주체로 포섭
+								</td>
+							</tr>
+							<tr>
+								<td>사무직원의 정원과 임면 등(제103조)</td>
+								<td class="text_left">• 지방의회 의장이 의회 사무직원을 지휘·감독하고 임면 등에 관한 사항을 처리하도록 규정</td>
+							</tr>
+							<tr>
+								<td>지방자치단체의 장의 직 인수위원회(제105조)</td>
+								<td class="text_left">• 지방자치단체의 장의 직을 인수하기 위한 인수위원회 설치, 운영, 구성, 기능, 준수의무 등에 관한 사항을 규정(위원정수는 시·도 20명, 시·군 및 자치구 15명 이내)</td>
+							</tr>
+							<tr>
+								<td>부지사·부시장·부군수·부구청장(제123조)</td>
+								<td class="text_left" class="text_left">• 시·도지사는 필요한 경우 조례에 따라 부단체장 1명(인구 800만 이상 지자체는 3명)을 추가로 설치할 수 있도록 규정</td>
+							</tr>
+							<tr>
+								<td>지방재정의 조정(제136조)</td>
+								<td class="text_left">• 국가와 지방자치단체가 지역 간의 재정 불균형을 해소하기 위하여 적절한 재정을 조정하도록 노력해야 함을 규정</td>
+							</tr>
+							<tr>
+								<td>대도시에 대한 특례 인정(제198조)</td>
+								<td class="text_left">• 인구 100만 명 이상의 대도시는 특례시로 시·군·구에 대해서는 실질적인 행정 수요와 국가 균형 발전 및 지방 소멸 위기 등을 고려하여 특례를 부여</td>
+							</tr>
+							<tr>
+								<td>특별지방자치단체의 설치·운영 및 규약과 기관 구성(제199조~제211조)</td>
+								<td class="text_left">• 설치(제199조)<br/>
+									• 설치권고 등(제200조)<br/>
+									• 구역(제201조)<br/>
+									• 규약 등(제202조)<br/>
+									• 기본계획 등(제203조)<br/>
+									• 의회의 조직 등(제204조)<br/>
+									• 집행기관의 조직 등(제205조)<br/>
+									• 경비의 부담(제206조)<br/>
+									• 사무 처리 상황 등의 통지(제207조)<br/>
+									• 가입 및 탈퇴(제208조)<br/>
+									• 해산(제209조)<br/>
+									• 지방자치단체에 관한 규정의 준용(제210조)<br/>
+									• 다른 법률과의 관계(제211조)
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="textArea">
+				제123조에서는 광역단위 부단체장의 수를 늘리도록 하고 있으며, 제136조에서는 재정불균형 해소에 대한 국가와 지방자치단체의 노력을 규정하고 있다. 제198조에서는 특례시의 지정기준과 시·군·구 특례를 규정하고 있으며, 제199조부터 제211조까지는 특별지방자치단체의 도입에 관한 제반의 내용을 신설하고 있다. 이 외에도 지방의원의 겸직 금지 확대와 지방의원의 정책 지원 전문인력 도입, 중앙지방 협력회의 설치 등 기존의 문제들을 해결할 수 있는 다수의 내용들이 개정안에 포함되어 있다. 
+			</div>
+		</div>
+		<div class="sectionArea">
+			<div class="textTitle font_20 color1">향후의 발전 방향</div>
+			<div class="textArea">
+				이와 같이 금번의 「지방자치법」 전부개정은 전체 조문에 대한 광범위한 내용 개정과 새로운 내용을 추가하고 있다. 그럼에도 불구하고 그간의 사회 변화와 기존의 논의 사항들이 모두 반영되었다고 보기는 어렵다. 
+			</div>
+			<div class="textArea">
+				예를 들면 저출산에 따른 인구 감소와 고령화에 따른 재정 압박은 선제적으로 대응이 이루어지지 않고 있다. 실질적인 주민 자치를 견인할 주민자치회는 국회의 통과 과정에서 삭제되었다. 특례시의 지정은 인구 100만 명을 기준으로 하는 2019년 당초의 전부개정안으로 환원되었다. 다만 실질적인 행정 수요와 국가 균형 발전 및 지방 소멸 위기 등을 고려하여 시·군·구에 특례를 부여하는 개정은 다행이라 하겠다. 
+			</div>
+			<div class="textArea">
+				특별지방자치단체의 도입은 기존의 협력 체제에서 발생되고 있는 한계를 보완하고, 나아가 광역행정의 효율성을 한층 담보하는 것이기는 하나, 재원 마련의 한계로 적극적으로 활용할 수 있을지에 대해서는 여전히 의문이 남을 수 있다.
+			</div>
+			<div class="textArea">
+				이러한 과제들을 보완하기 위해서는 「지방자치법」의 전부개정에 대한 향후의 방향을 지금부터 고민해야 한다. 향후의 발전방향을 살펴보면 다음과 같다. 첫째, 「지방자치법」의 전부개정이 지금과는 달리 탄력적으로 검토되는 것이 바람직하다. 전술한 바이기도 하지만 금번의 「지방자치법」 전부개정은 1988년 이후 32년 만에 이루어지는 것이다. 물론 그동안 부분개정이 다수 이루어졌지만 필요한 경우 전부개정에 적극적으로 대응해야 한다. 다시 말하면 사회 변화의 급격한 속도를 감안한다면 전부개정이 더욱더 빈번하게 추진된다고 해서 나쁠 것은 없다. 
+			</div>
+			<div class="textArea">
+				둘째, 사회 변화에 선제적으로 대응할 방식도 검토해야 한다. 사실 금번의 「지방자치법」 전부개정에 포함된 상당 수준의 내용들은 기존의 논의에 사후적으로 대응하는 기조를 보여주고 있다. 물론 기존의 쟁점들을 반영하는 것도 의미가 없는 것은 아니지만, 최근에 발생되고 있는 근본적이고 구조적인 인구 등과 같은 사회 변화들에 선제적으로 대응하는 접근도 전부개정에서는 필요하다. 
+			</div>
+			<div class="textArea">
+				셋째, 지방자치 모법으로서의 특성을 회복하는 검토도 필요하다. 다시 말하면 「지방자치법」에 담겨진 내용들이 한국적인 적실성을 반영하고 있지 않은 경우에는 그에 대한 그에 대해 적극적으로 시정해야 한다는 점이다. 수반되어야 한다는 점이다. 모든 제도들이 경로의존성을 탈피하기는 어렵지만 근본적으로 잘못 설계된 내용이 관행이라는 이름으로 그대로 유지되는 것은 바람직하지 않다.<label class="endMark"></label>
+			</div>
+			<div class="imgArea">
+				<img src="style/img/sub14_img2.jpg" alt="이미지">
+			</div>
+		</div>
+
+		
+	</div>
+	<div id="subWriter">
+		<div class="writerImg">
+			<img src="style/img/sub14_writer.jpg" alt="이미지">
+		</div>
+		<div class="writerInfo">
+			<div class="textTitle color1 name">박순종</div>
+			<div class="textArea">
+				서울특별시의회사무처<br>
+				입법조사관
+			</div>
+		</div>
+	</div>
+	<div id="right_banner">
+		<div>
+			<a href="javascript:void(0);" id="viewMenu"><img src="./style/img/setting/qimg1.png" /></a>
+			<a href="javascript:void(0);" id="topSet"><img src="./style/img/setting/qimg2.png" /></a>
+			<a href="./<%=pageBefore%>"><img src="./style/img/setting/qimg3.png" /></a>
+			<a href="./<%=pageAfter%>"><img src="./style/img/setting/qimg4.png" /></a>
+		</div>
+	</div>
+	<div id="footerSet">
+		<div class="wrap">
+			<a href="https://www.erc.re.kr/" target="_blank" class="logo"><img src="style/img/setting/logo-f.png" alt="지방공기업평가원"></a>
+			<div class="sns">
+				<a href="https://www.youtube.com/channel/UCC9O2yXc0eAYjBVhjJ3gnxQ" target="_blank" class="youtube"><img src="style/img/setting/icon-sns-y.png" alt="youtube"></a>
+				<a href="https://www.facebook.com/erc.re.kr/" target="_blank" class="facebook"><img src="style/img/setting/icon-sns-f.png" alt="facebook"></a>
+			</div>
+			<div class="info">
+				<p>(우) 06647 서울 서초구 반포대로30길 12-6 (지번) 서초동 1552-13</p>
+				<p>Copyright(c) Evaluation Institute of Regional Public Corporation. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- <%@ include file="./sub_include.jsp"%>
+<%@ include file="./foot.jsp"%> -->

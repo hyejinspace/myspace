@@ -1,0 +1,319 @@
+*
+    padding: 0
+    margin: 0
+    letter-spacing: -0.75px
+    box-sizing: border-box
+    color: #000
+    -webkit-overflow-scrolling: touch
+img
+    vertical-align: middle
+select,button,textarea,input[type="text"],input[type="number"]
+    appearance: none
+    border: none
+    border-radius: 0
+    background-color: transparent
+ul,ol,li
+    list-style: none
+a
+    text-decoration: none
+select,input,button,textarea
+    &:focus
+        outline: none
+input[type="radio"]
+    display: none
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+    -webkit-appearance: none
+textarea
+    resize: none
+    user-select: auto
+html,body
+    width: 100%
+    font-size: 20px
+    background-color: #f5f4f9
+    font-family: 'Pretendard'
+
+
+//폰트
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+
+@import url('https://webfontworld.github.io/pretendard/Pretendard.css')
+
+
+
+//로딩화면
+.loading
+    position: fixed
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    background-color: rgba(0,0,0,0.72)
+    z-index: 990
+    display: flex
+    justify-content: center
+    align-items: center
+    .circleWrap
+        width: 80px
+        height: 80px
+        position: relative
+        .container
+            width: 100%
+            img
+                width: 100%
+@keyframes load 
+    0%
+        transform: scale(1)
+    50%
+        transform: scale(2.2)
+    100%
+        transform: scale(1)
+
+
+
+//공통
+.wrap
+    width: 100%
+    max-width: 1248px
+    margin: 0 auto
+.inner
+    width: 100%
+    padding: 0 24px
+    margin: 0 auto
+.mo
+    display: none
+
+
+//header
+header
+    width: 100%
+    background-color: #271CA2
+    .wrap
+        height: 81px
+    .inner
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        height: 100%
+    .logo
+        display: block
+        font-size: 30px
+        font-weight: 700
+        font-family: 'Poppins', sans-serif
+        color: #fff
+    .menuBtn
+        display: none
+    nav 
+        ul
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            align-items: center
+            width: 384px
+            li 
+                width: 25%
+                a 
+                    display: inline-block
+                    width: 100%
+                    font-size: 14px
+                    font-weight: 500
+                    font-family: 'Pretendard'
+                    text-align: center
+                    color: #fff
+    .search
+        input
+            width: 385px
+            height: 49px
+            padding: 0 20px 0 40px
+            font-size: 14px
+            font-weight: 400
+            font-family: 'Pretendard'
+            background-image: url('../img/searchIcon.png')
+            background-size: 14px
+            background-repeat: no-repeat
+            background-position: 16px center
+            background-color: rgba(255, 255, 255, 0.12)
+            border: 1px solid rgba(255, 255, 255, 0.08)
+            border-radius: 7px
+            color: #fff
+        .cancel
+            display: none
+
+footer
+    // position: fixed
+    left: 0
+    bottom: 0
+    width: 100%
+    height: 279px
+    background-color: #030026
+    z-index: 900
+    .inner
+        padding: 32px 50px 50px 24px
+    .top
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        margin-bottom: 89px
+        li 
+            margin-right: 32px
+            &:last-child
+                margin-right: 0
+                a::before
+                    display: none
+            a 
+                position: relative
+                display: inline-block
+                font-size: 18px
+                font-weight: 500
+                font-family: 'Pretendard'
+                line-height: 21.48px
+                color: #fff
+                &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    top: 50%
+                    right: -16px
+                    transform: translateY(-50%)
+                    width: 1px
+                    height: 15px
+                    background-color: rgba(255, 255, 255, 0.3)
+    .bottom
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: flex-end
+        .left 
+            .logo_f
+                display: inline-block
+                margin-bottom: 12px
+                font-size: 38px
+                font-weight: 700
+                font-family: 'Pretendard'
+                color: #fff
+            .copy
+                font-size: 12px
+                font-weight: 400
+                font-family: 'Pretendard'
+                line-height: 14.42px
+                color: #fff
+                .mo
+                    display: none
+        .right p
+            font-size: 13px
+            font-weight: 400
+            line-height: 18.57px
+            font-family: 'Pretendard'
+            word-break: keep-all
+            color: rgba(255, 255, 255, 0.5)
+
+@media (max-width: 1024px)
+    .mo
+        display: block
+
+    header 
+        .wrap
+            height: 60px
+        .logo
+            font-size: 30px
+        nav
+            display: none
+            ul
+                display: none
+        .menuBtn
+            display: block
+            position: absolute
+            top: 15px
+            right: 5%
+            width: 24px
+            height: 24px
+            background-image: url('../img/menu.png')
+            background-repeat: no-repeat
+            background-size: contain
+            cursor: pointer
+        nav.on
+            display: block
+            position: fixed
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background-color: rgba(0,0,0,0.5)
+            z-index: 902
+            .menuBtn
+                display: block
+                width: 24px
+                height: 24px
+                background-image: url('../img/menu.png')
+                background-repeat: no-repeat
+                background-size: contain
+                cursor: pointer
+            ul
+                display: block
+                position: absolute
+                top: auto
+                left: 0
+                bottom: 0
+                width: 100%
+                height: 277px
+                padding: 50px 28px
+                background: #FFFFFF
+                border-radius: 16px 16px 0px 0px
+                overflow: hidden
+                background-color: #fff
+                z-index: 992
+                li 
+                    width: 100%
+                    margin-bottom: 30px
+                    &:last-child
+                        margin-bottom: 0
+                    a 
+                        font-size: 18px
+                        font-weight: 500
+                        line-height: 21px
+                        color: #000
+        .search
+            display: none
+
+    footer
+        position: static
+        height: auto
+        .top li
+            margin-right: 16px
+            a::before
+                right: -8px
+        .bottom 
+            .left .logo_f
+                font-size: 24px
+            .right p
+                font-size: 12px
+
+
+@media (max-width: 768px)
+    .loading .circleWrap
+        width: 64px
+        height: 64px
+    footer 
+        .inner
+            padding: 22px 40px
+        .top 
+            margin-bottom: 32px
+            li a
+                font-size: 12px
+        .bottom
+            flex-direction: column-reverse
+            align-items: flex-start
+            .left
+                display: flex
+                flex-wrap: wrap
+                flex-direction: column-reverse
+                .logo_f
+                    opacity: 0.3
+                .copy
+                    margin-bottom: 19px
+                    color: rgba(255, 255, 255, 0.5)
+                    .mo
+                        display: block
+            .right
+                margin-bottom: 16px

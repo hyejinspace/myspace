@@ -1,0 +1,525 @@
+.sub
+    .topArea
+        .inner
+            padding: 20px 20px 20px 26px
+        .albumCover
+            width: 267px
+            height: 267px
+            margin-right: 0
+            overflow: hidden
+            img
+                display: block
+                width: 100%
+        .con
+            width: calc(100% - (267px + 14px))
+            max-width: 921px
+            margin-right: 14px
+            .player
+                .top
+                    display: flex
+                    flex-wrap: wrap
+                    justify-content: space-between
+                    align-items: flex-end
+                    margin-bottom: 31px
+                    .musicInfo
+                        display: flex
+                        flex-wrap: wrap
+                        align-items: center
+                        width: 100%
+                        .playBtn
+                            display: block
+                            width: 71px
+                            height: 71px
+                            margin-right: 25px
+                            background-color: #8B82FF
+                            border-radius: 50%
+                            background-image: url('../img/playbig.png')
+                            background-repeat: no-repeat
+                            background-position: center
+                            background-size: 22px
+                            cursor: pointer
+                        .playBtn.playing
+                            background-size: 34px
+                            background-image: url('../img/stopbig.png')
+                        .userName
+                            margin-bottom: 6px
+                            font-size: 16px
+                            font-weight: 600
+                            font-family: 'Pretendard'
+                            color: rgba(255, 255, 255, 0.5)
+                        .musicTitle
+                            font-size: 24px
+                            font-weight: 500
+                            font-family: 'Pretendard'
+                            color: #fff
+                            display: -webkit-box
+                            -webkit-line-clamp: 1
+                            -webkit-box-orient: vertical
+                            text-overflow: ellipsis
+                            word-break: keep-all
+                            overflow: hidden
+                    .view,.commentNum
+                        display: none
+                    .statistics
+                        .date
+                            display: inline-block
+                            margin-right: 21px
+                            font-size: 16px 
+                            font-weight: 400
+                            font-family: 'Pretendard'
+                            color: rgba(255, 255, 255, 0.5)
+                .musicPlayer
+                    width: 100%
+                    img
+                        display: block
+                        width: 100%
+                        mix-blend-mode: multiply
+    .contentsArea .contents .commentWrap .comment
+        display: flex
+    .contents
+        border: none
+        .commentWrap 
+            border: none
+            padding: 0px 0 8px
+            .comment .textWrap
+                align-items: flex-start
+            .functionWrap 
+                .function 
+                    margin-top: 2px
+                    button
+                        margin-right: 8px
+            >ul
+                padding-top: 8px
+        .board 
+            position: relative
+            padding: 17px 0 20px
+            p
+                // width: calc(100% - 42px)
+                width: 100%
+                font-size: 14px
+                font-weight: 400
+                line-height: 1.6
+                display: -webkit-box
+                -webkit-line-clamp: 3
+                -webkit-box-orient: vertical
+                text-overflow: ellipsis
+                word-break: keep-all
+                overflow: hidden
+            .showMore
+                // position: absolute
+                display: inline-block
+                right: 5px
+                bottom: 20px
+                font-size: 14px
+                font-weight: 500
+                line-height: 17px
+                color: #8B82FF
+                cursor: pointer
+        .board.on
+            p
+                display: block
+                width: 100%
+            
+    .profile
+        border-left: 1px solid rgba(0, 0, 0, 0.06)
+        .otherCon
+            .title
+                display: flex
+                flex-wrap: wrap
+                justify-content: space-between
+                align-items: center
+                margin-bottom: 20px
+                h3
+                    font-size: 20px
+                    font-weight: 600
+                    line-height: 24px
+                .more
+                    display: block
+                    font-size: 12px
+                    font-weight: 500
+                    color: #8B82FF
+            .song
+                position: relative
+                display: flex
+                // flex-wrap: wrap
+                width: 100%
+                margin-bottom: 12px
+                &:last-child
+                    margin-bottom: 0
+        .sameSong
+            margin: 24px 0
+            .albumCover
+                position: relative
+                width: 96px
+                min-width: 96px
+                height: 96px
+                margin-right: 12px
+                img
+                    display: block
+                    width: 100%
+                .playBtn
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 96px
+                    height: 96px
+                    background: transparent
+                    cursor: pointer
+                    &::before
+                        content: ''
+                        display: block
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                        width: 24px
+                        height: 24px
+                        background-color: #8B82FF
+                        border-radius: 50%
+                    &::after
+                        content: ''
+                        display: block
+                        position: absolute
+                        top: 50%
+                        left: 51%
+                        transform: translate(-50%,-50%)
+                        width: 10px
+                        height: 13px
+                        background-image: url(../img/play.png)
+                        background-repeat: no-repeat
+                        background-position: center
+                        background-size: contain
+                .playBtn.playing
+                    border-radius: 0
+                    background: linear-gradient(180deg, rgba(139, 130, 255, 0) 0%, rgba(39, 28, 162, 0.5) 100%)
+                    &::after
+                        background-image: url(../img/stop.png)
+            .musicInfo
+                .userName
+                    margin-bottom: 2px
+                    font-size: 12px
+                    font-weight: 600
+                    line-height: 14px
+                    color: rgba(0, 0, 0, 0.5)
+                .musicTitle
+                    margin-bottom: 8px
+                    font-size: 14px
+                    font-weight: 600
+                    line-height: 16.71px
+            .statistics
+                // position: relative
+                display: flex
+                flex-wrap: wrap
+                .view
+                    display: inline-block
+                    margin-right: 8px
+                    padding-left: 14px
+                    font-size: 12px
+                    font-weight: 400
+                    font-family: 'Pretendard'
+                    color: rgba(0, 0, 0, 0.5)
+                    background-image: url('../img/arrowRight.png')
+                    background-repeat: no-repeat
+                    background-position: left center
+                    background-size: 10px
+                .commentNum
+                    display: inline-block
+                    margin-right: 8px
+                    padding-left: 14px
+                    font-size: 12px
+                    font-weight: 400
+                    font-family: 'Pretendard'
+                    color: rgba(0, 0, 0, 0.5)
+                    background-image: url('../img/chat.png')
+                    background-repeat: no-repeat
+                    background-position: left center
+                    background-size: 12px
+                .date
+                    display: inline-block
+                    width: 100%
+                    margin-top: 27px
+                    font-size: 12px
+                    font-weight: 400
+                    font-family: 'Pretendard'
+                    color: rgba(0, 0, 0, 0.5)
+            .FuncBtn
+                position: absolute
+                display: block
+                top: 0
+                right: 0
+                left: auto
+                width: 24px
+                height: 24px
+                background-image: url('../img/funcBtn.png')
+                background-repeat: no-repeat
+                background-size: contain
+                cursor: pointer
+        .recommend
+            margin-bottom: 32px
+            .song
+                a
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: flex-end
+                    width: 100%
+                    height: 100%
+                .albumCover
+                    margin-right: 12px
+                    img
+                        display: block
+                        width: 100%
+                .listTitle
+                    margin-bottom: 4px
+                    font-size: 14px
+                    font-weight: 600
+                    line-height: 16.71px
+                .category
+                    display: block
+                    font-size: 12px
+                    font-weight: 500
+                    line-height: 14px
+                    color: rgba(0, 0, 0, 0.5)
+        .userView
+            margin-bottom: 32px
+            ul 
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                li.userImg
+                    width: 38px
+                    height: 38px
+                    margin-left: -8px
+                    &:first-child
+                        margin-left: 0
+                    img
+                        display: block
+                        width: 100%
+            p
+                margin-top: 8px
+                font-size: 12px
+                font-weight: 500
+                line-height: 14px
+                    
+
+@media (max-width: 1248px)
+    .sub
+        .topArea .wrap
+            height: auto
+        .contentsArea .contents .functionWrap .statistics
+            display: none
+
+@media (max-width: 1024px)
+    .sub 
+        .profile 
+            position: relative
+            border: none
+            .my
+                display: block
+                margin-bottom: 10px
+                &::after
+                    content: ''
+                    display: block
+                    clear: both
+                .profileIMG
+                    float: left
+                    margin-right: 12px
+                    margin-bottom: 0
+                .userName
+                    float: left
+                    width: calc(100% - 56px - 12px)
+                    margin-top: 8px
+                .userID
+                    float: left
+                    width: calc(100% - 56px - 12px)
+            .reverse
+                display: flex
+                flex-wrap: wrap
+                flex-direction: column-reverse
+            .intro
+                text-align: left
+                margin-bottom: 10px
+                line-height: 17px
+            .myStat
+                justify-content: start
+                margin-bottom: 16px
+                > div > div
+                    font-size: 12px
+                    font-weight: 600
+                    line-height: 14px
+            .follow
+                position: absolute
+                top: 0
+                right: 0
+                width: 61px
+                height: 33px
+                font-size: 14px
+                margin-top: 12px
+            .FuncBtn
+                display: none
+            .userView
+                display: flex
+                flex-wrap: wrap
+                margin-bottom: 55px
+                &:last-child
+                    margin-bottom: 47px
+                .title
+                    width: 100%
+                ul
+                    width: 100%
+                    max-width: 158px
+                    margin-right: 8px
+                p
+                    margin-top: 12px
+            .otherCon 
+                .song
+                    flex-wrap: nowrap
+                .title
+                    margin-bottom: 12px
+            .sameSong
+                margin-bottom: 56px
+                .albumCover
+                    min-width: 96px
+                .FuncBtn
+                    top: -6px
+            .recommend
+                margin-bottom: 48px
+        .contentsArea 
+            .inner
+                display: flex
+                flex-wrap: wrap
+                flex-direction: column-reverse
+                top: 0
+            .conTitle
+                display: none
+        .topArea
+            .wrap
+                background: #fff
+            .inner
+                align-items: flex-start
+                flex-direction: column-reverse
+                padding: 0
+            .albumCover
+                width: 100%
+                height: 100%
+            .con
+                width: 100%
+                max-width: none
+                top: 400px
+                left: 0
+                margin-right: 0
+                padding-left: 24px
+                z-index: 5
+                .player 
+                    .top 
+                        position: relative
+                        margin: 16px 0 0
+                        .musicInfo 
+                            flex-wrap: nowrap
+                            align-items: flex-start
+                            width: 100%
+                            .userName
+                                margin-bottom: 2px
+                                font-size: 12px
+                                font-weight: 600
+                                line-height: 13px
+                                color: rgba(0, 0, 0, 0.5)
+                            .musicTitle
+                                margin-bottom: 6px
+                                font-size: 20px
+                                font-weight: 600
+                                line-height: 24px
+                                color: #000
+                                display: -webkit-box
+                                -webkit-line-clamp: 1
+                                -webkit-box-orient: vertical
+                                text-overflow: ellipsis
+                                word-break: keep-all
+                                overflow: hidden
+                            .playBtn
+                                width: 56px
+                                min-width: 56px
+                                height: 56px
+                                margin-right: 12px
+                                background-size: 16px
+                            .playBtn.playing
+                                background-size: 24px
+                        .statistics
+                            display: flex
+                            flex-wrap: wrap
+                            justify-content: start
+                            position: relative
+                            margin-top: -18px
+                            left: calc(56px + 12px)
+                            .view
+                                display: inline-block
+                                margin-right: 8px
+                                padding-left: 14px
+                                font-size: 12px
+                                font-weight: 400
+                                font-family: 'Pretendard'
+                                line-height: 24px
+                                color: rgba(0, 0, 0, 0.5)
+                                background-image: url('../img/arrowRight.png')
+                                background-repeat: no-repeat
+                                background-position: left center
+                                background-size: 10px
+                            .commentNum
+                                display: inline-block
+                                margin-right: 8px
+                                padding-left: 14px
+                                font-size: 12px
+                                font-weight: 400
+                                font-family: 'Pretendard'
+                                line-height: 24px
+                                color: rgba(0, 0, 0, 0.5)
+                                background-image: url('../img/chat.png')
+                                background-repeat: no-repeat
+                                background-position: left center
+                                background-size: 12px
+                            .date
+                                display: block
+                                width: 100%
+                                margin-top: 10px
+                                font-size: 12px 
+                                font-weight: 400
+                                font-family: 'Pretendard'
+                                color: rgba(0, 0, 0, 0.5)
+                    .musicPlayer
+                        display: none
+        .contents 
+            padding-bottom: 30px
+            .board
+                padding-top: 6px
+                p
+                    -webkit-line-clamp: 6
+            .commentWrap
+                padding-bottom: 0
+
+@media (max-width: 768px)
+    .sub
+        .topArea .wrap .bg
+            height: 0
+        .profile 
+            .recommend ul
+                display: flex
+                flex-wrap: wrap
+                li.song
+                    width: calc(50% - 9px)
+                    margin-bottom: 0
+                    margin-right: 18px
+                    &:last-child
+                        margin-right: 0
+                    a
+                        display: block
+                        .albumCover
+                            margin-right: 0
+                            margin-bottom: 10px
+                            max-width: 100%
+                            width: auto
+        .topArea .con
+            padding-left: 16px
+
+            
+
+
+

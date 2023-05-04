@@ -1,0 +1,362 @@
+<!-- <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%
+String pageType = "sub";
+String pageBefore = "sub21.jsp";
+String pageAfter = "sub23.jsp";
+%>
+<%@ include file="./head.jsp"%> -->
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>지방공기업 웹진</title>
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:title" content="지방공기업 vol.36">
+	<meta property="og:description" content="지방공기업 웹진을 만나보세요.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="style/css/reset.css?ver=2" />
+	<link rel="stylesheet" type="text/css" href="style/css/default.css?ver=2" />
+	<!-- <link rel="stylesheet" type="text/css" href="style/css/main.css?ver=2" /> -->
+	<link rel="stylesheet" type="text/css" href="style/css/sub.css?ver=2" />
+	<script src="http://djwebtoon.cafe24.com/g5/js/jquery-1.8.3.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="style/js/common.js?ver=2"></script>
+	<script>
+		$(document).ready(function(){
+			$('.slideSet1').bxSlider({
+				//	mode: 'horizontal',
+				mode: 'horizontal',
+				//	easing: 'swing',
+				controls: false,
+				auto: true,
+				speed: 700,
+				touchEnabled : false
+			});
+			$('.slideSet2').bxSlider({
+				mode: 'horizontal',
+				//	easing: 'swing',
+				controls: false,
+				auto: true,
+				speed: 700,
+				touchEnabled : false,
+			});
+		});
+	</script>
+</head>
+<style>
+</style>
+
+<body>
+	<div id="headerSet">
+		<div class="headerTop">
+			<div class="wrap">
+				<div class="menu"></div>
+				<a class="logo" href="./"><img src="style/img/setting/logo-h.png" alt="main"></a>
+				<div class="button">
+					<a class="ago" href="https://www.erc.re.kr/usr/com/prm/BBSList.do?bbsId=BBSMSTR_000000000281&menuNo=3011&upperMenuId=3" target="_blank"><img src="style/img/setting/icon-ago.png" alt="지난호보기"></a>
+					<a class="ebook" href="https://www.erc.re.kr/ebook/<%=ebook_page%>/index.html#/1" target="_blank"><img src="style/img/setting/icon-ebook.png" alt="E-Book"></a>
+				</div>
+			</div>
+		</div>
+		<div class="headerBottom">
+			<div class="wrap">
+				<div class="button_mo">
+					<a class="ago" href="https://www.erc.re.kr/usr/com/prm/BBSList.do?bbsId=BBSMSTR_000000000281&menuNo=3011&upperMenuId=3" target="_blank"><img src="style/img/setting/icon-ago.png" alt="지난호보기"></a>
+					<a class="ebook" href="https://www.erc.re.kr/ebook/<%=ebook_page%>/index.html#/1" target="_blank"><img src="style/img/setting/icon-ebook.png" alt="E-Book"></a>
+				</div>
+				<div class="headerSectionWrap">
+					<ul class="headerSection headerSection02">
+						<li>
+							<p>권두언</p>
+							<ul>
+								<li><a href="sub1.html">최치국 지방공기업평가원 이사장 포스트 코로나 시대는 없다</a></li>
+							</ul>
+						</li>
+						<li><p>현장과 사람들</p>
+							<ul>
+								<li><a href="sub2.html">대구도시철도공사</a></li>
+							</ul>
+						</li>
+						<li><p><a href="sub3.html">숫자로 보는 지방공공기관 정보</a></p></li>
+					</ul>
+					<h3 class="headerTitle">특집</h3>
+					<ul class="headerSection">
+						<li><p>Intro</p>
+							<ul>
+								<li><a href="sub4.html">지방공기업 경영평가의 의미와 존재 목적은?</a></li>
+							</ul>
+						</li>
+						<li><p>Focus 1</p>
+							<ul>
+								<li>지표별 살펴보는 지방공기업 경영평가</li>
+								<li><a href="sub5-1.html">임효창 | 지속가능경영 지표에 대한 총평</a></li>
+								<li><a href="sub5-2.html">임미영 | 경영성과 지표에 대한 총평</a></li>
+								<li><a href="sub5-3.html">임준형 | 사회적 가치에 대한 총평 </a></li>
+							</ul>
+						</li>
+						<li><p>Focus 2</p>
+							<ul>
+								<li><a href="sub6.html">남기범 | 성공적인 평가를 위해 어떤 준비를 해야 하는가?</a></li>
+							</ul>
+						</li>
+						<!-- <li><p>Talk</p>
+							<ul>
+								<li><a href="sub7.html">성관실 인천시 미추홀구시설관리공단 이사장 | 윤리경영은 사회와 함께 추진하고 확산될 때 그 가치가 발휘된다</a></li>
+							</ul>
+						</li> -->
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">사람 & 현장</h3>
+					<ul class="headerSection">
+						<li><p>뉴 리더</p>
+							<ul>
+								<li><a href="sub7.html">김재광 김천시시설관리공단 이사장 | 시민에게 행복을 주는 김천의 공공 서비스가 새로워진다</a></li>
+							</ul>
+						</li>
+						<li><p>파워 리더</p>
+							<ul>
+								<li><a href="sub8.html">윤진보 광주광역시도시철도공사 사장 | ‘대중·녹색교통 중심도시’를 꿈꾸며 오늘도 레일 위를 달린다</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 1</p>
+							<ul>
+								<li><a href="sub9.html">대상_인천시설공단 | 지속가능한 경영혁신 플랫폼을 구축하다</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 2</p>
+							<ul>
+								<li><a href="sub10.html">최우수상_서울교통공사 | 혁신적 패러다임의 전환…‘도심 공동물류 플랫폼 사업’</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 3</p>
+							<ul>
+								<li><a href="sub11.html">최우수상_세종특별자치시시설관리공단 | 지하구조물의 IoT 진동복합센서를 활용한 안전사고예방시스템 구축</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 4</p>
+							<ul>
+								<li><a href="sub12.html">최우수상_구미시설공단 | 시민과 함께! 행복을 플러스! ‘같이 Plus+’의 혁신</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 5</p>
+							<ul>
+								<li><a href="sub13.html">최우수상_태백가덕산풍력발전㈜ | 태백의 바람이 새로운 바람이 되는 ‘태백가덕산풍력발전소’</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">연구 & 교육</h3>
+					<ul class="headerSection">
+						<li><p>이슈 진단 1</p>
+							<ul>
+								<li><a href="sub14.html">금창호 | 「지방자치법」 전부개정의 의의와 향후 과제</a></li>
+							</ul>
+						</li>
+						<li><p>이슈 진단 2</p>
+							<ul>
+								<li><a href="sub15.html">조흠학 | 중대재해처벌법의 쟁점과 개선 방안</a></li>
+							</ul>
+						</li>
+						<li><p>연구 논단 1</p>
+							<ul>
+								<li><a href="sub16.html">김세훈 | 지방공공기관의 한국판 뉴딜 실행을 위한 접근 전략</a></li>
+							</ul>
+						</li>
+						<li><p>실무논단</p>
+							<ul>
+								<li><a href="sub17.html">김상길 | 지방공기업의 투명성·효율성·책임성 제고를 위한 정책 제언</a></li>
+							</ul>
+						</li>
+						<li><p>HR 강좌</p>
+							<ul>
+								<li><a href="sub18.html">유일한 | 코로나19와 HR의 대응, 디지털 리더십과 36계</a></li>
+							</ul>
+						</li>
+						<li><p>노무 강좌</p>
+							<ul>
+								<li><a href="sub19.html">최혁진 | 기간제 근로자의 갱신기대권의 성립 요건</a></li>
+							</ul>
+						</li>
+						<li><p>법률 강좌</p>
+							<ul>
+								<li><a href="sub20.html">장호진 | 입찰, 공모 등 과정에서의 아이디어 탈취 행위 금지</a></li>
+							</ul>
+						</li>
+						<li><p>상시 자문</p>
+							<ul>
+								<li><a href="sub21.html">단체협약 유효기간 중 보충교섭에 응해야 하는지 여부 외</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">생활 & 문화</h3>
+					<ul class="headerSection">
+						<li><p>마을의 재발견</p>
+							<ul>
+								<li><a href="sub22.html">하숙 문화와 이야기를 품은 특별한 공간으로의 초대!</a></li>
+							</ul>
+						</li>
+						<li><p>4차 산업혁명 노트</p>
+							<ul>
+								<li><a href="sub23.html">세계는 지금 대기오염과 전쟁 중… ICT로 극복한다</a></li>
+							</ul>
+						</li>
+					</ul>
+					<h3 class="headerTitle">뉴스</h3>
+					<ul class="headerSection">
+						<li><p>지방공기업 뉴스</p>
+							<ul>
+								<li><a href="sub24.html">강북구도시관리공단_거주자우선주차장 경차 전용 구획 대폭 확대 외</a></li>
+							</ul>
+						</li>
+						<li><p>ERC 뉴스</p>
+							<ul>
+								<li><a href="sub25.html">2021년 제2차 지방공기업 CEO 포럼 개최 외</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="subVisual" style="background:url(style/img/sub20_visual.jpg) top center no-repeat; background-size:cover;"></div>
+	<div id="subTitle">
+		<div class="titleArea">
+			<div class="title">
+				입찰, 공모 등 과정에서의 <br/>
+				<b>아이디어 탈취 행위 금지</b>
+			</div>
+		</div>
+		<div class="readArea">
+			과거 공공기관에서 공모전을 주최한 뒤 응모자의 아이디어를 부당하게 탈취・유용하는 등 지식재산권 관련 피해가 다수 발생하였다. 아이디어 탈취 행위를 부정경쟁 행위의 하나로 정하여 특허청 등으로부터 시정권고의 대상이 될 수 있으며, 위반행위의 내용 및 시정권고 사실 등이 관보에 공표될 수 있고 징벌적 손해배상이 될 수 있다. 이에 아이디어 탈취 행위에 해당되는 요건 등을 살펴보고 지방공공기관이 사업 제안, 입찰 등의 거래교섭 또는 거래과정에서 유의할 사항은 무엇인지 살펴보고자 한다.
+		</div>
+	</div>
+	<div id="subSection">
+		<div class="sectionArea">
+			<div class="textTitle font_24 color2">부정경쟁 행위인 아이디어 탈취 행위</div>
+			<div class="textArea">
+				과거 공공기관에서 공모전을 주최한 뒤 응모자의 아이디어를 부당하게 탈취・유용하는 등 지식재산권 관련 피해가 다수 발생하여 공정거래위원회에서는 불공정 약관을 시정하도록 안내하기도 하였다. 종전 아이디어의 탈취 행위는 민사상 불법행위의 손해배상 대상이 되기도 하였지만 현행법 체계에서 아이디어 자체가 보호받기는 쉽지 않았다. 
+			</div>
+			<div class="textArea">
+				하지만 아이디어 탈취 행위를 부정경쟁 행위의 하나로 정하여 특허청 등으로부터 시정권고의 대상이 될 수 있으며, 위반행위의 내용 및 시정권고 사실 등이 관보에 공표될 수 있고 징벌적 손해배상이 될 수 있다. 
+			</div>
+			<div class="textArea">
+				부정경쟁 방지 및 영업비밀 보호에 관한 법률(이하 ‘부정경쟁방지법’이라 한다)에서는 “사업 제안, 입찰, 공모 등 거래교섭 또는 거래과정에서 경제적 가치를 가지는 타인의 기술적 또는 영업상의 아이디어가 포함된 정보를 그 제공 목적에 위반하여 자신 또는 제3자의 영업상 이익을 위하여 부정하게 사용하거나 타인에게 제공하여 사용하게 하는 행위다. 다만 아이디어를 제공받은 자가 제공받을 당시 이미 그 아이디어를 알고 있었거나 그 아이디어가 동종 업계에서 널리 알려진 경우에는 그러하지 아니하다.” 하여 아이디어 탈취 행위를 부정경쟁 행위의 하나로 정하고 있다(제2조 제1호 차목). 2021. 4. 21.부터는 아이디어 탈취 행위로 인한 손해액의 최대 3배까지 배상액이 증액될 수 있도록 징벌적 손해배상을 도입하고 위반행위에 대한 시정권고 내용을 공표하도록 하였다(제14조의2 제6항, 제8조 제2항). 
+			</div>
+			<div class="textArea">
+				중소・벤처기업 또는 개발자 등의 경제적 가치를 가지는 아이디어를 거래 상담, 입찰, 공모전 등을 통하여 취득하고 이를 아무런 보상 없이 사업화하여 막대한 경제적 이익을 얻으면서도 개발자는 오히려 폐업에 이르게 하는 등 기업의 영업활동에 심각한 폐해를 야기하고 있는데, 아이디어 사용에 대한 명시적 계약을 체결하지 않았거나 특허 등 등록에 의한 보호를 위한 구체적 요건을 구비하지 못한 경우 상당한 피해를 입더라도 구제해 줄 명확한 규정이 없어 손해배상은 물론 사용금지를 요청하기도 어려운 실정이다. 
+			</div>
+			<div class="textArea">
+				그러므로 중소・벤처기업 및 개발자의 참신한 아이디어를 적극 보호하고, 이를 위반한 행위에 대하여 특허청장이 조사・시정권고를 함으로써 건전한 거래 질서가 유지되도록 하려는 것이다. 지금부터 아이디어 탈취 행위에 해당되는 요건 등을 살펴보고 지방공공기관이 유의할 사항을 간략히 살펴보고자 한다. 
+			</div>
+		</div>
+
+		<div class="sectionArea">
+			<div class="textTitle font_24 color2">적용 요건</div>
+			<div class="textTitle2 color1">(1) 보호대상 아이디어</div>
+			<div class="textArea">
+				경제적 가치를 가지는 타인의 기술적 또는 영업상의 아이디어가 포함된 정보를 대상으로 한다. 이는 아이디어 정보의 보유자가 그 정보를 사용해 경쟁자에 대하여 경쟁상의 이익을 얻을 수 있거나 또는 그 정보의 취득이나 개발을 위해 상당한 비용이나 노력이 필요한 경우인지 등에 따라 구체적·개별적으로 판단한다. 기술적 아이디어에 국한되지 않으며 영업상의 아이디어, 예컨대, 마케팅 전략, 광고 방법 등 다양한 분야의 아이디어를 모두 포함한다. 특허권, 디자인권과 달리 등록하지 않더라도 보호대상이 될 수 있다. 
+			</div>
+			<div class="textArea">
+				다만, 아이디어를 제공받은 자가 제공받을 당시를 기준으로 그 아이디어를 이미 알고 있었거나 동종업계에 널리 알려졌을 경우에는 보호 대상이 아니다. 이에 아이디어를 제공받은 자는 그 아이디어를 이미 알고 있었거나 동종업계에 널리 알려졌다는 점에 관한 증거를 적극적으로 제출함으로써 그 책임으로부터 벗어날 수 있다. 즉, 일정한 비공지성을 요구한다는 점에서 영업비밀과 유사하다고 볼 수 있으나 영업비밀과 달리 비밀로 관리되지 않더라도 경제적 가치가 있고 동종업계에서 널리 알려져 있지 않은 아이디어라면 보호받을 수 있다는 점에서 차이가 있다. 
+			</div>
+			<div class="textTitle2 color1">(2) 거래교섭 또는 거래과정</div>
+			<div class="textArea">
+				사업 제안, 입찰, 공모 등 거래교섭 또는 거래과정에서 아이디어 제공이 있어야 한다. 거래교섭 또는 거래과정이란 사업 제안, 입찰, 공모 등을 포함하여 거래를 성사시키기 위해 의논하고 절충하는 과정 등 계약을 체결하기 전의 과정뿐만 아니라 계약 이후에 이루어지는 계약과 관련된 모든 절차를 의미한다. 
+			</div>
+			<div class="textArea">
+				원칙적으로 계약이 성립된 이후에는 채무불이행 책임을 추궁할 수 있겠지만, 계약의 성립까지 이루어지지 않은 경우에도 보호된다는 점에서 의미가 있다. 특히 명시적으로 이루어지지 않고 묵시적으로 이루어지는 경우이거나 1회성 만남이라고 하더라도 거래의사가 인정된다면 거래교섭이나 거래과정으로 볼 수 있을 것이다.
+			</div>
+			<div class="textArea">
+				만약 거래교섭 또는 거래과정이 없는 상황에서 아이디어를 탈취한다고 한다면 부정경쟁방지법 제2조 제1호 카목에 의한 부정경쟁 행위 또는 민법상 불법행위 법리 등이 적용될 수 있다.
+			</div>
+
+			<div class="imgArea">
+				<img src="style/img/sub20_img2.jpg" alt="이미지">
+			</div>
+
+			<div class="textTitle2 color1">(3) 제공 목적에 반한 부정한 사용</div>
+			<div class="textArea">
+				제공 목적에 위반하여 자신 또는 제3자의 영업상 이익을 위하여 부정하게 사용하거나 타인에게 제공하여 사용하게 하는 행위여야 한다. 아이디어의 사용에 관하여 합의된 대가를 지급하지 않거나 아이디어 제공자를 배제한 채 사업화하는 경우 등이 대표적일 것이다. 
+			</div>
+			<div class="textArea">
+				광고 용역 결과물의 제작비 전액을 지급해야 신제품의 명칭 및 광고에 사용할 광고 용역 결과물 등을 취득할 수 있음에도 제작비를 지급하지 않고 이를 무단으로 사용한 것에 대하여 아이디어 탈취 행위 등에 해당한다고 사용 금지와 함께 5천만 원의 손해배상을 인정한 대법원 판결이 있다(대법원 2020. 7. 23. 선고 2020다220607 판결). 여기서 대법원은 “거래교섭 또는 거래과정의 구체적인 내용과 성격, 아이디어 정보의 제공이 이루어진 동기와 경위, 아이디어 정보의 제공으로 달성하려는 목적, 아이디어 정보 제공에 대한 정당한 대가의 지급 여부 등을 종합적으로 고려하여, 그 아이디어 정보 사용 등의 행위가 아이디어 정보 제공자와의 거래교섭 또는 거래과정에서 발생한 신뢰관계 등을 위반한다고 평가할 수 있어야 한다.”(대법원 2020. 7. 23. 선고 2020다220607 판결)고 기준을 제시하였다.
+			</div>
+			<div class="textArea">
+				제공받은 아이디어를 일부 변경하여 사용하더라도 아이디어를 변경・사용함으로써 타인의 노력과 투자에 편승하여 부당하게 이익을 얻고 타인의 법률상 보호할 가치가 있는 이익을 침해했다면 부정한 사용에 해당한다고 볼 수 있다. 
+			</div>
+		</div>
+
+		<div class="sectionArea">
+			<div class="textTitle font_24 color2">지방공공기관의 유의사항</div>
+			<div class="textArea">
+				지방공공기관은 사업 제안, 입찰 등의 거래교섭 또는 거래과정에서 각종 민간업체의 아이디어를 제안받는다. 최근에는 각종 공모전 등을 실시하여 지역 주민으로부터 각종의 아이디어를 접수하는 사업을 적극적으로 추진하기도 한다. 이러한 경우에 민간업체 또는 주민 등의 아이디어 보호를 위한 조치를 아래와 같이 고려해야 할 것이다.
+			</div>
+			<div class="textArea">
+				첫째, 아이디어 제공・사용에 관한 각종 사항을 명확하게 계약서의 내용으로 정해야 한다. 지방공공기관은 지방자치단체를 당사자로 하는 계약에 관한 법령을 준용하므로 계약서 작성에 대해서는 당연히 인지하고 있다. 하지만 아이디어를 포함한 정보 사용에 대한 정당한 대가의 지급, 저작권, 특허권 등 지식재산권의 권리화 및 귀속 문제 등에 대해서는 간과하거나 별도로 정하지 않는 경우가 흔히 있다. 이러한 사항을 정하지 아니하고 상대방의 아이디어 등 정보를 사용할 경우에는 아이디어 탈취 행위에 해당할 수 있음을 유의해야 할 것이다.
+			</div>
+			<div class="textArea">
+				둘째, 사업 제안 등의 거래교섭 또는 거래과정 중에는 비밀유지계약을 체결하고 이를 준수해야 한다. 비밀유지계약은 정보를 제공하는 기관의 정보 유출에 대한 위험을 줄일 수 있고, 계약당사자 상호간의 신뢰를 확보하여 더욱더 상세한 정보를 교환할 수 있다. 비밀유지계약에는 어떠한 정보를 비밀로 정할 것인지, 비밀유지 기간, 비밀유지 의무의 사항, 비밀유지 위반 시의 대응 방안, 분쟁 시 해결 방안 등을 구체적으로 정해야 한다. 
+			</div>
+			<div class="textArea">
+				셋째, 지방공공기관이 입찰, 공모 등 심사, 자문 등의 지원을 위하여 외부 전문가를 참여시키고자 할 경우에는 보안서약서 등을 징구하고 아이디어 탈취 행위가 금지됨을 명확히 주지시켜야 한다. 지방공공기관이 직접 당사자가 아니라고 하더라도 지방공공기관을 지원하기 위하여 참여한 외부 전문가가 아이디어 탈취 행위 등을 할 경우에는 지방공공기관도 책임을 부담할 수 있는 것이다. 
+			</div>
+			<div class="textArea">
+				넷째, 홍보 등을 목적으로 한 공모전의 시행 시에는 별도로 유의할 것이 있다. 공정거래위원회는 공모전을 주최하는 사업자가 응모 작품의 지식재산권에 대한 대가를 지급 없이 양수한다는 내용은 부당하고, 수상 작품에 지급되는 상금, 상품 등의 혜택도 수장 작품의 권리에 대한 대가를 미리 정한 것으로 보기는 어렵다고 하였다. 수상작을 사용하기 위해서는 수상자에게 정당한 대가를 지급하고 지식재산권을 양수받거나 사용 허락을 받아야 한다. 공모전을 주최하는 사업자가 수상작을 사용 범위 제한 없이 무상으로 사용할 수 있다는 내용 역시 부당할 수 있다. 더 나아가 공모전 작품의 사용을 허락받았다고 하더라도 이를 임의로 변경하여 사용할 경우에는 저작권법상의 2차적 저작물작성권을 위반할 수도 있으므로 별도의 동의도 필요하다. <label class="endMark"></label> 
+			</div>
+		</div>
+
+		<div class="sectionArea">
+			<div class="textArea caption box_deco0 text_left">
+				<p class="margin_B_10"><b>참고 자료</b></p>
+				<p>
+					1. 공정거래위원회 2014. 8. 7.자 보도자료
+				</p>
+				<p>
+					2. 특허청, 아이디어 보호 및 탈취 예방 가이드라인, 2019. 4.
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="subWriter">
+		<div class="writerImg">
+			<img src="style/img/sub20_writer.png" alt="이미지">
+		</div>
+		<div class="writerInfo"> 
+			<div class="textTitle color1 name">장호진</div>
+			<div class="textArea">
+				지방공기업평가원 연구위원<br>
+				법학박사·변호사
+			</div>
+		</div>
+	</div>
+	<div id="right_banner">
+		<div>
+			<a href="javascript:void(0);" id="viewMenu"><img src="./style/img/setting/qimg1.png" /></a>
+			<a href="javascript:void(0);" id="topSet"><img src="./style/img/setting/qimg2.png" /></a>
+			<a href="./<%=pageBefore%>"><img src="./style/img/setting/qimg3.png" /></a>
+			<a href="./<%=pageAfter%>"><img src="./style/img/setting/qimg4.png" /></a>
+		</div>
+	</div>
+	<div id="footerSet">
+		<div class="wrap">
+			<a href="https://www.erc.re.kr/" target="_blank" class="logo"><img src="style/img/setting/logo-f.png" alt="지방공기업평가원"></a>
+			<div class="sns">
+				<a href="https://www.youtube.com/channel/UCC9O2yXc0eAYjBVhjJ3gnxQ" target="_blank" class="youtube"><img src="style/img/setting/icon-sns-y.png" alt="youtube"></a>
+				<a href="https://www.facebook.com/erc.re.kr/" target="_blank" class="facebook"><img src="style/img/setting/icon-sns-f.png" alt="facebook"></a>
+			</div>
+			<div class="info">
+				<p>(우) 06647 서울 서초구 반포대로30길 12-6 (지번) 서초동 1552-13</p>
+				<p>Copyright(c) Evaluation Institute of Regional Public Corporation. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- <%@ include file="./sub_include.jsp"%>
+<%@ include file="./foot.jsp"%> -->

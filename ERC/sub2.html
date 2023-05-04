@@ -1,0 +1,358 @@
+<!-- <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%
+String pageType = "sub";
+String pageBefore = "index.jsp";
+String pageAfter = "sub2.jsp";
+%>
+<%@ include file="./head.jsp"%> -->
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>지방공기업 웹진</title>
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:title" content="지방공기업 vol.36">
+	<meta property="og:description" content="지방공기업 웹진을 만나보세요.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="style/css/reset.css?ver=2" />
+	<link rel="stylesheet" type="text/css" href="style/css/default.css?ver=2" />
+	<!-- <link rel="stylesheet" type="text/css" href="style/css/main.css?ver=2" /> -->
+	<link rel="stylesheet" type="text/css" href="style/css/sub.css?ver=2" />
+	<script src="http://djwebtoon.cafe24.com/g5/js/jquery-1.8.3.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="style/js/common.js?ver=2"></script>
+	<script>
+		$(document).ready(function(){
+			$('.slideSet1').bxSlider({
+				//	mode: 'horizontal',
+				mode: 'horizontal',
+				//	easing: 'swing',
+				controls: false,
+				auto: true,
+				speed: 700,
+				touchEnabled : false
+			});
+			$('.slideSet2').bxSlider({
+				mode: 'horizontal',
+				//	easing: 'swing',
+				controls: false,
+				auto: true,
+				speed: 700,
+				touchEnabled : false,
+			});
+		});
+	</script>
+</head>
+<style>
+</style>
+
+<body>
+	<div id="headerSet">
+		<div class="headerTop">
+			<div class="wrap">
+				<div class="menu"></div>
+				<a class="logo" href="./"><img src="style/img/setting/logo-h.png" alt="main"></a>
+				<div class="button">
+					<a class="ago" href="https://www.erc.re.kr/usr/com/prm/BBSList.do?bbsId=BBSMSTR_000000000281&menuNo=3011&upperMenuId=3" target="_blank"><img src="style/img/setting/icon-ago.png" alt="지난호보기"></a>
+					<a class="ebook" href="https://www.erc.re.kr/ebook/<%=ebook_page%>/index.html#/1" target="_blank"><img src="style/img/setting/icon-ebook.png" alt="E-Book"></a>
+				</div>
+			</div>
+		</div>
+		<div class="headerBottom">
+			<div class="wrap">
+				<div class="button_mo">
+					<a class="ago" href="https://www.erc.re.kr/usr/com/prm/BBSList.do?bbsId=BBSMSTR_000000000281&menuNo=3011&upperMenuId=3" target="_blank"><img src="style/img/setting/icon-ago.png" alt="지난호보기"></a>
+					<a class="ebook" href="https://www.erc.re.kr/ebook/<%=ebook_page%>/index.html#/1" target="_blank"><img src="style/img/setting/icon-ebook.png" alt="E-Book"></a>
+				</div>
+				<div class="headerSectionWrap">
+					<ul class="headerSection headerSection02">
+						<li>
+							<p>권두언</p>
+							<ul>
+								<li><a href="sub1.html">최치국 지방공기업평가원 이사장 포스트 코로나 시대는 없다</a></li>
+							</ul>
+						</li>
+						<li><p>현장과 사람들</p>
+							<ul>
+								<li><a href="sub2.html">대구도시철도공사</a></li>
+							</ul>
+						</li>
+						<li><p><a href="sub3.html">숫자로 보는 지방공공기관 정보</a></p></li>
+					</ul>
+					<h3 class="headerTitle">특집</h3>
+					<ul class="headerSection">
+						<li><p>Intro</p>
+							<ul>
+								<li><a href="sub4.html">지방공기업 경영평가의 의미와 존재 목적은?</a></li>
+							</ul>
+						</li>
+						<li><p>Focus 1</p>
+							<ul>
+								<li>지표별 살펴보는 지방공기업 경영평가</li>
+								<li><a href="sub5-1.html">임효창 | 지속가능경영 지표에 대한 총평</a></li>
+								<li><a href="sub5-2.html">임미영 | 경영성과 지표에 대한 총평</a></li>
+								<li><a href="sub5-3.html">임준형 | 사회적 가치에 대한 총평 </a></li>
+							</ul>
+						</li>
+						<li><p>Focus 2</p>
+							<ul>
+								<li><a href="sub6.html">남기범 | 성공적인 평가를 위해 어떤 준비를 해야 하는가?</a></li>
+							</ul>
+						</li>
+						<!-- <li><p>Talk</p>
+							<ul>
+								<li><a href="sub7.html">성관실 인천시 미추홀구시설관리공단 이사장 | 윤리경영은 사회와 함께 추진하고 확산될 때 그 가치가 발휘된다</a></li>
+							</ul>
+						</li> -->
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">사람 & 현장</h3>
+					<ul class="headerSection">
+						<li><p>뉴 리더</p>
+							<ul>
+								<li><a href="sub7.html">김재광 김천시시설관리공단 이사장 | 시민에게 행복을 주는 김천의 공공 서비스가 새로워진다</a></li>
+							</ul>
+						</li>
+						<li><p>파워 리더</p>
+							<ul>
+								<li><a href="sub8.html">윤진보 광주광역시도시철도공사 사장 | ‘대중·녹색교통 중심도시’를 꿈꾸며 오늘도 레일 위를 달린다</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 1</p>
+							<ul>
+								<li><a href="sub9.html">대상_인천시설공단 | 지속가능한 경영혁신 플랫폼을 구축하다</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 2</p>
+							<ul>
+								<li><a href="sub10.html">최우수상_서울교통공사 | 혁신적 패러다임의 전환…‘도심 공동물류 플랫폼 사업’</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 3</p>
+							<ul>
+								<li><a href="sub11.html">최우수상_세종특별자치시시설관리공단 | 지하구조물의 IoT 진동복합센서를 활용한 안전사고예방시스템 구축</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 4</p>
+							<ul>
+								<li><a href="sub12.html">최우수상_구미시설공단 | 시민과 함께! 행복을 플러스! ‘같이 Plus+’의 혁신</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 5</p>
+							<ul>
+								<li><a href="sub13.html">최우수상_태백가덕산풍력발전㈜ | 태백의 바람이 새로운 바람이 되는 ‘태백가덕산풍력발전소’</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">연구 & 교육</h3>
+					<ul class="headerSection">
+						<li><p>이슈 진단 1</p>
+							<ul>
+								<li><a href="sub14.html">금창호 | 「지방자치법」 전부개정의 의의와 향후 과제</a></li>
+							</ul>
+						</li>
+						<li><p>이슈 진단 2</p>
+							<ul>
+								<li><a href="sub15.html">조흠학 | 중대재해처벌법의 쟁점과 개선 방안</a></li>
+							</ul>
+						</li>
+						<li><p>연구 논단 1</p>
+							<ul>
+								<li><a href="sub16.html">김세훈 | 지방공공기관의 한국판 뉴딜 실행을 위한 접근 전략</a></li>
+							</ul>
+						</li>
+						<li><p>실무논단</p>
+							<ul>
+								<li><a href="sub17.html">김상길 | 지방공기업의 투명성·효율성·책임성 제고를 위한 정책 제언</a></li>
+							</ul>
+						</li>
+						<li><p>HR 강좌</p>
+							<ul>
+								<li><a href="sub18.html">유일한 | 코로나19와 HR의 대응, 디지털 리더십과 36계</a></li>
+							</ul>
+						</li>
+						<li><p>노무 강좌</p>
+							<ul>
+								<li><a href="sub19.html">최혁진 | 기간제 근로자의 갱신기대권의 성립 요건</a></li>
+							</ul>
+						</li>
+						<li><p>법률 강좌</p>
+							<ul>
+								<li><a href="sub20.html">장호진 | 입찰, 공모 등 과정에서의 아이디어 탈취 행위 금지</a></li>
+							</ul>
+						</li>
+						<li><p>상시 자문</p>
+							<ul>
+								<li><a href="sub21.html">단체협약 유효기간 중 보충교섭에 응해야 하는지 여부 외</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">생활 & 문화</h3>
+					<ul class="headerSection">
+						<li><p>마을의 재발견</p>
+							<ul>
+								<li><a href="sub22.html">하숙 문화와 이야기를 품은 특별한 공간으로의 초대!</a></li>
+							</ul>
+						</li>
+						<li><p>4차 산업혁명 노트</p>
+							<ul>
+								<li><a href="sub23.html">세계는 지금 대기오염과 전쟁 중… ICT로 극복한다</a></li>
+							</ul>
+						</li>
+					</ul>
+					<h3 class="headerTitle">뉴스</h3>
+					<ul class="headerSection">
+						<li><p>지방공기업 뉴스</p>
+							<ul>
+								<li><a href="sub24.html">강북구도시관리공단_거주자우선주차장 경차 전용 구획 대폭 확대 외</a></li>
+							</ul>
+						</li>
+						<li><p>ERC 뉴스</p>
+							<ul>
+								<li><a href="sub25.html">2021년 제2차 지방공기업 CEO 포럼 개최 외</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="subVisual" style="background:url(style/img/sub2_visual.jpg) top right no-repeat; background-size:cover;"></div>
+	<div id="subTitle">
+		<div class="titleArea">
+			<div class="title">
+				대구시민의<br/>
+				<b>행복을 여는 도시 철도는<br/>오늘도 달린다</b>
+			</div>
+			<div class="title_small">쾌적한 도시철도 환경 조성과 <br/>최고의 서비스를 제공하는 대구도시철도공사</div>
+		</div>
+		<div class="readArea">
+			대구도시철도공사(이하 공사)는 지난 1997년 1호선 개통을 시작으로 2005년 2호선, 2015년 3호선을 개통하며 하루 50여 만 명이 이용하는 명실상부한 대구시민의 발로 자리매김했다. 공사의 전 직원들은 안전한 도시철도와 쾌적한 환경을 제공하기 위해 보이지 않는 곳에서도 24시간 최선을 다하고 있다. 오늘도 대구도시철도를 이용하는 시민들의 안전 수송과 무사고를 기원하며 일터로 향한다. 
+			<br><br>
+			<b>글</b> 편집실&nbsp;&nbsp;<b>사진</b> 대구도시철도공사 홍보법무실
+		</div>
+	</div>
+	<div id="subSection">
+		<div class="sectionArea">
+			<div class="imgArea">
+				<img src="style/img/sub2_img1.jpg" alt="이미지">
+			</div>
+		</div>
+		<div class="sectionArea">
+			<div class="textTitle font_26 color2">01</div>
+			<div class="imgArea">
+				<div class="float_L width_49">
+					<img src="style/img/sub2_img2.jpg" alt="이미지">
+				</div>
+				<div class="float_R width_49">
+					<img src="style/img/sub2_img3.jpg" alt="이미지">
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="textArea">
+				시민들의 발이 되어 하루의 시작과 끝을 함께 하며 달리는 대구의 도시철도. 여명이 채 가시지 않은 새벽 5시, 문양 차량기지에서 출고 점검을 끝낸 전동차가 출발을 기다리고 있습니다. 그리고 하루 운행을 마친 전동차는 다시 입고되어 차륜의 마모나 변형 여부를 확인하며 내일을 준비합니다. 
+			</div>
+		</div>
+		<div class="sectionArea">
+			<div class="textTitle font_26 color2">02</div>
+			<div class="imgArea flex">
+				<span style="margin-bottom: 0;">
+					<div class="imgArea">
+						<img src="style/img/sub2_img4.jpg" alt="이미지">
+					</div>
+				</span>
+				<span>
+					<div class="imgArea">
+						<img src="style/img/sub2_img4_2.jpg" alt="이미지">
+					</div>
+				</span>
+			</div>
+			<div class="textArea">
+				문양차량기지사업소 검수부에서 전동차에 사용되는 압축공기의 습기를 제거하는 공기건조기를 교체하고 있습니다. 또 월배차량기지사업소 검수부에서는 김생호 주임님이 전동차 하부 차륜 상태와 제동장치 등 각종 장치의 이상유무를 정밀하게 점검하고 있습니다. 안전운행에 영향을 미치면 안 되기 때문입니다. 
+			</div>
+		</div>
+		<div class="sectionArea">
+			<div class="textTitle font_26 color2">03</div>
+			<div class="imgArea">
+				<img src="style/img/sub2_img5.jpg" alt="이미지">
+			</div>
+			<div class="textArea">
+				시민들이 매일 이용하는 지하공간인 만큼 깨끗한 환경을 유지하는 것이 중요하겠죠. 쾌적한 지하환경을 조성하기 위해 고압세척기로 지하 터널의 도상과 벽체에 흡착된 먼지 등을 제거하고 있습니다. 
+			</div>
+		</div>
+		<div class="sectionArea">
+			<div class="textTitle font_26 color2">04</div>
+			<div class="imgArea flex">
+				<span style="margin-bottom: 0;">
+					<img src="style/img/sub2_img6.jpg" alt="이미지">
+				</span>
+				<span>
+					<img src="style/img/sub2_img7.jpg" alt="이미지">
+				</span>
+			</div>
+			<div class="textArea">
+				다시 추운 겨울이 찾아왔습니다. 동절기(폭설)에 대비하기 위해 전동차의 선두차에 제설 브러쉬를 장착하고 마모 상태를 점검하고 있습니다. 갑자기 폭설이 내렸을 때 전동차의 궤도빔 상면에 쌓인 눈을 제거해야 열차를 안전하게 운행할 수 있습니다. 
+			</div>
+		</div>
+		<div class="sectionArea">
+			<div class="textTitle font_26 color2">05</div>
+			<div class="imgArea flex">
+				<span style="margin-bottom: 0;">
+					<img src="style/img/sub2_img8.jpg" alt="이미지">
+				</span>
+				<span>
+					<img src="style/img/sub2_img9.jpg" alt="이미지">
+				</span>
+				<div class="clear"></div>
+			</div>
+			<div class="textArea">
+				하루의 운행이 끝나고 열차가 다니지 않는 야간(00:30~04:20)에 선로를 순회하면서 도상, 침목, 레일 상태 등을 점검합니다. 열차의 방향을 바꾸어 주는 분기기의 체결 장치를 점검하고, 이완된 볼트도 조여줍니다. 다음 날 아침에도 첫 열차는 안전하게 출발할 것입니다.
+			</div>
+		</div>
+		<div class="sectionArea">
+			<div class="textTitle font_26 color2">06</div>
+			<div class="imgArea flex">
+				<span style="margin-bottom: 0;">
+					<img src="style/img/sub2_img10.jpg" alt="이미지">
+				</span>
+				<span>
+					<img src="style/img/sub2_img11.jpg" alt="이미지">
+				</span>
+			</div>
+			<div class="textArea">
+				열차를 다른 선로로 이동시키기 위한 중요한 장치인 ‘분기기’를 검사하고 있습니다. 또 10,000시간이 넘게 가동 중인 레일연마차도 점검을 꼼꼼히 해 장비의 컨디션을 잘 유지하고 있습니다.
+			</div>
+		</div>
+	</div>
+	<div id="right_banner">
+		<div>
+			<a href="javascript:void(0);" id="viewMenu"><img src="./style/img/setting/qimg1.png" /></a>
+			<a href="javascript:void(0);" id="topSet"><img src="./style/img/setting/qimg2.png" /></a>
+			<a href="./<%=pageBefore%>"><img src="./style/img/setting/qimg3.png" /></a>
+			<a href="./<%=pageAfter%>"><img src="./style/img/setting/qimg4.png" /></a>
+		</div>
+	</div>
+	<div id="footerSet">
+		<div class="wrap">
+			<a href="https://www.erc.re.kr/" target="_blank" class="logo"><img src="style/img/setting/logo-f.png" alt="지방공기업평가원"></a>
+			<div class="sns">
+				<a href="https://www.youtube.com/channel/UCC9O2yXc0eAYjBVhjJ3gnxQ" target="_blank" class="youtube"><img src="style/img/setting/icon-sns-y.png" alt="youtube"></a>
+				<a href="https://www.facebook.com/erc.re.kr/" target="_blank" class="facebook"><img src="style/img/setting/icon-sns-f.png" alt="facebook"></a>
+			</div>
+			<div class="info">
+				<p>(우) 06647 서울 서초구 반포대로30길 12-6 (지번) 서초동 1552-13</p>
+				<p>Copyright(c) Evaluation Institute of Regional Public Corporation. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- <%@ include file="./sub_include.jsp"%>
+<%@ include file="./foot.jsp"%> -->

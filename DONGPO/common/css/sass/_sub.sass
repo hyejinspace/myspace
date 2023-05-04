@@ -1,0 +1,363 @@
+.sub.event
+    //event
+    .view_top 
+        margin-bottom: 3rem
+        img
+            width: 100%
+    .event
+        width: 1014px
+        margin: 0 auto
+        .event_top
+            > h3
+                position: relative
+                margin-bottom: 0.25rem
+                text-align: center
+                span
+                    position: relative
+                    padding: 0 1rem
+                    font-size: 1.8rem
+                    background-color: #fff
+                    z-index: 2
+                &::before
+                    display: block
+                    content: ""
+                    position: absolute
+                    left: 0
+                    top: 42.5%
+                    width: 100%
+                    height: 1px
+                    margin-top: -0.5px
+                    background-color: #a0a0a0
+                    z-index: 1
+        .event_input
+            padding: 2.5rem 0 0
+            border-top: 1px solid #fff
+            > li
+                margin-bottom: 1.5rem
+                .event_subtitle
+                    display: block
+                    font-size: 0.9rem
+                    font-weight: 500
+                    padding-bottom: 1rem
+                input[type="text"]
+                    display: block
+                    width: 95%
+                    height: 42px
+                    padding: 0 0.75rem
+                    font-size: 0.9rem
+                    border: 1px solid #959595
+                    background-color: #fff
+                    margin: 0 auto 0.5rem
+                .textbox
+                    width: 90%
+                    padding: 1.5rem
+                    background-color: #eefafa
+                    border-radius: 20px
+                    overflow: hidden
+                    margin: 0.5rem auto 1rem
+                    p
+                        font-weight: 500
+                        font-size: 0.9rem
+                        text-align: center
+                        word-break: keep-all
+                .event_file
+                    position: relative
+                    > input[type="file"]
+                        display: none
+                    > label
+                        position: absolute
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        top: 50%
+                        right: 3.2%
+                        transform: translateY(-50%)
+                        width: 90px
+                        height: 30px
+                        margin-left: 0.5rem
+                        font-size: 0.7rem
+                        background-color: #252525
+                        color: #fff
+                        cursor: pointer
+            .event_agreement
+                padding: 2rem 3.5rem
+                background-color: #ebebeb
+                .agreement_title
+                    display: block
+                    font-size: 1.2rem
+                    margin-bottom: 1rem
+                > p
+                    font-size: 0.9rem
+                    font-weight: 300
+                    line-height: 1.45
+                    > b
+                        font-weight: 500
+            >li.radio
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                justify-content: space-between
+                .event_check
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: center
+                    margin-top: 0.5rem
+                    >span
+                        margin-right: 20%
+                    input[type="radio"] 
+                        display: block
+                        position: relative
+                        width: 20px
+                        height: 20px
+                        border: 1px solid #999999
+                        border-radius: 50%
+                        margin-right: 0.25rem
+                        cursor: pointer
+                    input[type="radio"]:checked
+                        padding: 0.1rem
+                        &::after
+                            display: block
+                            content: ''
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            transform: translate(-50%,-50%)
+                            width: 14px
+                            height: 14px
+                            border-radius: 50%
+                            background: #999
+                    label
+                        margin-right: 1rem
+                    label:last-child
+                        margin: 0
+            >li.top
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                border-top: 1px solid #a0a0a0
+                padding: 1rem 0
+                margin-bottom: 0
+                >span
+                    display: flex
+                    align-items: center
+                    margin-right: 1rem
+                    width: calc(50% - 0.5rem)
+                    .event_subtitle
+                        padding: 0 0 0 1rem
+                        width: 150px
+                    input
+                        width: calc(100% - 150px)
+                        margin: 0
+                >span:last-child
+                    margin-right: 0
+            >li.bottom
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                border-top: 1px solid #a0a0a0
+                border-bottom: 1px solid #a0a0a0
+                padding: 1rem 0
+                >span
+                    display: flex
+                    align-items: center
+                    width: 150px
+                    padding: 0 0 0 1rem
+                div
+                    width: calc(100% - 150px)
+                    .half
+                        display: flex
+                        align-items: center
+                input[type="text"]
+                    display: block
+                    width: 100%
+                    height: 40px
+                    padding: 0.5rem 1rem
+                    font-size: 1rem
+                    border: 1px solid #959595
+                .zipcode
+                    display: inline-block
+                    font-size: 0.8rem
+                    width: 150px
+                    height: 40px
+                    background-color: #2b3d98
+                    color: #fff
+                    margin-left: 0.5rem
+                    margin-bottom: 0.5rem
+                    padding: 0 0.5rem
+            >li.secure
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                .event_subtitle
+                    width: 150px
+                    padding: 0 0 0 1rem
+                .event_secure
+                    display: flex
+                    width: calc(100% - 180px)
+                    > span
+                        display: inline-block
+                        width: 158.5px
+                        height: 55px
+                        padding: calc((55px - 35px)/2)
+                        border: 1px solid #959595
+                        background-color: #fff
+                        > img
+                            display: block
+                            max-width: 100%
+                            margin: 0 auto
+                    > button
+                        display: block
+                        width: 55px
+                        height: 55px
+                        text-align: center
+                        cursor: pointer
+                    > input[type="text"]
+                        display: inline-block
+                        width: 158.5px
+                        height: 55px
+                        padding: 0.5rem
+                        font-size: 0.9rem
+                        border: 1px solid #959595
+                        margin: 0
+                > li:last-child
+                    margin-bottom: 0
+            >li.width
+                width: 95%
+                margin-right: auto
+                margin-left: auto
+        .event_btn
+            display: block
+            width: 335px
+            height: 64px
+            margin: 3rem auto 0
+            font-size: 1.35rem
+            background-color: #2b3d98
+            color: #fff
+            cursor: pointer
+    .survey_banner
+        width: 100%
+        margin: 4rem 0 3rem
+        .survey
+            display: block
+            margin: 0 auto
+            width: 1161px
+            text-align: center
+            img
+                width: 100%
+/*Ipad Pro*/
+@media (max-width: 1158px)
+    .sub.event .survey_banner .survey
+        width: 90%
+/*Ipad*/
+@media (max-width: 1023px)
+    .sub.event .event
+        width: 90%
+/*Tablet*/
+@media (max-width: 767.98px)
+    .sub.event .event .event_input 
+        .event_check 
+            > span
+                margin-right: 6%
+                margin-bottom: 0.25rem
+                font-size: 0.85rem
+            label
+                font-size: 0.85rem
+        li.top > span 
+            display: block
+            width: 100%
+            margin-right: 0
+            .event_subtitle
+                margin: 0.5rem 0
+                padding: 0
+            input
+                width: 100%
+                margin: 0
+        li.bottom 
+            > span
+                width: 100%
+                margin-bottom: 0.5rem
+                padding: 0
+            div
+                width: 100%
+        li.secure
+            align-items: flex-start
+            .event_subtitle
+                width: 100%
+                margin-bottom: 0.5rem
+                padding: 0
+        .width
+            flex-direction: column
+/*Mobile*/
+@media (max-width: 575.98px)
+    .sub.event 
+        .event 
+            .event_top > h3 span
+                font-size: 1.2rem
+            .event_input
+                padding: 1.5rem 0 0
+                li
+                    margin-bottom: 0.75rem
+                    .textbox
+                        padding: 1rem
+                        p
+                            font-size: 0.8rem
+                li .event_subtitle
+                    font-size: 0.85rem
+                    padding-bottom: 0.5rem
+                li input[type="text"]
+                    font-size: 0.7rem
+                    height: 34px
+                    margin-bottom: 0.25rem
+                li.secure
+                    .event_secure
+                        width: 100%
+                        align-items: center
+                        flex-wrap: nowrap
+                        > span
+                            width: 120px
+                            height: 45px
+                            padding: calc((45px - 30.58px)/2)
+                        > button
+                            width: 35px
+                            height: 40px
+                        > input
+                            width: calc(100% - (120px + 40px))
+                            height: 45px !important
+                            font-size: 0.8rem
+                .event_agreement
+                    padding: 1rem
+                    .agreement_title
+                        font-size: 1rem
+                    >p
+                        font-size: 0.75rem
+                li.radio
+                    >span
+                        font-size: 0.8rem
+                    .event_check label
+                        font-size: 0.8rem
+                li.width
+                    padding: 0.25rem 0 0.5rem
+                li.top 
+                    > span 
+                        margin-bottom: 0.5rem
+                        .event_subtitle
+                            margin-top: 0
+                    >span:last-child
+                        margin-bottom: 0
+                li.bottom 
+                    input[type="text"]
+                        padding: 0.25rem 0.5rem
+                        font-size: 0.7rem
+                        height: 34px
+                    .zipcode
+                        font-size: 0.65rem
+                        height: 34px
+                        margin-bottom: 0.25rem
+            .event_btn
+                width: 180px
+                height: 60px
+                font-size: 1rem
+                margin: 2rem auto 0
+        .survey_banner 
+            margin: 3rem 0 2rem
+
