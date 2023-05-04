@@ -1,0 +1,3111 @@
+/*
+font-family: 'NanumMyeongjo';
+font-family: 'NanumMyeongjoBold';
+font-family: 'NanumMyeongjoExtraBold';
+
+
+font-family: 'NanumSquare Neo', sans-serif;
+font-family: 'NanumSquare Neo variable', sans-serif;
+*/
+@import url("https://fonts.cdnfonts.com/css/nanumsquare-neo");
+table {
+	padding: 0;
+	border: 0;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+th,
+td {
+	padding: 0;
+}
+
+/* 테이블 신규 글 n아이콘 */
+.sub_table {
+	table {
+		tbody tr td {
+			a {
+				float: left;
+				position: relative;
+				line-height: 1.5;
+				box-sizing: border-box;
+				&::after {
+					content: "N";
+					display: none;
+					width: 20px;
+					height: 20px;
+					background-color: #0495e6;
+					position: absolute;
+					top: 2.5px;
+					right: 0px;
+					border-radius: 50%;
+					font-size: 10px;
+					color: #fff;
+					line-height: 20px;
+					text-align: center;
+				}
+			}
+			
+		}
+		tbody tr.new td {
+			a{
+				padding-right: 30px;
+				&::after {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+/* sub 공용 top 시작*/
+.sub_top {
+	width: 100%;
+	height: 560px;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: relative;
+	font-family: "NanumSquare Neo", sans-serif;
+
+	&::before {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		animation: visualani 1.5s ease 0.1s;
+		animation-fill-mode: forwards;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	.inner {
+		width: 90%;
+		height: 100%;
+		margin: 0px auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		.sub_title {
+			color: #fff;
+			letter-spacing: -1px;
+
+			p {
+				font-family: "NanumSquare Neo", sans-serif;
+				width: 200px;
+				height: 50px;
+				line-height: 50px;
+				box-sizing: border-box;
+				border: 1px solid #fff;
+				text-align: center;
+				font-size: 19px;
+				margin: 0px auto 30px;
+				opacity: 0;
+				animation: textani 1s ease 0.3s forwards;
+			}
+
+			h2 {
+				font-family: "NanumMyeongjo", sans-serif;
+				opacity: 0;
+				font-size: 60px;
+				animation: textani 1s ease 0.6s forwards;
+			}
+		}
+
+		.sub_nav_text {
+			i {
+				margin-right: 10px;
+			}
+			font-weight: 100;
+			font-family: "NanumSquareLight";
+			position: absolute;
+			bottom: 30px;
+			left: 0px;
+			color: #fff;
+			font-size: 16px;
+
+			strong {
+				font-family: "NanumSquare Neo", sans-serif;
+				font-weight: bold;
+			}
+		}
+	}
+}
+@keyframes textani {
+	0% {
+		opacity: 0;
+		transform: translateY(100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes visualani {
+	0% {
+		transform: scale(1.3);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+/* sub 공용 top 끝*/
+
+/*사업보도 시작*/
+.sub_top.top_businessReport {
+	&::before {
+		background-image: url(../img/sub_top01.jpg);
+	}
+}
+.sub_businessReport {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 100px 0px;
+	font-family: "NanumSquare Neo", sans-serif;
+
+	.inner {
+		width: 1200px;
+		margin: 0px auto;
+
+		.sub_search {
+			display: flex;
+			justify-content: right;
+			margin-bottom: 40px;
+
+			form {
+				display: flex;
+				justify-content: right;
+
+				// 커스텀 설렉박스
+				.area-custom-select {
+					width: 180px;
+					height: 60px;
+					box-sizing: border-box;
+					border-radius: 10px;
+					border: 1px solid #c9c9c9;
+					background: url(../img/select_down.png) no-repeat right 20px
+						center;
+					position: relative;
+					text-indent: 15px;
+				}
+
+				.custom-select {
+					display: block;
+					width: 100%;
+					height: 100%;
+					cursor: pointer;
+					line-height: 60px;
+				}
+
+				.custom-select-list {
+					width: 100%;
+					position: relative;
+					z-index: 2;
+					border: 1px solid #c9c9c9;
+					box-sizing: border-box;
+					background-color: #fff;
+					border-radius: 10px;
+				}
+
+				.custom-select-option {
+					width: 100%;
+					height: 60px;
+					line-height: 60px;
+					cursor: pointer;
+					color: #c9c9c9;
+					&:hover {
+						color: #000;
+					}
+				}
+				// 커스텀 설렉박스
+
+				.search_text {
+					width: 310px;
+					height: 60px;
+					box-sizing: border-box;
+					border: 1px solid #c9c9c9;
+					padding: 10px 20px;
+					font-size: 16px;
+					color: #a1a1a1;
+					border-radius: 10px;
+					margin-left: 10px;
+				}
+
+				button {
+					width: 60px;
+					height: 60px;
+					border-radius: 10px;
+					background-color: #000;
+					text-align: center;
+					line-height: 60px;
+					font-size: 22px;
+					margin-left: 10px;
+					color: #fff;
+					cursor: pointer;
+				}
+			}
+		}
+
+		.businessReport_content {
+			ul {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+
+				li {
+					width: 30%;
+					height: 450px;
+					box-sizing: border-box;
+					border: 1px solid #dcdcdc;
+					margin-bottom: 60px;
+					position: relative;
+					transition: all 0.5s;
+					opacity: 0;
+					transform: translateY(20%);
+
+					&:nth-of-type(2) {
+						transition-delay: 0.2s;
+					}
+					&:nth-of-type(3) {
+						transition-delay: 0.4s;
+					}
+					&:nth-of-type(4) {
+						transition-delay: 0.6s;
+					}
+					&:nth-of-type(5) {
+						transition-delay: 0.8s;
+					}
+					&:nth-of-type(6) {
+						transition-delay: 1s;
+					}
+
+					&:nth-of-type(1) a .img_box {
+						background: url("../img/02.jpg") no-repeat center center /
+							cover;
+					}
+
+					&::before {
+						content: "";
+						display: block;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						width: 100%;
+						height: 100%;
+						transform: translate(-50%, -50%);
+						pointer-events: none;
+					}
+
+					a {
+						display: block;
+						width: 100%;
+						height: 100%;
+
+						.img_box {
+							width: 100%;
+							height: 60%;
+							background-color: #555;
+							overflow: hidden;
+							box-sizing: border-box;
+						}
+
+						.text_box {
+							width: 100%;
+							height: 40%;
+							box-sizing: border-box;
+							padding: 20px;
+							position: relative;
+
+							span {
+								display: block;
+								margin-bottom: 20px;
+								font-size: 15px;
+								color: #0070bb;
+								font-family: "NanumSquare Neo", sans-serif;
+								font-weight: bold;
+							}
+
+							p {
+								color: #000;
+								font-size: 18px;
+								line-height: 1.5;
+								word-break: keep-all;
+								font-family: "NanumSquare Neo", sans-serif;
+								font-weight: bold;
+
+								display: -webkit-box;
+								-webkit-box-orient: vertical;
+								-webkit-line-clamp: 2;
+								overflow: hidden;
+							}
+
+							.date {
+								position: absolute;
+								bottom: 0px;
+								right: 20px;
+								color: #000;
+								font-size: 16px;
+								font-family: "NanumSquare Neo", sans-serif;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.sub_nav {
+			display: flex;
+			justify-content: center;
+
+			a {
+				display: block;
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				margin-right: 10px;
+				border: 1px solid #c9c9c9;
+				color: #737373;
+				font-size: 20px;
+				transition: all 0.5s;
+
+				&.sub_first {
+					font-size: 16px;
+				}
+
+				&.sub_last {
+					font-size: 16px;
+				}
+
+				&:hover {
+					border: 1px solid #00499b;
+				}
+			}
+
+			ul {
+				display: flex;
+				justify-content: center;
+
+				li a {
+					border: none;
+					color: #000;
+					font-size: 16px;
+					border: 1px solid #fff;
+				}
+
+				.active a {
+					background-color: #00499b;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	&.on .inner {
+		.businessReport_content {
+			ul {
+				li {
+					opacity: 1;
+					transform: translateY(0);
+
+					&:hover {
+						&::before {
+							border: 4px solid #0495e6;
+						}
+						transform: translateY(-3%);
+						box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 0.2);
+					}
+				}
+			}
+		}
+	}
+}
+/*사업보도 끝*/
+
+/* 이벤트 및 공모전 */
+.sub_top.top_event {
+	&::before {
+		background-image: url(../img/sub_top02.jpg);
+	}
+}
+.sub_event {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 100px 0px;
+	font-family: "NanumSquare Neo", sans-serif;
+	letter-spacing: -0.5px;
+
+	.inner {
+		width: 1200px;
+		margin: 0px auto;
+
+		.mainSlide {
+			width: 100%;
+			margin-bottom: 90px;
+
+			.main_swiper-container {
+				width: 100%;
+				height: 470px;
+				position: relative;
+				overflow: hidden;
+				box-sizing: border-box;
+				padding: 20px 50px;
+
+				.swiper-wrapper {
+					width: 100%;
+					height: 100%;
+					box-sizing: border-box;
+					padding: 4px 0px;
+
+					.swiper-slide {
+						width: 30%;
+						height: 100%;
+						box-sizing: border-box;
+						border: 1px solid #dcdcdc;
+						margin-right: 5%;
+						transition: all 0.5s;
+						&::before {
+							content: "";
+							display: block;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							width: 100%;
+							height: 100%;
+							transform: translate(-50%, -50%);
+							pointer-events: none;
+						}
+
+						&:hover {
+							box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+
+							&::before {
+								border: 4px solid #0495e6;
+							}
+
+							a .img_box .img {
+								transform: scale(1.1);
+							}
+						}
+
+						&:nth-child(1) a .img_box .img {
+							background: url(../img/02.jpg) no-repeat center
+								center/ cover;
+						}
+
+						a {
+							display: block;
+							width: 100%;
+							height: 100%;
+							box-sizing: border-box;
+
+							.img_box {
+								width: 100%;
+								height: 70%;
+								background-color: #555;
+								box-sizing: border-box;
+								overflow: hidden;
+
+								.img {
+									width: 100%;
+									height: 100%;
+									transition: all 0.3s;
+								}
+							}
+
+							.text_box {
+								width: 100%;
+								height: 30%;
+								box-sizing: border-box;
+								padding: 25px 20px;
+								position: relative;
+
+								p {
+									font-size: 18px;
+									font-family: "NanumSquare Neo", sans-serif;
+									font-weight: bold;
+									margin-bottom: 10px;
+									line-height: 1.5;
+									display: -webkit-box;
+									-webkit-box-orient: vertical;
+									-webkit-line-clamp: 2;
+									overflow: hidden;
+									color: #000;
+								}
+								span {
+									position: absolute;
+									bottom: 20px;
+									left: 20px;
+									color: #000;
+									font-size: 15px;
+									color: #555;
+								}
+							}
+						}
+
+						&:last-child {
+							margin-right: 0;
+						}
+					}
+				}
+
+				.swiper-button-next {
+					width: 32px;
+					height: 36px;
+					right: 5px;
+					background: url(../img/next.png) no-repeat center center /
+						contain;
+					&::after {
+						content: "";
+					}
+
+					&:hover {
+						background: url(../img/next_hover.png) no-repeat center
+							center / contain;
+					}
+				}
+
+				.swiper-button-prev {
+					width: 32px;
+					height: 36px;
+					left: 5px;
+					background: url(../img/prev.png) no-repeat center center /
+						contain;
+					&::after {
+						content: "";
+					}
+
+					&:hover {
+						background: url(../img/prev_hover.png) no-repeat center
+							center / contain;
+					}
+				}
+			}
+		}
+
+		.sub_table {
+			width: 100%;
+			box-sizing: border-box;
+			margin-bottom: 50px;
+
+			table {
+				width: 100%;
+				border-top: 2px solid #000;
+				box-sizing: border-box;
+
+				thead {
+					width: 100%;
+					tr {
+						position: relative;
+						th {
+							padding: 30px 0px;
+							text-align: center;
+							box-sizing: border-box;
+							position: relative;
+							font-size: 19px;
+							font-family: "NanumSquare Neo", sans-serif;
+							font-weight: bold;
+
+							&:nth-child(1) {
+								width: 85%;
+							}
+							&:nth-child(2) {
+								width: 15%;
+							}
+						}
+					}
+				}
+				tbody {
+					border-top: 1px solid #b6b6b6;
+				}
+				tbody tr {
+					border-bottom: 1px solid #b6b6b6;
+				}
+
+				tbody tr td {
+					padding: 30px;
+					a {
+						color: #000;
+						font-size: 19px;
+						font-family: "NanumSquare Neo", sans-serif;
+						font-weight: bold;
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+						-webkit-line-clamp: 1;
+						overflow: hidden;
+					}
+
+					&:nth-of-type(2) {
+						text-align: center;
+						font-family: "NanumSquare Neo", sans-serif;
+						font-weight: 100;
+						font-size: 17px;
+					}
+				}
+			}
+		}
+
+		.sub_nav {
+			display: flex;
+			justify-content: center;
+
+			a {
+				display: block;
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				margin-right: 10px;
+				border: 1px solid #c9c9c9;
+				color: #737373;
+				font-size: 20px;
+				transition: all 0.5s;
+
+				&.sub_first {
+					font-size: 16px;
+				}
+
+				&.sub_last {
+					font-size: 16px;
+				}
+
+				&:hover {
+					border: 1px solid #00499b;
+				}
+			}
+
+			ul {
+				display: flex;
+				justify-content: center;
+
+				li a {
+					border: none;
+					color: #000;
+					font-size: 16px;
+					border: 1px solid #fff;
+				}
+
+				.active a {
+					background-color: #00499b;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+/* 이벤트 및 공모전 끝 */
+
+/* 공지사항 시작 */
+.sub_top.top_notice {
+	&::before {
+		background-image: url(../img/sub_top03.jpg);
+	}
+}
+.sub_notice {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 100px 0px;
+	font-family: "NanumSquare Neo", sans-serif;
+
+	.inner {
+		width: 1200px;
+		margin: 0px auto;
+
+		.sub_search {
+			display: flex;
+			justify-content: right;
+			margin-bottom: 40px;
+			position: relative;
+
+			.count {
+				font-size: 16px;
+				color: #000;
+				position: absolute;
+				bottom: 5px;
+				left: 20px;
+				font-family: "NanumSquare Neo", sans-serif;
+				font-weight: bold;
+			}
+
+			form {
+				display: flex;
+				justify-content: right;
+
+				// 커스텀 설렉박스
+				.area-custom-select {
+					width: 180px;
+					height: 60px;
+					box-sizing: border-box;
+					border-radius: 10px;
+					border: 1px solid #c9c9c9;
+					background: url(../img/select_down.png) no-repeat right 20px
+						center;
+					position: relative;
+					text-indent: 15px;
+				}
+
+				.custom-select {
+					display: block;
+					width: 100%;
+					height: 100%;
+					cursor: pointer;
+					line-height: 60px;
+				}
+
+				.custom-select-list {
+					width: 100%;
+					position: relative;
+					z-index: 2;
+					border: 1px solid #c9c9c9;
+					box-sizing: border-box;
+					background-color: #fff;
+					border-radius: 10px;
+				}
+
+				.custom-select-option {
+					width: 100%;
+					height: 60px;
+					line-height: 60px;
+					cursor: pointer;
+					color: #c9c9c9;
+					&:hover {
+						color: #000;
+					}
+				}
+				// 커스텀 설렉박스
+
+				.search_text {
+					width: 310px;
+					height: 60px;
+					box-sizing: border-box;
+					border: 1px solid #c9c9c9;
+					padding: 10px 20px;
+					font-size: 16px;
+					color: #a1a1a1;
+					border-radius: 10px;
+					margin-left: 10px;
+				}
+
+				button {
+					width: 60px;
+					height: 60px;
+					border-radius: 10px;
+					background-color: #000;
+					text-align: center;
+					line-height: 60px;
+					font-size: 22px;
+					margin-left: 10px;
+					color: #fff;
+					cursor: pointer;
+				}
+			}
+		}
+
+		.sub_table {
+			width: 100%;
+			box-sizing: border-box;
+			margin-bottom: 50px;
+
+			table {
+				width: 100%;
+				border-top: 2px solid #000;
+				box-sizing: border-box;
+
+				thead {
+					width: 100%;
+					tr {
+						position: relative;
+						th {
+							padding: 30px 0px;
+							text-align: center;
+							box-sizing: border-box;
+							position: relative;
+							font-size: 19px;
+							font-family: "NanumSquare Neo", sans-serif;
+							font-weight: bold;
+
+							&:nth-child(1) {
+								width: 85%;
+							}
+							&:nth-child(2) {
+								width: 15%;
+							}
+						}
+					}
+				}
+				tbody {
+					border-top: 1px solid #b6b6b6;
+				}
+				tbody tr {
+					border-bottom: 1px solid #b6b6b6;
+				}
+
+				tbody tr td {
+					padding: 30px;
+					a {
+						color: #000;
+						font-size: 19px;
+						font-family: "NanumSquare Neo", sans-serif;
+						font-weight: bold;
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+						-webkit-line-clamp: 1;
+						overflow: hidden;
+					}
+
+					&:nth-of-type(2) {
+						text-align: center;
+						font-family: "NanumSquare Neo", sans-serif;
+						font-weight: 100;
+						font-size: 17px;
+					}
+				}
+			}
+		}
+
+		.sub_nav {
+			display: flex;
+			justify-content: center;
+
+			a {
+				display: block;
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				margin-right: 10px;
+				border: 1px solid #c9c9c9;
+				color: #737373;
+				font-size: 20px;
+				transition: all 0.5s;
+
+				&.sub_first {
+					font-size: 16px;
+				}
+
+				&.sub_last {
+					font-size: 16px;
+				}
+
+				&:hover {
+					border: 1px solid #00499b;
+				}
+			}
+
+			ul {
+				display: flex;
+				justify-content: center;
+
+				li a {
+					border: none;
+					color: #000;
+					font-size: 16px;
+					border: 1px solid #fff;
+				}
+
+				.active a {
+					background-color: #00499b;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+/* 공지사항 끝 */
+
+/* 금고소식 */
+.sub_top.top_newsSafe {
+	&::before {
+		background-image: url(../img/sub_top04.jpg);
+	}
+}
+.sub_newsSafe {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 100px 0px;
+	font-family: "NanumSquare Neo", sans-serif;
+	letter-spacing: -0.5px;
+
+	.inner {
+		width: 1200px;
+		margin: 0px auto;
+
+		.mainSlide {
+			width: 100%;
+			margin-bottom: 90px;
+
+			.main_swiper-container {
+				width: 100%;
+				height: 470px;
+				position: relative;
+				overflow: hidden;
+				box-sizing: border-box;
+				padding: 20px 50px;
+
+				.swiper-wrapper {
+					width: 100%;
+					height: 100%;
+					box-sizing: border-box;
+					padding: 4px 0px;
+
+					.swiper-slide {
+						width: 30%;
+						height: 100%;
+						box-sizing: border-box;
+						border: 1px solid #dcdcdc;
+						margin-right: 5%;
+						transition: all 0.5s;
+						&::before {
+							content: "";
+							display: block;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							width: 100%;
+							height: 100%;
+							transform: translate(-50%, -50%);
+							pointer-events: none;
+						}
+
+						&:hover {
+							box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.2);
+
+							&::before {
+								border: 4px solid #0495e6;
+							}
+
+							a .img_box .img {
+								transform: scale(1.1);
+							}
+						}
+
+						&:nth-child(1) a .img_box .img {
+							background: url(../img/02.jpg) no-repeat center
+								center/ cover;
+						}
+
+						a {
+							display: block;
+							width: 100%;
+							height: 100%;
+							box-sizing: border-box;
+
+							.img_box {
+								width: 100%;
+								height: 70%;
+								background-color: #555;
+								box-sizing: border-box;
+								overflow: hidden;
+
+								.img {
+									width: 100%;
+									height: 100%;
+									transition: all 0.3s;
+								}
+							}
+
+							.text_box {
+								width: 100%;
+								height: 30%;
+								box-sizing: border-box;
+								padding: 25px 20px;
+								position: relative;
+
+								p {
+									font-size: 18px;
+									font-family: "NanumSquare Neo", sans-serif;
+									font-weight: bold;
+									margin-bottom: 10px;
+									line-height: 1.5;
+									display: -webkit-box;
+									-webkit-box-orient: vertical;
+									-webkit-line-clamp: 2;
+									overflow: hidden;
+									color: #000;
+								}
+								span {
+									position: absolute;
+									bottom: 20px;
+									left: 20px;
+									color: #000;
+									font-size: 15px;
+									color: #555;
+								}
+							}
+						}
+
+						&:last-child {
+							margin-right: 0;
+						}
+					}
+				}
+
+				.swiper-button-next {
+					width: 32px;
+					height: 36px;
+					right: 5px;
+					background: url(../img/next.png) no-repeat center center /
+						contain;
+					&::after {
+						content: "";
+					}
+
+					&:hover {
+						background: url(../img/next_hover.png) no-repeat center
+							center / contain;
+					}
+				}
+
+				.swiper-button-prev {
+					width: 32px;
+					height: 36px;
+					left: 5px;
+					background: url(../img/prev.png) no-repeat center center /
+						contain;
+					&::after {
+						content: "";
+					}
+
+					&:hover {
+						background: url(../img/prev_hover.png) no-repeat center
+							center / contain;
+					}
+				}
+			}
+		}
+
+		.sub_table {
+			width: 100%;
+			box-sizing: border-box;
+			margin-bottom: 50px;
+
+			table {
+				width: 100%;
+				border-top: 2px solid #000;
+				box-sizing: border-box;
+
+				thead {
+					width: 100%;
+					tr {
+						position: relative;
+						th {
+							padding: 30px 0px;
+							text-align: center;
+							box-sizing: border-box;
+							position: relative;
+							font-size: 19px;
+							font-family: "NanumSquare Neo", sans-serif;
+							font-weight: bold;
+
+							&:nth-child(1) {
+								width: 85%;
+							}
+							&:nth-child(2) {
+								width: 15%;
+							}
+						}
+					}
+				}
+				tbody {
+					border-top: 1px solid #b6b6b6;
+				}
+				tbody tr {
+					border-bottom: 1px solid #b6b6b6;
+				}
+
+				tbody tr td {
+					padding: 30px;
+					a {
+						color: #000;
+						font-size: 19px;
+						font-family: "NanumSquare Neo", sans-serif;
+						font-weight: bold;
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+						-webkit-line-clamp: 1;
+						overflow: hidden;
+					}
+
+					&:nth-of-type(2) {
+						text-align: center;
+						font-family: "NanumSquare Neo", sans-serif;
+						font-weight: 100;
+						font-size: 17px;
+					}
+				}
+			}
+		}
+
+		.sub_nav {
+			display: flex;
+			justify-content: center;
+
+			a {
+				display: block;
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				text-align: center;
+				margin-right: 10px;
+				border: 1px solid #c9c9c9;
+				color: #737373;
+				font-size: 20px;
+				transition: all 0.5s;
+
+				&.sub_first {
+					font-size: 16px;
+				}
+
+				&.sub_last {
+					font-size: 16px;
+				}
+
+				&:hover {
+					border: 1px solid #00499b;
+				}
+			}
+
+			ul {
+				display: flex;
+				justify-content: center;
+
+				li a {
+					border: none;
+					color: #000;
+					font-size: 16px;
+					border: 1px solid #fff;
+				}
+
+				.active a {
+					background-color: #00499b;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+/* 금고소식끝 */
+
+/* view */
+.sub_top.top_view {
+	&::before {
+		background-image: url(../img/view_top.jpg);
+	}
+}
+.sub_view {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 100px 0px;
+	font-family: "NanumSquare Neo", sans-serif;
+	.inner {
+		width: 1200px;
+		margin: 0px auto;
+		.title {
+			width: 100%;
+			border-top: 1px solid #000;
+			border-bottom: 1px solid #b6b6b6;
+			box-sizing: border-box;
+			padding: 30px 20px;
+			display: flex;
+			justify-content: space-between;
+
+			.left {
+				width: 85%;
+				box-sizing: border-box;
+
+				h5 {
+					font-size: 20px;
+					font-family: "NanumSquare Neo", sans-serif;
+					word-break: keep-all;
+					line-height: 1.5;
+					font-weight: bold;
+				}
+
+				p {
+					margin-top: 20px;
+					font-size: 16px;
+					font-family: "NanumSquare Neo", sans-serif;
+					font-weight: bold;
+					color: #737373;
+
+					span {
+						display: inline-block;
+						width: 60px;
+						height: 30px;
+						line-height: 30px;
+						background-color: #0495e6;
+						text-align: center;
+						border-radius: 5px;
+						margin-right: 10px;
+						color: #fff;
+					}
+				}
+			}
+
+			.right {
+				width: 15%;
+				text-align: center;
+				display: flex;
+				align-items: center;
+				font-size: 16px;
+			}
+		}
+
+		.content {
+			img {
+				display: block;
+				margin: 0px auto 50px;
+			}
+			padding: 50px 0px;
+			border-bottom: 1px solid #b6b6b6;
+			margin-bottom: 50px;
+			p {
+				line-height: 1.8;
+				font-size: 18px;
+				margin-bottom: 50px;
+			}
+		}
+
+		.view_nav {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.prev {
+				max-width: 30%;
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					justify-content: start;
+					align-items: center;
+
+					&:hover .img_box {
+						background: url(../img/view_prev_h.jpg) no-repeat center
+							center / cover;
+					}
+
+					.img_box {
+						width: 29px;
+						height: 29px;
+						background: url(../img/view_prev.png) no-repeat center
+							center / cover;
+						margin-right: 10px;
+					}
+
+					.text_box {
+						width: calc(100% - 40px);
+						p {
+							display: -webkit-box;
+							-webkit-box-orient: vertical;
+							-webkit-line-clamp: 1;
+							overflow: hidden;
+							color: #000;
+
+							&:nth-child(1) {
+								margin-bottom: 10px;
+								font-family: "NanumSquare Neo", sans-serif;
+								font-weight: bold;
+							}
+						}
+					}
+				}
+			}
+			.list {
+				a {
+					img {
+						position: relative;
+						top: 2px;
+						margin-right: 5px;
+					}
+					display: block;
+					width: 170px;
+					height: 50px;
+					border-radius: 5px;
+					background-color: #000;
+					color: #fff;
+					text-align: center;
+					font-size: 17px;
+					line-height: 50px;
+					box-sizing: border-box;
+				}
+			}
+			.next {
+				max-width: 30%;
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					display: flex;
+					justify-content: right;
+					align-items: center;
+
+					&:hover .img_box {
+						background: url(../img/view_next_h.jpg) no-repeat center
+							center / cover;
+					}
+
+					.img_box {
+						width: 29px;
+						height: 29px;
+						background: url(../img/view_next.png) no-repeat center
+							center / cover;
+						margin-right: 10px;
+					}
+
+					.text_box {
+						width: calc(100% - 40px);
+						p {
+							display: -webkit-box;
+							-webkit-box-orient: vertical;
+							-webkit-line-clamp: 1;
+							overflow: hidden;
+							color: #000;
+
+							&:nth-child(1) {
+								margin-bottom: 10px;
+								font-family: "NanumSquare Neo", sans-serif;
+								font-weight: bold;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* view끝 */
+
+/*기념영상 시작*/
+.sub_top.top_video {
+	&::before {
+		background-image: url(../img/sub_top05.jpg);
+	}
+}
+.sub_video {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 100px 0px;
+	font-family: "NanumSquare Neo", sans-serif;
+	.inner {
+		width: 1200px;
+		margin: 0px auto;
+
+		.video_box {
+			width: 100%;
+			box-sizing: border-box;
+			overflow: hidden;
+			margin-bottom: 60px;
+			img {
+				width: 100%;
+			}
+		}
+
+		.list {
+			h5 {
+				font-size: 27px;
+				text-align: center;
+				margin-bottom: 70px;
+			}
+
+			ul {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				li {
+					width: 23%;
+					height: 300px;
+					box-sizing: border-box;
+					position: relative;
+					transition: all 0.5s;
+
+					&:hover {
+						&::after {
+							content: "";
+							display: block;
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+							width: 100%;
+							height: 100%;
+							border: 4px solid #0495e6;
+							pointer-events: none;
+						}
+						.img_box .img {
+							transform: scale(1.1);
+						}
+					}
+
+					.img_box {
+						width: 100%;
+						height: 60%;
+						box-sizing: border-box;
+						background-color: #555;
+						overflow: hidden;
+
+						.img {
+							width: 100%;
+							height: 100%;
+							background: url(../img/02.jpg) no-repeat center
+								center/cover;
+							transition: all 0.3s;
+						}
+					}
+
+					.text_box {
+						width: 100%;
+						height: 40%;
+						padding: 20px;
+						box-sizing: border-box;
+						background-color: #f9f9f9;
+
+						p {
+							font-size: 17px;
+							line-height: 1.5;
+							color: #000;
+							display: -webkit-box;
+							-webkit-box-orient: vertical;
+							-webkit-line-clamp: 1;
+							overflow: hidden;
+						}
+
+						span {
+							display: block;
+							margin-top: 10px;
+							color: #000;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/*기념영상 끝*/
+
+/* 사업소개 */
+.sub_top.top_introductionBusiness {
+	&::before {
+		background-image: url(../img/view_top.jpg);
+	}
+}
+.sub_introductionBusiness {
+	font-family: "NanumSquare Neo", sans-serif;
+	width: 100%;
+	padding: 100px 0px;
+	box-sizing: border-box;
+	.inner {
+		width: 1200px;
+		margin: 0px auto;
+		box-sizing: border-box;
+		&::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		h5 {
+			text-align: center;
+			font-size: 40px;
+			margin-bottom: 100px;
+		}
+
+		ul {
+			position: relative;
+
+			li {
+				float: left;
+				width: 480px;
+				height: 580px;
+				box-sizing: border-box;
+				margin-bottom: 200px;
+				position: relative;
+				opacity: 0;
+				transform: translateY(20%);
+				transition: all 1s;
+				&.on {
+					opacity: 1;
+					transform: translateY(0);
+				}
+				&:nth-of-type(odd) {
+					&::before {
+						content: "";
+						position: absolute;
+						top: 41%;
+						right: -30%;
+						width: 144px;
+						height: 1px;
+						background-color: #0495e6;
+					}
+					&::after {
+						content: "06";
+						position: absolute;
+						top: 35%;
+						right: -33%;
+						width: 74px;
+						height: 74px;
+						background: url(../img/introductionBusiness_list.png)
+							no-repeat center center/cover;
+						text-align: center;
+						color: #fff;
+						line-height: 74px;
+						font-size: 20px;
+						font-family: "NanumSquare Neo", sans-serif;
+						font-weight: bold;
+					}
+				}
+				&:nth-of-type(2n) {
+					margin-top: 200px;
+					margin-bottom: 0px;
+					float: right;
+					&::before {
+						content: "";
+						position: absolute;
+						top: 41%;
+						left: -30%;
+						width: 144px;
+						height: 1px;
+						background-color: #0495e6;
+					}
+					&::after {
+						content: "05";
+						position: absolute;
+						top: 35%;
+						left: -33%;
+						width: 74px;
+						height: 74px;
+						background: url(../img/introductionBusiness_list.png)
+							no-repeat center center/cover;
+						text-align: center;
+						color: #fff;
+						line-height: 74px;
+						font-size: 20px;
+						font-family: "NanumSquare Neo", sans-serif;
+						font-weight: bold;
+					}
+				}
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					&:hover {
+						.img_box_contain {
+							border: 10px solid #0495e6;
+							.img_box {
+								transform: scale(1.1);
+							}
+						}
+					}
+					.img_box_contain {
+						width: 100%;
+						height: 75%;
+						box-sizing: border-box;
+						overflow: hidden;
+						box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.2);
+
+						.img_box {
+							width: 100%;
+							height: 100%;
+							background-color: #555;
+							background: url(../img/02.jpg) no-repeat center
+								center / cover;
+							transition: all 0.2s;
+						}
+					}
+
+					.text_box {
+						width: 100%;
+						height: 25%;
+						box-sizing: border-box;
+						padding: 30px 0px;
+
+						h6 {
+							font-size: 20px;
+							line-height: 1.5;
+							display: -webkit-box;
+							-webkit-box-orient: vertical;
+							-webkit-line-clamp: 2;
+							overflow: hidden;
+							color: #000;
+							word-break: keep-all;
+							margin-bottom: 10px;
+						}
+						p {
+							font-size: 16px;
+							color: #585858;
+							span {
+								display: inline-block;
+								width: 50px;
+								height: 30px;
+								border-radius: 5px;
+								background-color: #0495e6;
+								color: #fff;
+								text-align: center;
+								line-height: 30px;
+								font-size: 14px;
+								margin-right: 5px;
+							}
+						}
+					}
+				}
+			}
+
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				width: 1px;
+				height: 100%;
+				top: 0px;
+				left: 50%;
+				transform: translateX(-50%);
+				background-color: #d0d0d0;
+			}
+
+			&::after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+		}
+	}
+}
+/* 사업소개 끝 */
+
+/* ceo인사 */
+.sub_top.top_ceo {
+	&::before {
+		background-image: url(../img/sub_top06.jpg);
+	}
+}
+.sub_ceo {
+	font-family: "NanumSquare Neo", sans-serif;
+	width: 100%;
+	box-sizing: border-box;
+	position: relative;
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0px;
+		left: 30%;
+		width: 70%;
+		height: 100%;
+		background-color: #e9f9ff;
+		z-index: -1;
+	}
+	.inner {
+		width: 1500px;
+		margin: 0px auto;
+		box-sizing: border-box;
+		padding: 100px 0px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		.img_box {
+			width: 45%;
+			overflow: hidden;
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		.text_box {
+			width: 55%;
+			box-sizing: border-box;
+			padding-left: 50px;
+
+			p {
+				font-size: 18px;
+				line-height: 1.8;
+				margin-bottom: 30px;
+			}
+
+			span {
+				display: block;
+				text-align: right;
+				img {
+					position: relative;
+					top: 10px;
+					display: none;
+					&:nth-of-type(2) {
+						display: inline-block;
+					}
+				}
+			}
+		}
+	}
+}
+/* ceo인사 끝 */
+
+/* tablet */
+@media screen and (max-width: 1200px) {
+	/*사업보도 시작*/
+	.sub_businessReport {
+		padding: 40px 0px;
+
+		.inner {
+			width: 100%;
+			box-sizing: border-box;
+			padding: 0px 2.5%;
+
+			.sub_search {
+				display: flex;
+				justify-content: start;
+				margin-bottom: 30px;
+			}
+
+			.businessReport_content {
+				margin-bottom: 20px;
+				ul {
+					li {
+						width: 48%;
+						height: 450px;
+						margin-bottom: 30px;
+					}
+				}
+			}
+
+			.sub_nav {
+				ul {
+					li:nth-child(n + 6) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	/*사업보도 끝*/
+
+	/* 이벤트 및 공모전 */
+	.sub_event {
+		width: 100%;
+		padding: 40px 0px;
+
+		.inner {
+			width: 100%;
+			padding: 0px 2.5%;
+			box-sizing: border-box;
+
+			.mainSlide {
+				margin-bottom: 50px;
+
+				.main_swiper-container {
+					height: 400px;
+					padding: 0px 60px;
+
+					.swiper-wrapper {
+						.swiper-slide {
+							width: 46%;
+							margin-right: 4%;
+
+							a {
+								.text_box {
+									padding: 20px 20px;
+									position: relative;
+
+									p {
+										font-size: 16px;
+									}
+									span {
+										font-size: 14px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.sub_table {
+				table {
+					thead {
+						tr {
+							th {
+								display: none;
+							}
+						}
+					}
+
+					tbody tr td {
+						clear: both;
+						float: left;
+						padding: 20px 20px 0px 20px;
+						a {
+							font-size: 18px;
+						}
+
+						&:nth-of-type(2) {
+							font-size: 14px;
+							padding: 5px 20px 20px 20px;
+						}
+					}
+				}
+			}
+
+			.sub_nav {
+				ul {
+					li:nth-child(n + 6) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	/* 이벤트 및 공모전 끝 */
+
+	/* 금고소식 */
+	.sub_newsSafe {
+		width: 100%;
+		padding: 40px 0px;
+
+		.inner {
+			width: 100%;
+			padding: 0px 2.5%;
+			box-sizing: border-box;
+
+			.mainSlide {
+				margin-bottom: 50px;
+
+				.main_swiper-container {
+					height: 400px;
+					padding: 0px 60px;
+
+					.swiper-wrapper {
+						.swiper-slide {
+							width: 46%;
+							margin-right: 4%;
+
+							a {
+								.text_box {
+									padding: 20px 20px;
+									position: relative;
+
+									p {
+										font-size: 16px;
+									}
+									span {
+										font-size: 14px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.sub_table {
+				table {
+					thead {
+						tr {
+							th {
+								display: none;
+							}
+						}
+					}
+
+					tbody tr td {
+						clear: both;
+						float: left;
+						padding: 20px 20px 0px 20px;
+						a {
+							font-size: 18px;
+						}
+
+						&:nth-of-type(2) {
+							font-size: 14px;
+							padding: 5px 20px 20px 20px;
+						}
+					}
+				}
+			}
+
+			.sub_nav {
+				ul {
+					li:nth-child(n + 6) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	/* 금고소식 끝 */
+
+	/* 공지사항 시작 */
+	.sub_notice {
+		padding: 40px 0px;
+
+		.inner {
+			width: 100%;
+			box-sizing: border-box;
+			padding: 0px 2.5%;
+
+			.sub_search {
+				display: flex;
+				justify-content: right;
+				margin-bottom: 30px;
+			}
+
+			.sub_table {
+				table {
+					thead {
+						tr {
+							th {
+								display: none;
+							}
+						}
+					}
+
+					tbody tr td {
+						clear: both;
+						float: left;
+						padding: 20px 20px 0px 20px;
+						a {
+							font-size: 18px;
+						}
+
+						&:nth-of-type(2) {
+							font-size: 14px;
+							padding: 5px 20px 20px 20px;
+						}
+					}
+				}
+			}
+
+			.sub_nav {
+				ul {
+					li:nth-child(n + 6) {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	/* 공지사항 끝 */
+
+	/* view */
+	.sub_view {
+		padding: 60px 0px;
+		.inner {
+			width: 100%;
+			box-sizing: border-box;
+			padding: 0px 2.5%;
+
+			.title {
+				width: 100%;
+				box-sizing: border-box;
+				flex-wrap: wrap;
+
+				.left {
+					width: 100%;
+
+					h5 {
+						font-size: 18px;
+						word-break: keep-all;
+						line-height: 1.5;
+					}
+
+					p {
+						margin-top: 10px;
+						font-size: 14px;
+					}
+				}
+
+				.right {
+					margin-top: 20px;
+					width: 100%;
+					text-align: right;
+					font-size: 14px;
+				}
+			}
+
+			.content {
+				img {
+					display: block;
+					margin: 0px auto 50px;
+					max-width: 100%;
+				}
+				padding: 50px 0px;
+				border-bottom: 1px solid #b6b6b6;
+				margin-bottom: 50px;
+				p {
+					line-height: 1.5;
+					font-size: 18px;
+					margin-bottom: 50px;
+				}
+			}
+
+			.view_nav {
+				width: 100%;
+				box-sizing: border-box;
+				overflow: hidden;
+				justify-content: space-between;
+				align-items: center;
+
+				.prev {
+					max-width: 30%;
+					a {
+						display: block;
+						width: 100%;
+						height: 100%;
+						display: flex;
+						justify-content: start;
+						align-items: center;
+
+						&:hover .img_box {
+							background: url(../img/view_prev_h.jpg) no-repeat
+								center center / cover;
+						}
+
+						.img_box {
+							width: 29px;
+							height: 29px;
+							background: url(../img/view_prev.png) no-repeat
+								center center / cover;
+							margin-right: 10px;
+						}
+
+						.text_box {
+							width: calc(100% - 40px);
+							p {
+								display: -webkit-box;
+								-webkit-box-orient: vertical;
+								-webkit-line-clamp: 1;
+								overflow: hidden;
+								color: #000;
+
+								&:nth-child(1) {
+									margin-bottom: 10px;
+									font-family: "NanumSquare Neo", sans-serif;
+									font-weight: bold;
+								}
+							}
+						}
+					}
+				}
+				.list {
+					a {
+						img {
+							position: relative;
+							top: 2px;
+							margin-right: 5px;
+						}
+						display: block;
+						width: 170px;
+						height: 50px;
+						border-radius: 5px;
+						background-color: #000;
+						color: #fff;
+						text-align: center;
+						font-size: 17px;
+						line-height: 50px;
+						box-sizing: border-box;
+					}
+				}
+				.next {
+					max-width: 30%;
+					a {
+						display: block;
+						width: 100%;
+						height: 100%;
+						display: flex;
+						justify-content: right;
+						align-items: center;
+
+						&:hover .img_box {
+							background: url(../img/view_next_h.jpg) no-repeat
+								center center / cover;
+						}
+
+						.img_box {
+							width: 29px;
+							height: 29px;
+							background: url(../img/view_next.png) no-repeat
+								center center / cover;
+							margin-right: 10px;
+						}
+
+						.text_box {
+							width: calc(100% - 40px);
+							p {
+								display: -webkit-box;
+								-webkit-box-orient: vertical;
+								-webkit-line-clamp: 1;
+								overflow: hidden;
+								color: #000;
+
+								&:nth-child(1) {
+									margin-bottom: 10px;
+									font-family: "NanumSquare Neo", sans-serif;
+									font-weight: bold;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	/* view끝 */
+
+	/*기념영상 시작*/
+	.sub_video {
+		padding: 40px 0px;
+		.inner {
+			width: 100%;
+			padding: 0px 2.5%;
+			box-sizing: border-box;
+
+			.video_box {
+				margin-bottom: 50px;
+			}
+
+			.list {
+				h5 {
+					font-size: 24px;
+					margin-bottom: 60px;
+				}
+
+				ul {
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					li {
+						width: 48%;
+						margin-bottom: 20px;
+
+						.text_box {
+							p {
+								font-size: 16px;
+							}
+
+							span {
+								font-size: 16px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	/*기념영상 끝*/
+
+	/* 사업소개 */
+	.sub_introductionBusiness {
+		width: 100%;
+		padding: 60px 0px;
+		.inner {
+			width: 100%;
+			padding: 0px 2.5%;
+
+			h5 {
+				font-size: 30px;
+				margin-bottom: 80px;
+			}
+
+			ul {
+				li {
+					width: 40%;
+					height: 500px;
+					&:nth-of-type(odd) {
+						&::before {
+							right: -30%;
+							width: 30%;
+						}
+						&::after {
+							top: 34%;
+							right: -34.5%;
+						}
+					}
+					&:nth-of-type(2n) {
+						&::before {
+							top: 42%;
+							left: -30%;
+							width: 30%;
+						}
+						&::after {
+							top: 35%;
+							left: -34.5%;
+						}
+					}
+					a {
+						display: block;
+						width: 100%;
+						height: 100%;
+						&:hover {
+							.img_box_contain {
+								border: 10px solid #0495e6;
+								.img_box {
+									transform: scale(1.1);
+								}
+							}
+						}
+						.img_box_contain {
+							width: 100%;
+							height: 75%;
+							box-sizing: border-box;
+							overflow: hidden;
+							box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.2);
+
+							.img_box {
+								width: 100%;
+								height: 100%;
+								background-color: #555;
+								background: url(../img/02.jpg) no-repeat center
+									center / cover;
+								transition: all 0.2s;
+							}
+						}
+
+						.text_box {
+							width: 100%;
+							height: 25%;
+							box-sizing: border-box;
+							padding: 30px 0px;
+
+							h6 {
+								font-size: 20px;
+								line-height: 1.5;
+								display: -webkit-box;
+								-webkit-box-orient: vertical;
+								-webkit-line-clamp: 2;
+								overflow: hidden;
+								color: #000;
+								word-break: keep-all;
+								margin-bottom: 10px;
+							}
+							p {
+								font-size: 16px;
+								color: #585858;
+								span {
+									display: inline-block;
+									width: 50px;
+									height: 30px;
+									border-radius: 5px;
+									background-color: #0495e6;
+									color: #fff;
+									text-align: center;
+									line-height: 30px;
+									font-size: 14px;
+									margin-right: 5px;
+								}
+							}
+						}
+					}
+				}
+
+				&::before {
+					content: "";
+					display: block;
+					position: absolute;
+					width: 1px;
+					height: 100%;
+					top: 0px;
+					left: 50%;
+					transform: translateX(-50%);
+					background-color: #d0d0d0;
+				}
+
+				&::after {
+					content: "";
+					display: block;
+					clear: both;
+				}
+			}
+		}
+	}
+	/* 사업소개 끝 */
+
+	/* ceo인사 */
+	.sub_ceo {
+		&::after {
+			display: none;
+		}
+		.inner {
+			width: 100%;
+			padding: 60px 4%;
+			.img_box {
+				width: 100%;
+				text-align: center;
+				margin-bottom: 40px;
+			}
+			.text_box {
+				width: 100%;
+				padding-left: 0px;
+				p {
+					font-size: 18px;
+					line-height: 1.8;
+					margin-bottom: 30px;
+				}
+
+				span {
+					display: block;
+					text-align: right;
+					img {
+						position: relative;
+						top: 10px;
+						display: inline-block;
+						&:nth-of-type(2) {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	/* ceo인사 끝 */
+}
+
+@media screen and (max-width: 800px) {
+	/* 사업소개 */
+	.sub_introductionBusiness {
+		padding: 60px 0px;
+		.inner {
+			h5 {
+				font-size: 30px;
+				margin-bottom: 80px;
+			}
+
+			ul {
+				li {
+					width: 40%;
+					height: 400px;
+					&:nth-of-type(odd) {
+						&::before {
+							right: -30%;
+							width: 30%;
+						}
+						&::after {
+							top: 32%;
+							right: -37.5%;
+						}
+					}
+					&:nth-of-type(2n) {
+						&::before {
+							top: 41%;
+							left: -30%;
+							width: 30%;
+						}
+						&::after {
+							top: 32%;
+							left: -37.5%;
+						}
+					}
+					a {
+						display: block;
+						width: 100%;
+						height: 100%;
+						&:hover {
+							.img_box_contain {
+								border: 10px solid #0495e6;
+								.img_box {
+									transform: scale(1.1);
+								}
+							}
+						}
+						.img_box_contain {
+							width: 100%;
+							height: 75%;
+							box-sizing: border-box;
+							overflow: hidden;
+							box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.2);
+
+							.img_box {
+								width: 100%;
+								height: 100%;
+								background-color: #555;
+								background: url(../img/02.jpg) no-repeat center
+									center / cover;
+								transition: all 0.2s;
+							}
+						}
+
+						.text_box {
+							width: 100%;
+							height: 25%;
+							box-sizing: border-box;
+							padding: 30px 0px;
+
+							h6 {
+								font-size: 20px;
+								line-height: 1.5;
+								display: -webkit-box;
+								-webkit-box-orient: vertical;
+								-webkit-line-clamp: 2;
+								overflow: hidden;
+								color: #000;
+								word-break: keep-all;
+								margin-bottom: 10px;
+							}
+							p {
+								font-size: 16px;
+								color: #585858;
+								span {
+									display: inline-block;
+									width: 50px;
+									height: 30px;
+									border-radius: 5px;
+									background-color: #0495e6;
+									color: #fff;
+									text-align: center;
+									line-height: 30px;
+									font-size: 14px;
+									margin-right: 5px;
+								}
+							}
+						}
+					}
+				}
+
+				&::before {
+					content: "";
+					display: block;
+					position: absolute;
+					width: 1px;
+					height: 100%;
+					top: 0px;
+					left: 50%;
+					transform: translateX(-50%);
+					background-color: #d0d0d0;
+				}
+
+				&::after {
+					content: "";
+					display: block;
+					clear: both;
+				}
+			}
+		}
+	}
+	/* 사업소개 끝 */
+}
+
+/* mobile */
+@media screen and (max-width: 575.98px) {
+	/* 공용 sub_top 시작 */
+	.sub_top {
+		height: 340px;
+
+		.inner {
+			.sub_title {
+				p {
+					width: 140px;
+					height: 40px;
+					line-height: 40px;
+					font-size: 14px;
+					margin: 0px auto 20px;
+				}
+
+				h2 {
+					font-size: 40px;
+				}
+			}
+
+			.sub_nav_text {
+				bottom: 20px;
+				font-size: 14px;
+			}
+		}
+	}
+	/* 공용 sub_top 끝 */
+
+	/*사업보도 시작*/
+	.sub_businessReport {
+		padding: 30px 0px;
+
+		.inner {
+			width: 100%;
+			padding: 0px 20px;
+
+			.sub_search {
+				width: 100%;
+				justify-content: start;
+				margin-bottom: 30px;
+
+				form {
+					width: 100%;
+					justify-content: start;
+
+					// 커스텀 설렉박스
+					.area-custom-select {
+						width: 40%;
+						max-width: 150px;
+						height: 50px;
+						font-size: 14px;
+					}
+
+					.custom-select {
+						line-height: 50px;
+					}
+
+					.custom-select-option {
+						height: 50px;
+						line-height: 50px;
+					}
+					// 커스텀 설렉박스
+
+					.search_text {
+						width: 40%;
+						height: 50px;
+						padding: 10px 15px;
+						font-size: 14px;
+					}
+
+					button {
+						width: 50px;
+						height: 50px;
+						line-height: 50px;
+						font-size: 20px;
+					}
+				}
+			}
+
+			.businessReport_content {
+				margin-bottom: 20px;
+				ul {
+					li {
+						width: 47%;
+						height: 220px;
+						margin-bottom: 20px;
+
+						&:nth-of-type(1) a .img_box {
+							background: url("../img/02.jpg") no-repeat center
+								center / cover;
+						}
+
+						a {
+							.img_box {
+								height: 50%;
+							}
+
+							.text_box {
+								height: 50%;
+								padding: 15px 10px;
+
+								span {
+									margin-bottom: 5px;
+									font-size: 12px;
+								}
+
+								p {
+									font-size: 14px;
+								}
+
+								.date {
+									bottom: 0px;
+									right: 10px;
+									font-size: 14px;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.sub_nav {
+				width: 100%;
+
+				a {
+					width: 30px;
+					height: 30px;
+					line-height: 30px;
+					margin-right: 10px;
+					border: 1px solid #c9c9c9;
+					color: #737373;
+					font-size: 20px;
+					transition: all 0.2s;
+
+					&.sub_first {
+						font-size: 16px;
+					}
+
+					&.sub_last {
+						font-size: 16px;
+					}
+
+					&:hover {
+						border: 1px solid #00499b;
+					}
+				}
+
+				ul {
+					display: flex;
+					justify-content: center;
+
+					li:nth-child(n + 4) {
+						display: none;
+					}
+
+					li a {
+						border: none;
+						color: #000;
+						font-size: 16px;
+						border: 1px solid #fff;
+					}
+
+					.active a {
+						background-color: #00499b;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	/*사업보도 끝*/
+
+	/* 이벤트 및 공모전 */
+
+	.sub_event {
+		width: 100%;
+		padding: 50px 0px;
+
+		.inner {
+			.mainSlide {
+				.main_swiper-container {
+					height: 400px;
+					padding: 0px 50px;
+
+					.swiper-wrapper {
+						.swiper-slide {
+							width: 100%;
+							margin-right: 50px;
+							&::before {
+								display: none;
+							}
+							&:hover {
+								box-shadow: none;
+							}
+						}
+					}
+				}
+			}
+
+			.sub_nav {
+				width: 100%;
+
+				a {
+					width: 30px;
+					height: 30px;
+					line-height: 30px;
+					margin-right: 10px;
+					border: 1px solid #c9c9c9;
+					color: #737373;
+					font-size: 20px;
+					transition: all 0.5s;
+
+					&.sub_first {
+						font-size: 16px;
+					}
+
+					&.sub_last {
+						font-size: 16px;
+					}
+
+					&:hover {
+						border: 1px solid #00499b;
+					}
+				}
+
+				ul {
+					display: flex;
+					justify-content: center;
+
+					li:nth-child(n + 4) {
+						display: none;
+					}
+
+					li a {
+						border: none;
+						color: #000;
+						font-size: 16px;
+						border: 1px solid #fff;
+					}
+
+					.active a {
+						background-color: #00499b;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	/* 이벤트 및 공모전 끝 */
+
+	/* 금고소식 */
+	.sub_newsSafe {
+		width: 100%;
+		padding: 50px 0px;
+
+		.inner {
+			.mainSlide {
+				.main_swiper-container {
+					height: 400px;
+					padding: 0px 50px;
+
+					.swiper-wrapper {
+						.swiper-slide {
+							width: 100%;
+							margin-right: 50px;
+							&::before {
+								display: none;
+							}
+							&:hover {
+								box-shadow: none;
+							}
+						}
+					}
+				}
+			}
+
+			.sub_nav {
+				width: 100%;
+
+				a {
+					width: 30px;
+					height: 30px;
+					line-height: 30px;
+					margin-right: 10px;
+					border: 1px solid #c9c9c9;
+					color: #737373;
+					font-size: 20px;
+					transition: all 0.5s;
+
+					&.sub_first {
+						font-size: 16px;
+					}
+
+					&.sub_last {
+						font-size: 16px;
+					}
+
+					&:hover {
+						border: 1px solid #00499b;
+					}
+				}
+
+				ul {
+					display: flex;
+					justify-content: center;
+
+					li:nth-child(n + 4) {
+						display: none;
+					}
+
+					li a {
+						border: none;
+						color: #000;
+						font-size: 16px;
+						border: 1px solid #fff;
+					}
+
+					.active a {
+						background-color: #00499b;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	/* 금고소식 끝 */
+
+	/* 공지사항 시작 */
+	.sub_notice {
+		padding: 30px 0px;
+
+		.inner {
+			.sub_search {
+				width: 100%;
+				justify-content: start;
+				margin-bottom: 10px;
+				flex-wrap: wrap;
+
+				.count {
+					position: relative;
+					display: block;
+					width: 100%;
+					left: 2.5%;
+					font-size: 14px;
+				}
+
+				form {
+					width: 100%;
+					justify-content: start;
+					margin-bottom: 20px;
+
+					// 커스텀 설렉박스
+					.area-custom-select {
+						width: 40%;
+						max-width: 150px;
+						height: 50px;
+						font-size: 14px;
+					}
+
+					.custom-select {
+						line-height: 50px;
+					}
+
+					.custom-select-option {
+						height: 50px;
+						line-height: 50px;
+					}
+					// 커스텀 설렉박스
+
+					.search_text {
+						width: 40%;
+						height: 50px;
+						padding: 10px 15px;
+						font-size: 14px;
+					}
+
+					button {
+						width: 50px;
+						height: 50px;
+						line-height: 50px;
+						font-size: 20px;
+					}
+				}
+			}
+
+			.sub_nav {
+				width: 100%;
+
+				a {
+					width: 30px;
+					height: 30px;
+					line-height: 30px;
+					margin-right: 10px;
+					border: 1px solid #c9c9c9;
+					color: #737373;
+					font-size: 20px;
+					transition: all 0.5s;
+
+					&.sub_first {
+						font-size: 16px;
+					}
+
+					&.sub_last {
+						font-size: 16px;
+					}
+
+					&:hover {
+						border: 1px solid #00499b;
+					}
+				}
+
+				ul {
+					display: flex;
+					justify-content: center;
+
+					li:nth-child(n + 4) {
+						display: none;
+					}
+
+					li a {
+						border: none;
+						color: #000;
+						font-size: 16px;
+						border: 1px solid #fff;
+					}
+
+					.active a {
+						background-color: #00499b;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+	/* 공지사항 끝 */
+
+	/* view */
+	.sub_view {
+		padding: 40px 0px;
+		.inner {
+			padding: 0px 20px;
+			.title {
+				padding: 15px;
+				.left {
+					h5 {
+						font-size: 16px;
+					}
+				}
+			}
+
+			.content {
+				img {
+					display: block;
+					margin: 0px auto 30px;
+				}
+				padding: 30px 0px;
+				margin-bottom: 30px;
+				p {
+					line-height: 1.5;
+					font-size: 16px;
+					margin-bottom: 30px;
+				}
+			}
+
+			.view_nav {
+				.prev {
+					a {
+						.text_box {
+							display: none;
+						}
+					}
+				}
+				.list {
+					a {
+						display: block;
+						width: 140px;
+					}
+				}
+				.next {
+					a {
+						.text_box {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+	/* view끝 */
+
+	/*기념영상 시작*/
+	.sub_video {
+		padding: 30px 0px;
+		.inner {
+			.video_box {
+				margin-bottom: 30px;
+			}
+
+			.list {
+				h5 {
+					font-size: 16px;
+					margin-bottom: 30px;
+				}
+
+				ul {
+					li {
+						width: 100%;
+						margin-bottom: 20px;
+
+						.text_box {
+							p {
+								font-size: 15px;
+							}
+
+							span {
+								font-size: 15px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	/*기념영상 끝*/
+
+	/* 사업소개 */
+	.sub_introductionBusiness {
+		padding: 40px 0px;
+		.inner {
+			padding: 0px 20px;
+			h5 {
+				font-size: 20px;
+				margin-bottom: 40px;
+			}
+
+			ul {
+				&::before {
+					display: none;
+				}
+				li {
+					width: 100%;
+					height: 390px;
+					&::before {
+						display: none;
+					}
+					&::after {
+						display: none;
+					}
+					&:nth-of-type(odd) {
+						margin: 0px;
+						float: none;
+						margin-bottom: 20px;
+					}
+					&:nth-of-type(2n) {
+						margin: 0px;
+						float: none;
+						margin-bottom: 20px;
+					}
+					a {
+						&:hover {
+							.img_box_contain {
+								border: none;
+							}
+						}
+						.img_box_contain {
+							height: 70%;
+						}
+
+						.text_box {
+							height: 30%;
+							padding: 20px 5px;
+
+							h6 {
+								font-size: 16px;
+								margin-bottom: 10px;
+							}
+							p {
+								font-size: 14px;
+								color: #585858;
+								span {
+									display: inline-block;
+									width: 40px;
+									height: 25px;
+									line-height: 25px;
+									font-size: 14px;
+									margin-right: 5px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	/* 사업소개 끝 */
+
+	/* ceo인사 */
+	.sub_ceo {
+		.inner {
+			width: 100%;
+			padding: 40px 15px;
+			.img_box {
+				margin-bottom: 30px;
+				img {
+					width: 100%;
+				}
+			}
+			.text_box {
+				width: 100%;
+				p {
+					font-size: 16px;
+				}
+
+				span {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	/* ceo인사 끝 */
+}
