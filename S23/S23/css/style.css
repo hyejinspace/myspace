@@ -1,0 +1,1944 @@
+@charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+@font-face {
+  font-family: "yg-jalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Samsung Sharp Sans";
+  src: url("../fonts/SamsungSharpSans.woff2") format("woff2"), url("../fonts/SamsungSharpSans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Samsung Sharp Sans Bold";
+  src: url("../fonts/SamsungSharpSans-Bold.woff2") format("woff2"), url("../fonts/SamsungSharpSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@-webkit-keyframes fadeInUp2 {
+  from {
+    opacity: 0;
+    transform: translate3d(-50%, 35px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+@keyframes fadeInUp2 {
+  from {
+    opacity: 0;
+    transform: translate3d(-50%, 35px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+.fadeInUp2 {
+  -webkit-animation-name: fadeInUp2;
+  animation-name: fadeInUp2;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background-color: #eb224c;
+    color: #fff;
+  }
+  50% {
+    background-color: #0a5155;
+    color: #56f5ff;
+  }
+  100% {
+    background-color: #eb224c;
+    color: #fff;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: #eb224c;
+    color: #fff;
+  }
+  50% {
+    background-color: #0a5155;
+    color: #56f5ff;
+  }
+  100% {
+    background-color: #eb224c;
+    color: #fff;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  letter-spacing: -0.75px;
+  box-sizing: border-box;
+  color: #000;
+  -webkit-overflow-scrolling: touch;
+}
+
+img {
+  vertical-align: middle;
+}
+
+select, button, textarea, input[type=text], input[type=number] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+select:focus, input:focus, button:focus, textarea:focus {
+  outline: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+textarea {
+  resize: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+sub, sup {
+  font-size: 75%;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+html, body {
+  width: 100%;
+  min-width: 320px;
+  font-size: 20px;
+  font-family: "Pretendard";
+  background: #fff;
+}
+
+#thephone .mo {
+  display: none !important;
+}
+#thephone .header {
+  width: 100%;
+  height: 86px;
+  background-color: #0a5155;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+}
+#thephone .header .wrap {
+  width: 95%;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+#thephone .header .wrap .flipdown {
+  width: auto;
+  height: auto;
+  margin-right: 15px;
+}
+#thephone .header .wrap .flipdown .rotor-group:first-child {
+  display: none;
+}
+#thephone .header .wrap .flipdown .rotor-group-heading:before {
+  display: none;
+}
+#thephone .header .wrap .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):before, #thephone .header .wrap .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):after {
+  background-color: #fff;
+}
+#thephone .header .wrap .flipdown .rotor-leaf, #thephone .header .wrap .flipdown .rotor {
+  width: 38px;
+  height: 50px;
+}
+#thephone .header .wrap .flipdown .rotor:after, #thephone .header .wrap .flipdown .rotor-top {
+  width: 38px;
+  height: 23px;
+}
+#thephone .header .wrap .flipdown .rotor-bottom, #thephone .header .wrap .flipdown .rotor-leaf-front, #thephone .header .wrap .flipdown .rotor-leaf-rear {
+  width: 38px;
+  height: 28px;
+}
+#thephone .header .wrap .flipdown .rotor-top, #thephone .header .wrap .flipdown .rotor-leaf-front {
+  line-height: 47px;
+}
+#thephone .header .wrap .flipdown .rotor {
+  font-size: 45px;
+}
+#thephone .header .wrap .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3)::after {
+  left: 92px;
+  width: 8px;
+  height: 8px;
+  bottom: 13px;
+}
+#thephone .header .wrap .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3)::before {
+  left: 92px;
+  width: 8px;
+  height: 8px;
+  bottom: 30px;
+}
+#thephone .header .wrap .flipdown.flipdown__theme-dark .rotor, #thephone .header .wrap .flipdown.flipdown__theme-dark .rotor-top, #thephone .header .wrap .flipdown.flipdown__theme-dark .rotor-leaf-front,
+#thephone .header .wrap .flipdown.flipdown__theme-dark .rotor-bottom, #thephone .header .wrap .flipdown.flipdown__theme-dark .rotor-leaf-rear {
+  background-color: #fff;
+  color: #000;
+}
+#thephone .header .wrap .flipdown.flipdown__theme-dark .rotor:after {
+  border-top: 0;
+}
+#thephone .header .wrap .flipdown .rotor-bottom, #thephone .header .wrap .flipdown .rotor:after,
+#thephone .header .wrap .flipdown .rotor-top {
+  border-radius: 0;
+}
+#thephone .header .wrap .notice {
+  display: flex;
+  align-items: flex-start;
+  margin-right: 10px;
+}
+#thephone .header .wrap .notice span {
+  display: inline-block;
+  color: #fff;
+  font-size: 22px;
+  text-align: right;
+  line-height: 1.2;
+  font-weight: 300;
+  margin-top: 5px;
+}
+#thephone .header .wrap .right_container p {
+  font-size: 22px;
+  color: #fff;
+  line-height: 1.2;
+}
+#thephone .header .wrap .right_container p b {
+  color: #3ef8f1;
+  font-weight: 800;
+  display: inline-block;
+}
+#thephone .header .wrap .right_container .progressbar, #thephone .header .wrap .right_container .progressbar > div:empty {
+  border-radius: 0px;
+  height: 6px;
+}
+#thephone .header .wrap .right_container .progressbar {
+  position: relative;
+  margin-top: 12px;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 6px;
+  overflow: hidden;
+}
+#thephone .header .wrap .right_container .progressbar > div:empty {
+  background-color: #3ef8f1;
+}
+#thephone .header .wrap .right_container .bottom_line {
+  background-color: #fff;
+}
+#thephone .sc1 {
+  padding-top: 95px;
+  background-color: #18181a;
+}
+#thephone .sc1 .wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  min-width: 768px;
+}
+#thephone .sc1 .wrap .visual_bg {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  opacity: 0;
+}
+#thephone .sc1 .wrap .visual {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 768px;
+  height: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  z-index: 5;
+  text-align: center;
+}
+#thephone .sc1 .wrap .visual img {
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+}
+#thephone .sc1 .wrap .visual.pc .img02 {
+  margin-top: -100px;
+}
+#thephone .sc1 .wrap .info {
+  position: absolute;
+  left: 50%;
+  bottom: 80px;
+  width: 100%;
+  text-align: center;
+  transform: translateX(-50%);
+  font-size: 30px;
+  z-index: 10;
+}
+#thephone .sc1 .wrap .info span {
+  display: inline-block;
+  color: #fff;
+}
+#thephone .sc2 {
+  background-color: #0a5155;
+  padding: 75px 0;
+}
+#thephone .sc2 .wrap {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 768px;
+}
+#thephone .sc2 .wrap h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 60px;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 500;
+  color: #56f5ff;
+  text-align: center;
+  padding: 0 40px;
+  margin-bottom: 25px;
+}
+#thephone .sc2 .wrap h2::before {
+  content: "";
+  display: block;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background-color: #56f5ff;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 12px;
+}
+#thephone .sc2 .wrap h2::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 14px;
+  height: 14px;
+  background-color: #56f5ff;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-bottom: 12px;
+}
+#thephone .form .input {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 3px;
+  height: 60px;
+  padding: 12px 0;
+  max-width: 560px;
+  margin: 0 auto 20px;
+}
+#thephone .form .input:last-child {
+  padding-bottom: 0;
+}
+#thephone .form .input .letter {
+  display: inline-block;
+  width: 30px;
+}
+#thephone .form .input .input-title {
+  font-size: 30px;
+  text-align: center;
+  width: 125px;
+  border-right: 1px solid #999;
+  font-weight: 600;
+  color: #222222;
+}
+#thephone .form .input input[type=text] {
+  width: calc(100% - 125px);
+  font-size: 30px;
+  padding: 0 15px;
+}
+#thephone .form .input select {
+  position: relative;
+  display: inline-block;
+  width: calc(100% - 125px);
+  padding: 0 15px;
+  font-size: 30px;
+  border-radius: 5px;
+  color: #999999;
+  background-image: url(../img/select.png);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: 95% center;
+}
+#thephone .form .input select option {
+  display: inline-block;
+  width: 100%;
+  font-size: 30px;
+}
+#thephone .form .input .input-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: calc(100% - 125px);
+}
+#thephone .form .input .input-wrap input[type=text] {
+  width: calc(33.333% - 13.3333px);
+}
+#thephone .form .input .input-wrap span {
+  width: 20px;
+  display: inline-block;
+  text-align: center;
+  font-size: 30px;
+}
+#thephone .form .checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 35px;
+}
+#thephone .form .checkbox input[type=checkbox] {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+#thephone .form .checkbox input[type=checkbox] + label {
+  position: relative;
+  font-size: 20px;
+  color: #fff;
+}
+#thephone .form .checkbox a {
+  display: inline-block;
+  color: #fff;
+  margin-left: 4px;
+  font-size: 18px;
+}
+#thephone .form .send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  text-align: center;
+  width: 320px;
+  height: 65px;
+  background-color: #56f5ff;
+  border-radius: 50px;
+  margin: 0 auto;
+  font-weight: 800;
+  color: #083b3e;
+  cursor: pointer;
+}
+#thephone .sc3 {
+  background-color: #e1f4f5;
+  padding: 80px 0;
+}
+#thephone .sc3 .wrap {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 0 24px;
+}
+#thephone .sc3 .wrap .img {
+  padding-bottom: 60px;
+  text-align: center;
+}
+#thephone .sc3 .wrap .img img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+#thephone .sc3 .wrap h3 {
+  font-size: 60px;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 500;
+  padding-bottom: 10px;
+  text-align: center;
+  color: #083b3e;
+  letter-spacing: -1px;
+}
+#thephone .sc3 .wrap h3 span {
+  color: #eb224c;
+  letter-spacing: 0;
+}
+#thephone .sc3 .wrap .table {
+  margin-bottom: 60px;
+}
+#thephone .sc3 .wrap table {
+  width: 100%;
+}
+#thephone .sc3 .wrap table thead th {
+  font-size: 26px;
+  background-color: #0a5155;
+  color: #56f5ff;
+  text-align: center;
+  border-radius: 14px 14px 0 0;
+  padding: 5px 0;
+  border-right: 1px solid #fff;
+}
+#thephone .sc3 .wrap table thead th:last-child {
+  border-right: none;
+}
+#thephone .sc3 .wrap table thead .th {
+  background-color: transparent;
+}
+#thephone .sc3 .wrap table tbody .th {
+  color: #083b3e;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 5px 0;
+  background-color: transparent;
+}
+#thephone .sc3 .wrap table tbody th {
+  height: 50px;
+}
+#thephone .sc3 .wrap table tbody td {
+  font-size: 24px;
+  color: #083b3e;
+  text-align: center;
+  border-right: 1px solid #e1f4f5;
+  border-bottom: 1px solid #e1f4f5;
+  padding: 5px 0;
+  background-color: #fff;
+}
+#thephone .sc3 .wrap table tbody td small {
+  color: #083b3e;
+}
+#thephone .sc3 .wrap table tbody tr.red th, #thephone .sc3 .wrap table tbody tr.red td {
+  color: #eb224c;
+  font-weight: 600;
+}
+#thephone .sc3 .wrap table tbody tr.last td {
+  border-bottom: none;
+}
+#thephone .sc3 .wrap table:nth-child(2) {
+  padding-bottom: 45px;
+}
+#thephone .sc3 .wrap p {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #666;
+  padding-bottom: 40px;
+}
+#thephone .sc4 {
+  padding: 100px 0;
+  background-color: #63d2d9;
+}
+#thephone .sc4 .wrap {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 0 24px;
+}
+#thephone .sc4 .wrap span.subtext {
+  display: block;
+  font-size: 24px;
+  font-family: "Samsung Sharp Sans Bold";
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#thephone .sc4 .wrap span.subtext span {
+  font-family: "Samsung Sharp Sans";
+  font-weight: 300;
+}
+#thephone .sc4 .wrap h3 {
+  font-size: 60px;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 500;
+  padding-bottom: 50px;
+  text-align: center;
+  color: #083b3e;
+}
+#thephone .sc4 .wrap h3 span {
+  color: #eb224c;
+  margin: 0 10px;
+}
+#thephone .sc4 .wrap .circle {
+  display: block;
+  width: 85px;
+  height: 85px;
+  background-color: #0a5155;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 28px;
+  text-align: center;
+  line-height: 85px;
+  margin: 0 auto 25px;
+}
+#thephone .sc4 .wrap .conWrap .box {
+  position: relative;
+  width: 100%;
+  margin-right: 20px;
+  padding: 50px 40px 30px;
+  border-radius: 16px;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#thephone .sc4 .wrap .conWrap .box:last-child {
+  margin-right: 0;
+}
+#thephone .sc4 .wrap .conWrap .box .tag {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  border-radius: 16px 0 16px 0;
+  padding: 5px 20px;
+  background-color: #eb224c;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+#thephone .sc4 .wrap .conWrap .box p {
+  font-size: 20px;
+  color: #333333;
+  text-align: center;
+  font-weight: 400;
+}
+#thephone .sc4 .wrap .conWrap .box .title {
+  font-size: 30px;
+  color: #0a5155;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+#thephone .sc4 .wrap .conWrap .box .title span {
+  color: #eb224c;
+}
+#thephone .sc4 .wrap .conWrap .box .sub {
+  font-size: 24px;
+  color: #0a5155;
+  text-align: center;
+  font-weight: 700;
+}
+#thephone .sc4 .wrap .conWrap .box img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+#thephone .sc4 .wrap .conWrap .box .flex {
+  display: flex;
+  justify-content: center;
+}
+#thephone .sc4 .wrap .conWrap .box .flex .img {
+  width: 35%;
+  text-align: center;
+}
+#thephone .sc4 .wrap .conWrap .box .flex .img p {
+  font-size: 24px;
+  font-weight: bolder;
+  padding-top: 15px;
+}
+#thephone .sc4 .wrap .conWrap .box .flex .or {
+  margin-top: 60px;
+  font-size: 72px;
+  color: #eb224c;
+  font-weight: bolder;
+  width: 18%;
+}
+#thephone .sc4 .wrap .box02 {
+  position: relative;
+  width: 100%;
+  margin-right: 20px;
+  padding: 30px;
+  border-radius: 16px;
+  background-color: #fff;
+  text-align: center;
+  margin-bottom: 70px;
+}
+#thephone .sc4 .wrap .box02 .title {
+  display: inline-block;
+  font-size: 24px;
+  text-align: center;
+  background-color: #eb224c;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 50px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+#thephone .sc4 .wrap .box02 .list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+#thephone .sc4 .wrap .box02 .list li {
+  width: 33.3333%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#thephone .sc4 .wrap .box02 .list li .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 160px;
+}
+#thephone .sc4 .wrap .box02 .list li img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto 10px;
+}
+#thephone .sc4 .wrap .box02 .list li p {
+  font-size: 20px;
+  color: #0a5155;
+  text-align: center;
+  font-weight: 600;
+}
+#thephone .sc4 .wrap .box02 .list li p span {
+  font-size: 110%;
+  font-weight: 300;
+  color: #0a5155;
+}
+#thephone .sc4 .wrap .box02 h5 {
+  padding-bottom: 5px;
+  text-align: center;
+}
+#thephone .sc4 .wrap .box02 h5 span {
+  display: inline-block;
+  font-family: "Samsung Sharp Sans Bold";
+  font-size: 24px;
+}
+#thephone .sc4 .wrap .box02 h5 .point {
+  color: #0a5155;
+  font-family: "Pretendard";
+}
+#thephone .sc4 .wrap .box02 h5 small {
+  font-size: 18px;
+  font-weight: 500;
+}
+#thephone .sc4 .wrap .box02 h4 {
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+#thephone .sc4 .wrap .box02 h4 span {
+  color: #ff3369;
+}
+#thephone .sc4 .wrap .box02.type02 {
+  padding: 50px 30px;
+  margin-bottom: 0;
+}
+#thephone .sc4 .wrap .box03 {
+  background-color: #eeeeee;
+  max-width: 540px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+#thephone .sc4 .wrap .box03 span {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 33.3333%;
+  text-align: center;
+}
+#thephone .sc4 .wrap .box03 span .img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+#thephone .sc4 .wrap .box03 span img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+#thephone .sc4 .wrap .box03 p {
+  font-size: 20px;
+  font-weight: 500;
+}
+#thephone .sc4 .wrap .plus {
+  text-align: center;
+  font-size: 44px;
+  color: #eb224c;
+  padding-bottom: 15px;
+  line-height: 20px;
+}
+#thephone .sc4 .wrap .info {
+  display: flex;
+  align-items: start;
+  padding-bottom: 10px;
+}
+#thephone .sc4 .wrap .info span {
+  display: inline-block;
+  width: 100px;
+  height: 38px;
+  background-color: #eee;
+  border-radius: 50px;
+  font-size: 20px;
+  line-height: 38px;
+  font-weight: 500;
+  text-align: center;
+  margin-right: 10px;
+  color: #211217;
+}
+#thephone .sc4 .wrap .info p {
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 500;
+  text-align: left;
+  margin-top: 3px;
+  color: #211217;
+}
+#thephone .sc4 .wrap .half {
+  display: flex;
+  flex-wrap: wrap;
+}
+#thephone .sc4 .wrap .half span {
+  display: inline-block;
+  width: calc(50% - 10px);
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+#thephone .sc4 .wrap .half span:nth-child(2n) {
+  margin-right: 0;
+}
+#thephone .sc4 .wrap .half span .img {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 70px;
+}
+#thephone .sc4 .wrap .half span img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+}
+#thephone .sc4 .wrap .half span .tit {
+  font-size: 24px;
+  padding-bottom: 10px;
+  color: #444444;
+  text-align: left;
+  font-weight: 500;
+}
+#thephone .sc4 .wrap .half span .tit b {
+  color: #444444;
+}
+#thephone .sc4 .wrap .half span ul li {
+  position: relative;
+  padding-left: 16px;
+  text-align: left;
+  color: #444444;
+  font-weight: 500;
+}
+#thephone .sc4 .wrap .half span ul li::before {
+  content: "※";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.3;
+  padding-bottom: 5px;
+}
+#thephone .sc4 .wrap .box04 {
+  background-color: #eeeeee;
+  max-width: 540px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 35px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+#thephone .sc4 .wrap .box04 span {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+}
+#thephone .sc4 .wrap .box04 span p {
+  font-size: 20px;
+}
+#thephone .sc4 .wrap .box04 span .or {
+  display: block;
+  width: 27px;
+  height: 27px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  line-height: 27px;
+  border-radius: 50%;
+  font-size: 14px;
+  margin: 0 10px;
+  padding-right: 2px;
+}
+#thephone .sc4 .wrap .notice {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 15px;
+}
+#thephone .sc4_2 {
+  padding: 100px 0 0;
+  overflow: hidden;
+}
+#thephone .sc4_2 .wrap {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 0 24px;
+}
+#thephone .sc4_2 .wrap span.subtext {
+  display: block;
+  font-size: 24px;
+  font-family: "Samsung Sharp Sans Bold";
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 10px;
+}
+#thephone .sc4_2 .wrap span.subtext span {
+  font-family: "Samsung Sharp Sans";
+  font-weight: 300;
+}
+#thephone .sc4_2 .wrap h3 {
+  font-size: 60px;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 500;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #083b3e;
+}
+#thephone .sc4_2 .wrap h3 span {
+  color: #eb224c;
+  margin: 0;
+}
+#thephone .sc4_2 .wrap p.text {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 30px;
+  color: #0a5155;
+  text-align: center;
+}
+#thephone .sc4_2 .wrap .img {
+  text-align: center;
+}
+#thephone .sc4_2 .wrap .img img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+#thephone .sc4_3 {
+  padding: 100px 0 0;
+  background-color: #e1f4f5;
+  overflow: hidden;
+}
+#thephone .sc4_3 .wrap {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 0 24px;
+}
+#thephone .sc4_3 .wrap span.subtext {
+  display: block;
+  font-size: 24px;
+  font-family: "Samsung Sharp Sans Bold";
+  font-weight: 600;
+  text-align: center;
+  padding-bottom: 10px;
+  color: #232323;
+  opacity: 0.5;
+}
+#thephone .sc4_3 .wrap span.subtext span {
+  font-family: "Samsung Sharp Sans";
+  font-weight: 300;
+  font-weight-color: #232323;
+}
+#thephone .sc4_3 .wrap h3 {
+  font-size: 60px;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 500;
+  padding-bottom: 60px;
+  text-align: center;
+  color: #083b3e;
+}
+#thephone .sc4_3 .wrap h3 span {
+  color: #eb224c;
+  margin: 0 10px;
+}
+#thephone .sc4_3 .wrap p.text {
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  color: #0a5155;
+  text-align: center;
+}
+#thephone .sc4_3 .wrap .img {
+  text-align: center;
+}
+#thephone .sc4_3 .wrap .img img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  margin: 0 auto;
+}
+#thephone .sc5 {
+  padding: 100px 0;
+}
+#thephone .sc5 .wrap {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 0 24px;
+}
+#thephone .sc5 .wrap h2 {
+  font-size: 60px;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 500;
+  text-align: center;
+}
+#thephone .sc5 .wrap h2 span {
+  color: #eb224c;
+}
+#thephone .sc5 .wrap p {
+  font-size: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+#thephone .sc5 .wrap .sc5_swiper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#thephone .sc5 .wrap .sc5_swiper .swiper-container {
+  width: calc(100% - 120px);
+}
+#thephone .sc5 .wrap .sc5_swiper .swiper-container .swiper-slide {
+  display: flex;
+  align-items: start;
+}
+#thephone .sc5 .wrap .sc5_swiper .swiper-container .swiper-slide img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+}
+#thephone .sc5 .wrap .sc5_swiper .swiper-container .swiper-slide span {
+  display: inline-block;
+  margin-left: 20px;
+}
+#thephone .sc5 .wrap .sc5_swiper .swiper-container .swiper-slide span .tit {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 24px;
+  border-bottom: 2px solid #083b3e;
+  color: #083b3e;
+  margin-bottom: 10px;
+}
+#thephone .sc5 .wrap .sc5_swiper .swiper-container .swiper-slide span .flex {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#thephone .sc5 .wrap .sc5_swiper .swiper-container .swiper-slide span .flex small {
+  display: inline-block;
+  color: #999999;
+  font-size: 18px;
+  margin-right: 10px;
+}
+#thephone .sc5 .wrap .sc5_swiper .swiper-container .swiper-slide span .flex .rating {
+  display: flex;
+  align-items: center;
+}
+#thephone .sc5 .wrap .sc5_swiper .swiper-container .swiper-slide span p {
+  font-size: 22px;
+  line-height: 1.4;
+  text-align: left;
+  font-weight: 500;
+  padding-bottom: 0;
+}
+#thephone .sc5 .wrap .sc5_swiper .swiper-button-next, #thephone .sc5 .wrap .sc5_swiper .swiper-button-prev {
+  position: static;
+  width: 18px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#thephone .sc5 .wrap .sc5_swiper .swiper-button-next {
+  background-image: url(../img/swiper_next.png);
+}
+#thephone .sc5 .wrap .sc5_swiper .swiper-button-prev {
+  background-image: url(../img/swiper_prev.png);
+}
+#thephone .sc6 {
+  background-color: #eeeeee;
+  padding: 80px 0;
+}
+#thephone .sc6 .wrap {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 768px;
+  padding: 0 24px;
+}
+#thephone .sc6 .wrap h2 {
+  font-size: 60px;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 500;
+  padding-bottom: 10px;
+  text-align: center;
+}
+#thephone .sc6 .wrap h2 span {
+  color: #eb224c;
+}
+#thephone .sc6 .wrap .border {
+  border-radius: 20px;
+  overflow: hidden;
+}
+#thephone .sc6 .wrap .border .top {
+  display: flex;
+  background-color: #63d2d9;
+}
+#thephone .sc6 .wrap .border .top span {
+  display: inline-block;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 0;
+  width: 190px;
+  font-weight: 600;
+}
+#thephone .sc6 .wrap .border .top span:nth-child(1) {
+  width: 135px;
+}
+#thephone .sc6 .wrap .border .sc6_swiper {
+  font-size: 24px;
+  background-color: #fff;
+  height: 450px;
+  padding: 10px 0;
+}
+#thephone .sc6 .wrap .border .sc6_swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#thephone .sc6 .wrap .border .sc6_swiper .swiper-slide > div {
+  text-align: center;
+  width: 190px;
+  font-weight: 500;
+}
+#thephone .sc6 .wrap .border .sc6_swiper .name {
+  color: #666666;
+  width: 135px !important;
+}
+#thephone .sc6 .wrap .border .sc6_swiper .date {
+  color: #999;
+  font-weight: 300 !important;
+}
+#thephone .sc6 .wrap .border .sc6_swiper .date span {
+  display: inline-block;
+}
+#thephone .sc6 .wrap .border .sc6_swiper .done {
+  text-align: center;
+}
+#thephone .sc6 .wrap .border .sc6_swiper .done span {
+  display: inline-block;
+  margin: 0 auto;
+  color: #eb224c;
+  border: 2px solid #eb224c;
+  border-radius: 50px;
+  padding: 5px 15px;
+  text-align: center;
+  font-weight: 600;
+  min-width: 119px;
+}
+#thephone .sc6 .wrap .border .sc6_swiper .done.gray span {
+  color: #666;
+  border: 2px solid #666;
+}
+#thephone .eventGo {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+#thephone .eventGo button {
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 12px;
+  background-color: #eb224c;
+  font-family: "Samsung Sharp Sans Bold";
+  color: #fff;
+  font-size: 36px;
+  font-weight: 300;
+  cursor: pointer;
+}
+#thephone .eventGo button span {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: #91f8ff;
+  font-size: 48px;
+  font-family: "Black Han Sans", sans-serif;
+  font-weight: 500;
+  margin-left: 10px;
+}
+#thephone .eventGo button span::after {
+  display: block;
+  position: relative;
+  content: "";
+  top: -3px;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  background-image: url(../img/event_arrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#thephone .footer {
+  background: #eee;
+  padding: 40px 0 60px;
+}
+#thephone .footer .img-footer {
+  text-align: center;
+}
+#thephone .footer ul {
+  text-align: center;
+  margin-top: 30px;
+}
+#thephone .footer ul li {
+  display: inline-block;
+  color: #494949;
+  font-size: 13px;
+  margin: 0 10px;
+}
+#thephone .footer .copyright {
+  color: #494949;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+}
+#thephone .bottomFix {
+  position: fixed;
+  right: 30px;
+  bottom: 60px;
+  display: block;
+  z-index: 101;
+}
+#thephone .bottomFix .modalBtn {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #eb224c;
+  color: #fff;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  cursor: pointer;
+  -webkit-animation: blink 1.2s infinite;
+          animation: blink 1.2s infinite;
+  -webkit-animation-timing-function: step-start;
+          animation-timing-function: step-start;
+}
+#thephone .bottomFix .topBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #474747;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 800;
+  position: relative;
+  cursor: pointer;
+}
+#thephone .bottomFix .topBtn::before {
+  content: "";
+  position: relative;
+  display: block;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+  margin-bottom: 5px;
+}
+#thephone .modal {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 900;
+}
+#thephone .modal .wrap {
+  position: relative;
+  width: 80%;
+  max-width: 640px;
+  margin: 0 auto;
+  background-color: #0a5155;
+  padding: 80px 0;
+  border-radius: 30px;
+  z-index: 950;
+}
+#thephone .modal .wrap .modalClose {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/modalClose.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  cursor: pointer;
+}
+#thephone .modal.on {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  #thephone .pc {
+    display: none !important;
+  }
+  #thephone .mo {
+    display: block !important;
+  }
+  #thephone .header {
+    height: 21vw;
+  }
+  #thephone .header .wrap {
+    width: 91%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  #thephone .header .wrap .flipdown {
+    margin-right: 0;
+    margin-bottom: 2vw;
+  }
+  #thephone .header .wrap .flipdown .rotor-bottom, #thephone .header .wrap .flipdown .rotor-leaf-front, #thephone .header .wrap .flipdown .rotor-leaf-rear,
+#thephone .header .wrap .flipdown .rotor:after, #thephone .header .wrap .flipdown .rotor-top {
+    width: 7.6vw;
+    height: 5.5vw;
+  }
+  #thephone .header .wrap .flipdown .rotor-group {
+    padding-right: 3vw;
+  }
+  #thephone .header .wrap .flipdown .rotor-group:last-child {
+    padding-right: 0;
+  }
+  #thephone .header .wrap .flipdown .rotor-leaf, #thephone .header .wrap .flipdown .rotor {
+    width: 7.6vw;
+    height: 11vw;
+  }
+  #thephone .header .wrap .flipdown .rotor-top, #thephone .header .wrap .flipdown .rotor-leaf-front {
+    line-height: 11vw;
+  }
+  #thephone .header .wrap .flipdown .rotor {
+    font-size: 8vw;
+  }
+  #thephone .header .wrap .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3)::after {
+    left: 16.9vw;
+    width: 1.2vw;
+    height: 1.2vw;
+    bottom: 6.8vw;
+  }
+  #thephone .header .wrap .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3)::before {
+    left: 16.9vw;
+    width: 1.2vw;
+    height: 1.2vw;
+    bottom: 3.5vw;
+  }
+  #thephone .header .wrap .notice {
+    width: 100%;
+    margin-right: 0;
+  }
+  #thephone .header .wrap .notice .clock {
+    display: none;
+  }
+  #thephone .header .wrap .notice span {
+    font-size: 3.5vw;
+    margin-top: 1vw;
+  }
+  #thephone .header .wrap .notice span .pc768 {
+    display: none;
+  }
+  #thephone .header .wrap .right_container {
+    margin-bottom: -1vw;
+  }
+  #thephone .header .wrap .right_container p {
+    font-size: 3.5vw;
+  }
+  #thephone .header .wrap .right_container .progressbar, #thephone .header .wrap .right_container .progressbar > div:empty {
+    height: 1vw;
+  }
+  #thephone .header .wrap .right_container .progressbar {
+    margin-top: 1.2vw;
+    height: 1vw;
+  }
+  #thephone .sc1 {
+    padding-top: 21vw;
+  }
+  #thephone .sc1 .wrap {
+    min-width: auto;
+  }
+  #thephone .sc1 .wrap .visual.mo img {
+    display: block;
+    width: 100%;
+  }
+  #thephone .sc1 .wrap .visual.mo .img02 {
+    position: relative;
+    margin-top: 10vw;
+    width: 85%;
+    z-index: 10;
+  }
+  #thephone .sc1 .wrap .visual.mo .img01 {
+    margin-top: -8vw;
+  }
+  #thephone .sc1 .wrap .info {
+    background-color: rgba(62, 248, 241, 0.2);
+    padding: 4vw;
+    bottom: 14.2vw;
+    width: 78.125%;
+    border-radius: 2vw;
+  }
+  #thephone .sc1 .wrap .info span {
+    display: block;
+    font-size: 5vw;
+  }
+  #thephone .sc1 .wrap .info span.bold {
+    font-weight: 700;
+    margin-bottom: 0.5vw;
+  }
+  #thephone .sc2 {
+    padding: 8.5vw 0;
+  }
+  #thephone .sc2 .wrap h2 {
+    font-size: 8.5vw;
+    padding: 0;
+    margin-bottom: 3.5vw;
+  }
+  #thephone .sc2 .wrap h2::before, #thephone .sc2 .wrap h2::after {
+    width: 2.4vw;
+    height: 2.4vw;
+  }
+  #thephone .sc2 .wrap h2::before {
+    margin-right: 2vw;
+  }
+  #thephone .sc2 .wrap h2::after {
+    margin-left: 2vw;
+  }
+  #thephone .form .input {
+    height: 9.5vw;
+    padding: 0;
+    margin-bottom: 5vw;
+    flex-wrap: nowrap;
+    width: 85.125%;
+  }
+  #thephone .form .input .input-title {
+    font-size: 4vw;
+    width: 16.5vw;
+  }
+  #thephone .form .input .input-title .letter {
+    width: 3vw;
+  }
+  #thephone .form .input input[type=text] {
+    width: calc(100% - 16.5vw);
+    font-size: 4vw;
+    padding: 0 1.5vw;
+  }
+  #thephone .form .input select {
+    font-size: 4vw;
+    border-radius: 0.5vw;
+    background-size: 2.6vw;
+    width: calc(100% - 16.5vw);
+  }
+  #thephone .form .input select option {
+    font-size: 4vw;
+  }
+  #thephone .form .input .input-wrap {
+    width: calc(100% - 16.5vw);
+  }
+  #thephone .form .checkbox {
+    margin: 2vw 0 3.5vw;
+  }
+  #thephone .form .checkbox input[type=checkbox] {
+    width: 2.4vw;
+    height: 2.4vw;
+    margin-right: 1vw;
+  }
+  #thephone .form .checkbox input[type=checkbox] + label {
+    font-size: 3vw;
+  }
+  #thephone .form .checkbox a {
+    font-size: 3vw;
+  }
+  #thephone .form .send {
+    width: 42vw;
+    height: 8.5vw;
+    font-size: 4vw;
+    border-radius: 5vw;
+  }
+  #thephone .sc3 {
+    padding: 9vw 0 5vw;
+  }
+  #thephone .sc3 .wrap {
+    padding: 0;
+  }
+  #thephone .sc3 .wrap .img {
+    padding-bottom: 7vw;
+  }
+  #thephone .sc3 .wrap h3 {
+    font-size: 7vw;
+    padding-bottom: 2vw;
+  }
+  #thephone .sc3 .wrap .table {
+    margin-bottom: 7vw;
+  }
+  #thephone .sc3 .wrap table thead th {
+    font-size: 3vw;
+    padding: 1.5vw 0;
+    border-radius: 2.4vw 2.4vw 0 0;
+  }
+  #thephone .sc3 .wrap table tbody th {
+    font-size: 3vw;
+    padding: 1.5vw 0;
+    height: 5vw;
+  }
+  #thephone .sc3 .wrap table tbody .th {
+    font-size: 3vw;
+    padding: 1.5vw 0;
+  }
+  #thephone .sc3 .wrap table tbody td {
+    font-size: 3vw;
+    padding: 1.5vw 0;
+  }
+  #thephone .sc3 .wrap p {
+    padding-bottom: 3.5vw;
+    font-size: 3.5vw;
+  }
+  #thephone .sc4 {
+    padding: 11vw 0;
+  }
+  #thephone .sc4 .wrap {
+    padding: 0;
+  }
+  #thephone .sc4 .wrap span.subtext {
+    font-size: 3.4vw;
+    padding-bottom: 1vw;
+  }
+  #thephone .sc4 .wrap h3 {
+    font-size: 7vw;
+    padding-bottom: 6vw;
+  }
+  #thephone .sc4 .wrap h3 span {
+    margin: 0 2vw;
+  }
+  #thephone .sc4 .wrap .circle {
+    width: 12.5vw;
+    height: 12.5vw;
+    font-size: 3.8vw;
+    line-height: 12.5vw;
+    font-weight: 600;
+    margin: 0 auto 3.5vw;
+  }
+  #thephone .sc4 .wrap .conWrap .box {
+    margin-right: 3vw;
+    padding: 7vw 4vw 4vw;
+    border-radius: 2.6vw;
+    margin-bottom: 3vw;
+  }
+  #thephone .sc4 .wrap .conWrap .box img {
+    max-width: 80%;
+  }
+  #thephone .sc4 .wrap .conWrap .box img.size_mo01 {
+    max-width: 21vw;
+  }
+  #thephone .sc4 .wrap .conWrap .box .tag {
+    font-size: 3.4vw;
+    padding: 1vw 3vw;
+    border-radius: 2.6vw 0 2.6vw 0;
+  }
+  #thephone .sc4 .wrap .conWrap .box p {
+    font-size: 2.5vw;
+  }
+  #thephone .sc4 .wrap .conWrap .box .title {
+    font-size: 4vw;
+    padding-bottom: 1.5vw;
+  }
+  #thephone .sc4 .wrap .conWrap .box .sub {
+    font-size: 3.4vw;
+    padding-bottom: 3vw;
+  }
+  #thephone .sc4 .wrap .conWrap .box .flex .img p {
+    font-size: 3vw;
+    padding-top: 1vw;
+  }
+  #thephone .sc4 .wrap .conWrap .box .flex .or {
+    font-size: 8.2vw;
+    margin-top: 6vw;
+  }
+  #thephone .sc4 .wrap .box02 {
+    margin-right: 3vw;
+    padding: 4vw;
+    border-radius: 2.6vw;
+    margin-bottom: 8vw;
+  }
+  #thephone .sc4 .wrap .box02 .title {
+    font-size: 3.4vw;
+    padding: 1vw 3vw;
+    border-radius: 6vw;
+    margin-bottom: 5vw;
+  }
+  #thephone .sc4 .wrap .box02 ul {
+    padding-bottom: 5vw;
+  }
+  #thephone .sc4 .wrap .box02 ul li {
+    margin-bottom: 4vw;
+  }
+  #thephone .sc4 .wrap .box02 ul li .img {
+    height: 17vw;
+  }
+  #thephone .sc4 .wrap .box02 ul li p {
+    font-size: 3vw;
+  }
+  #thephone .sc4 .wrap .box02 .list {
+    padding-bottom: 5vw;
+  }
+  #thephone .sc4 .wrap .box02 .list li {
+    margin-bottom: 4vw;
+  }
+  #thephone .sc4 .wrap .box02 .list li .img {
+    height: 26vw;
+  }
+  #thephone .sc4 .wrap .box02 .list li img {
+    max-width: 80%;
+  }
+  #thephone .sc4 .wrap .box02 .list li p {
+    font-size: 3vw;
+  }
+  #thephone .sc4 .wrap .box02 h5 {
+    padding-bottom: 1.5vw;
+  }
+  #thephone .sc4 .wrap .box02 h5 span {
+    font-size: 3.4vw;
+  }
+  #thephone .sc4 .wrap .box02 h5 small {
+    font-size: 2.8vw;
+  }
+  #thephone .sc4 .wrap .box03 {
+    padding: 2.5vw 0;
+    margin-bottom: 3vw;
+  }
+  #thephone .sc4 .wrap .box03 .img {
+    height: 6vw;
+  }
+  #thephone .sc4 .wrap .box03 span .img {
+    height: auto;
+    padding-bottom: 2vw;
+  }
+  #thephone .sc4 .wrap .box03 p {
+    font-size: 2.5vw;
+  }
+  #thephone .sc4 .wrap .plus {
+    font-size: 5.4vw;
+    line-height: 3vw;
+    padding-bottom: 2.5vw;
+    font-weight: 800;
+  }
+  #thephone .sc4 .wrap .box04 {
+    padding: 4.5vw 2.5vw;
+    margin-bottom: 5vw;
+  }
+  #thephone .sc4 .wrap .box04 span p {
+    font-size: 2.5vw;
+  }
+  #thephone .sc4 .wrap .box04 span .or {
+    width: 3.5vw;
+    height: 3.5vw;
+    line-height: 3.5vw;
+    font-size: 2vw;
+    margin: 0 2vw;
+  }
+  #thephone .sc4 .wrap .info {
+    padding-bottom: 2vw;
+  }
+  #thephone .sc4 .wrap .info span {
+    width: 13vw;
+    min-width: 13vw;
+    height: 4.8vw;
+    border-radius: 6vw;
+    font-size: 2.5vw;
+    line-height: 4.8vw;
+    margin-right: 2vw;
+  }
+  #thephone .sc4 .wrap .info p {
+    font-size: 2.5vw;
+    margin-top: 0;
+  }
+  #thephone .sc4 .wrap .box02.type02 {
+    padding: 6vw 4vw;
+  }
+  #thephone .sc4 .wrap .box02.type02 h4 {
+    font-size: 4vw;
+    padding-bottom: 5vw;
+  }
+  #thephone .sc4 .wrap .box02.type02 .half span {
+    width: calc(50% - 1.5vw);
+    margin-right: 3vw;
+    margin-bottom: 6vw;
+  }
+  #thephone .sc4 .wrap .box02.type02 .half span:nth-child(2n) {
+    margin-right: 0;
+  }
+  #thephone .sc4 .wrap .box02.type02 .half span .img {
+    height: auto;
+    min-height: 8vw;
+    padding-bottom: 2vw;
+    width: 65%;
+  }
+  #thephone .sc4 .wrap .box02.type02 .half span .tit {
+    font-size: 3vw;
+    padding-bottom: 1.5vw;
+  }
+  #thephone .sc4 .wrap .box02.type02 .half span ul {
+    padding-bottom: 0;
+  }
+  #thephone .sc4 .wrap .box02.type02 .half span ul li {
+    padding-left: 2.2vw;
+    font-size: 2.5vw;
+    margin-bottom: 1vw;
+  }
+  #thephone .sc4 .wrap .box02.type02 .half span ul li:last-child {
+    margin-bottom: 0;
+  }
+  #thephone .sc4 .wrap .box02.type02 .half span ul li::before {
+    font-size: 2.6vw;
+    padding-bottom: 1.5vw;
+  }
+  #thephone .sc4 .wrap .notice {
+    font-size: 3vw;
+    padding-bottom: 2.5vw;
+  }
+  #thephone .sc4_2 {
+    padding: 11vw 0 0;
+  }
+  #thephone .sc4_2 .wrap {
+    padding: 0;
+  }
+  #thephone .sc4_2 .wrap span.subtext {
+    font-size: 3.4vw;
+    padding-bottom: 1.5vw;
+  }
+  #thephone .sc4_2 .wrap h3 {
+    font-size: 7vw;
+    padding-bottom: 2vw;
+  }
+  #thephone .sc4_2 .wrap p.text {
+    font-size: 3vw;
+  }
+  #thephone .sc4_2 .wrap .img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #thephone .sc4_3 {
+    padding: 11vw 0 0;
+  }
+  #thephone .sc4_3 .wrap {
+    padding: 0;
+  }
+  #thephone .sc4_3 .wrap span.subtext {
+    font-size: 3.4vw;
+    padding-bottom: 1.5vw;
+  }
+  #thephone .sc4_3 .wrap h3 {
+    font-size: 7vw;
+    padding-bottom: 6vw;
+  }
+  #thephone .sc4_3 .wrap p.text {
+    font-size: 3vw;
+    padding-bottom: 0.5vw;
+  }
+  #thephone .sc4_3 .wrap .img {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #thephone .sc5 {
+    padding: 11vw 0;
+  }
+  #thephone .sc5 .wrap {
+    padding: 0;
+  }
+  #thephone .sc5 .wrap h2 {
+    font-size: 7vw;
+  }
+  #thephone .sc5 .wrap p {
+    font-size: 4vw;
+    padding-bottom: 6vw;
+  }
+  #thephone .sc5 .wrap .sc5_swiper .swiper-container {
+    width: calc(100% - 14vw);
+  }
+  #thephone .sc5 .wrap .sc5_swiper .swiper-container .swiper-slide img {
+    width: 40%;
+  }
+  #thephone .sc5 .wrap .sc5_swiper .swiper-container .swiper-slide span {
+    margin-left: 3vw;
+  }
+  #thephone .sc5 .wrap .sc5_swiper .swiper-container .swiper-slide span .tit {
+    font-size: 3.4vw;
+    margin-bottom: 2vw;
+  }
+  #thephone .sc5 .wrap .sc5_swiper .swiper-container .swiper-slide span .flex {
+    margin-bottom: 2vw;
+  }
+  #thephone .sc5 .wrap .sc5_swiper .swiper-container .swiper-slide span .flex span {
+    font-size: 2.8vw;
+    margin-right: 2vw;
+  }
+  #thephone .sc5 .wrap .sc5_swiper .swiper-container .swiper-slide span .flex small {
+    font-size: 2.8vw;
+    margin-right: 2vw;
+  }
+  #thephone .sc5 .wrap .sc5_swiper .swiper-container .swiper-slide span .flex .rating img {
+    max-width: 4vw;
+  }
+  #thephone .sc5 .wrap .sc5_swiper .swiper-container .swiper-slide span p {
+    font-size: 3.2vw;
+  }
+  #thephone .sc5 .wrap .sc5_swiper .swiper-button-next, #thephone .sc5 .wrap .sc5_swiper .swiper-button-prev {
+    width: 2.8vw;
+    height: 4vw;
+    margin-top: -3.2vw;
+  }
+  #thephone .sc6 {
+    padding: 9vw 0;
+  }
+  #thephone .sc6 .wrap {
+    padding: 0;
+  }
+  #thephone .sc6 .wrap h2 {
+    font-size: 7vw;
+    padding-bottom: 2vw;
+  }
+  #thephone .sc6 .wrap .border {
+    border-radius: 3vw;
+  }
+  #thephone .sc6 .wrap .border .top span {
+    font-size: 3.5vw;
+    padding: 1.5vw 0;
+    width: 27% !important;
+  }
+  #thephone .sc6 .wrap .border .top span:nth-child(1) {
+    width: 19% !important;
+  }
+  #thephone .sc6 .wrap .border .sc6_swiper {
+    font-size: 3.5vw;
+    padding: 2vw 0;
+    height: 52vw;
+  }
+  #thephone .sc6 .wrap .border .sc6_swiper .swiper-slide > div {
+    width: 27% !important;
+  }
+  #thephone .sc6 .wrap .border .sc6_swiper .swiper-slide > div.name {
+    width: 19% !important;
+  }
+  #thephone .sc6 .wrap .border .sc6_swiper .done span {
+    padding: 0.5vw 1.5vw;
+    min-width: 17vw;
+  }
+  #thephone .footer ul {
+    margin-top: 4vw;
+  }
+  #thephone .footer ul li {
+    display: block;
+  }
+  #thephone .eventGo button {
+    padding: 3vw 0;
+    font-size: 4.6vw;
+  }
+  #thephone .eventGo button span {
+    font-size: 5.8vw;
+    margin-left: 2vw;
+  }
+  #thephone .eventGo button span::after {
+    width: 5vw;
+    height: 5vw;
+    margin-left: 2vw;
+  }
+  #thephone .bottomFix {
+    right: 3vw;
+    bottom: 6vw;
+  }
+  #thephone .bottomFix .modalBtn, #thephone .bottomFix .topBtn {
+    width: 15vw;
+    height: 15vw;
+    font-size: 4vw;
+  }
+  #thephone .bottomFix .modalBtn {
+    margin-bottom: 2vw;
+  }
+  #thephone .bottomFix .topBtn::before {
+    border-right: 2vw solid transparent;
+    border-left: 2vw solid transparent;
+    border-bottom: 2.5vw solid #fff;
+  }
+  #thephone .modal .wrap {
+    padding: 14vw 0 10vw;
+    border-radius: 5vw;
+  }
+  #thephone .modal .wrap .modalClose {
+    width: 6vw;
+    height: 6vw;
+    top: 5vw;
+    right: 5vw;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,976 @@
+<!DOCTYPE ko>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>갤럭시S23 사전예약 이벤트</title>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.js"></script>
+
+    <!-- style.css -->
+    <link rel="stylesheet" href="S23/css/normalize.css">
+    <link rel="stylesheet" href="S23/css/animate.css">
+    <link rel="stylesheet" href="S23/css/flipdown.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.css">
+    <link rel="stylesheet" href="S23/css/style.css">
+
+
+    <meta name="keywords" content="갤럭시S23, 갤럭시S23사전예약, S23사전예약">
+    <meta name="description" content="Galaxy S23을 제일 빠르게! 할인과 역대급 사은품까지! ">
+    <meta name="copyright" content="Copyright ⓒ 2023 bluecomms. All Rights Reserved.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="갤럭시S23 사전예약 이벤트">
+    <meta property="og:description" content="Galaxy S23을 제일 빠르게! 할인과 역대급 사은품까지!">
+    <meta property="og:image" content="S23/img/open_img.jpg">
+    <meta property="og:url" content="http://the-phone.co.kr/">
+
+    <!-- 공통 적용 스크립트 , 모든 페이지에 노출되도록 설치. 단 전환페이지 설정값보다 항상 하단에 위치해야함 -->
+        <!-- <script type="text/javascript" src="//wcs.naver.net/wcslog.js"> </script>
+        <script type="text/javascript">
+        if (!wcs_add) var wcs_add={};
+        wcs_add["wa"] = "s_3fd122aca89b";
+        if (!_nasa) var _nasa={};
+        if(window.wcs){
+        wcs.inflow();
+        wcs_do(_nasa);
+        }
+        </script> -->
+
+</head>
+<body>
+    <div id="thephone">
+
+        <div class="header">
+            <div class="wrap">
+                <div class="notice">
+                    <img src="S23/img/clock.png" alt="" class="clock">
+                    <span>혜택 종료까지<br class="pc768"/> 남은 시간</span>
+                </div>
+                <div id="flipdown" class="flipdown"></div>
+                <div class="right_container">
+                    <p>선착순 100명 중 현재 <b>93</b>명</p>
+                    <div class="progressbar">
+                        <div style="width: 93%" id="proo"></div>
+                        <!-- 사람 수와 같은 숫자 값을 width: %에 써줘야 합니다. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="sc1">
+            <div class="wrap">
+                <img src="S23/img/main.png" alt="" class="visual_bg" data-pc-src="S23/img/main.png" data-mo-src="S23/img/main_mo.jpg">
+                <div class="visual pc">
+                    <img src="S23/img/main01.png" alt="" class=" img01 wow fadeInDown">
+                    <img src="S23/img/main02.png" alt="" class=" img02 wow fadeInUp">
+                </div>
+                <div class="visual mo">
+                    <img src="S23/img/main02_mo.png" alt="" class=" img02 wow fadeInDown">
+                    <img src="S23/img/main01_mo.png" alt="" class=" img01 wow fadeInUp">
+                </div>
+                <div class="info wow fadeInUp2">
+                    <span class="bold">이벤트 기간 : </span>
+                    <span class="">2023. 01. 25 (수) ~ 2. 13 (월)</span>
+                </div>
+            </div>
+        </div>
+        <script>
+        function form_submit(e) {
+            var res = false;
+
+            var phone1 = $(e).find("input[name='phone']").val();
+            var phone2 = $(e).find("input[name='phone1']").val();
+            var phone3 = $(e).find("input[name='phone2']").val();
+
+            $.ajax({
+                type: 'post',
+                async: false,
+                url: '/ajax.phone_check.php',
+                data: {
+                    phone : phone1+'-'+phone2+'-'+phone3,
+                    bo_table : 'request'
+                },
+                success: function (data, textStatus, jqXHR) {
+                    if(data == '1') {
+                        res = false;
+                    } else {
+                        res = true;
+                    }
+                }
+            });
+
+            if(!res) {
+                alert('이미 접수된 연락처입니다.');
+            }
+
+            return res;
+        }
+
+        $(function () {
+            $(".name-input").keyup(function (event) {
+                regexp = /[a-z0-9]|[ \[\]{}()<>?|`~!@#$%^&*-_+=,.;:\"'\\]/g;
+                v = $(this).val();
+                if (regexp.test(v)) {
+                    alert("한글만 입력가능 합니다.");
+                    $(this).val(v.replace(regexp, ''));
+                }
+            });
+
+            $(".tel-input").keyup(function (event) {
+                regexp = /[^0-9]/gi;
+                v = $(this).val();
+                if (regexp.test(v)) {
+                    alert("숫자만 입력가능 합니다.");
+                    $(this).val(v.replace(regexp, ''));
+                }
+            });
+        });
+        </script>
+        <div class="sc2">
+            <div class="wrap">
+                <h2>빠른 상담신청</h2>
+                <div class="form">
+                    <form action="/save_request.php" method="post"  name="frm" class="reg_form" onsubmit="return form_submit(this);">
+                        <input type="hidden" name="wr_10" id="inputhidden" value="<?php echo $_SERVER["HTTP_REFERER"]; ?>">
+                        <input type="hidden" name="w_time" value="<?php echo time() ?>">
+                        <div class="input">
+                            <label for="wr_name" class="input-title">이<span class="letter"></span>름</label>
+                            <input type="text" name="wr_name" id="wr_name" class="name-input" placeholder="" maxLength="5" required>
+                        </div>
+                        <div class="input">
+                            <label for="wr_2" class="input-title">통신사</label>
+                            <select name="wr_2" id="wr_2">
+                                <option value="KT">KT</option>
+                                <option value="SKT">SKT</option>
+                                <option value="LG U+">LG U+</option>
+                                <option value="알뜰폰">알뜰폰</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <label for="wr_3" class="input-title">희망기종</label>
+                            <select name="wr_3" id="wr_3" required>
+                                <option value="갤럭시 S23">갤럭시 S23</option>
+                                <option value="갤럭시 S23 플러스">갤럭시 S23 플러스</option>
+                                <option value="갤럭시 S23 울트라">갤럭시 S23 울트라</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <label for="" class="input-title">연락처</label>
+                            <div class="input-wrap">
+                                <input type="text" class="input-text tel-input" name="phone" id="phone" maxLength="3" required/>
+                                <span>&nbsp;-&nbsp;</span>
+                                <input type="text" class="input-text tel-input" name="phone1" id="phone1" maxLength="4" required/>
+                                <span>&nbsp;-&nbsp;</span>
+                                <input type="text" class="input-text tel-input" name="phone2" id="phone2" maxLength="4" required/>
+                            </div>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" name="f_privacy" id="check01"required checked>
+                            <label for="check01">개인정보처리방침에 동의합니다.</label>
+                            <a href="#none" class="agreeOpen">[자세히]</a>
+                        </div>
+
+                        <button type="submit" class="send">빠른 상담 신청하기 ▶</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="sc3">
+            <div class="wrap">
+                <div class="img wow fadeInUp"><img src="S23/img/sc3_img01.png" alt=""></div>
+
+                <h3 class=" wow fadeInUp">언팩정보 <span>미리보기</span></h3>
+                <div class="table wow fadeInUp">
+                    <table>
+                        <colgroup>
+                            <col style="width:129px;">
+                            <col style="width: 196px;">
+                            <col style="width: 196px;">
+                            <col style="width: 196px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="th"></th>
+                                <th>S23</th>
+                                <th>S23+</th>
+                                <th>S23 Ultra</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="th">히어로 색상</td>
+                                <td>바닐라</td>
+                                <td>핑크</td>
+                                <td>그린</td>
+                            </tr>
+                            <tr>
+                                <th class="th">배터리 용량</td>
+                                <td>3900 mAh</td>
+                                <td>4700 mAh</td>
+                                <td>5000 mAh</td>
+                            </tr>
+                            <tr>
+                                <th class="th">RAM</td>
+                                <td>8 GB</td>
+                                <td>8 GB</td>
+                                <td>12 GB</td>
+                            </tr>
+                            <tr>
+                                <th class="th">디자인 스펙</th>
+                                <td colspan="3">카메라 컨투어 컷 없음</td>
+                            </tr>
+                            <tr class="red">
+                                <th class="th">칩셋 스펙</th>
+                                <td colspan="3">스냅드래곤8 2세대 (최대 성능 25% 향상, 클럭속도 3.36GHz)</td>
+                            </tr>
+                            <tr class="last">
+                                <th class="th">카메라 스펙</th>
+                                <td>5,000만 화소</td>
+                                <td>5,000만 화소</td>
+                                <td>2억화소<br/><small>(전작 1억800만 화소)</small></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class=" wow fadeInUp">업계 <span>최대할인</span></h3>
+                <div class="table wow fadeInUp">
+                    <table>
+                        <colgroup>
+                            <col style="width:129px;">
+                            <col style="width: 196px;">
+                            <col style="width: 196px;">
+                            <col style="width: 196px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th class="th"></th>
+                                <th>S23</th>
+                                <th>S23+</th>
+                                <th>S23 Ultra</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="th">출고가</td>
+                                <td>1,199,000 원</td>
+                                <td>1,397,000 원</td>
+                                <td>1,599,400 원</td>
+                            </tr>
+                            <tr>
+                                <th class="th">반값할인</th>
+                                <td>- 599,500 원</td>
+                                <td>- 698,500 원</td>
+                                <td>- 799,700 원</td>
+                            </tr>
+                            <tr>
+                                <th class="th">약정할인</th>
+                                <td>- 480,000 원</td>
+                                <td>- 480,000 원</td>
+                                <td>- 480,000 원</td>
+                            </tr>
+                            <tr>
+                                <th class="th">총 할인금액</th>
+                                <td>1,079,500 원</td>
+                                <td>1,178,500 원</td>
+                                <td>1,279,700 원</td>
+                            </tr>
+                            <tr class="red">
+                                <th class="th">실부담액</th>
+                                <td>119,500 원</td>
+                                <td>218,500 원</td>
+                                <td>319,700 원</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>* 상단 가격표는 KT통신사 기준입니다. * </p>
+                <div class="img wow fadeInUp"><img src="S23/img/sc3_img02.png" alt=""></div>
+
+            </div>
+        </div>
+        <div class="sc4">
+            <div class="wrap">
+                <span class="subtext wow fadeInUp">Galaxy S23 <span>|</span> S23+ <span>|</span> S22 Ultra</span>
+                <h3 class=" wow fadeInUp">사전예약 <span>사은품 혜택</span></h3>
+
+                <!-- <span class="circle wow fadeInUp">혜택 1</span> -->
+
+                <div class="conWrap">
+                    <div class="box wow fadeInUp">
+                        <span class="tag">혜택 1</span>
+                        <div class="title">가격은 그대로, 용량은 UP!<br/>전 모델 512GB 구매 시<span> 256GB 가격에 구매 가능</span></div>
+                        <img src="S23/img/sc4_img01.png" alt="">
+                    </div>
+                    <div class="box wow fadeInUp" data-wow-delay="0.2s">
+                        <span class="tag">혜택 2</span>
+                        <div class="title">내가 원하는 혜택으로 고르자!</div>
+                        <div class="flex">
+                            <div class="img">
+                                <img src="S23/img/sc4_img02-1.png" alt="" class="size_mo01">
+                                <p>BudsPro2<br/>99,000원 구매권</p>
+                            </div>
+                            <div class="or">or</div>
+                            <div class="img">
+                                <img src="S23/img/sc4_img02-2.png" alt="" class="size_mo01">
+                                <p>Samsung<br/> SmartThings Station</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="box02 wow fadeInUp">
+                    <h4 class="title">옵션 1 - 10만원 쿠폰 상품 예시</h4>
+
+                    <ul class="list">
+                        <li class=" wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="img"><img src="S23/img/sc4_img03.png" alt=""></div>
+                            <p><span>❶</span> 갤럭시 워치4</p>
+                        </li>
+                        <li class=" wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="img"><img src="S23/img/sc4_img04.png" alt=""></div>
+                            <p><span>❷</span> 갤럭시 워치4 클래식</p>
+                        </li>
+                        <li class=" wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="img"><img src="S23/img/sc4_img05.png" alt=""></div>
+                            <p><span>❸</span> 갤럭시 버즈2</p>
+                        </li>
+                        <li class=" wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="img"><img src="S23/img/sc4_img06.png" alt=""></div>
+                            <p><span>❹</span> 갤럭시 버즈 라이브</p>
+                        </li>
+                        <li class=" wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="img"><img src="S23/img/sc4_img07.png" alt=""></div>
+                            <p><span>❺</span> 15W 무선충전듀오</p>
+                        </li>
+                        <li class=" wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="img"><img src="S23/img/sc4_img08.png" alt=""></div>
+                            <p><span>❻</span> 갤럭시 스마트태그+</p>
+                        </li>
+                        <li class=" wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="img"><img src="S23/img/sc4_img09.png" alt=""></div>
+                            <p><span>❼</span> 무선충전 배터리팩</p>
+                        </li>
+                        <li class=" wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="img"><img src="S23/img/sc4_img10.png" alt=""></div>
+                            <p><span>❽</span> 더 프리스타일</p>
+                        </li>
+                    </ul>
+
+                    <h4 class="title">옵션2 - 파손 보장형 + 정품 커버세트</h4>
+
+                    <h5 class=" wow fadeInUp">
+                        <span>Samsung Care+</span>
+                        <span class="point">파손 보장형 1년권</span>
+                    </h5>
+                    <div class="box03 wow fadeInUp">
+                        <span>
+                            <div class="img"><img src="S23/img/sc4_icon01.png" alt=""></div>
+                            <p><b>파손보상 2회</b></p>
+                        </span>
+                        <span>
+                            <div class="img"><img src="S23/img/sc4_icon02.png" alt=""></div>
+                            <p>
+                                별도 청구 절차 없이 할인된 금액으로 혜택 적용<br/>
+                                <b>수리비 즉시 할인</b>
+                            </p>
+                        </span>
+                        <span>
+                            <div class="img"><img src="S23/img/sc4_icon03.png" alt=""></div>
+                            <p><b>방문수리 3회</b></p>
+                        </span>
+                    </div>
+
+                    <div class="plus">+</div>
+
+                    <h5 class=" wow fadeInUp">
+                        <span class="point">정품 커버 세트</span>
+                        <small>(정품 커버 1종+콜라보 액세서리 랜덤 1종)</small>
+                    </h5>
+                    <div class="box04 wow fadeInUp">
+                        <span>
+                            <p>실리콘 커버<br/>with 스트랩</p>
+                        </span>
+                        <span>
+                            <span class="or">OR</span>
+                        </span>
+                        <span>
+                            <p>프로텍티브<br/>스탠딩커버</p>
+                        </span>
+                        <span>
+                            <span class="or">OR</span>
+                        </span>
+                        <span>
+                            <p>프레임<br/> 커버</p>
+                        </span>
+                        <span>
+                            <span class="or">+</span>
+                        </span>
+                        <span>
+                            <p>콜라보 악세사리<br/>랜덤1종</p>
+                        </span>
+                    </div>
+
+                    <div class="info wow fadeInUp">
+                        <span>기간</span>
+                        <p>2023년 1월 25일 ~ 2022년 2월 13일 내 S23 Series를<br/> 구매 및 개통한 고객 대상 (최초 통화일 기준)</p>
+                    </div>
+                    <div class="info wow fadeInUp">
+                        <span>신청방법</span>
+                        <p>➀SAMSUNG Members 앱 접속 ▶ ➁혜택 ▶ ➂이벤트 배너 클릭</p>
+                    </div>
+                    <div class="info wow fadeInUp">
+                        <span>기간</span>
+                        <p>2022년 3월 2일 ~ 2022년 4월 30일</p>
+                    </div>
+                </div>
+
+                <span class="circle wow fadeInUp">혜택 2</span>
+
+                <div class="box02 type02 wow fadeInUp">
+                    <h4>
+                        Galaxy S23<br/>구매 시 <span>제휴 컨텐츠 혜택 100% </span>제공
+                    </h4>
+
+                    <div class="half">
+                        <span class=" wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="img"><img src="S23/img/sc4_img11.png" alt=""></div>
+                            <div class="tit">S23 전용 <b>NFT 1종 무료 제공</b></div>
+                            <ul>
+                                <li>S23 Series 사전구매 고객 한정 증정</li>
+                                <li>Theta 계정 등록 필요</li>
+                            </ul>
+                        </span>
+                        <span class=" wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="img"><img src="S23/img/sc4_img12.png" alt=""></div>
+                            <div class="tit">OneDrive 100GB <b>6개월 무료체험</b></div>
+                            <ul>
+                                <li>6개월 무료 이용 후 유료 전환</li>
+                                <li>사용 이력이 없는 계정에만 1회 제공</li>
+                            </ul>
+                        </span>
+                        <span class=" wow fadeInUp" data-wow-delay="0.6s">
+                            <div class="img"><img src="S23/img/sc4_img13.png" alt=""></div>
+                            <div class="tit">Galaxy Watch 4 <b>30% 할인쿠폰</b></div>
+                            <ul>
+                                <li>운영 모델 및 색상은 재고 상황에 따라 변경될 수 있습니다.</li>
+                            </ul>
+                        </span>
+                        <span class=" wow fadeInUp" data-wow-delay="0.7s">
+                            <div class="img"><img src="S23/img/sc4_img14.png" alt=""></div>
+                            <div class="tit">4개월 무료 체험</div>
+                            <ul>
+                                <li>4개월 무료 이용 후 유료 전환</li>
+                                <li>사용 이력이 없는 계정에만 1회 제공</li>
+                            </ul>
+                        </span>
+                        <span class=" wow fadeInUp" data-wow-delay="0.8s">
+                            <div class="img"><img src="S23/img/sc4_img15.png" alt=""></div>
+                            <div class="tit">네이버 웹툰·시리즈 <b>쿠키 50개</b></div>
+                            <ul>
+                                <li>계정 당 1회만 사용 가능</li>
+                            </ul>
+                        </span>
+                        <span class=" wow fadeInUp" data-wow-delay="0.9s">
+                            <div class="img"><img src="S23/img/sc4_img16.png" alt=""></div>
+                            <div class="tit">오디오북+클래스 무제한<br/> <b>3개월 무료 구독권</b></div>
+                            <ul>
+                                <li>3개월 무료 구독 후 추가 3개월 50% 할인</li>
+                            </ul>
+                        </span>
+                    </div>
+
+                    <p class="notice">※ 제휴사별 기간 및 혜택은 상이하며, 당사 사정에 따라 변경될 수 있습니다.</p>
+                </div> -->
+            </div>
+        </div>
+        <div class="sc4_2">
+            <div class="wrap">
+                <span class="subtext wow fadeInUp">Galaxy S23 <span>|</span> S23+ <span>|</span> S22 Ultra</span>
+                <h3 class=" wow fadeInUp"><span>노트펜</span>을 품은 갤럭시S</h3>
+                <p class="text wow fadeInUp">
+                    S시리즈의 놀랍도록 빠르게 개선된 프로세서로<br/>
+                    마치 종이위에 펜으로 쓴 듯, 자연스러운 필기감을 선사합니다.
+                </p>
+                <div class="img wow fadeInUp"><img src="S23/img/sc4_2_img01.png" alt=""></div>
+            </div>
+        </div>
+        <div class="sc4_3">
+            <div class="wrap">
+                <span class="subtext wow fadeInUp">Galaxy S23 <span>|</span> S23+ <span>|</span> S22 Ultra</span>
+                <p class="text wow fadeInUp">인생샷 어렵지 않아요</p>
+                <h3 class=" wow fadeInUp"><span>2억화소</span>카메라</h3>
+                <div class="img wow fadeInUp"><img src="S23/img/sc4_3_img01.png" alt=""></div>
+            </div>
+        </div>
+        <div class="sc5">
+            <div class="wrap">
+                <h2 class=" wow fadeInUp">실제 구매 고객님의 <span>평가</span>는?</h2>
+                <p class=" wow fadeInUp">더월모바일에서 실제 구매하신 고객님의 만족도입니다.</p>
+
+                <div class="sc5_swiper wow fadeInUp">
+                    <div class="swiper-button-prev"></div>
+                    <ul class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="S23/img/sc5_img01.png" alt="">
+                                <span>
+                                    <div class="tit">갤럭시 S22 울트라</div>
+                                    <div class="flex">
+                                        <small>2022-09-11 김*우</small>
+                                        <div class="rating">
+                                            <img src="S23/img/star.png" alt="">
+                                            <img src="S23/img/star.png" alt="">
+                                            <img src="S23/img/star.png" alt="">
+                                            <img src="S23/img/star.png" alt="">
+                                            <img src="S23/img/star.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            쓰고있던 폰이 고장나서 급하게 <br>
+                                            바꿨어야 했는데 S22 사전예약 때 <br>
+                                            신청해서 잘 받았어요! 사은품으로 <br>
+                                            갤럭시 버즈 프로로 받았는데<br>
+                                            완전 음질도 짱이고 넘 좋습니다~!<br>
+                                            가격도 저렴하게 아주 잘 사서 <br>
+                                            주변에도 더원모바일 강력 추천했다구요!
+                                        </p>
+                                    </div>
+                                </span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="S23/img/sc5_img01.png" alt="">
+                                <span>
+                                    <div class="tit">갤럭시 S22 울트라</div>
+                                    <div class="flex">
+                                        <small>2022-10-05 이*현</small>
+                                        <div class="rating">
+                                            <img src="S23/img/star.png" alt="">
+                                            <img src="S23/img/star.png" alt="">
+                                            <img src="S23/img/star.png" alt="">
+                                            <img src="S23/img/star.png" alt="">
+                                            <img src="S23/img/star.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            원래 집앞 대리점에서 상담 받고 <br>
+                                            갤럭시S22 울트라 512G 구매하려했는데<br>
+                                            입고가 언제 될지 모른다는 말에<br>
+                                            포기했었는데 찾다보니 더원모바일에<br>
+                                            재고가 있어 싸고 빠르게 개통했어요!
+                                        </p>
+                                    </div>
+                                </span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="S23/img/sc5_img01.png" alt="">
+                                <span>
+                                    <div class="tit">갤럭시 S22 울트라</div>
+                                    <div class="flex">
+                                        <small>2022-07-23 한*수</small>
+                                        <div class="rating">
+                                            <img src="S23/img/star.png" alt="">
+                                            <img src="S23/img/star.png" alt="">
+                                            <img src="S23/img/star.png" alt="">
+                                            <img src="S23/img/star.png" alt="">
+                                            <img src="S23/img/star.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            여기 진짜 과대광고 1도 없어요!<br>
+                                            전자기기에 많은 돈을 투자하는 것을<br>
+                                            매우 아까워하는 1인입니다. 그래서<br>
+                                            여태껏 최신폰 아닌 출시한지 1년 이상 된<br>
+                                            폰만 사용했었는데요~ 이번엔 저렴한 가격에<br>
+                                            최신폰 겟해서 넘 좋네요! 사은품도 감사합니다<br>
+                                        </p>
+                                    </div>
+                                </span>
+                            </li>
+                        </div>
+                    </ul>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+        <div class="sc6">
+            <div class="wrap">
+                <h2 class=" wow fadeInUp">실시간 <span>신청현황</span></h2>
+
+                <div class="border wow fadeInUp">
+                    <div class="top">
+                        <span>성함</span>
+                        <span>신청 기종</span>
+                        <span>날짜</span>
+                        <span>접수상황</span>
+                    </div>
+                    <div class="sc6_swiper">
+                        <ul class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="name">이**</div>
+                                    <div class="tit">S23 Ultra</div>
+                                    <div class="date">
+                                        <span class="year"></span> -
+                                        <span class="month"></span> -
+                                        <span class="day"></span>
+                                    </div>
+                                    <div class="done"><span>접수 완료</span></div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="name">윤**</div>
+                                    <div class="tit">S23+</div>
+                                    <div class="date">
+                                        <span class="year"></span> -
+                                        <span class="month"></span> -
+                                        <span class="day"></span>
+                                    </div>
+                                    <div class="done gray"><span>접수중</span></div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="name">최**</div>
+                                    <div class="tit">S23 Ultra</div>
+                                    <div class="date">
+                                        <span class="year"></span> -
+                                        <span class="month"></span> -
+                                        <span class="day"></span>
+                                    </div>
+                                    <div class="done"><span>접수 완료</span></div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="name">김**</div>
+                                    <div class="tit">S23 Ultra</div>
+                                    <div class="date">
+                                        <span class="year"></span> -
+                                        <span class="month"></span> -
+                                        <span class="day"></span>
+                                    </div>
+                                    <div class="done gray"><span>접수중</span></div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="name">이**</div>
+                                    <div class="tit">S23+</div>
+                                    <div class="date">
+                                        <span class="year"></span> -
+                                        <span class="month"></span> -
+                                        <span class="day"></span>
+                                    </div>
+                                    <div class="done"><span>접수 완료</span></div>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="name">김**</div>
+                                    <div class="tit">S23</div>
+                                    <div class="date">
+                                        <span class="year"></span> -
+                                        <span class="month"></span> -
+                                        <span class="day"></span>
+                                    </div>
+                                    <div class="done"><span>접수 완료</span></div>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--    <div class="eventGo">
+            <button type="button">
+                Galaxy S23 Serise
+                <span>이벤트 신청 </span>
+            </button>
+        </div>--> 
+
+
+        <div class="footer">
+            <div class="fo">
+
+                <a href="https://www.ictmarket.or.kr:8443/ajax/ajax3.do?id=PRE0000146639&seq=1&yn=1">
+                    <p class="img-footer"><img src="http://theone96.com/img/0901/theoneicon.png"></p>
+                </a>
+                <ul>
+                    <li>사업자명: (주)더원모바일</li>
+                    <li>사업자번호 : 890-81-02166</li>
+                    <li>대표자 : 김준태</li>
+                    <li>연락처 : 1670-4659</li>
+                    <li>이메일 : kjt5366@naver.com</li>
+                    <li>주소 : 경기 의정부시 오목로 225번길 162, 801호</li>
+                </ul>
+                <p class="copyright">Copyright blue-comms All Rights Reserved.</p>
+            </div>
+        </div>
+
+        <div class="bottomFix">
+            <button type="button" class="modalBtn">빠른<br/>신청</button>
+            <button type="button" class="topBtn">TOP</button>
+        </div>
+
+
+
+        <div class="modal">
+            <div class="wrap">
+                <button type="button" class="modalClose"></button>
+                <div class="form">
+                    <form action="/save_request.php" method="post"  name="frm" class="reg_form" onsubmit="return form_submit(this);">
+                        <input type="hidden" name="wr_10" id="inputhidden" value="<?php echo $_SERVER["HTTP_REFERER"]; ?>">
+                        <input type="hidden" name="w_time" value="<?php echo time() ?>">
+                        <div class="input">
+                            <label for="wr_name" class="input-title">이<span class="letter"></span>름</label>
+                            <input type="text" name="wr_name" id="wr_name" class="name-input" placeholder="" maxLength="5" required>
+                        </div>
+                        <div class="input">
+                            <label for="wr_2" class="input-title">통신사</label>
+                            <select name="wr_2" id="wr_2">
+                                <option value="KT">KT</option>
+                                <option value="SKT">SKT</option>
+                                <option value="LG U+">LG U+</option>
+                                <option value="알뜰폰">알뜰폰</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <label for="wr_3" class="input-title">희망기종</label>
+                            <select name="wr_3" id="wr_3" required>
+                                <option value="갤럭시 S23">갤럭시 S23</option>
+                                <option value="갤럭시 S23 플러스">갤럭시 S23 플러스</option>
+                                <option value="갤럭시 S23 울트라">갤럭시 S23 울트라</option>
+                            </select>
+                        </div>
+                        <div class="input">
+                            <label for="" class="input-title">연락처</label>
+                            <div class="input-wrap">
+                                <input type="text" class="input-text tel-input" name="phone" id="phone" maxLength="3" required/>
+                                <span>&nbsp;-&nbsp;</span>
+                                <input type="text" class="input-text tel-input" name="phone1" id="phone1" maxLength="4" required/>
+                                <span>&nbsp;-&nbsp;</span>
+                                <input type="text" class="input-text tel-input" name="phone2" id="phone2" maxLength="4" required/>
+                            </div>
+                        </div>
+
+                        <div class="checkbox">
+                            <input type="checkbox" name="f_privacy" id="check01"required checked>
+                            <label for="check01">개인정보처리방침에 동의합니다.</label>
+                            <a href="#none" class="agreeOpen">[자세히]</a>
+                        </div>
+
+                        <button type="submit" class="send">빠른 상담 신청하기 ▶</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="S23/js/wow.js"></script>
+    <script src="S23/js/flipdown.js"></script>
+    <script>
+
+        (function(){
+            /* Flip Countdown */
+            // Set Target Unixtime(Tomorrow)
+            var tomorrow = new Date();
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            tomorrow.setHours(0, 0, 0, 0);
+
+            var timeEnd = tomorrow.getTime() / 1000;
+
+            // Set up FlipDown
+            var flipdown = new FlipDown(timeEnd);
+
+            // Start the countdown
+		    flipdown.start();
+
+	    })();
+
+
+        function rand(min, max) {
+            return Math.floor(Math.random() * (max - min)) + min;
+        }
+
+        var randomNum = rand(88, 99);
+
+        $(".right_container b").html(randomNum)
+        $(".right_container .progressbar #proo").css('width',randomNum+'%')
+        
+
+    //     var aaa = 56;
+
+    //     gce = getCookie("cnt");
+
+    //     if(gce != null && gce != ""){ 
+    //         if(parseInt(gce) >= 98){
+    //             aaa = parseInt(gce);
+    //         }
+    //         else{
+    //             aaa = parseInt(gce);
+    //         }
+    //             $("#proo").css("width",aaa+"%");
+    //             $(".right_container b").html(aaa);
+    //     }
+
+    //     var bbb = setInterval("func_pro()",15000); /* 4. 1.5초에 한번씩 랜덤으로 변경 4800*/
+
+    //     function func_pro(){
+    //         ran = Math.floor(Math.random()*3)+1;
+    //         aaa = aaa+ran;
+    //         if(aaa>=98){aaa=98;}
+    //         $("#proo").css("width",aaa+"%");
+    //         if(aaa >= 98){clearInterval(bbb);}
+    //         $(".right_container b").html(aaa);
+    //         setCookie('cnt', aaa , 1);
+    //     }
+
+
+    //     function setCookie( name, value, expiredays)
+    //     {
+    //         var todayDate = new Date();
+    //         todayDate.setDate( todayDate.getDate() + expiredays );
+    //         document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+    //     }
+
+    //     function getCookie(name) {
+    //     var first;
+    //     var str = name + "=";
+    //     if(document.cookie.length > 0) {
+    //         find = document.cookie.indexOf(str)
+    //         if(find == -1) return null;
+    //         first = find + str.length
+    //         end = document.cookie.indexOf(";", first)
+    //         if(end == -1) 
+    //             end = document.cookie.length
+    //         return unescape(document.cookie.substring(first, end))
+    //     }
+    // }
+
+
+
+        //이미지 반응형
+        function imgReplace(){
+            $("#thephone img").each(function(){
+                if( $(window).width() <= 768 ){
+                    $(this).attr("src", $(this).attr("data-mo-src"));
+                } else {
+                    $(this).attr("src", $(this).attr("data-pc-src"));
+                }
+            });
+        }
+        $(window).resize(function(){
+            imgReplace();
+        });
+        imgReplace();
+
+
+        $(function(){
+            //animation
+            new WOW().init();
+
+
+            // swiper
+            var swiper1 = new Swiper('.sc5_swiper .swiper-container', {
+                slidesPerView: 1,
+                spaceBetween: 0,
+                autoplay: {
+                    delay: 2500,
+                },
+                speed: 500,
+                autoplayDisableOnInteraction: false,
+                loop: true,
+                navigation: {
+                    nextEl: ".sc5_swiper .swiper-button-next",
+                    prevEl: ".sc5_swiper .swiper-button-prev",
+                },
+            });
+
+            var swiper2 = new Swiper('.sc6_swiper .swiper-container', {
+                direction: "vertical",
+                slidesPerView: 6,
+                spaceBetween: 0,
+                autoplay: {
+                    delay: 2500,
+                },
+                speed: 800,
+                autoplayDisableOnInteraction: false,
+                loop: true,
+                allowTouchMove: false,
+            });
+
+        })
+        $(document).ready(function () {
+            //스크롤 이동
+            $('.eventGo').on('click',function(){
+                var offset = $('.sc2').offset();
+                $('body').animate({ scrollTop: offset.top }, 400);
+
+            })
+
+            //전화번호 포커스
+            $(".tel-input").keyup (function () {
+                var charLimit = $(this).attr("maxlength");
+                if ($(this).val().length >= charLimit) {
+                    $(this).next().next('.tel-input').focus();
+                    return false;
+                }
+            });
+            
+            //탑버튼
+            $('.topBtn').on('click',function(){
+                $('body').animate({ scrollTop: 0 }, 500);
+            })
+
+            //모달창
+            $('.modalBtn').on('click',function(){
+                $('.modal').addClass('on')
+            })
+            $('.modalClose').on('click',function(){
+                $('.modal').removeClass('on')
+            })
+            //외부 클릭시 닫힘
+            $(document).mouseup(function (e){
+                var container = $('.modal');
+                if( container.has(e.target).length === 0){
+                    container.removeClass('on');
+                }
+            });
+            
+        })
+
+        //오늘날짜 업데이트
+        var now = new Date();
+        var nowYear = now.getFullYear();
+        var nowMonth = now.getMonth() + 1;
+        var nowDate = now.getDate();
+
+
+        var last = new Date(nowYear,nowMonth-1, 0);
+        var lastDay = last.getDate();    
+
+        $(".sc6_swiper .year").text(nowYear-2000); //영역에 넣기
+        if(0 < nowMonth < 10){
+            $(".sc6_swiper .month").text('0'+nowMonth); //영역에 넣기
+        }else{
+            $(".sc6_swiper .month").text(+nowMonth); //영역에 넣기
+        }
+        $(".sc6_swiper .day").text(nowDate); //영역에 넣기
+        // $(".sc6_swiper .day.m1").text(nowDate-1);
+        // $(".sc6_swiper .day.m2").text(nowDate-2);
+
+        // //현재 날짜가 달의 첫째날일때
+        // if(nowDate == 1){
+        //     if(0 < nowMonth < 10){
+        //         $(".sc6_swiper .month.m1").text('0'+nowMonth-1); //영역에 넣기
+        //     }else{
+        //         $(".sc6_swiper .month.m1").text(+nowMonth-1); //영역에 넣기
+        //     }
+        //     $(".sc6_swiper .day.m1").text(lastDay)
+        // }
+
+    </script>
+</body>
+</html>

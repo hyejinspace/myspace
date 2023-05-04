@@ -1,0 +1,1622 @@
+// font-family: 'Pretendard'
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css")
+
+// font-family: 'Black Han Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap')
+    
+// font-family: 'yg-jalnan';
+@font-face 
+    font-family: 'yg-jalnan'
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
+// // font-family: 'Samsung Sharp Sans';
+// @import url('https://fonts.cdnfonts.com/css/samsung-sharp-sans')
+
+// font-family: 'Samsung Sharp Sans';
+@font-face
+    font-family: 'Samsung Sharp Sans'
+    src: url('../fonts/SamsungSharpSans.woff2') format('woff2'),url('../fonts/SamsungSharpSans.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+    font-display: swap
+@font-face 
+    font-family: 'Samsung Sharp Sans Bold'
+    src: url('../fonts/SamsungSharpSans-Bold.woff2') format('woff2'),url('../fonts/SamsungSharpSans-Bold.woff') format('woff')
+    font-weight: bold
+    font-style: normal
+    font-display: swap
+
+
+
+@keyframes fadeInUp2
+  from
+    opacity: 0
+    -webkit-transform: translate3d(-50%, 35px, 0)
+    transform: translate3d(-50%, 35px, 0)
+  to
+    opacity: 1
+    -webkit-transform: translate3d(-50%, 0, 0)
+    transform: translate3d(-50%, 0, 0)
+
+.fadeInUp2
+  -webkit-animation-name: fadeInUp2
+  animation-name: fadeInUp2
+
+
+@keyframes blink
+    0%
+        background-color: #eb224c
+        color: #fff
+    50%
+        background-color: #0a5155
+        color: #56f5ff
+    100%
+        background-color: #eb224c
+        color: #fff
+
+
+
+
+
+*
+    padding: 0
+    margin: 0
+    letter-spacing: -0.75px
+    box-sizing: border-box
+    color: #000
+    -webkit-overflow-scrolling: touch
+img
+    vertical-align: middle
+select,button,textarea,input[type="text"],input[type="number"]
+    appearance: none
+    border: none
+    border-radius: 0
+    background-color: transparent
+select,input,button,textarea
+    &:focus
+        outline: none
+select::-ms-expand 
+    display: none
+input[type="radio"]
+    display: none
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+    -webkit-appearance: none
+textarea
+    resize: none
+table
+    border-collapse: collapse
+sub,sup
+    font-size: 75%
+ul,ol,li
+    list-style: none
+
+
+html,body
+    width: 100%
+    min-width: 320px
+    font-size: 20px
+    font-family: 'Pretendard'
+    background: #fff
+
+
+
+#thephone
+    .mo
+        display: none !important
+
+
+    .header
+        width: 100%
+        height: 95px
+        background-color: #0a5155
+        position: fixed
+        top: 0
+        left: 0
+        z-index: 900
+        .wrap
+            width: 95%
+            max-width: 720px
+            margin: 0 auto
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 100%
+            .flipdown
+                width: auto
+                height: auto
+                margin-right: 15px
+            .flipdown .rotor-group
+                &:first-child
+                    display: none
+            .flipdown .rotor-group-heading:before
+                display: none
+            .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):before, .flipdown.flipdown__theme-dark .rotor-group:nth-child(n+2):nth-child(-n+3):after
+                background-color: #fff
+            .flipdown .rotor-leaf, .flipdown .rotor
+                width: 38px
+                height: 50px
+            .flipdown .rotor:after, .flipdown .rotor-top 
+                width: 38px
+                height: 23px
+            .flipdown .rotor-bottom, .flipdown .rotor-leaf-front, .flipdown .rotor-leaf-rear
+                width: 38px
+                height: 28px
+            .flipdown .rotor-top,.flipdown .rotor-leaf-front
+                line-height: 47px
+            .flipdown .rotor
+                font-size: 45px
+            .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3)::after
+                left: 92px
+                width: 8px
+                height: 8px
+                bottom: 13px
+            .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3)::before
+                left: 92px
+                width: 8px
+                height: 8px
+                bottom: 30px
+            .flipdown.flipdown__theme-dark .rotor, .flipdown.flipdown__theme-dark .rotor-top, .flipdown.flipdown__theme-dark .rotor-leaf-front,
+            .flipdown.flipdown__theme-dark .rotor-bottom, .flipdown.flipdown__theme-dark .rotor-leaf-rear
+                background-color: #fff
+                color: #000
+            .flipdown.flipdown__theme-dark .rotor:after
+                border-top: 0
+            .flipdown .rotor-bottom,.flipdown .rotor:after,
+            .flipdown .rotor-top
+                border-radius: 0
+            .notice
+                display: flex
+                align-items: flex-start
+                margin-right: 10px
+                span
+                    display: inline-block
+                    color: #fff
+                    font-size: 22px
+                    text-align: right
+                    line-height: 1.2
+                    font-weight: 300
+                    margin-top: 5px
+            .right_container
+                p
+                    font-size: 22px
+                    color: #fff
+                    line-height: 1.2
+                    b
+                        color: #3ef8f1
+                        font-weight: 800
+                        display: inline-block
+                .progressbar,.progressbar > div:empty
+                    border-radius: 0px
+                    height: 6px
+                .progressbar 
+                    position: relative
+                    margin-top: 12px
+                    background-color: #fff
+                    border-radius: 50px
+                    height: 6px
+                    overflow: hidden
+                .progressbar > div:empty 
+                    background-color: #3ef8f1
+                .bottom_line 
+                    background-color: #fff
+
+
+    .sc1
+        padding-top: 95px
+        background-color: #18181a
+        .wrap
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            position: relative
+            width: 90%
+            margin: 0 auto
+            // max-width: 768px
+            min-width: 768px
+            .visual_bg
+                display: block
+                width: auto
+                max-width: 100%
+                margin: 0 auto
+                opacity: 0
+            .visual
+                position: absolute
+                top: 0
+                left: 50%
+                transform: translateX(-50%)
+                width: 768px
+                height: 100%
+                max-width: 100%
+                margin: 0 auto
+                z-index: 5
+                text-align: center
+                img
+                    display: inline-block
+                    width: auto
+                    // max-width: 100%
+                    margin: 0 auto
+            .visual.pc .img02
+                margin-top: -100px
+            .info
+                position: absolute
+                left: 50%
+                bottom: 80px
+                width: 100%
+                text-align: center
+                transform: translateX(-50%)
+                font-size: 30px
+                z-index: 10
+                span
+                    display: inline-block
+                    color: #fff
+    .sc2
+        background-color: #0a5155
+        padding: 75px 0
+        .wrap
+            width: 90%
+            margin: 0 auto
+            max-width: 768px
+            h2
+                display: flex
+                align-items: center
+                justify-content: center
+                position: relative
+                font-size: 60px
+                font-family: 'Black Han Sans', sans-serif  
+                font-weight: 500
+                color: #56f5ff
+                text-align: center
+                padding: 0 40px
+                margin-bottom: 25px
+                &::before
+                    content: ''
+                    display: block
+                    position: relative
+                    width: 14px
+                    height: 14px
+                    background-color: #56f5ff
+                    border-radius: 50%
+                    margin-right: 10px
+                    margin-bottom: 12px
+                &::after
+                    content: ''
+                    display: block
+                    position: relative
+                    width: 14px
+                    height: 14px
+                    background-color: #56f5ff
+                    border-radius: 50%
+                    margin-left: 10px
+                    margin-bottom: 12px
+
+    //폼 공통
+    .form
+        .input
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-between
+            background-color: #fff
+            border-radius: 3px
+            height: 60px
+            padding: 12px 0
+            max-width: 560px
+            margin: 0 auto 20px
+            &:last-child
+                padding-bottom: 0
+            .letter
+                display: inline-block
+                width: 30px
+            .input-title
+                font-size: 30px
+                text-align: center
+                width: 125px
+                border-right: 1px solid #999
+                font-weight: 600
+                color: #222222
+            input[type="text"]
+                width: calc(100% - 125px)
+                font-size: 30px
+                padding: 0 15px
+            select
+                position: relative
+                display: inline-block
+                width: calc(100% - 125px)
+                padding: 0 15px
+                font-size: 30px
+                border-radius: 5px
+                color: #999999
+                background-image: url(../img/select.png)
+                background-repeat: no-repeat
+                background-size: 16px
+                background-position: 95% center
+                // &:focus
+                //     box-shadow: 0 0 5px #9ed4ff
+                //     border: 1px solid #86b7fe !important
+                //     border-color: #86b7fe
+                //     outline: 0
+                //     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25)
+                option
+                    display: inline-block
+                    width: 100%
+                    font-size: 30px
+            .input-wrap
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                width: calc(100% - 125px)
+                input[type="text"]
+                    width: calc(33.333% - 13.3333px)
+                span
+                    width: 20px
+                    display: inline-block
+                    text-align: center
+                    font-size: 30px
+        .checkbox
+            display: flex
+            align-items: center
+            justify-content: center
+            margin: 20px 0 35px
+            input[type="checkbox"]
+                display: block
+                width: 24px
+                height: 24px
+                margin-right: 10px
+            input[type="checkbox"] + label
+                position: relative
+                font-size: 20px
+                color: #fff
+                
+            a
+                display: inline-block
+                color: #fff
+                margin-left: 4px
+                font-size: 18px
+        .send
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 30px
+            text-align: center
+            width: 320px
+            height: 65px
+            background-color: #56f5ff
+            border-radius: 50px
+            margin: 0 auto
+            font-weight: 800
+            color: #083b3e
+            cursor: pointer
+
+
+
+            
+    .sc3
+        background-color: #e1f4f5
+        padding: 80px 0
+        .wrap
+            width: 90%
+            margin: 0 auto
+            max-width: 768px
+            padding: 0 24px
+            .img 
+                padding-bottom: 60px
+                text-align: center
+                img
+                    display: block
+                    width: auto
+                    max-width: 100%
+                    margin: 0 auto
+            h3
+                font-size: 60px
+                font-family: 'Black Han Sans', sans-serif 
+                font-weight: 500
+                padding-bottom: 10px
+                text-align: center
+                color: #083b3e
+                letter-spacing: -1px
+                span 
+                    color: #eb224c
+                    letter-spacing: 0
+            .table
+                margin-bottom: 60px
+            table
+                width: 100%
+                thead 
+                    th
+                        font-size: 26px
+                        background-color: #0a5155
+                        color: #56f5ff
+                        text-align: center
+                        border-radius: 14px 14px 0 0
+                        padding: 5px 0
+                        border-right: 1px solid #fff
+                        &:last-child
+                            border-right: none
+                    .th
+                        background-color: transparent 
+                tbody
+                    .th
+                        color: #083b3e
+                        text-align: left
+                        font-size: 24px
+                        font-weight: 700
+                        padding: 5px 0
+                        background-color: transparent 
+                    th
+                        height: 50px
+                    td
+                        font-size: 24px
+                        color: #083b3e
+                        text-align: center
+                        border-right: 1px solid #e1f4f5
+                        border-bottom: 1px solid #e1f4f5
+                        padding: 5px 0
+                        background-color: #fff
+                        small
+                            color: #083b3e
+                    tr.red
+                        th,td
+                            color: #eb224c
+                            font-weight: 600
+                    tr.last
+                        td
+                            border-bottom: none
+                &:nth-child(2)
+                    padding-bottom: 45px
+            p
+                text-align: center
+                font-size: 0.8rem
+                color: #666
+                padding-bottom: 40px
+    .sc4
+        padding: 100px 0
+        background-color: #63d2d9
+        .wrap
+            width: 90%
+            margin: 0 auto
+            max-width: 768px
+            padding: 0 24px
+            span.subtext
+                display: block
+                font-size: 24px
+                font-family: 'Samsung Sharp Sans Bold'
+                font-weight: 600
+                text-align: center
+                padding-bottom: 10px
+                span
+                    font-family: 'Samsung Sharp Sans'
+                    font-weight: 300
+            h3
+                font-size: 60px
+                font-family: 'Black Han Sans', sans-serif 
+                font-weight: 500
+                padding-bottom: 50px
+                text-align: center
+                color: #083b3e
+                span 
+                    color: #eb224c
+                    margin: 0 10px
+            .circle
+                display: block
+                width: 85px
+                height: 85px
+                background-color: #0a5155
+                border-radius: 50%
+                color: #fff
+                font-size: 28px
+                text-align: center
+                line-height: 85px
+                margin: 0 auto 25px
+            .conWrap
+                // display: flex
+                // flex-wrap: wrap
+                .box
+                    position: relative
+                    width: 100%
+                    margin-right: 20px
+                    padding: 50px 40px 30px
+                    border-radius: 16px
+                    background-color: #fff
+                    text-align: center
+                    margin-bottom: 20px
+                    &:last-child
+                        margin-right: 0
+                    .tag
+                        position: absolute
+                        top: 0
+                        left: 0
+                        display: inline-block
+                        border-radius: 16px 0 16px 0
+                        padding: 5px 20px
+                        background-color: #eb224c
+                        font-size: 24px
+                        font-weight: 600
+                        text-align: center
+                        color: #fff
+                    p
+                        font-size: 20px
+                        color: #333333
+                        text-align: center
+                        font-weight: 400
+                    .title
+                        font-size: 30px
+                        color: #0a5155
+                        text-align: center
+                        font-weight: 700
+                        padding-bottom: 20px
+                        span
+                            color: #eb224c
+                    .sub
+                        font-size: 24px
+                        color: #0a5155
+                        text-align: center
+                        font-weight: 700
+                    img
+                        display: block
+                        width: auto
+                        max-width: 100%
+                        margin: 0 auto
+                    .flex
+                        display: flex
+                        justify-content: center
+                        .img
+                            width: 35%
+                            text-align: center
+                            p
+                                font-size: 24px
+                                font-weight: bolder
+                                padding-top: 15px
+                        .or
+                            margin-top: 60px
+                            font-size: 72px
+                            color: #eb224c
+                            font-weight: bolder
+                            width: 18%
+            .box02
+                position: relative
+                width: 100%
+                margin-right: 20px
+                padding: 30px
+                border-radius: 16px
+                background-color: #fff
+                text-align: center
+                margin-bottom: 70px
+                .title
+                    display: inline-block
+                    font-size: 24px
+                    text-align: center
+                    background-color: #eb224c
+                    padding: 10px 20px
+                    color: #fff
+                    border-radius: 50px
+                    margin: 0 auto
+                    margin-bottom: 40px
+                .list
+                    display: flex
+                    flex-wrap: wrap
+                    padding-bottom: 40px
+                    li
+                        width: calc(33.3333%)
+                        text-align: center
+                        margin-bottom: 30px
+                        .img
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            height: 160px
+                        img
+                            display: block
+                            width: auto
+                            max-width: 100%
+                            margin: 0 auto 10px
+                        p
+                            font-size: 20px
+                            color: #0a5155
+                            text-align: center
+                            font-weight: 600
+                            span
+                                font-size: 110%
+                                font-weight: 300
+                                color: #0a5155
+                h5
+                    padding-bottom: 5px
+                    text-align: center
+                    span
+                        display: inline-block
+                        font-family: 'Samsung Sharp Sans Bold'
+                        font-size: 24px
+                    .point
+                        color: #0a5155
+                        font-family: 'Pretendard'
+                    small
+                        font-size: 18px
+                        font-weight: 500
+                h4
+                    font-size: 30px
+                    padding-bottom: 40px
+                    span
+                        color: #ff3369
+            .box02.type02
+                padding: 50px 30px 
+                margin-bottom: 0
+            .box03
+                background-color: #eeeeee
+                max-width: 540px
+                margin: 0 auto
+                width: 100%
+                padding: 15px 0
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                align-items: flex-start
+                margin-bottom: 20px
+                span
+                    display: flex
+                    flex-direction: column
+                    justify-content: start
+                    width: calc(33.3333%)
+                    text-align: center
+                    .img
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        height: 50px
+                    img
+                        display: block
+                        width: auto
+                        max-width: 100%
+                        margin: 0 auto
+                p 
+                    font-size: 20px
+                    font-weight: 500
+            .plus
+                text-align: center
+                font-size: 44px
+                color: #eb224c
+                padding-bottom: 15px
+                line-height: 20px
+            .info
+                display: flex
+                align-items: start
+                padding-bottom: 10px
+                span
+                    display: inline-block
+                    width: 100px
+                    height: 38px
+                    background-color: #eee
+                    border-radius: 50px
+                    font-size: 20px
+                    line-height: 38px
+                    font-weight: 500
+                    text-align: center
+                    margin-right: 10px
+                    color: #211217
+                p
+                    font-size: 20px
+                    line-height: 1.4
+                    font-weight: 500
+                    text-align: left
+                    margin-top: 3px
+                    color: #211217
+            .half
+                display: flex
+                flex-wrap: wrap
+                span
+                    display: inline-block
+                    width: calc(50% - 10px)
+                    margin-right: 20px
+                    margin-bottom: 50px
+                    &:nth-child(2n)
+                        margin-right: 0
+                    .img
+                        display: flex
+                        justify-content: flex-start
+                        align-items: center
+                        height: 70px
+                    img
+                        display: block
+                        width: auto
+                        max-width: 100%
+                    .tit
+                        font-size: 24px
+                        padding-bottom: 10px
+                        color: #444444
+                        text-align: left
+                        font-weight: 500
+                        b
+                            color: #444444
+                    ul 
+                        li
+                            position: relative
+                            padding-left: 16px
+                            text-align: left
+                            color: #444444
+                            font-weight: 500
+                            &::before
+                                content: '※'
+                                display: block
+                                position: absolute
+                                top: 0
+                                left: 0
+                                font-size: 16px
+                                color: #333
+                                line-height: 1.3
+                                padding-bottom: 5px
+            .box04
+                background-color: #eeeeee
+                max-width: 540px
+                margin: 0 auto
+                width: 100%
+                padding: 35px 15px
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                align-items: center
+                margin-bottom: 40px
+                span
+                    display: flex
+                    flex-direction: column
+                    justify-content: start
+                    text-align: center
+                    p
+                        font-size: 20px
+                    .or
+                        display: block
+                        width: 27px
+                        height: 27px
+                        background-color: #000
+                        color: #fff
+                        text-align: center
+                        line-height: 27px
+                        border-radius: 50%
+                        font-size: 14px
+                        margin: 0 10px
+                        padding-right: 2px
+            .notice
+                font-size: 20px
+                text-align: center
+                padding-bottom: 15px
+    .sc4_2
+        padding: 100px 0 0
+        overflow: hidden
+        .wrap
+            width: 90%
+            margin: 0 auto
+            max-width: 768px
+            padding: 0 24px
+            span.subtext
+                display: block
+                font-size: 24px
+                font-family: 'Samsung Sharp Sans Bold'
+                font-weight: 600
+                text-align: center
+                padding-bottom: 10px
+                span
+                    font-family: 'Samsung Sharp Sans'
+                    font-weight: 300
+            h3
+                font-size: 60px
+                font-family: 'Black Han Sans', sans-serif 
+                font-weight: 500
+                padding-bottom: 20px
+                text-align: center
+                color: #083b3e
+                span 
+                    color: #eb224c
+                    margin: 0
+            p.text
+                font-size: 24px
+                font-weight: 600
+                padding-bottom: 30px
+                color: #0a5155
+                text-align: center
+            .img
+                text-align: center
+                img
+                    display: block
+                    width: auto
+                    max-width: 100%
+                    margin: 0 auto
+    .sc4_3
+        padding: 100px 0 0
+        background-color: #e1f4f5
+        overflow: hidden
+        .wrap
+            width: 90%
+            margin: 0 auto
+            max-width: 768px
+            padding: 0 24px
+            span.subtext
+                display: block
+                font-size: 24px
+                font-family: 'Samsung Sharp Sans Bold'
+                font-weight: 600
+                text-align: center
+                padding-bottom: 10px
+                color: #232323
+                opacity: 0.5
+                span
+                    font-family: 'Samsung Sharp Sans'
+                    font-weight: 300
+                     color: #232323
+            h3
+                font-size: 60px
+                font-family: 'Black Han Sans', sans-serif 
+                font-weight: 500
+                padding-bottom: 60px
+                text-align: center
+                color: #083b3e
+                span 
+                    color: #eb224c
+                    margin: 0 10px
+            p.text
+                font-size: 24px
+                font-weight: 600
+                padding-bottom: 10px
+                color: #0a5155
+                text-align: center
+            .img
+                text-align: center
+                img
+                    display: block
+                    width: auto
+                    max-width: 100%
+                    margin: 0 auto
+    .sc5
+        padding: 100px 0
+        .wrap
+            width: 90%
+            margin: 0 auto
+            max-width: 768px
+            padding: 0 24px
+            h2
+                font-size: 60px
+                font-family: 'Black Han Sans', sans-serif  
+                font-weight: 500
+                text-align: center
+                span
+                    color: #eb224c
+            p
+                font-size: 30px
+                padding-bottom: 50px
+                text-align: center
+            .sc5_swiper
+                position: relative
+                display: flex
+                align-items: center
+                .swiper-container
+                    width: calc(100% - 120px)
+                    .swiper-slide 
+                        display: flex
+                        align-items: start
+                        img
+                            display: block
+                            width: auto
+                            max-width: 100%
+                            // min-width: 189px
+                        span
+                            display: inline-block
+                            margin-left: 20px
+                            .tit
+                                display: inline-block
+                                font-weight: 800
+                                font-size: 24px
+                                border-bottom: 2px solid #083b3e
+                                color: #083b3e
+                                margin-bottom: 10px
+                            .flex
+                                display: flex
+                                align-items: center
+                                margin-bottom: 10px
+                                small
+                                    display: inline-block
+                                    color: #999999
+                                    font-size: 18px
+                                    margin-right: 10px
+                                .rating
+                                    display: flex
+                                    align-items: center
+                            p
+                                font-size: 22px
+                                line-height: 1.4
+                                text-align: left
+                                font-weight: 500
+                                padding-bottom: 0
+                .swiper-button-next,.swiper-button-prev
+                    position: static
+                    width: 18px
+                    height: 40px
+                    background-size: contain
+                    background-repeat: no-repeat
+                .swiper-button-next
+                    background-image: url(../img/swiper_next.png)
+                .swiper-button-prev
+                    background-image: url(../img/swiper_prev.png)
+                    
+    .sc6
+        background-color: #eeeeee
+        padding: 80px 0
+        .wrap
+            width: 90%
+            margin: 0 auto
+            max-width: 768px
+            padding: 0 24px
+            h2
+                font-size: 60px
+                font-family: 'Black Han Sans', sans-serif  
+                font-weight: 500
+                padding-bottom: 10px
+                text-align: center
+                span
+                    color: #eb224c
+            .border
+                border-radius: 20px
+                overflow: hidden
+                .top
+                    display: flex
+                    background-color: #63d2d9
+                    span
+                        display: inline-block
+                        font-size: 24px
+                        text-align: center
+                        padding: 10px 0
+                        width:  190px
+                        font-weight: 600
+                        &:nth-child(1)
+                            width: 135px
+                .sc6_swiper
+                    font-size: 24px
+                    background-color: #fff
+                    height: 450px
+                    padding: 10px 0
+                    .swiper-slide 
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        >div
+                            text-align: center
+                            width: 190px
+                            font-weight: 500
+                    .name
+                        color: #666666
+                        width: 135px !important
+                    .date
+                        color: #999
+                        font-weight: 300 !important
+                        // display: flex
+                        // align-items: center
+                        span
+                            display: inline-block
+                    .done 
+                        text-align: center
+                        span
+                            display: inline-block
+                            margin: 0 auto
+                            color: #eb224c
+                            border: 2px solid #eb224c
+                            border-radius: 50px
+                            padding: 5px 15px
+                            text-align: center
+                            font-weight: 600
+                            min-width: 119px
+                    .done.gray
+                        span
+                            color: #666
+                            border: 2px solid #666
+    .eventGo
+        position: fixed
+        left: 0
+        bottom: 0
+        width: 100%
+        z-index: 100
+        button
+            display: block
+            width: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 20px 0 12px
+            background-color: #eb224c
+            font-family: 'Samsung Sharp Sans Bold'
+            color: #fff
+            font-size: 36px
+            font-weight: 300
+            cursor: pointer
+            span
+                display: flex
+                align-items: center
+                position: relative
+                color: #91f8ff
+                font-size: 48px
+                font-family: 'Black Han Sans', sans-serif
+                font-weight: 500
+                margin-left: 10px
+                &::after
+                    display: block
+                    position: relative
+                    content: ''
+                    top: -3px
+                    width: 40px
+                    height: 40px
+                    margin-left: 10px
+                    background-image: url(../img/event_arrow.png)
+                    background-repeat: no-repeat
+                    background-size: contain
+
+
+    .footer
+        background: #eee
+        padding: 40px 0 120px
+        .img-footer
+            text-align: center
+        ul 
+            text-align: center
+            margin-top: 30px
+            li
+                display: inline-block
+                color: #494949
+                font-size: 13px
+                margin: 0 10px
+        .copyright
+            color: #494949
+            text-align: center
+            margin-top: 10px
+            font-size: 16px
+
+    .bottomFix
+        position: fixed
+        right: 20px
+        bottom: 120px
+        display: block
+        z-index: 101
+        .modalBtn
+            display: block
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            background-color: #eb224c
+            color: #fff
+            color: #fff
+            font-size: 26px
+            font-weight: 500
+            margin-bottom: 15px
+            cursor: pointer
+            animation: blink 1.2s infinite
+            animation-timing-function: step-start
+        .topBtn
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            background-color: #0a5155
+            color: #fff
+            font-size: 26px
+            font-weight: 800
+            position: relative
+            cursor: pointer
+            &::before
+                content: ''
+                position: relative
+                display: block
+                border-right: 10px solid transparent
+                border-left: 10px solid transparent
+                border-bottom: 10px solid #fff
+                margin-bottom: 5px
+    .modal
+        width: 100%
+        height: 100%
+        display: none
+        justify-content: center
+        align-items: center
+        position: fixed
+        top: 0
+        left: 0
+        background-color: rgba(0,0,0,0.5)
+        z-index: 900
+        .wrap
+            position: relative
+            width: 80%
+            max-width: 640px
+            margin: 0 auto
+            background-color: #0a5155
+            padding: 80px 0
+            border-radius: 30px
+            z-index: 950
+            .modalClose
+                position: absolute
+                top: 30px
+                right: 30px
+                display: block
+                width: 30px
+                height: 30px
+                background-image: url(../img/modalClose.png)
+                background-repeat: no-repeat
+                background-size: contain
+                background-position: center
+                cursor: pointer
+    .modal.on
+        display: flex
+
+
+
+                                
+@media (max-width: 768px) 
+    #thephone
+        .pc
+            display: none !important
+        .mo
+            display: block !important
+
+        .header
+            height: 21vw
+            .wrap
+                width: 91%
+                flex-wrap: wrap
+                justify-content: space-between
+                .flipdown
+                    margin-right: 0
+                    margin-bottom: 2vw
+                .flipdown .rotor-bottom,.flipdown .rotor-leaf-front,.flipdown .rotor-leaf-rear,
+                .flipdown .rotor:after,.flipdown .rotor-top
+                    width: 7.6vw
+                    height: 5.5vw
+                .flipdown .rotor-group
+                    padding-right: 3vw
+                .flipdown .rotor-group:last-child
+                    padding-right: 0
+                .flipdown .rotor-leaf,.flipdown .rotor
+                    width: 7.6vw
+                    height: 11vw
+                .flipdown .rotor-top,.flipdown .rotor-leaf-front
+                    line-height: 11vw
+                .flipdown .rotor
+                    font-size: 8vw
+                .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3)::after
+                    left: 16.9vw
+                    width: 1.2vw
+                    height: 1.2vw
+                    bottom: 6.8vw
+                .flipdown .rotor-group:nth-child(n+2):nth-child(-n+3)::before
+                    left: 16.9vw
+                    width: 1.2vw
+                    height: 1.2vw
+                    bottom: 3.5vw
+                .notice
+                    width: 100%
+                    margin-right: 0
+                    .clock
+                        display: none
+                        // width: 7vw
+                        // margin-right: 0.5vw
+                    span
+                        font-size: 3.5vw
+                        margin-top: 1vw
+                        .pc768
+                            display: none
+                .right_container
+                    margin-bottom: -1vw
+                    p
+                        font-size: 3.5vw
+                    .progressbar,.progressbar > div:empty
+                        height: 1vw
+                    .progressbar 
+                        margin-top: 1.2vw
+                        height: 1vw
+
+
+
+        .sc1 
+            padding-top: 21vw
+            .wrap 
+                min-width: auto
+                .visual.mo
+                    img
+                        display: block
+                        width: 100%
+                    .img02
+                        position: relative
+                        margin-top: 10vw
+                        width: 85%
+                        z-index: 10
+                    .img01
+                        margin-top: -8vw
+                .info
+                    background-color: rgba(62,248,241,0.2)
+                    padding: 4vw
+                    bottom: 14.2vw
+                    width: 78.125%
+                    border-radius: 2vw
+                    span
+                        display: block
+                        font-size: 5vw
+                    span.bold
+                        font-weight: 700
+                        margin-bottom: 0.5vw
+        .sc2
+            padding: 8.5vw 0 
+            .wrap 
+                h2
+                    font-size: 8.5vw
+                    padding: 0
+                    margin-bottom: 3.5vw
+                    &::before,&::after
+                        width: 2.4vw
+                        height: 2.4vw
+                    &::before
+                        margin-right: 2vw
+                    &::after
+                        margin-left: 2vw
+        .form 
+            .input
+                height: 9.5vw
+                padding: 0
+                margin-bottom: 5vw
+                flex-wrap: nowrap
+                width: 85.125%
+                .input-title
+                    font-size: 4vw
+                    width: 16.5vw
+                    .letter
+                        width: 3vw
+                input[type="text"]
+                    width: calc(100% - 16.5vw)
+                    font-size: 4vw
+                    padding: 0 1.5vw
+                select
+                    font-size: 4vw
+                    border-radius: 0.5vw
+                    background-size: 2.6vw
+                    width: calc(100% - 16.5vw)
+                    option
+                        font-size: 4vw
+                .input-wrap 
+                    width: calc(100% - 16.5vw)
+                    input[type="text"]
+
+            .checkbox
+                margin: 2vw 0 3.5vw
+                input[type="checkbox"]
+                    width: 2.4vw
+                    height: 2.4vw
+                    margin-right: 1vw
+                input[type="checkbox"] + label
+                    font-size: 3vw
+                a
+                    font-size: 3vw
+            .send
+                width: 42vw
+                height: 8.5vw
+                font-size: 4vw
+                border-radius: 5vw
+        .sc3
+            padding: 9vw 0 5vw
+            .wrap
+                padding: 0
+                .img
+                    padding-bottom: 7vw
+                h3
+                    font-size: 7vw
+                    padding-bottom: 2vw
+                .table
+                    margin-bottom: 7vw
+                table 
+                    thead 
+                        th
+                            font-size: 3vw
+                            padding: 1.5vw 0
+                            border-radius: 2.4vw 2.4vw 0 0
+                    tbody 
+                        th
+                            font-size: 3vw
+                            padding: 1.5vw 0
+                            height: 5vw
+                        .th
+                            font-size: 3vw
+                            padding: 1.5vw 0
+                        td
+                            font-size: 3vw
+                            padding: 1.5vw 0
+                p
+                    padding-bottom: 3.5vw
+                    font-size: 3.5vw
+        .sc4
+            padding: 11vw 0
+            .wrap
+                padding: 0
+                span.subtext
+                    font-size: 3.4vw
+                    padding-bottom: 1vw
+                h3
+                    font-size: 7vw
+                    padding-bottom: 6vw
+                    span
+                        margin: 0 2vw
+                .circle
+                    width: 12.5vw
+                    height: 12.5vw
+                    font-size: 3.8vw
+                    line-height: 12.5vw
+                    font-weight: 600
+                    margin: 0 auto 3.5vw
+                .conWrap .box
+                    margin-right: 3vw
+                    padding: 7vw 4vw 4vw
+                    border-radius: 2.6vw
+                    margin-bottom: 3vw
+                    img
+                        max-width: 80%
+                    img.size_mo01
+                        max-width: 21vw
+                    .tag
+                        font-size: 3.4vw
+                        padding: 1vw 3vw
+                        border-radius: 2.6vw 0 2.6vw 0
+                    p
+                        font-size: 2.5vw
+                    .title
+                        font-size: 4vw
+                        padding-bottom: 1.5vw
+                    .sub
+                        font-size: 3.4vw
+                        padding-bottom: 3vw
+                    .flex 
+                        .img 
+                            p
+                                font-size: 3vw
+                                padding-top: 1vw
+                        .or
+                            font-size: 8.2vw
+                            margin-top: 6vw
+                .box02
+                    margin-right: 3vw
+                    padding: 4vw
+                    border-radius: 2.6vw
+                    margin-bottom: 8vw
+                    .title
+                        font-size: 3.4vw
+                        padding: 1vw 3vw
+                        border-radius: 6vw
+                        margin-bottom: 5vw
+                    ul
+                        padding-bottom: 5vw
+                        li
+                            margin-bottom: 4vw
+                            .img
+                                height: 17vw
+                            p
+                                font-size: 3vw
+                    .list 
+                        padding-bottom: 5vw
+                        li 
+                            margin-bottom: 4vw
+                            .img
+                                height: 26vw
+                            img
+                                max-width: 80%
+                            p
+                                font-size: 3vw
+                    h5
+                        padding-bottom: 1.5vw
+                        span
+                            font-size: 3.4vw
+                        small
+                            font-size: 2.8vw
+                                    
+                .box03
+                    padding: 2.5vw 0 
+                    margin-bottom: 3vw
+                    .img
+                        height: 6vw
+                    span .img
+                        height: auto
+                        padding-bottom: 2vw
+                    p
+                        font-size: 2.5vw
+                .plus
+                    font-size: 5.4vw
+                    line-height: 3vw
+                    padding-bottom: 2.5vw
+                    font-weight: 800
+                .box04
+                    padding: 4.5vw 2.5vw
+                    margin-bottom: 5vw
+                    span 
+                        p
+                            font-size: 2.5vw
+                        .or
+                            width: 3.5vw
+                            height: 3.5vw
+                            line-height: 3.5vw
+                            font-size: 2vw
+                            margin: 0 2vw
+                .info
+                    padding-bottom: 2vw
+                    span
+                        width: 13vw
+                        min-width: 13vw
+                        height: 4.8vw
+                        border-radius: 6vw
+                        font-size: 2.5vw
+                        line-height: 4.8vw
+                        margin-right: 2vw
+                    p
+                        font-size: 2.5vw
+                        margin-top: 0
+                        
+                .box02.type02
+                    padding: 6vw 4vw
+                    h4
+                        font-size: 4vw
+                        padding-bottom: 5vw
+                    .half span
+                        width: calc(50% - 1.5vw)
+                        margin-right: 3vw
+                        margin-bottom: 6vw
+                        &:nth-child(2n)
+                            margin-right: 0
+                            
+                        .img
+                            height: auto
+                            min-height: 8vw
+                            padding-bottom: 2vw
+                            width: 65%
+                        .tit
+                            font-size: 3vw
+                            padding-bottom: 1.5vw
+                        ul 
+                            padding-bottom: 0
+                            li
+                                padding-left: 2.2vw
+                                font-size: 2.5vw
+                                margin-bottom: 1vw
+                                &:last-child
+                                    margin-bottom: 0
+                                &::before
+                                    font-size: 2.6vw
+                                    padding-bottom: 1.5vw
+                .notice
+                    font-size: 3vw
+                    padding-bottom: 2.5vw
+        .sc4_2
+            padding: 11vw 0 0
+            .wrap
+                padding: 0
+                span.subtext
+                    font-size: 3.4vw
+                    padding-bottom: 1.5vw
+                h3
+                    font-size: 7vw
+                    padding-bottom: 2vw
+                p.text
+                    font-size: 3vw
+                .img
+                    width: 80%
+                    margin: 0 auto
+        .sc4_3
+            padding: 11vw 0 0
+            .wrap
+                padding: 0
+                span.subtext
+                    font-size: 3.4vw
+                    padding-bottom: 1.5vw
+                h3
+                    font-size: 7vw
+                    padding-bottom: 6vw
+                p.text
+                    font-size: 3vw
+                    padding-bottom: 0.5vw
+                .img
+                    width: 80%
+                    margin: 0 auto
+        .sc5
+            padding: 11vw 0
+            .wrap 
+                padding: 0
+                h2
+                    font-size: 7vw
+                p
+                    font-size: 4vw
+                    padding-bottom: 6vw
+                .sc5_swiper 
+                    .swiper-container
+                        width: calc(100% - 14vw)
+                        .swiper-slide
+                            img
+                                width: 40%
+                            span
+                                margin-left: 3vw
+                                .tit
+                                    font-size: 3.4vw
+                                    margin-bottom: 2vw
+                                .flex
+                                    margin-bottom: 2vw
+                                    span
+                                        font-size: 2.8vw
+                                        margin-right: 2vw
+                                    small
+                                        font-size: 2.8vw
+                                        margin-right: 2vw
+                                    .rating img
+                                        max-width: 4vw
+                                p
+                                    font-size: 3.2vw
+                    .swiper-button-next,.swiper-button-prev
+                        width: 2.8vw
+                        height: 4vw
+                        margin-top: -3.2vw
+        .sc6
+            padding: 9vw 0
+            .wrap
+                padding: 0
+                h2
+                    font-size: 7vw
+                    padding-bottom: 2vw
+                .border
+                    border-radius: 3vw
+                    .top span
+                        font-size: 3.5vw
+                        padding: 1.5vw 0
+                        width: 27% !important
+                        &:nth-child(1)
+                            width: 19% !important
+                    .sc6_swiper
+                        font-size: 3.5vw
+                        padding: 2vw 0
+                        height: 52vw
+                        .swiper-slide 
+                            > div
+                                width: 27% !important
+                            >div.name
+                                width: 19% !important
+                        .done span
+                            padding: 0.5vw 1.5vw
+                            min-width: 17vw
+        .footer ul
+            marging-top: 4vw
+            li
+                display: block
+        .eventGo button
+            padding: 3vw 0
+            font-size: 4.6vw
+            span
+                font-size: 5.8vw
+                margin-left: 2vw
+                &::after
+                    width: 5vw
+                    height: 5vw
+                    margin-left: 2vw
+
+        .bottomFix
+            right: 3vw
+            bottom: 18vw
+            .modalBtn,.topBtn
+                width: 14vw
+                height: 14vw
+                font-size: 4vw
+            .modalBtn
+                margin-bottom: 2vw
+            .topBtn::before
+                border-right: 2vw solid transparent
+                border-left: 2vw solid transparent
+                border-bottom: 2.5vw solid #fff
+
+        .modal .wrap
+            padding: 14vw 0 10vw
+            border-radius: 5vw
+            .modalClose
+                width: 6vw
+                height: 6vw
+                top: 5vw
+                right: 5vw
+            

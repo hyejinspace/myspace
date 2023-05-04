@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html;charset=euc-kr">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta property="og:image" content="http://www.aia.co.kr/content/dam/kr/ko/images/site/og/aia-life.png">
+    <title>(무) AIA건강+ 암보험(갱신형)</title>
+
+    <style>
+        /* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css); */
+
+        @-webkit-keyframes fadeInUp {
+            0% {opacity: 0; -webkit-transform: translateY(20px); transform: translateY(20px);}
+            100% {opacity: 1; -webkit-transform: translateY(0); transform: translateY(0);}
+        }
+        @keyframes fadeInUp {
+            0% {opacity: 0; -webkit-transform: translateY(20px); -ms-transform: translateY(20px); transform: translateY(20px);}
+            100% {opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0);}
+        }
+        @-webkit-keyframes fadeInLeft {
+            0% { opacity: 0; -webkit-transform: translateX(-20px); transform: translateX(-20px); }
+            100% { opacity: 1; -webkit-transform: translateX(0); transform: translateX(0); }
+        }
+        @keyframes fadeInLeft {
+            0% { opacity: 0; -webkit-transform: translateX(-20px); -ms-transform: translateX(-20px); transform: translateX(-20px); }
+            100% {opacity: 1; -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); }
+        }
+        .animate-plus {opacity: 0;}
+        .fadeInUp {-webkit-animation-name: fadeInUp; animation-name: fadeInUp;}
+        .fadeInLeft {-webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; }
+        .animated {-webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both;}
+
+
+        * {margin: 0; padding: 0; box-sizing: border-box; font-family: 'Spoqa Han Sans Neo',"맑은 고딕",Sans-serif; font-weight: 300;}
+        html,body {font-family: 'Spoqa Han Sans Neo',"맑은 고딕",Sans-serif; letter-spacing: -1px; word-break: keep-all; overflow-x: hidden; background-color: #fff;}
+        ul,ol,li {list-style: none;}
+        img {display: inline-block;}
+        a {background-color: transparent; text-decoration:none; display: inline-block;}
+        span {display: inline-block}
+        input[type="text"] { border: none; color: #000; outline: none; background-color: transparent;}
+        input:-ms-input-placeholder { color: #fff !important; }
+        input::-webkit-input-placeholder { color: #fff; }
+        input::-moz-placeholder { color: #fff; }
+        input:focus {outline: none;}
+        button {display: block; text-transform: none; border-style: none; padding: 0; background-color: transparent;}
+
+        .hide {display: none;}
+        .bold { font-weight: bold; }
+
+        .only_pc {display: inline-block !important;}
+        .only_mo {display: none !important;}
+
+        .db_box input[type="text"] { width: 100%; height: 40px; padding: 0 15px 0 0; line-height: 41px; font-size: 20px;  border-bottom: 1px solid #fff; color: #fff;}
+        .db_box ul { margin-top:24px; }
+        .db_box ul:after { content:""; display:block; clear:both; }
+        .db_box ul li:after { content: ""; display: block; clear: both; }
+        .db_box ul li { float:left; position: relative; width: 100%; height: 40px; margin-bottom: 20px; }
+        .db_box ul li:last-child { margin-bottom:0; }
+        .db_box ul li.name { display: inline-block; }
+        .db_box ul li.name input { float: left; }
+        .db_box ul li.sex { position: absolute; top: 108px; right: 20px; width: 63px; padding: 0; }
+        .db_box ul li.sex input { width: 1px; height: 1px; overflow: hidden; position: absolute; left: -9999px; }
+        .db_box ul li.sex input + label { position: absolute; top: 0; left:0; display: block; width: 30px; height: 30px; cursor: pointer; color:#000; font-size: 16px; line-height: 30px; background: #fff; text-align:center; border-radius: 5px;}
+        .db_box ul li.sex label:last-child { right:0; left:auto; }
+        .db_box ul li.sex input:checked + label { color:#fff; background:#d31145; }
+
+        .db_box ul li.phone .confirm_btn {position: absolute; bottom: 7px; right: 0; width: 40px; height: 40px; background-image: url("./images/20221111_aia_mark.png"); background-repeat: no-repeat; background-size: contain; cursor: pointer;}
+        .db_box ul li.confirm {display: none;}
+        .db_box ul li.confirm .check {position: absolute; bottom: 7px; right: 0; width: 40px; height: 40px; background-image: url("./images/20221111_aia_confirm.png"); background-repeat: no-repeat; background-size: contain; cursor: pointer;}
+        .db_box ul li.confirm.on {display: block;}
+        .db_box.on .db_box_btn {margin-top: 10px;}
+
+        .db_box .db_box_btn { width: 100%; margin-top: 30px; }
+        .db_box .db_box_btn a { float: left; display: inline-block;}
+        .db_box .db_box_btn a + a { float: right; }
+
+
+        .inner {width: 100%; max-width: 1020px; height: 100%; margin: 0 auto; position: relative;}
+
+        .header {background-color: #ebebeb; width: 100%; height: 95px;}
+        .header .inner {position: relative;}
+        .header .btn_title {position: absolute; display: inline-block; top: 50%; left: 0; transform: translateY(-50%);}
+        .header .btn_tel {position: absolute; display: inline-block; top: 50%; right: 0; transform: translateY(-50%);}
+
+        .sc1 {width: 100%; background-color: #dce9f1;}
+        .sc1 .inner {height: 540px;}
+        .sc1 .inner >* {position: absolute; z-index: 2;}
+        .sc1 .inner .img01 {left: -150px; bottom: 0; animation-delay: 0s;}
+        .sc1 .inner .img01 img {margin-bottom: -5px;}
+        .sc1 .inner .img02 {left: 300px; top: 20px; animation-delay: 0.2s;}
+        .sc1 .inner .img03 {left: 390px; top: 60px; animation-delay: 0.4s;}
+        .sc1 .inner .img04 {left: 240px; top: 112px; animation-delay: 0.6s;}
+        .sc1 .inner .img05 {left: 320px; top: 220px; animation-delay: 0.8s;}
+        .sc1 .inner .img06 {left: 200px; top: 440px; animation-delay: 1s;}
+        .sc1 .inner .db_box {right: -20px; top: 20px; width: 330px; height: 400px; padding: 40px 20px; background-color: #004d77; border-radius: 20px;}
+        .sc1 .inner .db_box h3 {text-align: center;}
+
+        .sc2 {width: 100%;}
+        .sc2 .inner {padding: 70px 0;}
+        .sc2 .inner >div {text-align: center;}
+        .sc2 .inner .img01 {margin-bottom: 30px;}
+        .sc2 .inner .img02 {margin-bottom: 40px;}
+        .sc2 .inner .img03 {margin-bottom: 40px;}
+        .sc2 .inner .img04 {margin-bottom: 60px;}
+        .sc2 .inner .img05 {margin-bottom: 30px;}
+        .sc2 .inner .img06 {margin-bottom: 70px;}
+        .sc2 .inner .img07 {margin-bottom: 70px;}
+        .sc2 .inner .line {width: 100%; height: 2px; background-color: #ebeced; margin-bottom: 75px;}
+        .sc2 .inner .img08 {margin-bottom: 60px;}
+        .sc2 .inner .img09 {margin-bottom: 50px;}
+        .sc2 .inner .img10 {text-align: left;}
+
+        .sc3 {width: 100%; background-color: #dce9f1;}
+        .sc3 .inner {padding: 80px 0 70px;}
+        .sc3 .inner >div {text-align: center;}
+        .sc3 .inner .img01 {margin-bottom: 20px;}
+        .sc3 .inner .img02 {margin-bottom: 60px;}
+        .sc3 .inner .img03 {text-align: left;}
+
+        .sc4 {width: 100%;}
+        .sc4 .inner {padding: 75px 0;}
+        .sc4 .inner >div {text-align: center;}
+        .sc4 .inner .img01 {margin-bottom: 40px;}
+        .sc4 .inner .img02 {margin-bottom: 40px;}
+        .sc4 .inner .img03 {margin-bottom: 60px;}
+        .sc4 .inner .img04 {text-align: left;}
+
+        .sc5 {width: 100%; background-color: #f1f1f1;}
+        .sc5 .inner {padding: 70px 0 90px;}
+        .sc5 .inner >div {text-align: center;}
+        .sc5 .inner .img01 {margin-bottom: 50px;}
+        .sc5 .inner .img02 {margin-bottom: 30px;}
+        .sc5 .inner .img03 {margin-bottom: 30px;}
+        .sc5 .inner .img04 {margin-bottom: 30px;}
+
+        .sc6 {width: 100%; background-color: #006196;}
+        .sc6 .inner {padding: 70px 0;}
+        .sc6 .inner .db_box::after { content: ""; display: block; clear: both; }
+        .sc6 .inner .db_box .img01 {float: left; width: 320px;}
+        .sc6 .inner .db_box form {float: right; width: 547px;}
+        .sc6 .inner .db_box form ul {margin-top: 0;}
+        .sc6 .inner .db_box .db_box_btn {display: inline-block; margin-top: 40px;}
+        .sc6 .inner .db_box ul li.sex {top: auto; right: 0; margin-bottom: 0;}
+
+        .guide_area .guide_top {width: 100%; background-color: #5a5a5a; text-align: center;}
+        .guide_area .guide_top button {width: 100%; cursor: pointer; padding: 10px 0;}
+        .guide_area .guide_wrap {display: none; text-align: center;}
+        .guide_area .guide_wrap.on {display: block;}
+
+        .footer {width: 100%; background-color: #ececec;}
+        .footer .inner {text-align: center; padding: 40px 0 50px;}
+        .footer .inner a {position: absolute; width: 180px; height: 70px; left: 160px; top: 30px; text-indent: -9999px;}
+
+
+        .floating { position: fixed; top: 220px; left: 50%; margin-left: 550px; width: 240px; /*height: 290px;*/ background-color: #004d77; border-radius: 15px; padding: 20px; opacity: 0; transition: opacity 0.3s;}
+        .floating.fixed { position: fixed; top: 220px; opacity: 1;}
+        .floating .db_box {text-align: center;}
+        .db_box ul {margin-top: 30px;}
+        .db_box input[type="text"] {font-size: 17.41px; letter-spacing: -0.75px;}
+        .floating .db_box ul {margin-top: 10px;}
+        .floating .db_box ul li {margin-bottom: 10px;}
+        .floating .db_box ul li.sex { top: auto;}
+        .floating .db_box ul li.phone .confirm_btn {width: 34px; height: 34px;}
+        .floating .db_box ul li.confirm .check {width: 34px; height: 34px;}
+        .floating .db_box .btn_area { margin-top: 10px; text-align: center; }
+        .floating .db_box .btn_area a { float: initial; }
+        .floating .inner,
+        .floating .layer .btn,
+        .floating .layer .db_box .consult, 
+        .floating .layer .db_box .calc .result { display:none; }
+
+
+        .popup { display: none; }
+        .popup .mask { position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: #000; opacity: 0.7; filter: alpha(opacity=70); z-index: 100; }
+        .popup .popup_content { position: fixed; left: 50%; top: 50%; background: #fff; z-index: 101; }
+        .popup.agree button { outline: none; }
+        .popup.agree .popup_content { width: 650px; height: 740px; padding:30px; margin-left:-300px; margin-top:-380px; background:#fff; border:4px solid #d31145; border-radius: 56px; }
+        .popup.agree .popup_content .img { width: 74%;}
+        .popup.agree .popup_content .img img { width: 100%;}
+        .popup.agree .wrap { padding:0; }
+        .popup.agree .wrap .agree { margin-top: 25px; }
+        .popup.agree .wrap .agree > div { position: relative;  margin-top: 5px;  }
+        .popup.agree .wrap .agree input { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+        .popup.agree .wrap .agree label { display:block; height:30px; padding-left: 36px; background: url("./images/w20221111_popup_radio_off.png") no-repeat left 0 top 0 / 24px auto; }
+        .popup.agree .wrap .agree label img { position:relative; top:2px; height:18px; }
+        .popup.agree .wrap .agree input:checked + label { background-image: url("./images/20221111_popup_radio_on.png"); }
+        .popup.agree .wrap .agree .toggle { height:320px; margin:6px 0 10px; background:#f6f6f6; overflow:auto; }
+        .popup.agree .wrap .agree .toggle img { width:100%; }
+        .popup.agree .wrap .all_check { margin-top:15px; cursor: pointer;}
+        .popup.agree .wrap .all_check,
+        .popup.agree .wrap .all_check img { width:100%; }
+        .popup.agree .btn_close { display:block; position:absolute; top:25px; right:30px; width:25px; height:25px; cursor: pointer; }
+        .popup.agree .btn_close img { width:100%; }
+
+        .popup.type02 .popup_content { border-top: 25px solid #dc3e69; text-align: center; }
+        .popup.type02 .popup_content h2 { margin-top: 50px; padding-top: 70px; background: url("./images/w20221111_popup_icon01.png") no-repeat center 0; }
+        .popup.type02 .popup_content p.text { margin-top: 22px; font-size: 20px; line-height: 26px; padding: 0 5px; }
+        .popup.type02 .popup_content p.text span { color: #dc3e69; }
+        .popup.type02 .popup_content p.guide { margin-top: 28px; font-size: 18px; color:#7f7f7f; }
+        .popup.comp .popup_content { width: 512px; height: 416px; margin-top: -203px; margin-left: -256px; }
+        .popup.comp .popup_content h2 { font-size: 42px; }
+        .popup.comp .popup_content h2 span { color:#dc3e69; }
+        .popup.comp .btn_close { position: absolute; top: 12px; right: 12px; cursor: pointer;}
+        .popup.calc .popup_content { width: 512px; height: 406px; margin-top: -203px; margin-left: -256px; }
+        .popup.calc .popup_content h2 { font-size: 20px; }
+        .popup.calc .popup_content .calc_area { margin-top: 12px; font-size: 43px; }
+        .popup.calc .popup_content .calc_area span { color: #dc3e69; }
+        .popup.calc .popup_content .calc_area strong { margin: 0 38px; font-size: 42px; color: #dc3e69; }
+        .popup.calc .btn_close { position: absolute; top: 12px; right: 12px; cursor: pointer;}
+
+        
+        @media (max-width : 1080px) {
+            .only_pc {display: none !important;}
+            .only_mo {display: inline-block !important;}
+
+            img {width: 100%;}
+
+            .db_box ul {margin-top: 5vw;}
+            .db_box ul li {height: 8vw; margin-bottom: 3vw;}
+            .db_box input[type="text"] {font-size: 3.5vw; height: 100%; line-height: unset;}
+            .db_box ul li.sex {width: 13.5vw; top: 20vw; right: 5vw;}
+            .db_box ul li.sex input + label {width: 6vw; height: 6vw; font-size: 3vw; line-height: 6vw; border-radius: 1.5vw;}
+            .db_box .db_box_btn {margin-top: 7.5vw;}
+            .db_box .db_box_btn a {width: 49%;}
+
+
+            .db_box ul li.phone .confirm_btn {width: 7vw; height: 7vw;}
+            .db_box ul li.confirm .check {width: 7vw; height: 7vw;}
+            .floating .db_box ul li.phone .confirm_btn {width: 7vw; height: 7vw;}
+            .floating .db_box ul li.confirm .check {width: 7vw; height: 7vw;}
+            .db_box.on .db_box_btn {margin-top: 3vw;}
+
+            
+            .inner {max-width: 100%;}
+
+            .header {height: 15vw;}
+            .header .btn_title {width: 50vw; left: 2.5%;}
+            .header .btn_tel {width: 35vw; right: 2.5%;}
+
+            .sc1 {margin: 2.5vw auto; background-color: transparent;}
+            .sc1 .inner {width: 95%; height: 194vw;}
+            .sc1 .inner::after {position: absolute; content: ''; display: block; top: 0; left: 0; width: 55vw; height: 78vw; background-color: #dce9f1; border-radius: 8vw; z-index: 0;}
+            .sc1 .inner::before {position: absolute; content: ''; display: block; top: 0; right: 0; width: 55vw; height: 45vw; background-color: #dce9f1; border-radius: 8vw; z-index: 0;}
+            .sc1 .inner .img01 {bottom: auto; top: 1vw; left: 0; width: 52vw; border-radius: 6vw; overflow: hidden;}
+            .sc1 .inner .img02 {top: 81vw; left: 5%; width: 66vw; opacity: 0.6;}
+            .sc1 .inner .img03 {top: 6vw; left: auto; right: 7vw; width: 45vw;}
+            .sc1 .inner .img04 {top: 12vw; left: auto; right: 2vw; width: 51vw;}
+            .sc1 .inner .img05 {top: 45vw; left: auto; right: -3vw; width: 63vw; }
+            .sc1 .inner .img06 {top: 86vw; left: 5%; width: 90%;}
+            .sc1 .inner .db_box {top: 114vw; width: 90%; height: 79vw; left: 50%; transform: translateX(-50%); padding: 7vw 5vw; background-color: #006196;}
+            .sc1 .inner .db_box h3 img {width: 60vw;}
+
+            .sc2 .inner {width: 85%; padding: 0;}
+            .sc2 .inner .img01 {margin-bottom: 5vw;}
+            .sc2 .inner .img02 {width: 85%; margin: 0 auto 5vw;}
+            .sc2 .inner .img03 {width: 90%; margin: 0 auto 6vw;}
+            .sc2 .inner .img04 {margin-bottom: 5vw;}
+            .sc2 .inner .img05 {margin-bottom: 5vw;}
+            .sc2 .inner .img06 {width: 60%; margin: 0 auto 7vw;}
+            .sc2 .inner .img07 {width: 80%; margin: 0 auto 8vw;}
+            .sc2 .inner .line {margin-bottom: 8vw;}
+            .sc2 .inner .img08 {width: 80%; margin: 0 auto 8vw;}
+            .sc2 .inner .img09 {margin-bottom: 6vw;}
+            .sc2 .inner .img10 {margin-bottom: 10vw;}
+
+            .sc3 .inner {width: 90%; padding: 10vw 0 8vw;}
+            .sc3 .inner .img01 {margin-bottom: 3vw;}
+            .sc3 .inner .img02 {width: 90%; margin: 0 auto 6vw;}
+
+            .sc4 .inner {width: 90%; padding: 9vw 0 8vw;}
+            .sc4 .inner .img01 {margin-bottom: 4vw;}
+            .sc4 .inner .img02 {width: 85%; margin: 0 auto 5vw;}
+            .sc4 .inner .img03 {margin-bottom: 7vw;}
+
+            .sc5 .inner {width: 90%; padding: 10vw 0;}
+            .sc5 .inner .img01 {width: 65%; margin: 0 auto 6vw;}
+            .sc5 .inner .img02 {margin: 0 auto 6vw; width: 90%;}
+            .sc5 .inner .img03 {margin: 0 auto 6vw; width: 90%;}
+            .sc5 .inner .img04 {margin: 0 auto 6vw; width: 90%;}
+            .sc5 .inner .img05 {margin: 0 auto; width: 90%;}
+
+            .sc6 .inner {width: 75%; padding: 7vw 0;}
+            .sc6 .inner .db_box .img01 {float: none; width: 80%; margin: 0 auto; text-align: center; margin-bottom: 5vw;}
+            .sc6 .inner .db_box form {float: none; width: 100%;}
+            .sc6 .inner .db_box .db_box_btn {margin-top: 8vw;}
+
+            .guide_area .guide_top button {width: 85%; margin: 0 auto; padding: 2vw;}
+
+
+            .floating { position:fixed; left:0; bottom:-22vw; width:100%; margin-left: 0; background:#fff; z-index:-1; transition: opacity 0.3s; opacity:0; }
+            .show .floating { opacity:1; top: auto; bottom:0; height: auto; z-index:20; padding: 0;}
+            .floating .layer { position:absolute; left:0; bottom:-55vw; height:67vw; transition:bottom 0.5s; background:#006196;}
+            .floating.on .layer { bottom: 14vw; }
+            .floating .inner {display: block; padding:2.2222vw 3vw; background:#006196;}
+            .floating .inner .open_form_btn { display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+            .floating.on .inner { border-top:none; }
+            .floating.on .inner .open_form_btn { display: none; }
+            .floating .inner ul li { float:left; width:48%; margin-right: 2%;}
+            .floating .inner ul li a {display: block;}
+            .floating .inner ul li:last-child {margin-right: 0;}
+            .floating .inner ul:after { content:""; display:block; clear:both; }
+            .floating .db_box { position:static; padding:5vw 8vw 6vw; }
+            .floating .db_box h3 {width: 70%; margin: 0 auto;}
+            .floating .db_box ul li.sex { right: 8vw; }
+            .floating .db_box .btn_area {display: none;}
+
+            .floating.on .btn { display: block; position: absolute; top: -5vw; left: 50%; transform: translateX(-50%);}
+            .floating.on .btn .btn_toggle {width:11vw; height:10vw; text-indent:-9999px; background:url("./images/m20221111_aia_float_close.png")no-repeat 0 0 / 100% auto; cursor: pointer; }
+            .floating.on .db_box ul {margin-top: 5vw;}
+            .floating.on .db_box ul li {margin-bottom: 3vw;}
+
+
+            .popup .mask { position: fixed; left: 0; top: 0; right: 0; bottom: 0; background: #000; opacity: 0.7; filter: alpha(opacity=70); z-index: 100; }
+            .popup .popup_content { position: fixed; left: 50%; top: 50%; background: #fff; z-index: 101; }
+            .popup.agree button { outline: none; }
+            .popup.agree .popup_content { width: 93%; left: 3.5%; top: 2%; height: auto; margin:0; padding:5vw; border-radius: 8vw; background:#fff; border:2px solid #d31145; }
+            .popup.agree .popup_content .img {width:74%;}
+            .popup.agree .popup_content .img img {width:100%;}
+            .popup.agree .wrap { padding:0; }
+            .popup.agree .wrap .agree { margin-top: 3.6666vw; }
+            .popup.agree .wrap .agree > div { position: relative;  margin-top: 5px;  }
+            .popup.agree .wrap .agree input { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+            .popup.agree .wrap .agree label { display:block; height:6.6666vw; padding-left: 5.1111vw; background: url("./images/w20221111_popup_radio_off.png") no-repeat left 0 top 1.5vw / 3.8888vw auto; }
+            .popup.agree .wrap .agree label img { position:relative; top:2vw; width:auto; height:3.3333vw; }
+            .popup.agree .wrap .agree input:checked + label { background-image: url("./images/20221111_popup_radio_on.png"); }
+            .popup.agree .wrap .agree .toggle { height:50vw; margin:1.1111vw 0 2.2222vw; border:1px solid #dfdfdf; overflow:auto; }
+            .popup.agree .wrap .agree .toggle img { width:100%; }
+            .popup.agree .wrap .all_check { margin-top:3vw; }
+            .popup.agree .wrap .all_check,
+            .popup.agree .wrap .all_check img { width:100%; }
+            .popup.agree .wrap .btn_area .btn_result { display:none; }
+            .popup.agree .wrap .btn_area { margin-top:3.3333vw; padding-bottom:4.4444vw; }
+            .popup.agree .wrap .btn_area:after { content:""; display:block; clear:both; }
+            .popup.agree .wrap .btn_area a { display:block; float:right; width:42.2222vw; }
+            .popup.agree .btn_close { display:block; position:absolute; top:3.3333vw; right:3.3333vw; width:5vw; height:5vw;  }
+            .popup.agree .btn_close img { width:100%; }
+
+            .popup.type02 .popup_content { width:94%; left: 3%; top: 50%;}
+            .popup.type02 .popup_content { border-top: 5vw solid #dc3e69; text-align: center; padding-bottom:8vw; }
+            .popup.type02 .popup_content h2 { margin-top: 10vw; padding-top: 14vw; background: url("./images/m20221111_popup_icon01.png") no-repeat center 0 / 11vw auto; }
+            .popup.type02 .popup_content p.text { margin-top: 6vw; font-size: 4vw; line-height: 5.2vw; padding: 0 1vw; }
+            .popup.type02 .popup_content p.text span { color: #dc3e69; }
+            .popup.type02 .popup_content p.guide { margin-top: 3.2vw; font-size: 3.6vw; color:#7f7f7f; }
+            .popup.comp .popup_content { margin-top: -40vw; height: auto; margin-left: 0;}
+            .popup.comp .popup_content h2 { font-size: 8.4vw; line-height:10vw; }
+            .popup.comp .popup_content h2 span { color:#dc3e69; }
+            .popup.comp .btn_close { position: absolute; top:8px; right: 8px; }
+            .popup.calc .popup_content { margin-top:-40vw; height: auto; margin-left: 0;}
+            .popup.calc .popup_content h2 { font-size: 4vw; }
+            .popup.calc .popup_content .calc_area { margin-top: 2.4vw; font-size: 8.6vw; }
+            .popup.calc .popup_content .calc_area span { color: #dc3e69; }
+            .popup.calc .popup_content .calc_area strong { margin: 0 7.6vw; font-size: 8.4vw; color: #dc3e69; }
+            .popup.calc .btn_close { position: absolute; top:8px; right: 8px; }
+        }
+    </style>
+</head>
+<body>
+    <div id="AIA_wrap">
+        <div class="header">
+            <div class="inner">
+                <a href="#" class="btn_title"><img src="./images/20221111_aia_header.png" alt=""></a>
+                <div href="#" class="btn_tel only_pc"><img src="./images/20221111_aia_header_tel.png" alt=""></div>
+                <a href="tel:1600-0880" class="btn_tel only_mo"><img src="./images/20221111_aia_header_tel.png" alt=""></a>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="sc1">
+                <div class="inner">
+                    <div class="img01 animate-plus" data-animations="fadeInLeft" data-animation-when-visible="true"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc1_img01.png" data-mo-src="./images/m20221111_aia_sc1_img01.png" alt=""></div>
+                    <div class="img02 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc1_img02.png" data-mo-src="./images/m20221111_aia_sc1_img02.png" alt=""></div>
+                    <div class="img03 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_aia_sc1_img03.png" alt=""></div>
+                    <div class="img04 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc1_img04.png" data-mo-src="./images/m20221111_aia_sc1_img04.png" alt=""></div>
+                    <div class="img05 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_aia_sc1_img05.png" alt=""></div>
+                    <div class="img06 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc1_img06.png" data-mo-src="./images/m20221111_aia_sc1_img06.png" alt=""></div>
+                    
+
+                    <div class="db_box">
+                        <h3><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc1_form_tit01.png" data-mo-src="./images/m20221111_aia_sc1_form_tit01.png" alt=""></h3>
+                        <form method="post" action="" name="frm">
+                            <ul>
+                                <li class="name">
+                                    <input type="text" id="rn_cust_name" name="rn_cust_name" placeholder="이름" >
+                                </li>		
+                                <li class="sex">
+                                    <input type="radio" id="rn_sex1" name="rn_sex" value="M" checked="checked">
+                                    <label for="rn_sex1">남</label>
+                                    <input type="radio" id="rn_sex2" name="rn_sex" value="F">
+                                    <label for="rn_sex2">여</label>
+                                </li>
+                                <li class="birth">
+                                    <input type="text" id="rn_jumin1" name="rn_jumin1" maxlength="6" placeholder="생년월일 (예. 801122)" onKeyUp="onlyNumber(this);" onKeyPress="checkInt()">
+                                </li>
+                                <li class="phone">
+                                    <input type="text" id="cr_mphone" name="cr_mphone" maxlength="11" placeholder="휴대폰번호 (-없이 입력)" onKeyUp="onlyNumberWithBar(this);numToTel(this);"onKeyPress="checkInt()">
+                                    <button type="button" class="confirm_btn"></button>
+                                </li>
+                                <li class="confirm">
+                                    <input type="text" id="confirm" name="confirm" placeholder="인증번호">
+                                    <button type="button" class="check"></button>
+                                </li>
+                            </ul>
+                        </form>	
+                        <div class="db_box_btn">
+                            <a href="javascript:void(0)" onclick="return false" class="calc" data-role="open_popup" data-send="popup_event|1">
+                                <img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc1_form_btn01.png" data-mo-src="./images/m20221111_aia_sc1_form_btn01.png" alt="">
+                            </a>
+                            <a href="javascript:void(0)" onclick="return false" class="comp" data-role="open_popup" data-send="popup_event|2">
+                                <img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc1_form_btn02.png" data-mo-src="./images/m20221111_aia_sc1_form_btn02.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sc2">
+                <div class="inner">
+                    <div class="img01 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc2_img01.png" data-mo-src="./images/m20221111_aia_sc2_img01.png" alt=""></div>
+                    <div class="img02 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc2_img02.png" data-mo-src="./images/m20221111_aia_sc2_img02.png" alt=""></div>
+                    <div class="img03 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_aia_sc2_img03.png" alt=""></div>
+                    <div class="img04 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc2_img04.png" data-mo-src="./images/m20221111_aia_sc2_img04.png" alt=""></div>
+                    <div class="img05 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc2_img05.png" data-mo-src="./images/m20221111_aia_sc2_img05.png" alt=""></div>
+                    <div class="img06 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc2_img06.png" data-mo-src="./images/m20221111_aia_sc2_img06.png" alt=""></div>
+                    <div class="img07 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_aia_sc2_img07.png" alt=""></div>
+
+                    <div class="line"></div>
+
+                    <div class="img08 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc2_img08.png" data-mo-src="./images/m20221111_aia_sc2_img08.png" alt=""></div>
+                    <div class="img09 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_aia_sc2_img09.png" alt=""></div>
+                    <div class="img10 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc2_img10.png" data-mo-src="./images/m20221111_aia_sc2_img10.png" alt=""></div>
+                </div>
+            </div>
+            <div class="sc3">
+                <div class="inner">
+                    <div class="img01 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc3_img01.png" data-mo-src="./images/m20221111_aia_sc3_img01.png" alt=""></div>
+                    <div class="img02 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_aia_sc3_img02.png" alt=""></div>
+                    <div class="img03 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc3_img03.png" data-mo-src="./images/m20221111_aia_sc3_img03.png" alt=""></div>
+                </div>
+            </div>
+            <div class="sc4">
+                <div class="inner">
+                    <div class="img01 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc4_img01.png" data-mo-src="./images/m20221111_aia_sc4_img01.png" alt=""></div>
+                    <div class="img02 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_aia_sc4_img02.png" alt=""></div>
+                    <div class="img03 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_aia_sc4_img03.png" alt=""></div>
+                    <div class="img04 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc4_img04.png" data-mo-src="./images/m20221111_aia_sc4_img04.png" alt=""></div>
+                </div>
+            </div>
+            <div class="sc5">
+                <div class="inner">
+                    <div class="img01 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_aia_sc5_img01.png" alt=""></div>
+                    <div class="img02 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_aia_sc5_img02.png" alt=""></div>
+                    <div class="img03 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_aia_sc5_img03.png" alt=""></div>
+                    <div class="img04 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_aia_sc5_img04.png" alt=""></div>
+                    <div class="img05 animate-plus" data-animations="fadeInUp" data-animation-when-visible="true"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc5_img05.png" data-mo-src="./images/m20221111_aia_sc5_img05.png" alt=""></div>
+                </div>
+            </div>
+            <div class="sc6">
+                <div class="inner">
+                    <div class="db_box">
+                        <div class="img01"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc6_img01.png" data-mo-src="./images/m20221111_aia_sc6_img01.png" alt=""></div>
+                        <form method="post" action="" name="frm">
+                            <ul>
+                                <li class="name">
+                                    <input type="text" id="rn_cust_name" name="rn_cust_name" placeholder="이름" >
+                                </li>		
+                                <li class="sex">
+                                    <input type="radio" id="rn_sex3" name="rn_sex" value="M" checked="checked">
+                                    <label for="rn_sex3">남</label>
+                                    <input type="radio" id="rn_sex4" name="rn_sex" value="F">
+                                    <label for="rn_sex4">여</label>
+                                </li>
+                                <li class="birth">
+                                    <input type="text" id="rn_jumin1" name="rn_jumin1" maxlength="6" placeholder="생년월일 (예. 801122)" onKeyUp="onlyNumber(this);" onKeyPress="checkInt()">
+                                </li>
+                                <li class="phone">
+                                    <input type="text" id="cr_mphone" name="cr_mphone" maxlength="11" placeholder="휴대폰번호 (-없이 입력)" onKeyUp="onlyNumberWithBar(this);numToTel(this);"onKeyPress="checkInt()">
+                                    <button type="button" class="confirm_btn"></button>
+                                </li>
+                                <li class="confirm">
+                                    <input type="text" id="confirm" name="confirm" placeholder="인증번호">
+                                    <button type="button" class="check"></button>
+                                </li>
+                            </ul>
+                        </form>	
+                        <div class="db_box_btn">
+                            <a href="javascript:void(0)" onclick="return false" class="calc" data-role="open_popup" data-send="popup_event|1">
+                                <img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc6_form_btn01.png" data-mo-src="./images/m20221111_aia_sc6_form_btn01.png" alt="">
+                            </a>
+                            <a href="javascript:void(0)" onclick="return false" class="comp" data-role="open_popup" data-send="popup_event|2">
+                                <img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_sc6_form_btn02.png" data-mo-src="./images/m20221111_aia_sc6_form_btn02.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- guide -->
+            <div class="guide_area">
+                <div class="guide_top">
+                    <button type="button"><img src="./images/20221111_aia_guide_img01.png" alt=""></button>
+                </div>
+                <div class="guide_wrap">
+                    <img src="./images/w20221111_guaranteedissue.jpg" alt="" class="only_pc">
+                    <img src="./images/m20221111_guaranteedissue.jpg" alt="" class="only_mo">
+                </div>
+            </div> 
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="inner">
+                    <img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_footer.png" data-mo-src="./images/m20221111_aia_footer.png" alt="">
+                    <a href="#">AIA.COM</a>
+                </div>
+            </div>
+
+
+
+            <!-- floating -->
+            <div class="floating">
+                <div class="layer">
+                    <div class="db_box">
+                        <h3><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_aia_float_img01.png" data-mo-src="./images/m20221111_aia_float_img01.png" alt=""></h3>
+                        <form method="post" action="" name="frm3" class=>
+                            <ul>
+                                <li class="name">
+                                    <input type="text" name="rn_cust_name" placeholder="이름" >
+                                </li>
+                                <li class="sex">
+                                    <input type="radio" id="rn_sex5" name="rn_sex3" value="M" checked="checked">
+                                    <label for="rn_sex5">남</label>
+                                    <input type="radio" id="rn_sex6" name="rn_sex3" value="F">
+                                    <label for="rn_sex6">여</label>
+                                </li>
+                                <li class="birth">
+                                    <input type="text" id="rn_jumin1" name="rn_jumin1" maxlength="6" placeholder="생년월일 (예. 801122)" onKeyUp="onlyNumber(this);" onKeyPress="checkInt()">
+                                </li>
+                                <li class="phone">
+                                    <input type="text" id="cr_mphone" name="cr_mphone" maxlength="11" placeholder="휴대폰번호 (-없이 입력)" onKeyUp="onlyNumberWithBar(this);numToTel(this);"onKeyPress="checkInt()">
+                                    <button type="button" class="confirm_btn"></button>
+                                </li>
+                                <li class="confirm">
+                                    <input type="text" id="confirm" name="confirm" placeholder="인증번호">
+                                    <button type="button" class="check"></button>
+                                </li>
+                            </ul>
+                        </form>
+
+
+                        <div class="btn_area calc">
+                            <a href="#" data-role="open_popup" data-send="popup_event|1" ><img src="./images/w20221111_aia_float_btn01.png" alt=""></a>
+                        </div>
+                    </div>	
+                    
+                    <div class="btn">
+                        <button class="btn_toggle"></button>
+                    </div>
+                </div>
+                
+                <div class="inner">
+                    <a href="#" class="open_form_btn"></a>
+                    <ul>
+                        <li><a href="#" data-role="open_popup" data-send="popup_event|1" class="btn01">
+                            <img src="./images/m20221111_aia_db_btn01.png" alt="">
+                        </a></li>
+                        <li><a href="#" data-role="open_popup" data-send="popup_event|2" class="btn02">
+                            <img src="./images/m20221111_aia_db_btn02.png" alt="">
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- floating end -->
+
+
+
+            <!-- popup : 개인정보 동의 -->
+            <div class="popup agree" data-receive="popup_event">
+                <div class="mask"></div>
+                <div class="popup_content">
+                    <div class="img">
+                        <img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_popup_title01.png" data-mo-src="./images/m20221111_popup_title01.png" alt="" >
+                    </div>
+                    <div class="wrap">
+                        <div class="agree_area">
+                            <div class="agree">
+                                <div>
+                                    <input type="checkbox" class="checkbox" id="cust_uyn1" name="cust_uyn1">
+                                    <label for="cust_uyn1"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_popup_text01.png" data-mo-src="./images/m20221111_popup_text01.png" alt=""></label>
+                                    <div class="toggle">
+                                        <img src="./images/20221111_popup_agree01.png" alt="" >
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="all_check" >
+                                <img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_popup_btn01.png" data-mo-src="./images/m20221111_popup_btn01.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <button class="btn_close">
+                        <img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_popup_btn_close.png" data-mo-src="./images/m20221111_popup_btn_close.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <!-- // popup : 개인정보 동의 -->
+
+
+            <!-- popup : 상담 신청하기 -->
+            <div class="popup type02 comp" >
+                <div class="mask"></div>
+                <div class="popup_content">
+                    <h2 class="bold">보험상담 신청이<br><span>완료</span>되었습니다</h2>
+                    <p class="text bold">빠른 시일 내에 <span>전문상담원</span>이 보장내역과 보험료를<br>친절하게 설명해드립니다. (평일기준)</p>
+                    <button class="btn_close"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_popup_btn_close02.png" data-mo-src="./images/m20221111_popup_btn_close02.png" alt=""></button>
+                </div>
+            </div>
+            <!-- // popup : 상담 신청하기 -->
+
+            <!-- popup : 보험료 계산하기 -->
+            <div class="popup type02 calc">
+                <div class="mask"></div>
+                <div class="popup_content">
+                    <h2 class="bold"><span id="user_name">XXX</span> 고객님의 보험료는</h2>
+                    <div class="calc_area bold">월 <span>[<strong id="user_premium">00,000</strong>]</span>원</div>
+                    <p class="text bold">빠른 시일 내에 <span>전문상담원</span>이 보장내역과 보험료를<br>친절하게 설명해드립니다. (평일기준)</p>
+                    <button class="btn_close"><img src="./images/20221111_blank.gif" data-pc-src="./images/w20221111_popup_btn_close02.png" data-mo-src="./images/m20221111_popup_btn_close02.png" alt=""></button>
+                </div>
+            </div>
+            <!-- // popup : 보험료 계산하기 -->
+        </div>
+    </div>
+    
+
+    <script src="./js/jquery-2.1.1.min.js"></script>
+    <script>
+
+
+        function calc() {
+            $(".popup.calc").show();
+            $(".popup.agree").hide();
+        }
+
+        function comp() {
+            $(".popup.comp").show();
+            $(".popup.agree").hide();
+        }
+
+        (function($) {
+            var AIA_UI = {
+                var : {
+                    sChecked : null,
+                    dChecked : null
+                },
+
+                popup: function() {
+                    $('[data-role="open_popup"]').on({
+                        "click" : function(e){
+                            var array = $(this).attr("data-send").split("|");
+                            var target = $("[data-receive='"+ (array[0]) +"']");
+                            target.show();
+                            if( array[1] == 1 ){
+                                target.find(".all_check").attr("onclick", "calc()");
+                            } else {
+                                target.find(".all_check").attr("onclick", "comp()");
+                            }
+                            e.preventDefault();
+                        }
+                    });
+                    
+                    $(".popup .btn_close").on({
+                        "click" : function(e){
+                            $(this).parents(".popup").hide();
+                            e.preventDefault();
+                        }
+                    });
+                },
+
+                event : function(){
+                    $(".guide_area button").on({
+                        "click" : function(e){
+                            var target = $(this).parents(".guide_area").find(".guide_wrap");
+                            if(target.hasClass("on")){
+                                target.removeClass("on");
+                            } else {
+                                target.addClass("on");
+                                $("body, html").animate({ scrollTop :  parseInt($(".guide_area").offset().top - $(".header").height()) }, 500);
+                            }
+                        }
+                    });
+
+                    $(".floating .open_form_btn").on({
+                        "click" : function(e){
+                            var _this 	= $(this);
+                            var target 	= $(".floating");
+                            if(! target.hasClass("on") ){
+                                target.addClass("on");
+                            }
+
+                            e.preventDefault();
+                        }
+                    });
+                    
+                    $(".floating .btn_toggle").on({
+                        "click" : function(e){
+                            var target 	= $(".floating");
+                            if( target.hasClass("on") ){
+                                target.removeClass("on");
+                            } else {
+                                target.addClass("on");
+                            }
+                            e.preventDefault();
+                        }
+                    });
+
+                    $(".popup.agree .all_check").on({
+                        "click" : function(e){
+                            $(".popup.agree .agree input[type='checkbox']").prop("checked", true);
+                            e.preventDefault();
+                        }
+                    });
+                },
+
+                scroll : function(){
+                    $(window).scroll(function(){
+                        var windowTop = $(window).scrollTop();
+                        if( AIA_UI.var.sChecked == "s1" ){
+                            if( windowTop >= $(".sc2").offset().top - 100 ){
+                                $("#AIA_wrap").addClass("show");
+                                if( windowTop > $(".sc6").offset().top-parseInt($(window).height())){
+                                    $("#AIA_wrap").removeClass("show");
+                                }
+                                if( windowTop > $(".guide_area").offset().top ){
+                                    $("#AIA_wrap").addClass("show");
+                                }
+                            } else {
+                                $("#AIA_wrap").removeClass("show");
+                            } 
+                        } else {
+                            if (windowTop > $(".sc2").offset().top && $(".sc6").offset().top - $(window).height() > windowTop){
+                                $(".floating").addClass("fixed");
+                            }else{
+                                $(".floating").removeClass("fixed");
+                            }
+
+                            if( windowTop > $(".guide_area").offset().top){
+                                $(".floating").addClass("fixed");
+                            }
+                        }
+
+                    });
+                },
+
+                init: function() {
+                    AIA_UI.var.sChecked = $(window).width() > 1080 ? "s2" : "s1";
+                    AIA_UI.var.dChecked = AIA_UI.var.sChecked;
+
+                    imgReplace();
+                    function imgReplace(){
+                        $("#AIA_wrap img").each(function(){
+                            if( AIA_UI.var.sChecked == "s1" ){
+                                $(this).attr("src", $(this).attr("data-mo-src"));
+                            } else {
+                                $(this).attr("src", $(this).attr("data-pc-src"));
+                            }
+                        });
+                    }
+
+                    $(window).resize(function(){
+                        AIA_UI.var.sChecked = $(window).width() > 1080 ? "s2" : "s1";
+                        if( AIA_UI.var.sChecked != AIA_UI.var.dChecked ){
+                            imgReplace();
+                            AIA_UI.var.dChecked = AIA_UI.var.sChecked
+                        }
+                    });
+
+                    this.popup(), this.event(), this.scroll()
+                }
+            };
+            $(function() {
+                AIA_UI.init();
+
+                $('.confirm_btn').click(function(){
+                    $(this).parent().parent().parent().parent().addClass('on');
+                    $(this).parent().siblings('.confirm').addClass('on');
+
+                    console.log($(this).parents())
+                })
+            });
+
+            $(window).load(function(){
+                setTimeout(function(){$(window).scrollTop(0);},0);
+            });
+        })(jQuery);
+
+        
+        //에니메이션 js
+        !function(a){function b(b){this.htmlElement=b,this.animations=a(this.htmlElement).attr("data-animations").split(","),this.animationIndex=0,this.lastAnimation="",void 0!==a(this.htmlElement).attr("data-animation-duration")&&(this.animationDuration=a(this.htmlElement).attr("data-animation-duration").split(",")),void 0!==a(this.htmlElement).attr("data-animation-delay")&&(this.animationDelay=a(this.htmlElement).attr("data-animation-delay").split(","))}function c(){this.elements=[],this.animateWhenVisible=!1,this.isPerformingAnimation=!1,this.resetWhenOffscreen=!1,this.repeat=!1,this.isReset=!0}function d(){this.onVisbileGroups=[],this.map=[],a(".animate-plus").addClass("animated"),a.each(a(".animate-plus"),function(d,e){var f=new b(e),g=a(e).attr("data-animation-group");void 0===g&&(g="_"+d,a(e).attr("data-animation-group",g)),void 0===this.map[g]&&(this.map[g]=new c);var h=a(e).attr("data-animation-when-visible");void 0!==h&&(this.map[g].animateWhenVisible=!0);var i=a(e).attr("data-animation-reset-offscreen");void 0!==i&&(this.map[g].resetWhenOffscreen=!0);var j=a(e).attr("data-animation-repeat");void 0!==j&&(this.map[g].repeat=!0);var k=this.map[g].elements,l=a(e).attr("data-animation-order"),m=void 0!==l;if(m)var n=l.split(",");for(var o=a(e).attr("data-animations").split(","),p=0;p<o.length;p++){var q=p+1;m&&(q=n[p]),void 0===k[q]&&(k[q]=[]),k[q].push(f)}}.bind(this)),a(window).on("scroll",function(){this.checkOnVisibleGroups()}.bind(this)),a(window).on("resize",function(){this.checkOnVisibleGroups()}.bind(this)),a(document).ready(function(){this.checkOnVisibleGroups()}.bind(this)),this.isElementVisible=function(b){var c=a(window).scrollTop(),d=a(window).height()+c-150,e=a(b).offset().top,f=a(b).height()+e;return d>=e&&f>=c},this.checkOnVisibleGroups=function(){for(var a=0;a<this.onVisbileGroups.length;a++)for(var b=this.map[this.onVisbileGroups[a]],c=1;c<b.elements.length;c++)for(var d=b.elements[c],e=0;e<d.length;e++){var f=d[e].htmlElement;this.isElementVisible(f)&&!b.isPerformingAnimation&&b.animate(1),this.isElementVisible(f)||b.isPerformingAnimation||!b.resetWhenOffscreen||b.reset()}}}jQuery.fn.redraw=function(){return this.hide(0,function(){a(this).show()})},jQuery.fn.restartAnimation=function(){var b=a(this).attr("data-animation-group"),c=d.getInstance().getMap()[b];c.restart()},b.prototype.doNextAnimation=function(b){if(this.animationIndex>=this.animations.length)return void b();var c,d;a(this.htmlElement).removeClass(this.lastAnimation),this.lastAnimation=this.animations[this.animationIndex],a(this.htmlElement).css("animation-duration","").css("-webkit-animation-duration","").css("-moz-animation-duration","").css("-ms-animation-duration","").css("-o-animation-duration",""),void 0!==this.animationDuration&&void 0!==this.animationDuration[this.animationIndex]&&(c=this.animationDuration[this.animationIndex],a(this.htmlElement).css("animation-duration",c).css("-webkit-animation-duration",c).css("-moz-animation-duration",c).css("-ms-animation-duration",c).css("-o-animation-duration",c)),a(this.htmlElement).css("animation-delay","").css("-webkit-animation-delay","").css("-moz-animation-delay","").css("-ms-animation-delay","").css("-o-animation-delay",""),void 0!==this.animationDelay&&void 0!==this.animationDelay[this.animationIndex]&&(d=this.animationDelay[this.animationIndex],a(this.htmlElement).css("animation-delay",d).css("-webkit-animation-delay",d).css("-moz-animation-delay",d).css("-ms-animation-delay",d).css("-o-animation-delay",d)),this.animationIndex++,a(this.htmlElement).redraw(),a(this.htmlElement).addClass(this.lastAnimation).one("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend",b)},c.prototype.reset=function(){if(!this.isReset){for(var b=1;b<this.elements.length;b++)for(var c=0;c<this.elements[b].length;c++)this.elements[b][c].animationIndex=0,a(this.elements[b][c].htmlElement).removeClass(this.elements[b][c].lastAnimation);this.isReset=!0}},c.prototype.animate=function(a){var b=0,c=this.elements[a];if(void 0===c)return void(this.repeat?(this.reset(),this.animate(1)):this.isPerformingAnimation=!1);this.isPerformingAnimation=!0,this.isReset=!1;for(var d=0;d<c.length;d++)c[d].doNextAnimation(function(){b++,b==c.length&&this.animate(++a)}.bind(this))},c.prototype.restart=function(){this.isPerformingAnimation||(this.reset(),this.animate(1))},d.prototype.start=function(){for(var a in this.map)this.map.hasOwnProperty(a)&&(this.map[a].animateWhenVisible?this.registerOnVisbileMap(a):this.map[a].animate(1))},d.prototype.registerOnVisbileMap=function(a){this.onVisbileGroups.push(a)},d.prototype.getMap=function(){return this.map},d.instance=null,d.getInstance=function(){return null===d.instance&&(d.instance=new d),d.instance},a(document).ready(function(){d.getInstance().start()})}(jQuery);
+
+    </script>
+</body>
+</html>
