@@ -1,4 +1,6 @@
+
 $(function(){
+
     //nav
     $('header .menu').on('click',function(){
         if($('.menu').hasClass('on')){
@@ -24,28 +26,35 @@ $(function(){
         }
     })
 
-    $('nav .gnb > li').on('mouseover',function(){
-        if($('nav').hasClass('on') == false){
-            $(this).children('.lnb').stop().slideDown(300)
-        }
-    })
-    $('nav .gnb > li').on('mouseleave',function(){
-        if($('nav').hasClass('on') == false){
-            $(this).children('.lnb').stop().slideUp(300)
-        }
-    })
-    $(window).on('resize',function(){
+
+    //mg축제 lnb 
+    function paNav(){
         $('nav .gnb > li').on('mouseover',function(){
             if($('nav').hasClass('on') == false){
-                $(this).children('.lnb').stop().slideDown(300)
+                $(this).children('.lnb').show()
             }
         })
+        if($('nav').hasClass('on') == false){
+            $('nav .gnb > li .lnb > li h3').on('click',function(){
+                $(this).siblings('ul').toggleClass('on')
+                $(this).toggleClass('on')
+            })
+            $('nav .gnb > li .lnb > li').on('mouseleave',function(){
+                $(this).siblings('ul').removeClass('on')
+                $(this).removeClass('on')
+            })
+        }
+
         $('nav .gnb > li').on('mouseleave',function(){
             if($('nav').hasClass('on') == false){
-                $(this).children('.lnb').stop().slideUp(300)
+                $(this).children('.lnb').hide()
+                
+                $('nav .gnb > li .lnb > li h3').siblings('ul').removeClass('on')
+                $('nav .gnb > li .lnb > li h3').removeClass('on')
             }
         })
-    })
+    }
+    paNav();
 
 
     //header
@@ -66,24 +75,7 @@ $(function(){
         });
 
         //호버시 로고 컬러
-        if($(window).width() > 1200){
-            $('header').on('mouseover',function(){
-                $('header .logo img').attr("src", $('header .logo img').attr("data-color"));
-            })
-            $('header').on('mouseout',function(){
-                $('header .logo img').attr("src", $('header .logo img').attr("data-white"));
-                if($(window).scrollTop() > 100){
-                    $('header .logo img').attr("src", $('header .logo img').attr("data-color"));
-                }
-            })
-        }else{
-            $('header').on('mouseout',function(){
-                $('header .logo img').attr("src", $('header .logo img').attr("data-color"));
-            })
-        }
-        
-
-        $(window).on('resize',function(){
+        function hoverLogoColor(){
             if($(window).width() > 1200){
                 $('header').on('mouseover',function(){
                     $('header .logo img').attr("src", $('header .logo img').attr("data-color"));
@@ -99,7 +91,9 @@ $(function(){
                     $('header .logo img').attr("src", $('header .logo img').attr("data-color"));
                 })
             }
-        })
+        }
+        hoverLogoColor();
+        
 
         //스크롤시 로고 컬러
         $(window).on('scroll', function () {
@@ -118,21 +112,82 @@ $(function(){
         })
 
         //화면 크기별 로고 컬러
-        if($(window).width() < 1200){
-            $('header .logo img').attr("src", $('header .logo img').attr("data-color"));
-        }else{
-            $('header .logo img').attr("src", $('header .logo img').attr("data-white"));
-        }
-        $(window).on('resize',function(){
+        function wSizeLogoColor(){
             if($(window).width() < 1200){
                 $('header .logo img').attr("src", $('header .logo img').attr("data-color"));
-                
             }else{
                 $('header .logo img').attr("src", $('header .logo img').attr("data-white"));
             }
+        }
+        wSizeLogoColor();
+
+
+
+        $(window).on('resize',function(){
+            paNav();
+            hoverLogoColor();
+            wSizeLogoColor();
         })
     }
 
+
+    //메인 sc2 영상 팝업
+    $('.sc2').on('click',function(){
+        $('.popup.sc2Video').addClass('on')
+    })
+    $('.popup').click(function(){
+        $(this).removeClass('on');
+    });
+
+
+
+    // 비디오 링크 받아오기 - 메인
+    $('.popup .video .video_wrap iframe').attr('src', '');
+
+    $('.popup').click(function(){
+        $(this).removeClass('on');
+        $('.popup .video .video_wrap iframe').attr('src', '');
+    });
+    $('.sc2 .video').click(function(){
+        var VideoID = $(this).attr('data-youtube'),
+            VideoURL = 'https://www.youtube.com/embed/' + VideoID + '?autoplay=1&mute=1'
+
+        $('.popup').addClass('on');
+        $('.popup .video .video_wrap iframe').attr('src', VideoURL);
+    });
+
+
+    // 비디오 링크 받아오기 - sub_video 페이지
+    // $('.sub_video .videoWrap iframe').attr('src', '');
+    $('.sub_video .list li').click(function(){
+        $('.sub_video .videoWrap iframe').attr('src', '');
+    });
+
+    $('.sub_video .list li').click(function(){
+        $('html, body').animate({scrollTop : $('.sub_video .videoWrap').offset().top - 100},50);
+
+
+        var VideoID = $(this).attr('data-youtube'),
+            VideoURL = 'https://www.youtube.com/embed/' + VideoID + '?autoplay=1&mute=1'
+
+        $('.sub_video .videoWrap iframe').attr('src', VideoURL);
+    });
+
+
+    //pc,모바일용 이미지 변경 스크립트
+    function imgReplace(){
+        $("img").each(function(){
+            if( $(window).width() < 769 ){
+                $(this).attr("src", $(this).attr("data-mo-src"));
+            } else {
+                $(this).attr("src", $(this).attr("data-pc-src"));
+            }
+        });
+    }
+    imgReplace();
+    $(window).resize(function(){
+        imgReplace();
+    });
     
 })
 

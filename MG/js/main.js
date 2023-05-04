@@ -1,4 +1,16 @@
 $(function(){
+
+    //sc1 logo animation
+    $('.main .sc1 .emblem').addClass('on')
+
+    //sc1 영상 높이
+    $('.main .sc1').css('min-height', $(window).height());
+
+    $(window).resize(function(){
+        $('.main .sc1').css('min-height', $(window).height());
+    });
+
+
     // sc4 swiper
     var mainSwiper01 = new Swiper('.sc4 .swiper-container.imgSlide', {
         navigation : {
@@ -7,9 +19,9 @@ $(function(){
         },
         slidesPerView: 'auto',
         spaceBetween: 0,
-        // autoplay: {
-        //     delay: 3000,
-        // },
+        autoplay: {
+            delay: 3000,
+        },
         autoplayDisableOnInteraction: false,
         controller: {
             control: mainSwiper02,
@@ -46,25 +58,25 @@ $(function(){
         slidesPerView: 'auto',
         spaceBetween: 30,
         autoplay: {
-            delay: 3000,
+            delay: 4000,
         },
         loop: true,
         autoplayDisableOnInteraction: false,
-        controller: {
-            control: mainSwiper04,
-        },
+        // controller: {
+        //     control: mainSwiper04,
+        // },
     });
     var mainSwiper04 = new Swiper('.sc5 .swiper-container.sc5Slide02', {
         paginationClickable: true,
         slidesPerView: 'auto',
-        autoplay: {
-            delay: 3000,
-        },
+        // autoplay: {
+        //     delay: 4000,
+        // },
         loop: true,
         autoplayDisableOnInteraction: false,
-        controller: {
-            control: mainSwiper03,
-        },
+        // controller: {
+        //     control: mainSwiper03,
+        // },
     });
 
     mainSwiper03.controller.control = mainSwiper04;
@@ -72,15 +84,16 @@ $(function(){
     
 
 
-
     $('.sc5 .swiper-play').click(function(){
         $(this).toggleClass('on')
 
         if ($(this).hasClass('on')) {
             mainSwiper03.autoplay.stop();
+            mainSwiper04.autoplay.stop();
         }
         else {
             mainSwiper03.autoplay.start();
+            mainSwiper04.autoplay.start();
         }
     })
 })

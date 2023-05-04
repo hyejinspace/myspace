@@ -63,29 +63,49 @@ $(function () {
 
 })
 
+//ceo 스와이퍼 슬라이드
+$(function () {
+    var mySwiper2 = new Swiper(".congrats_slide .swiper-container", {
+        // navigation: {
+        //     nextEl: ".swiper-button-next",
+        //     prevEl: ".swiper-button-prev"
+        // },
+        spaceBetween: 0, 
+        slidesPerView: "auto",
+        mousewheel: false,
+        autoplay: {
+            delay: 3000,
+        },
+        loop: true,
+        pagination: { 
+            el: ".congrats_slide .swiper-pagination",
+            type : 'progressbar',
+        }
+    });
+
+})
+
+
 //이벤트 및 공모전, 금고소식 스와이퍼
 $(function () {
-    var swiper = new Swiper(".main_swiper-container", { //전체 프레임 선택자
-        direction: "horizontal", //슬라이딩 방향
-        loop: false, //순환가능
-        spaceBetween: 0, //패널간의 간격
-        slidesPerView: "auto", //한 프레임에 복수개 패널 보임
-        slidesPerGroup: 1,
-        speed: 1000, //슬라이딩 속도,
-        mousewheel: false,
+    var mySwiper = new Swiper(".main_swiper-container", {
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev"
         },
+        spaceBetween: 0, 
+        slidesPerView: "auto",
+        mousewheel: false,
         autoplay: {
-            delay: 2000,
+            delay: 3000,
         },
     });
+
 })
 
 //사업소개
 $(function () {
-    let BusinessList = $(".sub_introductionBusiness .inner>ul>li");
+    let BusinessList = $(".sub_introductionBusiness .inner>.contents>li");
     let baseLine = -650;
 
     $(window).on("scroll", function () {
@@ -98,4 +118,9 @@ $(function () {
         }
 
     })
+
+    $('.sub_introductionBusiness .conNav .wrap ul li').on('click',function(){
+        $(this).addClass('on').siblings().removeClass('on');
+    })
+
 })

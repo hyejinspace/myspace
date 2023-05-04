@@ -186,13 +186,18 @@ $(function(){
             prevEl : '.history .sc3 .swiper-button-prev',
         },
         slidesPerView: 'auto',
-        spaceBetween: 20,
+        spaceBetween: 0,
         // autoplay: {
         //     delay: 3000,
         // },
         autoplayDisableOnInteraction: false,
         controller: {
             control: historySwiper02,
+        },
+        breakpoints: {
+            576 : {
+                spaceBetween: 20,
+            }
         },
     });
     var historySwiper02 = new Swiper('.history .swiper-container.historySlide', {
