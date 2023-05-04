@@ -1,0 +1,95 @@
+em, address, i, cite {
+    font-style: normal;
+}
+
+
+.thumbList .bbYear {
+    font-size: 50px;
+    font-family: 'yg-jalnan';
+    text-align: center;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #000;
+    line-height: 1;
+}
+.thumbList .bbl {
+    margin-bottom: 60px;
+}
+
+.board_book { display: flex; flex-wrap: wrap; justify-content: center; background-repeat:repeat; padding-bottom:19px; }
+.board_book:after { display:block; content:""; clear:both; height:0px; }
+.board_book li { width: calc(33.333% - 5.126%); margin-right: 7.69%; margin-bottom: 50px; text-align:center; position:relative; }
+.board_book li:nth-child(3n) {margin-right: 0;}
+.board_book li a { display:inline-block; overflow:hidden; }
+.board_book li a h5 { margin-top:30px; }
+.board_book li a h5 em { display:block; font-size:16px; color:#666; text-align:center; }
+.board_book li a h5 strong { margin-top:5px; display:block; font-size:24px; color:#333; text-align:center; }
+.board_book li a h5 strong.select { color:#e53e3a; }
+.board_book li a:hover .bbImg img, .board_book li a:active .bbImg img { box-sizing:border-box; border:3px solid #ed1c24; 
+  transition:.3s ease-in;
+  -webkit-transition:.3s ease-in;
+  -moz-transition:.3s ease-in;
+  -o-transition:.3s ease-in;
+  -ms-transition:.3s ease-in;
+}
+.board_book li .thumbImg { display:inline-block; overflow:hidden; cursor:pointer; }
+.board_book li .thumbImg h5 { display: flex; align-items: flex-end; justify-content: center; padding-bottom: 10px;}
+.board_book li .thumbImg h5 em { display:block; font-size:20px; font-weight: 600; text-align:center; margin-right: 5px; line-height: 1; }
+.board_book li .thumbImg h5 strong { display:block; font-size:16px; font-weight: 300; color:#333; text-align:center; line-height: 1;}
+.board_book li .thumbImg h5 strong.select { color:#76c39d; }
+
+.board_book li .thumbImg .bbImg { display:block; width:100%; text-align:center; background-image:url('../../images/list/book_shadow.png'); background-repeat:no-repeat; background-position:bottom center; background-color: #000;}
+.board_book li .thumbImg .bbImg img { display: inline-block; width:100%; max-width:192px; box-sizing:border-box; 
+    transition: 0.1s;
+    -webkit-transition:.1s;
+    -moz-transition:.1s;
+    -o-transition:.1s;
+    -ms-transition:.1s;
+}
+.board_book li .thumbImg:hover .bbImg img { opacity: 0.5;}
+
+.board_book li .thumbImg .bbBtnWrap { display:none;}
+.board_book li .thumbImg .bbBtnWrap .bbBtn { }
+.board_book li .thumbImg:hover .bbBtnWrap, 
+.board_book li .thumbImg:active .bbBtnWrap { display:block; position:absolute;  bottom:8%; left:0; width:100%; z-index:10; text-align:center; }
+.board_book li .thumbImg:hover .bbBtnWrap .bbBtn,
+.board_book li .thumbImg:active .bbBtnWrap .bbBtn { display:inline-block; }
+.board_book li .thumbImg .bbBtnWrap .bbBtn a { 
+    min-width:80px; display:block; background-color:#000; padding:5px 10px; margin:10px 5px; color:#fff; font-size:16px; border-radius: 50px;
+    transition:.1s;
+    -webkit-transition:.1s;
+    -moz-transition:.1s;
+    -o-transition:.1s;
+    -ms-transition:.1s;
+}
+
+.board_book li .thumbImg .bbBtnWrap .bbBtn a:hover,
+.board_book li .thumbImg .bbBtnWrap .bbBtn a:active { background-color:#ff5858; }
+
+
+@media (max-width: 1024px){
+
+    .board_book li {width: calc(50% - 3.845%);}
+    .board_book li:nth-child(3n) {margin-right: 7.69%;}
+    .board_book li:nth-child(2n) {margin-right: 0;}
+
+}
+
+
+@media (max-width: 576px){
+    .board_book li {width: calc(50% - 5px); margin-right: 10px; margin-bottom: 25px;}
+    .board_book li:nth-child(3n) {margin-right: 10px;}
+    .board_book li:nth-child(2n) {margin-right: 0;}
+
+    .board_book li .thumbImg h5 {display: block;}
+    .board_book li .thumbImg h5 em {margin-bottom: 5px;}
+    .board_book li .thumbImg:hover .bbBtnWrap, .board_book li .thumbImg:active .bbBtnWrap {bottom: 8%;}
+    .board_book li .thumbImg .bbBtnWrap .bbBtn a {margin: 7px;}
+
+}
+
+@media (max-width: 375px){
+    .board_book li .thumbImg .bbBtnWrap .bbBtn a {font-size: 14px;}
+    .board_book li .thumbImg:hover .bbBtnWrap, .board_book li .thumbImg:active .bbBtnWrap {bottom: 5px;}
+
+}

@@ -1,0 +1,745 @@
+
+// font-family: 'Noto Sans KR', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap')
+    
+// font-family: 'yg-jalnan'
+@font-face 
+    font-family: 'yg-jalnan'
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+// font-family: 'GyeonggiBatang'
+@font-face
+    font-family: 'GyeonggiBatang'
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/GyeonggiBatang.woff') format('woff')
+    font-weight: normal
+    font-style: normal
+
+
+
+    
+*
+    padding: 0
+    margin: 0
+    letter-spacing: -0.75px
+    box-sizing: border-box
+    color: #000
+    -webkit-overflow-scrolling: touch
+img
+    vertical-align: middle
+    outline: none
+a
+    text-decoration: none
+ol,ul,li
+    list-style: none
+select,button,textarea
+    appearance: none
+    border: none
+    border-radius: 0
+    background-color: transparent
+select,input,button
+    &:focus
+        outline: none
+select
+    // background: url('../img/select.jpg') no-repeat 98% 50%
+select::-ms-expand 
+    display: none
+input[type="text"],
+input[type="number"]
+    appearance: none
+    border: none
+    border-radius: 0
+    background-color: transparent
+input[type="radio"]
+    display: none
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+    -webkit-appearance: none
+textarea
+    resize: none
+table
+    border-collapse: collapse
+html,body
+    width: 100%
+    height: 100%
+    font-family: 'Noto Sans KR', sans-serif
+    font-size: 20px
+body
+    height: auto
+    min-width: 320px
+    margin: 0 auto
+    -ms-overflow-style: none
+    scrollbar-width: none
+body::-webkit-scrollbar
+    display: none
+
+b
+    font-weight: bold
+img
+    display: block
+    width: auto
+    max-width: 100%
+
+
+.mo1365
+    display: none !important
+.mo1024
+    display: none !important
+.mo768
+    display: none !important
+.mo
+    display: none !important
+
+
+#Pagenation
+    position: fixed
+    right: 300px
+    top: calc((90px - 26px)/2) 
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    z-index: 901
+    > li
+        margin-right: 60px
+        &:last-child
+            margin-right: 0
+        > a
+            display: block
+            font-size: 20px
+            font-weight: 500
+            sup
+                font-size: 100%
+
+header
+    position: fixed
+    width: 100%
+    height: 90px
+    border-bottom: 1px solid #c9c9c9
+    background-color: #fff
+    z-index: 901
+    .wrap
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        height: 100%
+        padding: 0 80px
+    .logoWrap
+        display: flex
+        align-items: center
+        .logo
+            display: block
+            img
+                display: inline-block
+                vertical-align: unset
+        .vol
+            display: inline-block
+            font-size: 19px
+            line-height: 1.3
+            margin-left: 10px
+            b
+                font-size: 21px
+    span
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        height: 100%
+        .gnb
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            z-index: 998
+            > li
+                margin-right: 3rem
+                > a
+                    display: block
+                    font-size: 22px
+                    font-weight: 500
+        .btnWrap
+            display: flex
+            align-items: center
+            height: 100%
+            border-left: 1px solid #e8e8e8
+            .search
+                display: inline-block
+                width: 30px
+                height: 30px
+                background-image: url('../images/common/search.png')
+                background-size: contain
+                background-repeat: no-repeat
+                background-position: center
+                text-indent: -9999px
+                overflow: hidden
+                cursor: pointer
+                margin-left: 50px
+            .menu
+                display: inline-block
+                width: 30px
+                height: 30px
+                background-image: url('../images/common/menu.png')
+                background-size: contain
+                background-repeat: no-repeat
+                background-position: center
+                text-indent: -9999px
+                overflow: hidden
+                cursor: pointer
+                margin-left: 30px
+
+header.main
+    .gnb
+        display: none
+        flex-wrap: wrap
+header.on
+    border-bottom: none
+
+
+nav
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #fff
+    z-index: 902
+    overflow-y: scroll
+    .top
+        position: absolute
+        width: 100%
+        height: 90px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        padding: 0 80px
+        .logoWrap
+            display: flex
+            align-items: center
+            .logo
+                display: block
+                img
+                    display: inline-block
+                    vertical-align: unset
+            .vol
+                display: inline-block
+                font-size: 19px
+                line-height: 1.3
+                margin-left: 10px
+                b
+                    font-size: 21px
+        .close
+            width: 28px
+            height: 28px
+            background-image: url('../images/common/close.png')
+            background-repeat: no-repeat
+            background-position: center
+            background-size: contain
+            cursor: pointer
+    .left
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 660px
+        max-width: 34%
+        background-color: #fff9dd
+        .wrap
+            max-width: 315px
+            width: 90%
+        .cover
+            padding-bottom: 10px
+            img
+                display: block
+                width: auto
+                max-width: 100%
+        .btnWrap
+            display: flex
+            flex-wrap: wrap
+            .subscribe
+                width: 100%
+                margin-right: 0
+                background-color: #000
+                color: #fff
+                &:hover
+                    background-color: #fff
+                    color: #000
+            a
+                display: flex
+                justify-content: center
+                align-items: center
+                text-align: center
+                width: calc(50% - 2.5px)
+                margin-bottom: 5px
+                margin-right: 5px
+                font-size: 17px
+                font-weight: 500
+                border: 1px solid #000
+                padding: 15px 0
+                background-color: #fff
+                &:nth-child(3n),&:last-child
+                    margin-right: 0
+                &:nth-last-child(-n + 2)
+                    margin-bottom: 0
+                &:hover
+                    background-color: #000
+                    color: #fff
+    .right
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 66%
+        .wrap 
+            display: flex
+            max-width: 850px
+            width: 90%
+            .gnb
+                width: calc(33.3333% - 26.6666px)
+                margin-right: 40px
+                &:last-child
+                    margin-right: 0
+                &:nth-child(1) .gnbTitle span
+                    color: #e74550
+                &:nth-child(2) .gnbTitle span
+                    color: #e97b00
+                &:nth-child(3) .gnbTitle span
+                    color: #457e15
+                .gnbTitle
+                    font-family: 'yg-jalnan'
+                    padding-bottom: 30px
+                    margin-bottom: 30px
+                    border-bottom: 1px solid #d8d8d8
+                    font-size: 25px
+                ul li
+                    padding-bottom: 30px
+                    &:last-child
+                        padding-bottom: 0
+                    a
+                        display: inline-block
+                        font-size: 20px
+                        font-weight: 500
+                        &:hover
+                            text-decoration: underline
+nav.on
+    display: flex
+
+
+footer
+    width: 100%
+    background-color: #f7f8f8
+    .wrap
+        width: 90%
+        max-width: 1440px
+        margin: 0 auto
+        height: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 50px 0
+        .left
+            display: flex
+            flex-wrap: wrap
+            max-width: 500px
+            .f_logo
+                width: 50%
+                padding-bottom: 30px
+            .sns
+                width: 50%
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                padding-bottom: 30px
+                >a
+                    display: block
+                    margin-right: 10px
+                    &:last-child
+                        margin-right: 0
+            .address
+                font-size: 15px
+                line-height: 1.3
+                color: #7a7a7a
+                padding-bottom: 8px
+            .copy
+                font-size: 15px
+                line-height: 1.3
+                color: #afafaf
+        .right
+            .btnWrap
+                display: flex
+                align-items: center
+                justify-content: flex-end
+                >a
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    width: 100px
+                    height: 100px
+                    background-color: #efefef
+                    border-radius: 10px
+                    overflow: hidden
+                    margin-right: 5px
+                    &:last-child
+                        margin-right: 0
+                    span
+                        display: block
+                        font-size: 16px
+                    &:hover
+                        background-color: #2073e8
+                        img
+                            filter: invert(1)
+                        span
+                            color: #fff
+                        
+.fixBtn
+    position: fixed
+    right: 60px
+    bottom: 60px
+    z-index: 100
+    >button
+        display: block
+        width: 60px
+        height: 60px
+        background-repeat: no-repeat
+        background-position: center
+        cursor: pointer
+        span
+            display: inline-block
+    >button.print
+        background-image: url('../images/common/print.png')
+        background-size: 24px
+        background-color: #6a6a6a
+        margin-bottom: 5px
+        span
+            text-indent: -9999px
+        &:hover
+            background-color: #fff
+            background-blend-mode: exclusion
+    >button.share
+        background-image: url('../images/common/share.png')
+        background-size: 24px
+        background-color: #282828
+        margin-bottom: 5px
+        span
+            text-indent: -9999px
+        &:hover
+            background-color: #fff
+            background-blend-mode: exclusion
+    >button.uptop
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background-color: #fff
+        box-shadow: 3px 3px 15px 0px rgba(0,0,0,0.1)
+        span
+            transform: scaleX(0.8)
+            line-height: 1
+            letter-spacing: -2px
+            font-weight: 600
+        &::before
+            content: '∧'
+            display: inline-block
+            position: relative
+            transform: scaleY(0.6)
+            height: 20px
+            margin-top: -6px
+        &:hover
+            background-color: #282828
+            span
+                color: #fff
+                font-weight: 400
+            &::before
+                color: #fff
+
+.searchArea
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,0.6)
+    .wrap
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100%
+        .searchForm
+            display: block
+            width: 100%
+            .inputWrap
+                position: relative
+                width: 90%
+                max-width: 780px
+                height: auto
+                margin: 0 auto
+                border-radius: 50px
+                transition: all 0.4s ease-in
+                overflow: hidden
+                background-color: #fff
+                input[type="text"]
+                    display: block
+                    width: 100%
+                    padding: 20px 30px 20px 30px
+                    font-size: 20px
+                    color: #000
+                    &::placeholder
+                        color: #9d9d9d
+                        font-size: 20px
+                .searchBtn
+                    position: absolute
+                    right: 20px
+                    top: 50%
+                    transform: translateY(-50%)
+                    width: 30px
+                    margin: 0
+                    border-radius: 0
+                    border: none
+                    cursor: pointer
+                    img
+                        display: block
+                        width: 100%
+.searchArea.on
+    display: block
+
+/*IPad Pro*/
+@media (max-width: 1365px)
+    .pc1365
+        display: none !important
+    .mo1365
+        display: block !important
+    
+    header 
+        .wrap
+            padding: 0 5%
+        span 
+            .gnb > li 
+                margin-right: 30px
+                > a
+                    font-size: 18px
+            .btnWrap .search
+                margin-left: 30px
+
+    #Pagenation 
+        right: 250px
+        > li 
+            margin-right: 30px
+            > a
+                font-size: 18px
+
+    nav 
+        .top
+            padding: 0 5%
+        .left
+            width: 30%
+            .wrap
+                width: 80%
+        .right
+            width: 70%
+            .wrap .gnb 
+                width: calc(33.3333% - 13.3333px)
+                margin-right: 20px
+                .gnbTitle
+                    font-size: 22px
+                ul li 
+                    padding-bottom: 20px
+                    a
+                        font-size: 18px
+    footer .wrap
+        flex-direction: column-reverse
+        .right
+            margin-bottom: 50px
+
+/*IPad*/
+@media (max-width: 1024px)
+    .pc1024
+        display: none !important
+    .mo1024
+        display: block !important
+    header span 
+        .gnb
+            display: none
+        .btnWrap
+            border: none
+
+    #Pagenation 
+        display: none
+
+    nav
+        flex-direction: column
+        .top
+            border-bottom: 1px solid #c9c9c9
+        .left
+            order: 2
+            width: 100%
+            max-width: 100%
+            padding: 50px 0
+            .wrap
+                display: flex
+                justify-content: center
+                width: 80%
+                max-width: 100%
+                .cover
+                    padding-bottom: 0
+                    margin-right: 10px
+                .btnWrap a
+                    width: 100%
+                    margin-right: 0 
+                    margin-bottom: 5px
+                    padding: 0
+                    &:last-child
+                        margin-bottom: 0
+        .right
+            order: 1
+            width: 100%
+            padding: 150px 0 60px
+
+    .fixBtn
+        right: 30px
+        bottom: 30px
+
+/*Tablet*/
+@media (max-width: 768px)
+    .pc768
+        display: none !important
+    .mo768
+        display: block !important
+
+    nav .right .wrap
+        flex-direction: column
+        .gnb
+            padding-bottom: 50px
+            width: 100%
+            &:last-child
+                padding-bottom: 0
+            .gnbTitle
+                padding-bottom: 20px
+                margin-bottom: 20px
+            ul
+                display: flex
+                flex-wrap: wrap
+                li
+                    width: calc(50% - 10px)
+                    margin-right: 20px
+                    &:nth-child(2n)
+                        margin-right: 0
+    .fixBtn 
+        > button
+            width: 45px
+            height: 45px
+        > button.share
+            background-size: 18px
+        > button.uptop 
+            &::before
+                font-size: 14px
+            span
+                font-size: 14px
+
+    .searchArea .wrap .searchForm .inputWrap 
+        width: 80%
+        input[type=text]
+            padding: 10px 20px 10px 20px
+            font-size: 17px
+            &::placeholder
+                font-size: 17px
+        .searchBtn
+            width: 20px
+            right: 20px
+
+/*mobile*/
+@media (max-width: 576px)
+    .pc
+        display: none !important
+    .mo
+        display: block !important
+
+    header 
+        height: 75px
+        .logoWrap
+            .logo
+                width: 75px
+            .vol
+                font-size: 14px
+                margin-left: 7px
+        span .btnWrap 
+            .search,.menu
+                width: 24px
+                height: 24px
+                margin-left: 20px
+    
+    nav 
+        .top 
+            height: 75px
+            .close
+                width: 22px
+                height: 22px
+            .logoWrap
+                .logo
+                    width: 75px
+                .vol
+                    font-size: 14px
+                    margin-left: 7px
+        .left 
+            padding: 40px 0
+            .btnWrap a
+                font-size: 14px
+        .right 
+            padding: 110px 0 50px
+            .wrap .gnb 
+                padding-bottom: 40px
+                .gnbTitle
+                    font-size: 20px
+                    padding-bottom: 15px
+                    margin-bottom: 15px
+                ul li 
+                    padding-bottom: 15px
+                    &:nth-last-child(-n + 2)
+                        padding-bottom: 0
+                    a
+                        font-size: 16px
+
+    footer .wrap 
+        .left 
+            justify-content: space-between
+            .f_logo
+                width: 40%
+            .sns > a
+                width: 7.6vw
+                margin-right: 5px
+        .right 
+            .btnWrap > a
+                width: 17.2vw
+                height: 17.2vw
+                img
+                    width: 35%
+                span
+                    font-size: 3vw
+    
+    .fixBtn
+        right: 20px
+        bottom: 20px
+            
+/*mobile small*/
+@media (max-width: 375px)
+    header
+        .logoWrap .vol b
+            font-size: 18px
+        span .btnWrap 
+            .search,.menu
+                margin-left: 15px
+    nav .top .logoWrap .vol b
+        font-size: 18px
+    footer .wrap
+        padding: 30px 0
+        .right
+            margin-bottom: 25px
+        .left
+            .f_logo
+                padding-bottom: 20px
+            .sns
+                padding-bottom: 20px
+            .address
+                font-size: 13px
+                padding-bottom: 4px
+            .copy
+                font-size: 13px

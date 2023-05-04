@@ -1,0 +1,425 @@
+#sub.event.renewal
+    .top
+        .location 
+            span
+                font-weight: 300
+            span::after
+                display: inline-block
+
+#sub.event
+    .top
+        border: none
+        .location 
+            span
+                font-weight: 500
+            span::after
+                display: none
+    .whitebox
+        width: 100%
+        padding: 2.5rem 3.25rem 3rem
+        margin-bottom: 4rem 
+        background: #fff
+        >p
+            font-size: 0.9rem
+            line-height: 1.5rem
+            margin-bottom: 1.8rem
+        img
+            width: 100%
+        .event_wrap
+            display: block
+            position: relative
+            width: 100%
+            height: 100%
+            margin: 0 auto
+            padding: 2rem 0 0
+            background: #ffde78
+            .img
+                width: 90%
+                margin: 0 auto
+                text-align: center
+            .event_btn
+                position: absolute
+                left: 3.5%
+                top: 3%
+                width: 12%
+                height: 11%
+                background-repeat: no-repeat
+                background-position: center
+                background-size: 0
+                z-index: 2
+            .event_btn.btn02
+                left: 47%
+            .event_btn.btn03
+                left: 88%
+                top: 21%
+            .event_btn.btn04
+                left: 46%
+                top: 44%
+            .event_btn.btn05
+                left: 56.5%
+                top: 36.5%
+            .event_btn.on
+                background-size: contain
+            .event_off
+                display: none
+                position: absolute
+                left: 50%
+                top: 2rem
+                transform: translateX(-50%)
+                width: 90%
+                height: calc(100% - 2rem)
+                background-color: rgba(255, 255, 255, 0.8)
+                background-repeat: no-repeat
+                background-position: center
+                background-size: 35%
+                z-index: 3
+            .event_off.on
+                display: block
+        form
+            display: none
+            position: relative
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            width: 90%
+            height: 100%
+            padding: 2.5rem 1.35rem 1.85rem
+            background: #fff
+            z-index: 5
+            h4
+                width: 100%
+                margin-bottom: 2rem
+                font-size: 1.5rem
+                font-weight: 600
+                text-align: center
+            .info_input
+                >span
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    margin-bottom: 0.5rem
+                    padding: 0 0.75rem
+                    label
+                        width: 12%
+                        min-width: 130px
+                        padding-right: 0.5rem
+                        font-size: 0.9rem
+                        font-weight: 500
+                    input[type="text"]
+                        display: block
+                        width: 100%
+                        padding: 0.4rem 1rem
+                        font-size: 0.85rem
+                        border: 1px solid #959595
+            .box02
+                margin-top: 2rem
+                h3
+                    font-size: 1rem
+                    margin-bottom: 0.75rem
+                p
+                    font-size: 0.8rem
+                    line-height: 22px
+            .checkbox
+                margin-top: 0.5rem
+                input[type="checkbox"] + label::before
+                    width: 15px
+                    height: 15px
+                label
+                    font-size: 0.8rem
+                    font-weight: 500
+            button
+                display: block
+                width: 220px
+                padding: 1rem 0
+                margin: 1.5rem auto 0
+                font-size: 1.1rem
+                font-weight: 500
+                line-height: 30px
+                background-color: #2b3d98
+                color: #fff
+                cursor: pointer
+            >p
+                margin-top: 1.5rem
+                font-size: 0.85rem
+                text-align: center
+                color: #2b3d98
+
+// event 빈칸채우기
+.event02
+    padding-bottom: 4rem
+    > img
+        width: 100%
+        margin: 0
+    > img.mo
+        display: none
+    .input
+        padding: 3rem 6.5%
+        background-color: #d2e1e9
+        li
+            margin-bottom: 2rem
+            overflow: hidden
+            span
+                display: inline-block
+                float: left
+                max-width: 155px
+                min-width: 120px
+                height: 57px
+                margin-right: 1rem
+                font-family: 'NanumEB'
+                font-size: 1.25rem
+                line-height: 60px
+                text-align: center
+                border-radius: 1.5rem
+                background-color: #6684b0
+                color: #fff
+            div
+                display: inline-block
+                float: left
+                width: calc(100% - (155px + 1rem))
+                p
+                    font-size: 1rem
+                    line-height: 1.45
+                    letter-spacing: -1.5px
+                    word-break: keep-all
+                input
+                    display: block
+                    width: 100%
+                    height: 55px
+                    padding: 0 0.75rem
+                    margin-top: 1rem
+                    font-size: 0.95rem
+                    border: 1px solid $basic
+                    background-color: #fff
+        li:last-child
+            margin-bottom: 0
+    .input02
+        padding: 2rem 6.5%
+        overflow: hidden
+        background-color: #fff
+        > span
+            display: inline-block
+            float: left
+            width: 100%
+            input
+                display: block
+                width: 100%
+                height: 45px
+                padding: 0.25rem 0.5rem
+                margin-bottom: 0.5rem
+                font-size: 0.85rem
+                font-weight: 300
+                border: 1px solid #67543b
+            input:last-child
+                margin-bottom: 0
+            input[type="checkbox"]
+                display: none !important
+            > span
+                display: block
+                overflow: hidden
+                input
+                    display: inline-block
+                    float: left
+                    width: 49%
+                    margin-right: 2%
+                input:last-child
+                    margin: 0
+            label
+                display: inline-block
+                float: left
+                font-size: 0.95rem
+                font-weight: 300
+                cursor: pointer
+            label::before
+                display: inline-block
+                float: left
+                content: ""
+                width: 15px
+                height: 15px
+                margin: 2px 5px 2px 0
+                border: 1px solid #67543b
+                cursor: pointer
+            input[type="checkbox"]:checked + label::before
+                background-image: url('/common/images/check02.jpg')
+                background-size: 100%
+            button
+                display: block
+                width: 200px
+                margin: 0.5rem auto 0
+                cursor: pointer
+                img
+                    display: block
+                    width: 100%
+        >span.secure input
+            width: 158.5px
+            height: 55px
+        >span.send
+            display: flex
+            flex-direction: column
+            justify-content: center
+            width: 100%
+            margin: 0 auto
+            .box02
+                margin-bottom: 0.5rem
+                h3
+                    font-size: 1rem
+                    margin-bottom: 0.75rem
+                p
+                    font-size: 0.8rem
+                    line-height: 22px
+            >span
+                display: flex
+                justify-content: center
+                align-items: center
+
+//2022 2월
+#sub.event .whitebox .event_wrap.vol423
+    .event_btn
+        left: 15%
+        top: 4.8%
+    .event_btn.btn02
+        top: 20%
+    .event_btn.btn03
+        left: 84%
+    .event_btn.btn04
+        left: 68%
+        top: 38.6%
+    .event_btn.btn05
+        left: 37.5%
+        top: 10%
+//2022 3월
+#sub.event .whitebox .event_wrap.vol424
+    .event_btn
+        left: 5%
+        top: 4.8%
+    .event_btn.btn02
+        top: 28.5%
+        left: 12%
+    .event_btn.btn03
+        top: 28.5%
+        left: 27%
+    .event_btn.btn04
+        top: 41.5%
+        left: 17%
+    .event_btn.btn05
+        top: 10%
+        left: 60%
+//2022 4월
+#sub.event .whitebox .event_wrap.vol425
+    .event_btn
+        left: 2%
+        top: 20%
+    .event_btn.btn02
+        top: 15%
+        left: 28%
+    .event_btn.btn03
+        top: 25.5%
+        left: 50%
+    .event_btn.btn04
+        top: 33%
+        left: 58%
+    .event_btn.btn05
+        top: 31%
+        left: 78%
+
+
+@media (max-width: 1400px)
+    #sub.event
+        .whitebox
+            padding: 2rem
+            .event_wrap
+                padding: 1.5rem 0 0
+                .event_off
+                    top: 1.5rem
+                    height: calc(100% - 1.5rem)
+                form h4
+                    font-size: 1.4rem
+    .event02
+        .input li
+            span
+                display: block
+                float: none
+                margin-bottom: 1rem
+            div
+                display: block
+                float: none
+                width: 100%
+        .input02
+            > span
+                display: block
+                float: none
+                width: 100%
+                label
+                    float: right
+                button
+                    margin: 1rem auto 0
+            > span:last-child
+                width: 100%
+                margin: 1rem 0 0
+
+/*Mobile*/
+@media (max-width: 575.98px)
+    #sub.event .whitebox
+        padding: 0
+        margin-bottom: 2rem
+        >p
+            padding: 1rem 1rem 0
+        .img
+            padding: 0
+        .event_wrap
+            padding: 1rem 0 0
+            .event_off
+                top: 1rem
+                height: calc(100% - 1rem)
+            form
+                padding: 0.5rem 0.5rem 1rem
+                h4
+                    margin-top: 0.5rem
+                    margin-bottom: 1rem
+                    font-size: 0.9rem
+                .info_input 
+                    >span
+                        flex-direction: column
+                        label
+                            width: 100%
+                            font-size: 0.8rem
+                            margin-bottom: 0.25rem
+                        input[type="text"]
+                            font-size: 0.75rem
+                            padding: 0.4rem 0.5rem
+                button
+                    width: 180px
+                    padding: 0.5rem 0
+                    font-size: 0.9rem
+                >p
+                    margin-top: 0.75rem
+    .event02
+        > img.pc
+            display: none
+        > img.mo
+            display: block
+        .input li
+            span
+                width: 125px
+                height: 50px
+                font-size: 0.95rem
+                line-height: 53px
+            div
+                p
+                    font-size: 0.95rem
+                    word-break: break-all
+                    text-align: justify
+                input
+                    height: 45px
+                    font-size: 0.85rem
+        .input02 > span
+            > span
+                input
+                    display: block
+                    float: none
+                    width: 100%
+                    margin-right: 0
+                input:last-child
+                    margin-bottom: 0.5rem
+            label
+                    font-size: 0.85rem
+    

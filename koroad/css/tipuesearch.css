@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro');
+
+
+/*
+Tipue Search 7.0
+Copyright (c) 2018 Tipue
+Tipue Search is released under the MIT License
+http://www.tipue.com/search
+*/
+
+
+/* basics */
+
+
+.tipue_search_group:after
+{
+     content: "";
+     display: table;
+     clear: both;
+}
+.tipue_search_group { height: 65px; width: 100%; background-color: transparent; }
+
+
+/* fonts, colors */
+
+
+#tipue_search_input
+{
+     font: 15px/1 'S-CoreDream', sans-serif;
+     color: #000;     
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
+.tipue_search_icon
+{
+     font: 300 24px/1 'S-CoreDream', sans-serif;
+     color: #ffffff;   
+}
+#tipue_search_results_count, .tipue_search_related, .tipue_search_note
+{
+     text-transform: uppercase;
+     color: #999;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
+#tipue_search_replace, #tipue_search_error, .tipue_search_content_text
+{
+     font: 300 16px/1.6 'S-CoreDream', sans-serif;
+     color: #666; 
+}
+#tipue_search_replace a
+{
+     color: #339e41;
+     text-decoration: none;
+}
+#tipue_search_replace a:hover
+{
+     color: #666;  
+}
+.tipue_search_related_btn
+{
+     font: 11px/1 'S-CoreDream', monospace;
+     color: #666;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+     background-color: #f7f7f7;
+}
+.tipue_search_content_title
+{
+     font: 300 30px/1.2 'S-CoreDream', sans-serif;
+     color: #333;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+}
+.tipue_search_content_title a
+{
+     color: #333;
+     text-decoration: none;
+     font-size: 22px;
+     font-weight: 600;
+}
+.tipue_search_content_url, .tipue_search_content_debug
+{
+     font: 300 15px/1.7 'S-CoreDream', sans-serif;
+     color: #333;
+}
+.tipue_search_content_url a
+{    
+     display: none;
+     color: #0090d6;
+     text-decoration: none;
+     font-size: 14px;
+}
+.tipue_search_content_url a:hover
+{
+     color: #666;
+}
+.tipue_search_content_bold
+{
+     font-weight: 400;
+     color: #333;
+     font-size: 17px;
+}
+.tipue_search_note a
+{
+     color: #999;
+     text-decoration: none;
+}
+.tipue_search_image_close
+{
+     font: 22px/1 'S-CoreDream', monospace;
+     color: #ccc;     
+}
+#tipue_search_zoom_text
+{
+     font: 11px/1.7 'S-CoreDream', monospace;
+     color: #ccc;
+     text-transform: uppercase;
+     letter-spacing: 1px;
+}
+#tipue_search_zoom_text a
+{
+     color: #ccc;
+     text-decoration: none;
+     border-bottom: 2px solid #f7f7f7;
+}
+#tipue_search_zoom_text a:hover
+{
+     border: 0;
+}
+#tipue_search_foot_boxes
+{
+     font: 13px/1 'S-CoreDream', sans-serif;
+     text-transform: uppercase;
+     color: #333;     
+}
+#tipue_search_foot_boxes li a
+{
+     background-color: #f7f7f7;
+     color: #666;
+}
+#tipue_search_foot_boxes li.current
+{
+     background: #252525;
+     color: #ccc;
+}
+#tipue_search_foot_boxes li a:hover, .tipue_search_related_btn:hover
+{
+     background: #252525;
+     color: #ccc;
+}
+
+
+/* search box */
+
+/*
+#tipue_search_input
+{
+     float: left;
+     width: 80%;
+     background-color: transparent;
+     border-left: 2px solid #efefef;
+     border-top: 2px solid #efefef;
+     border-bottom: 2px solid #efefef;
+     border-right: 0;
+     padding: 9px 6px 10px 15px;
+     height: 40px;
+     border-radius: 30px 0 0 30px;
+     -moz-appearance: none;
+     -webkit-appearance: none;
+     box-sizing: border-box;
+     box-shadow: none;
+     outline: 0;
+     margin: 10px 0 0;
+     transition:all .4s ease-in;
+     -webkit-transition:all .4s ease-in;
+     -moz-transition:all .4s ease-in;
+     -o-transition:all .4s ease-in;
+     -ms-transition:all .4s ease-in;
+}
+*/
+.tipue_search_button
+{
+     -webkit-appearance:none:none;
+     position: relative;
+     float: left;
+     width: 20%;
+     height: 40px;
+     margin-left: -3px;
+     background-color: transparent;
+     border: none;
+     /*
+     border-left: none;
+     border-right: 2px solid #efefef;
+     border-top: 2px solid #efefef;
+     border-bottom: 2px solid #efefef;
+     border-radius: 0 30px 30px 0;
+     */
+     box-sizing: border-box;
+     cursor: pointer;
+     outline: 0;
+     margin: 5px 0 0;
+     transition:all .4s ease-in;
+     -webkit-transition:all .4s ease-in;
+     -moz-transition:all .4s ease-in;
+     -o-transition:all .4s ease-in;
+     -ms-transition:all .4s ease-in;
+}
+.tipue_search_icon
+{
+     float: left;
+     transform: rotate(-45deg);
+     -moz-appearance: none;
+     -webkit-appearance: none;
+     box-sizing: border-box;
+     box-shadow: none;
+     outline: 0;    
+     margin: -1px 0 0 15px;
+}
+.tipue_search_group:focus #tipue_search_input,
+.tipue_search_group:hover #tipue_search_input
+{ 
+     border-left: 2px solid #ccc;
+     border-top: 2px solid #ccc;
+     border-bottom: 2px solid #ccc;
+ }
+.tipue_search_group:focus .tipue_search_button,
+.tipue_search_group:hover .tipue_search_button 
+{ 
+     /*
+     border-right: 2px solid #ccc;
+     border-top: 2px solid #ccc;
+     border-bottom: 2px solid #ccc; 
+     */
+}
+
+/* search results */
+
+
+#tipue_search_content
+{
+     max-width: 100%;
+}
+.tipue_search_result
+{
+     overflow:hidden; position:relative;
+     padding-top: 21px;
+     padding-left: 230px;
+     border-bottom:1px dotted #333333; 
+     min-height:175px;
+     padding-bottom: 31px;
+}
+#tipue_search_results_count
+{
+     color:#2d2d2d;
+     font-size: 17px;
+     line-height:24px;
+     padding-bottom: 20px;
+     border-bottom:3px solid #333333;      
+}
+.tipue_search_related
+{
+     padding-top: 13px;
+}
+.tipue_search_related_block
+{
+     padding-bottom: 6px;
+}
+#tipue_search_warning
+{
+     padding-top: 10px;
+}
+.tipue_search_related_btn
+{
+     display: inline-block;
+     padding: 9px 10px;
+     text-decoration: none;
+     text-align: center;
+     border-radius: 3px;
+     margin: 9px 9px 0 0;
+     outline: 0;
+     transition: 0.2s; 
+     cursor: pointer;
+}
+#tipue_search_replace
+{
+     padding-top: 13px;
+}
+#tipue_search_error
+{
+     padding-top: 13px;
+}
+.tipue_search_content_url
+{
+     padding-top: 3px;
+     word-wrap: break-word;
+     hyphens: auto;
+}
+.tipue_search_content_text
+{
+     word-wrap: break-word;
+     hyphens: auto;
+     margin-top: 1px;
+}
+.tipue_search_note
+{
+     padding-top: 5px;
+}
+.tipue_search_content_debug
+{
+     margin: 5px 0;
+}
+
+
+/* images */
+
+.tipue_search_image
+{
+    position:absolute; top:20px; left:0; width:100%; max-width:200px; padding: 9px 0 6px 0;
+}
+
+.tipue_search_image a { display:block; }
+
+.tipue_search_img
+{
+     width: 100%;
+     max-width: 100%;
+     height: auto;
+     transition: 0.5s;
+     border-radius: 1px;
+}
+.tipue_search_img:hover
+{
+     opacity: 0.7;
+}
+.tipue_search_image_zoom
+{
+     cursor: pointer;     
+}
+#tipue_search_image_modal
+{
+     display: none;
+     position: fixed;
+     z-index: 1000;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     overflow: auto;
+     background-color: rgba(0, 0, 0, 0.9);
+}
+.tipue_search_image_close
+{
+     position: absolute;
+     top: 0;
+     right: 0;
+     padding: 25px 30px;
+     cursor: pointer;
+}
+.tipue_search_image_block
+{
+     margin: 0 auto;
+     max-width: 900px;
+     padding: 73px 30px 30px 30px;
+     box-sizing: border-box;
+     color: #fff;
+}
+#tipue_search_zoom_img
+{
+     max-width: 100%;
+     height: auto;
+}
+#tipue_search_zoom_text, .tipue_search_zoom_options
+{
+     padding-top: 9px;
+}
+
+
+/* footer */
+
+
+#tipue_search_foot
+{
+     margin: 51px 0 21px 0;
+}
+#tipue_search_foot_boxes
+{
+     padding: 0;
+     margin: 0;
+     cursor: pointer;
+}
+#tipue_search_foot_boxes li
+{
+     display: inline;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+}
+#tipue_search_foot_boxes li a
+{
+     padding: 10px 17px 11px 17px;
+     border-radius: 3px;
+     margin-right: 7px;
+     text-decoration: none;
+     text-align: center;
+     transition: 0.2s;
+}
+#tipue_search_foot_boxes li.current
+{
+     padding: 10px 17px 11px 17px;
+     border-radius: 3px;
+     margin-right: 7px;
+     text-align: center;
+}
+
+@media screen and (max-width:1280px){ 
+     .tipue_search_group { height: 40px; max-width: 250px; }
+     .tipue_search_icon { margin: 0 0 1px 0; }
+}
+
+@media screen and (max-width:720px){
+     .tipue_search_result {padding-left:0; padding-top:10px; padding-bottom:10px; }
+     .tipue_search_group { max-width: 190px; }
+     .tipue_search_image { position:relative; top:0; max-width:360px; }
+}
+
+@media screen and (max-width:640px){
+     #tipue_search_input { padding: 9px 6px 10px 15px; }
+}

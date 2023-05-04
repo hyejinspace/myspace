@@ -1,0 +1,1162 @@
+.sub
+    padding-top: 90px
+    .topArea
+        position: relative
+        width: 100%
+        height: 750px
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+        .wrap
+            width: 100%
+            height: 100%
+            background-color: rgba(0,0,0,0.5)
+        .textWrap
+            position: absolute
+            top: 0
+            left: 50%
+            transform: translateX(-50%)
+            max-width: 1150px
+            width: 90%
+            height: 100%
+            .textTop
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: center
+                width: 100%
+                height: 100%
+                .title
+                    font-size: 45px
+                    color: #fff
+                    font-weight: 600
+                    line-height: 1.3
+                    word-break: keep-all
+                    padding-bottom: 30px
+                    span
+                        font-weight: 300
+                        color: #fff
+                    b
+                        color: #fff
+                .subtitle
+                    font-size: 25px
+                    color: #fff
+                    font-weight: 300
+                    line-height: 1.3
+                    word-break: keep-all
+                    // padding-bottom: 30px
+        .info
+            position: absolute
+            right: 0
+            bottom: 130px
+            text-align: right
+            font-size: 15px
+            >div
+                margin-bottom: 10px
+                color: #fff
+                font-weight: 300
+                line-height: 1.4
+                word-break: keep-all
+                b
+                    color: #ffff7c
+                    font-weight: 500
+
+
+        .textBottom
+            position: absolute
+            left: 0
+            bottom: 0
+            padding: 40px 0
+            display: flex
+            flex-wrap: wrap
+            align-items: flex-start
+            justify-content: space-between
+            border-top: 1px solid #fff
+            width: 100%
+            .category
+                max-width: 50%
+                span
+                    font-size: 17px
+                    color: #fff
+                    font-weight: 300
+            .by 
+                max-width: 50%
+                text-align: right
+                span 
+                    display: inline-block
+                    font-size: 17px
+                    color: #fff
+                    font-weight: 300
+                    line-height: 1.4
+                    margin-right: 15px
+                    *
+                        color: #fff
+                    &:last-child
+                        margin-right: 0
+        .textBottom.black
+            border-color: #000
+            *
+                color: #000
+            .by *
+                color: #000
+            .by span *
+                color: #000
+    .contentsArea
+        padding: 80px 0 120px
+        .textbox
+            width: 90%
+            max-width: 1120px
+            margin: 0 auto
+            padding-bottom: 80px
+            &:last-child
+                padding-bottom: 0
+            .bigTitle
+                font-size: 50px
+                margin-bottom: 30px
+            // 본문 제일 큰 타이틀
+            .title  
+                font-size: 35px
+                line-height: 1.3
+                padding-bottom: 35px
+                font-weight: 700
+                &:last-child
+                    padding-bottom: 0
+            // 본문 두번째로 작은 타이틀
+            .title02
+                font-size: 28px
+                line-height: 1.3
+                padding-bottom: 20px
+                font-weight: 700
+                &:last-child
+                    padding-bottom: 0
+            // 바탕체 타이틀
+            .title03
+                display: inline-block
+                font-size: 25px
+                font-weight: 600
+                line-height: 1.6
+                font-family: 'GyeonggiBatang'
+                text-align: left
+                padding-bottom: 0
+                margin-bottom: 10px
+                &:last-child
+                    padding-bottom: 0
+            // 본문 세번째로 작은 타이틀
+            .title04
+                font-size: 20px
+                line-height: 1.3
+                padding-bottom: 20px
+                font-weight: 700
+                &:last-child
+                    padding-bottom: 0
+            .epilogue
+                font-size: 25px
+                font-weight: 500
+                line-height: 1.6
+                font-family: 'GyeonggiBatang'
+                text-align: center
+                color: #c14610
+                padding-bottom: 70px
+                &:last-child
+                    padding-bottom: 0
+            p
+                font-size: 18px
+                font-weight: 300
+                line-height: 1.8
+                padding-bottom: 45px
+                word-break: break-all
+                text-align: justify
+                &:last-child
+                    padding-bottom: 0
+                *
+                    font-size: 100%
+                small,sup,sub
+                    font-size: 80%
+            p.lh14
+                line-height: 1.4
+            p.pb10
+                padding-bottom: 10px
+            p.pb20
+                padding-bottom: 20px
+            .img
+                text-align: center
+                padding-bottom: 30px
+                > span
+                    display: inline-block
+                    img
+                        display: inline-block
+                        width: auto
+                        max-width: 100%
+                    small
+                        display: block
+                        padding-top: 0px
+                        margin-bottom: 10px
+                        font-size: 14px
+                        font-weight: 300
+                        text-align: center
+                > span.imgBottom
+                    padding-bottom: 10px
+            .caption
+                display: block
+                padding-top: 10px
+                font-size: 14px
+                text-align: center
+            //가로정렬
+            .flex
+                display: flex
+                align-items: center
+                justify-content: center
+                padding-bottom: 50px
+                > span
+                    display: inline-block
+                    margin-right: 30px
+                    img.bottom
+                        margin-bottom: 30px
+                > span:last-child
+                    margin-right: 0
+                &:last-child
+                    padding-bottom: 0
+            //이미지만 있을때
+            .flex.image
+                >span 
+                    margin-right: 10px
+                    &:last-child
+                        margin-right: 0
+            //모바일에서도 가로정렬 & 모바일에서 아래 간격 flex와 동일
+            .flex02
+                display: flex
+                > span
+                    display: inline-block
+                    margin-right: 10px
+                > span:last-child
+                    margin-right: 0
+                &:last-child
+                    padding-bottom: 0
+            //모바일까지 무조건 가로정렬
+            .flex03
+                display: flex
+                > span
+                    display: inline-block
+                    margin-right: 10px
+                > span:last-child
+                    margin-right: 0
+                &:last-child
+                    padding-bottom: 0
+            .table
+                margin-bottom: 45px
+                overflow: auto
+                table
+                    width: 100%
+                    caption
+                        margin-bottom: 10px
+                        font-size: 17px
+                        font-weight: 700
+                        text-align: left
+                    th,td
+                        padding: 10px 1%
+                        font-size: 17px
+                        font-weight: 300
+                        line-height: 1.65
+                        border-bottom: 1px solid #898989
+                        border-right: 1px solid #898989
+                        word-break: break-all
+                        text-align: justify
+                        &:last-child
+                            border-right: none
+                    th
+                        background-color: #646aad
+                        color: #fff
+                        text-align: center
+                        word-break: keep-all
+                        border-color: #fff
+                    .th
+                        background-color: #d9dcff
+                        word-break: keep-all
+                    b
+                        font-weight: bold
+                .center
+                    td
+                        text-align: center
+                        word-break: keep-all
+                &:last-child
+                    margin-bottom: 0
+            //교통안전 정보 풀 슬라이드
+            .swiper-container.mySwiper
+                overflow: visible
+                max-width: 90%
+                margin: 0 auto
+                padding-left: 70px
+                .swiper-slide
+                    width: 30%
+                    max-width: 410px
+                    margin-right: 40px
+                    border-radius: 10px
+                    overflow: hidden
+                .swiper-pagination-progress
+                    position: static
+                    margin-top: 80px
+                    height: 8px
+                    border-radius: 50px
+                    overflow: hidden
+                    background-color: #9a9a9a
+                    .swiper-pagination-progressbar
+                        background-color: #db2222
+                .swiper-button-prev
+                    background-image: url('../images/common/slide_prev02.png')
+                    background-repeat: no-repeat
+                    background-size: contain
+                    background-position: right center
+                    z-index: 20
+                    opacity: 1
+                    width: 40px
+                    height: 50px
+                    left: 0
+                    top: 50%
+                    transform: translateY(-50%)
+                .swiper-button-next
+                    background-image: url('../images/common/slide_next02.png')
+                    background-repeat: no-repeat
+                    background-size: contain
+                    background-position: right center
+                    z-index: 20
+                    opacity: 1
+                    width: 40px
+                    height: 50px
+                    right: 0
+                    top: 50%
+                    transform: translateY(-50%)
+            //정사각형 네모박스
+            .qna
+                display: flex
+                justify-content: center
+                align-items: center
+                text-align: center
+                width: 45px
+                height: 45px
+                background-color: #fabc00
+                color: #fff
+                padding-bottom: 2px
+                margin-bottom: 10px
+            //동그라미 태그
+            .circle
+                display: flex
+                justify-content: center
+                align-items: center
+                text-align: center
+                width: 45px
+                height: 45px
+                background-color: #425797
+                color: #fff
+                padding-bottom: 2px
+                margin-bottom: 10px
+                border-radius: 50%
+                margin-top: -5px
+            //배경색 있는 둥근 스타일
+            .tag
+                display: inline-block
+                padding: 5px 15px !important
+                background-color: #ddd
+                border-radius: 50px
+                margin-bottom: 10px
+                text-align: center
+                line-height: 1.3
+                font-weight: 400
+            //배경색 있는 네모 스타일
+            .tag02
+                display: inline-block
+                padding: 5px 15px !important
+                background-color: #000
+                color: #fff
+                margin-bottom: 10px
+                text-align: center
+                line-height: 1.3
+                font-weight: 500
+            //배경색 있는 조금둥근 스타일
+            .tag03
+                display: inline-block
+                padding: 5px 15px !important
+                background-color: #000
+                color: #fff
+                border-radius: 12px
+                margin-bottom: 10px
+                text-align: center
+                line-height: 1.3
+                font-weight: 500
+                font-weight: 300
+            //테두리 있는 스타일
+            .tag04
+                display: inline-block
+                padding: 7px 15px !important
+                background-color: #fff
+                border: 2px solid  #000
+                margin-bottom: 10px
+                text-align: center
+                line-height: 1.3
+                font-weight: 500
+            .square
+                display: inline-block
+                top: 0
+                left: 0
+                width: 35px
+                height: 35px
+                margin-top: 5px
+                background-color: #3c449d
+                color: #fff
+                display: flex
+                justify-content: center
+                align-items: center
+            //리스트
+            .list
+                font-size: 18px
+                font-weight: 400
+                line-height: 1.8
+                padding-bottom: 40px
+                word-break: break-all
+                text-align: justify
+                &:last-child
+                    padding-bottom: 0
+            //반반 정렬 리스트
+            .list.wrap
+                display: flex
+                flex-wrap: wrap
+                li
+                    min-width: 50%
+            //얇고 연한 라인
+            .line
+                width: 100%
+                border-bottom: 1px solid #d2d2d2
+                margin: 20px 0 60px
+            //굵고 진한 라인
+            .line2
+                width: 100%
+                border-bottom: 2px solid #000
+                margin: 20px 0 60px
+            //배경색 있는 박스
+            .box
+                position: relative
+                padding: 30px
+                background-color: #f5f5f5
+                margin-bottom: 40px
+                &:last-child
+                    margin-bottom: 0
+            //배경색 없고 두꺼운 테두리
+            .box02
+                position: relative
+                padding: 50px 40px
+                margin-bottom: 40px
+                border: 2px solid #000
+                &:last-child
+                    margin-bottom: 0
+                .num
+                    display: inline-block
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 35px
+                    height: 35px
+                    background-color: #000
+                    color: #fff
+                    display: flex
+                    justify-content: center
+                    align-items: center
+            //배경색 있고 둥근모서리
+            .box03
+                position: relative
+                padding: 30px
+                background-color: #e4f5fe
+                margin-bottom: 40px
+                border-radius: 20px
+                &:last-child
+                    margin-bottom: 0
+            //투명박스
+            .box04
+                position: relative
+                padding: 40px
+                margin-bottom: 40px
+                &:last-child
+                    margin-bottom: 0
+            // padding 넓은 박스
+            .box05
+                padding: 60px
+                margin-bottom: 40px
+                &:last-child
+                    margin-bottom: 0
+            //위아래 보더 있는 라벨 스타일
+            .titleStyle01
+                width: 100%
+                border-top: 2px solid #000
+                border-bottom: 1px solid #000
+                padding: 10px 0 !important
+                margin-bottom: 20px
+                *
+                    padding-bottom: 0
+            //파일 인덱스 스타일
+            .titleStyle02
+                width: 100%
+                border-bottom: 2px solid #2b79bc
+                span
+                    position: relative
+                    display: inline-block
+                    font-size: 18px
+                    color: #fff
+                    background-color: #2b79bc
+                    border-radius: 20px 10px 0 0
+                    padding: 12px 30px
+                    text-align: center
+                    &::after
+                        content: ''
+                        position: absolute
+                        bottom: 0
+                        right: -9px
+                        width: 30px
+                        height: 90%
+                        transform: skew(27deg)
+                        background-color: #2b79bc
+            .titleStyle02.blue
+                border-bottom: 2px solid #2b79bc
+                span
+                    background-color: #2b79bc
+                    &::after
+                        background-color: #2b79bc
+            .titleStyle02.purple
+                border-bottom: 2px solid #7d55b4
+                span
+                    background-color: #7d55b4
+                    &::after
+                        background-color: #7d55b4
+            .titleStyle02.orenge
+                border-bottom: 2px solid #df6646
+                span
+                    background-color: #df6646
+                    &::after
+                        background-color: #df6646
+            .category
+                display: block
+                fonts-size: 13px
+                color: #fff
+                text-decoration: underline
+                padding-bottom: 20px
+                font-weight: 300
+            //바로가기 버튼
+            .linkBtn
+                display: inline-block
+                padding: 15px 20px
+                color: #fff
+                text-align: center
+                background-color: #3131b2
+                font-size: 16px
+            //바로가기 버튼 둥근스타일
+            .linkBtn02
+                display: inline-block
+                padding: 8px 20px
+                color: #fff
+                text-align: center
+                background-color: #ea7a6f
+                border-radius: 50px
+                font-size: 16px
+            //바로가기 버튼 둥근스타일2
+            .linkBtn03
+                display: inline-block
+                padding: 15px 30px
+                color: #fff
+                text-align: center
+                background-color: #0637c9
+                border-radius: 50px
+                font-size: 20px
+            .video
+                position: relative
+                height: 0
+                padding-bottom: 56.25%
+                margin-bottom: 1.5rem
+                overflow: hidden
+                iframe,
+                object,
+                embed
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                &:last-child
+                    margin-bottom: 0
+        .textbox.full
+            width: 100%
+            max-width: 100%
+            padding: 80px calc((100% - (1120px + 10%))/2)
+            margin-bottom: 80px
+            background-color: #fffae7
+            >span
+                display: block
+                width: 90%
+                max-width: 1120px
+                margin: 0 auto
+        .upBox
+            position: relative
+            margin-top: -150px
+            background-color: #fff
+            background-size: 100%
+            background-repeat: no-repeat
+            background-position: center top
+            padding: 130px 0 0
+            >span
+                display: block
+                width: 90%
+                margin: 0 auto
+                padding-bottom: 80px
+            .box
+                padding: 50px
+        .testStyleBox
+            background-color: #fff
+            padding: 40px
+            .top
+                margin-bottom: 50px
+            .border
+                display: flex
+                justify-content: space-between
+                border: 1px solid #959595
+                border-radius: 10px
+                margin-bottom: 10px
+                >div
+                    width: 40%
+                    padding: 8px 0 
+                    text-align: center
+                    border-right: 1px solid #959595
+                    &:last-child
+                        border-right: none
+                    &:nth-child(2)
+                        width: 20%
+            .flex02 > span
+                margin-bottom: 10px !important
+                        
+            .border02
+                border: 1px solid #959595
+                border-radius: 10px
+                padding: 20px 0
+                text-align: center
+                .tit
+                    font-size: 43px
+                    font-weight: 700
+        .download
+            position: relative
+            .downBtn
+                position: absolute
+                display: none
+                top: 0
+                right: 0
+            &:hover
+                .downBtn
+                    display: inline-block
+
+
+
+//공통 스타일
+.marker
+    background: linear-gradient(to top, #fef376 50%, transparent 30%)
+.marker02
+    background: #fef376
+.flex-wrap
+    flex-wrap: wrap !important
+.just-center
+    justify-content: center !important
+.just-between
+    justify-content: space-between !important
+.just-start
+    justify-content: start !important
+.just-end
+    justify-content: end !important
+.align-center
+    align-items: center !important
+.align-start
+    align-items: flex-start !important
+.align-end
+    align-items: flex-end !important
+.align-stretch
+    align-items: stretch !important
+.flex-d-col
+    flex-direction: column  !important
+    >span
+        margin-right: 0 !important
+.text-center
+    text-align: center !important
+.text-left
+    text-align: left !important
+.text-right
+    text-align: right !important
+.text-just
+    text-align: justify !important
+.word-keep
+    word-break: keep-all !important
+    text-align: left !important
+
+.block
+    display: block !important
+.inline-block
+    display: inline-block !important
+.inline
+    display: inline
+
+.relative
+    position: relative
+.absolute
+    position: absolute
+.jalnan
+    font-family: 'yg-jalnan'
+
+
+.absoluteCenter
+    right: auto
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
+
+
+.fs17
+    font-size: 17px
+
+
+
+
+.movement
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 90%
+    max-width: 1120px
+    margin: 0 auto
+    >a 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        width: 390px
+        span
+            display: inline-block
+            position: relative
+            width: 330px
+            padding: 15px 0
+            border: 1px solid #000
+            font-size: 18px
+            text-align: center
+            background-color: #fff
+    .present
+        position: relative
+        padding: 15px 0
+        border: 1px solid #000
+        font-size: 18px
+        text-align: center
+        width: 330px
+        background-color: #000
+        color: #fff
+    .prev
+        margin-right: 5px
+    .prev::before
+        content: ''
+        display: block
+        width: 20px
+        height: 24px
+        background-image: url('../images/common/arrow_left.png')
+        background-repeat: no-repeat
+        background-size: 20px
+        background-position: left center
+    .next
+        margin-left: 5px
+    .next::after
+        content: ''
+        display: block
+        width: 20px
+        height: 24px
+        background-image: url('../images/common/arrow_right.png')
+        background-repeat: no-repeat
+        background-size: 20px
+        background-position: right center
+
+
+
+//과월호 리스트
+.upBox.list
+    padding-top: 80px !important
+.past-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: flex-start
+    align-items: flex-start
+    max-width: 780px
+    width: 100%
+    margin: 0 auto
+    padding-bottom: 80px
+    &:last-child
+        padding-bottom: 30px
+    li
+        width: calc(33.3333% - 10.253%)
+        max-width: 180px
+        margin-right: 15.38%
+        margin-bottom: 40px
+        &:nth-child(3n)
+            margin-right: 0
+        &:nth-last-child(-n + 3)
+            margin-bottom: 0
+        .vol
+            font-size: 20px
+            font-weight: 600
+            text-align: center
+            padding-bottom: 20px
+            small
+                font-weight: 300
+        .wrap
+            position: relative
+            overflow: hidden
+            .volImg img
+                display: block
+                width: 100%
+            .btnWrap
+                position: absolute
+                top: 0
+                left: 100%
+                width: 100%
+                height: 100%
+                background: rgba(0,0,0,0.5)
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                transition: left 0.3s
+                >a
+                    display: inline-block
+                    font-size: 16px
+                    padding: 10px 15px
+                    border-radius: 50px
+                    font-weight: 500
+                    color: #fff
+                    text-align: center
+                    background-color: #000
+                    margin-bottom: 10px
+                    width: 75%
+                    max-width: 140px
+                    &:last-child
+                        margin-bottom: 0
+                    &:hover
+                        background-color: #ff5858
+            &:hover
+                .btnWrap
+                    left: 0
+
+
+
+/*IPad Pro*/
+@media (max-width: 1365px)
+    .movement 
+        > a 
+            width: 35.26%
+            span
+                width: calc(100% - 15.38%)
+        .present
+            width: 29.46%
+
+/*IPad*/
+@media (max-width: 1024px)
+    .sub .contentsArea .textbox 
+        .flex_1024
+            flex-direction: column
+        .img.fit_1024
+            span 
+                display: inline
+                img
+                    width: 100%
+        .col_reverse_mo_1024
+            flex-direction: column-reverse !important
+        .width100_1024
+            width: 100%
+
+    .past-list 
+        li
+            width: calc(33.3333% - 5.126%)
+            max-width: none
+            margin-right: 7.69%
+
+/*Tablet*/
+@media (max-width: 768px)
+    .sub 
+        .topArea 
+            background-image: none
+            height: 450px
+            position: relative
+            .textWrap 
+                position: relative
+                display: block
+                .textTop 
+                    .title
+                        font-size: 38px
+                        padding-bottom: 20px
+                    .subtitle
+                        font-size: 20px
+                //바이라인 한줄일때
+                .info
+                    bottom: 80px
+                    font-size: 12px
+                    >div
+                        margin-bottom: 5px
+                //바이라인 한줄일때
+                .info.line2
+                    bottom: 100px
+            .textBottom
+                padding: 20px 0
+                .category span
+                    font-size: 14px
+                .by span
+                    font-size: 14px
+                    width: 100%
+                    margin-right: 0
+        .bg_left_mo
+            background-position: left
+        .bg_right_mo
+            background-position: right
+        .bg_left_30
+            background-position: 30%
+                    
+        .contentsArea
+            .textbox
+                .title
+                    font-size: 28px
+                    padding-bottom: 25px
+                .epilogue
+                    font-size: 22px
+                    padding-bottom: 60px
+                p
+                    font-size: 17px
+                .flex
+                    flex-direction: column
+                    >span
+                        display: block
+                        width: 100%
+                        min-width: auto !important
+                        max-width: none !important
+                        margin-right: auto !important
+                        margin-left: auto !important
+                        margin-bottom: 30px
+                        &:last-child
+                            margin-bottom: 0
+                .flex_567
+                    flex-direction: row
+                .swiper-container.mySwiper 
+                    padding-left: 40px
+                    .swiper-slide
+                        margin-right: 20px
+                        max-width: none
+                        width: 55%
+                    .swiper-pagination-progress
+                        margin-top: 40px
+                        margin-left: -20px
+                    .swiper-button-next,.swiper-button-prev
+                        width: 25px
+                        
+                .box04
+                    padding: 30px
+                .upBox .box
+                    padding: 40px 30px
+
+                .table table 
+                    th,td
+                        font-size: 14px
+
+
+            .download .downBtn
+                display: inline-block
+            .testStyleBox
+                padding: 25px
+                .border02 .tit
+                    font-size: 38px
+                    margin-left: -10px
+
+    .col_reverse_mo
+        flex-direction: column-reverse !important
+
+    .movement 
+        > a span
+            text-indent: -9999px
+        .prev::after
+            position: absolute
+            top: 50%
+            left: calc(50% + 7.38%)
+            transform: translate(-50%,-50%)
+            content: '이전'
+            display: block
+            z-index: 1
+        .next::before
+            position: absolute
+            top: 50%
+            left: calc(50% - 9.38%)
+            transform: translate(-50%,-50%)
+            content: '다음'
+            display: block
+            z-index: 1
+
+    .past-list 
+        li
+            width: calc(50% - 5.126%)
+            &:nth-child(3n)
+                margin-right: 7.69%
+            &:nth-child(2n)
+                margin-right: 0
+        
+
+/*mobile*/
+@media (max-width: 576px)
+    .sub 
+        padding-top: 75px
+        .topArea 
+            .textWrap 
+                .textTop 
+                    .title
+                        font-size: 30px
+                        padding-bottom: 15px
+                    .subtitle
+                        font-size: 18px
+        .topArea.shortH_mo
+            height: 180px !important
+        .topArea.shortH_mo .textWrap .textTop .title
+            padding-bottom: 35px
+        .contentsArea
+            padding: 60px 0 80px
+            .textbox
+                padding-bottom: 60px
+                .title
+                    font-size: 22px
+                    padding-bottom: 20px
+                .title02
+                    font-size: 20px
+                    padding-bottom: 20px
+                .title03
+                    font-size: 18px
+                    margin-bottom: 5px
+                .epilogue
+                    font-size: 18px
+                    padding-bottom: 40px
+                p
+                    font-size: 16px
+                .flex
+                    padding-bottom: 30px
+                    >span
+                        margin-bottom: 20px
+                .flex_567
+                    flex-direction: column
+                    >span
+                        display: block
+                        width: 100%
+                        min-width: auto !important
+                        max-width: none !important
+                        margin-right: auto !important
+                        margin-left: auto !important
+                        margin-bottom: 30px
+                        &:last-child
+                            margin-bottom: 0
+                .swiper-container.mySwiper .swiper-slide
+                    width: 70%
+                .box
+                    padding: 20px
+                    margin-bottom: 20px
+                .box02
+                    padding: 40px 20px
+                    margin-bottom: 20px
+                .box03
+                    padding: 20px
+                    margin-bottom: 20px
+                .box04
+                    padding: 20px
+                    margin-bottom: 20px
+                .box05
+                    padding: 30px
+                    margin-bottom: 20px
+                .linkBtn03
+                    font-size: 17px
+                    padding: 12px 20px
+                .list
+                    font-size: 15px
+                .list.wrap
+                    li
+                        width: 100%
+                .bigTitle
+                    font-size: 36px
+                    margin-bottom: 20px
+                .line2
+                    margin: 10px 0 30px
+                .circle
+                    width: 35px
+                    height: 35px
+                    font-size: 80%
+                    padding-bottom: 3px
+            .textbox.full
+                padding-top: 60px
+                padding-bottom: 60px
+            .testStyleBox
+                .top
+                    margin-bottom: 30px
+                .border 
+                    >div
+                        width: 45%
+                        padding: 8px
+                        font-size: 15px
+                    > div:nth-child(2)
+                        width: 10%
+                .border02 .tit
+                    font-size: 28px
+                    margin-left: -10px
+            
+            .upBox
+                margin-top: -110px
+                padding-top: 60px
+
+    .movement 
+        >a,div,span
+            font-size: 14px !important
+        .prev::before,.next::after
+            background-size: 14px
+    .past-list 
+        padding-bottom: 50px
+        &:last-child
+            padding-bottom: 0
+        li 
+            margin-bottom: 7.69%
+            .vol
+                font-size: 16px
+                padding-bottom: 10px
+            .wrap .btnWrap > a
+                padding: 8px 0
+                font-size: 12px
+
+
+                        
+/*small mobile*/
+@media (max-width: 375px)
+    .sub 
+        .topArea .textWrap .textBottom
+            padding: 15px 0
+            .category
+                top: 15px
+        .contentsArea 
+            .textbox 
+                .flex02
+                    display: block
+                    >span
+                        display: block
+                        width: 100%
+                        min-width: auto !important
+                        max-width: none !important
+                        margin-right: auto !important
+                        margin-left: auto !important
+                        margin-bottom: 30px
+                        &:last-child
+                            margin-bottom: 0
+                .box05
+                    padding: 20px
+            .testStyleBox 
+                .border 
+                    border-radius: 5px
+                    > div
+                        width: 45%
+                        font-size: 12px
+                        padding: 8px 0
+                    >div:nth-child(2)
+                        width: 10%
+                .border02 .tit
+                    font-size: 20px
+                    margin-left: -10px

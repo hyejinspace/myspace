@@ -1,0 +1,482 @@
+//animation
+@keyframes zoom
+    0%
+        opacity: 0
+        transform: scale(0.8)
+    100%
+        opacity: 1
+        transform: scale(1)
+@keyframes fadeout-bg
+    0%
+        opacity: 1
+    80%
+        opacity: 1
+    100%
+        opacity: 0
+
+// 메인페이지
+#main
+    .wrap
+        width: 1500px
+        margin: 0 auto
+    .section01
+        position: relative
+        height: 970px
+        overflow: hidden
+        video
+            display: block
+            position: absolute
+            left: 50%
+            top: 50%
+            min-width: 100%
+            min-height: 100%
+            transform: translate(-50%,-50%)
+            z-index: 1
+        .text_wrap
+            display: flex
+            align-items: center
+            justify-content: center
+            align-content: center
+            flex-wrap: wrap
+            position: absolute
+            width: 100%
+            height: 100%
+            margin-top: -100px
+            text-align: center
+            z-index: 2
+            color: #fff
+            >div
+                width: 100%
+            .month
+                display: flex
+                align-items: center
+                justify-content: space-between
+                flex-wrap: nowrap
+                width: 100%
+                text-align: center
+                z-index: 2
+                color: #fff
+                p
+                    min-width: 100px
+                    color: #fff
+                p:last-child
+                    min-width: 200px
+                span
+                    display: inline-block
+                    width: 100%
+                    height: 1px
+                    background: #fff
+                    margin: 0 0.5rem
+            h2
+                margin: 1rem auto 0
+                img
+                    margin: 0 auto
+                    max-width: 100%
+        //animation
+        .text_wrap.on
+            animation: zoom 1s cubic-bezier(0, 0, 0.2, 0.74)
+    .section01#VideoWrapper
+        height: 0
+        padding-bottom: 56.25%
+        background-color: #000
+        #iframe_bgVideo
+            position: absolute
+            width: 120% !important
+            height: 120% !important
+            top: 50% !important
+            left: 50% !important
+            margin-top: 0 !important
+            margin-left: 0 !important
+            transform: translate(-50%, -50%)
+            z-index: 2
+        #bgImg
+            display: block
+            position: absolute
+            left: 50%
+            top: 50%
+            width: 100%
+            height: 100%
+            transform: translate(-50%, -50%)
+            z-index: 1
+            > img
+                display: block
+                position: relative
+                left: 50%
+                top: 50%
+                width: 120%
+                // min-height: 100%
+                transform: translate(-50%, -50%)
+    .section02
+        .wrap
+            position: relative
+            width: 1130px
+            overflow: visible
+            z-index: 2
+            img
+                display: inline-block
+                float: left
+                margin-top: -50px
+            .box
+                display: inline-block
+                float: left
+                width: calc(100% - 262px)
+                padding: 3rem 0 0 3rem
+                h3
+                    font-size: 1.3rem
+                    font-weight: 500
+                    word-break: keep-all
+                p
+                    margin: 1rem 0
+                    font-size: 0.8rem
+                    line-height: 1.45
+                    word-break: break-all
+                    text-align: justify
+                span
+                    a
+                        display: inline-block
+                        min-width: 75px
+                        padding: 0.5rem
+                        font-size: 0.8rem
+                        text-align: center
+                        background-color: #005098
+                        color: #fff
+                        transition: 0.3s
+                    a:hover
+                        background-color: #102046
+    .section03
+        padding: 5rem 0 4rem
+        clear: both
+        .wrap
+            overflow: hidden
+        .box
+            display: flex
+            flex-wrap: wrap
+            margin-bottom: 2.5rem
+            justify-content: space-between
+            overflow: hidden
+            span
+                display: flex
+                flex-direction: column
+                width: calc((100% - 4rem)/3)
+                margin-right: 2rem
+                overflow: hidden
+                a
+                    display: block
+                    position: relative
+                    margin-bottom: 2rem
+                    overflow: hidden
+                    img
+                        width: 100%
+                    img.mo
+                        display: none
+                    .text
+                        position: absolute
+                        left: 0
+                        top: 0
+                        width: 100%
+                        height: 100%
+                        padding: 2.5rem 3rem
+                        background-color: rgba(0,0,0,0.3)
+                        z-index: 2
+                        p
+                            font-size: 0.8rem
+                            color: #ffffff
+                        h4
+                            padding-top: 1rem
+                            font-size: 1.3rem
+                            font-weight: bold
+                            line-height: 1.25
+                            color: #fff
+                            word-break: keep-all
+                        b
+                            display: inline-block
+                            padding-top: 0.25rem
+                            font-size: 1rem
+                            color: #fff
+                a:last-child
+                    margin-bottom: 0
+                a:hover 
+                    background-color: $basic
+                    overflow: hidden
+                    img
+                        transition: all 0.3s linear
+                        transform: scale(1.05)
+                        opacity: 0.4
+            span:last-child
+                margin-right: 0
+        .box:last-child
+            margin-bottom: 0
+        .box02 span:first-child
+            width: 65%
+
+        //swiper
+        .swiper-container
+            .swiper-pagination
+                width: auto
+                height: 12px
+                top: 1rem
+                right: 1rem
+                left: auto
+                overflow: hidden
+                .swiper-pagination-bullet
+                    float: left
+                    width: 12px
+                    height: 12px
+                    margin: 0 4px
+        .swiper-pagination-bullet-active
+            background: #fff
+
+.popup
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0.5)
+    overflow: auto
+    z-index: 998
+    .popup_wrap
+        position: relative
+        display: flex
+        justify-content: center
+        align-items: center
+        max-width: 1000px
+        width: 90%
+        height: 100%
+        min-height: 100%
+        margin: auto
+        padding: 2.5rem 0 5rem
+        .popup_inner
+            display: block
+            position: relative
+            img
+                width: 100%
+        button.popup_close
+            position: absolute
+            top: 3%
+            right: 2%
+            width: 40px
+            height: 40px
+            background-image: url('/common/images/close02.png')
+            background-size: 100%
+            text-indent: -9999px
+            cursor: pointer
+            z-index: 999
+        label.popup_close
+            position: absolute
+            right: 1%
+            bottom: -5%
+            width: 15%
+            height: 4.5%
+            cursor: pointer
+            color: #fff
+            z-index: 999
+            background-image: url(/common/images/check02.jpg)
+            background-repeat: no-repeat
+            background-size: 15%
+            background-position: center right
+            span
+                color: #fff
+        a.quick
+            display: inline-block
+            position: absolute
+            left: 32%
+            bottom: 10%
+            width: 24%
+            height: 9.5%
+.popup.on
+    display: block
+.popup.vol425 .popup_wrap a.quick
+    left: 6.5%
+    bottom: 15.5%
+    width: 25%
+.popup.vol427 .popup_wrap 
+    a.quick
+        left: 6.5%
+        bottom: 15.5%
+        width: 25%
+    button.popup_close
+        background-image: url(/common/images/close.png)
+        background-size: contain
+        width: 38px
+.popup.vol428 .popup_wrap 
+    a.quick
+        left: 6.6%
+        bottom: 15.5%
+        width: 25%
+
+/*Small screen*/
+@media (max-width: 1666px)
+    #main
+        .wrap
+            width: 90%
+        .section03 .box02 span:first-child
+            width: 65%
+        .section03 .box span a
+            margin-bottom: 1rem
+            .text 
+                padding: 1.5rem
+        
+/*Ipad Pro*/
+@media (max-width: 1150px)
+    #main
+        .section01#VideoWrapper
+            height: 0
+            padding-bottom: 84%
+            #iframe_bgVideo
+                position: absolute
+                width: 150% !important
+                height: 150% !important
+            #bgImg > img
+                width: auto
+                height: 100%
+        .section02 .wrap
+            width: 90%
+
+/*Ipad*/
+@media (max-width: 991.98px)
+    #main
+        .section01
+            .text_wrap
+                margin: -100px 0 0
+                width: 70%
+                margin: 0 15%
+                .text
+                    .month
+                        p
+                            min-width: 70px
+                            font-size: 0.8rem
+                        p:last-child
+                            min-width: 150px
+        .section02 .wrap
+            position: relative
+            padding: 4rem 0 0
+            overflow: hidden
+            img
+                margin-top: 0
+            .box
+                padding: 0 0 0 2rem
+        .section03 .box
+            margin-bottom: 1.25rem
+            span 
+                width: calc((100% - 2.5rem)/3)
+                margin-right: 1.25rem
+                a .text h4
+                    padding-top: 0.5rem
+                    font-size: 1rem
+    .popup
+        .popup_wrap
+            max-width: 600px
+            button.popup_close
+                width: 30px
+                height: 30px
+                top: 2%
+                right: 3%
+            label.popup_close
+                display: flex
+                align-items: center
+                width: 40%
+                height: 4%
+                bottom: -4%
+                max-width: 145px
+                min-width: 145px
+                span
+                    font-size: 1rem
+                    max-width: 145px
+                    min-width: 145px
+            a.quick
+                left: 30%
+                bottom: 4.8%
+                width: 40%
+                height: 5.5%
+    .popup.vol425 .popup_wrap a.quick
+        left: 22%
+        bottom: 5.9%
+        width: 55%
+        height: 7%
+    .popup.vol427 .popup_wrap  
+        button.popup_close
+            width: 28px
+            height: 29px
+        a.quick
+            left: 22%
+            top: 44.3%
+            width: 55%
+            height: 7%
+    .popup.vol428 .popup_wrap a.quick
+        width: 50%
+        height: 7.5%
+        left: 24.5%
+        top: 51%
+
+/*Mobile*/
+@media (max-width: 575.98px)
+    #main
+        .section01
+            height: 667px
+            video
+                max-height: 100%
+            .text_wrap
+                margin-top: -50px
+                .month
+                    span
+                        margin: 0 0.2rem
+                    p
+                        min-width: 60px
+                        font-size: 0.75rem
+                    p:last-child
+                        min-width: 135px
+        .section01#VideoWrapper
+            padding-bottom: 140%
+            #iframe_bgVideo
+                width: 250% !important
+                height: 250% !important
+        .section02 .wrap
+            padding: 3rem 0 0
+            img
+                display: block
+                float: none
+                width: 200px
+                margin: 0 auto 2rem
+            .box
+                display: block
+                float: none
+                width: 100%
+                padding: 0
+                h3
+                    font-size: 1.2rem
+                p
+                    font-size: 0.75rem
+                span
+                    top: calc(3rem + 220px)
+                    width: 100%
+                    a
+                        font-size: 0.75rem
+        .section03
+            padding: 3rem 0
+            .box
+                margin-bottom: 2rem
+                span
+                    width: 100%
+                    margin-bottom: 2rem
+                    margin-right: 0
+                    a
+                        margin-bottom: 2rem
+                        img.pc
+                            display: none
+                        img.mo
+                            display: inline-block
+                span:last-child
+                    margin-bottom: 0
+        .section03 .box02 span:first-child
+            width: 100%
+.popup .popup_wrap 
+    label.popup_close
+        width: 20%
+        max-width: 110px
+        min-width: 110px
+        span
+            font-size: 0.8rem
+            min-width: 90px
+            max-width: 90px

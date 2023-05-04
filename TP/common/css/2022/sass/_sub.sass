@@ -1,0 +1,1758 @@
+#sub
+    width: 100%
+    background: #f7f8f8
+    .wrap
+        width: 1440px
+        margin-top: 104px
+        margin-right: auto
+        margin-left: auto
+        padding: 4rem 0 0
+    .top
+        display: flex
+        .left
+            width: 450px
+            padding-right: 2rem
+        .right
+            width: 990px
+        .location
+            display: flex
+            align-items: center
+            img
+                display: inline-block
+            span
+                position: relative
+                padding: 0 1.25rem
+                margin: 0 0.2rem 0 0.5rem
+                font-size: 0.95rem
+                font-weight: 300
+                line-height: 1
+                &::before,
+                &::after
+                    display: inline-block
+                    content: ">"
+                    position: absolute
+                    top: 0
+                    left: 4px
+                    width: 17px
+                    height: 2px
+                &::after
+                    left: auto
+                    right: 0
+            b
+                font-size: 0.95rem
+                line-height: 1
+        .title
+            padding-top: 3rem
+            font-size: 2.35rem
+            letter-spacing: -1.5px
+            word-break: keep-all
+        .subtitle
+            font-size: 0.9rem
+            padding-top: 1rem
+            b
+                font-weight: 500
+                font-size: 0.9rem
+        .by
+            padding-top: 2.5rem
+            font-size: 0.8rem
+            font-weight: 300
+            line-height: 1.45
+            word-break: keep-all
+            b
+                font-weight: 500
+                font-size: 0.8rem
+        .refer
+            display: inline-block
+            padding: 0.35rem 0.5rem 0.45rem
+            margin-top: 1rem
+            font-size: 0.65rem
+            font-weight: 300
+            line-height: 1.25
+            background-color: #df5454
+            color: #fff
+            word-break: keep-all
+        .function
+            margin-top: 2.5rem
+            overflow: hidden
+            > span
+                display: inline-block
+                float: left
+                margin-right: 5px
+            > span:last-child
+                margin: 0
+            button
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 132px
+                height: 44px
+                border: 1px solid #8d8d8d
+                background: #fff
+                cursor: pointer
+                img
+                    display: inline-block
+                    margin-right: 0.25rem
+                span
+                    font-size: 0.95rem
+                    margin-top: -2.5px
+            ul
+                display: none
+                padding: 0.75rem 10px
+                border: 1px solid #bdbdbd
+                border-top: none
+                background-color: #fff
+                z-index: 998
+                li
+                    margin-bottom: 0.5rem
+                    cursor: pointer
+                    a
+                        display: flex
+                        flex-wrap: wrap
+                        align-items: center
+                        span
+                            font-size: 0.75rem
+                            margin-left: 0.25rem
+                li:last-child
+                    margin: 0
+            ul.on
+                display: block
+    .layout
+        display: flex
+        border-top: 1px dotted #c8c8c8
+        .left
+            width: 450px
+        .left.textbox
+            p
+                padding-right: 2rem
+                padding-left: 60px
+                word-break: keep-all
+                text-align: left
+        .right
+            width: 990px
+            padding-top: 3rem
+    .textbox
+        padding-bottom: 3rem
+        img
+            display: block
+            max-width: 100%
+            width: 100%
+        p
+            padding-bottom: 1.5rem
+            font-size: 0.95rem
+            font-weight: 300
+            line-height: 1.45
+            word-break: break-all
+            text-align: justify
+            b
+               font-size: 0.95rem
+               font-weight: 500
+               line-height: 1.45
+            span
+                font-size: 0.95rem
+            *
+                font-size: 0.85rem
+            small
+                font-size: 0.75rem
+        p:last-child
+            padding-bottom: 0
+        h3
+            padding: 59px 2rem 2rem 60px
+            position: relative
+            letter-spacing: -1.5px
+            font-size: 1.8rem
+            line-height: 1.25
+            word-break: keep-all
+            color: #255d9f
+        h3:last-child
+            padding-bottom: 0
+        h3.style01
+            font-size: 1rem
+            line-height: 1.5rem
+            text-decoration: underline
+            font-family: 'Nanum Myeongjo', serif
+            color: #333
+        h4
+            padding-bottom: 3rem
+            font-family: 'Nanum Myeongjo', serif
+            font-size: 1.5rem
+            font-weight: 400
+            line-height: 1.3
+            letter-spacing: -1px
+            word-break: keep-all
+            text-align: center
+            color: #b27662
+        h4:last-child
+            padding-bottom: 0
+        h5
+            padding-bottom: 1rem
+            font-size: 1.15rem
+            line-height: 1.25
+        h6
+            padding-bottom: 0.5rem
+            font-size: 0.9rem
+            font-weight: 500
+            line-height: 1.25
+        small
+            font-style: oblique
+        .img
+            text-align: center
+            span
+                display: inline-block
+                small
+                    display: block
+                    padding: 0.5rem 0 0
+                    font-size: 0.75rem
+                    font-weight: 300
+                    text-align: right
+                    word-break: keep-all
+        .half
+            padding-bottom: 1.5rem
+            display: flex
+            justify-content: space-between
+            align-items: center
+            >span
+                display: inline-block
+                margin-right: 1rem
+                small
+                    display: block
+                    font-size: 0.75rem
+                    font-weight: 300
+            >span:last-child
+                margin-right: 0
+        .half:last-child
+            padding-bottom: 0
+        .video
+            position: relative
+            height: 0
+            padding-bottom: 56.25%
+            margin-bottom: 1.5rem
+            margin-top: 1.5rem
+            overflow: hidden
+            iframe,
+            object,
+            embed
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+        .video:last-child
+            margin-bottom: 0
+        .table
+            margin-bottom: 1.5rem
+            overflow: auto
+            table
+                border-top: 2px solid #d8d8d8
+                border-bottom: 2px solid #d8d8d8
+                width: 100%
+                th,td
+                    padding: 0.5rem 1%
+                    font-size: 0.85rem
+                    font-weight: 300
+                    line-height: 1.65
+                    border-bottom: 1px solid #d8d8d8
+                    border-right: 1px solid #d8d8d8
+                    word-break: break-all
+                    text-align: justify
+                    &:last-child
+                        border-right: none
+                th
+                    border-bottom: 1px solid #d8d8d8
+                    font-weight: bold
+                    text-align: center
+                    word-break: keep-all
+                .bg
+                    font-weight: bold
+                    background-color: #f9f4f8
+                    text-align: center
+                    word-break: keep-all
+                b
+                    font-weight: bold
+            .center
+                td
+                    text-align: center
+                    word-break: keep-all
+        .table:last-child
+            margin-bottom: 0
+        .title02
+            font-size: 1.4rem
+        .circle
+            display: inline-block
+            width: 50px
+            height: 50px
+            font-weight: 500
+            line-height: 47px
+            border-radius: 100%
+            background-color: #255d9f
+            color: #fff
+            text-align: center
+        .tag
+            display: inline-block
+            padding: 0.35rem 1rem
+            margin-bottom: 1rem
+            font-weight: 500
+            border-radius: 0.75rem
+            background-color: #255d9f
+            color: #fff
+        .tag:last-child
+            margin-bottom: 0
+        .tag02
+            display: inline-block
+            padding: 0.25rem 0.75rem 0.35rem
+            margin-bottom: 0.25rem
+            font-size: 0.8rem
+            font-weight: 400
+            border-radius: 0.8rem
+            background-color: #255d9f
+            color: #fff
+        .tag03
+            display: inline-block
+            padding: 0.5rem 1rem
+            margin-bottom: 0.5rem
+            font-size: 0.9rem
+            font-weight: 500
+            line-height: 1.3rem
+            border-radius: 0.8rem
+            background-color: #f7b531
+            color: #fff
+        .tag04
+            display: inline-block
+            padding: 0.5rem 1rem
+            margin-bottom: 0.5rem
+            font-size: 0.9rem
+            font-weight: 300
+            line-height: 1.3rem
+            border-radius: 0.8rem
+            background-color: #f27b89
+            color: #fff
+        .dot
+            display: inline-block
+            width: 10px
+            height: 10px
+            border-radius: 100%
+            margin-right: 5px
+            background-color: red
+            
+    //공통 style
+    .pc
+        display: block !important
+    .mo
+        display: none !important
+        
+    .box01
+        position: relative
+        width: 85%
+        padding: 2.5rem 2.5rem 2.5rem calc(123.5px + 1.5rem)
+        margin-bottom: 1.5rem
+        margin-left: 15%
+        border: 1px solid #959595
+        background-color: #f7f8f8
+        img
+            display: inline-block
+            position: absolute
+            left: 0
+            top: 50%
+            width: auto
+            transform: translate(-50%, -50%)
+        h4
+            padding-bottom: 1.25rem !important
+            font-family: 'Noto Sans KR', sans-serif
+            font-size: 1.5rem
+            font-weight: 300
+            line-height: 1.25
+            word-break: keep-all
+            text-align: left
+            color: #333
+            b
+                font-size: 1.5rem
+                font-weight: bold
+        p
+            padding-bottom: 1rem
+            font-size: 0.95rem
+            font-weight: 300
+            line-height: 1.45
+            word-break: break-all
+            text-align: justify
+            b
+                font-size: 0.95rem
+        p:last-child
+            padding-bottom: 0
+        ul
+            display: inline-block
+            padding: 0.25rem 0.5rem 0.35rem
+            border: 1px solid #959595
+            background-color: #5787bf
+            li
+                display: inline-block
+                font-size: 0.85rem
+                color: #fff
+                padding: 0 0.5rem
+                border-right: 1px solid #fff
+            li:last-child
+                border: none
+    .box01:last-child
+        margin-bottom: 1.5rem
+    .box02
+        background: #f2f4ff
+        padding: 1rem
+    .box03
+        width: 100%
+        padding: 1.5rem
+        margin-bottom: 1.5rem
+        h4
+            padding-bottom: 1.25rem !important
+            font-family: 'Noto Sans KR', sans-serif
+            font-size: 1.5rem
+            font-weight: 300
+            line-height: 1.25
+            word-break: keep-all
+            text-align: left
+            color: #333
+            b
+                font-size: 1.5rem
+                font-weight: bold
+        p
+            padding-bottom: 1rem
+            font-size: 0.95rem
+            font-weight: 300
+            line-height: 1.45
+            word-break: break-all
+            text-align: justify
+            b
+                font-size: 0.95rem
+        p:last-child
+            padding-bottom: 0
+    .box04
+        position: relative
+        width: 100%
+        padding: 1rem 2.5rem
+        margin-bottom: 3rem
+        border-radius: 20px
+        background-color: #674b33
+        img
+            display: inline-block
+            position: absolute
+            left: 0
+            top: 50%
+            left: 25%
+            width: auto
+            transform: translate(-50%, -50%)
+        h4
+            padding-bottom: 1.25rem !important
+            font-family: 'Noto Sans KR', sans-serif
+            font-size: 1.5rem
+            font-weight: 300
+            line-height: 1.25
+            word-break: keep-all
+            text-align: left
+            color: #333
+            b
+                font-size: 1.5rem
+                font-weight: bold
+        p
+            padding-left: 43%
+            padding-bottom: 1rem
+            font-size: 1rem
+            font-weight: 400
+            line-height: 1.45
+            word-break: break-all
+            text-align: justify
+            >span
+                display: block
+                margin-bottom: 0.5rem
+                color: #fff
+            b
+                font-size: 1rem
+    .underline
+        text-decoration: underline
+    .highlight
+        background: linear-gradient(to top, #fffea6 50%, transparent 50%)
+        color: red
+    .line
+        border-right: 1px solid #d8d8d8
+        padding-right: 1rem
+    .flex
+        display: flex
+        > span
+            margin-right: 1rem
+        > span:last-child
+            margin-right: 0
+    .flex02
+        display: flex
+        padding: 0 !important
+        margin: 0 0 0.5rem 0 !important
+        .enter
+            margin-left: 7px
+
+    .half.flex_center
+        justify-content: center
+    .flex_center
+        justify-content: center
+    .half.flex_start
+        justify-content: start
+    .flex_start
+        justify-content: start
+    .half.align_start
+        align-items: flex-start
+    .align_start
+        align-items: flex-start
+    .half.align_end
+        align-items: flex-end
+    .align_end
+        align-items: flex-end
+    .align_center
+        align-items: center
+    .clear
+        &::after
+            content: ''
+            display: block
+            clear: both
+    //체크리스트
+    .checkbox
+        margin: 1rem 0 0
+        overflow: hidden
+        input[type="checkbox"] + label
+            display: inline-block
+            float: left
+            font-size: 0.9rem
+            line-height: 1
+            cursor: pointer
+        input[type="checkbox"] + label::before
+            display: inline-block
+            content: ""
+            float: left
+            width: 1rem
+            height: 1rem
+            margin-right: 0.5rem
+            border: 1px solid #959595
+            cursor: pointer
+        input[type="checkbox"]:checked + label::before
+            background-image: url('/common/images/check02.jpg')
+            background-size: 100%
+    .border
+        padding: 1.5rem
+        margin-bottom: 1.5rem
+        border: 1px solid #d8d8d8
+    .border:last-child
+        padding: 1.5rem
+        margin-bottom: 0
+
+    .arrow
+        width: 100%
+        background-color: #fff
+        >span
+            display: block
+            height: 26px
+            overflow: hidden
+            &::after
+                display: inline-block
+                float: left
+                content: ""
+                width: 50%
+                height: 100%
+                border-radius: 0 0 36px 0
+                background-color: #f7f8f8
+            &::before
+                display: inline-block
+                float: right
+                content: ""
+                width: 50%
+                height: 100%
+                border-radius: 0 0 0 36px
+                background-color: #f7f8f8
+
+    
+    //audio
+    .audioplayer
+        height: 70px
+        padding: 0.75rem
+        margin: 0.25rem 0
+        justify-content: start
+
+    //참여 배너
+    .banner
+        position: relative
+        width: 100%
+        margin-top: 2rem
+        margin-bottom: 0.75rem
+        cursor: pointer
+        .textbox
+            display: inline-block
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+            padding: 0 0 0 2.5rem
+            h5
+                font-size: 1.8rem
+                text-align: left
+                color: #fff
+            p
+                color: #fff
+    //참여 모달창
+    .modal
+        display: none
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba(0,0,0,0.7)
+        z-index: 998
+        overflow-y: scroll
+        .modal_wrap
+            position: relative
+            top: 0
+            left: 0
+            width: 760px
+            padding: 1.5rem
+            margin: 2rem auto 2rem
+            background: #fff
+            z-index: 999
+            >h3
+                font-size: 1.5rem
+                text-align: center
+                margin-bottom: 1rem
+            >p
+                margin-bottom: 1.5rem
+                font-size: 0.9rem
+                font-weight: 500
+                text-align: center
+                color: #2b3d98
+            form
+                height: 100%
+                background: #fff
+                z-index: 5
+                >span
+                    display: flex
+                    justify-content: start
+                    align-items: center
+                    padding: 0 0.5rem
+                    label
+                        display: inline-block
+                        min-width: 130px
+                        padding-right: 0.5rem
+                        margin-bottom: 0.5rem
+                        font-size: 0.9rem
+                        font-weight: 500
+                    input[type="text"]
+                        display: inline-block
+                        width: 100%
+                        padding: 0.4rem 1rem
+                        margin-bottom: 0.5rem
+                        font-size: 0.85rem
+                        border: 1px solid #959595
+                    .button02
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        width: 196px
+                        height: 40px
+                        margin: 0 0 0.5rem 1rem
+                        border-radius: 10px
+                        font-size: 0.9rem
+                        font-weight: 400
+                        text-align: center
+                        background: #434343
+                        color: #fff
+                        cursor: pointer
+                    input[type="file"]
+                        position: absolute
+                        width: 1px
+                        height: 1px
+                        padding: 0
+                        margin: -1px
+                        overflow: hidden
+                        clip: rect(0,0,0,0)
+                        border: 0
+                >span
+                    width: 100%
+                .box02
+                    padding: 1rem
+                    margin-top: 1.5rem
+                    background: #f2f4ff
+                    h3
+                        font-size: 1rem
+                        margin-bottom: 0.75rem
+                    p
+                        font-size: 0.8rem
+                        line-height: 22px
+                .checkbox
+                    margin-top: 0.5rem
+                    input[type="checkbox"] + label::before
+                        width: 15px
+                        height: 15px
+                    label
+                        font-size: 0.8rem
+                        font-weight: 500
+                >button.send
+                    display: block
+                    width: 220px
+                    padding: 0.75rem 0
+                    margin: 1.5rem auto 0
+                    font-size: 1.1rem
+                    font-weight: 500
+                    line-height: 30px
+                    background-color: #2b3d98
+                    color: #fff
+                    cursor: pointer
+                >button.close
+                    position: absolute
+                    top: 0
+                    right: -50px
+                    width: 40px
+                    height: 40px
+                    background-image: url('/common/images/close02.png')
+                    background-size: 100%
+                    text-indent: -9999px
+                    cursor: pointer
+                textarea
+                    display: inline-block
+                    width: 100%
+                    padding: 0.4rem 1rem
+                    margin-bottom: 0.5rem
+                    font-size: 0.85rem
+                    border: 1px solid #959595
+    //건강전도사 모달창
+    .modal.modal01,.modal.modal02,.modal.modal03
+        .modal_wrap
+            top: 50%
+            transform: translateY(-50%)
+            margin: 0 auto
+//건강전도사 체크박스
+#sub.check .checkbox input[type="checkbox"] + label
+    margin-bottom: 0.5rem
+    padding-bottom: 0.5rem
+    border-bottom: 1px solid #df8b82
+    width: 100%
+    color: #df8b82
+    line-height: 1.2rem
+#sub.check .checkbox input[type="checkbox"] + label::before 
+    float: right
+    margin: 0 0 0 1rem
+    border-color: #df8b82
+#sub.check .checkbox input[type="checkbox"]:checked + label::before 
+    background-image: url("/common/images/check02.jpg")
+    background-size: 100%
+//호별 컬러
+#sub.check .checkbox.vol248 input[type="checkbox"] + label
+    color: #93bde5
+    border-color: #93bde5
+    &::before 
+        border-color: #93bde5
+#sub.check .checkbox.vol429 input[type="checkbox"] + label
+    color: #6f94cc
+    border-color: #6f94cc
+    &::before 
+        border-color: #6f94cc
+#sub.check .checkbox.vol430 input[type="checkbox"] + label
+    color: #6c75b7
+    border-color: #dae249
+    &::before 
+        border-color: #dae249
+
+#sub.check .modal_wrap button.close 
+    position: absolute
+    top: -50px
+    right: 0
+    width: 40px
+    height: 40px
+    background-image: url(/common/images/close02.png)
+    background-size: 100%
+    text-indent: -9999px
+    cursor: pointer
+            
+
+.pagenation
+    display: flex
+    justify-content: center
+    width: 1440px
+    padding: 2rem 0 4rem
+    margin: 0 auto
+    a
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 200px
+        padding: 0.5rem 0
+        border: 1px solid #c4c4c4
+        background: #fff
+        img
+            display: inline-block
+        span
+            font-size: 0.95rem
+    .prev
+        margin-right: 0.5rem
+        img
+            margin-right: 0.5rem
+    .next
+        img
+            margin-left: 0.5rem
+//사학백일장 배경
+#sub.tp
+    background-image: url('/common/images/tp_bg02.jpg')
+//depth 1개만 있는 페이지
+#sub.depth1
+    .top
+        border: none
+        .location 
+            span
+                font-weight: 500
+            span::after
+                display: none
+//구독
+#sub.subscribe
+    .whitebox
+        width: 100%
+        padding: 2.5rem 3.25rem 3rem
+        margin-bottom: 4rem 
+        text-align: center
+        background: #fff
+        .textbox
+            padding-bottom: 2.5rem
+            p
+                font-size: 0.9rem
+                font-weight: 400
+            span.red
+                color: #cf1603
+        input[type="radio"] + label
+            display: inline-block
+            width: 220px
+            padding: 0.75rem 0
+            font-size: 1.1rem
+            text-align: center
+            background-color: #909090
+            color: #fff
+            cursor: pointer
+        input[type="radio"]:checked + label
+            background-color: #2b3d98
+        .con
+            display: none
+            margin-top: 2.5rem
+            text-align: left
+            .namebox
+                >span
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    width: 85%
+                    margin: 0 auto 1rem
+                    label
+                        width: 12%
+                        min-width: 90px
+                        padding-right: 0.5rem
+                        font-size: 0.9rem
+                    input[type="text"]
+                        display: block
+                        width: 100%
+                        height: 40px
+                        padding: 0.5rem 1rem
+                        font-size: 1rem
+                        border: 1px solid #959595
+                >div:first-child
+                    margin-bottom: 1rem
+            .textbox
+                margin-top: 2.5rem
+                padding: 2rem 3rem
+                background: #f2f4ff
+                p
+                    font-size: 0.9rem
+                    line-height: 1.5rem
+            button
+                display: block
+                width: 220px
+                padding: 1rem 
+                margin: 2.75rem auto 0
+                font-size: 1.1rem
+                background-color: #2b3d98
+                color: #fff
+                cursor: pointer
+        #radio01:checked ~ .apply
+            display: block
+        #radio02:checked ~ .cancle
+            display: block
+//과월호
+#sub.back
+    .whitebox
+        width: 100%
+        padding: 3.5rem 3.75rem 0.5rem
+        margin-bottom: 4rem 
+        background: #fff
+        .back
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: flex-start
+            width: 100%
+            margin: 0 auto
+            li
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                width: calc((100% - 4.2rem)/3)
+                height: 100%
+                margin-bottom: 3rem
+                margin-right: 2rem
+                img
+                    display: block
+                    width: 100%
+                    flex-shrink: 0
+                h5
+                    font-size: 0.9rem
+                    text-align: center
+                    margin: 0.65rem 0
+                .view
+                    display: inline-block
+                    width: 160px
+                    margin: 0 auto
+                    padding: 0.75rem 0
+                    font-size: 0.8rem
+                    font-weight: 300
+                    text-align: center
+                    color: #fff
+                    background: #2b3d98
+            li:nth-child(3n+0)
+                margin-right: 0
+//독자의견,공단바라기
+#sub.opinion
+    .opinion
+        position: relative
+        img
+            width: 100%
+        >button
+            position: absolute
+            display: block
+            left: 50%
+            bottom: 38%
+            transform: translateX(-50%)
+            width: 260px
+            padding: 1.25rem 
+            margin: 2.75rem auto 0
+            font-size: 1.3rem
+            background-color: #dc202e
+            color: #fff
+            cursor: pointer
+        .form
+            display: none
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            padding: 3.5rem 3rem
+            background: rgba(0,0,0,0.7)
+            background-image: url('/common/images/opinion_bg.png')
+            overflow-y: scroll
+            form
+                position: relative
+                padding: 2.5rem 2.25rem 1.85rem
+                background: #fff
+                h3
+                    margin-bottom: 0.5rem
+                    font-size: 1.1rem
+                textarea
+                    width: 100%
+                    height: 150px
+                    padding: 0.5rem 1rem
+                    margin-bottom: 1.5rem
+                    border: 1px solid #959595
+                    font-size: 0.9rem
+                >span
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    margin-bottom: 0.5rem
+                    label
+                        width: 12%
+                        min-width: 130px
+                        padding-right: 0.5rem
+                        font-size: 0.9rem
+                        font-weight: 500
+                    input[type="text"]
+                        display: block
+                        width: 100%
+                        padding: 0.4rem 1rem
+                        font-size: 0.85rem
+                        border: 1px solid #959595
+                .box02
+                    margin-top: 2rem
+                    p
+                        font-size: 0.75rem
+                        line-height: 22px
+                .checkbox
+                    margin-top: 0.5rem
+                    input[type="checkbox"] + label::before
+                        width: 15px
+                        height: 15px
+                    label
+                        font-size: 0.8rem
+                        font-weight: 500
+                button
+                    display: block
+                    width: 220px
+                    padding: 1rem 0
+                    margin: 1.5rem auto 0
+                    font-size: 1.1rem
+                    font-weight: 500
+                    line-height: 30px
+                    background-color: #dc202e
+                    color: #fff
+                    cursor: pointer
+            .close
+                display: block
+                position: absolute
+                left: 50%
+                bottom: -60px
+                transform: translateX(-50%)
+                width: 30px
+                height: 30px
+                margin: 0 auto
+                background-color: transparent
+                background-image: url('/common/images/close02.png')
+                background-repeat: no-repeat
+                text-indent: -9999px
+                cursor: pointer
+        .message
+            display: none
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+            background: rgba(0,0,0,0.7)
+            transition: 2s
+            .heart
+                position: relative
+                display: inline-block
+                left: 50%
+                top: 50%
+                width: 35%
+                height: 30%
+                transform: translate(-50%,-50%)
+                transform-origin: bottom
+                transition: 1s
+                opacity: 1
+                img
+                    position: absolute
+                    top: 0
+                    left: 0
+                    z-index: -1
+                .text
+                    position: relative
+                    display: inline-block
+                    width: 100%
+                    padding: 3rem 0
+                    font-family: 'Cafe24Shiningstar'
+                    text-align: center
+                    font-size: 2.4vw
+                    color: #fff
+                    span
+                        color: #fff999
+            .heart.on
+                animation: bounce 2s ease-in-out
+        .message.on
+            background: rgba(0,0,0,0)
+            .heart.on
+                top: 40%
+                width: 8%
+                height: 8%
+                .text
+                    display: none
+            .heart.on.drop
+                animation: drop 1s cubic-bezier(0.52, 0.21, 1, 1)
+                animation-fill-mode: forwards
+
+//자동입력방지
+.secure
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    margin: 2rem 0 1rem
+    >p
+        margin-right: 1rem
+        margin-bottom: 0.25rem
+        font-size: 0.9rem
+    .apply_secure
+        display: flex
+        flex-wrap: wrap
+        > span
+            display: inline-block
+            width: 158.5px
+            height: 55px
+            padding: calc((55px - 35px)/2)
+            border: 1px solid #c9c9c9
+            background-color: #fff
+            > img
+                display: block
+                max-width: 100%
+                margin: 0 auto
+        > .change
+            display: block
+            width: 55px !important
+            height: 55px !important
+            margin: 0 !important
+            padding: 0 !important
+            text-align: center
+            cursor: pointer
+            background-color: transparent !important
+        > input
+            display: inline-block
+            width: 158.5px
+            height: 55px
+            padding: 0.5rem
+            font-size: 0.9rem
+            border: 1px solid #c9c9c9
+            background-color: #fff
+
+/*Small PC*/
+@media (max-width: 1666px)
+    #sub
+        .wrap
+            width: 90%
+            margin: 104px auto 0
+        .top,
+        .layout
+            .right
+                width: 65% 
+        .banner
+            .textbox
+                h5
+                    font-size: 2.2vw
+                p
+                    font-size: 1.2vw
+        .box01
+            width: 100%
+            padding: 1.5rem
+            margin-left: 0
+            div
+                display: flex
+                align-items: center
+                padding-bottom: 1rem
+            img
+                display: inline-block
+                position: static
+                left: auto
+                top: auto
+                max-width: 35%
+                margin-right: 1.5rem
+                transform: none
+            h4
+                display: inline-block
+                padding-bottom: 0
+            ul
+                padding: 0.25rem 1rem 0.35rem
+                li
+                    display: inline-block
+                    padding: 0
+                    line-height: 1.45
+                    border: none  
+        .box03
+            div
+                display: flex
+                align-items: center
+                padding-bottom: 1rem
+            h4
+                display: inline-block
+                padding-bottom: 0
+            ul
+                padding: 0.25rem 1rem 0.35rem
+                li
+                    display: inline-block
+                    padding: 0
+                    line-height: 1.45
+                    border: none     
+    .pagenation
+        width: 85%
+
+/*Small PC 2*/
+@media (max-width: 1400px)
+    #sub
+        .box04
+            width: 100%
+            padding: 1.5rem
+            margin-left: 0
+            div
+                display: flex
+                justify-content: center
+                align-items: center
+                padding-bottom: 1rem
+            img
+                display: inline-block
+                position: static
+                left: auto
+                top: auto
+                max-width: 35%
+                margin-right: 0
+                transform: none
+            h4
+                display: inline-block
+                padding-bottom: 0
+            p
+                text-align: center
+                padding: 0
+        .banner
+            .textbox
+                padding: 0 2rem
+                h5
+                    padding-bottom: 0.5rem
+    #sub.subscribe
+        .whitebox
+            padding: 2.5rem 2.5rem 3rem
+            input[type="radio"] + label
+                width: 200px
+    #sub.back
+        .whitebox
+            padding: 2rem 2rem 0.5rem
+            margin-bottom: 3rem 
+            .back
+                li
+                    margin-bottom: 2.5rem
+                    h5
+                        font-size: 0.8rem
+                    .view
+                        display: inline-block
+                        width: 100%
+                        padding: 0.75rem 0
+    #sub.opinion
+        .opinion 
+            .form
+                padding: 1.5vw 1.5rem 3.5rem
+            .message .heart .text
+                padding: 1.5rem 0
+            
+
+/*Ipad Pro*/
+@media (max-width: 1024px)
+    #sub .wrap
+        margin: 86px auto 0
+    #sub
+        .top
+            flex-direction: column
+            .left
+                width: 100%
+                padding: 0 0 2.5rem
+                text-align: center
+            .right
+                width: 100%
+            .location
+                display: inline-block
+                padding-bottom: 1rem
+                border-bottom: 1px solid #333333
+                img
+                    padding-bottom: 0.5rem
+                span
+                    margin: 0
+                    &::before,
+                    &::after
+                        top: 3px
+            .title
+                max-width: 85% !important
+                margin: 0 auto
+            .subtitle
+                max-width: 90% !important
+                margin: 0 auto
+            .function
+                > span
+                    display: block
+                    float: none
+                    width: 132px
+                    margin: 0 auto
+                .print
+                    display: none
+        .layout
+            flex-direction: column
+            padding-top: 3rem
+            .left
+                width: 100%
+                padding-bottom: 2.5rem
+            .left.textbox p
+                padding-right: 0 !important
+                padding-left: 0
+                word-break: break-all
+                text-align: justify
+            .right
+                width: 100%
+                padding-top: 0
+        .textbox
+            padding-bottom: 4rem
+            img
+                width: 100%
+            // .img span
+            //     display: block
+            h3
+                padding-top: 0
+                padding-right: 0
+                padding-left: 0
+                text-align: center
+                &::before
+                    display: none
+            h4
+                font-size: 1.3rem
+            .half
+                flex-direction: column
+                > span
+                    display: block
+                    width: 100%
+                    max-width: none !important
+                    margin-right: 0 !important
+                    margin-left: 0 !important
+                    margin-bottom: 1.5rem
+                    small
+                        padding-top: 0.5rem
+                        text-align: right
+                > span:last-child
+                    margin-bottom: 0
+                >.half_mo_span
+                    margin-bottom: 1rem
+            .circle
+                display: block
+                margin-bottom: 0.5rem
+        //vol430 추가
+        .textbox.vol430
+            .half > span
+                margin-bottom: 0.5rem
+            p
+                padding-top: 0 !important
+        .box03 h4
+            width: 100%
+            text-align: center
+        .banner
+            .textbox
+                padding: 2rem 2rem
+                h5
+                    font-size: 3.5vw
+                    padding-bottom: 0.5rem
+                p
+                    font-size: 2vw
+    #sub.opinion .opinion .message .heart .text
+        padding: 2rem 0
+        font-size: 4vw
+/*Ipad*/
+@media (max-width: 991.98px)
+    #sub.depth1 .top .location span
+        padding-right: 0
+    #sub
+        .modal
+            .modal_wrap
+                width: 85%
+                >h3
+                    font-size: 1.2rem
+                    text-align: center
+                    margin-bottom: 0.5rem
+                >p
+                    margin-bottom: 1rem
+                    font-size: 0.8rem
+                form
+                    >span
+                        label
+                            min-width: 90px
+                            font-size: 0.8rem
+                        input[type="text"]
+                            font-size: 0.8rem
+                        .button02
+                            margin: 0 0 0.5rem 0.5rem
+                            font-size: 0.8rem
+                        >span
+                            width: 100%
+                    .box02
+                        margin-top: 1rem
+                        h3
+                            font-size: 1rem
+                            margin-bottom: 0.5rem
+                        p
+                            font-size: 0.75rem
+                    .checkbox
+                        margin-top: 0.5rem
+                        input[type="checkbox"] + label::before
+                            width: 15px
+                            height: 15px
+                        label
+                            font-size: 0.8rem
+                            font-weight: 500
+                    >button.send
+                        margin: 1rem auto 0
+    
+/*Mobile*/
+@media (max-width: 575.98px)
+    .pagenation
+        width: 100%
+        padding: 1.5rem 10% 3rem
+        a
+            width: calc((100% - 0.5rem)/2)
+            span
+                font-size: 0.8rem
+            img
+                width: 25px
+    #sub .wrap
+        margin-top: 0
+        padding-top: 0
+    #sub
+        margin-top: 81px
+        padding: 2rem 0 0
+        .top
+            .location
+                display: inline-block
+                padding-bottom: 0.5rem
+                img
+                    padding-bottom: 0.25rem
+                span
+                    display: inline-block
+                    font-size: 0.65rem
+                    &::before,
+                    &::after
+                        top: 0
+                b
+                    display: inline-block
+                    font-size: 0.65rem
+            .title
+                padding-top: 1.5rem
+                font-size: 1.35rem
+            .by
+                padding-top: 1.5rem
+                font-size: 0.65rem
+            .link
+                width: 110px
+                height: 40px
+                margin-top: 1.5rem
+                span
+                    font-size: 0.75rem
+            .function
+                button
+                    width: 134px
+                    height: 40px
+                    margin: 0 auto
+                    span
+                        font-size: 0.75rem
+                >span
+                    width: 134px
+                ul
+                    width: 134px
+        .layout
+            padding-top: 2rem
+            .left
+                padding-bottom: 1.5rem
+        .textbox
+            padding-bottom: 2.5rem
+            p
+                font-size: 0.85rem
+                b
+                    font-size: 0.85rem
+                span
+                    font-size: 0.85rem
+            h3
+                width: 95%
+                margin: 0 auto
+                font-size: 1.1rem
+                font-weight: 500
+                line-height: 1.25
+            h4
+                font-size: 1.1rem
+                padding-bottom: 2rem
+            h4.small
+                font-size: 1rem
+            h5
+                font-size: 0.95rem
+
+            .title02
+                font-size: 1.1rem
+            .circle
+                width: 40px
+                height: 40px
+                line-height: 37px
+                font-size: 1rem
+            .tag
+                margin-bottom: 0.5rem
+            .tag04
+                width: 100%
+            .swiper
+                position: relative
+                .swiper-container
+                    max-width: 100%
+                    margin: 0
+                .swiper-prev,
+                .swiper-next
+                    position: absolute
+                    left: 0
+                    top: 50%
+                    width: 30px
+                    height: 29px
+                    transform: translate(-50%, -50%)
+                    z-index: 2
+                    > span
+                        display: none
+                .swiper-next
+                    left: auto
+                    right: 0
+                    transform: translate(50%, -50%)
+                .swiper-pagination
+                    font-size: 0.65rem
+                    > span
+                        font-size: 0.65rem
+        //vol430 추가
+        .textbox.vol430 .small
+            font-size: 0.75rem !important
+        .banner
+            margin-top: 1.5rem
+            .textbox
+                padding: 1.1rem
+                h5
+                    word-break: keep-all
+                    font-size: 1rem
+                    padding-bottom: 0.25rem
+                p
+                    font-size: 0.65rem
+        .pc
+            display: none !important
+        .mo
+            display: block !important
+        .box01
+            margin-bottom: 1rem
+            padding: 1.5rem 1rem
+            div
+                flex-direction: column
+                align-items: center
+                img
+                    max-width: 135px
+                    margin: 0 0 1rem
+                h4
+                    font-size: 1.25rem
+                    text-align: center
+                    b
+                        font-size: 1.25rem
+            ul
+                display: inline-block
+                padding: 0.25rem 0.5rem 0.35rem
+        .box03
+            padding: 1.5rem 1rem
+            div
+                flex-direction: column
+                align-items: center
+                img
+                    max-width: 135px
+                    margin: 0 0 1rem
+                h4
+                    font-size: 1.25rem
+                    text-align: center
+                    b
+                        font-size: 1.25rem
+            ul
+                display: inline-block
+                padding: 0.25rem 0.5rem 0.35rem
+        .box04
+            img
+                max-width: 100%
+        .line
+            border: none
+        .flex
+            display: flex
+            flex-direction: column
+            span
+                margin-right: 0.5rem
+        .border
+            padding: 1rem
+        .border:last-child
+            padding: 1rem
+
+        //audio
+        .audioplayer
+            height: 70px
+            padding: 0 0.5rem
+            justify-content: start
+            .audioplayer-time-current
+                margin-left: 0.25rem
+            .audioplayer-time-duration
+                margin-right: 0.25rem
+            .audioplayer-bar
+                margin: 0 0.25rem
+
+        .modal
+            overflow-y: scroll
+            .modal_wrap
+                top: 0
+                margin-top: 1rem
+                margin-bottom: 1rem
+                padding: 0.75rem
+                min-width: 90%
+                >h3
+                    font-size: 1rem
+                    margin-bottom: 0.25rem
+                    margin-top: 2rem
+                >p
+                    margin-bottom: 0.5rem
+                    font-size: 0.75rem
+                form
+                    >span
+                        label
+                            min-width: 80px
+                            font-size: 0.75rem
+                            margin-bottom: 0.25rem
+                        input[type="text"]
+                            padding: 0.4rem 0.5rem
+                            margin-bottom: 0.25rem
+                            font-size: 0.75rem
+                        .button02
+                            width: 100%
+                            padding-right: 0
+                            margin: 0 0 0.25rem 0
+                            font-size: 0.75rem
+                        .file
+                            margin: 0
+                    >span
+                        display: block
+                    .box02
+                        margin-top: 0.75rem
+                        h3
+                            font-size: 1rem
+                            margin-bottom: 0.5rem
+                        p
+                            font-size: 0.75rem
+                    .checkbox
+                        margin-top: 0.5rem
+                        input[type="checkbox"] + label::before
+                            width: 15px
+                            height: 15px
+                        label
+                            font-size: 0.8rem
+                            font-weight: 500
+                    >button.send
+                        width: 180px
+                        font-size: 0.9rem
+                        padding: 0.5rem
+                        margin: 1rem auto 0
+                    >button.close
+                        top: 10px
+                        right: 10px
+                        width: 24px
+                        height: 24px
+                        background-image: url('/common/images/close.png')
+        .modal.modal01,.modal.modal02,.modal.modal03
+            .modal_wrap
+                top: 50%
+                transform: translateY(-50%)
+                margin: 0 auto                    
+    #sub.subscribe
+        .whitebox
+            width: 100%
+            padding: 1.5rem 1rem 2rem
+            margin-bottom: 2rem 
+            .textbox
+                padding-bottom: 1.5rem
+                p
+                    font-size: 0.8rem
+                span.red
+                    font-size: 0.75rem
+            input[type="radio"] + label
+                width: 45%
+                padding: 0.75rem 0
+                font-size: 0.9rem
+            .con
+                .namebox
+                    >span
+                        width: 100%
+                        margin: 0 auto 0.5rem
+                        label
+                            min-width: 60px
+                            padding-right: 0
+                            font-size: 0.8rem
+                        input[type="text"]
+                            font-size: 0.8rem
+                    >div:first-child
+                        margin-bottom: 1rem
+                .textbox
+                    margin-top: 2.5rem
+                    padding: 1rem 1.5rem
+                    p
+                        font-size: 0.8rem
+                        line-height: 1.2rem
+                    b
+                        font-size: 0.8rem
+                button
+                    width: 180px
+                    padding: 0.75rem  
+                    margin: 2rem auto 0
+                    font-size: 1rem
+    #sub.back
+        .whitebox
+            padding: 2rem 2rem 0.5rem
+            margin-bottom: 3rem 
+            .back
+                li
+                    width: 100%
+                    margin-bottom: 2.5rem
+                    margin-right: 0
+                    h5
+                        font-size: 0.8rem
+                    .view
+                        display: inline-block
+                        width: 100%
+                        padding: 0.75rem 0
+    #sub.opinion
+        .opinion
+            >button
+                width: 170px
+                padding: 0.75rem
+                font-size: 1rem
+            .form
+                padding: 1rem 1rem 3.5rem
+                form
+                    padding: 1rem
+                    h3
+                        font-size: 1rem
+                    textarea
+                        height: 100px
+                        padding: 0.5rem
+                        margin-bottom: 1rem
+                        font-size: 0.75rem
+                    >span
+                        flex-direction: column
+                        label
+                            width: 100%
+                            margin-bottom: 0.5rem
+                            font-size: 0.8rem
+                        input[type="text"]
+                            width: 100%
+                            padding: 0.5rem
+                            font-size: 0.75rem
+                    .box02
+                        margin-top: 1.5rem
+                    button
+                        width: 150px
+                        padding: 0.5rem 0
+                        margin: 1rem auto 0
+                        font-size: 0.9rem
+                    .close
+                        bottom: -45px
+            .message .heart
+                width: 50%
+                .text
+                    padding: 1.2rem 0
+                    font-size: 6vw
+                    
+    #sub .checkbox
+        input[type="checkbox"] + label
+            font-size: 0.8rem
+        input[type="checkbox"] + label::before
+            width: 15px
+            height: 15px
+    #sub        
+        .secure
+            .apply_secure
+                width: 100%
+                align-items: center
+                flex-wrap: nowrap
+                > span
+                    width: 120px
+                    height: 45px
+                    padding: calc((45px - 30.58px)/2)
+                > button
+                    width: 35px
+                    height: 40px
+                > input
+                    width: calc(100% - (120px + 40px))
+                    height: 45px
+                    font-size: 0.8rem
+    
+/*Mobile*/
+@media (max-width: 320px)
+    #sub
