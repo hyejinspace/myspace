@@ -1,0 +1,890 @@
+.sub
+    padding-top: 110px
+    .visual
+        width: 100%
+        height: 200px
+        display: flex
+        justify-content: center
+        align-items: center
+        span
+            display: inline-block
+            color: #fff
+            font-size: 17px
+            font-family: "NanumSquareNeo eHv"
+            sup
+                font-size: 100%
+                coloR: #fff
+    .contents-top
+        display: flex
+        // flex-wrap: wrap
+        justify-content: space-between
+        width: 90%
+        max-width: 1200px
+        margin: 0 auto 90px
+        .left
+            width: calc(65% - 30px)
+            padding: 60px 0 0
+            margin-right: 60px
+            .top
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                padding-bottom: 40px
+                span
+                    display: inline-block
+                    font-size: 17px
+                    font-family: "NanumSquareNeo dEb"
+                    color: #a9a9a9
+                    margin-right: 10px
+                .function
+                    display: flex
+                    flex-wrap: wrap
+                    align-items: center
+                    padding: 5px 15px
+                    border: 1px solid #a9a9a9
+                    border-radius: 50px
+                    button
+                        display: inline-block
+                        position: relative
+                        font-size: 13px
+                        color: #a9a9a9
+                        font-family: "NanumSquareNeo dEb"
+                        cursor: pointer
+                        margin-right: 15px
+                        &:last-child
+                            margin-right: 0
+                        &:first-child::before
+                            content: '·'
+                            display: block
+                            position: absolute
+                            right: -7px
+                            top: 50%
+                            width: 2px
+                            height: 100%
+                            transform: translateY(-50%)
+                            color: #a9a9a9
+                        &:hover
+                            color: #000
+                    button.on
+                        color: #000
+            .title
+                font-size: 36px
+                font-family: "NanumSquareNeo dEb"
+                line-height: 1.4
+                padding-bottom: 40px
+                span
+                    display: inline-block
+            .subtitle
+                font-size: 24px
+                font-family: "NanumSquareNeo dEb"
+                line-height: 1.4
+                padding-bottom: 40px
+            .introduction
+                font-size: 18px
+                font-family: "NanumSquareNeo aLt"
+                line-height: 1.8
+                padding-bottom: 30px
+            .by 
+                display: inline-block
+                padding-top: 20px
+                border-top: 1px solid #7e7e7e
+                span
+                    display: inline-block
+                    font-size: 16px
+                    font-family: "NanumSquareNeo cBd"
+                    line-height: 1.4
+                    margin-right: 5px
+                    &:last-child
+                        margin-right: 0
+            .img img
+                display: block
+                width: 100%
+        .right
+            position: relative
+            width: calc(35% - 30px)
+            min-width: 440px
+            img
+                position: absolute
+                bottom: 0
+                left: 0
+                display: block
+                width: 100%
+                max-width: 100%
+                // box-shadow: 2px 2px 10px 5px rgba(0,0,0,0.2)
+
+
+    .textbox.full
+        width: 100%
+        max-width: 100%
+        margin-bottom: 90px
+        // &:last-child
+        //     margin-bottom: 0
+        >span
+            display: block
+            margin: 0 auto
+            max-width: 1200px
+            width: 90%
+            padding: 50px 0
+    .textbox
+        width: 90%
+        max-width: 1200px
+        margin: 0 auto
+        padding-bottom: 80px
+        .titleIcon
+            width: 50px
+            height: 50px
+            background-size: contain
+            background-repeat: no-repeat
+            background-position: center 
+            margin-bottom: 40px
+        h3
+            padding-bottom: 30px
+            font-size: 32px
+            font-family: "NanumSquareNeo bRg"
+            line-height: 1.4
+            word-break: keep-all
+            &:last-child
+                padding-bottom: 0
+        h4
+            padding-bottom: 50px
+            margin: 0 auto
+            font-size: 25px
+            font-weight: 400
+            line-height: 1.65
+            word-break: keep-all
+            text-align: center
+            font-family: 'GangwonEdu_OTFBoldA'
+            text-decoration: underline
+            &:last-child
+                padding-bottom: 0
+            *
+                font-size: 100%
+        h5
+            padding-bottom: 20px
+            font-size: 24px
+            font-family: "NanumSquareNeo bRg"
+            line-height: 1.4
+            word-break: keep-all
+            text-align: left
+            *
+                font-size: 100%
+        h6
+            padding-bottom: 22px
+            font-size: 20px
+            font-family: "NanumSquareNeo bRg"
+            line-height: 1.4
+            word-break: keep-all
+            *
+                font-size: 100%
+        p
+            padding-bottom: 50px
+            font-size: 18px
+            font-family: "NanumSquareNeo bRg"
+            line-height: 1.8
+            word-break: break-all
+            text-align: justify
+            &:last-child
+                padding-bottom: 0
+            *
+                font-size: 100%
+            sup,
+            sub
+                font-size: 75%
+            small
+                font-size: 80% 
+                
+        .img
+            text-align: center
+            padding-bottom: 30px
+            &:last-child
+                padding-bottom: 0
+            span
+                display: inline-block
+                img
+                    display: block
+                    max-width: 100%
+                    width: 100%
+                small
+                    display: block
+                    padding-top: 10px
+                    font-size: 14px
+                    font-weight: 300
+                    word-break: keep-all
+        .video
+            position: relative
+            height: 0
+            padding-bottom: 56.25%
+            margin-bottom: 1.5rem
+            overflow: hidden
+            iframe,
+            object,
+            embed
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+            &:last-child
+                margin-bottom: 0
+        .table
+            margin-bottom: 1.5rem
+            overflow: auto
+            table
+                border-top: 2px solid #ccc
+                border-bottom: 2px solid #ccc
+                width: 100%
+                th,td
+                    padding: 0.5rem 1%
+                    font-size: 0.85rem
+                    font-weight: 300
+                    line-height: 1.65
+                    border-bottom: 1px solid #ccc
+                    border-right: 1px solid #ccc
+                    word-break: break-all
+                    text-align: justify
+                    &:last-child
+                        border-right: none
+                th
+                    border-bottom: 1px solid #ccc
+                    background-color: #def3f8
+                    font-weight: bold
+                    text-align: center
+                    word-break: keep-all
+                .th
+                    font-weight: bold
+                    background-color: #ddf3f8
+                    text-align: center
+                    word-break: keep-all
+                b
+                    font-weight: bold
+            .center
+                td
+                    text-align: center
+                    word-break: keep-all
+            &:last-child
+                margin-bottom: 0
+        .introduce
+            display: inline-block
+            font-size: 16px
+        .location
+            display: inline-block
+            background-color: #fbefe4
+            padding: 5px 12px
+        .tag01
+            display: inline-block
+            font-size: 18px
+            font-family: "NanumSquareNeo cBd"
+            padding: 5px 20px
+            border: 2px solid #000
+            text-align: center
+            margin-bottom: 10px
+        .tag02
+            display: inline-block
+            font-size: 18px
+            font-family: "NanumSquareNeo cBd"
+            padding: 10px 20px
+            background-color: #d36068
+            color: #fff
+            text-align: center
+            margin-bottom: 20px
+        .tag03
+            display: inline-block
+            font-size: 18px
+            font-family: "NanumSquareNeo bRg"
+            font-weight: 300
+            padding: 0 15px
+            border-radius: 50px
+            background-color: #d36068
+            color: #fff
+            text-align: center
+            margin-bottom: 20px
+        .title
+            font-size: 36px
+            font-family: "NanumSquareNeo dEb"
+            line-height: 1.4
+            padding-bottom: 40px
+            span
+                display: inline-block
+
+        .boxTitle_wrap
+            border-top: 1px solid #74529a 
+            border-bottom: 1px solid #74529a
+            padding: 20px 0
+            margin-bottom: 30px
+        .infoBox
+            display: inline-block
+            background-color: #fff
+            padding: 2px 10px
+
+
+                
+        //체크리스트
+        .checkList
+            position: relative
+            margin: 20px 0 0
+            overflow: hidden
+            .topBg
+                height: 60px
+                background-repeat: no-repeat
+                background-position: center top
+            input[type="checkbox"]
+                display: none
+            input[type="checkbox"] + label,
+            input[type="radio"] + label
+                position: relative
+                display: inline-block
+                font-size: 18px
+                line-height: 1
+                cursor: pointer
+                margin-top: 15px
+                padding: 0 0 15px 30px
+                border-bottom: 1px dotted #dcb0b0
+                width: 100%
+                line-height: 1.4
+            input[type="checkbox"] + label::before,
+            input[type="radio"] + label::before
+                position: absolute
+                left: 0
+                display: inline-block
+                content: ""
+                width: 20px
+                height: 20px
+                margin-right: 10px
+                background-color: #fff
+                border-radius: 50%
+                cursor: pointer
+            input[type="checkbox"]:checked + label::after,
+            input[type="radio"]:checked + label::after
+                position: absolute
+                left: 2px
+                top: -2px
+                display: inline-block
+                content: ""
+                width: 20px
+                height: 20px
+                background-image: url('../images/2023_checked.png')
+                background-repeat: no-repeat
+                background-size: 100%
+            .item
+                justify-content: space-between
+                align-items: center
+                padding: 12px 0
+                border-bottom: 1px dotted #dcb0b0
+                font-weight: 00 
+            input[type="radio"] + label
+                border: none
+                padding-bottom: 0
+                width: auto
+                margin-right: 20px
+                margin-top: 0
+            button.showResult
+                display: block
+                width: 180px
+                height: 60px
+                background-color: #d36068
+                color: #fff
+                font-size: 20px
+                padding: 5px 10px
+                border-radius: 50px
+                margin: 0 auto 40px
+                cursor: pointer
+            .checkListModal
+                position: absolute
+                display: flex
+                justify-content: center
+                align-items: center
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+                background-color: rgba(255,255,255,0.5)
+                z-index: -99
+                opacity: 0
+                .wrap
+                    position: relative
+                    width: 90%
+                    max-width: 725px
+                    background-color: #fff
+                    border: 2px solid #000
+                    padding: 60px calc((725px - 500px)/2) 80px
+                    text-align: center
+                    button.close
+                        position: absolute
+                        display: block
+                        top: 10px
+                        right: 10px
+                        font-size: 16px
+                        font-weight: 600
+                        cursor: pointer
+                    h5 span
+                        color: #d36068
+            .checkListModal.on
+                z-index: 1
+                opacity: 1
+        //에너지현황 맵
+        .mapImg
+            position: relative
+            .absolute
+                position: absolute
+                img
+                    display: block
+                    width: 100%
+        //독자마당 컬러링 다운로드
+        .download
+            display: block
+            position: relative
+            .downBtn
+                display: none
+                position: absolute
+                top: 0
+                right: 0
+                width: 64px
+                height: 64px
+                background-image: url('../images/2023_download.png')
+                background-repeat: no-repeat
+                background-size: contain
+            &:hover
+                .downBtn
+                    display: block
+
+
+.flex
+    display: flex
+    align-items: center
+    justify-content: center
+    max-width: 100%
+    padding-bottom: 50px
+    font-size: 18px
+    font-family: "NanumSquareNeo bRg"
+    line-height: 1.8
+    word-break: break-all
+    text-align: justify
+    &:last-child
+        padding-bottom: 0 
+    > span
+        display: inline-block
+        margin-right: 30px
+    > span:last-child
+        margin-right: 0
+.flex02
+    display: flex
+    align-items: flex-start
+    justify-content: center
+    max-width: 100%
+    padding-bottom: 10px
+    font-size: 18px
+    font-family: "NanumSquareNeo bRg"
+    line-height: 1.8
+    word-break: break-all
+    text-align: justify
+    &:last-child
+        padding-bottom: 0
+    > span
+        display: inline-block
+        margin-right: 5px
+    > span:last-child
+        margin-right: 0
+.flex03
+    display: flex
+    justify-content: start
+    padding-bottom: 0 !important
+    font-size: 18px
+    font-family: "NanumSquareNeo bRg"
+    line-height: 1.8
+    word-break: break-all
+    text-align: justify
+    > span
+        display: inline-block
+
+
+.border
+    padding: 30px
+    margin-bottom: 50px
+    border: 1px solid #ccc
+    height: 100%
+    &:last-child
+        margin-bottom: 0
+.border02
+    margin-bottom: 50px
+    padding: 30px
+    background-color: #f1f1f1
+    height: 100%
+    &:last-child
+        margin-bottom: 0
+.border03
+    padding: 30px
+    margin-bottom: 50px
+    border: 2px solid #ccc
+    border-radius: 20px
+    height: 100%
+    &:last-child
+        margin-bottom: 0
+.marker
+    background: linear-gradient(to top, #ffee34 40%, transparent 30%)
+
+
+.line
+    width: 100%
+    border-bottom: 1px solid #000
+    margin: 10px auto 30px
+.lineB
+    width: 100%
+    border-bottom: 2px solid #000
+    margin: 10px auto 30px
+
+
+.text-left
+    text-align: left !important
+.text-center
+    text-align: center !important
+    word-break: keep-all
+.text-right
+    text-align: right !important
+.flex-wrap
+    flex-wrap: wrap
+.align-stretch
+    align-items: stretch !important 
+.align-start
+    align-items: flex-start !important
+.align-center
+    align-items: center !important
+.algin-end
+    align-items: flex-end !important
+.just-center
+    justify-content: center !important
+.just-between
+    justify-content: space-between !important
+.just-start
+    justify-content: start !important
+.just-end
+    justify-content: flex-end !important
+       
+.GyeonggiBatang
+    font-family: 'GyeonggiBatang' !important
+    font-weight: 400
+
+
+.movement
+    // border-top: 1px solid #a0a0a0
+    // border-bottom: 1px solid #a0a0a0
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    max-width: 1300px
+    margin: 0 auto
+    background-color: #f8f8f8
+    a
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        align-items: center
+        width: 50%
+        max-width: 400px
+        height: 100%
+        padding: 40px 0
+        span
+            display: inline-block
+            font-size: 15px
+            font-family: 'Pretendard'
+            font-weight: 600
+            padding: 7px 15px
+            text-align: center
+            border: 1px solid #000
+            margin-right: 10px
+            background-color: #fff
+        .title
+            font-size: 18px
+            font-family: 'Pretendard'
+            font-weight: 600
+    a:hover span
+        background-color: #000
+        color: #fff
+    a:last-child
+        flex-direction: row-reverse
+        span
+            margin-right: 0
+            margin-left: 10px
+
+
+.gotoTop
+    position: fixed
+    right: 30px
+    bottom: 5%
+    display: inline-block
+    font-size: 13px
+    padding: 10px 15px
+    border: 1px solid #000
+    border-radius: 8px
+    text-align: center
+    background-color: #fff
+    &:hover
+        background-color: #000
+        color: #fff
+
+.sub.miracle
+    .contents-top .title span
+        color: #74529a
+    .visual
+        background-color: #74529a
+    .textbox
+        .titleIcon
+            background-image: url('../images/2023_miracle.png')
+        h4
+            color: #74529a
+.sub.culture
+    .contents-top .title span
+        color: #d36068
+    .visual
+        background-color: #d36068
+    .textbox
+        .titleIcon
+            background-image: url('../images/2023_culture.png')
+        h4
+            color: #d36068
+.sub.KHNP
+    .contents-top .title span
+        color: #458666
+    .visual
+        background-color: #458666
+    .textbox
+        .titleIcon
+            background-image: url('../images/2023_KHNP.png')
+        h4
+            color: #458666
+        
+
+/*IPad Pro*/
+@media (max-width: 1365px)
+    .sub 
+        .contents-top
+            width: calc(100% - 40px)
+        .textbox
+            width: calc(100% - 40px)
+
+
+/*IPad*/
+@media (max-width: 1024px)
+    .sub 
+        .visual
+            padding-bottom: 40px
+        .contents-top 
+            flex-direction: column-reverse
+            margin-top: -60px
+            .left
+                width: 100%
+            .right 
+                width: 100%
+                min-width: auto !important
+                margin: 0 !important
+                img
+                    position: relative
+                    margin: 0 auto
+                    width: auto
+                    max-width: 100%
+        .textbox 
+            .mapImg 
+                display: flex
+                flex-direction: column-reverse
+                .absolute
+                    position: static
+                    padding-bottom: 20px
+                    margin: 0 auto
+            .download
+                .downBtn
+                    display: block
+            .flex-reverse_mo
+                display: flex
+                flex-direction: column-reverse
+            .checkList .item >span:first-child
+                margin-bottom: 10px
+            
+    .flex
+        display: block           
+        > span
+            display: block
+            width: 100%
+            min-width: auto !important
+            max-width: none !important
+            margin-right: auto !important
+            margin-left: auto !important
+            margin-bottom: 30px
+        > span:last-child
+            margin-bottom: 0
+
+    .movement
+        border: none
+        background-color: #f7f8f8
+        a
+            span
+                position: relative
+                padding: 15px 25px
+                padding-left: 40px
+                margin: 0
+                &::before
+                    content: '←'
+                    display: inline-block
+                    position: absolute
+                    left: 20px
+            .title
+                display: none
+        a:last-child
+            span
+                position: relative
+                padding: 15px 25px
+                padding-right: 40px
+                &::before
+                    content: '→'
+                    display: inline-block
+                    position: absolute
+                    right: 20px
+                    left: auto
+            
+/*mobile*/
+@media (max-width: 576px)
+    .sub
+        padding-top: 75px
+        .visual
+            height: 150px
+            span
+                font-size: 15px
+        .contents-top
+            margin-bottom: 0
+            .left
+                padding: 40px 0
+                .top
+                    padding-bottom: 20px
+                    span
+                        font-size: 15px
+                    .function 
+                        button
+                            margin-right: 0
+                            &::before
+                                display: none !important
+                        .print
+                            display: none
+                .title
+                    font-size: 22px
+                    padding-bottom: 20px
+                .subtitle
+                    font-size: 20px
+                    padding-bottom: 20px
+                .introduction
+                    font-size: 16px
+                .by
+                    padding-top: 7px
+                    span
+                        font-size: 15px
+        .textbox 
+            padding-bottom: 60px
+            .titleIcon
+                width: 40px
+                height: 40px
+                margin-bottom: 30px
+            h3
+                font-size: 22px
+            h4
+                font-size: 20px
+            h5
+                font-size: 20px
+                padding-bottom: 10px
+            p
+                font-size: 16px
+                padding-bottom: 30px
+            b
+                font-size: 16px
+            .introduce
+                font-size: 14px
+            .tag01
+                font-size: 16px
+                padding: 10px 15px
+                margin-bottom: 15px
+            .tag02
+                font-size: 16px
+                padding: 7px 15px
+                margin-bottom: 10px
+            .tag03
+                font-size: 17px
+                padding: 0px 12px
+                margin-bottom: 10px
+            .title
+                font-size: 22px
+                padding-bottom: 20px
+            .boxTitle_wrap
+                h5
+                    font-size: 16px
+                p
+                    font-size: 14px
+            .infoBox
+                font-size: 14px
+                line-height: 1.5
+                padding: 5px 10px !important
+                span.block
+                    display: block
+                    width: 100%
+                span
+                    display: inline-block
+                    float: left
+
+            .checkList
+                .topBg
+                    height: 30px
+                    background-size: 160%
+                input[type='checkbox'] + label,
+                input[type='radio'] + label
+                    font-size: 15px
+                    padding: 0 0 10px 25px
+                    margin-top: 10px
+                input[type='checkbox'] + label::before,
+                input[type='radio'] + label::before
+                    width: 15px
+                    height: 15px
+                    top: 3px
+                input[type='checkbox']:checked + label::after,
+                input[type='radio']:checked + label::after
+                    width: 15px
+                    height: 15px
+                    top: 2px
+                button.showResult
+                    width: 150px
+                    height: 50px
+                    font-size: 18px
+                .checkListModal .wrap
+                    padding: 40px 20px 20px
+                .item
+                    padding: 8px 0
+                    >span:first-child
+                        margin-bottom: 0
+    .flex 
+        font-size: 16px
+        padding-bottom: 30px
+        > span
+            margin-bottom: 20px
+    .flex03
+        display: block
+        >span
+            display: block
+
+    .flex_576
+        flex-direction: column
+        >span
+            min-width: 100% !important
+            max-width: 100% !important
+            margin-right: 0 !important
+            margin-bottom: 25px
+            &:last-child
+                margin-bottom: 0
+    
+    .border
+        padding: 20px
+        margin-bottom: 30px
+    .border02
+        padding: 20px
+        margin-bottom: 30px
+    .border03
+        padding: 20px
+        margin-bottom: 30px
+    
+    
+

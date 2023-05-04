@@ -1,0 +1,1159 @@
+@keyframes fadeInZoom
+    0% 
+        opacity: 0
+        transform: scale(0.6)
+    100% 
+        opacity: 1
+        transform: scale(1)
+    
+    
+    
+#Pagenation
+    position: fixed
+    right: 140px
+    top: calc((107px - 26px)/2) 
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    z-index: 998
+    > li
+        margin-right: 3rem
+        > a
+            display: block
+            font-size: 22px
+            font-weight: 600
+            sup
+                font-size: 100%
+        
+.main
+    .section
+        overflow: hidden
+    #section0
+        .wrap
+            position: relative
+            display: flex
+            flex-wrap: wrap
+            justify-content: space-between
+            width: 100%
+            max-width: 1920px
+            margin: 0 auto
+            height: 100%
+            padding: 110px 160px 0
+            background-position: center
+            background-size: cover
+            background-repeat: no-repeat
+        .visual_mo
+            display: none
+        .textWrap
+            position: relative
+            margin-top: 110px
+            z-index: 5
+            .title
+                font-size: 80px
+                font-family: 'GmarketSansBold'
+                padding-bottom: 30px
+            .subtitle
+                display: inline-block
+                font-size: 25px
+                font-family: "NanumSquareNeo eHv"
+                padding-bottom: 20px
+            p
+                font-size: 18px
+                line-height: 1.5
+                font-family: "NanumSquareNeo bRg"
+                padding-bottom: 30px
+            .view
+                display: inline-block
+                font-size: 15px
+                font-family: "NanumSquareNeo bRg"
+                color: rgba(0,0,0,0.5)
+                border-bottom: 1px solid rgba(0,0,0,0.5)
+        .imgWrap
+            position: absolute
+            width: 100%
+            max-width: 1920px
+            height: 100%
+            top: 50%
+            right: 0
+            transform: translateY(-50%)
+            padding-top: 110px
+            text-align: right
+            .inner 
+                display: inline-block
+                position: relative
+                width: 72.91%
+                max-width: 1440px
+                padding-right: 65px
+                height: 100%
+                text-align: right
+                >div 
+                    display: inline-block
+                    position: absolute
+                    width: auto
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                .base
+                    position: relative
+                //fadeInZoom 에니메이션 넣을 이미지에는 img02 class 넣기
+                .img02 img
+                    display: block
+                    animation: fadeInZoom
+                    animation-fill-mode: forwards
+                    animation-duration: 1s
+                    animation-timing-function: ease-in-out
+        .btnWrap
+            position: absolute
+            right: 40px
+            bottom: 70px
+            display: flex
+            align-items: center
+            .vol
+                display: none
+            .share,.pastMonth,.subscribe
+                display: block
+                width: 60px
+                height: 60px
+                border: 3px solid #000
+                border-radius: 50%
+                margin-bottom: 10px
+                &:last-child
+                    margin-bottom: 0
+                span
+                    display: none
+                &:hover
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    background-color: #000
+                    &::before
+                        display: none
+                    span
+                        display: inline-block
+                        font-size: 14px
+                        font-family: "NanumSquareNeo cBd"
+                        color: #fff
+                        line-height: 1.5
+                        user-select: none
+                        text-align: center
+                        span
+                            display: none
+            .share
+                background-color: #fa7951
+                background-image: url('../images/2023_share.png')
+                background-size: 25px
+                background-repeat: no-repeat
+                background-position: center
+                cursor: pointer
+            .pastMonth
+                background-color: #005c9c
+                &::before
+                    content: ''
+                    display: block
+                    position: relative
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    width: 23px
+                    height: 27px
+                    background-image: url('../images/2023_calender.png')
+                    background-size: contain
+                    background-repeat: no-repeat
+                    background-position: center
+                    padding-bottom: 20px
+            .subscribe
+                background-color: #6495d0
+                &::before
+                    content: ''
+                    display: block
+                    position: relative
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    width: 31px
+                    height: 25px
+                    background-image: url('../images/2023_heart.png')
+                    background-size: contain
+                    background-repeat: no-repeat
+                    background-position: center
+                    padding-bottom: 20px
+        //역동적인 메인 버튼 구조
+        .btnWrap.type02
+            position: relative
+            .share
+                position: absolute
+                display: inline-block
+                width: 60px
+                height: 60px
+                top: 14%
+                right: 117px
+                background-color: #000
+                border-radius: 50%
+                cursor: pointer
+                &:hover
+                    background-color: #005c9b
+            .vol,.pastMonth,.subscribe
+                position: absolute
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                align-items: center
+                border-radius: 50%
+                border: 3px solid #000
+                box-shadow: 2px 2px 0 2px rgba(0,0,0,1)
+                font-size: 18px
+                font-family: "NanumSquareNeo dEb"
+                color: #fff
+                line-height: 1.5
+                user-select: none
+                margin-bottom: 0
+                span
+                    display: inline-block
+                    font-size: 18px
+                    font-family: "NanumSquareNeo dEb"
+                    color: #fff
+                    line-height: 1.5
+                    user-select: none
+                &:hover
+                    background-color: #000
+            .vol
+                width: 142px
+                height: 142px
+                top: 28%
+                right: 164px
+                background-color: #f27188
+                font-size: 16px
+            .pastMonth
+                flex-direction: column
+                width: 180px
+                height: 180px
+                top: 45%
+                right: 0px
+                background-color: #005c9c
+                text-align: center
+                &::before
+                    position: relative
+                    top: 0
+                    left: 0
+                    padding-bottom: 20px
+                    transform: translate(0,0)
+            .subscribe
+                flex-direction: column
+                width: 180px
+                height: 180px
+                top: 67%
+                right: 160px
+                background-color: #6495d0
+                text-align: center
+                span:first-child
+                    display: block
+                &::before
+                    position: relative
+                    top: 0
+                    left: 0
+                    width: 31px
+                    height: 25px
+                    padding-bottom: 20px
+                    transform: translate(0,0)
+    #section1
+        .wrap
+            position: relative
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+            width: 90%
+            height: 100%
+            margin: 0 auto
+            padding: 110px calc((100% - 1200px)/2) 0
+        .left
+            position: relative
+            width: calc(50% - 25px)
+            max-width: 585px
+            margin-right: 50px
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                width: 67px
+                height: 75px
+                left: -150px
+                bottom: 41.95%
+                background-image: url('../images/2023_sc1_obj01.png')
+                background-size: contain
+                background-repeat: no-repeat
+                background-position: center 
+                z-index: -1
+        .type01
+            h3
+                font-size: 56px
+                font-family: 'GmarketSansBold'
+                padding-bottom: 30px
+                sup
+                    font-size: 100%
+            a
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                padding-bottom: 25px
+                &:last-child
+                    padding-bottom: 0
+                .thum
+                    display: inline-block
+                    width: calc(40% - 15px)
+                    max-width: 240px
+                    margin-right: 30px
+                    overflow: hidden
+                    img
+                        display: block
+                        width: 100%
+                        transition: transform 0.3s
+                .text
+                    display: inline-block
+                    width: calc(60% - 15px)
+                    .depth
+                        display: block
+                        font-size: 18px
+                        font-family: "NanumSquareNeo cBd"
+                        padding-bottom: 15px
+                    .title
+                        font-size: 26px
+                        font-family: "NanumSquareNeo dEb"
+                        line-height: 1.4
+                        display: -webkit-box
+                        -webkit-line-clamp: 2
+                        -webkit-box-orient: vertical
+                        text-overflow: ellipsis
+                        word-break: keep-all
+                        overflow: hidden
+                    .view
+                        position: relative
+                        display: block
+                        font-size: 15px
+                        font-family: 'GmarketSansMedium'
+                        font-weight: 300
+                        color: #3354a8
+                        margin-top: 50px
+                        &::before
+                            content: ''
+                            display: block
+                            position: absolute
+                            left: 0
+                            bottom: -6px
+                            width: 115px
+                            height: 13px
+                            background-image: url('../images/2023_view.png')
+                            background-size: contain
+                            background-repeat: no-repeat
+                            background-position: center 
+                            transition: left 0.3s
+            a:hover
+                .thum img
+                    transform: scale(1.1)
+                .text .view::before
+                    left: 5px
+        .right
+            position: relative
+            width: calc(50% - 25px)
+            max-width: 558px
+            margin-right: 0
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                width: 156px
+                height: 212px
+                right: -220px
+                bottom: 15.4%
+                background-image: url('../images/2023_sc1_obj02.png')
+                background-size: contain
+                background-repeat: no-repeat
+                background-position: center 
+                z-index: -1
+        .type02
+            .box
+                position: relative
+                display: inline-block
+                .thum
+                    overflow: hidden
+                    img
+                        display: block
+                        width: 100%
+                        transition: transform 0.3s
+                .inner
+                    display: flex
+                    flex-direction: column
+                    justify-content: end
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.1), transparent)
+                    padding: 35px
+                    .title
+                        font-size: 30px
+                        font-family: "NanumSquareNeo eHv"
+                        padding-bottom: 20px
+                        color: #fff
+                    b
+                        display: inline-block
+                        font-size: 18px
+                        line-height: 1.4
+                        font-family: "NanumSquareNeo bRg"
+                        color: #fff
+                        margin-bottom: 10px
+                    p
+                        font-size: 16px
+                        line-height: 1.8
+                        font-family: "NanumSquareNeo bRg"
+                        color: #fff
+                &:hover
+                    .thum img
+                        transform: scale(1.05)
+    #section2
+        .wrap
+            display: flex
+            flex-wrap: wrap
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            width: 100%
+            height: 100%
+            padding-left: 160px
+            padding-top: 110px
+            padding-bottom: 50px
+            background: radial-gradient(at 0 110px, #fef3f5, #fef7fb, #e1e6fe)
+            h3
+                display: inline-block
+                position: relative
+                padding-bottom: 40px
+                span
+                    position: relative
+                    display: inline-block
+                    font-size: 56px
+                    font-family: 'GmarketSansBold'
+                    color: #fff
+                    z-index: 2
+                    sup
+                        font-size: 100%
+                        color: #fff
+                &::before
+                    content: ''
+                    display: block
+                    position: absolute
+                    top: -140px
+                    left: -250px
+                    width: 755px
+                    height: 295px
+                    background-image: url('../images/2023_sc2_obj01.png')
+                    background-size: contain
+                    background-repeat: no-repeat
+                    background-position: center
+                    z-index: 1
+            .swiper
+                display: flex
+                flex-wrap: wrap
+                width: 100%
+                .swiper-btnWrap
+                    width: 140px
+                    margin-top: 140px
+                    .swiper-button-prev,.swiper-button-next
+                        position: static
+                        width: 90px
+                        height: 90px
+                        border: 1px solid #000
+                        border-radius: 50%
+                        background-image: url('../images/2023_arrow.png')
+                        background-size: 43px
+                        background-repeat: no-repeat
+                        background-position: center
+                        margin: 0
+                        &:hover
+                            background-color: #6e92cc
+                            border-color: #6e92cc
+                            background-image: url('../images/2023_arrow_w.png')
+                    .swiper-button-prev
+                        margin-bottom: 15px
+                    .swiper-button-next
+                        transform: rotate(180deg)
+                .swiper-pagination
+                    display: none
+                .swiper-container
+                    width: calc(100% - 140px)
+                    margin-right: 0
+                    // max-width: 1200px
+                    // overflow: unset
+                    .swiper-slide
+                        display: flex
+                        flex-direction: column
+                        justify-content: flex-end
+                        width: auto
+                        max-width: 400px
+                        margin-right: 50px
+                        .thum
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            width: 400px
+                            height: auto
+                            margin-bottom: 30px
+                            img
+                                display: block
+                                width: auto
+                                max-width: 400px
+                                transition: transform 0.3s
+                        .text
+                            padding: 0 40px
+                            .depth
+                                display: block
+                                font-size: 15px
+                                font-family: "NanumSquareNeo cBd"
+                                padding-bottom: 10px
+                                color: #b6b6b6
+                            .title
+                                font-size: 30px
+                                font-family: "NanumSquareNeo dEb"
+                                line-height: 1.3
+                                padding-bottom: 20px
+                            p
+                                font-size: 16px
+                                font-family: "NanumSquareNeo bRg"
+                                line-height: 1.6
+    #section3
+        overflow: unset
+        .wrap
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+            width: 100%
+            max-width: 1920px
+            margin: 0 auto
+            height: 100%
+            padding: 110px 65px 0 80px
+            .inner
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                align-items: center
+                width: 100%
+                height: calc(100% - 100px)
+                max-height: 773px
+                margin: 30px 0 70px
+                border-top: 2px solid #000
+                border-bottom: 2px solid #000
+            .gridWrap
+                width: 100%
+                height: 100%
+                ul 
+                    display: grid
+                    grid-template-columns: 30% 1fr 1fr 1fr
+                    grid-template-rows: 1fr 1fr
+                    width: 100%
+                    height: 100%
+                    li 
+                        position: relative
+                        border-bottom: 1px solid #000
+                        border-right: 1px solid #000
+                        a
+                            display: flex
+                            flex-direction: column
+                            justify-content: space-between
+                            position: relative
+                            padding: 30px
+                            width: auto
+                            max-width: 410px
+                            height: 100%
+                        .depth
+                            display: block
+                            font-size: 16px
+                            font-family: "NanumSquareNeo bRg"
+                            padding-bottom: 40px
+                            color: #303030
+                        .title
+                            font-size: 22px
+                            font-family: "NanumSquareNeo eHv"
+                            line-height: 1.4
+                            display: -webkit-box
+                            -webkit-line-clamp: 2
+                            -webkit-box-orient: vertical
+                            text-overflow: ellipsis
+                            word-break: keep-all
+                            overflow: hidden
+                        .thum
+                            width: 100%
+                            text-align: center
+                            img
+                                display: block
+                                width: auto
+                                max-width: 100%
+                                margin: 0 auto
+                        .goto
+                            position: absolute
+                            top: 20px
+                            right: 20px
+                            width: 50px
+                            height: 50px
+                            background-color: #000
+                            border-radius: 50%
+                            background-image: url('../images/2023_arrow02.png')
+                            background-size: 17px
+                            background-repeat: no-repeat
+                            background-position: center
+                    li:nth-last-child(-n+3)
+                        border-bottom: none
+                    li:nth-child(4)
+                        border-right: none
+                    li:nth-child(7)
+                        border-right: none
+                    li.type02
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-between
+                        align-items: flex-start
+                        grid-row: 1 / 3
+                        max-height: none
+                        padding: 70px 40px 60px 80px
+                        border-right: 1px solid #000
+                        border-bottom: none
+                        .text
+                            height: 50%
+                            .title
+                                display: block
+                                font-size: 56px
+                                font-family: 'GmarketSansBold'
+                                padding-bottom: 20px
+                            p
+                                font-size: 16px
+                                line-height: 1.6
+                                font-family: "NanumSquareNeo bRg"
+                        >a
+                            position: relative
+                            display: inline-block
+                            padding: 0
+                            height: auto
+                            .thum
+                                max-width: 330px
+                                img
+                                    display: block
+                                    width: 100%
+                            .direct
+                                display: none
+                                position: absolute
+                                top: 50%
+                                left: 50%
+                                width: 154px
+                                height: 65px
+                                background-color: #000
+                                border-radius: 50px
+                                text-align: center
+                                transform: translate(-50%,-50%)
+                                span
+                                    display: inline-block
+                                    padding-right: 22px
+                                    color: #fff
+                                    font-family: 'GmarketSansBold'
+                                    line-height: 65px
+                                    text-align: center
+                                    background-image: url('../images/2023_arrow02.png')
+                                    background-size: 17px
+                                    background-repeat: no-repeat
+                                    background-position: right 48%
+                        >a:hover
+                            .direct
+                                display: block
+                    li.type03
+                        display: flex
+                        flex-direction: column
+                        align-items: center
+                        justify-content: center
+                        padding: 40px
+                        a
+                            flex-direction: row
+                            justify-content: space-between
+                            align-items: flex-end
+                            width: 100%
+                            padding: 0
+                            margin: 0 auto
+                            height: auto
+                        .depth
+                            padding-bottom: 20px
+                        .thum
+                            width: auto
+                            min-width: 56px
+                            margin-left: 20px
+                        a:first-child
+                            padding-bottom: 40px
+                            border-bottom: 1px dotted #303030
+                        a:last-child
+                            padding-top: 40px
+                    li:hover 
+                        .goto
+                            background-color: #00a040
+
+                    li .sc3_slide01
+                        display: flex
+                        flex-direction: column
+                        justify-content: space-between
+                        width: 100%
+                        max-width: 410px
+                        height: 100%
+                        .goto
+                            z-index: 2
+                        .depth
+                            padding: 30px 0 0 30px
+                        .swiper-pagination
+                            position: static
+                            text-align: left
+                            display: flex
+                            align-items: center
+                            padding: 10px 0 0 30px
+                        .swiper-pagination-bullet
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            width: 24px
+                            height: 24px
+                            text-align: center
+                            line-height: 20px
+                            font-size: 12px
+                            color: #fff
+                            opacity: 1
+                            background: #bbca89
+                        .swiper-pagination-bullet-active
+                            color: #fff
+                            background: #407c39
+                        .swiper-slide
+                            justify-content: space-between
+                            background-color: #fff
+                            height: 100%
+                        .nopic
+                            display: -webkit-box
+                            -webkit-line-clamp: 5
+
+
+body.fp-viewing-anchor4 header.main
+    border-bottom: none
+
+/*small PC*/
+@media (max-width: 1666px)
+    .main 
+        #section0 .wrap
+            padding: 110px 5% 0
+        #section3 .wrap .gridWrap 
+            ul 
+                grid-template-columns: 350px calc(33.333% - 116.66px) calc(33.333% - 116.66px) calc(33.333% - 116.66px)
+                li.type02 
+                    padding: 30px
+
+/*IPad Pro*/
+@media (max-width: 1365px)
+    #Pagenation
+        display: none
+    .fp-tableCell,.fp-section.fp-table, .fp-slide.fp-table
+        height: auto !important
+    .main 
+        #section0 
+            .wrap
+                position: relative
+                padding: 0
+            .visual_mo
+                display: block
+                width: 100%
+                img
+                    display: block
+                    width: 100%
+            .textWrap
+                position: absolute
+                top: 230px
+                width: 100%
+                padding: 0 5%
+                margin-left: auto
+                margin: 0 auto
+                text-align: center
+                .subtitle
+                    padding-bottom: 10px
+            .imgWrap .inner
+                width: 100%
+                padding: 0
+                >div
+                    display: block
+                    width: 100%
+                    img
+                        display: block
+                        width: 90%
+                        margin: 0 auto -50px
+                .img02 img
+                    position: relative
+                    left: 5%
+                    width: 110%
+            .btnWrap
+                position: absolute
+                left: 30px
+                bottom: 30px
+                display: flex
+                justify-content: flex-end
+                align-items: flex-end
+                width: calc(100% - 30px)
+                span
+                    display: flex
+                    flex-wrap: wrap
+                    margin-right: 30px
+                .vol
+                    position: static
+                    width: 160px
+                    height: 160px
+                    margin-bottom: 0
+                .share
+                    position: static
+                    width: 70px
+                    height: 70px
+                    margin-right: 10px
+                    margin-bottom: 0
+                    span
+                        display: inline-block
+                .pastMonth,.subscribe
+                    display: block
+                    position: static
+                    order: 3
+                    width: 70px
+                    height: 70px
+                    text-indent: -9999px
+                    overflow: hidden
+                    box-shadow: none
+                    margin-bottom: 0
+                    span
+                        display: inline-block
+                    &::before
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                .pastMonth
+                    margin-right: 10px
+                .share,.pastMonth,.subscribe
+                    &:hover
+                        text-indent: 0
+                        span
+                            margin-right: 0
+        #section1 .wrap
+            padding: 100px 0
+        #section2 .wrap
+            padding: 100px 0 100px 30px
+            .swiper .swiper-container .swiper-slide 
+                width: 300px
+                .thum
+                    width: 300px
+                    img
+                        width: 100%
+                .text
+                    padding: 0 10px
+                    .title
+                        font-size: 26px
+        #section3 
+            .wrap
+                padding: 20px 30px 0
+
+/*small PC 2*/
+@media (max-width: 1200px)
+    .main #section3 .wrap 
+        .inner
+            max-height: none
+            border-top: none
+            border-bottom: 1px solid #000
+            margin: 0
+        .gridWrap ul
+            grid-template-columns: 50% 50%
+            grid-template-rows: auto
+            li 
+                border-right: none
+                a
+                    max-width: none
+                    padding: 30px 80px 30px 30px
+                    .title
+                        display: block
+                        margin-bottom: 30px
+            li.type02
+                grid-row: 1
+                grid-column: 1/3
+                text-align: center
+                border-bottom: 1px solid #000
+                border-right: 0
+                .text
+                    width: 100%
+                    padding-bottom: 40px
+                >a
+                    width: auto
+                    margin: 0 auto
+            li.type03
+                padding: 30px
+                a:first-child
+                    padding-bottom: 30px
+                a:last-child
+                    padding-top: 30px
+                a .title
+                    padding-bottom: 0
+            li:nth-child(even)
+                border-right: 1px solid #000
+            li:nth-last-child(3)
+                border-bottom: 1px solid #000
+            li:nth-last-child(-n+2)
+                border-bottom: none
+
+/*IPad*/
+@media (max-width: 1024px)
+    .main 
+        #section1 
+            .wrap
+                display: block
+                padding: 90px calc((100% - 1200px) / 2)
+            .left
+                width: 100%
+                max-width: none
+                padding-bottom: 50px
+                &::before
+                    display: none
+            .right
+                width: 100%
+                max-width: none
+                &::before
+                    display: none
+                a
+                    width: 100%
+        #section2 
+            .wrap
+                padding: 0
+                padding-bottom: 30px
+                h3
+                    width: 100%
+                    text-align: center
+                    padding-bottom: 0
+                    margin: 40px 0 150px
+                    &::before
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
+                        width: 90%
+                .swiper 
+                    flex-direction: column
+                    .swiper-wrapper 
+                        align-items: flex-end
+                    .swiper-btnWrap
+                        display: none
+                    .swiper-pagination
+                        display: block
+                        position: static
+                        height: auto
+                        padding: 60px 0 30px
+                        .swiper-pagination-bullet
+                            width: 11px
+                            height: 11px
+                            margin-right: 8px
+                            &:last-child
+                                margin-right: 0
+                        .swiper-pagination-bullet-active
+                            background-color: #000
+                    .swiper-container
+                        width: 100%
+
+/*Tablet*/
+@media (max-width: 768px)
+    .main 
+        #section0 .textWrap 
+            top: 180px
+            .title
+                font-size: 60px
+        #section2 
+            .wrap 
+                padding-left: 30px
+                padding-right: 30px
+                h3
+                    span
+                        font-size: 42px
+                    &::before
+                        width: 100%
+                .swiper .swiper-container .swiper-slide
+                    width: 100%
+                    max-width: 100%
+                    margin-right: 0
+                    .thum
+                        width: 100%
+                        max-width: 100%
+                        img
+                            width: auto
+                            max-width: 100%
+                            max-height: 300px
+        #section3 .wrap .gridWrap ul
+            li a
+                padding: 30px 60px 30px 10px
+            li .sc3_slide01 a
+                padding: 30px
+            li.type03
+                padding-left: 10px
+                a
+                    padding-left: 0 !important
+                    .thum img
+                        margin-right: 0
+                    .title
+                        margin-bottom: 0
+                a:first-child
+                    padding-bottom: 20px
+                a:last-child
+                    padding-top: 20px
+            li:nth-child(odd) 
+                >a
+                    padding-left: 30px
+                .goto
+                    right: 0
+            li:nth-last-child(2)
+                grid-column: 1/3
+                border-right: none
+                border-bottom: 1px solid #000
+                a
+                    flex-direction: row
+                    align-items: center
+                    .title
+                        margin-bottom: 0
+                    .thum
+                        width: auto
+                        margin-left: 20px
+                .goto
+                    right: 0
+            li:last-child
+                grid-column: 1/3
+
+/*mobile*/
+@media (max-width: 576px)
+    .main 
+        #section0 
+            .textWrap 
+                top: 120px
+                .title
+                    font-size: 30px
+                    padding-bottom: 20px
+                .subtitle
+                    font-size: 14px
+                    padding-bottom: 5px 
+                p
+                    font-size: 13px
+                    padding-bottom: 10px
+                .view
+                    font-size: 12px
+            .btnWrap
+                left: 20px
+                width: calc(100% - 20px)
+                span
+                    margin-right: 20px
+                    font-size: 13px
+                .vol
+                    width: 110px
+                    height: 110px
+                    font-size: 13px
+                    border: 2px solid #000
+                    box-shadow: 1px 1px 0 1px rgb(0 0 0)
+                .share,.pastMonth,.subscribe
+                    width: 45px
+                    height: 45px
+                    background-size: 18px
+                    border: 2px solid #000
+                .pastMonth
+                    &::before
+                        background-size: 16px
+                .subscribe
+                    &::before
+                        background-size: 20px
+        #section1 
+            .wrap
+                padding: 60px 0
+            .left 
+                h3
+                    font-size: 36px
+                    padding-bottom: 20px
+            .type01
+                padding-bottom: 30px
+                a 
+                    .thum
+                        margin-right: 20px
+                        width: calc(40% - 10px)
+                    .text 
+                        width: calc(60% - 10px)
+                        .depth
+                            font-size: 13px
+                            padding-bottom: 5px
+                        .title
+                            font-size: 18px
+                        .view
+                            margin-top: 20px
+            .type02 .box .inner
+                padding: 20px
+                b
+                    font-size: 16px
+                p
+                    font-size: 15px
+        #section2 
+            .wrap 
+                padding-left: 20px
+                padding-right: 20px
+                h3 
+                    margin: 40px 0 100px
+                    span
+                        width: 100%
+                        font-size: 36px
+                .swiper 
+                    .swiper-pagination
+                        padding: 30px 0 15px
+                        .swiper-pagination-bullet
+                            width: 8px
+                            height: 8px
+                            margin-right: 5px
+                    .swiper-container .swiper-slide .text 
+                        .depth
+                            font-size: 14px
+                            padding-bottom: 5px
+                        .title
+                            font-size: 22px
+                            padding-bottom: 10px
+                        p
+                            font-size: 14px
+        #section3 
+            .wrap
+                padding: 20px
+                .gridWrap ul 
+                    li 
+                        a 
+                            padding: 30px 20px 20px 20px
+                        .depth
+                            font-size: 14px
+                            padding-bottom: 20px
+                        .title
+                            font-size: 20px
+                        .goto
+                            width: 30px
+                            height: 30px
+                            background-size: 12px
+                            right: 15px
+                    li.type02
+                        padding: 30px 20px 40px 20px
+                        .text 
+                            .title
+                                font-size: 36px
+                                padding-bottom: 10px
+                            p
+                                font-size: 14px
+                        >a
+                            padding: 0
+                    li.type03
+                        padding: 20px
+                        padding-left: 10px
+                        a .thum
+                            width: 50%
+                    li:nth-child(even) > a
+                        padding-left: 10px
+                    li:nth-child(odd) > a
+                        padding-left: 20px
+                    li .sc3_slide01 
+                        .depth
+                            padding: 30px 0 0 16px
+                        .swiper-pagination
+                            padding: 10px 0 0 14px
+                    
