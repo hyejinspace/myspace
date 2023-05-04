@@ -1,0 +1,1213 @@
+.main
+    margin: 0
+    .section
+        position: relative
+        background-size: cover
+        background-position: center
+    #section0
+        background-image: url('../images/2023_section0_bg.jpg')
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        .contents_wrap
+            position: relative
+            width: 100%
+            .contents
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%,-50%)
+                transition: 1s
+                img
+                    display: block
+                    width: auto
+                    transition: 0.3s
+                .content_text
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    position: absolute
+                    top: 55%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    width: 50%
+                    height: 50%
+                    max-width: 500px
+                    max-height: 500px
+                    z-index: 5
+                    opacity: 0
+                    margin-bottom: -20px
+                    transition: opacity 0.8s ,top 0.8s
+                    transition-delay: 1s
+                    .tit
+                        font-size: 30px
+                        line-height: 1.4
+                        color: #fff
+                        font-family: 'omniGothicB'
+                        text-align: center
+                a:hover ~ img
+                    transform: scale(1.1)
+                    filter: brightness(60%) grayscale(70%)
+            .contents.on
+                z-index: 5
+                .content_text
+                    opacity: 1
+                    top: 50%
+
+            .content01 .content_text
+                padding-top: 20%
+                transition-delay: 1.3s
+            .content01.on
+                margin-top: -400px
+                
+            .content02 .content_text
+                padding-left: 32%
+                transition-delay: 1.5s
+            .content02.on
+                margin-top: 110px
+                margin-left: -820px
+
+            .content03 .content_text
+                padding-top: 5%
+                transition-delay: 1.7s
+            .content03.on
+                margin-top: -20px
+                margin-left: 770px
+
+            .content04 .content_text
+                padding-top: 0
+                transition-delay: 1.9s
+            .content04.on
+                margin-top: 420px
+                margin-left: 250px
+                opacity: 0.1
+                transition: 1s
+
+        .visual_title
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            position: absolute
+            top: 52%
+            left: 0
+            width: 100%
+            transform: translateY(-50%)
+            text-align: center
+            z-index: 2
+            .subtitle
+                position: relative
+                display: inline-block
+                font-size: 28px
+                font-family: 'omniGothicL'
+                line-height: 1.4
+                padding-bottom: 15px
+                opacity: 0
+                top: 30px
+                transition: opacity 0.8s, top 0.8s
+                transition-delay: 0.5s
+            .title
+                display: inline-block
+                font-size: 52px
+                padding-bottom: 25px
+                font-family: 'omniGothicL'
+                span
+                    position: relative
+                    display: block
+                    opacity: 0
+                    top: 30px
+                    transition: opacity 0.8s, top 0.8s
+                    transition-delay: 0.7s
+                    &:nth-child(2)
+                        transition-delay: 0.9s
+                    &:nth-child(3)
+                        transition-delay: 1s
+                b
+                    display: block
+                    position: relative
+                    font-family: 'PyeongChangPeace-Bold'
+                    font-size: 80px
+                    color: #1b7bcf
+            .vol
+                position: relative
+                opacity: 0
+                top: 30px
+                transition: opacity 0.8s, top 0.8s
+                transition-delay: 1.1s
+                font-size: 18px
+                padding: 12px 30px
+                margin-bottom: 30px
+                font-family: 'omniGothicM'
+                font-weight: 300
+                border-radius: 0 0 30px 30px
+                background-color: #2065e4
+                color: #fff
+        .visual_title.on
+            .vol,.subtitle,.title span
+                opacity: 1
+                top: 0
+            // @keyframes progress1
+            //     0% 
+            //         transform: scalex(0)
+            //         opacity: .5
+            
+            //     90%
+            //         transform: scalex(1)
+            //         opacity: 1
+                
+            //     92%
+            //         transform: scalex(1)
+            //         opacity: 1
+                
+            //     100%
+            //         transform: scalex(1)
+            //         opacity: 0
+            // @keyframes progress2
+            //     0%
+            //         transform: scale(.3,.8) translatez(0)
+            //         opacity: 0
+                
+            //     90%
+            //         transform: scale(1,1) translatez(0)
+            //         opacity: 1
+            //         left: 100%
+                
+            //     100%
+            //         transform: scale(1,1) translatez(0)
+            //         opacity: 0
+            //         left: 100%
+            // .title .line
+            //     position: absolute
+            //     bottom: 0
+            //     width: 150%
+            //     left: 40%
+            //     transform: translateX(-50%)
+            //     height: 3px
+            //     background: rgba(255,255,255,.1)
+            //     &:before
+            //         animation-name: progress2
+            //         animation-duration: 4s
+            //         animation-iteration-count: infinite
+            //         animation-delay: 2s
+            //         transform-origin: 0 0
+            //         content: ""
+            //         display: block
+            //         width: 100%
+            //         height: 100%
+            //         background: linear-gradient(to right, rgba(255,255,255,0.4) 10%, rgba(255,255,0,1) 80%, rgba(255,255,0,1))
+            //         opacity: 0
+            //     &:after
+            //         content: ""
+            //         position: absolute
+            //         animation-name: progress2
+            //         animation-duration: 4s
+            //         animation-iteration-count: infinite
+            //         animation-delay: 2s
+            //         transform-origin: 90% 50%
+            //         left: 0
+            //         top: -20px
+            //         width: 50px
+            //         height: 41px
+            //         border-radius: 2px
+            //         background: rgba(255,255,0,.55)
+            //         filter: blur(8px)
+            //         box-shadow: 0 0 10px 6px rgba(255,255,0,.4),-20px 0 15px 4px rgba(255,255,0,.3),-40px 0 15px 2px rgba(255,255,0,.2),-60px 0 10px 1px rgba(255,255,0,.1),-80px 0 10px 1px rgba(255,255,0,.05)
+            //         opacity: 0
+    #section0.active .contents_wrap .content04
+        opacity: 1
+    #section1
+        background-image: url('../images/2023_section1_bg.jpg')
+        background-size: cover
+        background-position: center
+        background-repeat: no-repeat
+        .wrap
+            position: relative
+            display: flex
+            justify-content: center
+            align-items: center
+            height: 100%
+            z-index: 6
+        .left 
+            width: 50%
+            max-width: 690px
+            margin-right: 100px
+            >a
+                display: inline-block
+                width: 100%
+            .img
+                position: relative
+                img
+                    position: absolute
+                    display: block
+                    width: auto
+                    max-width: 100%
+                    z-index: 2
+                .wave 
+                    display: block
+                    position: relative
+                    width: 100%
+                    max-width: 700px
+                    height: 500px
+                    top: 30px
+                    left: 0
+                    margin: 0 auto
+                    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%
+                    border: 2px solid #75a9f4
+                    // background-size: 400% 100%
+                    animation: blobber 3.5s 0s linear infinite
+                    transform-origin: 50% 50%
+                    z-index: 1
+                    &::before
+                        position: absolute
+                        content: ''
+                        display: block
+                        left: 15px
+                        top: -20px
+                        width: 95%
+                        max-width: 700px
+                        height: 90%
+                        border: 2px solid #e6effd
+                        border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%
+                        animation: blobber2 2.5s 1s ease-in-out infinite
+                        // transform: translate3d(0, 0, 0)
+                        opacity: .5
+                    @keyframes blobber
+                        0%,100%
+                            border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%
+                            transform: translate3d(0,50px,0) rotateZ(-30deg)
+                        34% 
+                            border-radius: 70% 30% 46% 54% / 30% 29% 31% 70%
+                            transform:  translate3d(0,30px,0) rotateZ(-30deg)
+                            width: 100%
+                        50% 
+                            transform: translate3d(0,50px,0) rotateZ(-30deg)
+                        67% 
+                            border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% 
+                            transform: translate3d(0,30px,0) rotateZ(-30deg)
+                            width: 100%
+                    @keyframes blobber2
+                        0%,100%
+                            border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%
+                            transform: translate3d(0,50px,0) rotateZ(-10deg)
+                        34% 
+                            border-radius: 70% 30% 46% 54% / 30% 29% 31% 70%
+                            transform:  translate3d(0,30px,0) rotateZ(-10deg)
+                            width: 105%
+                        50% 
+                            transform: translate3d(0,50px,0) rotateZ(-10deg)
+                        67% 
+                            border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% 
+                            transform: translate3d(0,30px,0) rotateZ(-10deg)
+                            width: 105%
+            .top
+                position: relative
+                display: flex
+                align-items: center
+                padding-bottom: 40px
+                left: calc(100% + 110px)
+                top: -60px
+                h2
+                    font-size: 36px
+                    font-family: 'omniGothicM'
+        .right
+            position: relative
+            z-index: 1
+            width: 50%
+            max-width: 600px
+            padding-top: 80px
+            .read_news
+                position: relative
+                display: flex
+                align-items: center
+                margin-bottom: 45px
+                img
+                    display: block
+                    width: auto
+                    max-width: 100%
+                    margin-right: 20px
+                    padding-bottom: 15px
+                span
+                    display: inline-block
+                    font-size: 24px
+                    font-family: 'omniGothicB'
+                    font-weight: 500
+                    padding-bottom: 10px
+                    color: #536dfe
+                h3
+                    font-size: 33px
+                    font-weight: 500
+                    font-family: 'omniGothicB'
+                    background: linear-gradient(to top, #fdde57 40%, transparent 30%)
+            .tab
+                .tab_btn
+                    display: flex
+                    align-items: center
+                    justify-content: space-between
+                    margin-bottom: 60px
+                    border-bottom: 1px solid #919191
+                    button
+                        font-size: 24px
+                        word-break: keep-all
+                        padding: 10px 40px 10px 10px
+                        color: #9d9e9e
+                        font-family: 'omniGothicM'
+                        cursor: pointer
+                        transition: 0.2s
+                        &:last-child
+                            padding-right: 0
+                        &:hover
+                            color: #0f66ee
+                    button.on
+                        color: #0f66ee
+                    .more
+                        display: none
+                        font-size: 18px
+                        color: #303030
+                        opacity: 0.67
+                        margin-right: 20px
+                    .more.on
+                        display: inline-block
+                .tab_con .con
+                    display: none
+                    // .conTitle_wrap
+                    //     display: flex
+                    //     justify-content: space-between
+                    //     align-items: center
+                    //     padding-bottom: 20px
+                    //     h3
+                    //         font-size: 33px
+                    //         font-weight: 500
+                    //         font-family: 'omniGothicB'
+                    .list
+                        >a
+                            position: relative
+                            display: flex
+                            align-items: center
+                            border: 2px solid #dadada
+                            border-radius: 20px
+                            overflow: hidden
+                            box-shadow: 0 0 10px 3px rgba(100,100,100,0.2)
+                            margin-bottom: 30px
+                            background-color: #fff
+                            &:last-child
+                                margin-bottom: 0
+                            .thum 
+                                position: relative
+                                border: 2px solid #dadada
+                                border-radius: 15px
+                                overflow: hidden
+                                min-width: 165px
+                                height: 110px
+                                img
+                                    position: absolute
+                                    top: 50%
+                                    left: 50%
+                                    transform: translate(-50%,-50%)
+                                    display: block
+                                    width: auto
+                                    // max-width: 105%
+                                    height: 105%
+                            .text
+                                padding: 20px 60px 20px 20px
+                                height: 100%
+                                p
+                                    font-size: 16px
+                                    font-family: 'GmarketSansMedium'
+                                    word-break: keep-all
+                                    color: #a1a1a1
+                                    display: -webkit-box
+                                    -webkit-line-clamp: 1
+                                    -webkit-box-orient: vertical
+                                    text-overflow: ellipsis
+                                    overflow: hidden
+                                span
+                                    font-size: 21px
+                                    word-break: break-all
+                                    font-family: 'GmarketSansMedium'
+                                    display: -webkit-box
+                                    -webkit-line-clamp: 2
+                                    -webkit-box-orient: vertical
+                                    text-overflow: ellipsis
+                                    overflow: hidden
+                            .more
+                                position: absolute
+                                top: 50%
+                                right: 20px
+                                transform: translateY(-50%)
+                                display: inline-block
+                .tab_con .con.on
+                    display: block
+
+    #section2
+        background-color: #282828
+        overflow: hidden
+        .wrap
+            display: flex
+            flex-direction: column
+            justify-content: flex-start
+            align-items: flex-start
+            width: 100%
+        .scTitle
+            position: relative
+            font-size: 48px
+            line-height: 1.3
+            padding-bottom: 40px
+            padding-left: 135px
+            color: #fff
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                width: 50px
+                height: 50px
+                right: -53px
+                background-image: url('../images/2023_sc3_emiji.png')
+                background-size: contain
+                background-repeat: no-repeat
+                background-position: center
+        .swiper
+            display: flex
+            flex-direction: column
+            justify-content: center
+            position: relative
+            width: 100%
+            height: 100%
+            padding-left: 80px
+            .swiper_wrap
+                position: relative
+                width: 100%
+                max-width: 1700px
+                .swiper-container
+                    width: calc(100% - 120px)
+                    overflow: unset
+                .pagination_arrow
+                    position: absolute
+                    top: -90px
+                    right: 60px
+                    display: flex
+                    width: 107px
+                .swiper-button-next
+                    position: static
+                    width: 50px
+                    height: 50px
+                    background-image: url('../images/2023_arrow_next.png')
+                    background-size: contain
+                    &:hover
+                        background-image: url('../images/2023_arrow_next_hover.png')
+                        background-color: #fff
+                .swiper-button-prev
+                    position: static
+                    width: 50px
+                    height: 50px
+                    background-image: url('../images/2023_arrow_prev.png')
+                    background-size: contain
+                    margin-right: 7px
+                    &:hover
+                        background-image: url('../images/2023_arrow_prev_hover.png')
+                        background-color: #fff
+            .swiper-slide
+                display: inline-block
+                position: relative
+                width: calc(33.3333% - 66.6666px)
+                max-width: 478px
+                margin-right: 100px
+                transition: opacity 0.3s
+                .thum
+                    position: relative
+                    overflow: hidden
+                    border-radius: 10px
+                    box-shadow: 12px 20px 10px 0px rgb(4 0 0 / 40%)
+                    &::before
+                        content: ''
+                        display: block
+                        position: absolute
+                        width: 200px
+                        height: 200px
+                        left: -80px
+                        top: -90px
+                        border-radius: 100px
+                        z-index: 5
+                    .category
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        position: absolute
+                        color: #fff
+                        top: 0
+                        left: 0
+                        width: 100px
+                        height: 90px
+                        font-family: 'omniGothicB'
+                        text-align: center
+                        z-index: 5
+                    img
+                        display: block
+                        width: 100%
+                        transition: 0.3s
+                .thum.orenge::before
+                    background-color: #ea5201
+                .thum.blue::before
+                    background-color: #0756db
+                .thum.yellow::before
+                    background-color: #e5ae1b
+                .thum.green::before
+                    background-color: #268121
+                .thum.darkblue::before
+                    background-color: #173567
+                .thum.dullblue::before
+                    background-color: #3c6ab7
+                .text
+                    position: absolute
+                    left: 0
+                    top: 0
+                    width: 100%
+                    height: 101%
+                    background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5))
+                    .title
+                        position: absolute
+                        left: 5%
+                        bottom: 5%
+                        font-size: 30px
+                        font-family: 'omniGothicB'
+                        line-height: 1.4
+                        font-weight: 500
+                        color: #fff
+            .swiper-slide.swiper-slide-prev
+                opacity: 0
+            .slide_nav
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 80%
+                max-width: 1200px
+                padding-bottom: 70px
+                padding-left: 55px
+                li 
+                    width: calc(20% - 80px)
+                    margin-right: 100px
+                    &:last-child
+                        margin-right: 0
+                    button 
+                        display: inline-block
+                        color: #fff
+                        font-family: 'omniGothicB'
+                        cursor: pointer
+                        word-break: keep-all
+                        white-space: nowrap
+                        font-size: 24px
+                        &:hover
+                            color: #59c7f7
+                li.on button
+                    color: #59c7f7
+            .pagination_wrap
+                position: relative
+                display: flex
+                justify-content: center
+                align-items: center
+                width: 100%
+                padding-top: 80px
+                .swiper-pagination
+                    position: static
+                    width: 390px
+                    height: 4px
+                    background-color: #fff
+                    .swiper-pagination-progressbar
+                        background: #686868
+                .swiper-pagenum
+                    width: 55px
+                    font-size: 20px
+                    text-align: right
+                    color: #fff
+                    b
+                        font-size: 20px
+                        font-weight: 600
+                        color: #fff
+                    span
+                        font-size: 20px
+                        font-weight: 600
+                        color: #fff
+    #section3
+        position: relative
+        overflow: hidden
+        .wrap
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: flex-start
+            width: 95%
+            height: 100%
+            max-width: 1558px
+            margin: 0 auto
+        .scTitle
+            position: relative
+            font-size: 48px
+            line-height: 1.3
+            padding-bottom: 40px
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                width: 50px
+                height: 50px
+                right: -53px
+                background-image: url('../images/2023_sc4_emiji.png')
+                background-size: contain
+                background-repeat: no-repeat
+                background-position: center
+        .conWrap
+            display: flex
+            // flex-wrap: wrap
+            align-items: center
+            a
+                position: relative
+                display: inline-block
+                margin-right: 30px
+                border-radius: 10px
+                overflow: hidden
+                &:last-child
+                    margin-right: 0
+                .img img
+                    display: block
+                    width: 100%
+                .textWrap
+                    display: flex
+                    flex-direction: column
+                    justify-content: flex-end
+                    align-items: flex-start
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 100%
+                    padding: 40px
+                    background: linear-gradient(rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.8))
+                    .category
+                        display: inline-block
+                        font-size: 18px
+                        font-family: 'omniGothicB'
+                        padding: 7px 10px 5px
+                        margin-bottom: 10px
+                        border-radius: 10px
+                        color: #fff
+                    .category.color1
+                        background-color: #f13e2e
+                    .category.color2
+                        background-color: #ff9a00
+                    .category.color3
+                        background-color: #1498f3
+                    h4
+                        font-size: 30px
+                        line-height: 1.3
+                        font-weight: 500
+                        font-family: 'omniGothicB'
+                        padding-bottom: 15px
+                        color: #fff
+                        &:last-child
+                            padding-bottom: 0
+                    p
+                        font-size: 18px
+                        line-height: 1.5
+                        font-family: 'omniGothicB'
+                        color: #fff
+                    
+
+                        
+
+
+// 비디오 팝업
+.popup.video
+    display: none
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
+    position: fixed
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    padding: 1rem 0
+    overflow: auto
+    background-color: rgba(0, 0, 0, 0.5)
+    z-index: 999
+    .wrap
+        position: relative
+        width: 90%
+        max-width: 900px
+        .inner
+            height: 0
+            padding-bottom: 56.25%
+            // iframe,
+            // object,
+            // embed
+            //     position: absolute
+            //     top: 0
+            //     left: 0
+            //     width: 100%
+            //     height: 100%
+            //     z-index: 1
+            video
+                position: absolute
+                left: 50%
+                top: 50%
+                width: 100%
+                height: 100%
+                transform: translate(-50%,-50%)
+                z-index: 1
+
+//audio 팝업
+.popup.audio
+    .wrap
+        width: 90%
+        max-width: 900px
+        .inner
+            position: relative
+
+
+
+/*Small PC*/
+@media (max-width: 1666px)
+    section.main 
+        #section0 .contents_wrap 
+            .content02.on
+                margin-left: -52vw
+            .content03.on
+                margin-left: 41vw
+        #section2 .swiper .swiper-slide .text .title
+            font-size: 1.8vw
+
+
+/*IPad Pro*/
+@media (max-width: 1366px)
+    section.main
+        overflow-x: hidden 
+        .fp-section .fp-tableCell,
+        .fp-section.fp-table, .fp-slide.fp-table
+            height: auto !important
+        #section0 
+            height: 1200px !important
+            .contents_wrap 
+                .content01.on
+                    margin-top: -450px
+                    margin-left: 180px
+                .content01
+                    img
+                        width: 400px
+                .content02.on 
+                    margin-top: -50px
+                .content02
+                    img
+                        width: 600px
+                .content03.on 
+                    margin-top: 50px
+                .content03
+                    img
+                        width: 450px
+                .content04.on 
+                    margin-top: 500px
+                    margin-left: 150px
+                    opacity: 1
+                .content04
+                    img
+                        width: 300px
+        #section1
+            background-image: none
+            .wrap
+                display: block
+                padding: 100px 0
+                width: auto
+            .left
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: flex-start
+                width: 90%
+                max-width: none
+                margin: 0 auto
+                padding-bottom: 80px
+                padding-top: 50px
+                .img
+                    width: 100%
+                    max-width: 695px
+                    margin: 0 auto
+                    .wave
+                        // top: 0
+                        margin: 0
+                        max-width: 680px
+                        height: 450px
+                    img
+                        width: 100%
+                        max-width: 670px
+                        margin: 0 auto
+                .top
+                    position: static
+            .right
+                width: 90%
+                max-width: none
+                margin: 0 auto
+                padding-top: 70px
+                .read_news
+                    background-image: url('../images/2023_next.png')
+                    background-repeat: no-repeat
+                    background-size: 10px
+                    background-position: 95% center
+        #section2
+            .wrap
+                padding: 150px 0
+            .scTitle
+                margin: 0 auto
+                padding-left: 0
+            .swiper 
+                padding-left: 0
+                .slide_nav
+                    flex-wrap: wrap
+                    justify-content: center
+                    position: relative
+                    width: 90%
+                    margin: 0 auto
+                    padding-left: 0
+                    li
+                        width: 33.3333%
+                        margin-right: 0
+                        margin-bottom: 40px
+                        text-align: center
+                        &:nth-last-child(-n+2)
+                            margin-bottom: unset
+                .slide_nav.eq4
+                    li
+                        width: 25%
+                        &:nth-last-child(-n+2)
+                            margin-bottom: 40px
+                .swiper-slide 
+                    width: 60%
+                    max-width: none
+                    margin-right: 60px
+                    .thum 
+                        &::before
+                            width: 190px
+                            height: 190px
+                        .category
+                            width: 90px
+                            font-size: 18px
+                    .text .title
+                        font-size: 24px
+                .swiper_wrap .pagination_arrow
+                    display: none
+        #section3 
+            .wrap
+                padding: 120px 0 100px
+
+//Ipad
+@media (max-width: 1200px)
+    section.main 
+        #section0 
+            .visual_title 
+                .subtitle
+                    font-size: 2.8vw
+                .title
+                    font-size: 5.2vw
+                    b
+                        font-size: 8vw
+                .vol
+                    font-size: 1.8vw
+                    border-radius: 0 0 3vw 3vw
+                    padding: 1.2vw 3vw
+            // .visual_title.on 
+            //     .title .line
+            //         bottom: 50%
+        #section3 
+            .wrap
+                width: 90%
+            .conWrap
+                flex-wrap: wrap
+                a
+                    width: calc(50% - 15px)
+                a:first-child
+                    width: 100%
+                    margin-bottom: 30px
+                    margin-right: 0
+                
+
+/*tablet*/
+@media (max-width: 991.98px)
+    section.main
+        #section0 
+            background-image: url('../images/2023_section0_bg_mo.jpg')
+            background-position: center top
+            .contents_wrap 
+                .content01.on
+                    margin-top: -450px
+                .content01
+                    img
+                        width: 300px
+                .content02.on 
+                    margin-top: -100px
+                .content02
+                    img
+                        width: 500px
+                .content03.on 
+                    margin-top: 60px
+                .content03
+                    img
+                        width: 350px
+                .content04.on 
+                    margin-top: 480px
+                .content05
+                    img
+                        width: 250px
+
+/*tablet*/
+@media (max-width: 768px)
+    section.main
+        #section0
+            height: 150vw !important
+            .contents_wrap 
+                .content01.on
+                    margin-top: -55vw
+                    margin-left: 18vw
+                .content01
+                    img
+                        width: 35vw
+                .content02.on 
+                    margin-top: -10vw
+                .content02
+                    img
+                        width: 55vw
+                .content03.on 
+                    margin-top: 6vw
+                .content03
+                    img
+                        width: 40vw
+                .content04.on 
+                    margin-top: 60vw
+                    margin-left: 15vw
+                .content04
+                    img
+                        width: 30vw
+                .contents .content_text .tit
+                    font-size: 3.5vw
+
+        #section1 .left 
+            padding-top: 0
+            .img .wave
+                top: 10px
+                height: 60vw
+        #section2 .swiper .slide_nav.eq4 li button
+            font-size: 18px
+        #section3
+            .conWrap a
+                width: 100% !important
+                margin-bottom: 30px !important
+                margin-right: 0
+            
+// mobile
+@media (max-width: 576px)
+    section.main
+        #section0
+            height: 650px !important
+            .contents_wrap 
+                .content01.on
+                    margin-top: -230px
+                    margin-left: 100px
+                .content01
+                    img
+                        width: 160px
+                .content02.on 
+                    margin-top: -80px
+                    margin-left: -200px
+                .content02
+                    img
+                        width: 250px
+                    .content_text
+                        left: 60%
+                .content03.on 
+                    margin-top: 30px
+                    margin-left: 170px
+                .content03
+                    img
+                        width: 200px
+                    .content_text
+                        left: 40%
+                .content04.on 
+                    margin-top: 260px
+                    margin-left: 12px
+                .content04
+                    img
+                        width: 150px
+                .contents .content_text .tit
+                    font-size: 16px
+                    text-align: center
+
+            .visual_title 
+                .vol
+                    font-size: 12px
+                    padding: 8px 10px 6px
+                    margin-bottom: 10px
+                .subtitle
+                    font-size: 16px
+                    padding-bottom: 10px
+                .title 
+                    font-size: 28px
+                    padding-bottom: 10px
+                    b
+                        font-size: 32px
+            .visual_title.on .title .line
+                &::after
+                    width: 30px
+                    height: 21px
+                    top: -10px
+        #section1 
+            .wrap 
+                padding: 80px 0
+            .left
+                padding-bottom: 40px
+                .top
+                    padding-bottom: 20px
+            .right
+                .read_news
+                    margin-bottom: 25px
+                    img
+                        margin-right: 10px
+                        max-width: 100px
+                    span
+                        font-size: 18px
+                        pading-bottom: 5px
+                    h3
+                        font-size: 24px
+                .tab 
+                    .tab_btn
+                        margin-bottom: 40px
+                        .con_btn
+                            font-size: 16px
+                        .more
+                            font-size: 16px
+                            padding-right: 0
+                            margin-right: 0
+                            padding-bottom: 10px
+                    .tab_con .con 
+                        // .conTitle_wrap
+                        //     padding-bottom: 10px
+                        //     h3
+                        //         font-size: 24px
+                        .list > a 
+                            border-radius: 15px
+                            margin-bottom: 20px
+                            .thum
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                width: 40%
+                                max-width: 120px
+                                min-width: 120px
+                                height: 90px
+                                img
+                                    width: auto
+                                    max-width: none
+                                    height: 110%
+                            .text 
+                                padding: 10px 50px 10px 10px
+                                p
+                                    font-size: 14px
+                                    margin-bottom: 2px
+                                span
+                                    font-size: 16px
+                            .more
+                                width: 20px
+                                margin-right: 0
+        #section2 
+            .wrap 
+                padding: 80px 0
+            .scTitle
+                font-size: 30px
+                padding-bottom: 20px
+                &::before
+                    width: 30px
+                    height: 30px
+                    right: -35px
+            .swiper 
+                .swiper_wrap 
+                    width: 90%
+                    .swiper-button-next,.swiper-button-prev
+                        display: none
+                    .swiper-container
+                        width: 100%
+                        padding-left: 5%
+                .slide_nav 
+                    width: 100%
+                    padding-bottom: 40px
+                    li
+                        width: calc(30% - 10.666px)
+                        min-width: 110px
+                        margin-right: 10px
+                        margin-bottom: 20px
+                        button
+                            font-size: 16px
+                .slide_nav.eq4 li
+                    width: calc(50% - 10px)
+                    margin-bottom: 20px !important
+                    button
+                        font-size: 16px
+                .swiper-slide
+                    width: 70%
+                    margin-right: 20px
+                    .thum 
+                        &::before
+                            width: 170px
+                            height: 170px
+                        .category
+                            justify-content: start
+                            width: 90px
+                            height: 65px
+                            font-size: 14px
+                            padding: 0 10px
+                    .text .title
+                        font-size: 18px
+                .pagination_wrap
+                    left: 0
+                    padding-top: 50px
+                    .swiper-pagination
+                        width: 50%
+                    .swiper-pagenum 
+                        width: 40px
+                        font-size: 14px
+                        b
+                            font-size: 14px
+                        span
+                            font-size: 14px
+        #section3
+            .wrap
+                padding: 80px 0 60px
+            .scTitle
+                font-size: 30px
+                padding-bottom: 20px
+                &::before
+                    width: 30px
+                    height: 30px
+                    right: -35px
+            .conWrap a 
+                margin-bottom: 20px
+                .textWrap
+                    padding: 20px
+                    .category
+                        font-size: 14px
+                    h4
+                        font-size: 22px
+                        padding-bottom: 10px
+                    p
+                        font-size: 18px
+                    
+
+
+// mobile   
+@media (max-width: 374.98px)
+    section.main 
+        #section1 .right .con .list > a .thum
+            min-width: 120px
+            height: 80px
+        #section2 .swiper .slide_nav 
+            li 
+                min-width: 105px
+                margin-right: 0
+                button
+                    font-size: 14px
+            li.on button
+                font-size: 16px

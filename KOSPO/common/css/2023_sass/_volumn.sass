@@ -1,0 +1,196 @@
+
+//134호 추가
+
+.floatBubble
+    position: relative
+    .bubbles
+        position: absolute
+        top: 60px
+        left: 0
+        width: 100%
+        height: 100%
+        .bubble 
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            align-items: center
+            li
+                display: flex
+                justify-content: center
+                align-items: center
+                font-size: 17px
+                padding: 8px 20px
+                color: #fff
+                border-radius: 50px
+                text-align: center
+                animation: bubbleBounce 2s linear infinite alternate
+                margin-right: 15px
+                margin-bottom: 15px
+                &:last-child
+                    margin-right: 0
+            li.blue
+                background-color: #1395f0
+            li.darkBlue
+                background-color: #2545a1
+            li.yellow
+                background-color: #ffde00
+                color: #000
+            li.brightBlue
+                background-color: #043dfc
+            li:nth-child(2n)
+                animation: bubbleBounce 3s linear infinite alternate
+    @keyframes bubbleBounce
+        0%
+            transform: translateY(5px)
+        100%
+            transform: translateY(-5px)
+
+/*IPad Pro*/
+@media (max-width: 1366px)
+    .floatBubble .bubbles .bubble li
+        font-size: 1vw
+        margin-right: 0.8vw
+        margin-bottom: 0.8vw
+        padding: 0.8vw 1.8vw
+
+@media (max-width: 1200px)
+    .floatBubble .bubbles 
+        top: 6vw
+        .bubble li
+            font-size: 1.7vw
+            margin-right: 1vw
+            margin-bottom: 1vw
+            padding: 1.2vw 2.2vw
+// mobile
+@media (max-width: 576px)
+    .floatBubble 
+        padding-top: 170px
+        .bubbles
+            top: 0
+            left: 50%
+            max-width: 370px
+            transform: translateX(-50%)
+            .bubble li
+                font-size: 14px
+
+.sub .wrap #crawling-contents-textbox .textbox 
+    .border02.borderBg_vol134
+        padding-top: 500px !important
+        background-repeat: no-repeat
+        background-position: center top
+        background-size: 1297px
+
+// tablet
+@media (max-width: 768px)
+    .sub .wrap #crawling-contents-textbox .textbox 
+        .border02.borderBg_vol134
+            padding-top: 45vw !important
+            background-size: 120%
+
+
+//135호 추가 (이벤트 페이지 텍스트 에니메이션)
+.sub .wrap #crawling-contents-top .conTop_inner .title.textAni 
+    span.small
+        font-size: 80%
+        letter-spacing: -12px
+    span
+        display: inline-block
+        position: relative
+        animation-duration: 0.8s
+        animation-timing-function: cubic-bezier(0.41, -0.68, 0.34, 1.13)
+        animation-iteration-count: infinite
+        animation-direction: alternate
+        color: #fff
+    span.up
+        animation-name: up
+    span.down
+        animation-name: down
+    span.stop2
+        animation-delay: 0.2s
+    span.stop3
+        animation-delay: 0.4s
+    span.stop4
+        animation-delay: 0.6s
+    span.stop5
+        animation-delay: 0.8s
+    span.stop6
+        animation-delay: 1s
+    span.stop7
+        animation-delay: 1.2s
+    span.stop8
+        animation-delay: 1.4s
+    span.stop9
+        animation-delay: 1.6s
+        
+
+@keyframes down
+    0%, 40%
+        transform: translate(0, 0)
+    100% 
+        transform: translate(0, 6.5%)
+@keyframes up
+    0%, 40%
+        transform: translate(0, 0)
+    100% 
+        transform: translate(0, -6.5%)
+
+.sub .wrap #crawling-contents-top .conTop_inner.vol135
+    .location .depth2
+        background-color: #ffff00
+        color: #4e9dff
+        padding: 20px 40px 10px
+        font-weight: 900
+        margin-bottom: 60px
+    .left
+        width: 100%
+        max-width: 750px
+    .title.textAni
+        margin-left: 0
+        font-size: 100px
+        letter-spacing: -15px
+
+
+//틀린그림찾기 vol135
+.eventWrap.on.vol135
+    padding: 0 !important
+    >.box_title
+        display: none !important
+    .formArea
+        padding: 50px 0
+        position: relative
+        height: 100%
+
+
+
+@media (max-width: 1200px)
+    .sub .wrap #crawling-contents-top .conTop_inner.vol135
+        .left
+            margin: unset
+            max-width: 560px
+        .title.textAni
+            font-size: 72px
+            letter-spacing: -10px
+            span.small
+                letter-spacing: -8px
+
+@media (max-width: 1024px)
+    .sub .wrap #crawling-contents-top .conTop_inner.vol135
+        justify-content: center
+        top: 16%
+        .title.textAni
+            font-size: 60px
+            letter-spacing: -9px
+            span.small
+                letter-spacing: -6.5px
+    
+@media (max-width: 576px)
+    .sub .wrap #crawling-contents-top .conTop_inner.vol135
+        .location .depth2
+            margin-bottom: 0
+        .title.textAni
+            font-size: 38px
+            letter-spacing: -5.5px
+            margin-top: 0
+            line-height: 1.4
+            span.small
+                letter-spacing: -4px

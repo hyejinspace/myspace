@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean");
+@font-face {
+  font-family: 'Myriad Pro Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Condensed"), url("MYRIADPRO-COND.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'GmarketSansLight';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GmarketSansLight.eot");
+  src: local(""), url("../fonts/GmarketSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/GmarketSansLight.woff") format("woff"), url("../fonts/GmarketSansLight.ttf") format("truetype"), url("../fonts/GmarketSansLight.svg") format("svg");
+}
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GmarketSansMedium.eot");
+  src: local(""), url("../fonts/GmarketSansMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/GmarketSansMedium.woff") format("woff"), url("../fonts/GmarketSansMedium.ttf") format("truetype"), url("../fonts/GmarketSansMedium.svg") format("svg");
+}
+
+@font-face {
+  font-family: 'GmarketSansBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/GmarketSansBold.eot");
+  src: local(""), url("../fonts/GmarketSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/GmarketSansBold.woff") format("woff"), url("../fonts/GmarketSansBold.ttf") format("truetype"), url("../fonts/GmarketSansBold.svg") format("svg");
+}
+/*# sourceMappingURL=font.css.map */

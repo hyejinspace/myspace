@@ -1,0 +1,688 @@
+*
+    padding: 0
+    margin: 0
+    // letter-spacing: -0.75px
+    box-sizing: border-box
+    color: #000
+    -webkit-overflow-scrolling: touch
+img
+    vertical-align: middle
+select,button,textarea,input[type="text"],input[type="number"]
+    appearance: none
+    border: none
+    border-radius: 0
+    background-color: transparent
+select,input,button,textarea
+    &:focus
+        outline: none
+select
+    background: url('../img/select.jpg') no-repeat 98% 50%
+select::-ms-expand 
+    display: none
+input[type="radio"]
+    display: none
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+    -webkit-appearance: none
+textarea
+    resize: none
+table
+    border-collapse: collapse
+sub,sup
+    font-size: 75% !important
+html,body
+    width: 100%
+    min-width: 320px
+    font-family: 'omniGothicM', sans-serif
+    font-size: 20px
+    overflow-x: hidden
+    // scroll-behavior: smooth
+    // scroll-snap-type: y mandatory
+body
+    height: auto
+    min-width: 320px
+    margin: 0 auto
+    -ms-overflow-style: none
+    scrollbar-width: none
+body::-webkit-scrollbar
+    display: none
+    
+header
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    z-index: 900
+    .wrap
+        position: relative
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        width: 100%
+        max-width: 1600px
+        height: 100%
+        margin: 0 auto
+        .logo
+            position: absolute
+            display: block
+            max-width: 100%
+            top: 50px
+            left: 0
+            img
+                display: block
+                width: 100%
+        .nav_btn
+            position: absolute
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            top: 30px
+            right: 0
+            width: 93px
+            height: 93px
+            padding: calc((93px - 30px)/2) calc((93px - 40px)/2)
+            border-radius: 50%
+            background-color: #2065e4
+            cursor: pointer
+            transition: 0.3s
+            span
+                display: block
+                width: 40px
+                height: 6px
+                background-color: #fff
+                border-radius: 5px
+                transition: 0.3s
+        .nav_btn:hover
+            top: 26px
+            box-shadow: 0 5px 15px 0 rgba(0,0,0,0.3)
+
+header.main
+    top: 0
+    transition: 0.3s
+
+body.fp-viewing-1 header.main,
+body.fp-viewing-2 header.main,
+body.fp-viewing-3 header.main,
+body.fp-viewing-4 header.main
+    top: -200px
+    
+nav.on
+    display: block
+nav
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0,0.5)
+    z-index: 900
+    .wrap
+        position: fixed
+        top: 0
+        right: 0
+        width: 900px
+        max-width: 90%
+        height: 100%
+        background-color: #333
+        box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.5)
+        .inner
+            display: flex
+            // flex-wrap: wrap
+            flex-direction: column
+            justify-content: start
+            align-items: flex-start
+            position: relative
+            width: 100%
+            height: 100%
+            padding: 50px 50px 50px 90px
+            .close
+                position: absolute
+                top: 80px
+                left: 0
+                transform: translateX(-50%)
+                width: 88px
+                height: 88px
+                background-image: url(../../common/images/2023_close_btn.png)
+                background-size: contain
+                background-repeat: no-repeat
+                cursor: pointer
+                text-indent: -9999px
+            .logo
+                display: inline-block
+                width: 250px
+                padding-bottom: 80px
+                img
+                    display: block
+                    width: 100%
+                    filter: brightness(100) grayscale(1)
+            .vol
+                display: inline-block
+                .viewPast
+                    position: absolute
+                    display: block
+                    top: 40px
+                    right: 50px
+                    width: 180px
+                    height: 60px
+                    font-family: 'omniGothicB'
+                    font-size: 22px
+                    line-height: 60px
+                    color: #fff
+                    background-color: #422eff
+                    border-radius: 50px
+                    cursor: pointer
+                    transition: 0.3s  
+                    z-index: 10
+                .last_month
+                    display: flex
+                    justify-content: start
+                    position: absolute
+                    right: 80px
+                    top: 40px
+                    width: 0px
+                    padding: 0 10px
+                    background-color: #ededed
+                    transition: 0.3s
+                    border-radius: 50px
+                    overflow: hidden
+                    transform-origin: right
+                    z-index: 6
+                    >li
+                        &:last-child >a::before
+                            display: none
+                        >a
+                            position: relative
+                            display: block
+                            height: 58px
+                            padding: 0 30px
+                            font-family: 'omniGothicB'
+                            font-size: 18px
+                            line-height: 58px
+                            &::before
+                                content: ''
+                                display: block
+                                position: absolute
+                                top: 50%
+                                right: 0
+                                transform: translateY(-50%)
+                                width: 1px
+                                height: 18px
+                                background-color: #000
+                    
+                .last_month::-webkit-scrollbar
+                    display: none
+                //이전호 보기 버튼 눌렀을 때
+                .viewPast.on ~ .last_month
+                    width: calc(100% - 130px)
+            .vol:hover
+                .viewPast
+                    top: 35px
+                    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.5) 
+                .last_month
+                    top: 36px  
+            .gnb_wrap
+                display: flex
+                flex-wrap: wrap
+                justify-content: start
+                width: 100%
+                max-width: 1100px
+                margin: 0 auto
+                padding-bottom: 80px
+                >li 
+                    position: relative
+                    width: calc(33.3333% - 20px)
+                    min-height: 50%
+                    margin-right: 30px
+                    padding: 0 30px
+                    &:first-child
+                        padding-left: 0
+                    &:last-child
+                        margin-right: 0
+                        padding-right: 0
+                    h2
+                        display: inline-block
+                        font-size: 24px
+                        line-height: 1.4
+                        padding-bottom: 30px
+                        word-break: keep-all
+                    h2.color1
+                        color: #ffc501
+                    h2.color2
+                        color: #ef78ea
+                    h2.color3
+                        color: #b7ffcb
+                    .lnb li
+                        margin-bottom: 20px
+                        width: 100%
+                        &:last-child
+                            margin-bottom: 0
+                        a 
+                            display: inline-block
+                            font-size: 24px
+                            color: #fff
+                            &:hover
+                                color: #59ceff
+                >li:nth-child(1)
+                    width: calc(33.3333% - 20px)
+                    &::before
+                        content: ''
+                        display: block
+                        position: absolute
+                        width: 1px 
+                        height: 110%
+                        background-color: #fff
+                        right: 0
+                        top: 0
+                >li:nth-child(2)
+                    width: calc(33.3333% - 20px)
+                    &::before
+                        content: ''
+                        display: block
+                        position: absolute
+                        width: 1px 
+                        height: 110%
+                        background-color: #fff
+                        right: 0
+                        top: 0
+            .bottom
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                width: 100%
+                max-width: 1100px
+                margin: 0 auto
+                .btn_wrap
+                    width: calc(20% - 10px)
+                    margin-right: 20px
+                    a
+                        position: relative
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        top: 0
+                        width: 140px
+                        height: 140px
+                        padding: 0 40px
+                        border: 2px solid #fff
+                        border-radius: 30px
+                        text-align: center
+                        font-size: 26px
+                        color: #fff
+                        cursor: pointer
+                        transition: 0.3s
+                        &:hover
+                            top: -5px
+                            background-color: #422eff
+                            border-color: #422eff
+                            box-shadow: 0 5px 15px 0 rgba(0,0,0,0.5)
+                .event_banner 
+                    width: calc(80% - 10px)
+                    img
+                        display: block
+                        width: 100%
+footer
+    padding: 50px 0
+    background-color: #454545
+    .wrap
+        display: flex
+        // flex-wrap: wrap
+        align-items: center
+        justify-content: start
+        align-items: flex-start
+        width: 90%
+        max-width: 1400px
+        margin: 0 auto
+    a.logo
+        display: inline-block
+        margin-right: 60px
+    .address
+        line-height: 1.4
+        > span
+            padding-right: 0.5rem
+            margin-right: 0.5rem
+            font-size: 0.8rem
+            border-right: 1px solid #d3d3d3
+            color: #d3d3d3
+        > span:last-child
+            padding: 0
+            margin: 0
+            border: none
+    .logo > img
+        display: block
+        max-width: 100%
+    .sns
+        display: none
+        
+.mo1666
+    display: none !important
+.mo1365
+    display: none !important
+.mo1440
+    display: none !important
+.mo1200
+    display: none !important
+.mo1024
+    display: none !important
+.mo768
+    display: none !important
+.mo
+    display: none !important
+
+//small PC
+@media (max-width: 1666px)
+    header .wrap
+        .logo
+            left: 5%
+        .nav_btn
+            right: 5%
+
+    .pc1666
+        display: none !important
+    .mo1666
+        display: block !important
+
+        
+//small PC
+@media (max-width: 1440px)
+    .pc1440
+        display: none !important
+    .mo1440
+        display: block !important
+        
+//small PC
+@media (max-width: 1366px)
+    header.main
+        top: 0 !important
+    footer .wrap
+        display: block
+        text-align: center
+        .logo
+            display: inline-block
+            padding-bottom: 15px
+            margin-right: 0
+        .address > span
+            display: block
+            width: 100%
+            padding-bottom: 5px
+            border: none
+            padding-right: 0
+            &:last-child
+                opacity: 0.5
+    .pc1365
+        display: none !important
+    .mo1365
+        display: block !important
+
+//Ipad
+@media (max-width: 1200px)
+    .pc1200
+        display: none !important
+    .mo1200
+        display: block !important
+
+//Ipad
+@media (max-width: 1024px)
+    header .wrap .nav_btn
+        width: 70px
+        height: 70px
+        padding: 24px 15.5px
+        span
+            width: 30px
+            height: 4px
+    nav .wrap
+        width: 100%
+        max-width: 100%
+        height: 100%
+        max-height: 100%
+        overflow-y: scroll 
+        .inner 
+            display: block
+            padding: 50px
+            height: auto
+            .close
+                left: auto
+                top: 30px
+                right: 0
+                width: 70px
+                height: 70px
+            .vol 
+                position: absolute
+                left: 0
+                bottom: 50px
+                width: 100%
+                height: 64px
+                .viewPast
+                    height: 65px
+                    top: 0
+                    right: auto
+                    left: 50px
+                    background-color: #1a6dce
+                    font-size: 20px
+                .last_month
+                    justify-content: flex-end
+                    height: 64px
+                    top: 0
+                    right: auto
+                    left: 100px
+                    bottom: 50px
+                    li a
+                        height: 100%
+                        font-size: 16px
+                        line-height: 64px
+                        padding: 0 20px
+                        white-space: nowrap
+                    li:last-child a::before
+                        display: none
+            .vol:hover
+                .viewPast
+                    top: 0
+                    box-shadow: none
+                .last_month
+                    top: 0
+            .gnb_wrap
+                >li
+                    width: 50% !important
+                    height: auto
+                    min-height: auto
+                    margin: 0
+                    padding: 0
+                    border: none
+                    padding-bottom: 30px
+                    &:last-child
+                        padding-bottom: 0
+                    h2
+                        text-align: center
+                        width: 100%
+                    .lnb li
+                        text-align: center
+                >li:nth-child(1)
+                    order: 1
+                    &::before
+                        height: 100%
+                >li:nth-child(2)
+                    order: 3
+                    padding-bottom: 0
+                    &::before
+                        height: 100%
+                >li:nth-child(3)
+                    order: 2
+            .bottom
+                align-items: flex-start
+                flex-direction: column-reverse
+                .event_banner
+                    width: 100%
+                    margin-bottom: 50px
+                .btn_wrap
+                    display: flex
+                    justify-content: flex-end
+                    width: 100%
+                    a
+                        position: relative
+                        display: inline-block
+                        top: 0
+                        width: 176px
+                        height: 64px
+                        padding: 0
+                        border: 2px solid #fff
+                        border-radius: 50px
+                        text-align: center
+                        font-size: 20px
+                        line-height: 64px
+                        color: #fff
+                        cursor: pointer
+                        transition: 0.3s
+                        margin: 0
+                        // margin: 0 calc((100% - 528px)/2) 0 calc((100% - 176px)/2)
+                    a:hover
+                        background-color: #1a6dce
+                        border-color: #1a6dce
+
+
+    .pc1024
+        display: none !important
+    .mo1024
+        display: block !important
+
+
+// tablet
+@media (max-width: 768px)
+    header .wrap
+        // padding: 30px 5%
+        .logo
+            width: 250px
+    nav .wrap .inner 
+        padding: 30px
+        .vol 
+            bottom: 30px
+            .viewPast
+                width: 150px
+                left: 30px
+        .bottom .btn_wrap a
+            width: 150px
+            &:hover
+                top: 0
+                box-shadow: none
+                background-color: unset
+                border-color: unset
+            // &:first-child
+            //     margin: 0 calc((100% - 460px) / 2) 0 calc((100% - 150px) / 2)
+    .pc768
+        display: none !important
+    .mo768
+        display: block !important
+
+// mobile
+@media (max-width: 576px)
+    header .wrap
+        // padding: 20px 5%
+        .logo
+            width: 180px
+            top: 20px
+        .nav_btn
+            top: 20px
+            width: 50px
+            height: 50px
+            padding: 16px 11.5px
+            margin-top: -10px
+            span
+                height: 3px
+                width: 24px
+    nav .wrap .inner 
+        padding: 30px 20px 60px
+        .close
+            width: 45px
+            height: 45px
+            margin-top: -10px
+        .logo
+            width: 180px
+            top: 30px
+            padding-bottom: 30px
+        .gnb_wrap 
+            padding-bottom: 40px
+            >li
+                margin: 0
+                padding-bottom: 20px
+                h2
+                    font-size: 17px
+                    padding-bottom: 20px
+                .lnb li
+                    margin-bottom: 10px
+                    a
+                        font-size: 17px
+        .vol
+            bottom: 160px
+            width: calc(100% - 40px)
+            .viewPast
+                position: relative
+                left: 20px
+                width: 100%
+                height: 50px
+                font-size: 17px
+                line-height: 50px
+            .last_month
+                width: 100%
+                left: 20px
+                height: 50px
+                flex-direction: column
+                background-color: #1a6dce
+                li 
+                    text-align: center
+                    a
+                        height: auto
+                        line-height: 42.5px
+                        font-size: 15px
+                        color: #fff
+                    a::before
+                        top: 0
+                        left: 50%
+                        transform: translate(-50%, 0)
+                        width: 50%
+                        height: 1px
+                        background-color: #fff
+                        opacity: 0.5
+            .viewPast.on
+                box-shadow: none
+            .viewPast.on ~ .last_month
+                width: 100%
+                height: 260px
+                border-radius: 30px 30px 0 0 
+                li:last-child a::before
+                    display: block
+        .bottom 
+            .event_banner
+                margin-bottom: 30px
+            .btn_wrap
+                flex-direction: column
+                padding-top: 80px
+                a:first-child
+                    margin: 0 0 30px
+                a
+                    width: 100%
+                    height: 55px
+                    margin-bottom: 30px
+                    font-size: 17px
+                    line-height: 55px
+
+    footer 
+        padding: 30px 0
+        .wrap 
+            .logo
+                width: 180px
+                padding-bottom: 10px
+            .address span
+                font-size: 12px
+                margin: 0
+    .pc
+        display: none !important
+    .mo
+        display: block !important
+// mobile
+@media (max-width: 375px)
+    nav .wrap .inner .logo
+        width: 140px
+        top: 32px
+
+    

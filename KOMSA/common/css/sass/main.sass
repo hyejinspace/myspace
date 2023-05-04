@@ -1,0 +1,255 @@
+.main
+    position: relative
+    width: 100%
+    height: 100%
+    background-image: url(/common/images/main_bg.png)
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: left bottom
+    .wrap
+        width: 100%
+        height: 100%
+        .visual
+            display: inline-block
+            position: absolute
+            top: calc(104px + 2rem)
+            left: 3.5rem
+            width: 56.24%
+            height: calc(100% - (104px + 2rem + 107px))
+            z-index: 995
+            .visual_inner
+                display: block
+                border-radius: 140px 140px 0 140px
+                overflow: hidden
+                width: 100%
+                height: 100%
+                .visual_text
+                    position: absolute
+                    top: 50%
+                    left: 5rem
+                    width: 40%
+                    transform: translateY(-50%)
+                    font-family: 'GmarketSansMedium', sans-serif
+                    font-size: 2.85rem
+                    color: #fff
+            .visual_drawing
+                position: absolute
+                top: -5rem
+                right: 3rem
+                width: 35%
+        .swiper-container
+            position: relative
+            top: 0
+            left: 0
+            min-height: 100%
+            padding: 2rem 11.3% 0 calc(100% - (11.3% + 25%))
+            .swiper-slide
+                position: relative
+                margin-bottom: 1rem
+                overflow: hidden
+                a
+                    display: block
+                    img
+                        display: block
+                        width: 100%
+                        transition: 0.5s
+                    .title
+                        position: absolute
+                        top: 0
+                        left: 0
+                        padding: 8px 10px
+                        font-size: 0.75rem
+                        color: #fff
+                        background-color: #333
+                        z-index: 2
+                        transition: 0.4s
+                    .textbox
+                        display: flex
+                        justify-content: space-between
+                        align-items: center
+                        position: absolute
+                        top: 50%
+                        left: 0
+                        transform: translateY(-50%)
+                        width: 100%
+                        height: 100%
+                        padding: 0 2rem
+                        background-color: rgba(0,78,158,0.9)
+                        transition: 0.3s
+                        opacity: 0
+                        >p
+                            color: #fff
+                            font-size: 1.2rem
+                            line-height: 1.3
+                            transform: translateY(80px)
+                            transition: 0.4s
+                            margin-right: 1rem
+                            word-break: keep-all
+                        .arrow
+                            display: inline-block
+                            width: 60px
+                            min-width: 60px
+                            height: 60px
+                            background-color: #fff
+                            background-image: url(/common/images/arrow.png)
+                            background-repeat: no-repeat
+                            background-position: center
+                            transform: translateX(80px)
+                            transition: 0.5s
+                            
+            .swiper-slide:hover
+                img
+                    transform: scale(1.2)
+                a .title
+                    color: #8baadf
+                a .textbox
+                    opacity: 1
+                    p
+                        transform: translateY(0)
+                    .arrow
+                        transform: translateX(0)
+
+// /*Small PC*/
+// @media (max-width: 1556.5px)
+
+/*Small PC*/
+@media (max-width: 1400px)
+    .main .wrap .swiper-container .swiper-slide a 
+        .textbox > p
+            font-size: 1rem
+
+// /*Ipad pro*/
+// @media (max-width: 1365.9px)
+
+
+/*breack point*/
+@media (max-width: 1260px)
+    .main 
+        height: auto
+        padding-top: 125px
+        background: none
+        .wrap 
+            .visual
+                display: block
+                position: relative
+                left: auto
+                top: auto
+                width: 90%
+                margin: 0 auto 0
+                .visual_inner
+                    position: relative
+                    a
+                        display: block
+                        width: 100%
+                        height: 100%
+                    .visual_text
+                        top: auto
+                        left: 50%
+                        width: auto
+                        transform: translateX(-50%)
+                        bottom: 6rem
+                .visual_drawing
+                    top: 0
+                    right: 0
+                    width: 30%
+            .swiper-container
+                display: none
+            .mobileList
+                width: 90%
+                padding-top: 2rem
+                margin: 0 auto
+                li
+                    position: relative
+                    width: 100%
+                    margin-bottom: 1rem
+                    a
+                        display: block
+                        width: 100%
+                        img
+                            display: block
+                            width: 100%
+                        .title
+                            position: absolute
+                            top: 0
+                            left: 0
+                            color: #fff
+                            font-size: 1.5rem
+                            padding: 8px 10px
+                            color: #fff
+                            background-color: #333
+                        .textbox
+                            display: flex
+                            justify-content: space-between
+                            align-items: flex-end
+                            position: absolute
+                            top: 0
+                            left: 0
+                            width: 100%
+                            height: 100%
+                            background: linear-gradient(to top, rgba(0, 0, 0, 0.5) , rgba(0, 0, 0, 0))
+                            p
+                                font-size: 1.5rem
+                                color: #fff
+                                margin: 0 0 1.5rem 1.5rem
+                            .arrow
+                                display: inline-block
+                                width: 85px
+                                height: 85px
+                                background-color: #fff
+                                background-image: url(/common/images/arrow.png)
+                                background-repeat: no-repeat
+                                background-position: center
+                                margin: 0 1.5rem 1.5rem 0
+
+/*Ipad*/
+@media (max-width: 1023px)
+    .main .wrap .visual 
+        .visual_drawing
+            width: auto
+            height: 55%
+        .visual_inner 
+            border-radius: 120px 120px 0 120px
+            .visual_text
+                width: 55%
+                bottom: 14%
+   
+/*Tablet*/
+@media (max-width: 767px)
+    .main .wrap .visual 
+        .visual_drawing
+            width: auto
+            height: 55%
+        .visual_inner 
+            border-radius: 120px 120px 0 120px
+            .visual_text
+                width: 55%
+                bottom: 14%
+
+/*Mobile*/
+@media (max-width: 575.98px)
+    .main
+        padding-top: 100px
+        .wrap
+            .visual 
+                height: 600px
+                .visual_inner 
+                    border-radius: 100px 100px 0 100px
+                    .visual_text
+                        width: 65%
+            .mobileList li a 
+                .title
+                    font-size: 0.9rem
+                .textbox 
+                    p
+                        font-size: 0.9rem
+                        margin: 0 0 0.75rem 0.75rem 
+                    .arrow
+                        min-width: 40px
+                        width: 40px
+                        height: 40px
+                        margin: 0 0.75rem 0.75rem 0.75rem
+                        background-size: 50%
+            
+
+// /*Minimum*/
+// @media (max-width: 360px)

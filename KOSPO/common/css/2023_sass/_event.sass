@@ -1,0 +1,154 @@
+// vol134
+.eventWrap
+    position: relative
+    padding: 5rem 0
+    background-color: #007eea
+    .timer
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: center
+        width: 255px
+        height: 85px
+        margin: 0 auto
+        font-size: 42px
+        font-weight: 500
+        border-radius: 2.25rem
+        border: 2px solid #ffe494
+        color: #ffe494
+        padding-top: 5px
+        i
+            margin-right: 10px
+            margin-bottom: 7px
+            font-size: 45px
+            color: #ffe494
+        span
+            font-size: 42px
+            font-weight: 500
+            color: #ffe494
+    .card
+        display: flex
+        flex-wrap: wrap
+        width: 92.5%
+        margin: 2rem auto 0
+        > span
+            display: inline-block
+            width: 23.5%
+            margin-right: 2%
+            margin-bottom: 2%
+            background-size: 100%
+            cursor: pointer
+            > img
+                display: block
+                width: 100%
+                max-width: 100%
+                opacity: 0
+        > span:nth-child(4n)
+            margin-right: 0
+        > span.flip
+            animation-fill-mode: both
+            animation-duration: 1s
+            animation-name: flipInY
+            > img
+                opacity: 1
+        > span.flip-reverse
+            animation-fill-mode: both
+            animation-duration: 1s
+            animation-name: flipInY-reverse
+            > img
+                opacity: 0
+        > span.off
+            animation-name: none !important
+            > img
+                opacity: 1 !important
+    .formArea
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0,0,0,0.5)
+        display: none
+        align-items: center
+        justify-content: center
+        z-index: 5
+        .box
+            width: 90%
+            .box_title
+                font-size: 35px !important
+    .formArea.on
+        display: flex
+        
+
+
+//틀린그림찾기
+.hidden_catch
+    position: relative
+    width: 90%
+    margin: 0 auto
+    >div 
+        position: relative
+    .event_img
+        cursor: pointer
+        display: block
+        width: 100%
+    .event_btn
+        position: absolute
+        left: 7.5%
+        top: 9%
+        width: 10%
+        height: 20%
+        background-image: url('../images/2023_event_check.png')
+        background-size: 0
+        background-position: center
+        background-repeat: no-repeat
+        z-index: 1
+        cursor: pointer
+    .event_btn.on
+        background-size: contain
+    .event_error
+        display: none
+        position: absolute
+        left: 50%
+        top: 0
+        width: 100%
+        height: 100%
+        transform: translateX(-50%)
+        background-color: rgba(256, 256, 256, 0.7)
+        background-repeat: no-repeat
+        background-position: center
+        background-image: url('../images/2023_event_wrong.png')
+        background-size: 15%
+        z-index: 2
+    .event_error.on
+        display: block
+
+
+
+
+/*Tablet*/
+@media (max-width: 767.98px)
+    .eventWrap .timer
+        width: 170px
+        height: 55px
+        font-size: 1.25rem
+        > i
+            font-size: 1.5rem
+            margin-right: 0.5rem
+        > span
+            font-size: 1.25rem
+
+
+// mobile
+@media (max-width: 575.98px)
+    .eventWrap
+        padding: 40px 0
+        .card
+            width: 90%
+            > span
+                width: 32%
+                margin-right: 2% !important
+            > span:nth-child(3n)
+                margin-right: 0 !important
+        .formArea .box .box_title
+            font-size: 22px !important

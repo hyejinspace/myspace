@@ -1,0 +1,239 @@
+.view-bottom
+    // 파란색 타이틀
+    .title01
+        display: block
+        font-size: 24px
+        font-weight: bold
+        line-height: 1.25
+        word-break: keep-all
+        color: #178780
+    .title02
+        display: block
+        font-size: 24px
+        font-weight: bold
+        line-height: 1.25
+        word-break: keep-all
+    .title03
+        display: block
+        font-family: 'Nanum Myeongjo', serif
+        font-size: 22px
+        font-weight: bold
+        line-height: 1.25
+        color: #b3884a
+        text-align: center
+        word-break: keep-all
+    .title04
+        display: block
+        font-size: 24px
+        font-weight: bold
+        line-height: 1.25
+        word-break: keep-all
+        color: #349aeb
+    .tag01
+        display: inline-block
+        padding: 0.45rem 1.5rem
+        border-radius: 1.5rem
+        font-size: 0.95rem
+        font-weight: 500
+        background-color: #178780
+        color: #fff
+    // 이미지
+    .img
+        display: inline-block
+        max-width: 100%
+    // 본문 텍스트
+    .contents
+        display: block
+        font-size: 18px
+        font-weight: 300
+        line-height: 1.8
+        word-break: break-all
+        text-align: justify
+        letter-spacing: -0.5px
+        *
+            font-size: 18px
+    // 텍스트
+    .small
+        display: inline-block
+        font-size: 15px
+        font-weight: 300
+        *
+            font-size: 15px
+    // 이미지설명
+    .caption
+        display: block
+        padding-right: 3px
+        font-size: 14px
+        font-weight: 300
+    // 여백
+    .br10
+        display: block
+        width: 100%
+        height: 10px
+    .br15
+        display: block
+        width: 100%
+        height: 15px
+    .br30
+        display: block
+        width: 100%
+        height: 30px
+    // 정렬
+    .center
+        text-align: center
+    .right
+        text-align: right
+    .left
+        text-align: left
+    .justify
+        text-align: justify
+    // 색 및 폰트속성
+    .bold
+        font-weight: 500 !important
+        *
+            font-weight: 500 !important
+    .red
+        color: #e20303 !important
+        * 
+            color: #e20303 !important
+    .brown
+        color: #b3884a !important
+        * 
+            color: #b3884a !important
+    .underline
+        text-decoration: underline !important
+        * 
+            text-decoration: underline !important
+    // 상자 및 라인
+    .box01
+        display: block
+        padding: 1.5rem
+        background-color: #f7f8f8
+        border: 1px solid #bfbfbf
+    .box02
+        display: block
+        padding: 1rem 1.5rem
+        background-color: #f7f8f8
+        border: 1px solid #bfbfbf
+    .line
+        display: block
+        width: 100%
+        height: 1px
+        background-color: #bfbfbf
+    // 링크 및 버튼
+    .btn
+        display: block
+        margin: 2rem auto 0
+        width: 320px
+        height: 70px
+        font-size: 1.35rem
+        font-weight: 500
+        line-height: 70px
+        border-radius: 0.75rem
+        background-color: #178780
+        color: #fff
+        text-align: center
+    // 비디오
+    .video
+        position: relative
+        height: 0
+        padding-bottom: 56.25%
+        margin-bottom: 1.5rem
+        overflow: hidden
+        iframe,
+        object,
+        embed
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            height: 100%
+    // 슬라이드
+    .view_slider
+        position: relative
+        max-width: 700px
+        margin: 0 auto
+        .swiper-wrapper
+            align-items: center
+        .swiper-slide
+            text-align: center
+            .caption
+                margin-top: 10px
+                text-align: right
+                word-break: keep-all
+        .swiper-pagination
+            position: static
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            margin: 0.75rem auto
+            .swiper-pagination-bullet
+                display: inline-block
+                margin: 0 5px 0 0
+                width: 13px
+                height: 13px
+                border: 2px solid #949494
+                background-color: #fff
+                opacity: 0.5
+            .swiper-pagination-bullet:last-child
+                margin: 0
+            .swiper-pagination-bullet-active
+                border-color: #178780 !important
+                background-color: #178780
+                opacity: 1
+        .swiper-button-prev,
+        .swiper-button-next
+            left: 5px
+            width: 75px
+            height: 75px
+            background-color: rgba(0, 0, 0, 0.5)
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23bfbfbf'%2F%3E%3C%2Fsvg%3E")
+            background-size: 18%
+            transform: translate(-50%, -50%)
+        .swiper-button-next
+            left: auto
+            right: 5px
+            background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23bfbfbf'%2F%3E%3C%2Fsvg%3E")
+            transform: translate(50%, -50%)
+/*Ipad*/
+@media (max-width: 1023px)
+    .view-bottom
+        .view_slider
+            .swiper-button-prev,
+            .swiper-button-next
+                width: 45px
+                height: 45px
+/*Mobile*/
+@media (max-width: 575.98px)
+    .view-bottom
+        .title01,
+        .title02
+            font-size: 20px
+            word-break: normal
+        .title03
+            font-size: 18.5px
+        .tag01
+            font-size: 16px
+            padding: 0.4rem 0.75rem
+        .contents
+            font-size: 16px
+            * 
+                font-size: 16px
+        .small
+            font-size: 15px
+            *
+                font-size: 15px
+        .box01
+            padding: 1.25rem 1rem
+        .box02
+            padding: 0.75rem 1rem
+        .view_slider
+            .swiper-slide .caption
+                padding: 0
+            .swiper-pagination .swiper-pagination-bullet
+                width: 10px
+                height: 10px
+        .btn
+            height: 60px
+            font-size: 1rem
+            line-height: 60px
