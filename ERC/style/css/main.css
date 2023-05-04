@@ -1,4 +1,4 @@
-body {background:#bdbfd8;}
+/* body {background:#bdbfd8;} */
 
 .bx-wrapper {margin-bottom:0 !important; border:0 !important; border-radius:20px; background:none !important; box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2) !important;}
 .section1 .bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto {position:absolute; bottom:30px !important; left:30px; width:auto !important;}

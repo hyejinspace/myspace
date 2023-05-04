@@ -1,0 +1,1052 @@
+<!-- <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%
+String pageType = "sub";
+String pageBefore = "sub4.jsp";
+String pageAfter = "sub6.jsp";
+%>
+<%@ include file="./head.jsp"%> -->
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>지방공기업 웹진</title>
+	<meta name="viewport" content="width=device-width">
+	<meta property="og:title" content="지방공기업 vol.36">
+	<meta property="og:description" content="지방공기업 웹진을 만나보세요.">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" type="text/css" href="style/css/reset.css?ver=2" />
+	<link rel="stylesheet" type="text/css" href="style/css/default.css?ver=2" />
+	<!-- <link rel="stylesheet" type="text/css" href="style/css/main.css?ver=2" /> -->
+	<link rel="stylesheet" type="text/css" href="style/css/sub.css?ver=2" />
+	<script src="http://djwebtoon.cafe24.com/g5/js/jquery-1.8.3.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="style/js/common.js?ver=2"></script>
+	<script>
+		$(document).ready(function(){
+			$('.slideSet1').bxSlider({
+				//	mode: 'horizontal',
+				mode: 'horizontal',
+				//	easing: 'swing',
+				controls: false,
+				auto: true,
+				speed: 700,
+				touchEnabled : false
+			});
+			$('.slideSet2').bxSlider({
+				mode: 'horizontal',
+				//	easing: 'swing',
+				controls: false,
+				auto: true,
+				speed: 700,
+				touchEnabled : false,
+			});
+		});
+	</script>
+</head>
+<style>
+</style>
+
+<body>
+	<div id="headerSet">
+		<div class="headerTop">
+			<div class="wrap">
+				<div class="menu"></div>
+				<a class="logo" href="./"><img src="style/img/setting/logo-h.png" alt="main"></a>
+				<div class="button">
+					<a class="ago" href="https://www.erc.re.kr/usr/com/prm/BBSList.do?bbsId=BBSMSTR_000000000281&menuNo=3011&upperMenuId=3" target="_blank"><img src="style/img/setting/icon-ago.png" alt="지난호보기"></a>
+					<a class="ebook" href="https://www.erc.re.kr/ebook/<%=ebook_page%>/index.html#/1" target="_blank"><img src="style/img/setting/icon-ebook.png" alt="E-Book"></a>
+				</div>
+			</div>
+		</div>
+		<div class="headerBottom">
+			<div class="wrap">
+				<div class="button_mo">
+					<a class="ago" href="https://www.erc.re.kr/usr/com/prm/BBSList.do?bbsId=BBSMSTR_000000000281&menuNo=3011&upperMenuId=3" target="_blank"><img src="style/img/setting/icon-ago.png" alt="지난호보기"></a>
+					<a class="ebook" href="https://www.erc.re.kr/ebook/<%=ebook_page%>/index.html#/1" target="_blank"><img src="style/img/setting/icon-ebook.png" alt="E-Book"></a>
+				</div>
+				<div class="headerSectionWrap">
+					<ul class="headerSection headerSection02">
+						<li><p> 현장과 사람들</p>
+							<ul>
+								<li><a href="sub1.html">안동시시설관리공단</a></li>
+							</ul>
+						</li>
+						<li><a href="sub2.html">숫자로 보는 지방공공기관 정보</a></li>
+					</ul>
+					<h3 class="headerTitle">특집</h3>
+					<ul class="headerSection">
+						<li><p>Intro</p>
+							<ul>
+								<li><a href="sub3.html">조동제 | ‌지방공공기관이 산업안전보건의 선도적 모범 기관이 되기를 기대하며</a></li>
+							</ul>
+						</li>
+						<li><p>Focus 1</p>
+							<ul>
+								<li><a href="sub4.html">조흠학 | ‌지방공공기관 경영자의 산업안전보건 마인드가 중요하다</a></li>
+							</ul>
+						</li>
+						<li><p>Focus 2</p>
+							<ul>
+								<li><a href="sub5.html">‘중대재해처벌법’에 대응하며 산업안전관리에 만전</a></li>
+							</ul>
+						</li>
+						<li><p>초대석</p>
+							<ul>
+								<li><a href="sub6.html">중대재해처벌법, 공익 개념 속에 ‘안전’이 중심되는 계기</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">사람 & 현장</h3>
+					<ul class="headerSection">
+						<li><p>뉴 리더</p>
+							<ul>
+								<li><a href="sub7.html">박현창 평창군시설관리공단 이사장 | 눈여겨볼 강원 관광지… 자연의 쉼을 고객에게 선사하겠다</a></li>
+							</ul>
+						</li>
+						<li><p>파워 리더</p>
+							<ul>
+								<li><a href="sub8.html">정동선 경기도도시공사협의회 회장·시흥도시공사 사장 | 지역의 균형발전을 위한 지방도시공사의 변화와 혁신</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 1</p>
+							<ul>
+								<li><a href="sub9.html">대전도시공사 | 지역경제를 살리는… ‘ESG혁신경영’</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 2</p>
+							<ul>
+								<li><a href="sub10.html">제주에너지공사 | 신재생에너지 혁신 붐업(Boom-Up)</a></li>
+							</ul>
+						</li>
+						<li><p>주목! 혁신 현장 3</p>
+							<ul>
+								<li><a href="sub11.html">부산디자인진흥원 | 디자인을 통한 창업지원, 취업연계, 인재양성 등 다양한 일자리 창출</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">연구 & 교육</h3>
+					<ul class="headerSection">
+						<li><p>이슈 진단</p>
+							<ul>
+								<li><a href="sub12.html">박신 | 가명정보제도의 주요 내용 및 활용</a></li>
+							</ul>
+						</li>
+						<li><p>연구 논단 1</p>
+							<ul>
+								<li><a href="sub13.html">김선형 | ‌지방공기업 경영평가와 성과개선에 관한 연구</a></li>
+							</ul>
+						</li>
+						<li><p>연구 논단 2</p>
+							<ul>
+								<li><a href="sub14.html">하병규 | ‌뉴스 빅데이터 분석을 통해 살펴본 지방출자·출연기관 동향</a></li>
+							</ul>
+						</li>
+						<li><p>HR 강좌</p>
+							<ul>
+								<li><a href="sub15.html">김성민 | ‌이제 다양성의 시대가 온다! HR은 무엇을 해야 하는가?</a></li>
+							</ul>
+						</li>
+						<li><p>노무 강좌</p>
+							<ul>
+								<li><a href="sub16.html">최혁진 | ‌달라지는 법령을 통해 살펴본 2022년 노무 이슈</a></li>
+							</ul>
+						</li>
+						<li><p>법률 강좌</p>
+							<ul>
+								<li><a href="sub17.html">장호진 | ‌공공기관 경영평가 성과급 재분배 행위에 대한 징계의 정당성</a></li>
+							</ul>
+						</li>
+						<li><p>국어 강좌</p>
+							<ul>
+								<li><a href="sub18.html">박기원 | ‌우리말 어법에 맞게 공문 작성하는 방법</a></li>
+							</ul>
+						</li>
+						<li><p>상시 자문</p>
+							<ul>
+								<li><a href="sub19.html">착오에 의한 초과 지급된 임금의 환수</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="headerSectionWrap">
+					<h3 class="headerTitle">생활 & 문화</h3>
+					<ul class="headerSection">
+						<li><p>관광공사와 떠나는 테마 여행</p>
+							<ul>
+								<li><a href="sub20.html">근대 역사와 문화예술이 4차 산업혁명 기술을 만나다</a></li>
+							</ul>
+						</li>
+						<li><p>영화 속 리더십 읽기</p>
+							<ul>
+								<li><a href="sub21.html">창의적 리더십을 연주하다_영화 <보헤미안 랩소디></a></li>
+							</ul>
+						</li>
+					</ul>
+					<h3 class="headerTitle">뉴스</h3>
+					<ul class="headerSection">
+						<li><p>지방공기업 뉴스</p>
+							<ul>
+								<li><a href="sub22.html">강남구도시관리공단_전국 최초 견인차량보관소 ‘무인정산시스템’ 구축·운영 외</a></li>
+							</ul>
+						</li>
+						<li><p>ERC 뉴스</p>
+							<ul>
+								<li><a href="sub23.html">지방공기업 협의회 업무간담회 개최 외</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="subVisual" style="background:url(style/img/sub5_visual.jpg) top center no-repeat; background-size:cover;"></div>
+	<div id="subTitle">
+		<div class="titleArea">
+			<div class="title"> 
+				‘중대재해처벌법’에 대응하며<br/>
+				<b>산업안전관리에 만전</b>
+			</div>
+			<div class="title_small">
+				중대재해처벌법의 시행에 따른<br/>
+				<b>지방공공기업들의 대응 방안</b>
+			</div>
+		</div>
+		<div class="readArea">
+			지난 1월 27일 중대재해처벌법이 본격 시행됨에 따라 사업주, 경영책임자 등은 사업주나 법인 또는 기관이 실질적으로 지배·운영·관리하는 사업·사업장에서 종사자의 안전·보건상 유해·위험을 방지하기 위해 사업 또는 사업장의 특성·규모 등을 고려해 △재해예방에 필요한 인력 및 예산 등 안전보건 관리체계의 구축·이행 △재해 발생 시 재발 방지 대책의 수립·이행 △중앙행정기관·지방자치단체가 관계 법령에 따라 개선, 시정 등을 명한 사항의 이행에 관한 조치 △안전·보건 관계 법령에 따른 의무이행에 필요한 관리상 조치 등을 해야 한다. 공공기관이 산업안전관리에 만전을 기하며 모범을 보이는 것이 그 어느 때보다 중요한 시점에서 지방공공기관들의 대응 사례들을 살펴본다. <br/>
+			<b>글</b> 편집실
+		</div>
+	</div>
+	<div id="subSection">
+		<div class="sectionArea">
+			<div class="imgArea">
+				<img src="style/img/sub5_img1.jpg" alt="이미지">
+			</div>
+		</div>
+		<div class="sectionArea">
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[용인도시공사] <span class="color2 font_26">초기 대응체계 구축, 중대재해 ZERO 선포</span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;"> 
+					<div class="textArea under_line" style="padding-bottom: 2rem; border-color: #ddd;">
+						용인도시공사는 중대재해처벌법에 대한 대응으로 △체계구축을 위한 노력 △근절을 위한 노력 등 2단계로 나눠 진행했다. 중대재해처벌법 대응계획 수립을 시작으로 사업장별 위험요소 사전발굴 및 개선, 안전경영위원회 운영내규 제정, 중대재해 대응 초기대응 구축 계획 수립, 모의훈련, 중대재해 제로(ZERO) 선포식, 중대재해처벌법 자체교육 등을 실시했다.
+					</div>
+
+					<div class="imgArea flex" style="border-color: #ddd;"> 
+						<span class="textArea width_45">
+							<div class="textTitle2 font_19" style="color: #8f572d;">■ 1단계(’21년)‘체계구축’을 위한 노력</div>
+							• 대응계획 수립(’21.01)<br/>
+							• 사업장별 위험요소 사전발굴·개선(’21.01~12)<br/>
+							• 안전경영위원회 운영내규 제정(’21.04)<br/>
+							• 안전보건관리 인력 증원·직영 관리(’21.06~)<br/>
+							• 중대재해 대응 초기대응 구축 계획 수립(’21.06)<br/>
+							• 모의훈련 실시(’21.07): 초기대응 및 보고 등 훈련<br/>
+							• 비상대응 물품 지급 및 구비(’21.06/10)
+						</span> 
+						<span class="imgArea">
+							<img src="style/img/sub5_img2.jpg" alt="이미지">
+							<div class="caption">위험성평가 인정서</div>
+						</span>
+						<span class="imgArea">
+							<img src="style/img/sub5_img3.jpg" alt="이미지">
+							<div class="caption">중대재해 모의훈련</div>
+						</span>
+					</div>  
+
+					<div class="textTitle2 font_19" style="color: #8f572d;">■ 중대재해 시 초기 대응체계</div>
+					<div class="imgArea">
+						<img src="style/img/sub5_img4.jpg" alt="이미지" class="pc">
+						<img src="style/img/sub5_img4_mo.jpg" alt="이미지" class="mo">
+					</div>
+
+					<div class="textTitle2 font_19" style="color: #8f572d;">■ 2단계(’22년)‘중대재해 근절’을 위한 노력</div>
+					<div class="imgArea flex">
+						<span class="box_deco0 width_33 imgArea flex" style="-webkit-justify-content: space-between; justify-content: space-between; -webkit-flex-direction: column; flex-direction: column;">
+							<div class="textArea">
+								<div class="textTitle2" style="word-break: break-all;">중대재해 제로(ZERO) 선포식(’22.01.27)</div>
+								- ‌대상: 안전보건관리책임자 이하 관리감독자<br/>
+								- ‌중대재해처벌법 교육 및 중대재해근절 선언문 낭독
+							</div>
+							<div class="">
+								<img src="style/img/sub5_img5.jpg" alt="이미지">
+								<div class="caption">중대재해 제로(ZERO) 선포식</div>
+							</div>
+						</span>
+						<span class="box_deco0 width_33 imgArea flex" style="-webkit-justify-content: space-between; justify-content: space-between; -webkit-flex-direction: column; flex-direction: column;">
+							<div class="textArea">
+								<div class="textTitle2" style="word-break: break-all;">중대재해처벌법 자체교육 실시(’22.02.09~02.10)</div>
+								- ‌대상: 안전보건관리책임자 이하 관리감독자, 도시사업본부, 시설부서 안전보건 담당자 등<br/>
+								- ‌중대재해처벌법 주요 내용, 산업안전보건법과 중대재해 처벌법 비교, 재해발생 및 안전사고 발생 시 조치사항
+							</div>
+							<div class="">
+								<img src="style/img/sub5_img6.jpg" alt="이미지">
+								<div class="caption">자체교육</div>
+							</div>
+						</span>
+						<span class="box_deco0 width_33" style="margin:20px auto;">
+							<div class="textTitle2" style="word-break: break-all;">중대재해 대상시설 리스트 작성(’22.02.18)</div>
+							<div class="textArea">
+								- ‌효율적인 중대재해 관리를 위한 사업추진 리스트 작성<br/>
+								- ‌공사 규모, 시설물 규모, 주소, 시민재해 적용 여부 등
+							</div>
+						</span>
+					</div>
+				</div>
+			</div> 
+
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[경기주택도시공사] <span class="color2 font_26">안전보건 전담조직 사장 직속 배치
+					</span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;"> 
+					<div class="textArea under_line" style="padding-bottom: 2rem; border-color: #ddd;">
+						경기주택도시공사(GH)는 올해 본격 실시된 중대재해처벌법 대응방안으로 전담조직을 사장 직속으로 조직 개편함과 동시에 관련 규정 제·개정 등 안전보건 관리체계를 구축하고, 근로자 및 공사감독자에 대한 지속적 교육 및 홍보를 실시하고 있다.
+					</div>
+
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 안전관련 법령·기준 강화에 따른 GH 대응방안 수립</div>
+						• 안전보건관리규정 제정(’21.08) <br/>
+						• 발주자 안전관리 역량강화 등 안전보건교육 실시(’21.07)<br/>
+						• 안전보건 전담조직 사장 직속 배치(’21.09.)    
+					</div>  
+					<div class="textArea"> 
+					<div class="textTitle2 font_19" style="color: #8f572d;">■ 안전보건경영시스템 전환 및 인증 취득</div>
+					• 책임과 권한을 강화한 KOSHA-MS 인증 취득(’21.11)<br/>
+					• 안전보건 체계 강화 및 공사 전 직원 안전의식 고취
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 품질·환경경영시스템(ISO9001, 14001) 인증심사 완료(’21.08)</div>
+						• 성과운영관리, 고객만족 방안, 계약프로세스, 현장운영 등 심사<br/>
+						• 품질·환경경영 관련 본사 4개부 및 1개 건설현장 심사
+					</div> 
+					<div class="textArea">
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 건설현장 안전·품질점검 및 컨설팅 실시 </div>
+						• 정기(해빙기, 우기철, 동절기) 및 특별점검 실시	•소규모 현장 등 안전지킴이 실시(’21.04~08)<br/>
+						• 건설현장 안전컨설팅 실시(’21.09~/월 1회) → 안전사고 감소(작년 대비 36% 감소), 건설현장 안전역량 강화
+					</div>
+					<div class="imgArea">
+						<img src="style/img/sub5_img7.jpg" alt="이미지">
+						<div class="caption">안전컨설팅</div>
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ GH 사업장 및 건설현장 위험성평가 </div>
+						• 공사 사옥 및 근로자 대상 위험성평가 실시(’21.09)<br/>
+						• 건설현장 2주 1회 개별적으로 위험성평가 시행 중
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 발주자의 안전관리비용 집행방안 수립 </div>
+						• 기본안전대장 작성 시 발주자의 안전설계·지원계획 수립<br/>
+						• 안전설계, 적정 공기 및 안전관리비 산정 근거 마련<br/>
+						• 스마트 안전장비 등 안전 관련 시설 반영토록 방안 마련
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ GH 안전관리 개선을 위한 안전관리 수준평가 관리</div>
+						• GH 안전관리 수준 제고를 위한 지침·규정 개정 등(’21.03~08)<br/>
+						• 국토부 안전관리 수준평가 실시 및 대응 → 평가결과 98개 기관 중 5위 
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 건설현장 근로자 안전·보건 물품 지급</div>
+						• 폭염 대비 쿨토시·쿨이어스카프 / 한파 대비 귀마개, 방한장갑 지급, 코로나19 확산 방지를 위한 일회용 마스크 지급 
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ GH-건설사업관계자 간 안전근로협의체 개최</div>
+						• 애로사항 및 의견 수렴, 참여사 간 정보교류의 장 마련<br/>
+						• 안전컨설팅 운영 결과 공유 및 안전관리 우수사례 공유
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 건설현장 감독업무 역량 강화를 위한 안전교육 시행</div>
+						• 안전보건교육: 안전보건대장, 유해위험방지·안전관리계획 등<br/>
+						• KOSHA-MS: 관리감독자 책무, 위험성평가 등<br/>
+						• 건설안전 체험교육: 신입직원 대상 재해체험, 응급처치 등
+					</div>
+					<div class="imgArea">
+						<img src="style/img/sub5_img8.jpg" alt="이미지">
+						<div class="caption">건설안전체험교육</div>
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 건설공사 산업재해 현황 및 경영평가 결과</div>
+						• 안전관리 강화를 통한 산업재해 감소(’20년 대비 36% 감소)<br/>
+						• ’21년 경영평가 재난안전관리 평가 결과: 9.82점/10점(4위/15개 기관)
+					</div>
+				</div>
+			</div> 
+			
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[군포도시공사] <span class="color2 font_26">산재예방 능력평가 및 기술평가 도입</span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;"> 
+					<div class="textArea">
+						군포도시공사는 타협 없는 안전을 최우선 원칙으로 삼고, 안전 기본 원칙을 준수해 중대재해 ZERO 달성을 목표로 하고 있다. 공사는 중대재해처벌법에 맞춰 안전보건관리 업무를 총괄하는 전담조직인 ‘안전시설팀’을 신설해 △안전·보건 관리체계 구축 △안전보건 경영방침 및 목표설정 등의 역할을 수행토록 하고, 산재예방 능력평가 및 기술평가를 도입해 공사업체 선정 시 산업안전 역량이 우수한 업체를 선정해 공사 현장에서 자주 발생하는 산업재해를 예방할 계획이다.
+					</div>
+					<div class="imgArea flex">
+						<span class="imgArea">
+							<img src="style/img/sub5_img9.jpg" alt="이미지">
+							<div class="caption">안전보건경영시스템 인증</div>
+						</span>
+						<span class="imgArea">
+							<img src="style/img/sub5_img10.jpg" alt="이미지">
+							<div class="caption">이사회 특별 합동 안전전검</div>
+						</span>
+					</div>
+					<div class="under_line" style="border-color: #ddd; margin: 2rem 0;"></div>
+
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 안전보건경영시스템, 재해경감우수기업 신규 인증</div>
+						• 안전보건경영 매뉴얼 및 재해경감 활동 계획 수립, 안전보건 전담 조직 편성
+					</div>  
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 기본과 원칙을 준수하는 안전관리로 안전경영 박차</div>
+						• ‘중대재해 안전TFT’ 구성<br/>
+						• 사업장(체육시설, 공영주차장, 환경관리소, 공영차고지, 새활용타운 등) 안전점검  → 조치사항 154건 발굴
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ CEO, 이사회 합동 특별안전점검 실시</div>
+						• 군포시 환경관리소 ‘안전 현장점검 이사회’ 개최
+					</div> 
+					<div class="textArea" > 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 중대재해처벌법 대응 교육 및 이행방침 매뉴얼 수립</div>
+						• CEO, 관리감독자, 현장 직원 대상 찾아가는 순회교육<br/>
+						• 전 사업장 내 공통 기본 안전사고 방지<br/>
+						• 중대재해처벌법 준수사항 및 공사 실행계획 수립	<br/>
+						• 외주업체의 산재예방능력, 기술평가표 도입 <br/>
+						• 전 사업장 모든 공사 안전시설팀 허가제 도입 등 
+					</div> 
+				</div>
+			</div> 
+
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[부천도시공사] <span class="color2 font_26">안전보건체계 강화, 최고안전책임자 선임</span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;"> 
+					<div class="textArea under_line" style="padding-bottom: 2rem; border-color: #ddd;">
+						2022년 안전보건 슬로건으로 ‘꼼꼼하게 안전확인! 당당하게 안전퇴근!’을 선정하고 안전보건 경영 강화에 나선 부천도시공사는 지난 2월 ‘중대재해 제로 선포식’을 진행하기도 했다. 특히 공사의 안전 및 보건에 대한 안전보건 체계를 강화하고자 최고안전책임자 선임, 전담조직 신설 등 안전경영을 보다 구체화할 계획이다.
+					</div>
+
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 중대재해위험요인 실태조사(’21.07)</div>
+						사업장별(중앙공원 공영주차장/소사국민체육센터/복사골 문화센터/부천콘텐츠센터) 자체 점검 실시
+					</div>  
+					<div class="imgArea">
+						<img src="style/img/sub5_img11.jpg" alt="이미지">
+						<div class="caption">안전보건 슬로건</div>
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 중대재해처벌법 시행대비 안전보건 슬로건 공모(’22.01)</div>
+						• 중대재해 처벌법 시행에 따른 안전의식 제고 및 안전보건문화 정착 <br/>
+						• 최우수작: 공사공식 안전보건 슬로건, 중대시민재해 대상 시설물 현수막 게시
+					</div>  
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 중대재해처벌법 시행 대비 특별 안전점검 </div>
+						• 중대시민재해처벌법 대상 시설(총 9개소) <br/>
+						• 각 사업장 건축, 전기, 기계, 소방, 안전 분야 <br/>
+						• 내용: <br/>
+						&nbsp;&nbsp;- 건축 구조물 누수, 균열, 기타 난간 등 안전시설  <br/>
+						&nbsp;&nbsp;- 기계설비 운영상태, 소방설비 안전, 배관 누수 여부  <br/>
+						&nbsp;&nbsp;- ‌비상구 적재 등 소방법 위반사항 및 화재감지기 정상작동 여부  <br/>
+						&nbsp;&nbsp;- 기타 안전 및 보건 관련 사항 등
+					</div>  
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 중대재해 ZERO 선포식 시행(’22.02)</div>
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 최고안전책임자 선임</div>
+					</div>
+				</div>
+			</div> 
+
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[파주도시관광공사] <span class="color2 font_26">찾아가는 중대재해처벌법 교육 </span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;"> 
+					<div class="textArea">
+						파주도시관광공사는 안전보건 경영방침 선언을 통해 △쾌적하고 안전한 작업환경 유지 △철저한 법규 준수 △지속적인 작업장 위험요인 개선과 안전교육·훈련 △인명 존중을 통한 안전문화 창조 등 전사적 안전경영시스템 확립을 다짐했다. 공사는 운정·문산행복센터와 같은 문화시설을 비롯해 마장호수, 감악산 등 관광지와 주차시설, 환경기초시설에 이르기까지 시민 삶과 밀접한 각종 시설물의 안전 운영에 만전을 기하고 있으며, 국제표준 안전보건경영시스템(ISO45001) 사후 인증을 취득해 전 직원이 협업하는 안전보건경영시스템 활성화에 노력하고 있다.
+					</div>
+					<div class="imgArea">
+						<img src="style/img/sub5_img12.jpg" alt="이미지">
+						<div class="caption">안전보건 경영방침 선언</div>
+					</div>
+					<div class="under_line" style="border-color: #ddd; margin: 2rem 0;""></div>
+
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 안전보건 목표와 경영방침 설정</div>
+						• ISO45001(안전보건경영시스템) 사후인증 취득(’21.12)<br/>
+						• 안전보건 목표 수립, 안전보건경영방침 선포식(’22.01)
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 유해·위험요인 확인 개선 절차 점검 </div>
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 안전보건관리 규정 개정</div>
+						용어 정의, 도급안전확보, 안전관리수칙 강화 등 규정
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 종사자 의견 청취</div>
+						산업안전보건위원회 실시(분기 1회)
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 중대재해처벌법 대응 교육 </div>
+						• 전담부서 주관 교육, 부서별 관리감독자 교육(307명, 674시간) <br/>
+						• 찾아가는 중대재해처벌법 교육 실시
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 중대재해 발생 대응계획 수립(기관 종합계획/부서별 대응계획)</div>
+					</div>
+				</div>
+			</div> 
+
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[서울시설공단] <span class="color2 font_26">직원 ‘위험작업 거부’ 전면 시행</span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;"> 
+					<div class="textArea under_line" style="padding-bottom: 2rem; border-color: #ddd;">
+						서울시설공단은 중대재해처벌법 시행에 대비해 안전보건 관리체계를 구축한 데 이어 근로자가 스스로 위험한 상황을 거부하는 ‘위험작업거부권’을 전면적으로 실시했다. 또 중대재해처벌법의 빈틈을 찾아 메우는 전문가 자문기구인 ‘노동안전보건위원회’ 구성·운영, 일상에서 실시간으로 유해요인을 발굴·제거하기 위해 ‘일일안전브리핑’과 ‘위험요인 및 아차사고 신고포상제’ 실시, ‘중대재해 오픈 토론회’ 개최 등을 진행했다.
+					</div>
+
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 사업별 ‘유해위험요인 해소’(’21.03~12)</div>
+						중대재해처벌법 대비의 첫걸음으로 ’21년 3월부터 ‘중대재해 안전체계 개선 TF’을 꾸려 자동차전용도로, 서울월드컵경기장 등 24개 사업의 구석구석에 숨어 있는 유해·위험 요인 찾기에 나섰다. 
+					</div> 
+					<div class="imgArea flex">
+						<span class="box_deco0 width_33 imgArea flex" style="-webkit-justify-content: space-between; justify-content: space-between; -webkit-flex-direction: column; flex-direction: column;">
+							<div class="textArea">
+								<b>• 최근 10년간 국내외 유사사례 조사·분석(총 568건) : ‌‘용미리 묘지 난간 떨어짐 방지’ 등 발생 가능 사례 총 480건 도출</b>
+							</div>
+							<div class="">
+								<img src="style/img/sub5_img13.jpg" alt="이미지">
+								<div class="caption">용미리 묘지 난간 설치</div>
+							</div>
+						</span>
+						<span class="box_deco0 width_33 imgArea flex" style="-webkit-justify-content: space-between; justify-content: space-between; -webkit-flex-direction: column; flex-direction: column;">
+							<div class="textArea">
+								<b>• 직원 공모로 이행되지 않거나 어려운 지침 등 총 190건 발굴 </b><br/>
+								&nbsp;&nbsp;- ‘수직사다리 방호 울타리 보완’ 등 현장 개선 <br/>
+								&nbsp;&nbsp;- 지침개정 필요사항은 유관기관에 개선 요청(총 21건)
+							</div>
+							<div class="">
+								<img src="style/img/sub5_img14.jpg" alt="이미지">
+								<div class="caption">수직사다리 방호 울타리 개선</div>
+							</div>
+						</span>
+						<span class="box_deco0 width_33 imgArea flex" style="-webkit-justify-content: space-between; justify-content: space-between; -webkit-flex-direction: column; flex-direction: column; margin: 20px auto;">
+							<div class="textArea">
+								<b>• ’21년 최우선 조치사업 추진 및 ’22년 필요예산 확보</b> <br/>
+								&nbsp;&nbsp;- ‌’21년: 전용 도로 방호벽 보수, 보강 등 77건 사업에 173억 원 투입 <br/>
+								&nbsp;&nbsp;- ‌’22년: 추락사고 예방 안전난간 보강 등 78건 안전 예산 222억 원 편성
+							</div>
+							<div class="">
+								<img src="style/img/sub5_img15.jpg" alt="이미지">
+								<div class="caption">주차장 추락방지망 설치</div>
+							</div>
+						</span>
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ ‘공사 관행 개선’을 통한 안전사고 저감 추진</div>
+						• 공사 문화 기본을 바꾸는 개선 대책(’21.09~)<br/>
+						&nbsp;&nbsp;- ‌공사현장 안전관리 강화: 시공계획서 수립·이행 중요성에 대한 공감대 확산, 자체 역량 확보를 위한 지원체계 마련<br/>
+						&nbsp;&nbsp;- ‘우선과제(3개)’ 추진 후 단계별 시행(~’24년)<br/>
+						• ‘안전관리 중점점검 회의’ 운영(’21.06~)<br/>
+						&nbsp;&nbsp;- ‌잠재 위험요인을 있는 그대로 파악하고 집단지성을 통한 개선안 도출 <br/>
+						&nbsp;&nbsp;- ‌기관장 주재 회의를 시작으로 ‘본부 단위’ 확대… 총 10개 현장 점검
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ ‘위험작업거부권’ 도입(’21.12~)</div>
+						<div class="imgArea">
+							<img src="style/img/sub5_img16.jpg" alt="이미지">
+							<div class="caption">직원 위험작업거부권 시행 포스터</div>
+						</div>
+						• 대상 사례: 사업 특성별 다양한 경우 발생 가능<br/>
+						&nbsp;&nbsp;- ‌‘안전장비 및 시설 미비’ 등 위험요소가 있다고 판단될 경우<br/>
+						&nbsp;&nbsp;- ‌위험업무에 대한 ‘2인 1조’ 수행 등 기존 예정된 인력이 미배치 된 경우<br/>
+						• ‘개선요청’과 함께 거부권 행사 → 적정성 판단 심의 (총 2차)<br/>
+						&nbsp;&nbsp;※ ‌시민위험이 예상될 경우 시민대피 ‘안내·고지’ 등 안전조치 병행
+					</div>
+				</div>
+			</div> 
+
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[강서구시설관리공단] <span class="color2 font_26">중대재해처벌법 노사 공동 대응
+					</span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;"> 
+					<div class="textArea under_line" style="padding-bottom: 2rem; border-color: #ddd;">
+						강서구시설관리공단은 사업장에서 근무하고 있는 직원들의 산업재해를 예방하기 위해 2인 1조 작업 및 입사 6개월 미만의 신규 입사자에 대한 단독작업을 금지하는 위험작업 내역의 기준 마련, 위탁관리업체 및 도급업체의 안전보건 강화를 위해 계약서상 안전보건 관련 내용 기재, 기존 실시하고 있는 위험성평가를 고도화하는 등 공단 전체 업무에 대한 안전보건 관리를 전사적으로 추진하고 있다.
+					</div>
+
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 재난안전관리시스템 구축</div>
+						• 조직 구성: ‌안전보건 전담조직, 상시 재난상황실 운영, 사업장별 방역관리자 지정<br/>
+						• 안전보건관리규정 개정<br/>
+						• 안전보건 방침: ‌안전보건경영헌장 제정, 중대재해처벌법 노사 공동 대응계획 수립, 안전보건기본계획 수립
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 재난(산업)안전보건 관련 매뉴얼 </div>
+						• 제정: 유형별 산업재해 예방을 위한 안전보건관리 가이드라인, 한눈에 보는 중대재해처벌법<br/>
+						• 개정: 재난 유형별 위기대응 매뉴얼, 유형별 재난 대응 훈련 매뉴얼
+					</div> 
+					<div class="imgArea flex" style="-webkit-justify-content: center; justify-content: center; ">
+						<span class="imgArea">
+							<img src="style/img/sub5_img17.jpg" alt="이미지">
+							<div class="caption">산업재해 예방 매뉴얼</div>
+						</span>
+						<span class="imgArea">
+							<img src="style/img/sub5_img18.jpg" alt="이미지">
+							<div class="caption">산업재해 예방 매뉴얼</div>
+						</span>
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 중대재해처벌법 관련 안전보건교육 및 홍보활동</div>
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 안전관리</div>
+						• 안전점검의 날 운영(매월), 시설물 교차 안전점검 업무협약 체결(양천구시설관리공단)<br/>
+						• 위험성평가 실시(분기 1회): 위험요인 455건 발굴 및 전체 개선 조치<br/>
+						• 2인 1조 시행 및 단독근무 제한 위험작업 선정 및 공지(9개 공정 13개 작업)<br/>
+						• 산업안전 위탁관리업체 현장점검(월 2회): 유해·위험요인에 대한 지적사항 58건 개선 조치<br/>
+						• 재택 치료 이행계획 수립
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 도급·용역·위탁 업체 안전관리</div>
+						• 위탁관리업체 서비스 품질평가 실시(분기 1회)<br/>
+						• 도급·용역·위탁 계약 시 안전보건 이행 확약서
+					</div> 
+				</div>
+			</div> 
+
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[대구시설공단] <span class="color2 font_26">안전보건 네트워크 구축, 안전경영 선포</span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;"> 
+					<div class="textArea under_line" style="padding-bottom: 2rem; border-color: #ddd;">
+						재난과 안전을 전담하는 ‘재난안전처’와 ‘재난관리팀’, ‘시설안전팀’을 신설해 체계적인 안전관리와 보건환경 조성에 선제적으로 대응해오고 있는 대구시설공단은 지난 1월 26~27일 이틀간 ‘안전경영 선포식’과 ‘안전보건 담당자 워크숍’을 열고, 중대재해와 산업재해 제로, 분야별 안전보건 관련 법규·규정 준수, 시민 안전을 위한 투자 확대, 시설물 사고 예방을 위한 안전문화 선진화, 안전한 지역사회 발전 등 크게 다섯 가지 안전경영 실천 목표를 내세웠다. 또 각 사업소 안전보건 담당자들을 대상으로 메타버스를 활용한 중대재해처벌법 대응 교육 및 안전사고 개선대책 토론을 진행하기도 했다.
+					</div>
+
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 안전보건 제도 개선</div>
+						• 안전보건관리내규 전부개정 시행(’21.05), 안전보건경영위원회 위원 확대, 안전보건 경영공시 개선
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 산업안전보건 교육 개선</div>
+						• 비대면 정기교육 실시, 찾아가는 산업재해 관리 교육 등 추진(’21.06.11~29)
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 중대재해처벌법 관련 안전보건교육 및 홍보활동</div>
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 안전사고 관리 강화</div>
+						• 안전사고목표관리제 운영: ’21년 안전사고 처리건 25건(전년 대비 40% 감소)<br/>
+						• 안전사고 처리 절차 명문화: 보고 및 처리기준, 조사, 재발 방지 대책 등 내규 명문화<br/>
+						• 사고조사위원회 신설: 재난관리팀장, 안전관리자, 보건관리자로 구성<br/>
+						• 안전사고예방 매뉴얼 제작<br/>
+						• 안전패트롤 운영(재난안전처·처별담당자 합동순회 점검, 08~12월)
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 안전보건 전문인력 양성</div>
+						• 초미세먼지관리사 자격취득(한국비시피협회, 4명)<br/>
+						• 기업재난관리사 양성을 위한 외부 위탁교육 실시(한국방재협회, 7명)<br/>
+						• 건설공사 견실시공 및 안전 강화를 위한 외부 위탁교육(건설기술교육원, 14명)
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 안전보건 관련 신규 대외인증 추진</div>
+						• 안전보건경영시스템(KOSHA-MS) 인증(안전보건공단, ’21.08)<br/>
+						• 재해경감우수기업 인증(행정안전부, ’21.08)
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 외부 전문기관 안전보건 관련 컨설팅 등 추진</div>
+						• 두류수영장 산업안전 컨설팅 실시(대한산업보건협회, ’21.03)<br/>
+						• 명복공원 위험관리 컨설팅 실시(한국지방재정공제회, ’21.10)<br/>
+						• 근골격계부담작업 유해요인조사 실시(대한산업보건협회, ’21.10)
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 지역 내 유관기관 안전보건 네트워크 구축</div>
+						• 대구시 공공기관 재난안전실무협의회 운영<br/>
+						• 한국전기공사협회 안전기술원 산업재해예방 MOU(’21.11)
+					</div> 
+					<div class="imgArea">
+						<img src="style/img/sub5_img19.jpg" alt="이미지">
+						<div class="caption">안전사고 개선대책</div>
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 안전보건 담당자 워크숍 및 안전경영 선포식 개최</div>
+						• 중대재해처벌법 대응 교육<br/>
+						• 메타버스를 활용한 안전보건 OX 퀴즈<br/>
+						• 전년도 안전사고 현황 및 개선대책 토론	<br/>
+						• 안전경영 선포식
+					</div>
+				</div>
+			</div> 
+
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[구로구시설관리공단] <span class="color2 font_26">재난안전체험 사이버 교육</span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;"> 
+					<div class="textArea under_line" style="padding-bottom: 2rem; border-color: #ddd;">
+						지난해 한국산업안전보건공단에서 실시한 위험성평가 우수사업장 인증을 획득한 구로구시설관리공단은 체육시설을 비롯한 주요 사업장에 080 안심콜체크인 도입, 재난안전용품 보관함 설치 및 안전 웹 신문(안전피플) 발행 등을 추진했다. 또 초경량 드론 이용 사각지대 안전시설물 점검, 온택트 재난안전체험 사이버 교육 등 사회변화에 발맞춰 ICT 등을 활용함으로써 중대재해처벌법에 적극 대응해나가고 있다.
+					</div>
+
+					<div class="textArea box_deco0"> 
+						• 공단 안전보건관리규정 개정: 작업 중지 요청제, 위험작업 시 2인 1조 근무 등<br/>
+						• 안전신기술 도입: 초경량 비행장치(드론) 이용 사각지대 안전시설물 점검<br/>
+						• 위험성평가 우수사업장 지정: 한국산업안전보건공단 위험성평가 우수사업장 선정<br/>
+						• 임원의 책임 강화: 안전·보건관리 책임자 교육, 소방강습 교육<br/>
+						• 기업재난관리사 교육 수료: 팀장급 직책자(7명) 및 재난안전 담당자(2명) 기업재난관리사 교육<br/>
+						• 중대시민재해예방을 위한 재난용품 보관함: 관내 다중이용 시설 재난용품보관함 비치<br/>
+						• ISO45001 안전보건경영시스템 인증<br/>
+						• 산업재해예방을 위한 대외기관 합동안전점검: 안전·보건·구청·타기관 협조를 통한 관내 시설물 합동점검 <br/>
+						• 원격감시(화재감지기능) 시스템 네트워크 연동: 24시간 야간근무자가 없는 사업장의 화재 감지기능 추가 설치<br/>
+						• 온택트 재난안전체험 사이버 교육: 비대면시대를 맞이해 온택트 방식의 재난(사회·자연·생활안전 및 응급처치)를 통해 임직원들의 안전 경각심 강화<br/>
+						• 자체 안전 웹 신문 발행: 안전사고 예방에 대한 적극적인 홍보활동을 실시해 주민과 근로자의 산업재해를 방지하기 위한 홍보<br/>
+						• 공단 직원 전문자격 취득(위험물 기능장)<br/>
+						• 기능연속성(COOP)업무 계획 수립
+					</div> 
+				</div>
+			</div> 
+
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[포항시시설관리공단] <span class="color2 font_26">취약시설 안전보건 현장 리더 운영</span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;"> 
+					<div class="textArea under_line" style="padding-bottom: 2rem; border-color: #ddd;">
+						포항시시설관리공단은 중대재해처벌법에 대한 선제적 대응의 일환으로 지난해부터 안전보건 체계를 철저히 추진하면서, 안전보건 매뉴얼과 작업절차 등 작업지침을 현장 상황에 맞게 개정하고, ‘안전 및 보건관리자’ 등 전문인력을 별도 채용하거나 선임하는 등 자체적으로 조직체계를 구축해왔다. 또 중대재해 및 사고 예방을 위해 자체 현장안전지킴이(현장리더) 제도를 도입해 전체 시설물의 보강과 안전보건 점검활동을 강화하고, 현장 직원들과의 소통 및 안전보건 토론회 등 안전보건 문화 정착을 위한 노력을 집중해오고 있다.
+					</div>
+
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 안전보건 자문위원회 운영</div>
+						• 안전보건관리 시행계획 및 관리실태와 성과 등 검토	<br/>
+						• 안전사고 및 중대재해 발생 시 대응방안 검토 <br/>
+						• 대내·외적으로 이슈가 되는 안전문제, 환경문제 등 협의
+					</div> 
+					<div class="imgArea">
+						<img src="style/img/sub5_img20.jpg" alt="이미지">
+						<div class="caption">취약시설 안전보건 현장리더</div>
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 취약시설 안전보건 현장리더 운영</div>
+						• 시설현장 수시점검(전용 안전모, 명찰, 호각 등 착용)<br/>
+						• 위급상황 발생 현장관리(상황보고, 응급조치체제 유지)<br/>
+						• 현장 근무자 안전관리·지도, 위험요소 제거·개선<br/>
+						• 요주의 안전문제, 환경개선 등 대응방안 협의
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 안전보건 증진 토론회 개최</div>
+						• 팀별 월간 안전보건관리 추진실적 및 향후 계획 보고	<br/>
+						• 안전보건 증진을 위한 제안, 아이디어 발굴 토론<br/>
+						• 안전을 위한 현장 작업 여건 개선 토론<br/>
+						• 안전보건자문위원회 상정 안건 발굴 토론 등
+					</div> 
+					<div class="imgArea">
+						<img src="style/img/sub5_img21.jpg" alt="이미지">
+						<div class="caption">안전보건경영시스템 인증 획득</div>
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ ‌안전보건경영시스템 인증</div>
+						연차적으로 대상 시설을 확대, 사후 안정적 관리
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ ‌안전보건 게시판 운영 </div>
+						• 안전보건에 관련한 애로사항·위험요인·조치요망사항 등 건의<br/>
+						• 건의사항에 대해 이사장 결재를 득한 후 답변·시행<br/>
+						• 민감한 사항, 익명 건의 가능토록 게시판 운영
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ ‌안전보건 생활화 추진</div>
+						• 위험작업장 사전허가제: 화기작업 밀폐공간작업 및 기타 위험작업 <br/>
+						• 안전일지·앨범 작성<br/>
+						• 현장 안전미팅: 업무시작 전 안전 실천결의 의무화<br/>
+						• 기타 안전조치: 월 1회 시설별 총괄안전점검(안전감사실)<br/>
+						• 위험작업거부권 시행: 근로자가 위험 상황을 감지했을 시 즉시 사용 가능
+					</div>
+				</div>
+			</div>
+
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[원주시시설관리공단] <span class="color2 font_26">부서별 사전 준비 설명회</span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;"> 
+					<div class="textArea">
+						원주시시설관리공단은 지난 1월 13일, ‘중대재해처벌법’에 근거한 종사자의 중대산업재해 예방과 공중이용시설·공중교통수단 이용자 등 중대시민재해 예방을 위해 사전준비 설명회를 열었다. 법 시행 전 미비점과 미 이행사항에 대한 점검이 이뤄진 설명회에서는 관계 법령 가이드라인과 주요 의무이행 사항을 토대로 공단의 향후 관리 계획 등에 대해 다뤘다.
+					</div>
+					<div class="imgArea">
+						<img src="style/img/sub5_img22.jpg" alt="이미지">
+						<div class="caption">부서별 사전 준비 설명회</div>
+					</div>
+					<div class="under_line" style="border-color: #ddd; margin: 2rem 0;"></div>
+
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 중대산업재해 및 중대시민재해 시행 내용 숙지</div>
+						• 고용노동부 「중대재해처벌법(중대산업재해) 해설서」 책자 제작 및 배부(’21. 12) <br/>
+						• 국토교통부 「중대재해처벌법(중대시민재해) 해설서」 책자 제작 및 배부(’22. 01) 
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 부서별 중대재해처벌법 적용 시설 확인 및 추진현황 점검</div>
+						• 안전·보건에 관한 목표와 경영방침 설정<br/>
+						• 안전·보건에 관한 인력 확보 및 배치<br/>
+						• 안전·보건에 관한 예산 편성·집행<br/>
+						• 위험성평가를 통한 유해·위험요인 확인 및 개선<br/>
+						• 분기별 산업안전보건위원회 개최로 종사자 의견 청취 및 개선방안 이행<br/>
+						• 작업 중지, 근로자 대피, 위험요인 제거 등 대응조치 매뉴얼 수립<br/>
+						• 안전·보건 관계 법령에 따른 종사자 의무 교육 계획·실행<br/>
+						• 안전·보건 관계 법령에 따른 안전점검 계획 및 실행
+					</div> 
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ 업무 분장에 따른 책임자 선임 및 관리감독자 지정 확인, 부서별 안전관리담당자 지정 완료</div>
+					</div> 
+				</div>
+			</div>
+
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[부산환경공단] <span class="color2 font_26">시행 첫날 전담조직 개편 및 발대식</span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;"> 
+					<div class="textArea">
+						그간 부산환경공단은 선제적으로 안전보건관리 전담조직을 위한 전문 컨설팅을 실시하고, 직원의 안전역량 강화를 위해 가상(VR) 안전훈련 프로그램 운영, 통합안전관리 매뉴얼 제작 등을 추진했다. 또 안전보건 전담부서인 ‘안전관리처’를 발족하고 안전·보건관리자를 배치, 중장기 안전 마스터 플랜을 수립할 예정이다. 현장의 유해·위험요인을 사전에 개선하기 위한 위험성평가를 강화하고, 산업안전보건위원회 운영, 안전신고 채널 구축, 밀폐공간 모의훈련 경시대회 등을 통해 안전역량 제고에 나설 방침이다.
+					</div>
+					<div class="imgArea flex">
+						<span class="imgArea">
+							<img src="style/img/sub5_img23.jpg" alt="이미지">
+						</span>
+						<span class="imgArea">
+							<img src="style/img/sub5_img24.jpg" alt="이미지">
+							<div class="caption">전담조직 개편 및 발대식</div>
+						</span>
+					</div>
+					<div class="under_line" style="border-color: #ddd; margin: 2rem 0;"></div>
+
+
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ ‌부산환경공단 중대재해처벌법 대응 준비</div>
+						• 중대재해 처벌 등에 관한 법률검토 보고(’21.01) <br/>
+						• 통합안전관리 매뉴얼 제작 및 배포(’21.01) <br/>
+						• 중대재해처벌법 시행에 따른 공단대응 방안 수립(’21.06) <br/>
+						• 안전보건관리전담 조직진단 컨설팅 추진(’21.10~12)<br/>
+						• 가상(VR) 안전훈련 프로그램 구매 및 운영(’21.11~12) <br/>
+						• ’22년도 안전·보건조치 예산 확보 → 수선유지비의 10%(’21.12)<br/>
+						• 부산환경공단 안전보건관리계획 수립(’21.12)<br/>
+						• 컨설팅 완료에 따른 중대재해처벌법 공단 대응검토(’21.12)  <br/>
+						• 안전보건 관리체계 구축 종합계획 수립(’22.01)<br/>
+						• 법 시행과 동시 전담조직 개편 및 발대식 진행(’22.01.27)<br/>
+						• 산업안전보건관리규정 등 안전 관련 내규 개정 추진(’22.02)
+					</div>  
+				</div>
+			</div>
+
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[새마을세계화재단] <span class="color2 font_26">사업참여자 안전 매뉴얼 제작·활용</span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;">
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ ‌연간 안전관리 계획 수립(’22.01)</div>
+						• 재난안전관리위원회·재난안전 TF팀 구성<br/>
+						• 사업장 자체점검(월1회) 및 자체 위험성평가(연 2회)<br/>
+						• 사고대응 장비 구비 및 업무환경 개선, 전염병 예방 대책<br/>
+						• 재난·안전사고 매뉴얼 보완(프로그램 참가 유형별 사고 대책)<br/>
+						• 재난·안전사고 모의훈련 및 안전교육 실시(연 1회)<br/>
+						• 중대대해처벌법 대응 기관장·안전 담당자 교육 참여<br/>
+						• 안전관리 예산 별도 수립
+					</div>   
+					<div class="imgArea">
+						<img src="style/img/sub5_img25.jpg" alt="이미지">
+						<div class="caption">전담조직 개편 및 발대식</div>
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ ‌사업 참여자(대국민) 안전 매뉴얼 제작·활용(’21.10)</div>
+						• 재단 사건사고 발생 사례 소개<br/>
+						• 사업별 안전관리 지침 작성(봉사단 파견, 외국인 초청 연수 등)<br/>
+						• 개인, 재난·재해, 건강관리 안전 지침 작성 등
+					</div>  
+				</div>
+			</div>
+
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[서울관광재단] <span class="color2 font_26">기관 간 ‘안전보건 거버넌스’ 구성</span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;">
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ ‌신법 시행 대비 산하기관 대상 ‘안전보건 거버넌스’ 참가의향 조사</div>
+						재단 조직 및 정원과 유사한 조직 및 정원 편성된 기관 위주 섭외
+					</div>   
+					<div class="imgArea">
+						<img src="style/img/sub5_img26.jpg" alt="이미지">
+						<div class="caption">‘안전보건 거버넌스’ 온라인 회의</div>
+					</div>
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ ‌‌서울시 산하기관 ‘안전보건 거버넌스’ 구성 및 분기별 정기회의 개최 </div>
+						• 참가자: 기관별 안전 및 보건관리 업무담당자<br/>
+						• 주요 안건<br/>
+						&nbsp;&nbsp;- ‌중대재해처벌법 시행 관련 기관별 추진현황 및 계획 공유<br/>
+						&nbsp;&nbsp;- ‌기관 간 결속을 통한 협업 가능성 검토<br/>
+						&nbsp;&nbsp;- ‌네트워크 채널 확보 및 의견 교류 주기 등<br/>
+						• 기관별 정보공유를 위한 업무협약(MOU) 체결 등
+					</div>  
+				</div>
+			</div>
+
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[제주테크노파크] <span class="color2 font_26">사고 발생 시 대응절차 수립</span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;">
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ ‌용암해수일반산업단지 내 중대재해처벌법 시행 홍보</div>
+						중대재해처벌법 시행과 중대재해처벌법의 주요 내용과 실천과제를 담은 홍보 현수막 제작, 제주테크노파크가 관리하는 용암해수일반산업단지 내에 게시해 산업단지 내 입주기업, 방문객 등을 대상으로 홍보 시행 
+					</div>   
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ ‌용암해수일반산업단지 입주기업 협의회 개최</div>
+						• 제주동부소방서 초청, 중대재해처벌법 시행과 실천과제 공유를 위한 협의회 개최<br/>
+						• 용암해수센터 내 식음료 생산 공장에서 발생할 수 있는 안전사고 관리를 위한 과제 논의 <br/>
+						• 제주동부소방서와 용암해수일반산업단지 소방안전 대책 협의
+					</div>   
+					<div class="imgArea">
+						<img src="style/img/sub5_img27.jpg" alt="이미지">
+						<div class="caption">용암해수일반산업단지 입주기업 협의회</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[부산디자인진흥원] <span class="color2 font_26">위해요인 찾기 캠페인 추진</span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;">
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ ‌중대재해 예방을 위한 안전보건 관리체계 구축 </div>
+						• 안전전담조직 ‘안전보건관리본부’ 구성<br/>
+						• 2022년 안전기본계획수립(’21.12)<br/>
+						• 안전보건관리규정 제정(’21.12)
+					</div>   
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ ‌DCB 위해요인 찾기 캠페인 실시(’21.11.26~12.10)</div>
+						• 부산디자인진흥원 안전을 위협하는 위해요인을 찾아 사진과 함께 내용 제출
+					</div>   
+					<div class="imgArea">
+						<img src="style/img/sub5_img28.jpg" alt="이미지">
+						<div class="caption">위해요인 찾기 캠페인</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="box_deco1 accordion" style="padding: 1rem 1.25rem !important; border-radius: 0.5rem; cursor: pointer;"> 
+				<div class="flex" style="padding: 0.5rem;"> 
+					<span class="textTitle font_26">[경기도의료원 파주병원] <span class="color2 font_26">2025년까지 최고의 공공병원으로</span> 
+					<span class="imgArea" style="min-width: 18px;">
+						 <img src="style/img/setting/accordion.png" alt="" class="float_R accordion_img" style="margin-top: 8px;">
+					</span> 
+				</div> 
+				<div class="accordion_bottom" style="display: none; padding: 0.5rem;">
+					<div class="textArea"> 
+						<div class="textTitle2 font_19" style="color: #8f572d;">■ ‌경기도의료원 파주병원 안전보건경영방침 </div>
+						• 안전에 대하여 절대 타협하지 않으며, 모든 조직에 안전문화를 정착시킨다.<br/>
+						• 조직의 안전보건 목표를 달성하기 위해 최선을 다한다.<br/>
+						• 안전·보건·환경 관련 규정 및 제도 마련·변경, 이행 과정에서 근로자대표가 참여하고, 근로자 대표와 협의하여 수요자 중심의 안전경영시스템 운영이 되도록 최선을 다한다.<br/>
+						• 병원은 능동적으로 근로환경의 유해 위험요인을 제거하고 안전보건 리스크를 감소시켜 예방 중심의 산업안전보건관리 활동을 지속적으로 추진한다.
+					</div> 
+					<div class="imgArea">
+						<img src="style/img/sub5_img29.jpg" alt="이미지">
+						<div class="caption">안전보건경영방침 선포식</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<script>
+		$('.accordion').click(function(){
+		   $('.accordion_bottom').not($(this).children('.accordion_bottom')).hide();
+		   $(this).children('.accordion_bottom').slideToggle();
+		   $(this).find('.accordion_img').toggleClass('on');
+
+		   var offset = $(this).offset();
+
+		   $('html').animate({scrollTop : offset.top - 100}, 300);
+		   
+	   });
+   </script>
+	<div id="right_banner">
+		<div>
+			<a href="javascript:void(0);" id="viewMenu"><img src="./style/img/setting/qimg1.png" /></a>
+			<a href="javascript:void(0);" id="topSet"><img src="./style/img/setting/qimg2.png" /></a>
+			<a href="./<%=pageBefore%>"><img src="./style/img/setting/qimg3.png" /></a>
+			<a href="./<%=pageAfter%>"><img src="./style/img/setting/qimg4.png" /></a>
+		</div>
+	</div>
+	<div id="footerSet">
+		<div class="wrap">
+			<a href="https://www.erc.re.kr/" target="_blank" class="logo"><img src="style/img/setting/logo-f.png" alt="지방공기업평가원"></a>
+			<div class="sns">
+				<a href="https://www.youtube.com/channel/UCC9O2yXc0eAYjBVhjJ3gnxQ" target="_blank" class="youtube"><img src="style/img/setting/icon-sns-y.png" alt="youtube"></a>
+				<a href="https://www.facebook.com/erc.re.kr/" target="_blank" class="facebook"><img src="style/img/setting/icon-sns-f.png" alt="facebook"></a>
+			</div>
+			<div class="info">
+				<p>(우) 06647 서울 서초구 반포대로30길 12-6 (지번) 서초동 1552-13</p>
+				<p>Copyright(c) Evaluation Institute of Regional Public Corporation. All Rights Reserved.</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<!-- <%@ include file="./sub_include.jsp"%>
+<%@ include file="./foot.jsp"%> -->
