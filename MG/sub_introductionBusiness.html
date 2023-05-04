@@ -4,26 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta property="og:image" content="./img/og.jpg" />
     <title>사업소개</title>
     
-    <!-- 글꼴 추가 -->
-    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo.css" rel="stylesheet">
-    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/nanumsquare-neo" rel="stylesheet">
-
-    <!-- 스와이퍼js-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!--css -->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/variable.css">
-    <link rel="stylesheet" href="./css/style.css">
-
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/7e7b796bd2.js" crossorigin="anonymous"></script>
-
-    <!-- 제이쿼리 CDN -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="./css/normalize.css"/>
+    <link rel="stylesheet" href="./css/variable.css"/>
+    <link rel="stylesheet" href="./css/swiper.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/animate.css"/>
+ 
  
 </head>
 
@@ -31,7 +23,6 @@
     <header>
         <div class="wrap">
             <a href="./index.html" class="logo"><img src="./img/logo.png" data-color="./img/logo02.png" data-white="./img/logo.png" alt="MG새마을금고 60주년"></a>
-
             <span>
                 <nav>
                     <div class="wrap">
@@ -40,32 +31,40 @@
                                 <h2>60주년</h2>
                                 <ul class="lnb">
                                     <li><a href="./sub_ceo.html">CEO인사</a></li>
-                                    <li><a href="" onclick="return false;">엠블럼</a></li>
+                                    <li><a href="./sub_emblem.html">엠블럼</a></li>
                                     <li><a href="./sub_history.html">연혁갤러리</a></li>
                                     <li><a href="./sub_video.html">기념영상</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h2>기념사업</h2>
+                                <h2>함께하기</h2>
                                 <ul class="lnb">
-                                    <li><a href="./sub_introductionBusiness.html">사업소개</a></li>
-                                    <li><a href="./sub_businessReport.html">사업보도</a></li>
+                                    <li>
+                                        <h3><span>MG축제</span></h3>
+                                        <ul>
+                                            <li><a href="./sub_introductionBusiness.html">MG축제 전체보기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html">MG기념하기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html">MG어울리기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html">MG상생하기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html" class="new">MG기념상품</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./sub_businessReport.html">언론보도</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h2>대국민참여</h2>
+                                <h2>대국민 참여</h2>
                                 <ul class="lnb">
                                     <li><a href="./sub_event.html">이벤트 및 공모전</a></li>
-                                    <li><a href="./sub_notice.html">공지사항</a></li>
+                                    <li><a href="./sub_notice.html">기념공지</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h2><a href="./sub_newsSafe.html">금고소식</a></h2>
+                                <h2><a href="./sub_newsSafe.html">MG소식</a></h2>
                             </li>
                         </ul>
                     </div>
                 </nav>
-    
                 <button type="button" class="menu"><span></span><span></span><span></span></button>
             </span>
         </div>
@@ -73,75 +72,80 @@
 
     <section class="sub_top top_introductionBusiness">
         <div class="inner">
-
             <div class="sub_title">
-                <p>기념사업</p>
-                <h2>사업소개</h2>
+                <p>함께하기</p>
+                <h2>MG축제</h2>
             </div>
-
             <p class="sub_nav_text">
-                <i class="fa-solid fa-house-chimney"></i>
-                MG새마을금고중앙회 · 60주년 · <strong>사업소개</strong>
+                MG새마을금고중앙회 · 함께하기 · <strong>MG축제</strong>
             </p>
-
         </div>
-
     </section>
 
     <section class="sub_introductionBusiness">
+        <div class="conNav">
+            <div class="wrap">
+                <ul>
+                    <li class="on"><a href="">MG 축제 전체보기</a></li>
+                    <li><a href="">MG 기념하기</a></li>
+                    <li><a href="">MG 어울리기</a></li>
+                    <li><a href="">MG 상생하기</a></li>
+                    <li class="new"><a href="">MG기념상품</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="inner">
             <h5>사업 일정 안내</h5>
-            
-            <ul>
+            <ul class="contents">
                 <li>
                     <a href="./view.html">
                         <div class="img_box_contain">
-                            <div class="img_box"></div>
+                            <div class="img_box"><img src="./img/02.jpg" alt=""></div>
                         </div>
                         <div class="text_box">
                             <h6>새로운 도약, 함께하는 지역사회, 나눔의 MG MG희망나눔 콘서트</h6>
                             <p><span>일시</span> 2023.06.03(수)PM 06:00</p>
                         </div>
                     </a>
+                    <div class="eventMonth">06</div>
                 </li>
-
                 <li>
                     <a href="">
                         <div class="img_box_contain">
-                            <div class="img_box"></div>
+                            <div class="img_box"><img src="./img/02.jpg" alt=""></div>
                         </div>
                         <div class="text_box">
                             <h6>새로운 도약, 함께하는 지역사회, 나눔의 MG MG희망나눔 콘서트</h6>
                             <p><span>일시</span> 2023.06.03(수)PM 06:00</p>
                         </div>
                     </a>
+                    <div class="eventMonth">05</div>
                 </li>
-
                 <li>
                     <a href="">
                         <div class="img_box_contain">
-                            <div class="img_box"></div>
+                            <div class="img_box"><img src="./img/02.jpg" alt=""></div>
                         </div>
                         <div class="text_box">
                             <h6>새로운 도약, 함께하는 지역사회, 나눔의 MG MG희망나눔 콘서트</h6>
                             <p><span>일시</span> 2023.06.03(수)PM 06:00</p>
                         </div>
                     </a>
+                    <div class="eventMonth">04</div>
                 </li>
-
                 <li>
                     <a href="">
                         <div class="img_box_contain">
-                            <div class="img_box"></div>
+                            <div class="img_box"><img src="./img/02.jpg" alt=""></div>
                         </div>
                         <div class="text_box">
                             <h6>새로운 도약, 함께하는 지역사회, 나눔의 MG MG희망나눔 콘서트</h6>
                             <p><span>일시</span> 2023.06.03(수)PM 06:00</p>
                         </div>
                     </a>
+                    <div class="eventMonth">03</div>
                 </li>
             </ul>
-
         </div>
     </section>
 
@@ -153,10 +157,12 @@
     </footer>
 
     <!-- script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./js/swiper.min.js"></script>
     <script type="text/javascript" src="./js/jquery-3.6.1.min.js" ></script>
-    <script src="./js/app.js"></script>
-    <script src="./js/custom.js"></script>
+    <script type="text/javascript" src="./js/animate-plus.min.js" ></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+    
 </body>
 
 </html>

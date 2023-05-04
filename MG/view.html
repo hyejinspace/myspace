@@ -4,26 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta property="og:image" content="./img/og.jpg" />
     <title>view</title>
     
-    <!-- 글꼴 추가 -->
-    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo.css" rel="stylesheet">
-    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/nanumsquare-neo" rel="stylesheet">
-
-    <!-- 스와이퍼js-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!--css -->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/variable.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css"/>
+    <link rel="stylesheet" href="./css/variable.css"/>
+    <link rel="stylesheet" href="./css/swiper.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/animate.css"/>
+ 
 
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/7e7b796bd2.js" crossorigin="anonymous"></script>
-
-    <!-- 제이쿼리 CDN -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
 </head>
 
 <body>
@@ -39,27 +32,36 @@
                                 <h2>60주년</h2>
                                 <ul class="lnb">
                                     <li><a href="./sub_ceo.html">CEO인사</a></li>
-                                    <li><a href="" onclick="return false;">엠블럼</a></li>
+                                    <li><a href="./sub_emblem.html">엠블럼</a></li>
                                     <li><a href="./sub_history.html">연혁갤러리</a></li>
                                     <li><a href="./sub_video.html">기념영상</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h2>기념사업</h2>
+                                <h2>함께하기</h2>
                                 <ul class="lnb">
-                                    <li><a href="./sub_introductionBusiness.html">사업소개</a></li>
-                                    <li><a href="./sub_businessReport.html">사업보도</a></li>
+                                    <li>
+                                        <h3><span>MG축제</span></h3>
+                                        <ul>
+                                            <li><a href="./sub_introductionBusiness.html">MG축제 전체보기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html">MG기념하기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html">MG어울리기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html">MG상생하기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html" class="new">MG기념상품</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./sub_businessReport.html">언론보도</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h2>대국민참여</h2>
+                                <h2>대국민 참여</h2>
                                 <ul class="lnb">
                                     <li><a href="./sub_event.html">이벤트 및 공모전</a></li>
-                                    <li><a href="./sub_notice.html">공지사항</a></li>
+                                    <li><a href="./sub_notice.html">기념공지</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h2><a href="./sub_newsSafe.html">금고소식</a></h2>
+                                <h2><a href="./sub_newsSafe.html">MG소식</a></h2>
                             </li>
                         </ul>
                     </div>
@@ -72,19 +74,14 @@
 
     <section class="sub_top top_view">
         <div class="inner">
-
             <div class="sub_title">
                 <p>기념사업</p>
                 <h2>사업소개</h2>
             </div>
-
             <p class="sub_nav_text">
-                <i class="fa-solid fa-house-chimney"></i>
                 MG새마을금고중앙회 · 기념사업 · <strong>사업소개</strong>
             </p>
-
         </div>
-
     </section>
 
     <section class="sub_view">
@@ -92,15 +89,17 @@
             <div class="title">
                 <div class="left">
                     <h5>새로운 도약, 함께하는 지역사회, 나눔의 MG MG희망나눔 콘서트 새로운 도약</h5>
-                    <p><span>일시</span>2023.04.10(수) PM 01:00</p>
+                    <p class="eventPeriod"><span>일시</span>2023.04.10(수) PM 01:00</p>
                 </div>
                 <div class="right">
-                    <p>등록일:2023.03.25</p>
+                    <p>등록일 : <span class="date">2023.03.25</span></p>
                 </div>
             </div>
 
             <div class="content">
-                <img src="./img/view_content.png" alt="">
+                <div class="img">
+                    <img src="./img/view_content.png" alt="">
+                </div>
                 <p>
                     MG새마을금고 지역희망나눔재단은 나눔과 상생의 가치 실현으로 함께 만들어가는 사회공동체를 실현하고, 사회적 책임을 충실히 이행하고자 2015년 새마을금고중앙회가 출연하여 설립된
                     비영리 재단법인입니다. 목적사업인 위기이웃 문제해결 지원사업, 청소년 사회진출 지원사업, 지역사회 네트워크 사업 등을 통해 지난 6년간 다양한 복지시설과 대상자들에게 물품 및
@@ -125,7 +124,6 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="list">
                     <a href="">
                         <img src="./img/view_list.png" alt="">
@@ -136,10 +134,9 @@
                     <a href="">
                         <div class="text_box">
                             <p>다음글</p>
-                            <p>새마을 금고,창립 60주년 기념 새마을 금고,창립 60주년 기념</p>
+                            <p>새마을새마을 금고,창립 60주년 기념 새마을 금고,창립 60주년 기념 새마을 금고,창립 60주년 기념 새마을 금고,창립 60주년 기념 새마을 금고,창립 60주년 기념 새마을 금고,창립 60주년 기념</p>
                         </div>
                         <div class="img_box"></div>
-
                     </a>
                 </div>
             </div>
@@ -155,9 +152,11 @@
     </footer>
 
     <!-- script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./js/swiper.min.js"></script>
     <script type="text/javascript" src="./js/jquery-3.6.1.min.js" ></script>
-    <script src="./js/app.js"></script>
-    <script src="./js/custom.js"></script>
+    <script type="text/javascript" src="./js/animate-plus.min.js" ></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+
 </body>
 </html>

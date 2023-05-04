@@ -4,28 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta property="og:image" content="./img/og.jpg" />
 
     <title>MG새마을금고 60주년</title>
-
-    <!-- 글꼴 추가 -->
-    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo.css" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/nanumsquare-neo" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
-    <!-- style -->
-    <link rel="stylesheet" href="./css/normalize.css">
+    <!--css -->
+    <link rel="stylesheet" href="./css/normalize.css"/>
     <link rel="stylesheet" href="./css/variable.css"/>
     <link rel="stylesheet" href="./css/swiper.min.css"/>
-
-    <!-- custom stlye -->
+    <link rel="stylesheet" href="./css/style.css"/>
     <link rel="stylesheet" href="./css/main.css"/>
-
+    <link rel="stylesheet" href="./css/animate.css"/>
+ 
+    
 </head>
 <body>
     <header>
         <div class="wrap">
             <a href="./index.html" class="logo"><img src="./img/logo.png" data-color="./img/logo02.png" data-white="./img/logo.png" alt="MG새마을금고 60주년"></a>
-
             <span>
                 <nav>
                     <div class="wrap">
@@ -34,53 +30,64 @@
                                 <h2>60주년</h2>
                                 <ul class="lnb">
                                     <li><a href="./sub_ceo.html">CEO인사</a></li>
-                                    <li><a href="" onclick="return false;">엠블럼</a></li>
+                                    <li><a href="./sub_emblem.html">엠블럼</a></li>
                                     <li><a href="./sub_history.html">연혁갤러리</a></li>
                                     <li><a href="./sub_video.html">기념영상</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h2>기념사업</h2>
+                                <h2>함께하기</h2>
                                 <ul class="lnb">
-                                    <li><a href="./sub_introductionBusiness.html">사업소개</a></li>
-                                    <li><a href="./sub_businessReport.html">사업보도</a></li>
+                                    <li>
+                                        <h3><span>MG축제</span></h3>
+                                        <ul>
+                                            <li><a href="./sub_introductionBusiness.html">MG축제 전체보기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html">MG기념하기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html">MG어울리기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html">MG상생하기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html" class="new">MG기념상품</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./sub_businessReport.html">언론보도</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h2>대국민참여</h2>
+                                <h2>대국민 참여</h2>
                                 <ul class="lnb">
                                     <li><a href="./sub_event.html">이벤트 및 공모전</a></li>
-                                    <li><a href="./sub_notice.html">공지사항</a></li>
+                                    <li><a href="./sub_notice.html">기념공지</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h2><a href="./sub_newsSafe.html">금고소식</a></h2>
+                                <h2><a href="./sub_newsSafe.html">MG소식</a></h2>
                             </li>
                         </ul>
                     </div>
                 </nav>
-    
                 <button type="button" class="menu"><span></span><span></span><span></span></button>
             </span>
         </div>
     </header>
 
     <div class="main">
-        <section class="sc1">
-            <img src="./img/sc1_bg.png" alt="" class="sc1_bg pc1200">
-            <img src="./img/sc1_bg_mo.png" alt="" class="sc1_bg mo1200">
+        <section class="sc1" style="background: url('./img/sc1_bg.png') center/cover no-repeat;">
+            <video playsinline="" autoplay="" muted="" loop="">
+                <source src="./img/mainVideo.mp4" type="video/mp4">
+            </video>
             <div class="wrap">
-                <h2>60th<br/>anniversary<sub>.</sub></h2>
+                <h2 class="emblem"><img src="./img/mainEmblem.png" alt="60th ANNIVERSARY 60년의 동행, 함께 빛낼 100년"></h2>
             </div>
         </section>
         <section class="sc2">
             <div class="wrap">
-                <img src="./img/sc2_bg.png" alt="" class="sc2_bg">
-                <h2>MG 60th anniversary<br/>고마워요 60년, 함께해요 100년</h2>
+                <div class="video" data-youtube="CLK8qnTQ5Fw">
+                    <img src="./img/sc2_bg.png" alt="두번째 섹션 배경" class="sc2_bg">
+                </div>
+                <h2>MG 60th anniversary<br/>60년의 동행, 함께 빛낼 100년</h2>
             </div>
         </section>
         <section class="sc3">
-            <div class="wrap">
+            <a href="./sub_ceo.html" class="wrap">
                 <div class="left">
                     <span>MG 60th anniversary</span>
                     <h2>CEO's Letter</h2>
@@ -88,491 +95,180 @@
                 </div>
                 <div class="right">
                     <div class="imgWrap">
-                        <img src="./img/sc3_img01.png" alt="" class="img01">
-                        <img src="./img/sc3_img02.png" alt="" class="img02">
+                        <img src="./img/sc3_img01.png" alt="새마을금고중앙회 회장 박차훈" class="img01">
+                        <img src="./img/sc3_img02.png" alt="새마을금고 60주년 엠블럼" class="img02">
                     </div>
                 </div>
-            </div>
+            </a>
         </section>
         <section class="sc4">
             <div class="wrap">
                 <div class="top">
                     <h2>끊임없는 발전을 이끌어 온<br/><b>MG의 주요 역사</b></h2>
-                    <a href="./sub_history.html" class="more pc1200">연혁 전체보기&nbsp;&nbsp;></a>
+                    <a href="./sub_history.html" class="more">연혁 전체보기&nbsp;&nbsp;></a>
                 </div>
                 <div class="swiper">
                     <div class="swiper-container imgSlide">
                         <ul class="swiper-wrapper">
                             <li class="swiper-slide">
-                                <img src="./img/sc4_img01.png" alt="">
-                                <img src="./img/sc4_img02.png" alt="">
+                                <img src="./img/sc4_img01.png" alt="박차훈 회장">
+                                <img src="./img/sc4_img02.png" alt="MG새마을금고역사관개관식">
                             </li>
                             <li class="swiper-slide">
-                                <img src="./img/sc4_img03.png" alt="">
-                                <img src="./img/sc4_img04.png" alt="">
+                                <img src="./img/sc4_img03.png" alt="제주연수원 신관 개원">
+                                <img src="./img/sc4_img04.png" alt="새마을금고IT센터 건물 외경">
                             </li>
                             <li class="swiper-slide">
-                                <img src="./img/sc4_img05.png" alt="">
-                                <img src="./img/sc4_img06.png" alt="">
+                                <img src="./img/sc4_img05.png" alt="MG신용정보">
+                                <img src="./img/sc4_img06.png" alt="차세대 시스템 구축완료">
                             </li>
                             <li class="swiper-slide">
-                                <img src="./img/sc4_img07.png" alt="">
-                                <img src="./img/sc4_img08.png" alt="">
+                                <img src="./img/sc4_img07.png" alt="사랑의 좀도리 운동">
+                                <img src="./img/sc4_img08.png" alt="MG새마을금고 천안연수원">
                             </li>
                             <li class="swiper-slide">
-                                <img src="./img/sc4_img09.png" alt="">
-                                <img src="./img/sc4_img10.png" alt="">
+                                <img src="./img/sc4_img09.png" alt="새마을금고 연합회 현판 제막">
+                                <img src="./img/sc4_img10.png" alt="새마을금고 전산망 개통식">
                             </li>
                             <li class="swiper-slide">
-                                <img src="./img/sc4_img11.png" alt="">
-                                <img src="./img/sc4_img12.png" alt="">
-                            </li>
-                            <li class="swiper-slide">
-                                <img src="./img/sc4_img13.png" alt="">
-                                <img src="./img/sc4_img14.png" alt="">
-                            </li>
-                            <li class="swiper-slide">
-                                <img src="./img/sc4_img15.png" alt="">
-                                <img src="./img/sc4_img16.png" alt="">
-                            </li>
-                            <li class="swiper-slide">
-                                <img src="./img/sc4_img17.png" alt="">
-                                <img src="./img/sc4_img18.png" alt="">
-                            </li>
-                            <li class="swiper-slide">
-                                <img src="./img/sc4_img19.png" alt="">
-                                <img src="./img/sc4_img20.png" alt="">
-                            </li>
-                            <li class="swiper-slide">
-                                <img src="./img/sc4_img21.png" alt="">
-                                <img src="./img/sc4_img22.png" alt="">
-                            </li>
-                            <li class="swiper-slide">
-                                <img src="./img/sc4_img23.png" alt="">
-                                <img src="./img/sc4_img24.png" alt="">
-                            </li>
-                            <li class="swiper-slide">
-                                <img src="./img/sc4_img25.png" alt="">
-                                <img src="./img/sc4_img26.png" alt="">
-                            </li>
-                            <li class="swiper-slide">
-                                <img src="./img/sc4_img27.png" alt="">
-                                <img src="./img/sc4_img28.png" alt="">
-                            </li>
-                            <li class="swiper-slide">
-                                <img src="./img/sc4_img29.png" alt="">
-                                <img src="./img/sc4_img30.png" alt="">
-                            </li>
-                            <li class="swiper-slide">
-                                <img src="./img/sc4_img31.png" alt="">
-                                <img src="./img/sc4_img32.png" alt="">
-                            </li>
-                            <li class="swiper-slide">
-                                <img src="./img/sc4_img33.png" alt="">
-                                <img src="./img/sc4_img34.png" alt="">
+                                <img src="./img/sc4_img11.png" alt="국가기록물 정능3동새마을금고">
+                                <img src="./img/sc4_img12.png" alt="경남지역에서 태동">
                             </li>
                         </ul>
                     </div>
                     <div class="swiper-container historySlide">
                         <ul class="swiper-wrapper">
                             <li class="swiper-slide">
-                                <span>2021 ~ 2022</span>
+                                <span>2020 ~ 2023</span>
                                 <ul>
                                     <li>
-                                        <b>2021. 07</b>
-                                        <p>도·농 새마을금고 상생 네트워크 협약식 개최</p>
-                                    </li>
-                                    <li>
-                                        <b>2021. 10</b>
-                                        <p>제주연수원 신관 개원</p>
-                                    </li>
-                                    <li>
-                                        <b>2021. 11</b>
-                                        <p>MG새마을금고 역사관 개관</p>
-                                    </li>
-                                    <li>
-                                        <b>2022. 08</b>
-                                        <p>MG생명공제 30주년</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="swiper-slide">
-                                <span>2020</span>
-                                <ul>
-                                    <li>
-                                        <b>2020. 07</b>
-                                        <p>새마을금고 자산 200조원 달성</p>
+                                        <b>2020. 07.</b>
+                                        <p>새마을금고 자산200조 달성</p>
                                     </li>
                                     <li>
                                         <b>2020. 11</b>
-                                        <p>「새마을금고 비전 2025」 선포</p>
+                                        <p>새마을금고 비전 2025 선포</p>
                                     </li>
                                     <li>
-                                        <b>2020. 12</b>
-                                        <p>MG소비자TV(주) 인수</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="swiper-slide">
-                                <span>2019</span>
-                                <ul>
-                                    <li>
-                                        <b>2019. 09</b>
-                                        <p>MG새마을금고음악회 개최</p>
+                                        <b>2021. 09</b>
+                                        <p>도.농 새마을금고 상생 네트워크 협약식 개최</p>
                                     </li>
                                     <li>
-                                        <b>2019. 12</b>
-                                        <p>바이오인증 내부통제 시스템 구축</p>
+                                        <b>2021. 11</b>
+                                        <p>MG새마을금고역사관 개관</p>
                                     </li>
                                     <li>
-                                        <b>2019. 12</b>
-                                        <p>화상회의시스템 구축</p>
+                                        <b>2023.05</b>
+                                        <p>MG새마을금고 60주년 </p>
                                     </li>
                                 </ul>
                             </li>
                             <li class="swiper-slide">
-                                <span>2017~2018</span>
+                                <span>2010's</span>
                                 <ul>
                                     <li>
-                                        <b>2017. 01</b>
-                                        <p>새마을금고 경영컨설팅시스템 오픈</p>
+                                        <b>2010. 01.</b>
+                                        <p>제주연수원 개원</p>
                                     </li>
                                     <li>
-                                        <b>2017. 07</b>
-                                        <p>새마을금고 자기앞수표 발행 200조원 달성</p>
-                                    </li>
-                                    <li>
-                                        <b>2017. 12</b>
-                                        <p>새마을금고 자산 150조원 돌파</p>
-                                    </li>
-                                    <li>
-                                        <b>2018. 07</b>
-                                        <p>IT센터 건립완료</p>
-                                    </li>
-                                    <li>
-                                        <b>2018. 12</b>
-                                        <p>ISO 37001(부패방지경영시스템) 인증 획득</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="swiper-slide">
-                                <span>2015~2016</span>
-                                <ul>
-                                    <li>
-                                        <b>2015. 05</b>
-                                        <p>사회공헌 비전 선포식 개최 </p>
-                                    </li>
-                                    <li>
-                                        <b>2015. 06</b>
-                                        <p>메르스 긴급금융지원</p>
-                                    </li>
-                                    <li>
-                                        <b>2015. 09</b>
-                                        <p>한국은행과의 화폐수급거래 전국확대 실시</p>
-                                    </li>
-                                    <li>
-                                        <b>2015. 12</b>
-                                        <p>MG새마을금고 지역희망나눔 공익법인(재단) 설립</p>
-                                    </li>
-                                    <li>
-                                        <b>2016. 05</b>
-                                        <p>MG새마을금고 지역희망나눔재단 출범식</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="swiper-slide">
-                                <span>2014</span>
-                                <ul>
-                                    <li>
-                                        <b>2014. 01</b>
-                                        <p>새마을금고 전산망 통합보안관제서비스 실시</p>
-                                    </li>
-                                    <li>
-                                        <b>2014. 07</b>
-                                        <p>새마을금고 스마트폰 교실 운영 실시</p>
-                                    </li>
-                                    <li>
-                                        <b>2014. 09</b>
-                                        <p>새마을금고 사회공헌 체계화 모델 및 BI(MG희망나눔)선정</p>
-                                    </li>
-                                    <li>
-                                        <b>2014. 10</b>
-                                        <p>공제 EUS(전문심사시스템) 및 EMM(전자의무매뉴얼)구축 완료</p>
-                                    </li>
-                                    <li>
-                                        <b>2014. 11</b>
-                                        <p>한국은행과의 화폐수급거래 개시</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="swiper-slide">
-                                <span>2013</span>
-                                <ul>
-                                    <li>
-                                        <b>2013. 06</b>
-                                        <p>MG신용정보(주)출범</p>
-                                    </li>
-                                    <li>
-                                        <b>2013. 07</b>
-                                        <p>새마을금고 단체헌혈 대한민국 공식기록 수립 </p>
-                                    </li>
-                                    <li>
-                                        <b>2013. 07</b>
-                                        <p>상시감시종합 정보시스템 오픈 </p>
-                                    </li>
-                                    <li>
-                                        <b>2013. 08</b>
-                                        <p>새마을금고 MG체크카드 발급 200만장 돌파 </p>
-                                    </li>
-                                    <li>
-                                        <b>2013. 09</b>
-                                        <p>새마을금고 50년사 발간</p>
-                                    </li>
-                                    <li>
-                                        <b>2013. 10</b>
-                                        <p>새마을금고 여자 배드민턴단 창단</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="swiper-slide">
-                                <span>2013</span>
-                                <ul>
-                                    <li>
-                                        <b>2013. 02</b>
-                                        <p>새마을금고 자기앞수표 발행 100조원 달성</p>
-                                    </li>
-                                    <li>
-                                        <b>2013. 03</b>
-                                        <p>새마을금고 남자 배드민턴단 창단</p>
-                                    </li>
-                                    <li>
-                                        <b>2013. 04</b>
-                                        <p>새마을금고 창립 50주년 기념 사랑의 좀도리운동 국토순례 대장정 </p>
-                                    </li>
-                                    <li>
-                                        <b>2013. 05</b>
-                                        <p>새마을금고 국제심포지엄 개최</p>
-                                    </li>
-                                    <li>
-                                        <b>2013. 05</b>
-                                        <p>새마을금고 창립 50주년 기념 ‘전국 새마을금고인 대회’ 개최 </p>
-                                    </li>
-                                    <li>
-                                        <b>2013. 05</b>
-                                        <p>새마을금고 새로운 CI 선포</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="swiper-slide">
-                                <span>2012</span>
-                                <ul>
-                                    <li>
-                                        <b>2012. 03</b>
+                                        <b>2012. 03.</b>
                                         <p>새마을금고 MG체크카드 출시</p>
                                     </li>
                                     <li>
                                         <b>2012. 09</b>
-                                        <p>새마을금고 자산 100조원 돌파</p>
+                                        <p>새마을금고 자산 100조 돌파</p>
                                     </li>
                                     <li>
-                                        <b>2012. 11</b>
-                                        <p>새마을금고 정보계시스템 구축 완료</p>
+                                        <b>2014. 09</b>
+                                        <p>새마을금고 사회공헌 체계화 모델 및 BI(희망나눔)선정</p>
                                     </li>
                                     <li>
-                                        <b>2012. 11</b>
-                                        <p>정보통합시스템 BS10012(개인정보관리체계) 인증획득</p>
+                                        <b>2015. 12</b>
+                                        <p>MG새마을금고 지역희망나눔 공익법인(재단)설립</p>
                                     </li>
                                     <li>
-                                        <b>2012. 11</b>
-                                        <p>새마을금고 대학생 자원봉사단 발대식</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="swiper-slide">
-                                <span>2010~2011</span>
-                                <ul>
-                                    <li>
-                                        <b>2010. 01</b>
-                                        <p>제주연수원 개원</p>
-                                    </li>
-                                    <li>
-                                        <b>2010. 10</b>
-                                        <p>(주)엠지자산관리 설립</p>
-                                    </li>
-                                    <li>
-                                        <b>2011. 01</b>
-                                        <p>스마트폰뱅킹 서비스 개시</p>
-                                    </li>
-                                    <li>
-                                        <b>2011. 09</b>
-                                        <p>새마을금고연합회를 새마을금고중앙회로 명칭 변경</p>
-                                    </li>
-                                    <li>
-                                        <b>2011. 12</b>
-                                        <p>어음 이미지정보교환 실시</p>
+                                        <b>2018. 07</b>
+                                        <p>IT 센터 건립완료</p>
                                     </li>
                                 </ul>
                             </li>
                             <li class="swiper-slide">
-                                <span>2006~2009</span>
+                                <span>2000's</span>
                                 <ul>
                                     <li>
-                                        <b>2006. 03</b>
-                                        <p>전자금융시스템 국제정보보호표준인증 획득(ISO27001)</p>
+                                        <b>2000. 08.</b>
+                                        <p>새마을금고 인터넷뱅킹 서비스실시</p>
                                     </li>
                                     <li>
-                                        <b>2006. 09</b>
-                                        <p>새마을금고 모바일뱅킹 업무개시</p>
+                                        <b>2001. 09.</b>
+                                        <p>새마을금고 금융결제원 가입</p>
                                     </li>
                                     <li>
-                                        <b>2008. 02</b>
-                                        <p>새마을금고 자기앞수표 발행업무 개시</p>
-                                    </li>
-                                    <li>
-                                        <b>2008. 05</b>
-                                        <p>새마을금고 국제심포지엄 개최</p>
-                                    </li>
-                                    <li>
-                                        <b>2009. 09</b>
-                                        <p>새마을금고전산망 차세대시스템 구축</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="swiper-slide">
-                                <span>2002~2005</span>
-                                <ul>
-                                    <li>
-                                        <b>2002. 02</b>
-                                        <p>새마을금고 금융결제업무 개시 </p>
-                                    </li>
-                                    <li>
-                                        <b>2002. 12</b>
+                                        <b>2002. 12.</b>
                                         <p>새마을금고 텔레뱅킹업무 시작</p>
                                     </li>
                                     <li>
-                                        <b>2003. 05</b>
-                                        <p>새마을금고 창립 40주년</p>
+                                        <b>2006. 09.</b>
+                                        <p>새마을금고 모바일뱅킹 업무개시</p>
                                     </li>
                                     <li>
-                                        <b>2004. 11</b>
-                                        <p>새마을금고 공제 유효계약고 50조원 달성</p>
+                                        <b>2008. 05.</b>
+                                        <p>새마을금고 자기앞수표 발행업무 개시</p>
                                     </li>
                                     <li>
-                                        <b>2005. 09</b>
-                                        <p>새마을금고 자산 50조원 돌파</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="swiper-slide">
-                                <span>2000~2001</span>
-                                <ul>
-                                    <li>
-                                        <b>2000. 05</b>
-                                        <p>새마을금고연수원 이전 확장 개원(충남 천안시 목천면) </p>
-                                    </li>
-                                    <li>
-                                        <b>2000. 08</b>
-                                        <p>새마을금고 인터넷뱅킹 서비스 실시</p>
-                                    </li>
-                                    <li>
-                                        <b>2001. 03</b>
-                                        <p>새마을금고 제휴 신용카드사업 실시</p>
-                                    </li>
-                                    <li>
-                                        <b>2001. 09</b>
-                                        <p>새마을금고 금융결제원 가입</p>
+                                        <b>2009. 09.</b>
+                                        <p>새마을금고 전산망차세대시스템구축</p>
                                     </li>
                                 </ul>
                             </li>
                             <li class="swiper-slide">
-                                <span>1996~1998</span>
+                                <span>1990's</span>
                                 <ul>
                                     <li>
-                                        <b>1996. 05</b>
+                                        <b>1991. 03.</b>
+                                        <p>공제사업(손해공제 개시)</p>
+                                    </li>
+                                    <li>
+                                        <b>1994. 04.</b>
+                                        <p>국제협동조합연맹(ICA)회원가입</p>
+                                    </li>
+                                    <li>
+                                        <b>1996. 05.</b>
                                         <p>새마을금고의 날 제정 및 비전21전진대회 개최</p>
                                     </li>
                                     <li>
-                                        <b>1997. 07</b>
-                                        <p>새마을금고중앙회관 이전(강남구 삼성동)</p>
+                                        <b>1997. 11.</b>
+                                        <p>새마을금고온라인전산망구축</p>
                                     </li>
                                     <li>
-                                        <b>1997. 11</b>
-                                        <p>새마을금고 온라인 전산망 구축</p>
-                                    </li>
-                                    <li>
-                                        <b>1998. 01</b>
-                                        <p>새마을금고법 개정</p>
-                                    </li>
-                                    <li>
-                                        <b>1998. 09</b>
+                                        <b>1998. 09.</b>
                                         <p>새마을금고 사랑의 좀도리운동 시작</p>
                                     </li>
                                 </ul>
                             </li>
                             <li class="swiper-slide">
-                                <span>1991~1994</span>
+                                <span>1980's</span>
                                 <ul>
                                     <li>
-                                        <b>1991. 03</b>
-                                        <p>공제사업(손해공제)개시</p>
+                                        <b>1982. 12.</b>
+                                        <p>새마을금고법 제정</p>
                                     </li>
                                     <li>
-                                        <b>1992. 03</b>
-                                        <p>새마을금고 자산 10조원 돌파</p>
+                                        <b>1983. 07.</b>
+                                        <p>예금자보호를 위한 안전기금 사업개시</p>
                                     </li>
                                     <li>
-                                        <b>1992. 06</b>
-                                        <p>재단법인 새마을금고임직원상조복지회 설립</p>
-                                    </li>
-                                    <li>
-                                        <b>1992. 09</b>
-                                        <p>공제사업(생명공제) 확대</p>
-                                    </li>
-                                    <li>
-                                        <b>1994. 04</b>
-                                        <p>국제협동조합연맹(ICA) 회원가입</p>
+                                        <b>1984. 07.</b>
+                                        <p>새마을금고 자산1조원 돌파</p>
                                     </li>
                                 </ul>
                             </li>
                             <li class="swiper-slide">
-                                <span>1980‘s</span>
+                                <span>since 1963</span>
                                 <ul>
                                     <li>
-                                        <b>1982. 12</b>
-                                        <p>새마을금고법 제정 (법률 제3622호)</p>
-                                    </li>
-                                    <li>
-                                        <b>1983. 01</b>
-                                        <p>새마을금고법 시행</p>
-                                    </li>
-                                    <li>
-                                        <b>1983. 07</b>
-                                        <p>예금자 보호를 위한 안전기금 사업개시</p>
-                                    </li>
-                                    <li>
-                                        <b>1984. 07</b>
-                                        <p>새마을금고 자산 1조원 돌파</p>
-                                    </li>
-                                    <li>
-                                        <b>1989. 04</b>
-                                        <p>새마을금고중앙회관 신축이전(강서구 화곡동)</p>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="swiper-slide">
-                                <span>1963</span>
-                                <ul>
-                                    <li>
-                                        <b>1963. 05</b>
-                                        <p>향토 개발사업의 일환으로 경남지역에서 태동</p>
-                                    </li>
-                                    <li>
-                                        <b>1965. 03</b>
-                                        <p>마을금고 지도자 양성을 위한 중앙교육 개시</p>
-                                    </li>
-                                    <li>
-                                        <b>1973. 03</b>
-                                        <p>마을금고연합회 창립</p>
+                                        <b>1963. 05.</b>
+                                        <p>새마을금고태동</p>
                                     </li>
                                 </ul>
                             </li>
@@ -583,7 +279,6 @@
                         <div class="swiper-button-next"></div>
                     </div>
                 </div>
-                <a href="#" class="more mo1200">연혁 전체보기&nbsp;&nbsp;></a>
             </div>
         </section>
         <section class="sc5">
@@ -619,16 +314,16 @@
                     <div class="swiper-container sc5Slide02">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img src="./img/sc5_img01.jpg" alt="">
+                                <img src="./img/sc5_img01.jpg" alt="60주년 기념행사">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./img/sc5_img01.jpg" alt="">
+                                <img src="./img/sc5_img01.jpg" alt="60주년 기념행사">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./img/sc5_img01.jpg" alt="">
+                                <img src="./img/sc5_img01.jpg" alt="60주년 기념행사">
                             </div>
                             <div class="swiper-slide">
-                                <img src="./img/sc5_img01.jpg" alt="">
+                                <img src="./img/sc5_img01.jpg" alt="60주년 기념행사">
                             </div>
                         </div>
                     </div>
@@ -652,12 +347,26 @@
         </div>
     </footer>
 
+    <!-- 비디오 팝업 -->
+    <div class="popup sc2Video">
+        <div class="wrap video">
+            <div class="video_wrap">
+                <button class="video_close"><span>닫기</span></button>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CLK8qnTQ5Fw?autoplay=1&mute=1" autoplay="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
-    <!-- Script -->
+
+    <!-- script -->
     <script type="text/javascript" src="./js/swiper.min.js"></script>
     <script type="text/javascript" src="./js/jquery-3.6.1.min.js" ></script>
-    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/animate-plus.min.js" ></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
     <script type="text/javascript" src="./js/app.js"></script>
+
+    <!-- only main script -->
+    <script type="text/javascript" src="./js/main.js"></script>
 
 </body>
 </html>

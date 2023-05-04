@@ -4,27 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta property="og:image" content="./img/og.jpg" />
     <title>사업보도</title>
 
-    <!-- 글꼴 추가 -->
-    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo.css" rel="stylesheet">
-    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/nanumsquare-neo" rel="stylesheet">
-
-    <!-- 스와이퍼js-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!--css -->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/variable.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css"/>
+    <link rel="stylesheet" href="./css/variable.css"/>
+    <link rel="stylesheet" href="./css/swiper.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/animate.css"/>
 
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/7e7b796bd2.js" crossorigin="anonymous"></script>
-
-    <!-- 제이쿼리 CDN -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
- 
 </head>
 
 <body>
@@ -41,27 +32,36 @@
                                 <h2>60주년</h2>
                                 <ul class="lnb">
                                     <li><a href="./sub_ceo.html">CEO인사</a></li>
-                                    <li><a href="" onclick="return false;">엠블럼</a></li>
+                                    <li><a href="./sub_emblem.html">엠블럼</a></li>
                                     <li><a href="./sub_history.html">연혁갤러리</a></li>
                                     <li><a href="./sub_video.html">기념영상</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h2>기념사업</h2>
+                                <h2>함께하기</h2>
                                 <ul class="lnb">
-                                    <li><a href="./sub_introductionBusiness.html">사업소개</a></li>
-                                    <li><a href="./sub_businessReport.html">사업보도</a></li>
+                                    <li>
+                                        <h3><span>MG축제</span></h3>
+                                        <ul>
+                                            <li><a href="./sub_introductionBusiness.html">MG축제 전체보기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html">MG기념하기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html">MG어울리기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html">MG상생하기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html" class="new">MG기념상품</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./sub_businessReport.html">언론보도</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h2>대국민참여</h2>
+                                <h2>대국민 참여</h2>
                                 <ul class="lnb">
                                     <li><a href="./sub_event.html">이벤트 및 공모전</a></li>
-                                    <li><a href="./sub_notice.html">공지사항</a></li>
+                                    <li><a href="./sub_notice.html">기념공지</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h2><a href="./sub_newsSafe.html">금고소식</a></h2>
+                                <h2><a href="./sub_newsSafe.html">MG소식</a></h2>
                             </li>
                         </ul>
                     </div>
@@ -74,126 +74,121 @@
 
     <section class="sub_top top_businessReport">
         <div class="inner">
-
             <div class="sub_title">
-                <p>기념사업</p>
-                <h2>사업보도</h2>
+                <p>함께하기</p>
+                <h2>언론보도</h2>
             </div>
-
             <p class="sub_nav_text">
-                <i class="fa-solid fa-house-chimney"></i>
-                MG새마을금고중앙회 · 기념사업 · <strong>사업보도</strong>
+                MG새마을금고중앙회 · 함께하기 · <strong>언론보도</strong>
             </p>
-
         </div>
-
     </section>
 
     <section class="sub_businessReport">
-
         <div class="inner">
-
-            <div class="sub_search">
-
-                <form action="">
+            <div class="search_box">
+                <p class="total">총 <span class="totalNum">68</span>건</p>
+                <div class="search_wrap">
                     <div class="area-custom-select">
-                        <div class="custom-select" tabindex="0">
-                            <span class="custom-select-text">전체</span>
-                        </div>
-                        <ul class="custom-select-list" style="display:none;">
-                            <li value="selectOption1" class="custom-select-option">전체</li>
-                            <li value="selectOption2" class="custom-select-option">제목</li>
-                            <li value="selectOption3" class="custom-select-option">내용</li>
-                        </ul>
-                        <select class="select-origin" style="display: none;">
+                        <select class="select-origin">
                             <option value="selectOption1" selected="selected">전체</option>
                             <option value="selectOption2">제목</option>
                             <option value="selectOption3">내용</option>
                         </select>
                     </div>
-
                     <input class="search_text" type="text" placeholder="내용을 입력하세요.">
-
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
-
-                </form>
-
+                    <button class="search"></button>
+                </div>
             </div>
 
             <div class="businessReport_content">
                 <ul>
-                    <li>
+                    <li class="animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
                         <a href="">
-                            <div class="img_box"></div>
+                            <div class="img_box"><img src= "./img/02.jpg" alt=""></div>
                             <div class="text_box">
-                                <span>[60주년 행사]</span>
+                                <span class="tit">[60주년 행사]</span>
                                 <p>MG새마을금고 60주년 기념 메타버스 홍보관 MG새마을금고 60주년 기념 메타버스 홍보관 MG새마을금고 60주년 기념 메타버스 홍보관</p>
                                 <span class="date">2023.06.30</span>
                             </div>
                         </a>
                     </li>
-
-                    <li>
+                    <li class="animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
                         <a href="">
-                            <div class="img_box"></div>
+                            <div class="img_box"><img src= "./img/02.jpg" alt=""></div>
                             <div class="text_box">
-                                <span>[60주년 행사]</span>
+                                <span class="tit">[60주년 행사]</span>
                                 <p>MG새마을금고 60주년 기념 메타버스 홍보관</p>
                                 <span class="date">2023.06.30</span>
                             </div>
                         </a>
                     </li>
-
-                    <li>
+                    <li class="animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
                         <a href="">
-                            <div class="img_box"></div>
+                            <div class="img_box"><img src= "./img/02.jpg" alt=""></div>
                             <div class="text_box">
-                                <span>[60주년 행사]</span>
+                                <span class="tit">[60주년 행사]</span>
                                 <p>MG새마을금고 60주년 기념 메타버스 홍보관</p>
                                 <span class="date">2023.06.30</span>
                             </div>
                         </a>
                     </li>
-
-                    <li>
+                    <li class="animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
                         <a href="">
-                            <div class="img_box"></div>
+                            <div class="img_box"><img src= "./img/02.jpg" alt=""></div>
                             <div class="text_box">
-                                <span>[60주년 행사]</span>
+                                <span class="tit">[60주년 행사]</span>
                                 <p>MG새마을금고 60주년 기념 메타버스 홍보관</p>
                                 <span class="date">2023.06.30</span>
                             </div>
                         </a>
                     </li>
-
-                    <li>
+                    <li class="animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
                         <a href="">
-                            <div class="img_box"></div>
+                            <div class="img_box"><img src= "./img/02.jpg" alt=""></div>
                             <div class="text_box">
-                                <span>[60주년 행사]</span>
+                                <span class="tit">[60주년 행사]</span>
                                 <p>MG새마을금고 60주년 기념 메타버스 홍보관</p>
                                 <span class="date">2023.06.30</span>
                             </div>
                         </a>
                     </li>
-
-                    <li>
+                    <li class="animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
                         <a href="">
-                            <div class="img_box"></div>
+                            <div class="img_box"><img src= "./img/02.jpg" alt=""></div>
                             <div class="text_box">
-                                <span>[60주년 행사]</span>
+                                <span class="tit">[60주년 행사]</span>
                                 <p>MG새마을금고 60주년 기념 메타버스 홍보관</p>
                                 <span class="date">2023.06.30</span>
                             </div>
                         </a>
                     </li>
-
+                    <li class="animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                        <a href="">
+                            <div class="img_box"><img src= "./img/02.jpg" alt=""></div>
+                            <div class="text_box">
+                                <span class="tit">[60주년 행사]</span>
+                                <p>MG새마을금고 60주년 기념 메타버스 홍보관</p>
+                                <span class="date">2023.06.30</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="animate-plus" data-animations="fadeInUp" data-animation-when-visible="true">
+                        <a href="">
+                            <div class="img_box"><img src= "./img/02.jpg" alt=""></div>
+                            <div class="text_box">
+                                <span class="tit">[60주년 행사]</span>
+                                <p>MG새마을금고 60주년 기념 메타버스 홍보관</p>
+                                <span class="date">2023.06.30</span>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
             <div class="sub_nav">
-                <a href="" class="sub_first"><i class="fa-solid fa-backward-fast"></i></a>
-                <a href="" class="sub_prev"><i class="fa-solid fa-caret-left"></i></a>
+                <a href="" class="pageButton sub_first"></a>
+                <a href="" class="pageButton sub_prev"></a>
                 <ul>
                     <li class="active"><a href="">1</a></li>
                     <li><a href="">2</a></li>
@@ -203,13 +198,13 @@
                     <li><a href="">6</a></li>
                     <li><a href="">7</a></li>
                     <li><a href="">8</a></li>
+                    <li><a href="">9</a></li>
+                    <li><a href="">10</a></li>
                 </ul>
-                <a href="" class="sub_next"><i class="fa-solid fa-caret-right"></i></a>
-                <a href="" class="sub_last"><i class="fa-solid fa-forward-fast"></i></a>
+                <a href="" class="pageButton sub_next"></a>
+                <a href="" class="pageButton sub_last"></a>
             </div>
-
         </div>
-
     </section>
 
     <footer>
@@ -220,9 +215,11 @@
     </footer>
 
     <!-- script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./js/swiper.min.js"></script>
     <script type="text/javascript" src="./js/jquery-3.6.1.min.js" ></script>
-    <script src="./js/app.js"></script>
-    <script src="./js/custom.js"></script>
+    <script type="text/javascript" src="./js/animate-plus.min.js" ></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+
 </body>
 </html>

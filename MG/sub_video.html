@@ -4,26 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta property="og:image" content="./img/og.jpg" />
     <title>기념영상</title>
     
-    <!-- 글꼴 추가 -->
-    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-myeongjo.css" rel="stylesheet">
-    <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-square.css" rel="stylesheet">
-    <link href="https://fonts.cdnfonts.com/css/nanumsquare-neo" rel="stylesheet">
-
-    <!-- 스와이퍼js-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <!--css -->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/variable.css">
-    <link rel="stylesheet" href="./css/style.css">
-
-    <!-- fontawesome -->
-    <script src="https://kit.fontawesome.com/7e7b796bd2.js" crossorigin="anonymous"></script>
-
-    <!-- 제이쿼리 CDN -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="./css/normalize.css"/>
+    <link rel="stylesheet" href="./css/variable.css"/>
+    <link rel="stylesheet" href="./css/swiper.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/animate.css"/>
+ 
  
 </head>
 
@@ -40,27 +32,36 @@
                                 <h2>60주년</h2>
                                 <ul class="lnb">
                                     <li><a href="./sub_ceo.html">CEO인사</a></li>
-                                    <li><a href="" onclick="return false;">엠블럼</a></li>
+                                    <li><a href="./sub_emblem.html">엠블럼</a></li>
                                     <li><a href="./sub_history.html">연혁갤러리</a></li>
                                     <li><a href="./sub_video.html">기념영상</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h2>기념사업</h2>
+                                <h2>함께하기</h2>
                                 <ul class="lnb">
-                                    <li><a href="./sub_introductionBusiness.html">사업소개</a></li>
-                                    <li><a href="./sub_businessReport.html">사업보도</a></li>
+                                    <li>
+                                        <h3><span>MG축제</span></h3>
+                                        <ul>
+                                            <li><a href="./sub_introductionBusiness.html">MG축제 전체보기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html">MG기념하기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html">MG어울리기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html">MG상생하기</a></li>
+                                            <li><a href="./sub_introductionBusiness.html" class="new">MG기념상품</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./sub_businessReport.html">언론보도</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h2>대국민참여</h2>
+                                <h2>대국민 참여</h2>
                                 <ul class="lnb">
                                     <li><a href="./sub_event.html">이벤트 및 공모전</a></li>
-                                    <li><a href="./sub_notice.html">공지사항</a></li>
+                                    <li><a href="./sub_notice.html">기념공지</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <h2><a href="./sub_newsSafe.html">금고소식</a></h2>
+                                <h2><a href="./sub_newsSafe.html">MG소식</a></h2>
                             </li>
                         </ul>
                     </div>
@@ -73,85 +74,71 @@
 
     <section class="sub_top top_video">
         <div class="inner">
-
             <div class="sub_title">
                 <p>새마을금고60주년</p>
                 <h2>기념영상</h2>
             </div>
-
             <p class="sub_nav_text">
-                <i class="fa-solid fa-house-chimney"></i>
                 MG새마을금고중앙회 · 60주년 · <strong>기념영상</strong>
             </p>
-
         </div>
-
     </section>
 
     <section class="sub_video">
         <div class="inner">
-
             <div class="video_box">
-                <img src="./img/vd.jpg" alt="">
+                <div class="videoWrap">
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/CLK8qnTQ5Fw?autoplay=1&mute=1" autoplay="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <!-- <img src="./img/vd.jpg" alt=""> -->
             </div>
-
             <div class="list">
                 <h5>MG새마을금고중앙회 기념영상</h5>
                 <ul>
-                    <li>
-                        <a href="">
-                            <div class="img_box">
-                                <div class="img"></div>
-                            </div>
-                            <div class="text_box">
-                                <p>박차훈 새마을금고중앙회장</p>
-                                <p>"지역주민과 함께 발전해 온 토종금융"</p>
-                                <span>MBN토요포커스</span>
-                            </div>
-                        </a>
+                    <li data-youtube="CLK8qnTQ5Fw">
+                        <div class="img_box">
+                            <div class="img"><img src="./img/videoThum01.jpg" alt=""></div>
+                        </div>
+                        <div class="text_box">
+                            <p>2022~2023년 새마을금고 홍보영상</p>
+                            <span>새마을금고</span>
+                        </div>
                     </li>
 
-                    <li>
-                        <a href="">
-                            <div class="img_box">
-                                <div class="img"></div>
-                            </div>
-                            <div class="text_box">
-                                <p>박차훈 새마을금고중앙회장</p>
-                                <p>"지역주민과 함께 발전해 온 토종금융"</p>
-                                <span>MBN토요포커스</span>
-                            </div>
-                        </a>
+                    <li  data-youtube="GEnp4P_khM4">
+                        <div class="img_box">
+                            <div class="img"><img src="./img/videoThum02.jpg" alt=""></div>
+                        </div>
+                        <div class="text_box">
+                            <p>MG새마을금고 당신이 주인공 메이크오버 영상2</p>
+                            <!-- <p>"지역주민과 함께 발전해 온 토종금융"</p> -->
+                            <span>새마을금고</span>
+                        </div>
                     </li>
 
-                    <li>
-                        <a href="">
-                            <div class="img_box">
-                                <div class="img"></div>
-                            </div>
-                            <div class="text_box">
-                                <p>박차훈 새마을금고중앙회장</p>
-                                <p>"지역주민과 함께 발전해 온 토종금융"</p>
-                                <span>MBN토요포커스</span>
-                            </div>
-                        </a>
+                    <li data-youtube="i3BJ8SrJhtU">
+                        <div class="img_box">
+                            <div class="img"><img src="./img/videoThum03.jpg" alt=""></div>
+                        </div>
+                        <div class="text_box">
+                            <p>새마을금고 비전 2025 영상</p>
+                            <!-- <p>"지역주민과 함께 발전해 온 토종금융"</p> -->
+                            <span>새마을금고</span>
+                        </div>
                     </li>
 
-                    <li>
-                        <a href="">
-                            <div class="img_box">
-                                <div class="img"></div>
-                            </div>
-                            <div class="text_box">
-                                <p>박차훈 새마을금고중앙회장</p>
-                                <p>"지역주민과 함께 발전해 온 토종금융"</p>
-                                <span>MBN토요포커스</span>
-                            </div>
-                        </a>
+                    <li data-youtube="">
+                        <div class="img_box">
+                            <div class="img"><img src="./img/videoThum01.jpg" alt=""></div>
+                        </div>
+                        <div class="text_box">
+                            <!-- <p>박차훈 새마을금고중앙회장</p>
+                            <p>"지역주민과 함께 발전해 온 토종금융"</p>
+                            <span>MBN토요포커스</span> -->
+                        </div>
                     </li>
                 </ul>
             </div>
-
         </div>
     </section>
 
@@ -163,9 +150,11 @@
     </footer>
 
     <!-- script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="./js/swiper.min.js"></script>
     <script type="text/javascript" src="./js/jquery-3.6.1.min.js" ></script>
-    <script src="./js/app.js"></script>
-    <script src="./js/custom.js"></script>
+    <script type="text/javascript" src="./js/animate-plus.min.js" ></script>
+    <script type="text/javascript" src="./js/custom.js"></script>
+    <script type="text/javascript" src="./js/app.js"></script>
+
 </body>
 </html>
