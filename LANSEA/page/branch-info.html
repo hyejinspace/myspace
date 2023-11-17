@@ -1,0 +1,182 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT']."/common/html/head.html";
+?>
+
+<body>
+
+    <!-- header -->
+    <header id="header"></header>
+
+    <!-- nav -->
+    <nav id="nav"></nav>
+
+    <!-- 서브컨텐츠 시작 -->
+    <section class="sub">
+        <!-- 서브 공통 탑 -->
+        <div class="sub-top">
+            <div class="sub-top__inner">
+
+                <div class="sub-top__depth">
+                    <i class="fa-solid fa-house"></i>
+                    <i class="sub-top__arrow fa-solid fa-angle-right"></i>
+                    <span>
+                        센터안내
+                    </span>
+                </div>
+                <h3>센터안내</h3>
+
+            </div>
+        </div>
+
+        <!-- 서브콘텐츠 시작 -->
+        <div class="branch-info">
+            <div class="branch-info__inner">
+
+                <ul class="branch-list">
+                    <li>
+                        <div id="map" class="branch-list__map"></div>
+
+                        <h5>[랜시푸드] 서부 센터</h5>
+                        <p class="branch-list__address">
+                            경기도 시흥시 시흥대로 1001-10 (미산동 160-7)
+                        </p>
+                        
+                    </li>
+
+                    <li>
+                        <div id="map" class="branch-list__map"></div>
+
+                        <h5>[랜시푸드] 동부 센터</h5>
+                        <p class="branch-list__address">
+                            경기도 남양주시 와부읍 율석리 794
+                        </p>
+                       
+                    </li>
+
+                    <li>
+                        <div id="map" class="branch-list__map"></div>
+
+                        <h5>[랜시푸드] 남부 센터</h5>
+                        <p class="branch-list__address">
+                            경기 용인시 처인구 남사읍 원암로 481
+                        </p>
+                        
+                    </li>
+
+                    <li>
+                        <div id="map" class="branch-list__map"></div>
+
+                        <h5>[랜시푸드] 평택 센터</h5>
+                        <p class="branch-list__address">
+                            경기도 평택시 포승읍 포승공단순환로 49 (평택항만물류)
+                        </p>
+                        
+                    </li>
+
+                    <li>
+                        <div id="map" class="branch-list__map"></div>
+
+                        <h5>[랜시푸드] 충청호남 센터</h5>
+                        <p class="branch-list__address">
+                            전라북도 김제시 백구면 번영로 2138
+                        </p>
+                        
+                    </li>
+
+                    <!--li>
+                        <div id="map" class="branch-list__map"></div>
+
+                        <h5>[랜시푸드] 부산(감천항)</h5>
+                        <p class="branch-list__address">
+                            부산광역시 서구 원양로 35
+                        </p>
+                        <a href="tel:051-220-8050">
+                            <p class="branch-list__contact">
+                                051-220-8050
+                            </p>
+                        </a>
+                    </li-->
+
+                    <li>
+                        <div id="map" class="branch-list__map"></div>
+
+                        <h5>[랜시푸드] 영남 센터</h5>
+                        <p class="branch-list__address">
+                            부산광역시 서구 암남동 714
+                        </p>
+                        
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- footer -->
+    <footer id="footer"></footer>
+
+
+
+    <!-- Script -->
+    <script type="text/javascript" src="/common/js/wow.js"></script>
+    <script src="/common/js/custom.js"></script>
+
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=90669aba530952d2ededded1d9b66bb4"></script>
+    <script>
+        var branchMap = document.querySelectorAll("#map");
+        var branchMapCoordinates = [
+            { x: 37.426174427612445, y: 126.78972174298274 , address : "[랜시푸드] 서부 센터" },
+            { x: 37.61039228560914, y: 127.21081564786729 , address :  "[랜시푸드] 동부 센터"},
+            { x: 37.10236062024123, y: 127.17423341531642 , address : "[랜시푸드] 남부 센터"},
+            { x: 36.96663822807051, y: 126.84696336889569 , address : "[랜시푸드] 평택 센터"},
+            { x: 35.90815366920506, y: 126.93507121279026 , address : "[랜시푸드] 충청호남센터"},
+           // { x: 35.058763528896336, y: 129.01016882244517 , address :  "[랜시푸드] 부산(감천항)"},
+            { x: 35.06517958204664, y: 129.0126361333815 , address : "[랜시푸드] 영남 센터"}
+        ]
+
+        for (let i = 0; i < branchMap.length; i++) {
+            setBranchMap(branchMap[i], branchMapCoordinates[i].x, branchMapCoordinates[i].y, branchMapCoordinates[i].address)
+        }
+
+        function setBranchMap(el, x, y, address) {
+            var mapContainer = el, // 지도를 표시할 div 
+                mapOption = {
+                    center: new kakao.maps.LatLng(x, y), // 지도의 중심좌표
+                    level: 3 // 지도의 확대 레벨
+                };
+
+            var map = new kakao.maps.Map(mapContainer, mapOption);
+            var markerPosition = new kakao.maps.LatLng(x, y);
+            var marker = new kakao.maps.Marker({
+                position: markerPosition
+            });
+
+            marker.setMap(map);
+            var iwContent = `<div class="marker">
+                    <p>
+                    ${address}
+                    </p>
+                </div>`;
+            var infowindow = new kakao.maps.InfoWindow({
+                content: iwContent
+            });
+
+            kakao.maps.event.addListener(marker, 'mouseover', function () {
+                infowindow.open(map, marker);
+            });
+            kakao.maps.event.addListener(marker, 'mouseout', function () {
+                infowindow.close();
+            });
+        }
+
+    </script>
+</body>
+
+
+</html>

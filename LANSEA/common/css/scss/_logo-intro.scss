@@ -1,0 +1,334 @@
+.logo-intro {
+	&__inner {
+		width: 100%;
+		max-width: 1000px;
+		box-sizing: border-box;
+		padding: 0px 30px;
+		margin: 0px auto;
+		line-height: 1.5;
+
+		h6 {
+			font-size: 22px;
+			font-weight: normal;
+		}
+	}
+
+	&__wrap {
+		display: flex;
+		margin-bottom: 100px;
+
+		&-img-box {
+			width: 100%;
+			box-sizing: border-box;
+			margin-bottom: 50px;
+
+			img {
+				max-width: 100%;
+			}
+		}
+
+		h3 {
+			font-size: 32px;
+			position: relative;
+			padding-left: 15px;
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 0px;
+				width: 5px;
+				height: 26px;
+				background-color: #e46d32;
+				transform: translateY(-50%);
+			}
+
+		}
+
+		p {
+			font-size: 20px;
+		}
+		
+		.left {
+			width: 30%;
+			box-sizing: border-box;
+		}
+		.right {
+			width: 70%;
+			box-sizing: border-box;
+
+			h3 {
+				padding-left: 0;
+				margin-bottom: 10px;
+				&::before {
+					display: none;
+				}
+			}
+		}
+	}
+
+	.shade {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+
+		p {
+			margin-right: 100px;
+		}
+
+
+	}
+}
+
+.logo-down {
+	display: flex;
+	justify-content: center;
+
+	a {
+		display: inline-block;
+		padding: 10px 60px;
+		border: 1px solid #ccc;
+		font-size: 20px;
+
+		img {
+			margin-left: 10px;
+		}
+
+	}
+}
+
+.logo-color-wrap {
+	display: flex;
+	margin-bottom: 80px;
+
+	>div {
+		width: 30%;
+		margin-right: 5%;
+
+		.logo-color-ex  {
+			width: 100%;
+			box-sizing: border-box;
+			height: 10px;
+			background-color: #e46d32;
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 16px;
+			span {
+				display: block;
+				font-size: 22px;
+				font-weight: 600;
+			}
+		}
+
+		&:nth-of-type(3) {
+			margin-right: 0;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.logo-intro {
+		&__inner {
+			padding: 0px 30px;
+	
+			h6 {
+				font-size: 20px;
+			}
+		}
+	
+		&__wrap {
+			margin-bottom: 80px;
+	
+			&-img-box {
+				margin-bottom: 50px;
+			}
+	
+			h3 {
+				font-size: 28px;
+				padding-left: 15px;
+				&::before {
+					width: 5px;
+					height: 22px;
+				}
+			}
+	
+			p {
+				font-size: 18px;
+			}
+			
+			.left {
+				width: 30%;
+			}
+			.right {
+				width: 70%;
+			}
+		}
+	
+		.shade {
+			p {
+				margin-right: 40px;
+			}
+		}
+	}
+	
+	.logo-down {
+		a {
+			padding: 10px 50px;
+			font-size: 18px;
+	
+			img {
+				margin-left: 10px;
+				width: 20px;
+			}
+	
+		}
+	}
+	
+	.logo-color-wrap {
+		margin-bottom: 60px;
+		>div {
+			width: 30%;
+			margin-right: 5%;
+	
+			p {
+				font-size: 14px;
+				span {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.logo-intro {
+		&__inner {
+			padding: 0px 20px;
+	
+			h6 {
+				font-size: 20px;
+			}
+		}
+	
+		&__wrap {
+			flex-wrap: wrap;
+			margin-bottom: 60px;
+	
+			&-img-box {
+				margin-bottom: 30px;
+			}
+	
+			h3 {
+				font-size: 28px;
+				padding-left: 15px;
+				&::before {
+					width: 5px;
+					height: 22px;
+				}
+			}
+	
+			p {
+				font-size: 18px;
+			}
+			
+			.left {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+			.right {
+				width: 100%;
+			}
+		}
+	
+		.shade {
+			p {
+				margin-right: 40px;
+			}
+		}
+	}
+	
+	.logo-down {
+		a {
+			padding: 10px 50px;
+			font-size: 18px;
+	
+			img {
+				margin-left: 10px;
+				width: 20px;
+			}
+	
+		}
+	}
+	
+	.logo-color-wrap {
+		margin-bottom: 60px;
+		>div {
+			width: 30%;
+			margin-right: 5%;
+	
+			p {
+				font-size: 14px;
+				span {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	
+}
+
+@media (max-width: 576px) {
+	.logo-intro {
+	
+		&__wrap {
+			margin-bottom: 60px;
+	
+			&-img-box {
+				margin-bottom: 20px;
+			}
+	
+			h3 {
+				font-size: 26px;
+			}
+	
+			p {
+				font-size: 18px;
+			}
+			
+			.left {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+			.right {
+				width: 100%;
+			}
+		}
+	
+		.shade {
+			flex-wrap: wrap;
+			p {
+				margin-right: 0px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	
+	
+	.logo-color-wrap {
+		margin-bottom: 60px;
+		>div {
+			width: 30%;
+			margin-right: 5%;
+	
+			p {
+				font-size: 12px;
+				span {
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	
+}

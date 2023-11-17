@@ -1,0 +1,101 @@
+<?php
+include_once $_SERVER['DOCUMENT_ROOT']."/common/html/head.html";
+?>
+
+<body>
+
+    <!-- header -->
+    <header id="header"></header>
+
+    <!-- nav -->
+    <nav id="nav"></nav>
+
+    <!-- 서브컨텐츠 시작 -->
+    <section class="sub">
+        <!-- 서브 공통 탑 -->
+        <div class="sub-top">
+            <div class="sub-top__inner">
+                <div class="sub-top__depth">
+                    <i class="fa-solid fa-house"></i>
+                    <i class="sub-top__arrow fa-solid fa-angle-right"></i>
+                    <span>
+                        지사안내
+                    </span>
+                </div>
+                <h3>지사안내</h3>
+            </div>
+        </div>
+
+        <!-- 서브콘텐츠 시작 -->
+        <div class="office-info">
+            <div class="office-info__inner">
+
+                <div class="office-info__info-wrap">
+                    <h4>[랜시푸드] 영남지사</h4>
+                    <h5>부산광역시 서구 암남동 714</h5>
+
+                    <div class="office-info__contact">
+                        <div>
+                            <img src="./img/office_info_icon1.png" alt="">
+                            <a href="tel:051-253-3083">
+                                <p>
+                                  051-253-3083  
+                                </p>
+                            </a>
+                        </div>
+                        <div>
+                            <img src="./img/office_info_icon2.png" alt="">
+                            <a href="mailto:lsfood@bill36524.com">
+                                <p>
+                                    lsfood@bill36524.com
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="map" class="office-info__map" style="text-align: center;"></div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- footer -->
+    <footer id="footer"></footer>
+
+
+    <!-- Script -->
+    <script type="text/javascript" src="/common/js/wow.js"></script>
+    <script src="/common/js/custom.js"></script>
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=90669aba530952d2ededded1d9b66bb4"></script>
+    <script>
+        var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+            mapOption = {
+                center: new kakao.maps.LatLng(35.0650725952326, 129.012647974401), // 지도의 중심좌표
+                level: 3 // 지도의 확대 레벨
+            };
+
+        var map = new kakao.maps.Map(mapContainer, mapOption);
+        var markerPosition = new kakao.maps.LatLng(35.0650725952326, 129.012647974401);
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+
+        marker.setMap(map);
+        var iwContent = '<div style="padding:5px;">[랜시푸드] 영남 지사</div>';
+        var infowindow = new kakao.maps.InfoWindow({
+            content: iwContent
+        });
+
+        kakao.maps.event.addListener(marker, 'mouseover', function () {
+            infowindow.open(map, marker);
+        });
+        kakao.maps.event.addListener(marker, 'mouseout', function () {
+            infowindow.close();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,193 @@
+.branch-info {
+	box-sizing: border-box;
+	padding: 0px 30px;
+	&__inner {
+		width: 100%;
+		max-width: 1600px;
+		box-sizing: border-box;
+		padding: 100px 130px;
+		margin: 0px auto;
+		background-color: #fff;
+	}
+}
+
+.branch-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+
+	li {
+		width: 48%;
+		margin-right: 4%;
+		margin-bottom: 50px;
+		box-sizing: border-box;
+		&:nth-of-type(2n) {
+			margin-right: 0;
+		}
+
+		h5 {
+			font-size: 22px;
+			margin-bottom: 10px;
+		}
+	}
+
+	&__map {
+		width: 100%;
+		height: 240px;
+		box-sizing: border-box;
+		margin-bottom: 30px;
+	}
+
+	&__address {
+		font-size: 20px;
+		color: #959595;
+		&::after {
+			content: "";
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: #ccc;
+			margin: 10px 0px;
+		}
+	}
+
+	&__contact {
+		font-size: 20px;
+		color: #959595;
+	}
+}
+
+.marker {
+	p {
+		min-width: 160px;
+		box-sizing: border-box;
+		padding: 10px;
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 1400px) {
+	.branch-info {
+		padding: 0px 30px;
+		&__inner {
+			padding: 100px 80px;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.branch-info {
+		padding: 0px 30px;
+		&__inner {
+			padding: 40px 30px;
+		}
+	}
+	.branch-list {
+		li {
+			width: 48%;
+			margin-right: 4%;
+			margin-bottom: 50px;
+	
+			h5 {
+				font-size: 20px;
+				margin-bottom: 10px;
+			}
+		}
+	
+		&__map {
+			height: 240px;
+			margin-bottom: 30px;
+		}
+	
+		&__address {
+			font-size: 18px;
+			&::after {
+				margin: 10px 0px;
+			}
+		}
+	
+		&__contact {
+			font-size: 18px;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.branch-info {
+		padding: 0px 20px;
+		&__inner {
+			padding: 40px 30px;
+		}
+	}
+	.branch-list {
+		li {
+			width: 100%;
+			margin-right: 0%;
+			margin-bottom: 50px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+	
+			h5 {
+				font-size: 20px;
+				margin-bottom: 10px;
+			}
+		}
+	
+		&__map {
+			height: 240px;
+			margin-bottom: 30px;
+		}
+	
+		&__address {
+			font-size: 18px;
+			&::after {
+				margin: 10px 0px;
+			}
+		}
+	
+		&__contact {
+			font-size: 18px;
+		}
+	}
+}
+
+@media (max-width: 576px) {
+	.branch-info {
+		padding: 0px 20px;
+		&__inner {
+			padding: 30px 20px;
+		}
+	}
+	.branch-list {
+		li {
+			width: 100%;
+			margin-right: 0%;
+			margin-bottom: 50px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+	
+			h5 {
+				font-size: 18px;
+				margin-bottom: 10px;
+			}
+		}
+	
+		&__map {
+			height: 240px;
+			margin-bottom: 30px;
+		}
+	
+		&__address {
+			font-size: 16px;
+			&::after {
+				margin: 10px 0px;
+			}
+		}
+	
+		&__contact {
+			font-size: 16px;
+		}
+	}
+}

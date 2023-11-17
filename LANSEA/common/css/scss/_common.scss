@@ -1,0 +1,8 @@
+.mo {
+    display: none!important;
+}
+@media (max-width: 576px) {
+	.mo {
+		display: block!important;
+	}
+}
